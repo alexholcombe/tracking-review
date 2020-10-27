@@ -1,0 +1,66 @@
+--- 
+title: "Object tracking"
+author: "Alex O. Holcombe"
+date: "`r paste0('Updated on ',Sys.Date())`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+#(doesn't work) html_document:
+# (doesn't work) code_folding: show
+
+#Error: Functions that produce HTML output found in document targeting latex output.
+#Please change the output type of this document to HTML. Alternatively, you can allow
+#HTML output in non-HTML formats by adding this option to the YAML front-matter of your rmarkdown file:
+always_allow_html: true
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: alexholcombe/tracking-review
+description: "Tracking-review"
+---
+
+# Proposal guidelines {-}
+
+includes a book-style title and a proposed first draft deadline.  You can convey that in a free-form document, between 2 and 5 pages
+
+-  research in perception that relates life and lab
+
+-  the unique perspective of a research team in an emerging subfield of perception
+
+-  the integration of literatures that are often treated separately
+
+-  inspiration to students to dive more deeply into an area
+
+Open ended.  At 20-30,000 words, authors who are frustrated with journal space limits will be given to describe their work in its natural length.
+
+maximum 20 illustrations, have to be provided as separate files as well as indicate where in the file they go
+
+images: TIFF/JPEG or EPS files , minimum 300 dpi image, min 1200 dpi illustrations
+$200 fee
+
+**Forward looking** rather than archival.  Each article will feature reviews of past work along with cutting edge new research that is situated within this past work.  Emphasis will be placed equally on the tools of the research, the findings, and the theoretical developments being made.  Emphasis will be placed on where the field is going, rather than trying to fit into older categories such as separate entries for “sensation” and “perception.”
+
+Supplemental material.  Authors will be encouraged to use an online platform hosted by Cambridge University Press to present ancillary material (data, video, supplementary analyses) that will enhance their presentation for specialized readers.
+
+
+
+<!-- ![Professor Alex Holcombe](imagesForRmd/replicationCartoonHeadshot.png){width=5%}--> You won't be able to fully understand some of the points made from this alone; you must also watch the accompanying lecture videos.
+
+You can read this on the web [here](https://psyc2016.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.
+
+<!-- To launch CANVAS VIDEOS, I tried looking at the private hyperlink within the Canvas page and used
+https://www.url-encode-decode.com to unescape the characters, but that yields failed launch:
+
+[canvas video](https://sydney.instructuremedia.com/lti/launch?custom_arc_display_download=true&custom_arc_launch_type=embed&custom_arc_media_id=83d5fa8f-2601-4cde-8500-16b22da451f4-79254)
+
+This doesn't work either:
+[Canvas video](https://sydney.instructuremedia.com/embed/83d5fa8f-2601-4cde-8500-16b22da451f4-79254)
+-->
+<!-- CANVAS quizzes - I can't see any way to make external links work, even for a Canvas Commons quiz, it takes you to a bizarro Canvas login https://lor.instructure.com/resources/76da8b14c91a40d885c6fe0452bf33f4?shared -->
+
+
+<!--
+```{theorem, name="Pythagorean"}
+For a right triangle, if $c$ denotes the length of the hypotenuse
+```
+-->
