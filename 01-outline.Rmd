@@ -1,0 +1,39 @@
+# Proposal - Attending to and keeping track of objects {-}
+
+<!-- What can a shell game tell us about perception?
+-->
+
+This will make the case for tracking being much more important than people realize. Without continuous attentional selection, you not only lose your children but you can't even perceive spatial relationships.
+
+Tracking is just sustained attentional selection when objects are moving or you are moving.
+
+The manuscript would start with a few anecdotes illustrating why keeping track of objects is important both today (e.g., keeping track of one's children at the beach, keeping track of particular players on the sports field<!-- In basketball, the player needs to track the individual players of her/his own team, for example to know where the team’s excellent 3-point scorer is currently located. Similarly, a car driver approaching a busy intersection needs to track the whereabouts and movement trajectories of other vehicles and pedestrians in order to decide his/her own move -->) and in evolutionary history (e.g., keeping track of the weakest members in a herd of prey). Then it would transition into some basic background about the visual system. Descriptions of the the draft sections are below. These section descriptions showcase that multiple, typically separate literatures would be integrated.
+
+**Basic background**. This section will explain how the limited size of our brains means that we cannot keep track of everything - humans have capacity limits and information processing bottlenecks. These points will be illustrated with simple diagrams and images. The reader should then be able to apppreciate the limitation on number of objects one can track in a basic multiple object tracking display; this will be illustrated with some a embedded animation of the task.
+
+**Massively parallel and limited-capacity processing**. This section will explain that visual processing starts with massively parallel architecture but feeds into highly capacity-limited processes. Tracking acts on object representations created by the highly parallel early stages of the visual system.
+
+**Object representations**. The visual system's creation of object representations that will be conveyed with the work of Brian Scholl and others on objecthood. The accompanying animated demonstrations will clearly convey that only some spatiotemporal structures can be easily tracked - that is, certain spatiotemporal patterns are grouped into objects. This will link to the grouping literature, while being forward looking, because much remains to be understood about the relation of tracking to objects. <!-- Also use Zenon Pylyshyn's examples of objects not represented well as objects, so PylyshynAttention_Lecture_class -->
+
+Mention the bendy-pencil illusion https://jov.arvojournals.org/article.aspx?articleid=2193187 and Gershman's hierarchical paper 
+From the bendy-pencil illusion paper: "One of the basic discoveries of Gestalt psychology is that the perceived trajectory of a moving object is not always determined by its relative motion with respect to the retina or the ground but may instead be based on its motion relative to other moving objects. The perceived motion of a rolling wheel provides an excellent example (see Duncker, 1929; Johansson, 1950; Rubin, 1927, for more examples). The trajectory of a single point on the wheel has the form of a cycloid, but its perceived trajectory is a simple rotary motion about the center of the wheel. Indeed, it is not possible to perceive the cycloidal trajectory, even if one tries, unless the point is presented in isolation."
+
+**Resources or spatial interference.** The limitations in our abilities could emerge from multiple limits in our brain's processing. For visual stimuli, one such limitation is a flexible resource, while another such limitation is spatial interference. These concepts will be elucidated in this section (benefiting in part from two papers from my lab), and the experiments that have led to our present understanding that both play a role will be described.
+
+**Two brains or one?** The fact that the brain is made up of two separate hemispheres has some striking consequences for object tracking , and more subtle ones for other tasks involving keeping objects in mind. This section will review the research regarding the remarkable hemifield independence of multiple object tracking (including two papers from my lab), as well as the specificity for spatial attention tasks - non-spatial measures of working memory show little independence, implicating a more unitary resource.
+
+<!-- **Different resources for different tasks** The brain can do some tasks with remarkably little interference between them, while others are  -->
+
+**speed, and time.** The physical parameters that can limit tracking performance are space, speed, and time. Each plays a role in different circumstances, but the temporal limits are the most misunderstood, as I have discovered in reviewing journal manuscripts over the years, even though they may be the most fundamental. This section will explain spatial limits, speed limits, and temporal frequency limits on tracking (based in part on three papers from my lab), and how they illuminate other issues such as the relationship of tracking to basic motion and position perception.
+
+Animated-horse-race-jockey.gif
+
+**Serial processing, parallel processing, or both?** The way that our limited capacities are allocated over time to multiple objects, that is whether in parallel or in rapid series, has been a long debate. Recent evidence (including one of my papers) points to a serial component that seems to relate to natural oscillations in the brain, but much is yet to be determined.
+
+**Towards real-world scenes** A naive view of visual perception is that we are simultaneously aware of the identities of all the objects in a scene, so unless a player actually disappears or hides behind something or someone, we should know where everyone on the bacsketball court is at all times. Bringing together the factors described in previous sections, and bringing in new ones such as limits on feature binding, we will analyze some real-world tasks.
+
+**Individual differences**
+
+huangMeasuringInterrelationsMultiple2012. wilmerMultipleObjectTracking2016. Large differences have been found in spatial crowding, which probably explains a good chunk of the variance.
+
+
