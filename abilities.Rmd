@@ -1,0 +1,12 @@
+# Abilities, individual differences, dual-task interference
+
+Relation to abilities
+
+Using Factor Analysis to Bridge Neuropsychological and Psychonomic Measures of Attention. TODD HOROWITZ and MELISSA TREVIÑO, National Cancer Institute, XIAOSHU ZHU, Westat, YI YI LU, Harvard Medical School & Brigham and Women’s Hospital, LUKE SCHEUER, Harvard Medical School & McLean Hospital, GRACE HUANG, Westat, LAURA GERMINE, Harvard Medical School & McLean Hospital – Do neuropsychological attention tests measure the same construct as psychonomic attention paradigms? Previous work (Huang et al., 2012) suggested that many paradigms load on a “general attention factor,” a. Adult participants (N=488) completed a 14-item on-line battery (TestMyBrain. org) comprising psychonomic paradigms [Multiple Object Tracking (MOT), Flanker, Visual Change Detection (VCD), Approximate Number Sense (ANS), Visual Search (VS), Gradual Onset Continuous Performance Task (Grad CPT)] and neuropsychological tests [Trail Making Test A & B (TMT), Digit Symbol Substitution (DSS), Digit Span Forward and Backward, Letter Cancellation (LC), Spatial Span (SSpan), and Arithmetic]. We did not replicate a. We obtained a five-factor solution: (1) Capacity (MOT, VCD, ANS, SSpan, DSS); (2) Search (VS, TMT, LC); (3) Digit Span; (4) Arithmetic; (5) Sustained attention (GradCPT) Our findings encourage expansion of psychonomic science into the clinic and illustrate the potential
+to learn about attention from selected neuropsychological measures. 
+
+" In Huang et al.’s study, the correlation between MOT and VWM was .30, the correlation between (configuration) search and MOT was .30, and the correlation between search and VWM was .23. In our data, however, MOT and VWM were much more closely correlated with each other (.51)"
+
+" several studies have shown dissociations between MOT and visuo-spatial working memory [@bettencourtSharedFilteringProcesses2011] ( \O. L. Carter et al., 2005; O’Hearn et al., 2010). Furthermore, Trick et al. (2012) showed that visuospatial ability (including Corsi Blocks, a spatial span variant) but not working memory, predicts MOT."
+
+"Souza & Oberauer (2017) argued that VWM and MOT use different attentional resources."

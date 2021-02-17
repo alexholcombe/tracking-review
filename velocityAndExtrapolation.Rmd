@@ -13,8 +13,3 @@ Blaser Pylyshyn Holcombe-->
 
 <!-- cups and balls? -->
 
-## Tracking limits feature pairing 
-
-movies/MOTmovies/holcombeLinaresVaziriPashkam/pairing.mov
-
-movies/MOTmovies/holcombeLinaresVaziriPashkam/pairing_3timesfaster.mov

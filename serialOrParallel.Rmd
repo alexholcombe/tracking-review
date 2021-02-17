@@ -29,25 +29,3 @@ It turns out that the ability to track is limited by all three kinds of limits: 
 
 ![](imagesForRmd/trackingLimitsMotionLimitSchematic.png){width=90%}
 
-
-
-## Velocity and extrapolation, not just position
-
-
-Howard et al. (2011) provided an exhaustive review.  Eye movements lag -  Lukavsky & Dechterenko (2016)
-
-Integration: 
-Relation to oscillations
-
-Nakayama attention inertia theory
-
-Blaser Pylyshyn Holcombe-->
-
-
-<!-- cups and balls? -->
-
-## Tracking limits feature pairing 
-
-movies/MOTmovies/holcombeLinaresVaziriPashkam/pairing.mov
-
-movies/MOTmovies/holcombeLinaresVaziriPashkam/pairing_3timesfaster.mov

@@ -1,17 +1,32 @@
-# Attending to and keeping track of moving objects {-}
+# Attending to moving objects {-}
 
 <!-- What can a shell game tell us about perception?
 -->
 
+## Tracking task short description and anecdotes
+
+It is sometimes important to maintain one's attention on a moving object. Every parent knows this. At the playground, or at the beach, or at a school event, carers often find themselves monitoring specific children as they move among other moving children. On the sports field as well, players often find themselves trying to keep track of multiple team-mates and opponents and their spatial relationships to the ball. For the generations of children since 1979, when Asteroids was invented, 
+
+You won't find much about this ability in chapters about visual attention. This is partly because for decades, the study of visual attention used unmoving objects exclusively. 
+
+The study of visual attention took off in the 1970s with work by Eriksen, Treisman, . We learned an enormous amount about *static* objects.
+
+Is object tracking just sustained attentional selection, when the objects happen to be moving? Well, a first question fundamentally is how do you keep your attention on the object? The literature on visual search is enormous but is almost exclusively about finding 
+
+a huge topic, but 
+
 This will make the case for tracking being much more important than people realize. Without continuous attentional selection, you not only lose your children but you can't even perceive spatial relationships.
 
-Tracking is just sustained attentional selection when objects are moving or you are moving.
 
 The manuscript would start with a few anecdotes illustrating why keeping track of objects is important both today (e.g., keeping track of one's children at the beach, keeping track of particular players on the sports field<!-- In basketball, the player needs to track the individual players of her/his own team, for example to know where the team’s excellent 3-point scorer is currently located. Similarly, a car driver approaching a busy intersection needs to track the whereabouts and movement trajectories of other vehicles and pedestrians in order to decide his/her own move -->) and in evolutionary history (e.g., keeping track of the weakest members in a herd of prey). Then it would transition into some basic background about the visual system. Descriptions of the the draft sections are below. These section descriptions showcase that multiple, typically separate literatures would be integrated.
 
+Cups and balls painting either here or in identity section, also with Saiki
+
+## Outline
+
 **Basic background**. This section will explain how the limited size of our brains means that we cannot keep track of everything - humans have capacity limits and information processing bottlenecks. These points will be illustrated with simple diagrams and images. The reader should then be able to apppreciate the limitation on number of objects one can track in a basic multiple object tracking display; this will be illustrated with some a embedded animation of the task.
 
-**Massively parallel and limited-capacity processing**. This section will explain that visual processing starts with massively parallel architecture but feeds into highly capacity-limited processes. Tracking acts on object representations created by the highly parallel early stages of the visual system.
+Massively parallel and limited-capacity processing. This sub-section will explain that visual processing starts with massively parallel architecture but feeds into highly capacity-limited processes. Tracking acts on object representations created by the highly parallel early stages of the visual system.
 
 **Object representations**. The visual system's creation of object representations that will be conveyed with the work of Brian Scholl and others on objecthood. The accompanying animated demonstrations will clearly convey that only some spatiotemporal structures can be easily tracked - that is, certain spatiotemporal patterns are grouped into objects. This will link to the grouping literature, while being forward looking, because much remains to be understood about the relation of tracking to objects. <!-- Also use Zenon Pylyshyn's examples of objects not represented well as objects, so PylyshynAttention_Lecture_class -->
 
@@ -30,10 +45,23 @@ Animated-horse-race-jockey.gif
 
 **Serial processing, parallel processing, or both?** The way that our limited capacities are allocated over time to multiple objects, that is whether in parallel or in rapid series, has been a long debate. Recent evidence (including one of my papers) points to a serial component that seems to relate to natural oscillations in the brain, but much is yet to be determined.
 
-**Towards real-world scenes** A naive view of visual perception is that we are simultaneously aware of the identities of all the objects in a scene, so unless a player actually disappears or hides behind something or someone, we should know where everyone on the bacsketball court is at all times. Bringing together the factors described in previous sections, and bringing in new ones such as limits on feature binding, we will analyze some real-world tasks.
+**Identity**
 
-**Individual differences**
+including Vaziri-Pashkam et al.
+
+**Abilities**, Individual differences, dual-task interference, abilities
 
 huangMeasuringInterrelationsMultiple2012. wilmerMultipleObjectTracking2016. Large differences have been found in spatial crowding, which probably explains a good chunk of the variance. Large individual differences in crowding have been established,
 
 Nobody has yet 
+
+**Misconceptions and questions**
+
+Top misconceptions about MOT
+* its capacity limit is around 4 items.(this has been used to argue that it has a similar capacity limit to visual working memory (Cowan, 2001).)
+* "While the most intuitive model of multiple object tracking would involve storing the locations of targets in spatial memory, then moving attention in turn as quickly as possible to each target to update its location, this class of model is unable to account for MOT performance (Pylyshyn & Storm, 1988; Vul et al., 2009)"
+
+Reading your paper also gave me an idea to have a Common Misconceptions section for the Cambridge Element.  One might be that the capacity limit on VWM and MOT coincide (what you refer to as "The most striking link between the two tasks is that they seem to have a similar capacity limit of around four items (Cowan, 2001)". I totally agree that it is striking and so it is natural to think it means something, but while I don't know much about VWM, the capacity limit for MOT is determined by the speeds, spatial proximities,and temporal frequencies used, so as you know the limit can be anything between zero and more than ten.  It is true that the speeds most often used yield a capacity limit of around four, but I haven't seen any argument for why the commonly used speeds/spatial proximities/temporal frequency combination is more special than the other possibilities. I guess one could argue that researchers set those parameters to resemble an intuition for what real-world tasks are like, but even if they got that right, I'm not sure the same is true for VWM setups, or what that would imply for underlying ability structures. It seems to me one would have to do some kind of ideal observer (really, ideal thinker) model with the same assumptions that can model both common VWM and common MOT tasks, and show that the same level of ability in fundamental processes underlying each would yield the same capacity limit of four in both cases.
+
+**Towards the real-world** and real-world tasks. A naive view of visual perception is that we are simultaneously aware of the identities of all the objects in a scene, so unless a player actually disappears or hides behind something or someone, we should know where everyone on the bacsketball court is at all times. Bringing together the factors described in previous sections, and bringing in new ones such as limits on feature binding, we will analyze some real-world tasks.
+

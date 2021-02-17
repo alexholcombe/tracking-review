@@ -26,5 +26,5 @@ In the area of visual working memory, recent work has had success with the propo
 <!--
 However, this sort of interference may be closer to the answer for why we are limited in the number of objects we can keep in mind. Hundreds of studies over the past few decades have had people briefly view an array of stationary objects, and then try to recall them a few seconds later. The data may be best explained by the limited number of neurons available to represent the objects [@schneegansStochasticSamplingProvides2020]. The early cortical areas that encode the sensory signals from visual objects may play a key role in short-term memory for visual features [@christophelDistributedNatureWorking2017]. Recent models of short-term memory, then, assume that the features of each object are represented by populations of neurons that are tuned to that feature. For example, if the array comprises a red object, a green object, and a  blue object...
 -->
-<!-- ## Dual-task -->
 
+Abilities, dual-task interference, and individual differences are discussed in a later chapter 
