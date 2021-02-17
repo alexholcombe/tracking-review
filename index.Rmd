@@ -18,6 +18,7 @@ biblio-style: apalike
 link-citations: yes
 github-repo: alexholcombe/tracking-review
 description: "Tracking-review"
+#For the order of chapters, see _bookdown.yml, where they are manually specified
 ---
 
 # Preface
