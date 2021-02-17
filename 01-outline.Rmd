@@ -1,4 +1,4 @@
-# Proposal - Attending to and keeping track of objects {-}
+# Attending to and keeping track of moving objects {-}
 
 <!-- What can a shell game tell us about perception?
 -->
@@ -34,6 +34,6 @@ Animated-horse-race-jockey.gif
 
 **Individual differences**
 
-huangMeasuringInterrelationsMultiple2012. wilmerMultipleObjectTracking2016. Large differences have been found in spatial crowding, which probably explains a good chunk of the variance.
+huangMeasuringInterrelationsMultiple2012. wilmerMultipleObjectTracking2016. Large differences have been found in spatial crowding, which probably explains a good chunk of the variance. Large individual differences in crowding have been established,
 
-
+Nobody has yet 

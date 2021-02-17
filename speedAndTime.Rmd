@@ -1,0 +1,66 @@
+# Speed and time
+
+<!-- 
+How fast can people track? This is an important question, not only for predicting what people will be able to do in the real world, but also because investigations of the limits on tracking have led to insights into the relation of tracking processes to other aspects of attention and of motion perception.
+-->
+
+What makes a tracking task hard for a person, or even impossible? 
+
+Let's return to the classic shell game. In a shell game, an item is placed beneath one of three identical shells, making that shell the target. The viewer tries to keep track of which shell has the item underneath it. 
+ <!-- insert Conversation article text-->
+
+![The location of two identical shells are exchanged in a shell game](imagesForRmd/shellGame.png){width=50%} 
+
+A crucial aspect of the game is that the shells exchange locations with distractors. Thus, remembering the original location of the item is not sufficient. Neither is it sufficient to extrapolate a new position for the target based on the item's first direction of motion. Remembering its relative location in the array (e.g., the "middle one") is also not enough. One really must update one's representation of the target's position, rather than relying on any of the above.
+
+The simple reduced laboratory version of the shell game is illustrated by the following schematic.
+
+![](imagesForRmd/twoDiscsRevolving.png){width=10%}
+
+The updating of target position could fail for any of a few different reasons. A target might move too quickly for attention to move with it. That is, there may be a speed limit beyond which object position is not appropriately updated. Under serial switching accounts, this speed limit might occur if between successive samples, the object moved further than a critical distance between samples. Under parallel theories, the tracking process may simply have a speed limit. If the speed of the tracking process is resource-intensive, this speed limit may be slower when more targets are to be tracked.
+
+## Temporal limits
+
+Another possibility is that tracking has a temporal limit, much like it has a spatial limit. Recall that in section X we described evidence that if a target comes too close to another object, the two objects can get confused. They won't always be confused, because predictable trajectories and target velocity can be used to recover a target even after it completely overlaps with another (@howeMotionInformationSometimes2012; @Vul).
+
+So, spatial confusions contribute to tracking. Might this also be the case for temporal confusions?  There is already reason to think that 
+SHOW TICS-TYPE DEMO
+
+
+Spatiotemporal window account. 
+wapping errors presumably come about be- cause a target and a distractor approach within the width of the attentional window.
+
+
+One might lose the target because it simply moves too fast to track. Or one could lose it because it came so close to a distractor in peripheral vision that they could not be spatially discriminated. These possibilities of a speed limit and of spatial interference have been well-appreciated by researchers. A third possibility has been less appreciated: a temporal limit.
+
+While temporal limits are less familiar, they are the chief limitation on the perception of motion. The easiest way to understand them is with flicker...
+<!-- sEe speedLimitsAndTargetLoad/manuscriptAndTheory 
+ -->
+ 
+ When someone loses one of multiple moving targets in a crowd, what caused the error?
+
+
+Discover+your+speed+limit+for+for+tracking+2+targets,+when+each+is+in+an+array+of+3+objects-SD.mp4
+Discover+your+speed+limit+for+tracking+2+targets,+each+in+an+array+of+9+objects.-SD
+
+It turns out that the ability to track is limited by all three kinds of limits: speed limits, spatial limits, and temporal frequency limits.
+
+![](imagesForRmd/trackingLimitsMotionLimitSchematic.png){width=90%}
+
+
+Because with more targets, these limits overlap a lot, it's still an open question whether speed limits go down just as temporal limits do..
+
+## Discarded 
+
+But what about the role of distractor suppression?
+
+A little bit of motion by
+
+
+A particular pattern of motion may be key.
+
+The direction of motion of the object changes from time to time, and one must continually update the item's position to know in which of the three locations it ends up.
+
+The limits on tracking are not as simple as a speed limit like we have on the highway. To understand why, we need to start from first principles. In particular we need to consider when attentional tracking is actually needed to do well in a task. If one's target for attention moves only a little bit, tracking probably won't be needed.
+
+When is attentional tracking actually needed to perform well in a tracking task? Motion of the target may not be enough. If  targets do not come close to other objects, then one may only need to remember their original location and direction of motion to quickly find them again.

@@ -1,0 +1,53 @@
+# Serial processing, parallel processing, or both?
+
+Brains are massively parallel, which has led many to be skeptical that anything has to be done in series, one-by-one. The evidence reviewed above strongly indicates that resources are limited and have to be shifted from object to object for certain tasks, this is compatible with multiple objects being processed at once, in small sets. But evidence emerged some time ago that certain task elements can only be processed by the brain one at a time.
+
+One can certainly walk and chew gum at the same time, and even simultaneously use one hand to rub one's belly and the other to tap one's head, although it may take a bit of practice for some of us. However, when it comes to making a keypress based on the identity of a visual stimulus with one hand and based on the identity of a sound with the other hand, the evidence suggests that one particular component of these two tasks simply cannot be done simultaneously @pashlerDualtaskInterferenceSimple1994. Specifically, the pattern of response times indicates that while a choice is being made in response to the visual stimulus, choice processing for the auditory stimulus cannot commence.
+
+From the beginning of the literature on multiple object tracking, researchers have debated whether any constituent process is limited to one-by-one processing...
+<!-- Tripathy -->
+
+
+
+A crucial aspect of the game is that the shells exchange locations with distractors. Thus, remembering the original location of the item is not sufficient. Neither is it sufficient to extrapolate based on the item's first direction of motion. The direction of motion of the object changes from time to time, and one must continually update the item's position to know in which of the three locations it ends up.
+
+A simple laboratory version of this is illustrated by the following schematic.
+
+![](imagesForRmd/twoDiscsRevolving.png){width=10%}
+
+
+One might lose the target because it simply moves too fast to track. Or one could lose it because it came so close to a distractor in peripheral vision that they could not be spatially discriminated. These possibilities of a speed limit and of spatia interference have been well-appreciated by researchers. A third possibility has been less appreciated: a temporal limit.
+
+While temporal limits are less familiar, they are the chief limitation on the perception of motion. The easiest way to understand them is with flicker...
+<!-- sEe speedLimitsAndTargetLoad/manuscriptAndTheory 
+ -->
+
+Discover+your+speed+limit+for+for+tracking+2+targets,+when+each+is+in+an+array+of+3+objects-SD.mp4
+Discover+your+speed+limit+for+tracking+2+targets,+each+in+an+array+of+9+objects.-SD
+
+It turns out that the ability to track is limited by all three kinds of limits: speed limits, spatial limits, and temporal frequency limits.
+
+![](imagesForRmd/trackingLimitsMotionLimitSchematic.png){width=90%}
+
+
+
+## Velocity and extrapolation, not just position
+
+
+Howard et al. (2011) provided an exhaustive review.  Eye movements lag -  Lukavsky & Dechterenko (2016)
+
+Integration: 
+Relation to oscillations
+
+Nakayama attention inertia theory
+
+Blaser Pylyshyn Holcombe-->
+
+
+<!-- cups and balls? -->
+
+## Tracking limits feature pairing 
+
+movies/MOTmovies/holcombeLinaresVaziriPashkam/pairing.mov
+
+movies/MOTmovies/holcombeLinaresVaziriPashkam/pairing_3timesfaster.mov

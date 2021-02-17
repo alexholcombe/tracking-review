@@ -1,0 +1,63 @@
+
+## Two brains or one?
+
+Most people know that the brain has two hemispheres. Many know little else about the brain, but they understandably assume that the division of the brain into two halves has major consequences for how we learn. A major industry of pseudoscientific education consultants and brain training programs has sprung up around ideas such as "left brain versus right brain" training [@kroezeBrainGymPseudoscientific2016]. The truth is that while early sensory processing is very hemisphere-specific, more cognitive functions such as explicit learning benefit from remarkably tight integration of the two hemispheres. When we open our eyes, we have the experience of attending easily to objects in any part of the visual field. We experience no dislocation when the movement of our eyes, or of an object, cause it to shift from one hemifield, where it is processed by one hemisphere, to the other hemifield, where it is processed by the other hemisphere. Communication between the two hemispheres happens rapidly and continuously. There is little to no evidence that exercises designed to insure both hemispheres process stimuli have any benefit for learning. 
+
+For those extraordinarily rare individuals who have had some connections between their hemispheres cut ("split brain" patients), the hemispheres act more independently. For tasks including searching for a target among many distractor objects, it is better to distribute the distractors across the two hemifields. Spreading the load in this way yields a large benefit for search, suggesting that both hemispheres can search independently and simultaneously. [@luckIndependentAttentionalScanning1994a]. But for normal individuals, no such advantage is seen, suggesting that the processes that evaluate each stimulus for whether it is the target are well integrated across the hemispheres [@luckIndependentHemisphericAttentional1989]. Yet for a few tasks, normal individuals act much more as if their hemispheres are working independently.
+
+In visual short-term memory tasks, people perform a good deal better when the stimuli are spread across both the left and right hemifields rather than all presented to the left hemifield or to the right hemifield [@delvenneVisualShorttermMemory2012]. The reason, it is believed, is that there is some sort of resource that is specific to each hemifield. It is better, then, to spread one's load, rather than burdening one hemisphere more than the other. If the processes that limit memory performance were entirely specific to the hemispheres, then once people's limit for remembering objects presented to one hemifield were reached, one could add more objects to the other hemifield without any cost for the proportion of objects remembered. Instead, though, the hemifield advantage is only partial. There are a few tasks, however, for which the hemifield advantage seems to be complete, and multiple object tracking is one.
+
+@alvarezIndependentResourcesAttentional2005 were the first to show that distributing objects to two hemifields rather than one could, essentially, double performance, as if two brains were doing the task rather than one...
+
+<!-- What do these findings mean for how we should conceive of the processes that underlie tracking?...  IT COULD BE THAT it is escape from spatial interference, such that spatial interference is the problem and it doesn't happen across hemifields. There are no hemisphere-specific resources per se. But even on that account, something has to track the target when it crosses, thus predicting Strong & Alvarez's crossing finding. That is, even on the spatial interference account, something outside of cortical maps has to know about the targets and it has to work for both hemifields, so for example you can respond with the other hand. NO, there might be nothing different for traveling to the other hemisphere. At the level that tracking is controlled, there might be 100% cross-hemispheric integration. But that doesnt' seem very plausible, so giving the spatil interference account its due, they'd predict strong's result also. -->
+
+<!-- ### Quadrants
+
+Carlson et al. found evidence for quadrants. Has this been replicated? And @strongHemifieldspecificControlSpatial2019 found a cost for crossing the vertical midline but not the horizontal midline. So now we know that the cross-hemisphere cost does not occur for quadrants. 
+
+Because objects presented to the same hemifield are represented by neurons closer to each other in the brain than objects presented to different hemifields, this finding of hemispheric independence provided some sustenance to the spatial interference theory championed by Franconeri and described in \@ref(Spatial). Under this account, the 
+-->
+
+
+A crucial aspect of the game is that the shells exchange locations with distractors. Thus, remembering the original location of the item is not sufficient. Neither is it sufficient to extrapolate based on the item's first direction of motion. The direction of motion of the object changes from time to time, and one must continually update the item's position to know in which of the three locations it ends up.
+
+A simple laboratory version of this is illustrated by the following schematic.
+
+![](imagesForRmd/twoDiscsRevolving.png){width=10%}
+
+
+One might lose the target because it simply moves too fast to track. Or one could lose it because it came so close to a distractor in peripheral vision that they could not be spatially discriminated. These possibilities of a speed limit and of spatia interference have been well-appreciated by researchers. A third possibility has been less appreciated: a temporal limit.
+
+While temporal limits are less familiar, they are the chief limitation on the perception of motion. The easiest way to understand them is with flicker...
+<!-- sEe speedLimitsAndTargetLoad/manuscriptAndTheory 
+ -->
+
+Discover+your+speed+limit+for+for+tracking+2+targets,+when+each+is+in+an+array+of+3+objects-SD.mp4
+Discover+your+speed+limit+for+tracking+2+targets,+each+in+an+array+of+9+objects.-SD
+
+It turns out that the ability to track is limited by all three kinds of limits: speed limits, spatial limits, and temporal frequency limits.
+
+![](imagesForRmd/trackingLimitsMotionLimitSchematic.png){width=90%}
+
+
+
+## Velocity and extrapolation, not just position
+
+
+Howard et al. (2011) provided an exhaustive review.  Eye movements lag -  Lukavsky & Dechterenko (2016)
+
+Integration: 
+Relation to oscillations
+
+Nakayama attention inertia theory
+
+Blaser Pylyshyn Holcombe-->
+
+
+<!-- cups and balls? -->
+
+## Tracking limits feature pairing 
+
+movies/MOTmovies/holcombeLinaresVaziriPashkam/pairing.mov
+
+movies/MOTmovies/holcombeLinaresVaziriPashkam/pairing_3timesfaster.mov
