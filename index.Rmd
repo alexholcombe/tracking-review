@@ -1,5 +1,5 @@
 --- 
-title: "Object tracking"
+title: "Tracking moving objects"
 author: "Alex O. Holcombe"
 date: "`r paste0('Updated on ',Sys.Date())`"
 site: bookdown::bookdown_site
