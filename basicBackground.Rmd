@@ -7,7 +7,7 @@ to learn about attention from selected neuropsychological measures.
 
 " In Huang et al.’s study, the correlation between MOT and VWM was .30, the correlation between (configuration) search and MOT was .30, and the correlation between search and VWM was .23. In our data, however, MOT and VWM were much more closely correlated with each other (.51)"
 
-" several studies have shown dissociations between MOT and spatial working memory (Bettencourt et al., 2011; O. L. Carter et al., 2005; O’Hearn et al., 2010). Furthermore, Trick et al. (2012) showed that visuospatial ability (including Corsi Blocks, a spatial span variant) but not working memory, predicts MOT."
+" several studies have shown dissociations between MOT and visuo-spatial working memory [@bettencourtSharedFilteringProcesses2011] ( \O. L. Carter et al., 2005; O’Hearn et al., 2010). Furthermore, Trick et al. (2012) showed that visuospatial ability (including Corsi Blocks, a spatial span variant) but not working memory, predicts MOT."
 
 "Souza & Oberauer (2017) argued that VWM and MOT use different attentional resources."
 
