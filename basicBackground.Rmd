@@ -1,5 +1,73 @@
 # Basic background
 
+How many math problems can you simultaneously do in your head? Despite having over 80 billion neurons in your brain, you can probably only do one math problem in your head at a time. What if I gave you a simpler task, by showing you twenty words on a page - how many could you read simultaneously? A large body of psychological research suggests that humans can read only a few words at a time, or possibly only one at a time [@whiteEvidenceSerialProcessing2018]. Yet when light hits the back of our eyes, it is greeted by six million cones arrayed across each retina. Each bit of the image is simultaneously processed, as each has its own photoreceptors devoted just to it. At the retina, then, you process millions of small regions of the retina at the same time.
+
+As visual signals rocket into the brain, however, they are processed by neurons responsive to larger and larger regions of the visual field. Eventually they reach brain areas capable of doing things like recognizing complex objects like words. These brain areas do not have neurons that can recognize objects dedicated to each bit of the visual field. Instead, their simultaneous processing capacity is limited. Something, then, is needed to pick out, from a crowded scene, just one or a few objects for these areas to recognize. We call this something *attention*.
+
+While recognition of complex objects like words is one thing, necessarily involving a very sophisticated chain of processing, one would hope that simper visual judgments could be made about many areas of the visual field simultaneously. Well, for some, we can. We've all had the experience of "pop-out", where in some circumstances, we can quickly locate targets hidden in a large number of distractors. For example, try searching for the blue objects in the below display.
+
+```{r, echo=FALSE, fig.cap = "", fig.height = 2.0, fig.width=2.5}
+#https://psyc2016.whatanimalssee.com/bookdown-demo_files/figure-html/unnamed-chunk-9-1.png
+library(ggplot2)
+library(tibble)
+pts<- expand.grid(x = seq(2,16,2), y = seq(2,16,2), type = c("distractor"))
+jittr<-.4
+pts$x <- pts$x + runif(length(pts$x))*jittr-jittr/2
+pts$y <- pts$y + runif(length(pts$y))*jittr-jittr/2
+pts$type <- as.character(pts$type)
+pts$type[c(1,4,6,8,11,12,13,16,20,25,26,30,33,37,41,44,47,48,52,55,59,60)] <- "distractor2"
+pts$type[c(13,26,46)] <- "target"
+
+ymin<-600; ymax<-2000
+ggplot(pts,aes(x=x,y=y, color=type)) + geom_point(size=6)  +  theme_void() + theme(legend.position = "none")
+#+ ylim(ymin,ymax)
+```
+
+You may feel that locating the three blue objects was extremely easy. The results of experiments indicate that the visual system processes each of the shapes simultaneously, which results in a very rapid determination of the locations of the three blue objects.
+
+Yet for other seemingly simple visual judgments, our capacity is much more limited. Duncan (1984) was interested in how many objects we can process at a time.
+https://psyc2016.whatanimalssee.com/bottlenecks.html#a-bottleneck-for-object-judgments
+
+Unfortunately, the receptive fields of these neurons are large that 
+
+However, rather than there being neurons with such abilities available for each portion of the visual field, 
+
+However, such neurons are not able to 
+This results in bottlenecks. Something in the brain has to pick and choose among
+
+Each bit of the image has its own photoreceptors, devoted to processing just it. But then the convergence begins. At successive layers of neurons, each neuron responds to a larger areas of the image.
+
+Only a finite number of neurons can fit in our heads. However, any number of ways to organize and allocate these neurons can be imagined, and what we have evolved to have has made us very impressive on some tasks, but dullards on others.
+
+Explicit thinking like that involves a series of steps and our brains appear to be particularly capacity-limited at doing this.
+
+
+
+But given that explicit thought is so limited, seemingly to only one thing at a time, something has to control what it thinks about - attentional selection. The earlier lectures in this unit were about memory, decision making, and problem solving. Attention is what routes information to the memory, decision-making, and problem-solving processes.
+
+That memory encoding and problem solving are so limited is quite intuitive - we’ve all had the experience to know that it’s hard to think about solving more than one problem at a time. A bit more surprising, perhaps, are the limitations on perceptual tasks. But it’s important to realise how pervasive bottlenecks are in the mind - they afflict even perceptual tasks.
+
+Vision is very useful, and many billions of our neurons are devoted to them. These neurons are arranged into a particular kind of processing architecture. When the light hits the back of our eyes, 
+
+This convergence ultimately results in severe bottlenecks. Higher-order processing can only 
+
+
+This aspect of our visual architecture is thought to explain why visual processing is bottlenecked
+
+we have severe visual capacity limits.
+
+This ultimately results in a 
+
+of connections
+
+With some complications (for example, feedback connections are rife, but their role often mysterious), this continues as visual signals march toward the parietal and temporal lobes. Ultimately, 
+
+
+
+This section will explain how the limited size of our brains means that we cannot keep track of everything - humans have capacity limits and information processing bottlenecks. These points will be illustrated with simple diagrams and images. The reader should then be able to apppreciate the limitation on number of objects one can track in a basic multiple object tracking display; this will be illustrated with some a embedded animation of the task.
+
+Massively parallel and limited-capacity processing. This sub-section will explain that visual processing starts with massively parallel architecture but feeds into highly capacity-limited processes. Tracking acts on object representations created by the highly parallel early stages of the visual system.
+
 
 At the beginning of an MOT task, such as Neurotracker, featural attention (to red, in the case of Neurotracker) is used to select the target objects. Selective attention must then be sustained on these objects when they become identical to the distractors, and then tracked as they move. For neurotypical individuals the initial selection process does not appear to be demanding (Drew & Vogel, 2008) –  the average capacity limit for selection is higher than that of tracking (Alvarez & Franconeri, 2007). When the number of objects to track is low and their speed slow, participants can track objects for at least ten minutes with little loss (Wolfe et al., 2007). Thus, while many potential athlete users may imagine that a test of attention tests how long they can pay attention, this is not likely to be the reason for differences among people on MOT performance. With featural attention (e.g., attention to color) needed for target acquisition unlikely to be taxed in typical people by Neurotracker, and only needed briefly, featural attention seems unlikely to improve with Neurotracker training.
 

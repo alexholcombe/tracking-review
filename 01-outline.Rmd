@@ -24,9 +24,7 @@ Cups and balls painting either here or in identity section, also with Saiki
 
 ## Outline
 
-**Basic background**. This section will explain how the limited size of our brains means that we cannot keep track of everything - humans have capacity limits and information processing bottlenecks. These points will be illustrated with simple diagrams and images. The reader should then be able to apppreciate the limitation on number of objects one can track in a basic multiple object tracking display; this will be illustrated with some a embedded animation of the task.
-
-Massively parallel and limited-capacity processing. This sub-section will explain that visual processing starts with massively parallel architecture but feeds into highly capacity-limited processes. Tracking acts on object representations created by the highly parallel early stages of the visual system.
+**Basic background**. 
 
 **Object representations**. The visual system's creation of object representations that will be conveyed with the work of Brian Scholl and others on objecthood. The accompanying animated demonstrations will clearly convey that only some spatiotemporal structures can be easily tracked - that is, certain spatiotemporal patterns are grouped into objects. This will link to the grouping literature, while being forward looking, because much remains to be understood about the relation of tracking to objects. <!-- Also use Zenon Pylyshyn's examples of objects not represented well as objects, so PylyshynAttention_Lecture_class -->
 

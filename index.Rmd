@@ -25,7 +25,7 @@ description: "Tracking-review"
 
 This mini-book was written primarily for publication as a Cambridge Element, 
 
-You can read this on the web [here](https://psyc2016.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.
+You can read this on the web [here](https://psyc2016.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.  However, the web version is the only one you should rely on - some features (e.g. movies, some kinds of images) may be missing from the other formats.
 
 <!-- _bookdown.yml specifies the chapters order -->
 
