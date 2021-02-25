@@ -1,5 +1,6 @@
+# Two brains or one?
 
-## Two brains or one?
+NOBODY has incorporated the hemifield division in their model!
 
 Most people know that the brain has two hemispheres. Many know little else about the brain, but they understandably assume that the division of the brain into two halves has major consequences for how we learn. A major industry of pseudoscientific education consultants and brain training programs has sprung up around ideas such as "left brain versus right brain" training [@kroezeBrainGymPseudoscientific2016]. The truth is that while early sensory processing is very hemisphere-specific, more cognitive functions such as explicit learning benefit from remarkably tight integration of the two hemispheres. When we open our eyes, we have the experience of attending easily to objects in any part of the visual field. We experience no dislocation when the movement of our eyes, or of an object, cause it to shift from one hemifield, where it is processed by one hemisphere, to the other hemifield, where it is processed by the other hemisphere. Communication between the two hemispheres happens rapidly and continuously. There is little to no evidence that exercises designed to insure both hemispheres process stimuli have any benefit for learning. 
 
@@ -18,46 +19,3 @@ Carlson et al. found evidence for quadrants. Has this been replicated? And @stro
 Because objects presented to the same hemifield are represented by neurons closer to each other in the brain than objects presented to different hemifields, this finding of hemispheric independence provided some sustenance to the spatial interference theory championed by Franconeri and described in \@ref(Spatial). Under this account, the 
 -->
 
-
-A crucial aspect of the game is that the shells exchange locations with distractors. Thus, remembering the original location of the item is not sufficient. Neither is it sufficient to extrapolate based on the item's first direction of motion. The direction of motion of the object changes from time to time, and one must continually update the item's position to know in which of the three locations it ends up.
-
-A simple laboratory version of this is illustrated by the following schematic.
-
-![](imagesForRmd/twoDiscsRevolving.png){width=10%}
-
-
-One might lose the target because it simply moves too fast to track. Or one could lose it because it came so close to a distractor in peripheral vision that they could not be spatially discriminated. These possibilities of a speed limit and of spatia interference have been well-appreciated by researchers. A third possibility has been less appreciated: a temporal limit.
-
-While temporal limits are less familiar, they are the chief limitation on the perception of motion. The easiest way to understand them is with flicker...
-<!-- sEe speedLimitsAndTargetLoad/manuscriptAndTheory 
- -->
-
-Discover+your+speed+limit+for+for+tracking+2+targets,+when+each+is+in+an+array+of+3+objects-SD.mp4
-Discover+your+speed+limit+for+tracking+2+targets,+each+in+an+array+of+9+objects.-SD
-
-It turns out that the ability to track is limited by all three kinds of limits: speed limits, spatial limits, and temporal frequency limits.
-
-![](imagesForRmd/trackingLimitsMotionLimitSchematic.png){width=90%}
-
-
-
-## Velocity and extrapolation, not just position
-
-
-Howard et al. (2011) provided an exhaustive review.  Eye movements lag -  Lukavsky & Dechterenko (2016)
-
-Integration: 
-Relation to oscillations
-
-Nakayama attention inertia theory
-
-Blaser Pylyshyn Holcombe-->
-
-
-<!-- cups and balls? -->
-
-## Tracking limits feature pairing 
-
-movies/MOTmovies/holcombeLinaresVaziriPashkam/pairing.mov
-
-movies/MOTmovies/holcombeLinaresVaziriPashkam/pairing_3timesfaster.mov

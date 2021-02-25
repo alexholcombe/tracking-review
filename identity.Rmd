@@ -1,5 +1,12 @@
 # Identity
 
+@pylyshynPuzzlingFindingsMultiple2004 "et in the present studies we show that observers are poor at recalling the identity of successfully tracked objects 􏰞as specified by a unique identifier associated with each target, such as a number or starting location)"
+
+Let's return to the classic shell game. In a shell game, an item is placed beneath one of three identical shells, making that shell the target. The viewer tries to keep track of which shell has the item underneath it. 
+ <!-- insert Conversation article text-->
+
+![The location of two identical shells are exchanged in a shell game](imagesForRmd/shellGame.png){width=50%} 
+
 ## Tracking limits feature pairing 
 
 movies/MOTmovies/holcombeLinaresVaziriPashkam/pairing.mov

@@ -1,2 +1,69 @@
 # Objects
 
+Keeping track of something that is moving implies that our mind is continually, or at least frequently, updating a representation of its position. Most researchers seem to conceive of this as keeping spatial attention on an object, a sort of spotlight or hill of neural activation that glides across retinotopic cortex. There is evidence for this from neuroimaging. In this article, for simplicity we will refer to the spatial index that changes along with a moving object as a spotlight of attention. This spotlight account is consistent with evidence that probes are more easily detected on targets than elsewhere [@pylyshynPuzzlingFindingsMultiple2006; @searsMultipleObjectTracking2000]. Keep in mind, however, that we do not mean that a hill of activation in spatiotopic or retinotopic cortex exhausts all the processes involved in tracking - there are certainly more.
+
+How does the brain manage to shift attention along with an object? As an object moves, what causes the spotlight of attention to move along with it, rather than staying in place? Several decades of work on attention have robustly documented the existence of spatial selection and feature selection. That is, when people are instructed to think about a particular location in the visual field, this results very rapidly in facilitation of perceptual performance for that location, and neural activation in the associated parts of retinotopic cortices. There does not seem to be any "search" needed, instead spatial location seems to provide a direct conduit for attentional activation. Similarly, for certain features such as motion and color, an instruction to attend to a particular direction, or a particular color, triggers rapid activation across the visual field at all the locations of that particular color or motion [@saenzGlobalFeaturebasedAttention2003; @whiteFeaturebasedAttentionInvoluntarily2011]. 
+
+What role do spatial and feature attention play in object tracking? If a moving target differs from distractors in certain ways, then feature attention can be relied on to keep attention on the target. For example, if the targets are the only yellow objects in the scene, and all the distractors are blue or green, then one might be able to think "yellow" and that would be enough to keep attention on target. However, when the targets are identical to the distractors, some other process is needed. One possibility is "object-based attention". Now, no one seems to think that object *selection* is a thing. That is, one cannot think "chair" and expect all the locations of chairs in the scene to rapidly be attended. No, selection of chairs seems to require a search first, based on locations and simpler features.
+
+However, what might be the case is that once one *is* attending to an object, some process causes one to attend to the entire object, rather than just one or a few individual locations on it. This does seem to happen, and shows up in experiments where one end of a (static) object is cued, which results in facilitation not only for probes at that end of the object, but also at its other end [@eglyShiftingVisualAttention1994a]. This pattern is not always observed, so this is not fully understood [@davisReversalObjectBased2005; @shomsteinObjectbasedAttentionStrength2008; @shomsteinObjectbasedAttentionSensory2002], but perhaps the best explanation is that attention often does tend to spread to an entire object.
+
+A "spread" of attention, or gradual growth of the area of attentional activation to encompass an entire object, is not the only conceivable process that might yield object-based attention benefits, but such spreading has been observed neurophysiologically in certain tasks [e.g., @wannigAutomaticSpreadAttentional2011]. Such a spreading process might explain the ability to keep attention on multiple moving objects.
+
+When an object moves, if it moves smoothly, then its leading edge will occupy new territory while its trailing edge continues to occupy an old location. If spreading of attention up to object boundaries is continually occurring, then attention should spread to the new locations near the trailing edge. In such a fashion, attention could, by continually expanding to the new location of a leading edge and contracting with a trailing edge, stay on a moving object. Some problems with this account, discussed in SECTION X <!-- Point objects, stepping objects (works for 1 target and probably for multiple ones if they are stepping a short distance), and the finding that attention tends to be ahead of an object? I don't recall whether that's been done -->, suggest that spreading of attention is not sufficient to explain tracking, but it may play a role.
+
+Not all aspects of our attention automatically spread throughout an object. Imagine viewing a distant tree on the horizon, silhouetted by a setting sun. One can choose to attend to the top of the tree, a part of its trunk, or perhaps an individual branch. One seems to be able to focus attention on an arbitrary spatial region, even if it is only an undifferentiated portion of a larger object. But experiments find that the processes that mediate tracking do not have the capability to do that. This was demonstrated in striking fashion in experiments reported by [@schollWhatVisualObject2001].
+
+Perhaps some other aspect of attention spreads to the entire truee, even 
+
+This indicates that humans have some capability for focused attention on individual regions of a larger object.
+
+Perhaps some aspect of attention has spread to all of the plane's parts. However, our ability to make judgments about individual bits of the plane, even when keeping our eyes still, suggests that we also have some capability to select fairly arbitrary regions. That capability, however, is very different than the processes that, in the main, mediate multiple object tracking.
+
+This fact was demonstrated in striking fashion by 
+
+process is clearly very different from 
+
+
+distant object, such as
+When we view a distan
+
+On any account, 
+
+parts of it will occupy new territory while its 
+
+track multiple moving objects. If 
+
+The tendency of attention to spatially spread to 
+
+If attention does have the property of spatially spread
+
+The term "object-based attention" refers to the idea that once attention has selected the area of an object, be that by 
+
+
+When moving targets differ from distractors 
+
+other things need to be 
+
+Conceived of as a spread along the object until one hits its contours. However, it doesn't always work [@davisReversalObjectBased2005]. , and there is probably a publication bias problem to
+
+
+activation early visual cortices
+
+has shown that spatial selection is very robust
+
+
+in spatiotopic cortex that
+
+Usually, researchers write that 
+
+What is a moving object? People, animals, cars, leaves, and balls are all objects that change position smoothly and that we can keep track of in a crowd. But how do our brains 
+
+The water of a river, a creeping shadow, a slinking Slinky, an oozing
+
+Some things 
+
+The visual system's creation of object representations that will be conveyed with the work of Brian Scholl and others on objecthood. The accompanying animated demonstrations will clearly convey that only some spatiotemporal structures can be easily tracked - that is, certain spatiotemporal patterns are grouped into objects. This will link to the grouping literature, while being forward looking, because much remains to be understood about the relation of tracking to objects. <!-- Also use Zenon Pylyshyn's examples of objects not represented well as objects, so PylyshynAttention_Lecture_class -->
+
+Mention the bendy-pencil illusion https://jov.arvojournals.org/article.aspx?articleid=2193187 and Gershman's hierarchical paper 
+From the bendy-pencil illusion paper: "One of the basic discoveries of Gestalt psychology is that the perceived trajectory of a moving object is not always determined by its relative motion with respect to the retina or the ground but may instead be based on its motion relative to other moving objects. The perceived motion of a rolling wheel provides an excellent example (see Duncker, 1929; Johansson, 1950; Rubin, 1927, for more examples). The trajectory of a single point on the wheel has the form of a cycloid, but its perceived trajectory is a simple rotary motion about the center of the wheel. Indeed, it is not possible to perceive the cycloidal trajectory, even if one tries, unless the point is presented in isolation."
