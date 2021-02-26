@@ -18,7 +18,7 @@ cat(
 )
 ```
 
-In Asteroids, it pays to monitor more than one of the moving objects, to determine which way one should move, or shoot, to prevent a collision. Asteroids was introduced in 1979, but psychologists were slow to use the associated technology to study how people processed multiple moving objects. Finally, in 1988, @pylyshynTrackingMultipleIndependent1988a conducted an ingenious experiment using an Apple II+ computer. Pylyshyn & Storm showed that people can keep track of multiple moving objects designated as targets in a crowd of identical distractors.
+In Asteroids, it pays to monitor more than one of the moving objects, to determine which way one should move, or shoot, to prevent a collision. Asteroids was introduced in 1979, but psychologists were slow to use the associated technology to study how people processed multiple moving objects. Finally, in 1988, @pylyshynTrackingMultipleIndependent1988a used an Apple II+ computer to conduct an experiment that demonstrated that people could keep track of multiple moving objects. Pylyshyn & Storm showed that people can keep track of multiple moving objects designated as targets in a crowd of identical distractors.
 
 Without continuous attentional selection, you not only lose your children
 

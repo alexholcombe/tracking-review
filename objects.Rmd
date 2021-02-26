@@ -14,6 +14,12 @@ When an object moves, if it moves smoothly, then its leading edge will occupy ne
 
 Not all aspects of our attention automatically spread throughout an object. Imagine viewing a distant tree on the horizon, silhouetted by a setting sun. One can choose to attend to the top of the tree, a part of its trunk, or perhaps an individual branch. One seems to be able to focus attention on an arbitrary spatial region, even if it is only an undifferentiated portion of a larger object. But experiments find that the processes that mediate tracking do not have the capability to do that. This was demonstrated in striking fashion in experiments reported by [@schollWhatVisualObject2001].
 
+@schollWhatVisualObject2001 asked participants to track, among other things, ends of lines. That is, they presented participants with four lines and designated one end of each as a target. The participants' task was to keep track of those four ends and at the end of the trial indicate which line ends were targets by clicking on them with the mouse. During a trial, each line grew, shrank, and rotated as each of its ends wandered about the screen randomly.
+
+![Alex Holcombe (he/him)](imagesForRmd/linesSchollPylyshynFeldman_madeByHolcombe.png){width=40%}
+
+Performance on this task was abysmal relative to a control condition in which participants tracked independent objects instead of 
+
 Perhaps some other aspect of attention spreads to the entire truee, even 
 
 This indicates that humans have some capability for focused attention on individual regions of a larger object.
