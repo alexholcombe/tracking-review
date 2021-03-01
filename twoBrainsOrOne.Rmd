@@ -1,4 +1,4 @@
-# Two brains or one?
+# Two brains or one? {#twoBrains}
 
 NOBODY has incorporated the hemifield division in their model!
 
@@ -9,6 +9,8 @@ For those extraordinarily rare individuals who have had some connections between
 In visual short-term memory tasks, people perform a good deal better when the stimuli are spread across both the left and right hemifields rather than all presented to the left hemifield or to the right hemifield [@delvenneVisualShorttermMemory2012]. The reason, it is believed, is that there is some sort of resource that is specific to each hemifield. It is better, then, to spread one's load, rather than burdening one hemisphere more than the other. If the processes that limit memory performance were entirely specific to the hemispheres, then once people's limit for remembering objects presented to one hemifield were reached, one could add more objects to the other hemifield without any cost for the proportion of objects remembered. Instead, though, the hemifield advantage is only partial. There are a few tasks, however, for which the hemifield advantage seems to be complete, and multiple object tracking is one.
 
 @alvarezIndependentResourcesAttentional2005 were the first to show that distributing objects to two hemifields rather than one could, essentially, double performance, as if two brains were doing the task rather than one...
+
+@hudsonHemifieldEffectsMultiple multiple identity tracking , found a hemifield advantage: " Contrary to expectations, a bilateral advantage was still observed, though it was not as strong as when observers were not required to remember the identities of the targets. This finding is inconsistent with the only model of multiple identity tracking (Oksama & Hyönä, 2008, Cognitive Psychology, 56, 237-283), so we present an alternative account."
 
 <!-- What do these findings mean for how we should conceive of the processes that underlie tracking?...  IT COULD BE THAT it is escape from spatial interference, such that spatial interference is the problem and it doesn't happen across hemifields. There are no hemisphere-specific resources per se. But even on that account, something has to track the target when it crosses, thus predicting Strong & Alvarez's crossing finding. That is, even on the spatial interference account, something outside of cortical maps has to know about the targets and it has to work for both hemifields, so for example you can respond with the other hand. NO, there might be nothing different for traveling to the other hemisphere. At the level that tracking is controlled, there might be 100% cross-hemispheric integration. But that doesnt' seem very plausible, so giving the spatil interference account its due, they'd predict strong's result also. -->
 

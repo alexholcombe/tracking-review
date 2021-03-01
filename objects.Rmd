@@ -18,50 +18,33 @@ Not all aspects of our attention automatically spread throughout an object. Imag
 
 ![Alex Holcombe (he/him)](imagesForRmd/linesSchollPylyshynFeldman_madeByHolcombe.png){width=40%}
 
-Performance on this task was abysmal relative to a control condition in which participants tracked independent objects instead of 
+Performance on this task was abysmal relative to a control condition in which, essentially, the two ends of the line were not connected. When viewing an example trial, many people can quickly feel how difficult the task is.
 
-Perhaps some other aspect of attention spreads to the entire truee, even 
+INSERT MOVIE
 
-This indicates that humans have some capability for focused attention on individual regions of a larger object.
+Follow-up work by @howeCanAttentionBe2012 showed that the changing length of the lines is not the reason for the difficulty, which supports the interpretation that one cannot confine one's tracking processes to one bit of an undifferentiated object. Importantly, however, this may only be true when one is attempting to track *multiple* objects. If you watch the above movie again, this time concerning yourself with keeping track of the end of only one object, then you are likely to succeed. Apparently, there are abilities we have that can be brought to bear on one thing, but not multiple things.
 
-Perhaps some aspect of attention has spread to all of the plane's parts. However, our ability to make judgments about individual bits of the plane, even when keeping our eyes still, suggests that we also have some capability to select fairly arbitrary regions. That capability, however, is very different than the processes that, in the main, mediate multiple object tracking.
+Another explanation is that the same underlying resource is involved in both the ability to track one undifferentiated part of one object and the ability to track multiple objects. On this account, *more* resources are needed to track an undifferentiated part of an object rather than a different *kind* of resource. We will return to this possibility in \@ref{twoBrains} BLAH BLAH [two brains](#twoBrains) section.
 
-This fact was demonstrated in striking fashion by 
+This proposition, that there are actually two resources that can assist tracking, one with much more limited capacity (perhaps for just one object) and the other with fewer capabilities but higher capacity, is an intriguing one but not
 
-process is clearly very different from 
+A word of caution, however - because tracking performance decreases
 
+Those abilties of ours that have a capacity of just one remain somewhat obscure. There is an extensive literature on two-object costs. words Alex White However, 
+However, as we will see in velocityAndExtrapolation, there is evidence that some aspects of motion processing
 
-distant object, such as
-When we view a distan
+What these abilities are remains somewhat
 
-On any account, 
+Some mental processes seem to have a capacity of just one. That is, there are abilities we have that can be
 
-parts of it will occupy new territory while its 
+can succeed at tracking 
 
-track multiple moving objects. If 
+is not the case if one is 
 
-The tendency of attention to spatially spread to 
-
-If attention does have the property of spatially spread
-
-The term "object-based attention" refers to the idea that once attention has selected the area of an object, be that by 
+the processes that mediate tracki 
 
 
-When moving targets differ from distractors 
 
-other things need to be 
-
-Conceived of as a spread along the object until one hits its contours. However, it doesn't always work [@davisReversalObjectBased2005]. , and there is probably a publication bias problem to
-
-
-activation early visual cortices
-
-has shown that spatial selection is very robust
-
-
-in spatiotopic cortex that
-
-Usually, researchers write that 
 
 What is a moving object? People, animals, cars, leaves, and balls are all objects that change position smoothly and that we can keep track of in a crowd. But how do our brains 
 
