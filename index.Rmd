@@ -12,7 +12,7 @@ documentclass: book
 #Please change the output type of this document to HTML. Alternatively, you can allow
 #HTML output in non-HTML formats by adding this option to the YAML front-matter of your rmarkdown file:
 always_allow_html: true
-bibliography: [book.bib, packages.bib]
+bibliography: [CambridgeElement.bib, packages.bib]
 #In Zotero, create the book.bib file by going to object_tracking->CambridgeElement, select all items, right-click->Export items->BetterBibTex
 biblio-style: apalike
 link-citations: yes
