@@ -19,12 +19,12 @@ cat(
 )
 ```
 
-In Asteroids, it pays to monitor more than one of the moving objects, to determine which way one should move, or shoot, to prevent a collision. Asteroids was introduced in 1979, but psychologists were slow to use the associated technology to study how people processed multiple moving objects. Finally, in 1988, @pylyshynTrackingMultipleIndependent1988a used an Apple II+ computer to conduct an experiment that demonstrated that people could keep track of multiple moving objects. Pylyshyn & Storm showed that people can keep track of multiple moving objects designated as targets in a crowd of identical distractors.
+In Asteroids, it pays to monitor more than one of the moving objects, to determine which way one should move, or shoot, to prevent a collision. Asteroids was introduced in 1979, but psychologists were slow to use the associated technology to study how people processed multiple moving objects. Finally, in 1988, @pylyshynTrackingMultipleIndependent1988 used an Apple II+ computer to conduct an experiment that demonstrated that people could keep track of multiple moving objects. Pylyshyn & Storm showed that people can keep track of multiple moving objects designated as targets in a crowd of identical distractors.
 
 It was immediately apparent that the ability to track had a rather dramatic capacity limitation. That is, performance dropped quite rapidly as the number of targets was increased.
 
 For the particular object trajectories and speeds used by some researchers
-@pylyshynTrackingMultipleIndependent1988a, performance dropped rapidly
+@pylyshynTrackingMultipleIndependent1988, performance dropped rapidly
 
 
 This ability was also immediately observed to have a severe capacity limit. 
