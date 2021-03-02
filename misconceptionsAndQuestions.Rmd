@@ -8,6 +8,8 @@ Reading your paper also gave me an idea to have a Common Misconceptions section 
 
 ## Topics not covered by this review
 
-Retinotopic or spatiotopic and configural @gershman, @howeCoordinateSystemsUsed2010
+Retinotopic or spatiotopic and configural @yantisMultielementVisualTracking1992, @gershman, @howeCoordinateSystemsUsed2010
 
 expansion and contraction hurts position judgments @howeVisuallyTrackingLocalizing2013
+
+Role of surface features @papenmeierTrackingLocationFeatures2014

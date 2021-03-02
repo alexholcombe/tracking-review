@@ -8,7 +8,8 @@
 It is sometimes important to maintain one's attention on a moving object. Every parent knows this. At the playground, or at the beach, or at a school event, carers often find themselves monitoring specific children as they move among other moving children. On the sports field as well, players often find themselves trying to keep track of multiple team-mates and opponents and their spatial relationships to the ball. The first popular home game console, the Atari, introduced Asteroids, a game in which one must dodge irregular polygons streaming in all directions.
 
 ```{r, eval=knitr::is_html_output(excludes = "epub"), results = 'asis', echo = F}
-#Doesn't work in R's html viewer that pops up when you build the book, but does work in a real web browser
+#Doesn't work in PDF or even EPUB, that's why using exclusion code above.
+#Doesn't work in R's html viewer that pops up when you build the book, but does work in a real web browser.
 cat(
 '<iframe width="560" height="315" 
   src="https://youtube.com/embed/YJZ0hB0Vnyk"
@@ -19,6 +20,21 @@ cat(
 ```
 
 In Asteroids, it pays to monitor more than one of the moving objects, to determine which way one should move, or shoot, to prevent a collision. Asteroids was introduced in 1979, but psychologists were slow to use the associated technology to study how people processed multiple moving objects. Finally, in 1988, @pylyshynTrackingMultipleIndependent1988a used an Apple II+ computer to conduct an experiment that demonstrated that people could keep track of multiple moving objects. Pylyshyn & Storm showed that people can keep track of multiple moving objects designated as targets in a crowd of identical distractors.
+
+It was immediately apparent that the ability to track had a rather dramatic capacity limitation. That is, performance dropped quite rapidly as the number of targets was increased.
+
+For the particular object trajectories and speeds used by some researchers
+@pylyshynTrackingMultipleIndependent1988a, performance dropped rapidly
+
+
+This ability was also immediately observed to have a severe capacity limit. 
+
+Researchers quickly latched onto the word "attentional" to describe this ability, 
+in part because various 
+they surmised that
+
+
+Is object tracking just sustained attentional selection, when the objects happen to be moving? Well, a first question fundamentally is how do you keep your attention on the object? The literature on visual search is enormous but is almost exclusively about finding 
 
 Without continuous attentional selection, you not only lose your children
 
@@ -39,8 +55,6 @@ For the generations of children since 1979, when Asteroids was invented,
 You won't find much about this ability in chapters about visual attention. This is partly because for decades, the study of visual attention used only still, un-moving objects. 
 
 The study of visual attention took off in the 1970s with work by Eriksen, Treisman, . We learned an enormous amount about *static* objects.
-
-Is object tracking just sustained attentional selection, when the objects happen to be moving? Well, a first question fundamentally is how do you keep your attention on the object? The literature on visual search is enormous but is almost exclusively about finding 
 
 a huge topic, but 
 

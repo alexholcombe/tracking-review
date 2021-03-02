@@ -22,10 +22,34 @@ Performance on this task was abysmal relative to a control condition in which, e
 
 INSERT MOVIE
 
-Follow-up work by @howeCanAttentionBe2012 showed that the changing length of the lines is not the reason for the difficulty, which supports the interpretation that one cannot confine one's tracking processes to one bit of an undifferentiated object. Importantly, however, this may only be true when one is attempting to track *multiple* objects. If you watch the above movie again, this time concerning yourself with keeping track of the end of only one object, then you are likely to succeed. Apparently, there are abilities we have that can be brought to bear on one thing, but not multiple things.
+Follow-up work by @howeCanAttentionBe2012 showed that the changing length of the lines is not the reason for the difficulty, which supports the interpretation that one cannot confine one's tracking processes to one bit of an undifferentiated object. 
 
-Another explanation is that the same underlying resource is involved in both the ability to track one undifferentiated part of one object and the ability to track multiple objects. On this account, *more* resources are needed to track an undifferentiated part of an object rather than a different *kind* of resource. We will return to this possibility in \@ref{twoBrains} BLAH BLAH [two brains](#twoBrains) section.
+In the literature, commonly the word "attention" is used to refer both to the processing that determines how many things one can track and for the processes that determine what kinds of things can be tracked. However, one possibility is that these processes are quite distinct, with processes prior to tracking determining what counts as an "object" (a thing one can track), with subsequent stage(s) limiting how many such objects one can track. This is often how the processing for other tasks such as visual search has been conceptualized (e.g. @wolfePreattentiveObjectFiles1997), and appears to be the position assumed by [@schollObjectsAttentionState2001] in his review of objects and tracking.
 
+USE diagrammeR OR POWERPOINT TO MAKE A BOX DIAGRAM OF THIS, WITH OBJECT FORMATION PRIOR TO TRACKING
+
+I like to think that this view is correct, because studying a system comprising distinct stages is more straightforward than understanding a more interactive system @simonSciencesArtificialReissue1969 pp. 99-103?, but I do not know of good tests of this conjecture. One complication for exploring the issue is that one is not always unable to track an undifferentiated part of an object. In particular, the limitation is somewhat restricted to when one is attempting to track *multiple* objects.
+
+Watch the above movie again, this time concerning yourself with keeping track of the end of only *one* object. You are likely to succeed, which suggests there are tracking-relevant abilities that we have that can be brought to bear on one thing, but not multiple things. Perhaps covert multiple object tracking (MOT), true to its name, is qualitatively different from covertly tracking a single object.
+
+Another explanation is that the same underlying resource is involved in both the ability to track one undifferentiated part of one object and the ability to track multiple objects. On this account, *more* resources are needed to track an undifferentiated part of an object rather than a different *kind* of resource. We will return to this possibility in \@ref(twoBrains) 
+<!-- to give the cross-reference a name:   [two brains](#twoBrains) section.  -->
+
+It could be that what determines what objects are is a separate set of processes than those that actually do the tracking. This is what is advocated by Scholl. No interaction between number of objects to track and what kinds of objects can be tracked.
+
+A simple way to 
+This latter theory, that 
+
+The more simplistic theory, which may be true, is that there is a set of processes that determine what "counts" as an object for 
+
+The quest to understand what counts as an object 
+
+What is a moving object? People, animals, cars, leaves, and balls are all objects that change position smoothly and that we can keep track of in a crowd. But how do our brains 
+
+The water of a river, a creeping shadow, a slinking Slinky, an oozing
+
+ <!-- Also use Zenon Pylyshyn's examples of objects not represented well as objects, so PylyshynAttention_Lecture_class -->
+ 
 This proposition, that there are actually two resources that can assist tracking, one with much more limited capacity (perhaps for just one object) and the other with fewer capabilities but higher capacity, is an intriguing one but not
 
 A word of caution, however - because tracking performance decreases
@@ -33,26 +57,9 @@ A word of caution, however - because tracking performance decreases
 Those abilties of ours that have a capacity of just one remain somewhat obscure. There is an extensive literature on two-object costs. words Alex White However, 
 However, as we will see in velocityAndExtrapolation, there is evidence that some aspects of motion processing
 
-What these abilities are remains somewhat
 
 Some mental processes seem to have a capacity of just one. That is, there are abilities we have that can be
 
-can succeed at tracking 
-
-is not the case if one is 
-
-the processes that mediate tracki 
-
-
-
-
-What is a moving object? People, animals, cars, leaves, and balls are all objects that change position smoothly and that we can keep track of in a crowd. But how do our brains 
-
-The water of a river, a creeping shadow, a slinking Slinky, an oozing
-
-Some things 
-
-The visual system's creation of object representations that will be conveyed with the work of Brian Scholl and others on objecthood. The accompanying animated demonstrations will clearly convey that only some spatiotemporal structures can be easily tracked - that is, certain spatiotemporal patterns are grouped into objects. This will link to the grouping literature, while being forward looking, because much remains to be understood about the relation of tracking to objects. <!-- Also use Zenon Pylyshyn's examples of objects not represented well as objects, so PylyshynAttention_Lecture_class -->
 
 Mention the bendy-pencil illusion https://jov.arvojournals.org/article.aspx?articleid=2193187 and Gershman's hierarchical paper 
 From the bendy-pencil illusion paper: "One of the basic discoveries of Gestalt psychology is that the perceived trajectory of a moving object is not always determined by its relative motion with respect to the retina or the ground but may instead be based on its motion relative to other moving objects. The perceived motion of a rolling wheel provides an excellent example (see Duncker, 1929; Johansson, 1950; Rubin, 1927, for more examples). The trajectory of a single point on the wheel has the form of a cycloid, but its perceived trajectory is a simple rotary motion about the center of the wheel. Indeed, it is not possible to perceive the cycloidal trajectory, even if one tries, unless the point is presented in isolation."

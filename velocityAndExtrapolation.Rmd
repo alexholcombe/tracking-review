@@ -1,5 +1,7 @@
 # Velocity and extrapolation, not just position
 
+The role of motion signals . Seiffert
+
 Howard et al. (2011) provided an exhaustive review.  Eye movements lag -  Lukavsky & Dechterenko (2016)
 
 Integration: 
