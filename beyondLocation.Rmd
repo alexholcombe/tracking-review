@@ -1,0 +1,22 @@
+# Beyond location {#beyondLocation} 
+
+
+How well are other features besides position tracked?
+
+Blaser Pylyshyn Holcombe
+
+## Velocity and extrapolation, not just position
+
+The role of motion signals . Seiffert
+
+Lack of extrapolation:
+@howardPositionRepresentationsLag2011 included a review of the literature on keeping up with current position.  Eye movements lag -  @lukavskyGazePositionLagging2016
+
+Ryo Nakayama attention inertia theory
+
+What about updating of features? Well, updating of surface features seems to generally be crap, e.g. identity tracking is crap, Pailian
+
+Integration: 
+Relation to oscillations
+
+
