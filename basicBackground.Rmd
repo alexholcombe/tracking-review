@@ -1,12 +1,10 @@
-# Basic background
-
-## Bottlenecks
+# Bottlenecks and capacity 
 
 How many math problems can you simultaneously do in your head? Despite having over 80 billion neurons in your brain, you can probably only do one math problem in your head at a time. What if I gave you a simpler task, by showing you twenty words on a page - how many could you read simultaneously? A large body of psychological research suggests that humans can read only a few words at a time, or possibly only one at a time [@whiteEvidenceSerialProcessing2018]. Yet when light hits the back of our eyes, it is greeted by six million cones arrayed across each retina. Each bit of the image is simultaneously processed, as each has its own photoreceptors devoted just to it. At the retina, then, you process millions of small regions of the retina at the same time.
 
 As visual signals rocket into the brain, however, they are processed by neurons responsive to larger and larger regions of the visual field. Eventually they reach brain areas capable of doing things like recognizing complex objects like words. These brain areas do not have neurons that can recognize objects dedicated to each bit of the visual field. Instead, their simultaneous processing capacity is limited. Something, then, is needed to pick out, from a crowded scene, just one or a few objects for these areas to recognize. We call this something *attention*.
 
-While recognition of complex objects like words is one thing, necessarily involving a very sophisticated chain of processing, one would hope that simper visual judgments could be made about many areas of the visual field simultaneously. Well, for some, we can. We've all had the experience of "pop-out", where in some circumstances, we can quickly locate targets hidden in a large number of distractors. For example, try searching for the blue objects in the below display.
+While recognition of complex objects like words is one thing, necessarily involving a very sophisticated chain of processing, one would hope that simper visual judgments could be made about many areas of the visual field simultaneously. Well, for some judgments, we can. In some circumstances, we can quickly locate targets hidden in a large number of distractors. For example, try searching for the blue objects in the below display.
 
 ```{r, echo=FALSE, fig.cap = "", fig.height = 2.0, fig.width=2.5}
 #bookdown-demo_files/figure-html/unnamed-chunk-9-1.png ?
@@ -25,13 +23,30 @@ ggplot(pts,aes(x=x,y=y, color=type)) + geom_point(size=6)  +  theme_void() + the
 #+ ylim(ymin,ymax)
 ```
 
-You may feel that locating the three blue objects was extremely easy. The results of experiments indicate that the visual system processes each of the shapes simultaneously, which results in a very rapid determination of the locations of the three blue objects.
+Locating the three blue objects should be very easy. One reason is that our visual systems process each of the shapes simultaneously, and makes the locations of the blue objects available when you choose to attend to blue.
 
-Yet for other seemingly simple visual judgments, our capacity is much more limited. Duncan (1984) was interested in how many objects we can process at a time.
-https://psyc2016.whatanimalssee.com/bottlenecks.html#a-bottleneck-for-object-judgments
+For many other visual judgments, our processing capacity is much more limited. @duncanSelectiveAttentionOrganization1984 was interested in how many objects we can process at a time. He found that accuracy for making a simple visual judgment about an object was much worse when one needed to simultaneously make a judgment about another. For example, participants were asked to judge whether a briefly-presented rectangle was small or large and also judge whether a simultaneously presented line was dotted or dashed. Performance was  worse in the two-object condition even in comparison to a single-object condition where two judgments also needed to be made. The participants had to make either two judgments about a single object or one judgment about one object and the second judgment about a different object. To Duncan, his finding that performance was substantially worse in the two-object condition indicated the existence of a bottleneck at a stage that processes objects. He wrote, 
 
+> Findings support a view in which parallel, preattentive processes serve to segment the field into separate objects, followed by a process of focal attention that deals with only one object at a time.
 
-This section will explain how the limited size of our brains means that we cannot keep track of everything - humans have capacity limits and information processing bottlenecks. These points will be illustrated with simple diagrams and images. The reader should then be able to apppreciate the limitation on number of objects one can track in a basic multiple object tracking display; this will be illustrated with some a embedded animation of the task.
+This conclusion was a bit of an over-reach. Performance was better than one would expect if only one object were processed. Duncan could explain that by saying that the presentation time was adequate for focal attention to, on *some* trials, process more than one object. Alternatively, however, it may be that the relevant processes *can* process two objects at a time, but do so more poorly than they can process one object. 
+
+<!-- One concern with this conclusion was that the results might be explained by a bottleneck on the number of spatial locations that participants needed to process rather than the number of locations. However, subsequent work was more effective at spatially overlapping two objects, which diminished this concern [@blaserTrackingObjectFeaturespace2000]. 
+-->
+
+## the tracking bottleneck. Tracking capacity
+
+Like most visual judgments, the processing needed to covertly track objects also is subject to a bottleneck. When participants are asked to track more objects, they perform worse than when they are asked to track fewer objects. For example, @oksamaMultipleObjectTracking2004 designated between two and six objects as targets, among twelve identical objects in total. After the objects moved around randomly for five seconds, one object was flashed repeatedly and participants hit a key to indicate whether they thought it was one of the targets. The proportion of trials in which participants were wrong increased steadily with target size, from 3% incorrect with two targets, to 16% incorrect with six targets. Note that even with six targets, participants were performing substantially better than would be expected if they could only track one or two and had to guess on the others.
+
+<!-- https://psyc2016.whatanimalssee.com/bottlenecks.html#a-bottleneck-for-object-judgments -->
+
+Frequently you see people write that people can track "about four or five objects". Scholl equation assumes 100% correct for one target.
+
+Note that in Duncan's experiments, performance was worse for judgments about two objects rather than one, but performance was still above chance. 
+
+## The myth of a hard capacity limit
+
+it seems that it was somewhat a myth anyway that early researchers though there was a discontiniuity , or even an inflection point, in tracking performance at 4/5 objects. Alvarez & Franconeri (2007) in their Introduction claims that Pylyshyn & Storm 1988 and Yantis 1992 and Intriligator & Cavanagh 2001 all said you can only track up to 4 objects, but neither said any such thing, it seems from my reading of those papers, e.g.  Pylyshyn & Storm 1988 only went up to 5 out of 10 and there was gradual decrease in performance all the way through.
 
 Massively parallel and limited-capacity processing. This sub-section will explain that visual processing starts with massively parallel architecture but feeds into highly capacity-limited processes. Tracking acts on object representations created by the highly parallel early stages of the visual system.
 
@@ -39,7 +54,5 @@ Massively parallel and limited-capacity processing. This sub-section will explai
 
 At the beginning of an MOT task, such as Neurotracker, featural attention (to red, in the case of Neurotracker) is used to select the target objects. Selective attention must then be sustained on these objects when they become identical to the distractors, and then tracked as they move. For neurotypical individuals the initial selection process does not appear to be demanding (Drew & Vogel, 2008) –  the average capacity limit for selection is higher than that of tracking (Alvarez & Franconeri, 2007). When the number of objects to track is low and their speed slow, participants can track objects for at least ten minutes with little loss (Wolfe et al., 2007). Thus, while many potential athlete users may imagine that a test of attention tests how long they can pay attention, this is not likely to be the reason for differences among people on MOT performance. With featural attention (e.g., attention to color) needed for target acquisition unlikely to be taxed in typical people by Neurotracker, and only needed briefly, featural attention seems unlikely to improve with Neurotracker training.
 
-## The myth of a hard capacity limit
 
-it seems that it was somewhat a myth anyway that early researchers though there was a discontiniuity , or even an inflection point, in tracking performance at 4/5 objects. Alvarez & Franconeri (2007) in their Introduction claims that Pylyshyn & Storm 1988 and Yantis 1992 and Intriligator & Cavanagh 2001 all said you can only track up to 4 objects, but neither said any such thing, it seems from my reading of those papers, e.g.  Pylyshyn & Storm 1988 only went up to 5 out of 10 and there was gradual decrease in performance all the way through.
 

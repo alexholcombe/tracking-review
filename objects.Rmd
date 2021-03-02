@@ -18,7 +18,7 @@ Not all aspects of our attention automatically spread throughout an object. Imag
 
 ![Alex Holcombe (he/him)](imagesForRmd/linesSchollPylyshynFeldman_madeByHolcombe.png){width=40%}
 
-Performance on this task was abysmal relative to a control condition in which, essentially, the two ends of the line were not connected. When viewing an example trial, many people can quickly feel how difficult the task is.
+Performance on this task was abysmal relative to a control condition in which the two ends of the line were not connected.  When viewing an example trial, many people can quickly feel how difficult the task is.
 
 INSERT MOVIE
 
@@ -30,7 +30,7 @@ USE diagrammeR OR POWERPOINT TO MAKE A BOX DIAGRAM OF THIS, WITH OBJECT FORMATIO
 
 I like to think that this view is correct, because studying a system comprising distinct stages is more straightforward than understanding a more interactive system @simonSciencesArtificialReissue1969 pp. 99-103?, but I do not know of good tests of this conjecture. One complication for exploring the issue is that one is not always unable to track an undifferentiated part of an object. In particular, the limitation is somewhat restricted to when one is attempting to track *multiple* objects.
 
-Watch the above movie again, this time concerning yourself with keeping track of the end of only *one* object. You are likely to succeed, which suggests there are tracking-relevant abilities that we have that can be brought to bear on one thing, but not multiple things. Perhaps covert multiple object tracking (MOT), true to its name, is qualitatively different from covertly tracking a single object.
+Watch the above movie again, this time concerning yourself with keeping track of the end of only *one* object. You are likely to succeed. Indeed, @schollObjectsAttentionState2001 found that when participants were asked to track four line ends, their performance was very poor, but better than guessing. Specifically, their performance was approximately that predicted if they could track one line end, but no more. This finding suggests there are tracking-relevant abilities that we have that can be brought to bear on one thing, but not multiple things. Perhaps covert multiple object tracking (MOT), true to its name, is qualitatively different from covertly tracking a single object.
 
 Another explanation is that the same underlying resource is involved in both the ability to track one undifferentiated part of one object and the ability to track multiple objects. On this account, *more* resources are needed to track an undifferentiated part of an object rather than a different *kind* of resource. We will return to this possibility in \@ref(twoBrains) 
 <!-- to give the cross-reference a name:   [two brains](#twoBrains) section.  -->
