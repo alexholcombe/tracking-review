@@ -9,7 +9,7 @@ As visual signals rocket into the brain, however, they are processed by neurons 
 While recognition of complex objects like words is one thing, necessarily involving a very sophisticated chain of processing, one would hope that simper visual judgments could be made about many areas of the visual field simultaneously. Well, for some, we can. We've all had the experience of "pop-out", where in some circumstances, we can quickly locate targets hidden in a large number of distractors. For example, try searching for the blue objects in the below display.
 
 ```{r, echo=FALSE, fig.cap = "", fig.height = 2.0, fig.width=2.5}
-#https://psyc2016.whatanimalssee.com/bookdown-demo_files/figure-html/unnamed-chunk-9-1.png
+#bookdown-demo_files/figure-html/unnamed-chunk-9-1.png ?
 library(ggplot2)
 library(tibble)
 pts<- expand.grid(x = seq(2,16,2), y = seq(2,16,2), type = c("distractor"))

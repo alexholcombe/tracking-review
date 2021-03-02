@@ -27,7 +27,7 @@ This mini-book was written primarily for publication as a Cambridge Element, and
 
 Holcombe, A.O. (to appear). Tracking moving objects. Cambridge University Press. (DOI to come)
 
-You can read this on the web [here](https://psyc2016.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.  However, the web version is the only one you should rely on - some features (e.g. movies, some kinds of images) may be missing from the other formats.
+You can read this on the web [here](https://tracking.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.  However, the web version is the only one you should rely on - some features (e.g. movies, some kinds of images) may be missing from the other formats.
 
 Contact me (he/him) with any comments via [twitter](https://twitter.com/ceptional) or email - alex.holcombe@sydney.edu.au
 
