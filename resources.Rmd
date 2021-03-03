@@ -38,17 +38,17 @@ DiagrammeR::grViz("digraph {
 graph [layout = dot, rankdir = LR]
 
 # define the global styles of the nodes. We can override these in box if we wish
-node [shape = rectangle, style = filled, pencolor = White, fillcolor = Linen, fontsize = 40]
+node [shape = rectangle, style = filled, color=White, fillcolor = White, fontsize = 40]
 
-a [label = 'A', fillcolor = White]
+a [label = 'A']
 fixation [label =  '', shape=circle, fillcolor=Black, width=.1, height=.1]
-b [label = 'B', fillcolor=White]
-c [label = 'C', fillcolor=White]
-d [label = 'D', fillcolor=White]
-e [label = 'E', fillcolor=White]
-f [label = 'F', fillcolor=White]
-g [label = 'G', fillcolor=White]
-h [label = 'H', fillcolor=White]
+b [label = 'B']
+c [label = 'C']
+d [label = 'D']
+e [label = 'E']
+f [label = 'F']
+g [label = 'G']
+h [label = 'H']
 
 # edge definitions with the node IDs
 edge [label='', penwidth=0, arrowsize=0]
@@ -59,6 +59,7 @@ edge [label='', penwidth=0, arrowsize=0]
 c -> d
 edge [label='', penwidth=0, arrowsize=0]
 d -> fixation
+
 edge [label='', penwidth=0, arrowsize=0]
 fixation -> e
 edge [label='', penwidth=0, arrowsize=0]
