@@ -1,4 +1,4 @@
-# What aspect of tracking is the limiting factor
+# Which aspect(s) of tracking determine performance?
 
 Why do people perform more poorly with more targets? The processes involved must be, by definition, capacity-limited in that they do worse with more targets. But what aspect of the tracking task does lack of capacity cause them to suffer from more?
 
@@ -21,11 +21,61 @@ The reason for the reduction in performance with greater time observed by @oksam
  
 ## Spatial selection of multiple locations
 
-It is conceivable that 
+At the beginning of an MOT task, featural attention is typically used to select the target objects, as they are typically highlighted with a different color or by flicker. Both @drewNeuralMeasuresIndividual2008 and @franconeriHowManyLocations2007 found evidence that this was not as demanding as the motion phase of the tracking task. However, the selection phase may still be demanding enough to result in incorrect responses on many trials, and thus affect overall performance, and do so to a greater extent when there are more targets. 
+In the experiments by @franconeriHowManyLocations2007, participants two concentric circular arrays of dots centered on fixation. Between one and eight of these dots were briefly highlighted, and then each dot was replaced by either a small horizontal or a small vertical bar. The participants' task was to search for a vertical bar, but to confine their search to only the previously-cued locations. They pressed one key if a vertical bar was present among the cued locations, and another key if none of those locations contained a vertical bar.
 
-We will consider each of these
+In a relatively easy condition (a sparse condition with only 12 locations), average performance dropped from 98% for two cued locations to 91% for six locations. Such a small decrease suggests that if this result were to generalize to typical MOT displays, the selection phase would contribute only a small portion of the performance decrease with greater set sizes. MOT displays typically do only have 12 or fewer objects. However, they frequently are much closer to each other than the spacing that @franconeriHowManyLocations2007 used in their sparse condition. In the denser conditions tested by @franconeriHowManyLocations2007, performance again started at a very high level for two cued locations, but dropped much more, to 74% correct or less for six cued locations.
 
-At the beginning of an MOT task, featural attention is typically used to select the target objects, as they are typically highlighted with a different color or by flicker. For neurotypical individuals the initial selection phase does not seem to be as demanding (Drew & Vogel, 2008) as the subsequent tracking phase is; the capacity limit for selection is higher [@alvarezHowManyObjects2007] than that of the MOT task overall.
+The initial selection demands in a typical MOT task are likely less taxing than in these experiments, because participants need only maintain their attention on the objects, not search through them. However, it is not clear how much less demanding maintained attention is, so we still do not know how much of the target-number effect in typical MOT displays is due to failures at the very beginning of a trial. The density effect observed by @franconeriHowManyLocations2007 suggests a role for spatial interference in typical MOT experiment, which is the factor we turn to next. 
+
+## Spatial interference
+
+Long before @franconeriHowManyLocations2007 conducted their experiments on the selection of multiple locations with different densities, researchers had recognized the existence of spatial interference in dense displays [@wolfordPerturbationModelLetter1975; @korteUberGestaltauffassungIm1923].
+
+```{r, echo=FALSE, fig.cap = ""}
+DiagrammeR::grViz("digraph {
+
+graph [layout = dot, rankdir = LR]
+
+# define the global styles of the nodes. We can override these in box if we wish
+node [shape = rectangle, style = filled, pencolor = White, fillcolor = Linen, fontsize = 40]
+
+a [label = 'A', fillcolor = White]
+fixation [label =  '', shape=circle, fillcolor=Black, width=.1, height=.1]
+b [label = 'B', fillcolor=White]
+c [label = 'C', fillcolor=White]
+d [label = 'D', fillcolor=White]
+e [label = 'E', fillcolor=White]
+f [label = 'F', fillcolor=White]
+g [label = 'G', fillcolor=White]
+h [label = 'H', fillcolor=White]
+
+# edge definitions with the node IDs
+edge [label='', penwidth=0, arrowsize=0]
+a  -> b;
+edge [label='', penwidth=0, arrowsize=0]
+b -> c
+edge [label='', penwidth=0, arrowsize=0]
+c -> d
+edge [label='', penwidth=0, arrowsize=0]
+d -> fixation
+edge [label='', penwidth=0, arrowsize=0]
+fixation -> e
+edge [label='', penwidth=0, arrowsize=0]
+e -> f
+edge [label='', penwidth=0, arrowsize=0]
+f -> g
+edge [label='', penwidth=0, arrowsize=0]
+g -> h
+}")
+```
+
+Crowding
+
+These results suggest that a good deal of the reason for poor performance with typical MOT displays is that participants fai
+
+
+For neurotypical individuals the initial selection phase does not seem to be as demanding (Drew & Vogel, 2008) as the subsequent tracking phase is; the capacity limit for selection is higher [@alvarezHowManyObjects2007] than that of the MOT task overall.
 
 Thus, the factor in MOT tasks that limits performance appears to be something about the trajectories and speeds of the moving objects.
 
