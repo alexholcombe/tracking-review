@@ -1,7 +1,7 @@
 book_filename: "tracking-review"
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: "Section "
 delete_merged_file: true
 rmd_files: ["index.Rmd", "01-outline.Rmd", "basicBackground.Rmd", "objects.Rmd", "resources.Rmd", "twoBrainsOrOne.Rmd", "serialOrParallel.Rmd", "beyondLocation.Rmd", "speedAndTime.Rmd",  "identity.Rmd", "abilities.Rmd", "realWorld.Rmd", "misconceptionsAndQuestions.Rmd", "references.Rmd"]
 
