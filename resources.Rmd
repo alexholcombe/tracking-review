@@ -1,6 +1,39 @@
-# Resources or spatial interference?
+# What aspect of tracking is the limiting factor
 
-Why is it that we are so limited in how many objects we can track and how many locations or objects we can keep in mind? A central bottleneck needn't be the only issue, or even the main one. An important factor is the way the visual cortex is organized. Much of visual processing is done by neurons devoted to individual regions of the visual field, arranged like a map, with neighboring regions represented by neurons that are next to each other. In at least some circumstances, neighboring clusters of neurons inhibit each other. We will refer to the interference triggered by neighboring objects as spatial interference.
+Why do people perform more poorly with more targets? The processes involved must be, by definition, capacity-limited in that they do worse with more targets. But what aspect of the tracking task does lack of capacity cause them to suffer from more?
+
+Below is a list of candidate reasons for the factors that impair performance more when there are more targets:
+In a typical MOT task, any of the below are candidates for being one of the reasons, or the main reason, that performance declines with number of targets:
+
+1. Duration that one can sustain attention
+1. Spatial selection of multiple locations, even static ones
+1. Spatial interference
+1. Temporal interference
+1. Speed limit of attention-following
+
+## Duration that one can sustain attention
+
+The first possibility is that tracking is largely a test of how long one can sustain attention, with additional demands on attention (more targets) reducing the average amount of time one can sustain attention without a lapse. However, @wolfeMultipleObjectJuggling2007 presented data suggesting that this need not be the case. In their Experiment 3, participants were required to track four targets for a period of ten minutes. Every 9 seconds or so, one object was highlighted and participants had to indicate whether it was one of the targets. In a no-feedback condition, participants were not told whether their individual responses were correct. In that situation, performance was substantially worse in the last few minutes of the trial than in the first few minutes (78% correct vs. 65% correct). However, in the feedback condition wherein participants were told immediately after each judgment whether they were correct, performance did not appear to decline over time. These results suggest that if participants are adequately motivated by feedback, they have considerable ability to track for several minutes with no appreciable loss. The comparison between the feedback and no-feedback conditions is not perfect as the feedback does provide a cue that can increase performance (when participants get the probe wrong, they can increase subsequent performance somewhat by switching to another target), but this confound does not seem to be able to explain the lack of almost any performance loss in the feedback condition.
+
+The circumstances used by @wolfeMultipleObjectJuggling2007 were quite different from a prototypical MOT task, not least because of the extended durations of the trials. Most researchers use trial durations of less than 10 seconds, and it is not clear whether the @wolfeMultipleObjectJuggling2007 results would generalize. It seems likely that participants can attend for several seconds without losing much motivation, but @oksamaMultipleObjectTracking2004 found a substantial decrease in performance for trials of 13 s compared to trials of 5 s. With four targets, for example, performance fell from 91% correct to 74% correct, and this decrease was somewhat greater for larger numbers of targets than for fewer targets. Byrne & Holcombe (unpublished data) did not find any significant decrease over a comparable interval, and the explanation for these discrepancies is uncertain, although it may again be related to participants' motivation.
+
+The reason for the reduction in performance with greater time observed by @oksamaMultipleObjectTracking2004 may easily be due to another factor rather than an increase in lapses of attention. In the MOT tasks used by all of these researchers, with longer trials there is likely to be more instances of potential spatial interference, temporal interference, and running afoul of any attentional speed limit. Thus, if any of those factors matter, they could explain the decrease in performance with time. However, the @wolfeMultipleObjectJuggling2007 does seem to provide a kind of existence proof that lapses of attention need not be the limiting factor. Granting that that may be the case, an additional question is why, if other factors are in operation, there was *no* evidence of a performance decrease over time in @wolfeMultipleObjectJuggling2007? Well, @wolfeMultipleObjectJuggling2007 averaged performance over approximately the first third of the ten-minute interval and compared it to the last third. In the feedback condition, it is possible that all the worst possible events (such as close approaches, causing greater spatial interference) had already occurred by the end of the first third, so whatever level of performance participants were left with at that point already reflected their capacity to track through the most difficult events, which they were then able to continue to do until the end of the trial. Over a shorter time range such as that used by @oksamaMultipleObjectTracking2004, this may not have been the case.
+ 
+## Spatial selection of multiple locations
+
+It is conceivable that 
+
+We will consider each of these
+
+At the beginning of an MOT task, featural attention is typically used to select the target objects, as they are typically highlighted with a different color or by flicker. For neurotypical individuals the initial selection phase does not seem to be as demanding (Drew & Vogel, 2008) as the subsequent tracking phase is; the capacity limit for selection is higher [@alvarezHowManyObjects2007] than that of the MOT task overall.
+
+Thus, the factor in MOT tasks that limits performance appears to be something about the trajectories and speeds of the moving objects.
+
+## Resources or spatial interference?
+
+Why is it that we are so limited in how many objects we can track and how many locations or objects we can keep in mind? That is, what is it that makes tracking hard? It seems to be something about the movement of the objects, because people have little difficulty remembering the locations of X objects or more in a static array [@franconeriHowManyLocations2007].
+
+A central bottleneck needn't be the only issue, or even the main one. An important factor is the way the visual cortex is organized. Much of visual processing is done by neurons devoted to individual regions of the visual field, arranged like a map, with neighboring regions represented by neurons that are next to each other. In at least some circumstances, neighboring clusters of neurons inhibit each other. We will refer to the interference triggered by neighboring objects as spatial interference.
 
 Steven Franconeri and colleagues made the bold proposal that spatial interference is essentially the *only* thing keeping us from the ability to track an unlimited nunber of targets [@franconeriTrackingMultipleObjects2010; @franconeriFlexibleCognitiveResources2013].
 
