@@ -5,11 +5,15 @@ Why do people perform more poorly with more targets? The processes involved must
 Below is a list of candidate reasons for the factors that impair performance more when there are more targets:
 In a typical MOT task, any of the below are candidates for being one of the reasons, or the main reason, that performance declines with number of targets:
 
+1. General cognition
 1. Duration that one can sustain attention
 1. Spatial selection of multiple locations, even static ones
 1. Spatial interference
 1. Temporal interference
 1. Speed limit of attention-following
+
+## General cognitive mechanisms
+
 
 ## Duration that one can sustain attention
 
@@ -40,17 +44,22 @@ graph [layout = dot, rankdir = LR]
 # define the global styles of the nodes. We can override these in box if we wish
 node [shape = rectangle, style = filled, color=White, fillcolor = White, fontsize = 40]
 
-a [label = 'N']
-fixation [label =  '', shape=circle, fillcolor=Black, width=.1, height=.1]
-b [label = 'T']
-c [label = 'H']
-d [label = 'B']
-e [label = 'F']
+a [label = 'O']
+fixation [label =  '', shape=circle, fillcolor=Black, width=.2, height=.2]
+b [label = ' ']
+c [label = ' ']
+d [label = 'J']
+e [label = ' ']
+e2 [label = ' ']
+e3 [label = 'S']
+
 f [label = 'O']
 g [label = 'R']
 h [label = 'L']
-i [label = 'J']
+i [label = 'H']
 j [label = 'Y']
+k [label = 'M']
+l [label = 'S']
 
 # edge definitions with the node IDs
 edge [label='', penwidth=0, arrowsize=0]
@@ -62,7 +71,11 @@ c -> d
 edge [label='', penwidth=0, arrowsize=0]
 d -> e
 edge [label='', penwidth=0, arrowsize=0]
-e -> fixation
+e -> e2
+edge [label='', penwidth=0, arrowsize=0]
+e2 -> e3
+edge [label='', penwidth=0, arrowsize=0]
+e3 -> fixation
 
 edge [label='', penwidth=0, arrowsize=0]
 fixation -> f
@@ -74,19 +87,29 @@ edge [label='', penwidth=0, arrowsize=0]
 h -> i
 edge [label='', penwidth=0, arrowsize=0]
 i -> j
+edge [label='', penwidth=0, arrowsize=0]
+j -> k
+edge [label='', penwidth=0, arrowsize=0]
+k -> l
 }")
 ```
+
+If you gaze at the central dot in the above display, you likely will be able to perceive the middle letter to the left fairly easily (it is a 'J'). However, if you again keep your eyes fixed on the central dot, but this time try to perceive the central letter to the right, it should be much more difficult. This is called "crowding".
+
+Crowding refers to the spatial impairment of visual processing caused by stimuli that are near a target stimulus. It has been studied extensively in experiments that typically ask a participant to identify a single, motionless, briefly-presented stimulus such as a letter. Those studies have shown that crowding can be avoided if the flanking stimuli are presented sufficiently far away from a target. That distance varies depending on the display spatial arrangement and on the person, but on average extends to about half the eccentricity of the target, with the interference diminishing rapidly as separation increases beyond that [@boumaInteractionEffectsParafoveal1970a; @gurnseyCrowdingSizeEccentricity2011]. For example, in the display above, the letters on the same side as the 'J' are separated from it by more than half the 'J's distance from the fixation point, so they have little to no effect on its identification.
+
+The overwhelming majority of MOT papers use trajectories for which the objects frequently come much closer to each other than the crowding zone. As a result, some of the difficulty in covert MOT stems from crowding of the targets. 
 
 In the above display BLAH BLAH. Crowding can be experienced 
 
 These results suggest that a good deal of the reason for poor performance with typical MOT displays is that participants fai
 
-Research papers have found that the range of this flanking object interference on identification depends on the participant, but extends to a bit more than half of a target's eccentricity [@boumaInteractionEffectsParafoveal1970 @gurnseyCrowdingSizeEccentricity2011]. In other words, if one is 
 
   indivdual differences @petrovAsymmetriesIdiosyncraticHot2011, including greater crowding in a subpopulation of people with dyslexia @jooOptimizingTextIndividual2018
 
 Typical MOT displays 
 However, 
+
 ## Resources or spatial interference?
 
 Why is it that we are so limited in how many objects we can track and how many locations or objects we can keep in mind? That is, what is it that makes tracking hard? It seems to be something about the movement of the objects, because people have little difficulty remembering the locations of X objects or more in a static array [@franconeriHowManyLocations2007].

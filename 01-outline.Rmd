@@ -5,6 +5,13 @@
 
 ## Tracking task short description and anecdotes
 
+On the road, drivers monitor the movements of others’ vehicles. In 
+In sports, and in videogames, players track the positions of their opponents. In a conference hall, scientists monitor the position and posture of another researcher 
+
+movements of another researcher relative to, and their body posture, relative to ano
+At the beach, parents keep watch as
+their children move in and out of the water.
+
 It is sometimes important to maintain one's attention on a moving object. Every parent knows this. At the playground, or at the beach, or at a school event, carers often find themselves monitoring specific children as they move among other moving children. On the sports field as well, players often find themselves trying to keep track of multiple team-mates and opponents and their spatial relationships to the ball. The first popular home game console, the Atari, introduced Asteroids, a game in which one must dodge irregular polygons streaming in all directions.
 
 ```{r, eval=knitr::is_html_output(excludes = "epub"), results = 'asis', echo = F}
