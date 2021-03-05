@@ -9,7 +9,12 @@ Blaser Pylyshyn Holcombe
 
 The role of motion signals . Seiffert
 
+@fencsikRoleLocationMotion2007 @howeMotionInformationSometimes2012 both found evidence that motion is used for one or two targets but not more
+
 Lack of extrapolation:
+
+@fencsikRoleLocationMotion2007 found it for one and two targets but not more
+
 @howardPositionRepresentationsLag2011 included a review of the literature on keeping up with current position.  Eye movements lag -  @lukavskyGazePositionLagging2016
 
 Ryo Nakayama attention inertia theory
