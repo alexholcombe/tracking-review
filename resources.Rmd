@@ -12,12 +12,19 @@ In a typical MOT task, any of the below are candidates for being one of the reas
 1. Temporal interference
 1. Speed limit of attention-following
 
-## General cognitive mechanisms
+## C=1 processes
 
+In introducing the concept of a bottleneck or capacity limit in the previous section, I used the example of math problems. Using our capacity for reasoning and symbol manipulation, we can perform a wide array of arbitrary tasks. We therefore should not be surprised by our ability to track a *single* target. We know that we have a visual system that makes the position and direction of motion of objects on our retina available to cognition, and that using our ability to think about where an object is going and deliberately move our attention to a future anticipated location, we might muddle through tracking a single object. For purposes of illustration, let us call the processes involved "C=1 processes" to reflect the possibility that some cognitive processes involved have a capacity of only one object.
+
+What makes MOT interesting to many is that we can track more than one target. This implicates the involvement of another, higher-capacity sort of processing. The contribution to MOT of two kinds of processing, with different capacity limits, complicates the interpretation of MOT results. Even when participants are asked to track several targets, one can expect that C=1 processes are contributing to overall performance, even if they are only involved in the processing of one of the targets.
+
+Thus, when researchers contrast tracking performance with different numbers of targets, one reason for the decline in performance may be that C=1 processes are, in each condition, processing only a single target, so performance declines in inverse proportion to the number of targets.
+
+<!-- Unfortunately, researchers frequently neglect the fact that two sorts of mental abilities likely contribute to MOT performance: one or some limited in capacity to just a single target, and others with a greater processing capacity.  -->
 
 ## Duration that one can sustain attention
 
-The first possibility is that tracking is largely a test of how long one can sustain attention, with additional demands on attention (more targets) reducing the average amount of time one can sustain attention without a lapse. However, @wolfeMultipleObjectJuggling2007 presented data suggesting that this need not be the case. In their Experiment 3, participants were required to track four targets for a period of ten minutes. Every 9 seconds or so, one object was highlighted and participants had to indicate whether it was one of the targets. In a no-feedback condition, participants were not told whether their individual responses were correct. In that situation, performance was substantially worse in the last few minutes of the trial than in the first few minutes (78% correct vs. 65% correct). However, in the feedback condition wherein participants were told immediately after each judgment whether they were correct, performance did not appear to decline over time. These results suggest that if participants are adequately motivated by feedback, they have considerable ability to track for several minutes with no appreciable loss. The comparison between the feedback and no-feedback conditions is not perfect as the feedback does provide a cue that can increase performance (when participants get the probe wrong, they can increase subsequent performance somewhat by switching to another target), but this confound does not seem to be able to explain the lack of almost any performance loss in the feedback condition.
+Tracking may be, in part, a test of how long one can sustain attention. There also is some possibility that additional demands on attention (more targets) reducing the average amount of time one can sustain attention without a lapse. The results of @wolfeMultipleObjectJuggling2007, suggest that this need not be the case. In their Experiment 3, participants were required to track four targets for a period of ten minutes. Every 9 seconds or so, one object was highlighted and participants had to indicate whether it was one of the targets. In a no-feedback condition, participants were not told whether their individual responses were correct. In that situation, performance was substantially worse in the last few minutes of the trial than in the first few minutes (78% correct vs. 65% correct). However, in the feedback condition wherein participants were told immediately after each judgment whether they were correct, performance did not appear to decline over time. These results suggest that if participants are adequately motivated by feedback, they have considerable ability to track for several minutes with no appreciable loss. The comparison between the feedback and no-feedback conditions is not perfect as the feedback does provide a cue that can increase performance (when participants get the probe wrong, they can increase subsequent performance somewhat by switching to another target), but this confound does not seem to be able to explain the lack of almost any performance loss in the feedback condition.
 
 The circumstances used by @wolfeMultipleObjectJuggling2007 were quite different from a prototypical MOT task, not least because of the extended durations of the trials. Most researchers use trial durations of less than 10 seconds, and it is not clear whether the @wolfeMultipleObjectJuggling2007 results would generalize. It seems likely that participants can attend for several seconds without losing much motivation, but @oksamaMultipleObjectTracking2004 found a substantial decrease in performance for trials of 13 s compared to trials of 5 s. With four targets, for example, performance fell from 91% correct to 74% correct, and this decrease was somewhat greater for larger numbers of targets than for fewer targets. Byrne & Holcombe (unpublished data) did not find any significant decrease over a comparable interval, and the explanation for these discrepancies is uncertain, although it may again be related to participants' motivation.
 
@@ -34,7 +41,7 @@ The initial selection demands in a typical MOT task are likely less taxing than 
 
 ## Spatial interference
 
-Long before @franconeriHowManyLocations2007 conducted their experiments on the selection of multiple locations with different densities, researchers had recognized the existence of spatial interference in dense displays [@wolfordPerturbationModelLetter1975; @korteUberGestaltauffassungIm1923; @strasburgerDancingLettersTicks2014].
+Long before @franconeriHowManyLocations2007 conducted experiments on the selection of multiple locations with different densities, researchers had recognized the existence of spatial interference in dense displays [@wolfordPerturbationModelLetter1975; @korteUberGestaltauffassungIm1923; @strasburgerDancingLettersTicks2014].
 
 ```{r, echo=FALSE, fig.cap = ""}
 DiagrammeR::grViz("digraph {
@@ -98,19 +105,18 @@ If you gaze at the central dot in the above display, you likely will be able to 
 
 Crowding refers to the spatial impairment of visual processing caused by stimuli that are near a target stimulus. It has been studied extensively in experiments that typically ask a participant to identify a single, motionless, briefly-presented stimulus such as a letter. Those studies have shown that crowding can be avoided if the flanking stimuli are presented sufficiently far away from a target. That distance varies depending on the display spatial arrangement and on the person, but on average extends to about half the eccentricity of the target, with the interference diminishing rapidly as separation increases beyond that [@boumaInteractionEffectsParafoveal1970a; @gurnseyCrowdingSizeEccentricity2011]. For example, in the display above, the letters on the same side as the 'J' are separated from it by more than half the 'J's distance from the fixation point, so they have little to no effect on its identification.
 
-The overwhelming majority of MOT papers use trajectories for which the objects frequently come much closer to each other than the crowding zone. As a result, some of the difficulty in covert MOT stems from crowding of the targets. 
+The overwhelming majority of MOT papers use trajectories for which targets frequently come within the crowding distance of another target or distractor. As a result, crowding likely contributes to tracking performance. In addition, crowding appears to be subject to substantial individual differences [@petrovAsymmetriesIdiosyncraticHot2011], including larger crowding zones in a subpopulation of persons with dyslexia @jooOptimizingTextIndividual2018, so it likely also explains some of the variation in tracking performance between people.
 
-In the above display BLAH BLAH. Crowding can be experienced 
+@franconeriTrackingMultipleObjects2010a claimed that spatial interference is the *only* reason why performance is worse when more targets are to be tracked, denying any role for speed, time, or any non-spatial form of processing capacity. Moreover, @franconeriTrackingMultipleObjects2010a implied that this interference extends over a much greater distance than the crowding range documented in the psychophysics literature. HOWEVER, @franconeriTrackingMultipleObjects2010a did not succeed in isolating the distance between objects, and careful parametric variation of separation has found evidence for tracking interference only within the crowding range [@holcombeObjectTrackingAbsence2014; @holcombeExhaustingAttentionalTracking2012].
 
-These results suggest that a good deal of the reason for poor performance with typical MOT displays is that participants fai
-
-
-  indivdual differences @petrovAsymmetriesIdiosyncraticHot2011, including greater crowding in a subpopulation of people with dyslexia @jooOptimizingTextIndividual2018
-
-Typical MOT displays 
-However, 
+However, what remains under-studied is whether, or by how much, the crowding range increases with the number of objects that should be monitored. @holcombeObjectTrackingAbsence2014 compared one targets to two but 
 
 ## Resources or spatial interference?
+
+
+However, this sort of interference may be closer to the answer for why we are limited in the number of objects we can keep in mind. Hundreds of studies over the past few decades have had people briefly view an array of stationary objects, and then try to recall them a few seconds later. The data may be best explained by the limited number of neurons available to represent the objects [@schneegansStochasticSamplingProvides2020]. The early cortical areas that encode the sensory signals from visual objects may play a key role in short-term memory for visual features [@christophelDistributedNatureWorking2017]. Recent models of short-term memory, then, assume that the features of each object are represented by populations of neurons that are tuned to that feature. For example, if the array comprises a red object, a green object, and a  blue object...
+
+
 
 Why is it that we are so limited in how many objects we can track and how many locations or objects we can keep in mind? That is, what is it that makes tracking hard? It seems to be something about the movement of the objects, because people have little difficulty remembering the locations of X objects or more in a static array [@franconeriHowManyLocations2007].
 
@@ -120,7 +126,7 @@ Steven Franconeri and colleagues made the bold proposal that spatial interferenc
 
 There is no doubt that spatial interference is a big problem in many visual tasks. One very well-studied form of spatial interference is called _crowding_. Most work on crowding has investigated how flanking objects impair the ability to identify a target. However, crowding also can prevent attentional selection from individuating a target. [@intriligatorSpatialResolutionVisual2001]
 
-Crowding is quite noticeable in the following display. [Here, a static crowding demonstration will be given, and the reader walked through it].
+Crowding is quite noticeable in the following display. 
 
 As the demonstration illustrates, crowding seems to affect perception of the qualities of an object much more than the ability to simply see that it is there. But in typical laboratory object tracking tasks, one doesn't need to perceive anything in particular about a target, just that it's _there_. According to Pelli's 
 
@@ -137,8 +143,5 @@ Each was accompanied by a distractor moving along the same trajectory but placed
 Interference among neighboring neural populations in spatiotopic maps does not seem to be the answer, then, to why we can track only a few fast-moving objects. But the nature of the tracking bottleneck is still far from clear.
 
 In the area of visual working memory, recent work has had success with the proposition that processing capacity reflects the flexible use of a limited population of neurons...
-<!--
-However, this sort of interference may be closer to the answer for why we are limited in the number of objects we can keep in mind. Hundreds of studies over the past few decades have had people briefly view an array of stationary objects, and then try to recall them a few seconds later. The data may be best explained by the limited number of neurons available to represent the objects [@schneegansStochasticSamplingProvides2020]. The early cortical areas that encode the sensory signals from visual objects may play a key role in short-term memory for visual features [@christophelDistributedNatureWorking2017]. Recent models of short-term memory, then, assume that the features of each object are represented by populations of neurons that are tuned to that feature. For example, if the array comprises a red object, a green object, and a  blue object...
--->
 
 Abilities, dual-task interference, and individual differences are discussed in a later chapter 

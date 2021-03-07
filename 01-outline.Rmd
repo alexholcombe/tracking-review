@@ -5,14 +5,11 @@
 
 ## Tracking task short description and anecdotes
 
-On the road, drivers monitor the movements of others’ vehicles. In 
-In sports, and in videogames, players track the positions of their opponents. In a conference hall, scientists monitor the position and posture of another researcher 
+On the road, drivers monitor the movements of others’ vehicles. In conference halls, scientists monitor the position and posture of other researchers relative to the ones they are chatting to, in order to best time their approach. At the beach, parents keep watch as their children move in and out of the water. On the sports field, players often find themselves trying to keep track of multiple team-mates and opponents and their spatial relationships to the ball.
 
-movements of another researcher relative to, and their body posture, relative to ano
-At the beach, parents keep watch as
-their children move in and out of the water.
+How do we do this and what does that tell us about how the mind works?
 
-It is sometimes important to maintain one's attention on a moving object. Every parent knows this. At the playground, or at the beach, or at a school event, carers often find themselves monitoring specific children as they move among other moving children. On the sports field as well, players often find themselves trying to keep track of multiple team-mates and opponents and their spatial relationships to the ball. The first popular home game console, the Atari, introduced Asteroids, a game in which one must dodge irregular polygons streaming in all directions.
+Until the late 1980s, almost no-one who studied attention used moving objects. Partly this was a technology issue, even though in 1979, the first popular home game console, the Atari, introduced Asteroids.
 
 ```{r, eval=knitr::is_html_output(excludes = "epub"), results = 'asis', echo = F}
 #Doesn't work in PDF or even EPUB, that's why using exclusion code above.
@@ -26,7 +23,7 @@ cat(
 )
 ```
 
-In Asteroids, it pays to monitor more than one of the moving objects, to determine which way one should move, or shoot, to prevent a collision. Asteroids was introduced in 1979, but psychologists were slow to use the associated technology to study how people processed multiple moving objects. Finally, in 1988, @pylyshynTrackingMultipleIndependent1988 used an Apple II+ computer to conduct an experiment that demonstrated that people could keep track of multiple moving objects. Pylyshyn & Storm showed that people can keep track of multiple moving objects designated as targets in a crowd of identical distractors.
+The task was to shoot and dodge the asteroids that are streaming in all directions. It pays to monitor more than one of the moving objects, to determine which way one should move, or shoot, to prevent a collision. Psychologists were slow to use the associated technology to study how people processed multiple moving objects. Finally, in 1988, @pylyshynTrackingMultipleIndependent1988 used an Apple II+ computer to conduct an experiment that demonstrated that people could keep track of multiple moving objects. Pylyshyn & Storm showed that people can keep track of multiple moving objects designated as targets in a crowd of identical distractors.
 
 It was immediately apparent that the ability to track had a rather dramatic capacity limitation. That is, performance dropped quite rapidly as the number of targets was increased.
 
