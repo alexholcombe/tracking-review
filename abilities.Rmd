@@ -9,4 +9,9 @@ to learn about attention from selected neuropsychological measures.
 
 " several studies have shown dissociations between MOT and visuo-spatial working memory [@bettencourtSharedFilteringProcesses2011] ( \O. L. Carter et al., 2005; O’Hearn et al., 2010). Furthermore, Trick et al. (2012) showed that visuospatial ability (including Corsi Blocks, a spatial span variant) but not working memory, predicts MOT."
 
+@howardVisualSpatialAttention2020 "for a purely spatial task, perceptual attention (TRACKING?) and working memory appear to recruit separate core capacity-limited processes."
+
 "Souza & Oberauer (2017) argued that VWM and MOT use different attentional resources."
+
+Study of only 12 pro basketball players finding correlations with basketball metrics @mangineVisualTrackingSpeed2014a
+

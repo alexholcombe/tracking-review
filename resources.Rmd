@@ -126,9 +126,12 @@ If objects are moving fast enough, they are perceived to blur together, because 
 ## Speed limit of attention-following
 
 
+## Moving forward
+
+Each of these could hinder performance more with more targets. They contribute in an unknown mix to most trakcing tasks .
+Thus we don't know which is responsible for various results. For example, 
 
 ## Resources?
-
 
 However, this sort of interference may be closer to the answer for why we are limited in the number of objects we can keep in mind. Hundreds of studies over the past few decades have had people briefly view an array of stationary objects, and then try to recall them a few seconds later. The data may be best explained by the limited number of neurons available to represent the objects [@schneegansStochasticSamplingProvides2020]. The early cortical areas that encode the sensory signals from visual objects may play a key role in short-term memory for visual features [@christophelDistributedNatureWorking2017]. Recent models of short-term memory, then, assume that the features of each object are represented by populations of neurons that are tuned to that feature. For example, if the array comprises a red object, a green object, and a  blue object...
 
@@ -139,7 +142,7 @@ Why is it that we are so limited in how many objects we can track and how many l
 
 A central bottleneck needn't be the only issue, or even the main one. An important factor is the way the visual cortex is organized. Much of visual processing is done by neurons devoted to individual regions of the visual field, arranged like a map, with neighboring regions represented by neurons that are next to each other. In at least some circumstances, neighboring clusters of neurons inhibit each other. We will refer to the interference triggered by neighboring objects as spatial interference.
 
-Steven Franconeri and colleagues made the bold proposal that spatial interference is essentially the *only* thing keeping us from the ability to track an unlimited nunber of targets [@franconeriTrackingMultipleObjects2010; @franconeriFlexibleCognitiveResources2013].
+Steven Franconeri and colleagues made the bold proposal that spatial interference is essentially the *only* thing keeping us from the ability to track an unlimited nunber of targets [@franconeriTrackingMultipleObjects2010a; @franconeriFlexibleCognitiveResources2013].
 
 
 Crowding is quite noticeable in the following display. 
@@ -148,7 +151,7 @@ As the demonstration illustrates, crowding seems to affect perception of the qua
 
 Thus in tracking, the part played by the spatial interference evident in crowding displays was not obvious. Moreover, crowding has a definite spatial range - beyond a certain distance, interference does not occur.
 
-But @franconeriTrackingMultipleObjects2010 suggested that a wider spatilal range form of interference afflicted people when tracking multiple objects. My PhD student Wei-Ying Chen and I set up a controlled experiment to investigate whether people were limited in tracking [@holcombeExhaustingAttentionalTracking2012]. Previous tracking experiments had all involved objects that were not very far apart from each other, making it plausible that objects did not stay farther from each other than the putative critical distance. The theory, then, was that if targets were placed far enough from each other, people could track two targets just as well as they could track one. Wei-Ying Chen and I tested this by asking participants to track targets placed as far apart as we could place them. One target moved along an outer ring, and the other moved along a small inner ring.
+But @franconeriTrackingMultipleObjects2010a suggested that a wider spatilal range form of interference afflicted people when tracking multiple objects. My PhD student Wei-Ying Chen and I set up a controlled experiment to investigate whether people were limited in tracking [@holcombeExhaustingAttentionalTracking2012]. Previous tracking experiments had all involved objects that were not very far apart from each other, making it plausible that objects did not stay farther from each other than the putative critical distance. The theory, then, was that if targets were placed far enough from each other, people could track two targets just as well as they could track one. Wei-Ying Chen and I tested this by asking participants to track targets placed as far apart as we could place them. One target moved along an outer ring, and the other moved along a small inner ring.
 
 ![](imagesForRmd/HolcombeChenVeryLargeDistance.png){width=50%}
 

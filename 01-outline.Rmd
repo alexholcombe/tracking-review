@@ -85,7 +85,7 @@ Cups and balls painting either here or in identity section, also with Saiki
 1. Speed limit of attention-following
 
 Each of these could hinder performance more with more targets. They contribute in an unknown mix to most trakcing tasks .
-Thus we don't know which is responsible for various results. For example, 
+Thus we don't know which is responsible for various results. This has afflicted the quest to understand serialOrParallel, 
 
 **Object representations** 
 
