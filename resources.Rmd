@@ -105,17 +105,34 @@ If you gaze at the central dot in the above display, you likely will be able to 
 
 Crowding refers to the spatial impairment of visual processing caused by stimuli that are near a target stimulus. It has been studied extensively in experiments that typically ask a participant to identify a single, motionless, briefly-presented stimulus such as a letter. Those studies have shown that crowding can be avoided if the flanking stimuli are presented sufficiently far away from a target. That distance varies depending on the display spatial arrangement and on the person, but on average extends to about half the eccentricity of the target, with the interference diminishing rapidly as separation increases beyond that [@boumaInteractionEffectsParafoveal1970a; @gurnseyCrowdingSizeEccentricity2011]. For example, in the display above, the letters on the same side as the 'J' are separated from it by more than half the 'J's distance from the fixation point, so they have little to no effect on its identification.
 
+The psychophysical literature on crowding uses almost exclusively 
+In  However, crowding also can prevent attentional selection from individuating a target. [@intriligatorSpatialResolutionVisual2001]
+
+
 The overwhelming majority of MOT papers use trajectories for which targets frequently come within the crowding distance of another target or distractor. As a result, crowding likely contributes to tracking performance. In addition, crowding appears to be subject to substantial individual differences [@petrovAsymmetriesIdiosyncraticHot2011], including larger crowding zones in a subpopulation of persons with dyslexia @jooOptimizingTextIndividual2018, so it likely also explains some of the variation in tracking performance between people.
 
 @franconeriTrackingMultipleObjects2010a claimed that spatial interference is the *only* reason why performance is worse when more targets are to be tracked, denying any role for speed, time, or any non-spatial form of processing capacity. Moreover, @franconeriTrackingMultipleObjects2010a implied that this interference extends over a much greater distance than the crowding range documented in the psychophysics literature. HOWEVER, @franconeriTrackingMultipleObjects2010a did not succeed in isolating the distance between objects, and careful parametric variation of separation has found evidence for tracking interference only within the crowding range [@holcombeObjectTrackingAbsence2014; @holcombeExhaustingAttentionalTracking2012].
 
 However, what remains under-studied is whether, or by how much, the crowding range increases with the number of objects that should be monitored. @holcombeObjectTrackingAbsence2014 compared one targets to two but 
 
-## Resources or spatial interference?
+## Temporal interference
+
+Temporal interference is analogous to spatial interference, just in time rather than in space. Spatial interference refers to a processing impairment when one object comes closer than a certain spatial distance to a second object, at one time. In contrast, temporal interference refers to when an object comes closer than a certain temporal distance of another, at one point in space.
+
+The objects in typical MOT displays often travel over locations formerly occupied by another moving object. That is, after one object passes over a location, another will pass over the same location, some amount of time later. If temporal interference is a factor in object tracking, then if the amount of time that separates the two objects occupying a location is short enough, tracking will be impaired.
+
+If objects are moving fast enough, they are perceived to blur together, because some parts of the visual system integrate over several dozen milliseconds [e.g., @hogbenPerceptualIntegrationPerceptual1974]. A more interesting question is whether temporal interference occurs on a longer timescale, more relevant to the speeds and spacings typically used in MOT tasks.
+
+## Speed limit of attention-following
+
+
+
+## Resources?
 
 
 However, this sort of interference may be closer to the answer for why we are limited in the number of objects we can keep in mind. Hundreds of studies over the past few decades have had people briefly view an array of stationary objects, and then try to recall them a few seconds later. The data may be best explained by the limited number of neurons available to represent the objects [@schneegansStochasticSamplingProvides2020]. The early cortical areas that encode the sensory signals from visual objects may play a key role in short-term memory for visual features [@christophelDistributedNatureWorking2017]. Recent models of short-term memory, then, assume that the features of each object are represented by populations of neurons that are tuned to that feature. For example, if the array comprises a red object, a green object, and a  blue object...
 
+Recent results by Strong & Alvarez (2019) have further validated the resource theory
 
 
 Why is it that we are so limited in how many objects we can track and how many locations or objects we can keep in mind? That is, what is it that makes tracking hard? It seems to be something about the movement of the objects, because people have little difficulty remembering the locations of X objects or more in a static array [@franconeriHowManyLocations2007].
@@ -124,7 +141,6 @@ A central bottleneck needn't be the only issue, or even the main one. An importa
 
 Steven Franconeri and colleagues made the bold proposal that spatial interference is essentially the *only* thing keeping us from the ability to track an unlimited nunber of targets [@franconeriTrackingMultipleObjects2010; @franconeriFlexibleCognitiveResources2013].
 
-There is no doubt that spatial interference is a big problem in many visual tasks. One very well-studied form of spatial interference is called _crowding_. Most work on crowding has investigated how flanking objects impair the ability to identify a target. However, crowding also can prevent attentional selection from individuating a target. [@intriligatorSpatialResolutionVisual2001]
 
 Crowding is quite noticeable in the following display. 
 
@@ -138,7 +154,6 @@ But @franconeriTrackingMultipleObjects2010 suggested that a wider spatilal range
 
 Each was accompanied by a distractor moving along the same trajectory but placed as far as possible from the target...
 
-<!-- Recent results by Strong & Alvarez (2019) have further validated the resource theory -->
 
 Interference among neighboring neural populations in spatiotopic maps does not seem to be the answer, then, to why we can track only a few fast-moving objects. But the nature of the tracking bottleneck is still far from clear.
 

@@ -71,11 +71,23 @@ Cups and balls painting either here or in identity section, also with Saiki
 
 ## Outline
 
-**Basic background**. 
+**Intro** 
 
-**Object representations**. 
+**Bottlenecks** 
 
-**Resources or spatial interference.** The limitations in our abilities could emerge from multiple limits in our brain's processing. For visual stimuli, one such limitation is a flexible resource, while another such limitation is spatial interference. These concepts will be elucidated in this section (benefiting in part from two papers from my lab), and the experiments that have led to our present understanding that both play a role will be described.
+**Which aspect(s) of tracking determine performance?**
+
+1. C=1 processes
+1. Duration one can sustain attention
+1. Spatial selection of multiple locations, even static ones
+1. Spatial interference
+1. Temporal interference
+1. Speed limit of attention-following
+
+Each of these could hinder performance more with more targets. They contribute in an unknown mix to most trakcing tasks .
+Thus we don't know which is responsible for various results. For example, 
+
+**Object representations** 
 
 **Two brains or one?** The fact that the brain is made up of two separate hemispheres has some striking consequences for object tracking , and more subtle ones for other tasks involving keeping objects in mind. This section will review the research regarding the remarkable hemifield independence of multiple object tracking (including two papers from my lab), as well as the specificity for spatial attention tasks - non-spatial measures of working memory show little independence, implicating a more unitary resource.
 
@@ -91,6 +103,8 @@ Animated-horse-race-jockey.gif
 
 including Vaziri-Pashkam et al.
 
+**Mobile computation**
+
 **Abilities**, Individual differences, dual-task interference, abilities
 
 huangMeasuringInterrelationsMultiple2012. wilmerMultipleObjectTracking2016. Large differences have been found in spatial crowding, which probably explains a good chunk of the variance. Large individual differences in crowding have been established,
@@ -98,8 +112,6 @@ huangMeasuringInterrelationsMultiple2012. wilmerMultipleObjectTracking2016. Larg
 Nobody has yet 
 
 **Misconceptions and questions**
-
-
 
 **Towards the real-world** and real-world tasks. A naive view of visual perception is that we are simultaneously aware of the identities of all the objects in a scene, so unless a player actually disappears or hides behind something or someone, we should know where everyone on the bacsketball court is at all times. Bringing together the factors described in previous sections, and bringing in new ones such as limits on feature binding, we will analyze some real-world tasks.
 
