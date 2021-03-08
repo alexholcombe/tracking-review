@@ -1,5 +1,27 @@
 # Abilities, individual differences, dual-task interference
 
+There are two basic approaches to understanding the abilities that underlie multiple object tracking. One is the classic experimental approach of dissociating the processes involved by manipulating different factors within participants. This has been the dominant approach and has led to our present understanding of the roles of spatial interference, temporal interference, and the duration that one can sustain attention. However, a small but growing literature has used the complementary individual-differences approach.
+
+@oksamaMultipleObjectTracking2004 made the effort to test participants on MOT, visuospatial short-term memory, verbal working memory, and attention switching, and calculated the correlation of performance for each pair of tasks. However, no analyses were done about the reliability of the MOT test, making interpretation of the correlations difficult.
+each participant was only tested once, which means there was no information gathered about the reliability of the MOT test. By reliability, I mean for example test-retest reliability, whether a person tested multiple times will achieve similar scores, or whether the MOT measure is instead so noisy
+
+"internal consistency"
+
+Hauke
+
+They found differences, but didn't re-test so it's meaningless
+
+The individual-differences approach tests relatively large numbers of participants on multiple tasks, and examines the pattern of inter-individual correlations between tasks. Typically it is uninteresting to find that 
+
+It is  unsurprising when 
+Almost any two tasks are typically correlated, <!-- discriminat validity . You also want to include tasks that you  -->
+Cronbach & Meehl  MTMM mult-trait
+
+correlates differences in p
+performance across   . With the growth of online testing, we can expect this approach to  
+
+A small but growing literature 
+
 Relation to abilities
 
 Using Factor Analysis to Bridge Neuropsychological and Psychonomic Measures of Attention. TODD HOROWITZ and MELISSA TREVIÑO, National Cancer Institute, XIAOSHU ZHU, Westat, YI YI LU, Harvard Medical School & Brigham and Women’s Hospital, LUKE SCHEUER, Harvard Medical School & McLean Hospital, GRACE HUANG, Westat, LAURA GERMINE, Harvard Medical School & McLean Hospital – Do neuropsychological attention tests measure the same construct as psychonomic attention paradigms? Previous work (Huang et al., 2012) suggested that many paradigms load on a “general attention factor,” a. Adult participants (N=488) completed a 14-item on-line battery (TestMyBrain. org) comprising psychonomic paradigms [Multiple Object Tracking (MOT), Flanker, Visual Change Detection (VCD), Approximate Number Sense (ANS), Visual Search (VS), Gradual Onset Continuous Performance Task (Grad CPT)] and neuropsychological tests [Trail Making Test A & B (TMT), Digit Symbol Substitution (DSS), Digit Span Forward and Backward, Letter Cancellation (LC), Spatial Span (SSpan), and Arithmetic]. We did not replicate a. We obtained a five-factor solution: (1) Capacity (MOT, VCD, ANS, SSpan, DSS); (2) Search (VS, TMT, LC); (3) Digit Span; (4) Arithmetic; (5) Sustained attention (GradCPT) Our findings encourage expansion of psychonomic science into the clinic and illustrate the potential

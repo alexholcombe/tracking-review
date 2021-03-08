@@ -1,8 +1,16 @@
 # Speed and time
 
-<!-- 
 How fast can people track? This is an important question, not only for predicting what people will be able to do in the real world, but also because investigations of the limits on tracking have led to insights into the relation of tracking processes to other aspects of attention and of motion perception.
--->
+
+
+## Speed
+
+Extrapolation theory predicts 
+
+* attention will be right on the target.
+* Linear effect of velocity
+
+## Time
 
 What makes a tracking task hard for a person, or even impossible? 
 
