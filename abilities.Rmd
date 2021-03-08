@@ -1,28 +1,47 @@
 # Abilities, individual differences, dual-task interference
 
-There are two basic approaches to understanding the abilities that underlie multiple object tracking. One is the classic experimental approach of dissociating the processes involved by manipulating different factors within participants. This has been the dominant approach and has led to our present understanding of the roles of spatial interference, temporal interference, and the duration that one can sustain attention. However, a small but growing literature has used the complementary individual-differences approach.
+There are two basic approaches to understanding the abilities that underlie multiple object tracking. One is the classic experimental approach of dissociating the processes involved by manipulating different factors within participants. This has been the dominant approach and has led to our present understanding of the roles of spatial interference, temporal interference, and the duration that one can sustain attention. However, a small but growing literature has used the complementary individual-differences approach. In the individual-differences approach, the pattern of variation in scores on multiple tests is examined to see which abilities tend to go together. Those abilities that co-vary the most are thought to likely share more processes in common than those that don't.
 
-@oksamaMultipleObjectTracking2004 made the effort to test participants on MOT, visuospatial short-term memory, verbal working memory, and attention switching, and calculated the correlation of performance for each pair of tasks. However, no analyses were done about the reliability of the MOT test, making interpretation of the correlations difficult.
-each participant was only tested once, which means there was no information gathered about the reliability of the MOT test. By reliability, I mean for example test-retest reliability, whether a person tested multiple times will achieve similar scores, or whether the MOT measure is instead so noisy
+## Do people vary much in how many objects they can track?
 
-"internal consistency"
+For some cognitive tasks, individual differences are small, making an individual-differences approach problematic [@hedgeReliabilityParadoxWhy2018]. @oksamaMultipleObjectTracking2004 made the effort to test 201 participants on MOT, in an effort to examine variation in how many objects people can track with reasonable accuracy. They found what appeared to be a substantial variation in capacity, with some people able to track six objects, while many could track only two or even just one. However, no analyses were reported regarding the reliability of the MOT test. This left open the possibility that the tracking scores were very noisy, such that the variation in scores found between participants could also have been found if just one participant were tested repeatedly.
 
-Hauke
+<!--One way to have assessed reliability would have been to test each participant two times, to exmaine whether individuals would achieve similar scores in the two instances. For any given test, it is possible that a test is instead very noisy, such that at an extreme the variation in scores found between participants would also be found if just one participant were tested repeatedly.  MOT, visuospatial short-term memory, verbal working memory, and attention switching, and calculated the correlation of performance for each pair of tasks.  For what it's worth, th-->
 
-They found differences, but didn't re-test so it's meaningless
+Although they did not vary the number of targets participants had to track, both @huangMeasuringInterrelationsMultiple2012 and @oksamaMultipleObjectTracking2004 tested a large number of participants and calculated the correlation in participants' performance between one half of the trials they were tested in and the other. They both found a high correlation of >0.85.  This suggests that the number of objects that people can track varies. This does not exclude the possibility that most of the variation is due not to variation in the *number* of objects that people can track, but instead in how well they can track a fixed number. That is, it is conceivable that a person might, when tracking two targets, get, get 80% correct when they are probed about one object at the end of a trial, yet still achieve a level of performance nearly as high with up to six targets. Given that performance aggregating participants nearly always finds markedly decreased performance with more targets, researchers have assumed that this is also true of each individual participant, but it appears that this has not been tested with large numbers.
 
-The individual-differences approach tests relatively large numbers of participants on multiple tasks, and examines the pattern of inter-individual correlations between tasks. Typically it is uninteresting to find that 
+Working off the assumption that each person does have a specific number of targets they can track, which determines percent correct for each level of number of targets, some researchers calculate what @schollWhatVisualObject2001 called the "effective number of items tracked" and was refined by @hullemanMathematicsMultipleObject2005a. Using this formula and the particular display and object trajectories that @meyerhoffIndividualDifferencesVisual2020 used, with four targets and four distractors, the modal effective number of items tracked was around two, but a substantial proportion of participants's performance yielded three, one, and for a few, close to zero.
 
-It is  unsurprising when 
-Almost any two tasks are typically correlated, <!-- discriminat validity . You also want to include tasks that you  -->
-Cronbach & Meehl  MTMM mult-trait
+Unfortunately, in the data of @meyerhoffIndividualDifferencesVisual2020, like that of many others, there is no way to know how much of the variation between individuals is due to motivation rather than ability. Measuring motivation is not easy, but researchers should at least include what are sometimes called attention checks or catch trials to allow exclusion of participants who show clear evidence of not reading the instructions carefully or frequently not paying attention.
 
-correlates differences in p
-performance across   . With the growth of online testing, we can expect this approach to  
+## What tasks are particularly related to the ability underlying MOT? 
 
-A small but growing literature 
+Partly to reveal what other sorts of tasks a high ability to track multiple objects indicates, @huangMeasuringInterrelationsMultiple2012 and @trevinoBridgingCognitiveNeuropsychological tested large numbers of participants on several tasks. @huangMeasuringInterrelationsMultiple2012 used a set of cognitive and attentional tasks that he termed conjunction search, configuration search, counting, feature access, spatial pattern, response selection, visual short-term memory, change blindness, Raven's test of intelligence, visual marking, attentional capture, consonance-driven orienting, inhibition of return, task switching, mental rotation, and Stroop. While many of these showed high reliability of over .9, the correlations with MOT were fairly low, with the highest being counting at 0.4, which required counting the number of white dots in a brief (400 ms) display. Change blindness, feature access, visual short-term memory, and visual marking were runner ups with correlations of around 0.3.
 
-Relation to abilities
+@trevinoBridgingCognitiveNeuropsychological tested arithmetic word problems, a trail making test, digit span, digit symbol coding, letter cancellation, spatial span
+
+@huangMeasuringInterrelationsMultiple2012 "For each variable, reliability was estimated by calculating the split-half (odd-even) correlations and the Spearman-Brown formula was used for adjustment. All of the 17 paradigms met the minimum reliability of 0.7."  So I guess these are not raw correlations he reports from then on
+
+In a study that is not yet published, 
+
+Interestingly, MOT performance had very little correlation with performance on a task designed to measure sustained attention (the gradual-onset continual performance task, @fortenbaughSustainedAttentionLife2015).
+
+CPT correlation is low
+
+
+a wide range of tracking capacity was observed, from one to three targets.
+
+be able to track two objects 
+
+, although it could be that 
+
+
+
+@meyerhoffIndividualDifferencesVisual2020 tested fifty participants and for each one calculated 
+
+@oksamaMultipleObjectTracking2004 made the effort to test 201 participants on 
+
+
 
 Using Factor Analysis to Bridge Neuropsychological and Psychonomic Measures of Attention. TODD HOROWITZ and MELISSA TREVIÑO, National Cancer Institute, XIAOSHU ZHU, Westat, YI YI LU, Harvard Medical School & Brigham and Women’s Hospital, LUKE SCHEUER, Harvard Medical School & McLean Hospital, GRACE HUANG, Westat, LAURA GERMINE, Harvard Medical School & McLean Hospital – Do neuropsychological attention tests measure the same construct as psychonomic attention paradigms? Previous work (Huang et al., 2012) suggested that many paradigms load on a “general attention factor,” a. Adult participants (N=488) completed a 14-item on-line battery (TestMyBrain. org) comprising psychonomic paradigms [Multiple Object Tracking (MOT), Flanker, Visual Change Detection (VCD), Approximate Number Sense (ANS), Visual Search (VS), Gradual Onset Continuous Performance Task (Grad CPT)] and neuropsychological tests [Trail Making Test A & B (TMT), Digit Symbol Substitution (DSS), Digit Span Forward and Backward, Letter Cancellation (LC), Spatial Span (SSpan), and Arithmetic]. We did not replicate a. We obtained a five-factor solution: (1) Capacity (MOT, VCD, ANS, SSpan, DSS); (2) Search (VS, TMT, LC); (3) Digit Span; (4) Arithmetic; (5) Sustained attention (GradCPT) Our findings encourage expansion of psychonomic science into the clinic and illustrate the potential
 to learn about attention from selected neuropsychological measures. 
@@ -31,9 +50,25 @@ to learn about attention from selected neuropsychological measures.
 
 " several studies have shown dissociations between MOT and visuo-spatial working memory [@bettencourtSharedFilteringProcesses2011] ( \O. L. Carter et al., 2005; O’Hearn et al., 2010). Furthermore, Trick et al. (2012) showed that visuospatial ability (including Corsi Blocks, a spatial span variant) but not working memory, predicts MOT."
 
-@howardVisualSpatialAttention2020 "for a purely spatial task, perceptual attention (TRACKING?) and working memory appear to recruit separate core capacity-limited processes."
 
-"Souza & Oberauer (2017) argued that VWM and MOT use different attentional resources."
 
 Study of only 12 pro basketball players finding correlations with basketball metrics @mangineVisualTrackingSpeed2014a
+
+
+"internal consistency"
+
+
+It is  unsurprising when 
+Almost any two tasks are typically correlated, <!-- discriminat validity . You also want to include tasks that you  -->
+Cronbach & Meehl  MTMM mult-trait
+
+ With the growth of online testing, we can expect this approach to  
+
+## Dual-task
+
+
+@howardVisualSpatialAttention2020 "for a purely spatial task, perceptual attention (TRACKING?) and working memory appear to recruit separate core capacity-limited processes."
+
+@souzaContributionsVisualCentral2017 argued that VWM and MOT use different attentional resources." "Distracting visual attention, but not central attention, impaired MOT performance"
+
 
