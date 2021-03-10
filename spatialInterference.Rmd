@@ -1,0 +1,87 @@
+# Spatial interference
+
+Long before @franconeriHowManyLocations2007 conducted experiments on the selection of multiple locations with different densities, researchers had recognized the existence of spatial interference in dense displays [@wolfordPerturbationModelLetter1975; @korteUberGestaltauffassungIm1923; @strasburgerDancingLettersTicks2014].
+
+```{r, echo=FALSE, fig.cap = ""}
+DiagrammeR::grViz("digraph {
+
+graph [layout = dot, rankdir = LR]
+
+# define the global styles of the nodes. We can override these in box if we wish
+node [shape = rectangle, style = filled, color=White, fillcolor = White, fontsize = 40]
+
+a [label = 'O']
+fixation [label =  '', shape=circle, fillcolor=Black, width=.2, height=.2]
+b [label = ' ']
+c [label = ' ']
+d [label = 'J']
+e [label = ' ']
+e2 [label = ' ']
+e3 [label = 'S']
+
+f [label = 'O']
+g [label = 'R']
+h [label = 'L']
+i [label = 'H']
+j [label = 'Y']
+k [label = 'M']
+l [label = 'S']
+
+# edge definitions with the node IDs
+edge [label='', penwidth=0, arrowsize=0]
+a  -> b;
+edge [label='', penwidth=0, arrowsize=0]
+b -> c
+edge [label='', penwidth=0, arrowsize=0]
+c -> d
+edge [label='', penwidth=0, arrowsize=0]
+d -> e
+edge [label='', penwidth=0, arrowsize=0]
+e -> e2
+edge [label='', penwidth=0, arrowsize=0]
+e2 -> e3
+edge [label='', penwidth=0, arrowsize=0]
+e3 -> fixation
+
+edge [label='', penwidth=0, arrowsize=0]
+fixation -> f
+edge [label='', penwidth=0, arrowsize=0]
+f -> g
+edge [label='', penwidth=0, arrowsize=0]
+g -> h
+edge [label='', penwidth=0, arrowsize=0]
+h -> i
+edge [label='', penwidth=0, arrowsize=0]
+i -> j
+edge [label='', penwidth=0, arrowsize=0]
+j -> k
+edge [label='', penwidth=0, arrowsize=0]
+k -> l
+}")
+```
+
+If you gaze at the central dot in the above display, you likely will be able to perceive the middle letter to the left fairly easily (it is a 'J'). However, if you again keep your eyes fixed on the central dot, but this time try to perceive the central letter to the right, it should be much more difficult. This is called "crowding".
+
+Crowding refers to the spatial impairment of visual processing caused by stimuli that are near a target stimulus. It has been studied extensively in experiments that typically ask a participant to identify a single, motionless, briefly-presented stimulus such as a letter. Those studies have shown that crowding can be avoided if the flanking stimuli are presented sufficiently far away from a target. That distance varies depending on the display spatial arrangement and on the person, but on average extends to about half the eccentricity of the target, with the interference diminishing rapidly as separation increases beyond that [@boumaInteractionEffectsParafoveal1970a; @gurnseyCrowdingSizeEccentricity2011]. For example, in the display above, the letters on the same side as the 'J' are separated from it by more than half the 'J's distance from the fixation point, so they have little to no effect on its identification.
+
+The psychophysical literature on crowding uses almost exclusively 
+In  However, crowding also can prevent attentional selection from individuating a target. [@intriligatorSpatialResolutionVisual2001]
+
+
+The overwhelming majority of MOT papers use trajectories for which targets frequently come within the crowding distance of another target or distractor. As a result, crowding likely contributes to tracking performance. In addition, crowding appears to be subject to substantial individual differences [@petrovAsymmetriesIdiosyncraticHot2011], including larger crowding zones in a subpopulation of persons with dyslexia @jooOptimizingTextIndividual2018, so it likely also explains some of the variation in tracking performance between people.
+
+@franconeriTrackingMultipleObjects2010a claimed that spatial interference is the *only* reason why performance is worse when more targets are to be tracked, denying any role for speed, time, or any non-spatial form of processing capacity. Moreover, @franconeriTrackingMultipleObjects2010a implied that this interference extends over a much greater distance than the crowding range documented in the psychophysics literature. HOWEVER, @franconeriTrackingMultipleObjects2010a did not succeed in isolating the distance between objects, and careful parametric variation of separation has found evidence for tracking interference only within the crowding range [@holcombeObjectTrackingAbsence2014; @holcombeExhaustingAttentionalTracking2012].
+
+However, what remains under-studied is whether, or by how much, the crowding range increases with the number of objects that should be monitored. A psychophysical study of crowding with briefly-presented stimuli found good evidence that attending to additional targets within the crowding range of a first target did result in a stronger crowding effect [@mareschalAttentionalModulationCrowding2010]. However, they did not measure how much further crowding extends.
+
+@holcombeObjectTrackingAbsence2014 compared tracking performance for one targets and two at various separations between the target trajectories.
+
+and didn't find evidence that crowding extended further with two targets than with one, 
+
+@maki-marttunenDistinctNeuralMechanisms2019:"In both cohorts, increased load and close encounters (i.e., close spatial proximity) led to reduced accuracy in an additive manner. Load was associated with pupil dilations, whereas close encounters were not. Activity in dorsal attentional areas and frequency of saccades were proportionally larger both with higher levels of load and close encounters. Close encounters recruited additionally ventral attentional areas that may reflect orienting mechanisms. The activity in two brainstem nuclei, ventral tegmental area/substantia nigra and locus coeruleus, showed clearly dissociated patterns. Our results constitute convergent evidence indicating that different mechanisms underlie processing challenges due to load and object spacing."
+
+## Moving forward
+
+Each of these could hinder performance more with more targets. They contribute in an unknown mix to most trakcing tasks .
+Thus we don't know which is responsible for various results. For example, 
+
