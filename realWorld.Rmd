@@ -5,4 +5,4 @@
 
 @mangineVisualTrackingSpeed2014 Twelve professional basketball players were tested before the 2012–13 season. Visual tracking speed was obtained from 1 core session (20 trials) of the multiple object tracking test, whereas RT was measured by fixed- and variable-region choice reaction tests, using a light-based testing device. Performance in VTS and RT was compared with basketball-specific measures of performance (assists [AST]; turnovers [TO]; assist-to-turnover ratio [AST/TO]; steals [STL]) during the regular basketball season. All performance measures were reported per 100 minutes played. Performance differences between backcourt (guards; n = 5) and frontcourt (forward/centers; n = 7...
 
-Study of only 12 pro basketball players finding correlations with basketball metrics @mangineVisualTrackingSpeed2014a
+Study of only 12 pro basketball players finding correlations with basketball metrics @mangineVisualTrackingSpeed2014

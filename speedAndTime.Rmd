@@ -31,7 +31,7 @@ The updating of target position could fail for any of a few different reasons. A
 
 ## Temporal limits
 
-Another possibility is that tracking has a temporal limit, much like it has a spatial limit. Recall that in section X we described evidence that if a target comes too close to another object, the two objects can get confused. They won't always be confused, because predictable trajectories and target velocity can be used to recover a target even after it completely overlaps with another (@howeMotionInformationSometimes2012; @Vul).
+Another possibility is that tracking has a temporal limit, much like it has a spatial limit. Recall that in section X we described evidence that if a target comes too close to another object, the two objects can get confused. They won't always be confused, because predictable trajectories and target velocity can be used to recover a target even after it completely overlaps with another (@howeMotionInformationSometimes2012; Vul under review at JoV).
 
 So, spatial confusions contribute to tracking. Might this also be the case for temporal confusions?  There is already reason to think that 
 SHOW TICS-TYPE DEMO
