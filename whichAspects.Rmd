@@ -115,6 +115,8 @@ The overwhelming majority of MOT papers use trajectories for which targets frequ
 
 However, what remains under-studied is whether, or by how much, the crowding range increases with the number of objects that should be monitored. @holcombeObjectTrackingAbsence2014 compared one targets to two but 
 
+@maki-marttunenDistinctNeuralMechanisms2019:"In both cohorts, increased load and close encounters (i.e., close spatial proximity) led to reduced accuracy in an additive manner. Load was associated with pupil dilations, whereas close encounters were not. Activity in dorsal attentional areas and frequency of saccades were proportionally larger both with higher levels of load and close encounters. Close encounters recruited additionally ventral attentional areas that may reflect orienting mechanisms. The activity in two brainstem nuclei, ventral tegmental area/substantia nigra and locus coeruleus, showed clearly dissociated patterns. Our results constitute convergent evidence indicating that different mechanisms underlie processing challenges due to load and object spacing."
+
 ## Temporal interference
 
 Temporal interference is analogous to spatial interference, just in time rather than in space. Spatial interference refers to a processing impairment when one object comes closer than a certain spatial distance to a second object, at one time. In contrast, temporal interference refers to when an object comes closer than a certain temporal distance of another, at one point in space.
