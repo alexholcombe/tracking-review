@@ -23,41 +23,41 @@ The tasks with the highest correlations with MOT in the data of @trevinoBridging
 
 In the @trevinoBridgingCognitiveNeuropsychological inventory, the task that most resembled the counting task of @huangMeasuringInterrelationsMultiple2012, which @huangMeasuringInterrelationsMultiple2012 found had a high correlation with MOT, was the approximate number sense task, with a moderate correlation of 0.3. It differed from the counting task of @huangMeasuringInterrelationsMultiple2012 by not testing the subitizing (less than 5 items) range, which might help explain any discrepancy. In a more limited study, @eayrsEstablishingIndividualDifferences2018 found, using hierarchical regression, that subitizing made a contribution to predicting MOT performance that was somewhat separate to that of an estimation task using larger set sizes. <!-- change blindness, load-induced blindness and multiple object tracking, MOT split-half reliability of .87 -->
 
-Overall, there is a reasonable level of agreement across these individual-differences studies. They agree that visual working memory has a robust correlation with MOT performance, which is particularly interesting because superficially, MOT imposes little to no memory demand. Most researchers conceive of tracking as involving allocating multifocal attention to multiple targets simultaneously, with a process autonomous to memory causing the foci of attention to move along with the moving targets. 
+Overall, there is a reasonable level of agreement across these individual-differences studies, as well as others not described here, such as @trickSpatialVisuospatialWorking2012. They agree that visual working memory has a robust correlation with MOT performance, which is particularly interesting because superficially, MOT imposes little to no memory demand. Most researchers conceive of tracking as involving allocating multifocal attention to multiple targets simultaneously, with a process autonomous to memory causing the foci of attention to move along with the moving targets. 
 
 "Working memory is a well-established predictor of individual differences in a range of attention tasks, including for example the Stroop task, spatial cuing and task switching (e.g. Kane & Engle, 2001; Kane, Bleckley, Conway & Engle, 2001; Redick & Engle, 2006)."
 
-
-
-@meyerhoffIndividualDifferencesVisual2020 tested fifty participants and for each one calculated 
-
-@oksamaMultipleObjectTracking2004 made the effort to test 201 participants on 
-
-
-
-" In Huang et al.’s study, the correlation between MOT and VWM was .30, the correlation between (configuration) search and MOT was .30, and the correlation between search and VWM was .23. In our data, however, MOT and VWM were much more closely correlated with each other (.51)"
-
-" several studies have shown dissociations between MOT and visuo-spatial working memory [@bettencourtSharedFilteringProcesses2011] ( \O. L. Carter et al., 2005; O’Hearn et al., 2010). Furthermore, Trick et al. (2012) showed that visuospatial ability (including Corsi Blocks, a spatial span variant) but not working memory, predicts MOT."
-
-
-
-Study of only 12 pro basketball players finding correlations with basketball metrics @mangineVisualTrackingSpeed2014a
-
-
-"internal consistency"
-
-
-It is  unsurprising when 
-Almost any two tasks are typically correlated, <!-- discriminat validity . You also want to include tasks that you  -->
-Cronbach & Meehl  MTMM mult-trait
+<!--In Huang et al.’s study, the correlation between MOT and VWM was .30, the correlation between (configuration) search and MOT was .30, and the correlation between search and VWM was .23. In our data, however, MOT and VWM were much more closely correlated with each other (.51)-->
 
  With the growth of online testing, we can expect this approach to  
 
 ## Dual-task
 
+The dual-task literature is very large. Can't review it all here
+
+There seems to be an especially close link between MOT and subitizing
+@trickAgeDifferencesEnumerating2003 observed that even very slow motion reduced
+enumeration speed for stimuli containing 6–9 items, while
+the enumeration of 1–4 items was not affected when items
+were in motion. Similarly, @alstonSubitizationAttentionalEngagement2004
+presented static and moving items, finding that faster and
+more accurate enumeration occurred in the subitizing range
+given the presence of moving items.
+
+Subitizing no bilateral advantage on accuracy, but that could be due to very high accuracy - when looking at response time, an advantage is found, although not clear it's as large as that for MOT @railoBilateralTwoitemAdvantage2014
+
+"The results indicated that the number of items participants could subitize decreased by one for each item they tracked." @chesneyEvidenceSharedMechanism2011
+
+ "concurrent performance of a MOT task and a VWM task still instilled substantial and load-dependent dual-task costs. " @fougnieDistinctCapacityLimits2006
+
+@allenMultipletargetTrackingRole2006
+
+psilocybin seems to impair MOT but not visual working memory [@carterUsingPsilocybinInvestigate2005] 
+
+object tracking in people with Williams Syndrome remains at the level of 4‐year‐olds, whereas the ability to remember multiple locations of static objects develops further. @ohearnDevelopmentalProfilesMultiple2010 
+
 
 @howardVisualSpatialAttention2020 "for a purely spatial task, perceptual attention (TRACKING?) and working memory appear to recruit separate core capacity-limited processes."
 
 @souzaContributionsVisualCentral2017 argued that VWM and MOT use different attentional resources." "Distracting visual attention, but not central attention, impaired MOT performance"
-
 

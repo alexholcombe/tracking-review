@@ -1,5 +1,7 @@
 # Speed and time
 
+In our list of 
+
 How fast can people track? This is an important question, not only for predicting what people will be able to do in the real world, but also because investigations of the limits on tracking have led to insights into the relation of tracking processes to other aspects of attention and of motion perception.
 
 
@@ -33,7 +35,7 @@ Another possibility is that tracking has a temporal limit, much like it has a sp
 
 So, spatial confusions contribute to tracking. Might this also be the case for temporal confusions?  There is already reason to think that 
 SHOW TICS-TYPE DEMO
-
+Clearly there are some visual processes that are disrupted if other stimuli soon occupy the former location of an object. Perception of the object's color itself is still ok (Nishida ; @cavanaghMobileComputationSpatiotemporal2008). But 
 
 Spatiotemporal window account. 
 wapping errors presumably come about be- cause a target and a distractor approach within the width of the attentional window.
