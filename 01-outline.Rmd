@@ -35,8 +35,8 @@ This ability was also immediately observed to have a severe capacity limit.
 
 Researchers quickly latched onto the word "attentional" to describe this ability, 
 in part because various 
-they surmised that
 
+Along the way we will bust myths such as the common notion that people can track four or five objects, 
 
 Is object tracking just sustained attentional selection, when the objects happen to be moving? Well, a first question fundamentally is how do you keep your attention on the object? The literature on visual search is enormous but is almost exclusively about finding 
 
@@ -87,9 +87,6 @@ Cups and balls painting either here or in identity section, also with Saiki
 Each of these could hinder performance more with more targets. They contribute in an unknown mix to most trakcing tasks .
 Thus we don't know which is responsible for various results. This has afflicted the quest to understand serialOrParallel, 
 
-**Object representations** 
-
-**Two brains or one?** The fact that the brain is made up of two separate hemispheres has some striking consequences for object tracking , and more subtle ones for other tasks involving keeping objects in mind. This section will review the research regarding the remarkable hemifield independence of multiple object tracking (including two papers from my lab), as well as the specificity for spatial attention tasks - non-spatial measures of working memory show little independence, implicating a more unitary resource.
 
 <!-- **Different resources for different tasks** The brain can do some tasks with remarkably little interference between them, while others are  -->
 
