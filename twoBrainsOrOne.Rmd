@@ -10,13 +10,72 @@ This is not to say that the hemispheres are equivalent. They do specialize in di
 
 There is another subtle effect of the hemispheric division of cortex. In some tasks involving two simultaneously-presented stimuli, higher performance is found when each stimulus is presented in a different hemifield rather then presenting them both in the same hemifield. For example, the reporting of two briefly-presented digits is more accurate when the digits are presented in different hemifields than in the same hemifield [@dimondUseTwoCerebral1971].  
 
-These effects tend to be small.
+The level of hemispheric independence for a task can be quantified from the advantage provided by presenting the relevant stimuli in distinct hemifields. If adding a second stimulus to a hemifield reduces performance by, say, 20 percentage points, but adding that second stimulus to the other hemifield instead reduces performance by only 5 percentage points, then we can say that there is (20-5) / 20 = 75% hemifield independence. It is not quite this simple, in that one needs to control for chance performance, but the previous sentence illustrates the principle.
 
-@holtBilateralAdvantageMaintaining2015 found BLAH BLAH
+However, many studies did not include a single-stimulus condition, so when performance is higher in the split condition, we don't know how close that is to the one-target level of performance [@awhEvidenceSplitAttentional2000; @serenoDiscriminationHemifieldsNew1991; @dimondUseTwoCerebral1971].
+
+@delvenneCapacityVisualShortterm2005 observed approximately a 40% independence for spatial VSTM <!--   -->.
+
+These effects tend to be small. ()
 
 
 
-## The remarkable 
+
+## The extraordinary hemifield independence of object tracking
+
+In 2005, Alvarez & Cavanagh assessed the level of hemifield independence for multiple object tracking [@alvarezIndependentResourcesAttentional2005]. The result was a truly extraordinary finding: 88% independence (they did not . <!--E1: Unilateral 89% 1 target -> 63% 2 target.  Bilateral: 93% 1 target -> 90% 2 target. (26-3)/26= 88%. E3: Unilateral 2targets:93%, 4targets:67%. Bilateral 2targets:90%, 4targets:87%. (26-3)/26=88% -->
+Davis & Schmit, 1971
+```{r}
+# 
+# Unilateral 1 target, Unilateral 2 target, Bilateral 1 target, Bilateral 2 target
+alvarezCavanagh2005E1 <- c(.89,.63,.93,.90)
+chance<- 0.5
+#Correct for guessing
+#What is the true rate, t, at which people know the answer not from guessing, where guessing rate = c
+# accuracy = t + (1-t)c
+# t = accuracy - (1-t)c
+# t = accuracy - c + tc
+# t - tc = accuracy - c
+# (1-c)t = accuracy - c
+# t = (accuracy - c)/(1-c)
+
+#Try deriving it again to make sure I'm right:
+# a = t*1 + (1-t)*c
+# a = t + c -tc
+# t - tc = a - c
+# t(1-c) = a - c
+# t = (a - c)/(1 - c)
+
+correctForChance <- function(x,chance) {
+  #(x-chance)/chance
+  (x-chance)/(1-chance)
+}
+#correctForChance(.89,chance)
+library(dplyr)
+#1:10 %>% purrr::map(rnorm, n=10)
+accCorrected <- alvarezCavanagh2005E1 %>% purrr::map(correctForChance,chance) %>% 
+  purrr::map_dbl(mean) #have to call map_dbl to simplify output from nested list to simple vector
+accCorrected
+
+calculateIndependence <- function(accuracies,chance) {
+  corrected <- accuracies %>% purrr::map(correctForChance,chance) %>%
+        purrr::map_dbl(mean) #have to call map_dbl to simplify output from nested list to simple vector
+
+  costOfSecondTargetUnilateral <- corrected[1] - corrected[2]
+  # 1 - cost of second target bilateral / costOfSecondTargetUnilateral
+  hemifieldIndependence <- 1 - (corrected[3]-corrected[4]) / costOfSecondTargetUnilateral
+  return (hemifieldIndependence)
+}
+
+alvarezCavanaghE1Independence <- calculateIndependence(alvarezCavanagh2005E1,0.5)
+alvarezCavanaghE1Independence
+```
+
+
+
+The hemifield advantages of 
+
+@alvarezIndependentResourcesAttentional2005 were the first to show that distributing objects to two hemifields rather than one could, essentially, double performance, as if two brains were doing the task rather than one...
 
 , such that presenting a word, for example, yields slightly greater accuracy 
 
@@ -29,7 +88,7 @@ In visual short-term memory tasks, people perform a good deal better when the st
 @delvenneCapacityVisualShortterm2005: "a color and spatial location change detection task, in which the items were displayed either in the two visual fields or in the same hemifield. The data revealed that only memory capacity for spatial locations and not colors increased when the items were separated between the two visual fields. These findings support the view of VSTM as a chain of capacity limited operations where the spatial selection of stimuli, which dominates in both spatial location VSTM and MOT, occupies the first place and shows independence between the two fields."
 
 
-@alvarezIndependentResourcesAttentional2005 were the first to show that distributing objects to two hemifields rather than one could, essentially, double performance, as if two brains were doing the task rather than one...
+
 
 @hudsonHemifieldEffectsMultiple2012 multiple identity tracking , found a hemifield advantage: " Contrary to expectations, a bilateral advantage was still observed, though it was not as strong as when observers were not required to remember the identities of the targets. This finding is inconsistent with the only model of multiple identity tracking (Oksama & Hyönä, 2008, Cognitive Psychology, 56, 237-283), so we present an alternative account."
 
@@ -37,8 +96,12 @@ In visual short-term memory tasks, people perform a good deal better when the st
 
 RIGHT HEMIFIELD IS BETTER @holcombeObjectTrackingAbsence2014 (Figure A2), Battelli
 
+## Why
+
+It happens for spatial VSTM but not color [@delvenneCapacityVisualShortterm2005]
 
 ### Quadrants
 
 Carlson et al. found evidence for quadrants. Has this been replicated? And @strongHemifieldspecificControlSpatial2019 found a cost for crossing the vertical midline but not the horizontal midline. So now we know that the cross-hemisphere cost does not occur for quadrants. 
 
+Hughes & Zimba, 1987
