@@ -15,18 +15,14 @@ In visual short-term memory tasks, people perform a good deal better when the st
 
 @alvarezIndependentResourcesAttentional2005 were the first to show that distributing objects to two hemifields rather than one could, essentially, double performance, as if two brains were doing the task rather than one...
 
-@hudsonHemifieldEffectsMultiple multiple identity tracking , found a hemifield advantage: " Contrary to expectations, a bilateral advantage was still observed, though it was not as strong as when observers were not required to remember the identities of the targets. This finding is inconsistent with the only model of multiple identity tracking (Oksama & Hyönä, 2008, Cognitive Psychology, 56, 237-283), so we present an alternative account."
+@hudsonHemifieldEffectsMultiple2012 multiple identity tracking , found a hemifield advantage: " Contrary to expectations, a bilateral advantage was still observed, though it was not as strong as when observers were not required to remember the identities of the targets. This finding is inconsistent with the only model of multiple identity tracking (Oksama & Hyönä, 2008, Cognitive Psychology, 56, 237-283), so we present an alternative account."
 
 @strongHemifieldspecificControlSpatial2019
 
-RIGHT HEMIFIELD IS BETTER @holcombeObjectTrackingAbsence2014 (Figure A2)
+RIGHT HEMIFIELD IS BETTER @holcombeObjectTrackingAbsence2014 (Figure A2), Battelli
 
-<!-- What do these findings mean for how we should conceive of the processes that underlie tracking?...  IT COULD BE THAT it is escape from spatial interference, such that spatial interference is the problem and it doesn't happen across hemifields. There are no hemisphere-specific resources per se. But even on that account, something has to track the target when it crosses, thus predicting Strong & Alvarez's crossing finding. That is, even on the spatial interference account, something outside of cortical maps has to know about the targets and it has to work for both hemifields, so for example you can respond with the other hand. NO, there might be nothing different for traveling to the other hemisphere. At the level that tracking is controlled, there might be 100% cross-hemispheric integration. But that doesnt' seem very plausible, so giving the spatil interference account its due, they'd predict strong's result also. -->
 
-<!-- ### Quadrants
+### Quadrants
 
 Carlson et al. found evidence for quadrants. Has this been replicated? And @strongHemifieldspecificControlSpatial2019 found a cost for crossing the vertical midline but not the horizontal midline. So now we know that the cross-hemisphere cost does not occur for quadrants. 
-
-Because objects presented to the same hemifield are represented by neurons closer to each other in the brain than objects presented to different hemifields, this finding of hemispheric independence provided some sustenance to the spatial interference theory championed by Franconeri and described in \@ref(Spatial). Under this account, the 
--->
 
