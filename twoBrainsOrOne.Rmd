@@ -1,8 +1,6 @@
 # Two brains or one? {#twoBrains}
 
- The fact that the brain is made up of two separate hemispheres has some striking consequences for object tracking , and more subtle ones for other tasks involving keeping objects in mind. This section will review the research regarding the remarkable hemifield independence of multiple object tracking (including two papers from my lab), as well as the specificity for spatial attention tasks - non-spatial measures of working memory show little independence, implicating a more unitary resource.
-
-NOBODY has incorporated the hemifield division in their model!
+Most of the public know little about the brain, but do know that there are two somewhat-separated halves to the brain, the left and the right half.
 
 Most people know that the brain has two hemispheres. Many know little else about the brain, but they understandably assume that the division of the brain into two halves has major consequences for how we learn. A major industry of pseudoscientific education consultants and brain training programs has sprung up around ideas such as "left brain versus right brain" training [@kroezeBrainGymPseudoscientific2016]. The truth is that while early sensory processing is very hemisphere-specific, more cognitive functions such as explicit learning benefit from remarkably tight integration of the two hemispheres. When we open our eyes, we have the experience of attending easily to objects in any part of the visual field. We experience no dislocation when the movement of our eyes, or of an object, cause it to shift from one hemifield, where it is processed by one hemisphere, to the other hemifield, where it is processed by the other hemisphere. Communication between the two hemispheres happens rapidly and continuously. There is little to no evidence that exercises designed to insure both hemispheres process stimuli have any benefit for learning. 
 
