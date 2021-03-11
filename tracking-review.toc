@@ -1,0 +1,42 @@
+\contentsline {chapter}{Preface}{5}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Attending to moving objects}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Tracking task short description and anecdotes}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Outline}{9}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Two brains or one?}{11}{chapter.2}%
+\contentsline {subsection}{\numberline {2.0.1}Quadrants}{12}{subsection.2.0.1}%
+\contentsline {chapter}{\numberline {3}Bottlenecks and capacity}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}The tracking bottleneck}{15}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}There is no hard limit on the number of objects that people can track}{15}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}There is no real limit on the \emph {effective} number of objects that people can track}{16}{subsection.3.1.2}%
+\contentsline {chapter}{\numberline {4}Objects}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Attentional spread}{20}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Are object creation processes distinct from tracking processes?}{21}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Objects and object-hood}{22}{section.4.3}%
+\contentsline {section}{\numberline {4.4}FINISH}{22}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Which aspect(s) of tracking determine performance?}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}C=1 processes}{25}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Duration that one can sustain attention}{26}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Spatial selection of multiple locations}{27}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Spatial interference}{28}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Temporal interference}{28}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Speed limit of attention-following}{29}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Moving forward}{29}{section.5.7}%
+\contentsline {chapter}{\numberline {6}Spatial interference}{31}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Moving forward}{32}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Serial processing, parallel processing, or both?}{33}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Beyond location}{35}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Velocity and extrapolation, not just position}{35}{section.8.1}%
+\contentsline {chapter}{\numberline {9}Speed and time}{37}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Speed}{37}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Time}{37}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Temporal limits}{38}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Discarded}{40}{section.9.4}%
+\contentsline {chapter}{\numberline {10}Identity}{41}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Tracking limits feature pairing}{41}{section.10.1}%
+\contentsline {chapter}{\numberline {11}Abilities, individual differences, dual-task interference}{43}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Do people vary much in how many objects they can track?}{43}{section.11.1}%
+\contentsline {section}{\numberline {11.2}What tasks are most related to MOT?}{44}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Dual-task}{45}{section.11.3}%
+\contentsline {chapter}{\numberline {12}Real world}{47}{chapter.12}%
+\contentsline {chapter}{\numberline {13}Misconceptions and questions}{49}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Topics not covered by this review}{50}{section.13.1}%

@@ -10,26 +10,14 @@ This is not to say that the hemispheres are equivalent. They do specialize in di
 
 There is another subtle effect of the hemispheric division of cortex. In some tasks involving two simultaneously-presented stimuli, higher performance is found when each stimulus is presented in a different hemifield rather then presenting them both in the same hemifield. For example, the reporting of two briefly-presented digits is more accurate when the digits are presented in different hemifields than in the same hemifield [@dimondUseTwoCerebral1971].  
 
-The level of hemispheric independence for a task can be quantified from the advantage provided by presenting the relevant stimuli in distinct hemifields. If adding a second stimulus to a hemifield reduces performance by, say, 20 percentage points, but adding that second stimulus to the other hemifield instead reduces performance by only 5 percentage points, then we can say that there is (20-5) / 20 = 75% hemifield independence. It is not quite this simple, in that one needs to control for chance performance, but the previous sentence illustrates the principle.
+The level of hemispheric independence for a task can be quantified from the advantage provided by presenting the relevant stimuli in distinct hemifields. If adding a second stimulus to a hemifield reduces performance by, say, 20 percentage points, but adding that second stimulus to the other hemifield instead reduces performance by only 5 percentage points, one might say that there is (20-5) / 20 = 75% hemifield independence. That illustrates the principle, but it is not quite this simple, in that one needs to first correct for guessing before interpreting the performance figures.
 
-However, many studies did not include a single-stimulus condition, so when performance is higher in the split condition, we don't know how close that is to the one-target level of performance [@awhEvidenceSplitAttentional2000; @serenoDiscriminationHemifieldsNew1991; @dimondUseTwoCerebral1971].
-
-@delvenneCapacityVisualShortterm2005 observed approximately a 40% independence for spatial VSTM <!--   -->.
-
-These effects tend to be small. ()
-
-
-
-
-## The extraordinary hemifield independence of object tracking
-
-In 2005, Alvarez & Cavanagh assessed the level of hemifield independence for multiple object tracking [@alvarezIndependentResourcesAttentional2005]. The result was a truly extraordinary finding: 88% independence (they did not . <!--E1: Unilateral 89% 1 target -> 63% 2 target.  Bilateral: 93% 1 target -> 90% 2 target. (26-3)/26= 88%. E3: Unilateral 2targets:93%, 4targets:67%. Bilateral 2targets:90%, 4targets:87%. (26-3)/26=88% -->
-Davis & Schmit, 1971
 ```{r}
 # 
 # Unilateral 1 target, Unilateral 2 target, Bilateral 1 target, Bilateral 2 target
-alvarezCavanagh2005E1 <- c(.89,.63,.93,.90)
-chance<- 0.5
+#alvarezCavanagh2005E1 <- c(.89,.63,.93,.90)
+#chance<- 0.5
+
 #Correct for guessing
 #What is the true rate, t, at which people know the answer not from guessing, where guessing rate = c
 # accuracy = t + (1-t)c
@@ -53,9 +41,10 @@ correctForChance <- function(x,chance) {
 #correctForChance(.89,chance)
 library(dplyr)
 #1:10 %>% purrr::map(rnorm, n=10)
-accCorrected <- alvarezCavanagh2005E1 %>% purrr::map(correctForChance,chance) %>% 
-  purrr::map_dbl(mean) #have to call map_dbl to simplify output from nested list to simple vector
-accCorrected
+
+#accCorrected <- alvarezCavanagh2005E1 %>% purrr::map(correctForChance,chance) %>% 
+#  purrr::map_dbl(mean) #have to call map_dbl to simplify output from nested list to simple vector
+#accCorrected
 
 calculateIndependence <- function(accuracies,chance) {
   corrected <- accuracies %>% purrr::map(correctForChance,chance) %>%
@@ -67,11 +56,38 @@ calculateIndependence <- function(accuracies,chance) {
   return (hemifieldIndependence)
 }
 
-alvarezCavanaghE1Independence <- calculateIndependence(alvarezCavanagh2005E1,0.5)
-alvarezCavanaghE1Independence
 ```
 
+However, many studies did not include a single-stimulus condition, so when performance is higher in the split condition, we don't know how close that is to the one-target level of performance [@awhEvidenceSplitAttentional2000; @serenoDiscriminationHemifieldsNew1991; @dimondUseTwoCerebral1971].
 
+@delvenneCapacityVisualShortterm2005 observed approximately a 40% independence for spatial VSTM <!--   -->.
+
+These effects tend to be small. ()
+
+
+
+
+## The extraordinary hemifield independence of object tracking
+
+In 2005, Alvarez & Cavanagh assessed the level of hemifield independence for multiple object tracking [@alvarezIndependentResourcesAttentional2005].  <!--E1: Unilateral 89% 1 target -> 63% 2 target.  Bilateral: 93% 1 target -> 90% 2 target. (26-3)/26= 88%. E3: Unilateral 2targets:93%, 4targets:67%. Bilateral 2targets:90%, 4targets:87%. (26-3)/26=88% -->
+
+```{r, include=F}
+# 
+# Unilateral 1 target, Unilateral 2 target, Bilateral 1 target, Bilateral 2 target
+alvarezCavanagh2005E1 <- c(.89,.63,.93,.90)
+alvarezCavanagh2005E3 <- c(.93,.67,.90,.88)
+chance<- 0.5
+
+alvarezCavanaghE1Independence <- calculateIndependence(alvarezCavanagh2005E1,0.5)
+alvarezCavanaghE1Independence
+
+alvarezCavanaghE3Independence <- calculateIndependence(alvarezCavanagh2005E3,0.5)
+alvarezCavanaghE3Independence
+```
+
+The result was a truly extraordinary finding: `r round(100*alvarezCavanaghE1Independence)`% independence in one experiment, and `r round(100*alvarezCavanaghE3Independence)`% in a second experiment. They themselves did not calculate these figures - they instead concluded that there was 100% independence, but this was based on the fallacy of concluding a null hypothesis is true when the evidence does not reject it at a p<.05 level, where here they used as the null hypothesis that there was 100% independence, such that they were essentially assuming their conclusion.
+
+Davis & Schmit, 1971
 
 The hemifield advantages of 
 
