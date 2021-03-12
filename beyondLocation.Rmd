@@ -9,6 +9,11 @@ Blaser Pylyshyn Holcombe
 
 The role of motion signals . Seiffert
 
+Extrapolation theory predicts 
+
+* attention will be right on the target.
+* Linear effect of velocity
+
 @fencsikRoleLocationMotion2007 @howeMotionInformationSometimes2012 both found evidence that motion is used for one or two targets but not more
 
 Lack of extrapolation:
