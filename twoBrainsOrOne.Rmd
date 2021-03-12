@@ -12,6 +12,7 @@ There is another subtle effect of the hemispheric division of cortex. In some ta
 
 The level of hemispheric independence for a task can be quantified from the advantage provided by presenting the relevant stimuli in distinct hemifields. If adding a second stimulus to a hemifield reduces performance by, say, 20 percentage points, but adding that second stimulus to the other hemifield instead reduces performance by only 5 percentage points, one might say that there is (20-5) / 20 = 75% hemifield independence. That illustrates the principle, but it is not quite this simple, in that one needs to first correct for guessing before interpreting the performance figures.
 
+
 ```{r}
 # 
 # Unilateral 1 target, Unilateral 2 target, Bilateral 1 target, Bilateral 2 target
@@ -58,9 +59,8 @@ calculateIndependence <- function(accuracies,chance) {
 
 ```
 
-However, many studies did not include a single-stimulus condition, so when performance is higher in the split condition, we don't know how close that is to the one-target level of performance [@awhEvidenceSplitAttentional2000; @serenoDiscriminationHemifieldsNew1991; @dimondUseTwoCerebral1971].
+However, many studies did not include a single-stimulus condition, so when performance is higher in the split condition, we don't know how close that is to the one-target level of performance [@awhEvidenceSplitAttentional2000; @serenoDiscriminationHemifieldsNew1991; @dimondUseTwoCerebral1971], or they used response time as a measure, which is especially difficult to interpret.
 
-@delvenneCapacityVisualShortterm2005 observed approximately a 40% independence for spatial VSTM <!--   -->.
 
 These effects tend to be small. ()
 
@@ -87,7 +87,7 @@ alvarezCavanaghE3Independence
 
 The result was a truly extraordinary finding: `r round(100*alvarezCavanaghE1Independence)`% independence in one experiment, and `r round(100*alvarezCavanaghE3Independence)`% in a second experiment. They themselves did not calculate these figures - they instead concluded that there was 100% independence, but this was based on the fallacy of concluding a null hypothesis is true when the evidence does not reject it at a p<.05 level, where here they used as the null hypothesis that there was 100% independence, such that they were essentially assuming their conclusion.
 
-Davis & Schmit, 1971
+<!-- RT study, always used 2 targets.  Davis, R., & Schmit, V. (1971). Timing the transfer of information between hemispheres in man. Acta Psychologica, 35(5), 335–346. https://doi.org/10.1016/0001-6918(71)90008-4 -->
 
 The hemifield advantages of 
 
@@ -99,12 +99,19 @@ In normal individuals, there are some tasks for which there is evidence of some 
 
 normal individuals act much more as if their hemispheres are working independently.
 
+<!-- A' is no good https://sites.google.com/a/mtu.edu/whynotaprime/ -->
+@delvenneCapacityVisualShortterm2005 used A', which sucks, observed approximately a 40% independence for spatial VSTM <!--   -->.
+
 In visual short-term memory tasks, people perform a good deal better when the stimuli are spread across both the left and right hemifields rather than all presented to the left hemifield or to the right hemifield [@delvenneVisualShorttermMemory2012]. The reason, it is believed, is that there is some sort of resource that is specific to each hemifield. It is better, then, to spread one's load, rather than burdening one hemisphere more than the other. If the processes that limit memory performance were entirely specific to the hemispheres, then once people's limit for remembering objects presented to one hemifield were reached, one could add more objects to the other hemifield without any cost for the proportion of objects remembered. Instead, though, the hemifield advantage is only partial. There are a few tasks, however, for which the hemifield advantage seems to be complete, and multiple object tracking is one.
 
-@delvenneCapacityVisualShortterm2005: "a color and spatial location change detection task, in which the items were displayed either in the two visual fields or in the same hemifield. The data revealed that only memory capacity for spatial locations and not colors increased when the items were separated between the two visual fields. These findings support the view of VSTM as a chain of capacity limited operations where the spatial selection of stimuli, which dominates in both spatial location VSTM and MOT, occupies the first place and shows independence between the two fields."
+@delvenneCapacityVisualShortterm2005: "a color and spatial location change detection task, in which the items were displayed either in the two visual fields or in the same hemifield. The data revealed that only memory capacity for spatial locations and not colors increased when the items were separated between the two visual fields. These findings support the view of VSTM as a chain of capacity limited operations where the spatial selection of stimuli, which dominates in both spatial location VSTM and MOT, occupies the first place and shows independence between the two fields." also null effect for color XuNakayama2007
 
+@delvenneBilateralFieldAdvantage2011 showed a bilateral advantage for subitizing. <!-- Subitizng and enumeration. Bilateral advantage shown for enumeration. None for subitizing, although that's hard to interpret because ceiling effect -->
 
+@delvenneVisualShorttermMemory2012 review article: "Those data reveal that a BFA can be found in spatial short-term memory, namely when the task requires holding spatial information. However, no BFA has been found in object short-term memory (i.e., when the task is to hold detailed visual properties of the objects), unless attentional selective processes are dominantly engaged in the task, s"
 
+@umemotoBilateralAdvantageStorage2010 found bilateral advantage even with sequential so must be storage, althoguh used orientation, so could be spatial still
+<!-- used mixture model, but  might have assessed capacity quantitatively--> Mixture model suggests only a modest increase, from perhaps capacity of 2 <!--0.5*4, Figure 11--> to capacity of 2.3 <!--.575*4, Figure11-->
 
 @hudsonHemifieldEffectsMultiple2012 multiple identity tracking , found a hemifield advantage: " Contrary to expectations, a bilateral advantage was still observed, though it was not as strong as when observers were not required to remember the identities of the targets. This finding is inconsistent with the only model of multiple identity tracking (Oksama & Hyönä, 2008, Cognitive Psychology, 56, 237-283), so we present an alternative account."
 
