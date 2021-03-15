@@ -58,7 +58,8 @@ calculateIndependence <- function(accuracies,chance) {
 
 ```
 
-In 2005, Alvarez & Cavanagh assessed the level of hemifield independence for multiple object tracking [@alvarezIndependentResourcesAttentional2005].  <!--E1: Unilateral 89% 1 target -> 63% 2 target.  Bilateral: 93% 1 target -> 90% 2 target. (26-3)/26= 88%. E3: Unilateral 2targets:93%, 4targets:67%. Bilateral 2targets:90%, 4targets:87%. (26-3)/26=88% -->
+In 2005, Alvarez & Cavanagh compared performance when participants tracked either one target or two targets  [@alvarezIndependentResourcesAttentional2005]. In a condition where the second target was located in the same hemifield as the first target, accuracy was much worse (89% vs. 63%). Remarkably, however, when the second target was in the opposite hemifield, there was very little performance decrement (93% vs. 90%).  Evidently, the processes that limit successful tracking are largely specific to the two hemifields, suggesting that there are two sets of processes that track multiple objects, one in the left cerebral hemisphere, and one in the right.
+  <!--E1: Unilateral 89% 1 target -> 63% 2 target.  Bilateral: 93% 1 target -> 90% 2 target. (26-3)/26= 88%. E3: Unilateral 2targets:93%, 4targets:67%. Bilateral 2targets:90%, 4targets:87%. (26-3)/26=88% -->
 
 ```{r, include=F}
 # 
@@ -74,22 +75,39 @@ alvarezCavanaghE3Independence <- calculateIndependence(alvarezCavanagh2005E3,0.5
 alvarezCavanaghE3Independence
 ```
 
+The level of hemispheric independence for a task can be quantified from the advantage provided by presenting the relevant stimuli in distinct hemifields. If adding a second stimulus to a hemifield reduces performance by, say, 20 percentage points, but adding that second stimulus to the other hemifield instead reduces performance by only 5 percentage points, one might say that there is (20-5) / 20 = 75% hemifield independence. That illustrates the principle, but it is not quite this simple, in that one needs to first correct for guessing before interpreting the performance figures.
+
 The result was a truly extraordinary finding: `r round(100*alvarezCavanaghE1Independence)`% independence in one experiment, and `r round(100*alvarezCavanaghE3Independence)`% in a second experiment. 
 
 @alvarezIndependentResourcesAttentional2005 themselves did not report these figures. They did calculate expected performance if the hemifields are in fact completely independent, and found that performance was not statistically significantly worse than that figure. They then suggested that there was complete independence, but this is the common fallacy of concluding a null hypothesis is true when the evidence does not reject it at a p<.05 level. In other words, they assumed (as the null hypothesis) their conclusion of complete independence, and then affirmed the conclusion on the basis of not finding much evidence against it.
 
-Still, they did find that distributing objects to two hemifields could almost double capacity, as if for this task, the two hemispheres functioned almost as two different brains. Subsequent work by @holcombeExhaustingAttentionalTracking2012 <!--Calculated two-target prediction, and was about 75% independent, but plenty of noise non-significant speed threshold decreases of c(1.67,1.44,1.7,1.63) 1.98rps->1.85 --> and @chenResourceDemandsObject2013 also found that hemifields were not far from completely independent. A few researchers did not duplicate this result - @shimSpatialSeparationTargets2008 <!--performance in all the conditions involved in their comparison were great- er than 85% correct, including many low speeds where performance was near ceiling --> @shimNumberAttentionalFoci2010<!--Figure 1--> found a bilateral advantage, but far from complete independence.
+The calculation rests on assumptions that are not secure. That when given the task of tracking two targets, if you can only track one, you still do just as well on the first, while guessing on the second
 
+<!--Still, they did find that distributing objects to two hemifields could almost double capacity, as if for this task, the two hemispheres functioned almost as two different brains. -->Subsequent work by @holcombeExhaustingAttentionalTracking2012 <!--Calculated two-target prediction, and was about 75% independent, but plenty of noise non-significant speed threshold decreases of c(1.67,1.44,1.7,1.63) 1.98rps->1.85 --> and @chenResourceDemandsObject2013 found that tracking in the two hemifields was largely independent, but perhaps not completely independent. @shimNumberAttentionalFoci2010<!--Figure 1--> also found a substantial bilateral advantage. This result has not always replicated [@shimSpatialSeparationTargets2008] <!--performance in all the conditions involved in their comparison were great- er than 85% correct, including many low speeds where performance was near ceiling -->  <!--For most of these tasks, but not @shimNumberAttentionalFoci2010, more targets was confounded with having to make more responses and remember said responses at the end of the trial, so some of the residual cost could be due to that being unitary rather than hemifield-specific.-->, but the successful replications, and the substantial statistical power associated with them (evident in their error bars) indicate that hemispheric near-independence of tracking does in fact occur.
+
+Most cognitive tasks are unlikely to be independently mediated by the two hemispheres, with one set of processes in each hemisphere.
+Even feature attention is global
+
+have such a high level of hemispheric independence.
+
+likely do not have this independence. 
+do not appear to have this independence. For e
+
+A great thing about this discovery is that it shows decisively that MOT processes are differentiable from more cognitive processes.
+provides a new tool
+
+A major complication to calculating the amount of hemifield independence in multiple object tracking is that 
+
+While finding hemifield indpendence
+@chenResourceDemandsObject2013 This unitary resource doesn't do that much in tracking!
 
 corroborated this conclusion that the two hemispheres
 
 <!-- RT study, always used 2 targets.  Davis, R., & Schmit, V. (1971). Timing the transfer of information between hemispheres in man. Acta Psychologica, 35(5), 335–346. https://doi.org/10.1016/0001-6918(71)90008-4 -->
 
-Contrary results . Affirming results @shimNumberAttentionalFoci2010
 
-@alvarezIndependentResourcesAttentional2005 were the first to show that distributing objects to two hemifields rather than one could, essentially, double performance, as if two brains were doing the task rather than one...
 
-Most of these tasks more targets was confounded with having to make more responses and remember said responses at the end of the trial, so some of the residual cost could be due to that being unitary rather than hemifield-specific.
+
 
 @chenResourceDemandsObject2013 @croweGoaldirectedUnequalAttention2019
 
@@ -100,7 +118,7 @@ if some stimuli are presented in one visual field
 
 There is another subtle effect of the hemispheric division of cortex. In some tasks involving two simultaneously-presented stimuli, higher performance is found when each stimulus is presented in a different hemifield rather then presenting them both in the same hemifield. For example, the reporting of two briefly-presented digits is more accurate when the digits are presented in different hemifields than in the same hemifield [@dimondUseTwoCerebral1971].  
 
-The level of hemispheric independence for a task can be quantified from the advantage provided by presenting the relevant stimuli in distinct hemifields. If adding a second stimulus to a hemifield reduces performance by, say, 20 percentage points, but adding that second stimulus to the other hemifield instead reduces performance by only 5 percentage points, one might say that there is (20-5) / 20 = 75% hemifield independence. That illustrates the principle, but it is not quite this simple, in that one needs to first correct for guessing before interpreting the performance figures.
+
 
 
 However, many studies did not include a single-stimulus condition, so when performance is higher in the split condition, we don't know how close that is to the one-target level of performance [@awhEvidenceSplitAttentional2000; @serenoDiscriminationHemifieldsNew1991; @dimondUseTwoCerebral1971], or they used response time as a measure, which is especially difficult to interpret.

@@ -1,6 +1,31 @@
 # Mobile computation 
 
-Some things require extended time.
+We live in a world of constantly moving objects. The receptive fields in our early visual cortices that analyze the properties of objects are largely stationary. In the case of moving objects, these individual analyzers get only a glimpse of moving objects before they move on. These glimpses will sometimes be too brief to fully process the object. What makes things even worse is that in our world of moving objects, another object may quickly move onto the retinal location previously occupied by the old object, such that extended analysis by our stationary receptive fields may combine the two objects, yielding a mish-mash of features.
+
+This phenomenon is demonstrated by the below movie (if it doesn't play, you should be able to view it [here](https://media.giphy.com/media/g4FWsHsyYwnphuEyh5/source.gif)). Keep your gaze fixed on the circle in the center, and try to judge for one of the flip-flopping objects whether the light green color is paired with leftward tilt or rightward tilt.
+You may find this difficult or impossible to judge. 
+
+```{r, echo=FALSE, out.width="100%", fig.cap="Task: fixate the circle and judge whether the red color is paired with leftward tilt or rightward tilt."}
+#Work-around to make GIFs work by avoiding including them in non-html outputs!
+#https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
+if(knitr::is_html_output()) knitr::include_url("movies/OC4HzNoGuide.gif") else knitr::include_graphics("movies/OC4HzNoGuide_static.gif")
+#, height = "250px"
+```
+
+As a result, our brains need to combine the outputs of individual analyzers along a moving object's trajectory [@nishidaMotionbasedAnalysisSpatial2004a; @nishidaHumanVisualSystem2007a]. You may be able to experience this in action by viewing the below movie (if it doesn't play below, you should be able to view it [here](movies/OC4HzGuide_static.gif)). This time, while keeping your gaze fixed on the circle in the center, try to track the white circle with your attention as it steps about the circle. This may allow you to judge whether the light green is paired with leftward or rightward tilt [@cavanaghMobileComputationSpatiotemporal2008].
+
+```{r, echo=FALSE, out.width="100%", fig.cap="Task: fixate the circle and judge whether the light green is paired with leftward tilt or rightward title."}
+#Work-around to make GIFs work by avoiding including them in non-html outputs!
+#https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
+if(knitr::is_html_output()) knitr::include_url("movies/OC4HzGuide.gif") else knitr::include_graphics("movies/OC4HzGuide_static.gif")
+#, height = "250px"
+``` 
+
+This second movie is identical to the first except for the addition of the stepping white ring. Tracking the ring with attention feels almost automatic thanks to it being the only moving object. The continuous selection enabled by tracking here evidently provides later stages of visual processing with an extended view of the object, allowing it to deliver the feature pairing [@cavanaghMobileComputationSpatiotemporal2008].
+
+
+
+
 
 movies/MOTmovies/holcombeLinaresVaziriPashkam/pairing.mov
 

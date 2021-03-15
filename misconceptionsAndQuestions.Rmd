@@ -11,6 +11,7 @@ Thus, while many potential athlete users may imagine that a test of attention te
 ## Topics not covered by this review
 
 Retinotopic or spatiotopic and configural @yantisMultielementVisualTracking1992, @billHierarchicalStructureEmployed2020, @howeCoordinateSystemsUsed2010
+@meyerhoffDistractorLocationsInfluence2015 
 
 expansion and contraction hurts position judgments @howeVisuallyTrackingLocalizing2013
 

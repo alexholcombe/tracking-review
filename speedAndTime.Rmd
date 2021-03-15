@@ -10,6 +10,8 @@ How fast can people track? This is an important question, not only for predictin
 
 At very low speeds/temporal frequencies, participants have no problem tracking two or even three targets, consistently achieving performance levels above 95% (as seen in Figure 3). This implies that the performance versus resource function is different (shallower) for low speeds. Going from 100% resource (one target) to 50% (two targets) or 33% (three targets) yields little impairment. The reason may be that in this regime of low speeds, even if participants fail to move their tracking focus with the targets for an extended interval (a few hundred milliseconds), they can still recover the targets by finding the objects closest to the positions they last registered. Only at limiting temporal frequen- cies or speeds is there a consequence to having noisy (parallel tracking models, see General discussion) or intermittent (serial tracking models) position updating.
 
+perceived speed is what matters? @marinovicAttentionaltrackingAcuityModulated2013
+
 ## Time
 
 What makes a tracking task hard for a person, or even impossible? 
