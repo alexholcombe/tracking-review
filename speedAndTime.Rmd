@@ -12,10 +12,14 @@ At very low speeds/temporal frequencies, participants have no problem tracking t
 
 perceived speed is what matters? @marinovicAttentionaltrackingAcuityModulated2013
 
+Circular trajectories - explain that it’s the only way to get up to those speeds
+
 ## Time
 
 What makes a tracking task hard for a person, or even impossible? 
 
+ tracking task that resembles the shell games used by conjurers to confound audiences. A magician might cover an object with one of three identical shells and shuffle the shells back and forth while the audience tries to keep their attention on the critical shell.
+ 
 Let's return to the classic shell game. In a shell game, an item is placed beneath one of three identical shells, making that shell the target. The viewer tries to keep track of which shell has the item underneath it. 
  <!-- insert Conversation article text-->
 
@@ -62,6 +66,8 @@ Because with more targets, these limits overlap a lot, it's still an open questi
 
 
 @roudaiaDifferentEffectsAging2017 found age and gender effects. I think I emailed with her, too.
+
+Bello et al. predict we won’t observe temporal frequency limits if we don’t use predictable circular trajectories. My oscillating spiral display might disprove that very quickly.
 
 ## Discarded 
 

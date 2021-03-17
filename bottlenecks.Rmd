@@ -1,4 +1,4 @@
-# Bottlenecks and capacity 
+# Bottlenecks and capacity {#bottlenecks}
 
 How many arithmetic problems can you do simultaneously? Although your brain contains more than 80 billion neurons, if you are asked to multiply two two-digit numbers together, you will only be able to do one at a time [@oberauerAccessInformationWorking2002, @zylberbergBrainRouterCortical2010a]. Of course, this is not a task that most of us do daily. Reading, however, is such a task. If I showed you twenty words on a page, how many could you read simultaneously? A large body of psychological research suggests that humans can read at most only a few words at a time, and some claim that we can only read one word at a time [@whiteEvidenceSerialProcessing2018; @reichleEncodingMultipleWords2009]. 
 
@@ -31,7 +31,7 @@ For limited capacity processes, something is needed to pick out, from a crowded 
 
 > Findings support a view in which parallel, preattentive processes serve to segment the field into separate objects, followed by a process of focal attention that deals with only one object at a time.
 
-This conclusion was a bit of an over-reach. Performance was better than one would expect if only one object were processed, unlike what has been found for word processing. Duncan could explain that by saying that the presentation time was adequate for focal attention to, on *some* trials, process more than one object. Alternatively, however, it may be that the relevant processes *can* handle two objects at a time, but just does so more poorly than for one object. Work that credibly claims that a visual ability is truly limited to one object at a time is hard to find; the reading of words may be an exception.
+This conclusion was an over-reach. Performance was better than one would expect if only one object were processed, unlike what has been found for word processing. Duncan could explain that by saying that the presentation time was adequate for focal attention to, on *some* trials, process more than one object. Alternatively, however, it may be that the relevant processes *can* handle two objects at a time, but just does so more poorly than for one object. Work that credibly claims that a visual ability is truly limited to one object at a time is hard to find; the reading of words may be an exception.
 
 <!-- One concern with this conclusion was that the results might be explained by a bottleneck on the number of spatial locations that participants needed to process rather than the number of locations. However, subsequent work was more effective at spatially overlapping two objects, which diminished this concern [@blaserTrackingObjectFeaturespace2000]. 
 -->

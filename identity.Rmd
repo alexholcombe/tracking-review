@@ -7,8 +7,35 @@ Let's return to the classic shell game. In a shell game, an item is placed benea
 
 ![The location of two identical shells are exchanged in a shell game](imagesForRmd/shellGame.png){width=50%} 
 
-## Tracking limits feature pairing 
 
-movies/MOTmovies/holcombeLinaresVaziriPashkam/pairing.mov
 
-movies/MOTmovies/holcombeLinaresVaziriPashkam/pairing_3timesfaster.mov
+
+# Binding and identity
+
+Look at Hrag Pailian's findings for a striking demonstration of how limited we are in updating identity locations.
+
+Tracking is important for representing objects still in view @tsubomiNeuralLimitsRepresenting2013
+
+Most of the tracking research we have discussed so far has used targets and distractors that are all identical to each other, after the initial phase where the targets are indicated somehow. In the real world, however, this is uncommon. Some might expect that tracking would be very easy in such situations. However, anyone who has played, or even just watched, soccer or basketball has probably had some experience that belies this. As a defender or as a spectator, we try to keep track of the opponents, especially the other team's star player - the biggest threat. Yet we occasionally have the experience of noticing that a star player has gotten into a great shooting or attacking position. We might think, "Where did he come from?" because we lost track of the player, who moved a considerable distance before we regained track of him.
+
+How does this happen? A naive view of visual perception is that we are simultaneously aware of the identities of all the objects in a scene, so unless a player actually disappears or hides behind something or someone, we should know where everyone is at all times? There are three limitations that the naif is not aware of. First, peripheral vision has poor color vision, and even poorer spatial resolution. Some don't notice this because in most situations, as soon as a person is interested in an object in the visual field, they move their eyes to it and acquire excellent resolution and color vision before they've noticed that they didn't have it. 
+
+A second factor is that even when objects remain close enough to central vision to resolve their identities, a limited resource is required to bind their features together, including binding individual features with their location... 
+
+A third factor is, of course, the limitations that result in imperfect performance even on tracking identical objects, reviewed in the previous sections..
+
+You can track four objects without being able to identify stuff on the four objects. This could either be explained by attention needing to switch between locations, or alternatively that you just need less resource to track than to identify.
+
+Because binding seems to require sustained attention, it’s unlikely it’s bound when serial attention isn’t there. But you might have a memory index of what is there - I need help on this from VWM people!
+
+<!--  Thus, even if one would like to know where Stephen Curry is on the court at all times, one certainly can't  -->
+
+<!-- ## Configurations and 
+
+Most models of tracking have assumed that people track only the targets, and track them without reference to the positions of any other objects. We know from other areas of research, however, that people rapidly extract that spatial layout or configuration of the objects in a scene. Some research has indicated that configural information is also used for tracking.
+
+
+Because binding seems to require sustained attention, it’s unlikely it’s bound when serial attention isn’t there. But you might have a memory index of what is there - I need help on this from VWM people!
+
+Linares et al. ()
+-->

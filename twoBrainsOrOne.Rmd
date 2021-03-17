@@ -85,8 +85,11 @@ The calculation rests on assumptions that are not secure. That when given the ta
 
 <!--Still, they did find that distributing objects to two hemifields could almost double capacity, as if for this task, the two hemispheres functioned almost as two different brains. -->Subsequent work by @holcombeExhaustingAttentionalTracking2012 <!--Calculated two-target prediction, and was about 75% independent, but plenty of noise non-significant speed threshold decreases of c(1.67,1.44,1.7,1.63) 1.98rps->1.85 --> and @chenResourceDemandsObject2013 found that tracking in the two hemifields was largely independent, but perhaps not completely independent. @shimNumberAttentionalFoci2010<!--Figure 1--> also found a substantial bilateral advantage. This result has not always replicated [@shimSpatialSeparationTargets2008] <!--performance in all the conditions involved in their comparison were great- er than 85% correct, including many low speeds where performance was near ceiling -->  <!--For most of these tasks, but not @shimNumberAttentionalFoci2010, more targets was confounded with having to make more responses and remember said responses at the end of the trial, so some of the residual cost could be due to that being unitary rather than hemifield-specific.-->, but the successful replications, and the substantial statistical power associated with them (evident in their error bars) indicate that hemispheric near-independence of tracking does in fact occur.
 
+Shim, Alvarez, & Jiang (2008) found no advantage for targets in different hemifields. Why? Not sure, but the objects weren’t spaced far enough part to not crowd each other across the hemifield boundaries. In contrast, Shim et al. and Bello et al. suggest it was because hemifield limit doesn’t apply when just two targets. Holcombe & Chen found it did, but Bello suggests the reason is that we used circular trajectories that are somehow different, they say you can extrapolate more with them, whereas it may be that you can extrapolate less.
+
+The target-target distance effect in Shim et al. is huge! How do I explain that? One possible explanation is Carlson’s quadrantic deficit.
 Most cognitive tasks are unlikely to be independently mediated by the two hemispheres, with one set of processes in each hemisphere.
-Even feature attention is global
+Even feature attention is global @liuConstantSpreadFeaturebased2011
 
 have such a high level of hemispheric independence.
 
