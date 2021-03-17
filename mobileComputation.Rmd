@@ -38,7 +38,24 @@ It now seems safe to conclude that a very limited attentional resource, one that
 
 Boundary and global shape processing seem to integrate across multiple features, but do not pass on information about the constituent features (here, colors) whose arrangement created the boundary or shape [@wilsonDetectionGlobalStructure1998; @cliffordRapidGlobalForm2004]. It seems that only focused attention can do that. But how does it do it? One idea that probably goes way back is that to apprehend a spatial relationship, attention must identify the colors in the colors' locations one by one pe.g., @huangCharacterizingLimitsHuman2007].
 
-A particular pattern of errors made by participants in the experiments of @holcombePerceivingSpatialRelations2011 strongly supports the serial processing theory. Recall the spatial arrangement task in which participants were required to report two of the colors aligned with each other in the inner and outer rings. In a variation of that task, the trial began with a central color cue. That color could be in either the inner ring or the outer ring. Participants were told to report which color in the other ring was aligned with that color. The speed of the rings were set to slightly below the tracking speed limit. Thanks to feature-based attention, finding the cued color was not difficult [@shihThereFeaturebasedAttentional1996]. Often the participants reported correctly the color that was aligned with the cued color. On those trials where participants made an error, they typically reported a color that was adjacent to the correct one, located either leading it (relative to the directon of motion) or trailing it. Critically, trailing errors were much more likely than leading errors, as if participants made a shift of attention from the cued ring to the other ring, but because the ring kept moving during that shift, they sometimes missed and landed on the trailing disc.
+A particular pattern of errors made by participants in the experiments of @holcombePerceivingSpatialRelations2011 strongly supports the serial processing theory. Recall the spatial arrangement task in which participants were required to report two of the colors aligned with each other in the inner and outer rings. In a variation of that task, each trial began with a central color cue. That color could be in either the inner ring or the outer ring. Participants were told to report which color in the other ring was aligned with that color. The speed of the rings were set to slightly below the tracking speed limit. Thanks to feature-based attention, finding the cued color was not difficult [@shihThereFeaturebasedAttentional1996]. Often the participants reported correctly the color that was aligned with the cued color. On those trials where participants made an error, they typically reported a color that was adjacent to the correct one, located either leading it (relative to the directon of motion) or trailing it. Critically, trailing errors were much more likely than leading errors. After a few control conditions were run, the best explanation of this was that participants made a shift of attention from the cued ring to the other ring, but because the ring kept moving during that shift, they sometimes missed and landed on the trailing disc, resulting in a mistaken report of its color.
+
+```{r, echo=FALSE, out.width="100%", fig.cap="Task: fixate the circle and judge whether the red color is paired with leftward tilt or rightward tilt."}
+#Work-around to make GIFs (but not .mov) work by avoiding including them in non-html outputs!
+#https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
+if(knitr::is_html_output()) knitr::include_url("movies/LinaresVaziriPashkamHolcombe/pairingOneStimulusCycleSoRotatesPerenially.gif") else knitr::include_graphics("movies/LinaresVaziriPashkamHolcombe/pairingOneStimulusCycleSoRotatesPereniallyStatic.gif")
+#, height = "250px"
+```
+
+
+```{r, echo=FALSE, out.width="100%", fig.cap="Task: fixate the circle and judge whether the red color is paired with leftward tilt or rightward tilt."}
+#Work-around to make GIFs (but not .mov) work by avoiding including them in non-html outputs!
+#https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
+if(knitr::is_html_output()) knitr::include_url("movies/LinaresVaziriPashkamHolcombe/pairing_3timesFasterOneStimulusCycleSoRotatesPerenially.gif") else knitr::include_graphics("movies/LinaresVaziriPashkamHolcombe/pairingOneStimulusCycleSoRotatesPereniallyStatic.gif")
+#, height = "250px"
+```
+
+movies/MOTmovies/holcombeLinaresVaziriPashkam/pairing_3timesfaster.mov
 
  That is, first attention must visit 
  
@@ -56,9 +73,7 @@ The tracking display also went beyond
 
 manipulated by visual search set size and dual-task demands is 
 
-movies/MOTmovies/holcombeLinaresVaziriPashkam/pairing.mov
 
-movies/MOTmovies/holcombeLinaresVaziriPashkam/pairing_3timesfaster.mov
 
 Franconeri spatial relationships @franconeriFlexibleVisualProcessing2011
 
