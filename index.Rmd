@@ -3,7 +3,13 @@ title: "Tracking moving objects"
 author: "Alex O. Holcombe"
 date: "`r paste0('Updated on ',Sys.Date())`"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output:
+  bookdown::gitbook:
+    split_bib: FALSE
+    config:
+      sharing:
+        twitter: yes
+        facebook: no
 documentclass: book
 #(doesn't work) html_document:
 # (doesn't work) code_folding: show
@@ -45,6 +51,10 @@ This doesn't work either:
 -->
 <!-- CANVAS quizzes - I can't see any way to make external links work, even for a Canvas Commons quiz, it takes you to a bizarro Canvas login https://lor.instructure.com/resources/76da8b14c91a40d885c6fe0452bf33f4?shared -->
 
+<!--Wordcount
+From R environment, execute the following after eliminating the references, although it will also count code perhaps?
+wordcountaddin::word_count('tracking-review.Rmd')
+-->
 
 <!--
 ```{theorem, name="Pythagorean"}

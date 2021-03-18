@@ -1,4 +1,4 @@
-# Spatial interference
+# Spatial interference {#spatialInterference}
 
 Long before @franconeriHowManyLocations2007 conducted experiments on the selection of multiple locations with different densities, researchers had recognized the existence of spatial interference in dense displays [@wolfordPerturbationModelLetter1975; @korteUberGestaltauffassungIm1923; @strasburgerDancingLettersTicks2014].
 
@@ -76,7 +76,10 @@ However, what remains under-studied is whether, or by how much, the crowding ran
 
 @holcombeObjectTrackingAbsence2014 compared tracking performance for one targets and two at various separations between the target trajectories.
 
-and didn't find evidence that crowding extended further with two targets than with one, 
+<!-- p.11:"the effect of separation was not significantly greater in the two- target condition than the one-target condition, but the difference did approach significance. Experiment 2: F(1, 7) 1⁄4 3.52, p=0.103. Experiment 3: F(1, 9) 1⁄4 3.89, p=0.054. Such an interaction would be consistent with the proposal that attending to an object results in an inhibitory surround, as attention to the two targets could then inhibit each other. This interaction is small, however, relative to the size of the additional-target cost (see Figure 7), suggesting that crowding is not responsible for much of the additional-target cost."
+-->
+
+In Holcombe Chen and Howe, was the spatial interference region larger for two targets than for one? If so, then spatial interference is resource-limited.
 
 @maki-marttunenDistinctNeuralMechanisms2019:"In both cohorts, increased load and close encounters (i.e., close spatial proximity) led to reduced accuracy in an additive manner. Load was associated with pupil dilations, whereas close encounters were not. Activity in dorsal attentional areas and frequency of saccades were proportionally larger both with higher levels of load and close encounters. Close encounters recruited additionally ventral attentional areas that may reflect orienting mechanisms. The activity in two brainstem nuclei, ventral tegmental area/substantia nigra and locus coeruleus, showed clearly dissociated patterns. Our results constitute convergent evidence indicating that different mechanisms underlie processing challenges due to load and object spacing."
 

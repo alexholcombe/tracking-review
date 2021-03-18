@@ -1,20 +1,22 @@
 # Which aspect(s) of tracking determine performance?
 
-Why do people perform more poorly with more targets? The processes involved must be, by definition, capacity-limited in that they do worse with more targets. But what aspect of the tracking task does lack of capacity cause them to suffer from more?
+Why do people perform more poorly with more targets? By definition, this means that the processes underlying tracking are capacity-limited, but by itself, that description is not very illuminating. Covert tracking is a complex task, and we would like to know which aspect(s) of it exactly are most capacity-limited.
 
 Below is a list of candidate reasons for the factors that impair performance more when there are more targets:
 In a typical MOT task, any of the below are candidates for being one of the reasons, or the main reason, that performance declines with number of targets:
 
-1. General cognition
+1. General cognition (C=1 processes)
 1. Duration that one can sustain attention
-1. Spatial selection of multiple locations, even static ones
+1. Spatial selection of multiple locations (even static ones)
 1. Spatial interference
 1. Temporal interference
 1. Speed limit of attention-following
 
 This section will explain what is meant by each of these factors. The most important of them will be discussed in more detail in subsequent sections.
 
-## C=1 processes
+<!-- Each of these processes could be resource-limited or not resource-limited. That is, some of these effects may be bigger when one is attending to more targets. This helps fractionate tracking into different kinds of constituent processes -->
+
+## General cognition (C=1 processes)
 
 In introducing the concept of a bottleneck or capacity limit in the previous section, I used the example of math problems. Using our capacity for reasoning and symbol manipulation, we can perform a wide array of arbitrary tasks. We therefore should not be surprised by our ability to track a *single* target. We know that we have a visual system that makes the position and direction of motion of objects on our retina available to cognition, and that using our ability to think about where an object is going and deliberately move our attention to a future anticipated location, we might muddle through tracking a single object. For purposes of illustration, let us call the processes involved "C=1 processes" to reflect the possibility that some cognitive processes involved have a capacity of only one object.
 

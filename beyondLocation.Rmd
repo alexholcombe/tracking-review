@@ -1,5 +1,18 @@
 # Beyond location {#beyondLocation} 
 
+Covert tracking keeps one up to date with where objects of interest are. And knowing the locations of those objects has further benefits. In particular, location, together with color and a few other features used by "feature attention", is the main route by which top-down attentional selection occurs. But what benefits does attentional selection provide that are not already delivered by the selection associated with tracking?
+
+When one needs to know more information about the objects,
+
+one wants to scrutinize the objects further
+
+Beyond simple location information, it is  advantageous to
+But beyond this location information, what benefits does it provide? 
+what benefits does it provide  
+
+TRANSITION TO MOBILE COMPUTATION.Rmd SOMEWHERE ON THIS PAGE
+
+maintain an up-to-date representation of where 
 
 How well are other features besides position tracked?
 

@@ -1,39 +1,59 @@
 # Speed and time
 
-In our list of 
+If the objects of an MOT display are moved faster and faster, eventually one can no longer track the targets. At very high speeds this is not surprising, as then one will run afoul of basic perceptual limits. As we will see, however, tracking falters at far lower speeds than expected from studies of motion perception. In addition, the maximum speed at which one can track is lower when there are more targets CITATION. Apparently, the more resource one can allocate to a target, the faster one can track it.
 
-How fast can people track? This is an important question, not only for predicting what people will be able to do in the real world, but also because investigations of the limits on tracking have led to insights into the relation of tracking processes to other aspects of attention and of motion perception.
+What does this imply for how our brains manage to covertly track moving targets? To get to some possible answers, the full consequences of increasing the speed of the objects in an MOT display must first be understood.
 
+In a standard MOT display, the targets and distractors travel all over the screen, occasionally coming very close to each other or even, in some experiments, touching each other or passing through each other. As discussed in section \@ref(spatialInterference), close encounters sometimes result in the loss of a target. That is relevant here because typically when MOT researchers test at multiple object speeds, they keep trial duration constant, so that the objects travel farther during the higher-speed trials. As a result, the objects have more close encounters, so the reason for poorer performance could simply be due to that.
 
-## Speed
-
-
-At very low speeds/temporal frequencies, participants have no problem tracking two or even three targets, consistently achieving performance levels above 95% (as seen in Figure 3). This implies that the performance versus resource function is different (shallower) for low speeds. Going from 100% resource (one target) to 50% (two targets) or 33% (three targets) yields little impairment. The reason may be that in this regime of low speeds, even if participants fail to move their tracking focus with the targets for an extended interval (a few hundred milliseconds), they can still recover the targets by finding the objects closest to the positions they last registered. Only at limiting temporal frequen- cies or speeds is there a consequence to having noisy (parallel tracking models, see General discussion) or intermittent (serial tracking models) position updating.
-
-perceived speed is what matters? @marinovicAttentionaltrackingAcuityModulated2013
-
-Circular trajectories - explain that it’s the only way to get up to those speeds
-
-## Time
-
-What makes a tracking task hard for a person, or even impossible? 
-
- tracking task that resembles the shell games used by conjurers to confound audiences. A magician might cover an object with one of three identical shells and shuffle the shells back and forth while the audience tries to keep their attention on the critical shell.
- 
-Let's return to the classic shell game. In a shell game, an item is placed beneath one of three identical shells, making that shell the target. The viewer tries to keep track of which shell has the item underneath it. 
- <!-- insert Conversation article text-->
-
-![The location of two identical shells are exchanged in a shell game](imagesForRmd/shellGame.png){width=50%} 
-
-A crucial aspect of the game is that the shells exchange locations with distractors. Thus, remembering the original location of the item is not sufficient. Neither is it sufficient to extrapolate a new position for the target based on the item's first direction of motion. Remembering its relative location in the array (e.g., the "middle one") is also not enough. One really must update one's representation of the target's position, rather than relying on any of the above.
-
-The simple reduced laboratory version of the shell game is illustrated by the following schematic.
-
-![](imagesForRmd/twoDiscsRevolving.png){width=10%}
-
-The updating of target position could fail for any of a few different reasons. A target might move too quickly for attention to move with it. That is, there may be a speed limit beyond which object position is not appropriately updated. Under serial switching accounts, this speed limit might occur if between successive samples, the object moved further than a critical distance between samples. Under parallel theories, the tracking process may simply have a speed limit. If the speed of the tracking process is resource-intensive, this speed limit may be slower when more targets are to be tracked.
+A first step to understanding the effect of speed, then, was to investigate it without the contaminating effect of an increase in close passes. The results showed that even with the objects kept far apart from each other, speed thresholds were still far below the limits on motion perception. Additionally, speed thresholds continued to be resource-intensive<!--resource-limited-->: the more targets that were tracked, the slower the speed thresholds. Does this show that speed is really what reduces tracking performance? Unfortunately, in the above-reviewed experiments, there is another variable that is affected by speed that wasn't controlled for.
 
 ## Temporal limits
+
+Close encounters in space aren't the only thing that increases with speed in a typical MOT trial. Close encounters in *time* do as well. Unfortunately, however, very few are familiar with this concept. There is an area of perception, however, where it is familiar to many. If one flickers a light off and on at a rapid enough rate, the flicker cannot be perceived; one perceives simply the average of the dark and light phases. In other words, the individual on-phases of the light cannot be perceived due to their temporal proximity with the off-phases. This occurs with moving objects as well - if an array of discs is revolved at a rapid enough rate, the brief appearance at each location of each disc is combined by the visual system with the background the discs are moving against, creating the impression of a uniform annulus.
+
+Such "flicker-fusion" phenomena reflect temporal limits in visual cortex CITATION. Later stages of the brain have slower temporal limits [@mckeeffTemporalLimitationsObject2007a]. This may have consequences for a high-level process such as those involved in tracking.
+
+As an object in an MOT display moves on from a particular location, that location will sometimes be occupied soon after by another of the moving objects. This may result in temporal interference, because the processing of the object at a particular location may not be completed before a second object invades that location.
+
+The inter-object intervals at a particular location will be long at slow object speeds and with wide spacing among objects. At high object speeds, however, these intervals can be short even if objects are widely spaced. This can result in people being unable to covertly track even a single target. @verstratenLimitsAttentiveTracking2000 found evidence for this by using a circular sine-wave grating presented in an annulus. Participants fixated in the center and attempted to covertly track one light bar of the grating that was cued at the beginning of the trial. The experiment found evidence that the participants could not track accurately when the time between successive light bars of the grating was shorter than about 150 milliseconds (for the three participants tested, this figure varied from about 150 ms to about 238 ms).
+
+@holcombeSplittingAttentionReduces2013 found a similar result (for 6 participants, a mean of 150 ms) using a circular array of discs rather than a grating. But how did they, and @verstratenLimitsAttentiveTracking2000 establish that this was truly due to temporal interference rather than spatial interference or to speed? The secret lies in the contrasting predictions of 
+
+ These intervals At slow object speeds and with wide spacing among objects, 
+
+the length of these intervals will 
+
+
+At high speeds, as an object in an MOT display moves, its former location will sometimes
+
+on from a particular location it has just occupied, 
+
+the objects of an MOT display will sometimes 
+
+When an MOT display 
+At high speeds, in a
+In a typical MOT display, not only do objects closely approach each other, but also 
+
+a rapidly revolving array of discs
+
+temporal proximity of the individual on-phases cannot be perceived
+
+The number of times in a trial where one object passes close to another isn't the only thing that increases with speed.
+
+
+Close encounters aren't the only thing that increases with speed in a typical MOT display. At least, not **spatial** close encounters.
+
+
+when more targets were tracked, speed thresholds were substantially slower, supporting the supposition that 
+
+is lower when more targets must be tracked CITATIONS. However, close passes
+
+
+
+Attentional tracking involves the enhancement of activation of some of the neurons in retinotopic cortex that represent the target locations. Thus, higher speeds likely mean that the movement of that enhancement in cortex has to travel faster. Perhaps the processes that move this enhancement along simply cannot go as fast when there are more targets. It would be premature to conclude this, unfortunately, because of another factor that is exacerbated by an increase in speed.
+
+To explain temporal limits, let's go back to the idea of spatial interference. 
 
 Another possibility is that tracking has a temporal limit, much like it has a spatial limit. Recall that in section X we described evidence that if a target comes too close to another object, the two objects can get confused. They won't always be confused, because predictable trajectories and target velocity can be used to recover a target even after it completely overlaps with another (@howeMotionInformationSometimes2012; Vul under review at JoV).
 
@@ -68,6 +88,74 @@ Because with more targets, these limits overlap a lot, it's still an open questi
 @roudaiaDifferentEffectsAging2017 found age and gender effects. I think I emailed with her, too.
 
 Bello et al. predict we won’t observe temporal frequency limits if we don’t use predictable circular trajectories. My oscillating spiral display might disprove that very quickly.
+
+
+
+
+Perhaps this movement of the enhancement cannot go as fast when there are more targets (in other words, its speed is resource-limited).
+
+
+This conclusion would be premature because increasing the speed of objects in MOT displays has an additional deleterious effect.
+
+in object tracking displays, 
+
+
+fast is less effective when there are more targets and thus less resource per target
+
+locations of that enhancement need to be updated more often. Perhaps this process is resource-limited. In other words, as explained in section XXX, perhaps this location-updating process is less effective when there are more targets and thus less resource per target. That's one possible reason why maximum tracking speeds are lower with more targets.
+
+
+
+
+
+Perhaps the reason that speed demand is resource-intensive. In the resource-limited regime, more resource keeps improving performance until you hit the data-limited regime. So one could say that once one hits 100% resource, tracking is data-limited and it's the SNR of the input that is preventing you from tracking at faster speeds. But we actually know that you can perceive motion at faster speeds and perceive flicker at higher temporal frequencies.
+
+Another way to think about it is that for an intermediate speed, performance is resource-limited in that you have higher percent correct with more resource. But when you get to a very high speed, your performance is chance and no amount of resource improves performance any further. But because we are dealing with percent correct, you don't have much range anyway.
+
+Two things you can vary, speed and spatial interference. You could test if they are additive, because you know that a particular speed increment yields a particular performance decrement, and you can test whether a particular spatial proximity increment does the same. Franconeri said something about spatial interference being the only determiner of everything and claimed that meant they should be additive.
+When we are outside the crowding range, we are in a data-limited regime for spatial interference (resource has no effect because data are so good) but can be in a resource-limited regime for speed.
+
+Because HolcombeChenHowe didn't find evidence that crowding extended further with two targets than with one, it seems that speed is resource-limited but spatial interference isn't.
+
+which I did
+
+NEED A PHRASE FOR THIS, coin one from Norman and Bobrow. Demand-limited 
+
+Are speed limits resource-limited?
+Is spatial interference resource-limited?
+Is the tracking process speed-limited? Is it resource-limited? Yes to both, in fact it is limited by an interaction of speed and resource
+
+
+
+
+
+
+At very low speeds/temporal frequencies, participants have no problem tracking two or even three targets, consistently achieving performance levels above 95% (as seen in Figure 3). This implies that the performance versus resource function is different (shallower) for low speeds. Going from 100% resource (one target) to 50% (two targets) or 33% (three targets) yields little impairment. The reason may be that in this regime of low speeds, even if participants fail to move their tracking focus with the targets for an extended interval (a few hundred milliseconds), they can still recover the targets by finding the objects closest to the positions they last registered. Only at limiting temporal frequen- cies or speeds is there a consequence to having noisy (parallel tracking models, see General discussion) or intermittent (serial tracking models) position updating.
+
+perceived speed is what matters? @marinovicAttentionaltrackingAcuityModulated2013
+
+Circular trajectories - explain that it’s the only way to get up to those speeds
+
+## Time
+
+What makes a tracking task hard for a person, or even impossible? 
+
+ tracking task that resembles the shell games used by conjurers to confound audiences. A magician might cover an object with one of three identical shells and shuffle the shells back and forth while the audience tries to keep their attention on the critical shell.
+ 
+Let's return to the classic shell game. In a shell game, an item is placed beneath one of three identical shells, making that shell the target. The viewer tries to keep track of which shell has the item underneath it. 
+ <!-- insert Conversation article text-->
+
+![The location of two identical shells are exchanged in a shell game](imagesForRmd/shellGame.png){width=50%} 
+
+A crucial aspect of the game is that the shells exchange locations with distractors. Thus, remembering the original location of the item is not sufficient. Neither is it sufficient to extrapolate a new position for the target based on the item's first direction of motion. Remembering its relative location in the array (e.g., the "middle one") is also not enough. One really must update one's representation of the target's position, rather than relying on any of the above.
+
+The simple reduced laboratory version of the shell game is illustrated by the following schematic.
+
+![](imagesForRmd/twoDiscsRevolving.png){width=10%}
+
+The updating of target position could fail for any of a few different reasons. A target might move too quickly for attention to move with it. That is, there may be a speed limit beyond which object position is not appropriately updated. Under serial switching accounts, this speed limit might occur if between successive samples, the object moved further than a critical distance between samples. Under parallel theories, the tracking process may simply have a speed limit. If the speed of the tracking process is resource-intensive, this speed limit may be slower when more targets are to be tracked.
+
+
 
 ## Discarded 
 
