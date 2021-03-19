@@ -18,42 +18,91 @@ As an object in an MOT display moves on from a particular location, that locatio
 
 The inter-object intervals at a particular location will be long at slow object speeds and with wide spacing among objects. At high object speeds, however, these intervals can be short even if objects are widely spaced. This can result in people being unable to covertly track even a single target. @verstratenLimitsAttentiveTracking2000 found evidence for this by using a circular sine-wave grating presented in an annulus. Participants fixated in the center and attempted to covertly track one light bar of the grating that was cued at the beginning of the trial. The experiment found evidence that the participants could not track accurately when the time between successive light bars of the grating was shorter than about 150 milliseconds (for the three participants tested, this figure varied from about 150 ms to about 238 ms).
 
-@holcombeSplittingAttentionReduces2013 found a similar result (for 6 participants, a mean of 150 ms) using a circular array of discs rather than a grating. But how did they, and @verstratenLimitsAttentiveTracking2000 establish that this was truly due to temporal interference rather than spatial interference or to speed? The secret lies in the contrasting predictions of 
+@holcombeSplittingAttentionReduces2013 found a similar result (for 6 participants, a mean of 150 ms) using a circular array of discs rather than a grating. But how did they (and @verstratenLimitsAttentiveTracking2000) establish that this was due to temporal interference rather than spatial interference or to speed? The secret lies in the contrasting predictions for these three phenomena when object spacing and speed are varied. In @holcombeSplittingAttentionReduces2013 used four different inter-object spacings and many different speeds (speeds were adjusted by a staircase) to assess the speed threshold for each object spacing. If temporal interference affects performance, then a particular pattern of speed thresholds were predicted to emerge.
 
- These intervals At slow object speeds and with wide spacing among objects, 
+With a circular array of equally-spaced objects like that used by @holcombeSplittingAttentionReduces2013, the amount of time between objects traveling over any one location is given by the inverse of the product of the speed and the number of objects in the array. For example, if there are four objects in the array, and they are moving at 1.75 revolutions per second, then an object will cross any given location in the circular trajectory about every 140 milliseconds. Therefore, if there is temporal interference when objects are in a location within 140 milliseconds of each other, the speed threshold for eight objects in an array should be very different - 0.875 revolutions per second. This is indeed what was found for three different object number conditions.
 
-the length of these intervals will 
-
-
-At high speeds, as an object in an MOT display moves, its former location will sometimes
-
-on from a particular location it has just occupied, 
-
-the objects of an MOT display will sometimes 
-
-When an MOT display 
-At high speeds, in a
-In a typical MOT display, not only do objects closely approach each other, but also 
-
-a rapidly revolving array of discs
-
-temporal proximity of the individual on-phases cannot be perceived
-
-The number of times in a trial where one object passes close to another isn't the only thing that increases with speed.
+You can get a taste of this by attempting to, first, track two targets in the below movie.
 
 
-Close encounters aren't the only thing that increases with speed in a typical MOT display. At least, not **spatial** close encounters.
+```{r, echo=FALSE, out.width="100%", fig.cap="Task: fixate the circle and judge whether the red color is paired with leftward tilt or rightward tilt."}
+#Work-around to make GIFs work by avoiding including them in non-html outputs!
+#https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
+if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/temporalLimits/2targets3objectsPerArray.gif") else knitr::include_graphics("movies/MOTmovies/temporalLimits/static_2targets3objectsPerArray.gif")
+#, height = "250px"
+```
+
+When the movie above is at its beginning (the speed readout at top right will indicate 0.02 rps), one object in each of the two rings is drawn in white. These are the targets for you to track while you keep your gaze fixed on the dot in the center. As the speed gradually increases, try to keep tracking and see how fast it goes before you lose the targets.
+
+Many people can track the targets even at the movie's fastest speed of approximately 0.6 rps (the precise speed depends on your computer). This is to be expected, because at 0.6 rps, 3 objects corresponds to a an inter-object interval of 556 milliseconds, far longer than the temporal limit documented by Holcombe. The situation is quite different, however, for the below movie.
+
+```{r, echo=FALSE, out.width="100%", fig.cap="Task: fixate the circle and judge whether the red color is paired with leftward tilt or rightward tilt."}
+#Work-around to make GIFs work by avoiding including them in non-html outputs!
+#https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
+if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/temporalLimits/2targets9objectsPerArray.gif") else knitr::include_graphics("movies/MOTmovies/temporalLimits/static_2targets9objectsPerArray.gif")
+#, height = "250px"
+```
+
+The movie above is identical to the previous one except that there are 9 objects in each array instead of 3. Again try tracking the two objects that are initially white. In this case people find that as the objects accelerate, very quickly they feel that they can no longer track the objects. Note that with the use of 9 objects in an array, the display is still far below the spatial interference range, which should not be significant until the number of equidistant objects in an array exceeds 13 [@holcombeSplittingAttentionReduces2013, p.11; @toetTwodimensionalShapeSpatial1992; @pelliUncrowdedWindowObject2008].
+
+## Temporal interference is resource-intensive
+
+Not only did @holcombeSplittingAttentionReduces2013 add to the evidence of @verstratenLimitsAttentiveTracking2000 that there is a temporal limit on tracking, but also they found that that temporal limit was markedly worse when there are more targets to track. Specifically, the limit was `r round(1000/7)` ms for one target, about `r round(1000/4.2)` ms for two targets, and `r round(1000/2.6)` ms for three targets. The temporal limit can thus be described as resource-intensive, meaning that the more attentional resource that is allocated to each target, the higher the temporal limit.
+
+This very large effect on temporal interference of the number of targets seems quite different from its effect on spatial interference. @holcombeObjectTrackingAbsence2014 found a trend for greater spatial interference with two targets compared to one, but the effect was statistically insignificant and in any case small relative to the performance cost of a second target (see section /@ref(spatialInterference)). So, what explains the dramatic effect of number of targets on the temporal limit?
+
+```{r, echo=FALSE}
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(purrr)
+criticalIntervalsObserved <- tibble( targets=seq(1,3), temporalLimit= c(1000/7, 1000/4.2, 1000/2.6) )
+
+critInterval <- function(targets, samplingInterval) {
+ samplingInterval*targets*2
+}
+
+valuesForComputing<- expand_grid(
+  targets = 1:4,
+  samplingInterval = c(60, 65, 70),
+)
+
+tibl <- valuesForComputing  %>% mutate(temporalLimit = critInterval(targets,samplingInterval))
+
+ggplot(tibl, aes(x=targets,y=temporalLimit)) + geom_line( aes(color=factor(samplingInterval)) ) +
+        geom_point(data=criticalIntervalsObserved) + 
+        theme_bw() + ylab('temporal limit (ms)') + labs(color= 'sampling interval (ms)') 
 
 
-when more targets were tracked, speed thresholds were substantially slower, supporting the supposition that 
+```
 
-is lower when more targets must be tracked CITATIONS. However, close passes
 
+df <- data.frame(targets=c(1,2,3), critInterval=criticalIntervalsObserved)
+gg<- ggplot( df, aes(x=targets,y=critInterval) ) + geom_point()
+gg <- gg + xlim(1, 4) + xlab('targets') + ylab('critical temporal interval')
+gg<- gg + geom_function(fun = critInterval, args=list(samplingTime=50)) + theme_bw()
+gg<- gg + geom_function(fun = critInterval, args=list(samplingTime=75)) + theme_bw()
+gg     
+```
+
+<!-- If there's 2 targets and attention is  samplimg one every 50 ms, then each is sampled every 100 ms, so to solve the correspondence problem they need to go at 5 Hz (200 ms) or slower, so that they only move halfway to the next location. For 3 targets, each is sampled every 150 ms so they need to not get to the next one's location for 300 ms (3.33) hertz.
+criticalTemporalInterval = samplingTime*targets*2
+385 = samplingTime*3*2; samplingTime = 64
+64*2*2= 256 against 238.
+blinking spotlight means 64*1*2 = 128 against 143.
+-->
+The . This will be discussed more in section 
+
+For the lowest number of objects used 
+
+amount of resource allocated per target seems quite different from  
+
+
+wapping errors presumably come about be- cause a target and a distractor approach within the width of the attentional window.
 
 
 Attentional tracking involves the enhancement of activation of some of the neurons in retinotopic cortex that represent the target locations. Thus, higher speeds likely mean that the movement of that enhancement in cortex has to travel faster. Perhaps the processes that move this enhancement along simply cannot go as fast when there are more targets. It would be premature to conclude this, unfortunately, because of another factor that is exacerbated by an increase in speed.
 
-To explain temporal limits, let's go back to the idea of spatial interference. 
 
 Another possibility is that tracking has a temporal limit, much like it has a spatial limit. Recall that in section X we described evidence that if a target comes too close to another object, the two objects can get confused. They won't always be confused, because predictable trajectories and target velocity can be used to recover a target even after it completely overlaps with another (@howeMotionInformationSometimes2012; Vul under review at JoV).
 
@@ -61,8 +110,6 @@ So, spatial confusions contribute to tracking. Might this also be the case for t
 SHOW TICS-TYPE DEMO
 Clearly there are some visual processes that are disrupted if other stimuli soon occupy the former location of an object. Perception of the object's color itself is still ok (Nishida ; @cavanaghMobileComputationSpatiotemporal2008). But 
 
-Spatiotemporal window account. 
-wapping errors presumably come about be- cause a target and a distractor approach within the width of the attentional window.
 
 
 One might lose the target because it simply moves too fast to track. Or one could lose it because it came so close to a distractor in peripheral vision that they could not be spatially discriminated. These possibilities of a speed limit and of spatial interference have been well-appreciated by researchers. A third possibility has been less appreciated: a temporal limit.
@@ -74,8 +121,7 @@ While temporal limits are less familiar, they are the chief limitation on the pe
  When someone loses one of multiple moving targets in a crowd, what caused the error?
 
 
-Discover+your+speed+limit+for+for+tracking+2+targets,+when+each+is+in+an+array+of+3+objects-SD.mp4
-Discover+your+speed+limit+for+tracking+2+targets,+each+in+an+array+of+9+objects.-SD
+
 
 It turns out that the ability to track is limited by all three kinds of limits: speed limits, spatial limits, and temporal frequency limits.
 
