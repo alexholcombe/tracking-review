@@ -10,20 +10,37 @@ A first step to understanding the effect of speed, then, was to investigate it w
 
 ## Temporal limits
 
-Close encounters in space aren't the only thing that increases with speed in a typical MOT trial. Close encounters in *time* do as well. Unfortunately, however, very few are familiar with this concept. There is an area of perception, however, where it is familiar to many. If one flickers a light off and on at a rapid enough rate, the flicker cannot be perceived; one perceives simply the average of the dark and light phases. In other words, the individual on-phases of the light cannot be perceived due to their temporal proximity with the off-phases. This occurs with moving objects as well - if an array of discs is revolved at a rapid enough rate, the brief appearance at each location of each disc is combined by the visual system with the background the discs are moving against, creating the impression of a uniform annulus.
+Close encounters in space aren't the only things that increase with speed in a typical MOT trial. Close encounters in *time* do as well. This concept of temporal proximity, as applied to moving objects, is, however, not something that most attention researchers are terribly familiar with.
 
-Such "flicker-fusion" phenomena reflect temporal limits in visual cortex CITATION. Later stages of the brain have slower temporal limits [@mckeeffTemporalLimitationsObject2007a]. This may have consequences for a high-level process such as those involved in tracking.
+Temporal proximity is more commonly invoked in the context of un-moving, yet still changing, stimuli. If one flickers a light off and on at a very rapid rate (over about 60 times a second, depending upon display characteristics), the flicker will not be perceived; instead, one perceives the average of the dark and light phases. That is, the individual on-phases of the light cannot be perceived due to their temporal proximity with the off-phases.
 
-As an object in an MOT display moves on from a particular location, that location will sometimes be occupied soon after by another of the moving objects. This may result in temporal interference, because the processing of the object at a particular location may not be completed before a second object invades that location.
+The same phenomenon occurs with moving objects, as Ptolemy observed nearly two thousand years ago in his book *Optics*. After observing a rapidly rotating potter's wheel, he noted that "If spots of a color different from that of the disc are marked on it, they will appear to form circles of the same color [as the given spot] when the disc is rapidly spun." [@smithPtolemyTheoryVisual1996]. 
 
-The inter-object intervals at a particular location will be long at slow object speeds and with wide spacing among objects. At high object speeds, however, these intervals can be short even if objects are widely spaced. This can result in people being unable to covertly track even a single target. @verstratenLimitsAttentiveTracking2000 found evidence for this by using a circular sine-wave grating presented in an annulus. Participants fixated in the center and attempted to covertly track one light bar of the grating that was cued at the beginning of the trial. The experiment found evidence that the participants could not track accurately when the time between successive light bars of the grating was shorter than about 150 milliseconds (for the three participants tested, this figure varied from about 150 ms to about 238 ms).
+### High-level temporal limits
 
-@holcombeSplittingAttentionReduces2013 found a similar result (for 6 participants, a mean of 150 ms) using a circular array of discs rather than a grating. But how did they (and @verstratenLimitsAttentiveTracking2000) establish that this was due to temporal interference rather than spatial interference or to speed? The secret lies in the contrasting predictions for these three phenomena when object spacing and speed are varied. In @holcombeSplittingAttentionReduces2013 used four different inter-object spacings and many different speeds (speeds were adjusted by a staircase) to assess the speed threshold for each object spacing. If temporal interference affects performance, then a particular pattern of speed thresholds were predicted to emerge.
+The processing that limits flicker perception, and simple aspects of motion perception, has higher temporal limits than those that limit visual cognition.
 
-With a circular array of equally-spaced objects like that used by @holcombeSplittingAttentionReduces2013, the amount of time between objects traveling over any one location is given by the inverse of the product of the speed and the number of objects in the array. For example, if there are four objects in the array, and they are moving at 1.75 revolutions per second, then an object will cross any given location in the circular trajectory about every 140 milliseconds. Therefore, if there is temporal interference when objects are in a location within 140 milliseconds of each other, the speed threshold for eight objects in an array should be very different - 0.875 revolutions per second. This is indeed what was found for three different object number conditions.
+```{r, echo=FALSE, out.width="30%", fig.cap="Task: judge whether the red color is paired with leftward tilt or rightward title."}
+if(knitr::is_html_output()) knitr::include_graphics("movies/binding/colorgrdnt2_9fps.gif") else knitr::include_graphics("movies/binding/colorgrdnt2_2fpsStatic.png")
+```
 
-You can get a taste of this by attempting to, first, track two targets in the below movie.
+In the above display, one can easily perceive that the color is alternating between green and red, and that the contour on the left is alternating rapidly between leftward tilt and rightward tilt. What is very difficult or impossible, however, is judging what color, red or green, is presented at the same time as the leftward tilt [@holcombeEarlyBindingFeature2001]. When the animation is slowed to a rate much slower than about 200 ms per stimulus presentation however, the task becomes quite easy.  
 
+```{r, echo=FALSE, out.width="30%", fig.cap="Task: judge whether the red color is paired with leftward tilt or rightward title."}
+if(knitr::is_html_output()) knitr::include_graphics("movies/binding/colorgrdnt2_2fpsCONVERTED.gif") else knitr::include_graphics("movies/binding/colorgrdnt2_2fpsStatic.png")
+```
+
+Thus, while early visual processing can deliver motion and color features even from stimuli that are temporally very close to each other, the processing required to judge which features are at the same time requires processing that fails when temporal proximity is very high [@holcombeSeeingSlowSeeing2009; @fujisakiCommonPerceptualTemporal2010b].
+
+In an MOT display, as an object moves on from a particular location, that location will sometimes be occupied soon after by another of the moving objects. Unfortunately the processing of the first object at that location may not be completed before the second object replaces it.
+
+The inter-object intervals at a location will be long at slow object speeds and with wide spacing among objects. At high object speeds, however, these intervals can be short even if objects are widely spaced. @verstratenLimitsAttentiveTracking2000 found evidence that people then become unable to covertly track even a single target. @verstratenLimitsAttentiveTracking2000 used a circular sine-wave grating presented in an annulus. Participants fixated in the center and attempted to covertly track one light bar of the grating that was cued at the beginning of the trial. The experiment found evidence that the participants could not track accurately when the time between successive light bars of the grating was shorter than about 150 milliseconds (for the three participants tested, this figure varied from about 150 ms to about 238 ms).
+
+@holcombeSplittingAttentionReduces2013 found a similar result (for 6 participants, a mean of 150 ms) using a circular array of discs rather than a grating. But how did they (and @verstratenLimitsAttentiveTracking2000) establish that this was caused by temporal interference rather than spatial interference or a speed limit? They capitalized on the contrasting predictions by these three phenomena when object spacing and speed are both manipulated. @holcombeSplittingAttentionReduces2013, for example, used four different inter-object spacings and many different speeds (speeds were adjusted by a staircase) to assess the speed threshold for each object spacing. If temporal interference affects performance, then a particular pattern of speed thresholds were predicted to emerge.
+
+With the circular array of equally-spaced objects used by @holcombeSplittingAttentionReduces2013, the amount of time between objects traveling over any one location is the inverse of the product of the speed and the number of objects in the array. For example, if there are four objects in the array moving at 1.75 revolutions per second, then an object will cross any given location in the circular trajectory every 140 milliseconds. Therefore, if temporal interference occurs when objects are in a location within 140 milliseconds of each other, the speed threshold for eight objects in an array should be much slower - 0.875 revolutions per second. This is indeed what was found by @holcombeSplittingAttentionReduces2013, for three different objects-per-array conditions.
+
+You can get a taste of this by attempting to first track two targets in the below movie.
 
 ```{r, echo=FALSE, out.width="100%", fig.cap="Task: fixate the circle and judge whether the red color is paired with leftward tilt or rightward tilt."}
 #Work-around to make GIFs work by avoiding including them in non-html outputs!
@@ -32,9 +49,9 @@ if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/temporalLimits/
 #, height = "250px"
 ```
 
-When the movie above is at its beginning (the speed readout at top right will indicate 0.02 rps), one object in each of the two rings is drawn in white. These are the targets for you to track while you keep your gaze fixed on the dot in the center. As the speed gradually increases, try to keep tracking and see how fast it goes before you lose the targets.
+When the movie above is at its beginning (when the speed readout at top right indicates 0.02 rps), one object in each of the two rings is drawn in white. These are the targets for you to track while you keep your gaze fixed on the dot in the center. As the speed gradually increases, try to keep tracking and see how fast it goes before you lose the targets.
 
-Many people can track the targets even at the movie's fastest speed of approximately 0.6 rps (the precise speed depends on your computer). This is to be expected, because at 0.6 rps, 3 objects corresponds to a an inter-object interval of 556 milliseconds, far longer than the temporal limit documented by Holcombe. The situation is quite different, however, for the below movie.
+Many people can track the targets even at the movie's fastest speed of approximately 0.6 rps (the precise speed depends on your computer). This is to be expected, because at 0.6 rps, 3 objects corresponds to a an inter-object interval of 556 milliseconds, far higher than the temporal limit documented by @holcombeSplittingAttentionReduces2013. The situation is quite different, however, for the below movie.
 
 ```{r, echo=FALSE, out.width="100%", fig.cap="Task: fixate the circle and judge whether the red color is paired with leftward tilt or rightward tilt."}
 #Work-around to make GIFs work by avoiding including them in non-html outputs!
@@ -43,20 +60,27 @@ if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/temporalLimits/
 #, height = "250px"
 ```
 
-The movie above is identical to the previous one except that there are 9 objects in each array instead of 3. Again try tracking the two objects that are initially white. In this case people find that as the objects accelerate, very quickly they feel that they can no longer track the objects. Note that with the use of 9 objects in an array, the display is still far below the spatial interference range, which should not be significant until the number of equidistant objects in an array exceeds 13 [@holcombeSplittingAttentionReduces2013, p.11; @toetTwodimensionalShapeSpatial1992; @pelliUncrowdedWindowObject2008].
+This movie uses the same speeds as the previous one. The only difference is that 9 objects are presented in each array instead of 3. In this case people find that as the objects accelerate, very quickly they feel that they can no longer track the objects. Note that this is not due to spatial interference - only when the number of equidistant objects in an array exceeds 13 will spatial interference become significant [@holcombeSplittingAttentionReduces2013, p.11; @toetTwodimensionalShapeSpatial1992; @pelliUncrowdedWindowObject2008].
 
 ## Temporal interference is resource-intensive
 
-Not only did @holcombeSplittingAttentionReduces2013 add to the evidence of @verstratenLimitsAttentiveTracking2000 that there is a temporal limit on tracking, but also they found that that temporal limit was markedly worse when there are more targets to track. Specifically, the limit was `r round(1000/7)` ms for one target, about `r round(1000/4.2)` ms for two targets, and `r round(1000/2.6)` ms for three targets. The temporal limit can thus be described as resource-intensive, meaning that the more attentional resource that is allocated to each target, the higher the temporal limit.
-
-This very large effect on temporal interference of the number of targets seems quite different from its effect on spatial interference. @holcombeObjectTrackingAbsence2014 found a trend for greater spatial interference with two targets compared to one, but the effect was statistically insignificant and in any case small relative to the performance cost of a second target (see section /@ref(spatialInterference)). So, what explains the dramatic effect of number of targets on the temporal limit?
+In addition to adding to the evidence for a temporal limit on tracking, @holcombeSplittingAttentionReduces2013 found that this temporal limit was markedly worse for higher target loads. The less attentional resource available per target, the lower the temporal limit was. Specifically, the limit was `r round(1000/7)` ms for one target, about `r round(1000/4.2)` ms for two targets, and `r round(1000/2.6)` ms for three targets. 
 
 ```{r, echo=FALSE}
 library(ggplot2)
 library(dplyr)
 library(tidyr)
 library(purrr)
-criticalIntervalsObserved <- tibble( targets=seq(1,3), temporalLimit= c(1000/7, 1000/4.2, 1000/2.6) )
+
+E1HolcombeChen13 <- tibble(experiment="HC1", targets=seq(1,2),   temporalLimit= c(1000/6.93, 1000/4.45) )
+E2HolcombeChen13 <- tibble(experiment="HC2", targets=seq(2,3),   temporalLimit= c(1000/4.05, 1000/2.7) )
+RoudaiaFaubert<- tibble(experiment="RF men", targets=seq(1,3), temporalLimit=c(1000/6.4,1000/4,1000/2.8))
+RoudaiaFaubert2<- tibble(experiment="RF women", targets=seq(1,3), temporalLimit=c(1000/4.9,1000/3,1000/1.8))
+
+temporalLimitsData<- rbind(E1HolcombeChen13,E2HolcombeChen13,RoudaiaFaubert,RoudaiaFaubert2)
+temporalLimitsData$experiment <- as.factor(temporalLimitsData$experiment)
+
+#criticalIntervalsObserved <- tibble( targets=seq(1,3), temporalLimit= c(1000/7, 1000/4.2, 1000/2.6) )
 
 critInterval <- function(targets, samplingInterval) {
  samplingInterval*targets*2
@@ -64,17 +88,21 @@ critInterval <- function(targets, samplingInterval) {
 
 valuesForComputing<- expand_grid(
   targets = 1:4,
-  samplingInterval = c(60, 65, 70),
+  samplingInterval = c(50, 70, 90),
 )
 
 tibl <- valuesForComputing  %>% mutate(temporalLimit = critInterval(targets,samplingInterval))
 
 ggplot(tibl, aes(x=targets,y=temporalLimit)) + geom_line( aes(color=factor(samplingInterval)) ) +
-        geom_point(data=criticalIntervalsObserved) + 
+        geom_point(data=temporalLimitsData, aes(shape=experiment), position=position_dodge(width=.2), size=2) + 
         theme_bw() + ylab('temporal limit (ms)') + labs(color= 'sampling interval (ms)') 
-
-
 ```
+
+This dramatic effect on temporal interference of target load appears to be quite different from its effect on spatial interference. @holcombeObjectTrackingAbsence2014 found a trend for greater spatial interference with two targets compared to one, but the effect was statistically insignificant and in any case small relative to the performance cost of a second target (see section \@ref(spatialInterference)). 
+
+While it has long been known that tracking performance can decrease dramatically with target load, tracking is a complex task, and making progress on what is affected dramatically by target load was difficult. Now, however, we have something specific about tracking that becomes markedly worse with load - its temporal limit. So, what explains the large size of this effect of number of targets on the temporal limit?
+
+
 
 
 df <- data.frame(targets=c(1,2,3), critInterval=criticalIntervalsObserved)
@@ -91,6 +119,12 @@ criticalTemporalInterval = samplingTime*targets*2
 64*2*2= 256 against 238.
 blinking spotlight means 64*1*2 = 128 against 143.
 -->
+
+## The brain
+
+Tracking is 
+Later stages of the brain have slower temporal limits [@mckeeffTemporalLimitationsObject2007a]. This may have consequences for a high-level process such as those involved in tracking.
+
 The . This will be discussed more in section 
 
 For the lowest number of objects used 
