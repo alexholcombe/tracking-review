@@ -72,10 +72,10 @@ library(dplyr)
 library(tidyr)
 library(purrr)
 
-E1HolcombeChen13 <- tibble(experiment="HC1", targets=seq(1,2),   temporalLimit= c(1000/6.93, 1000/4.45) )
-E2HolcombeChen13 <- tibble(experiment="HC2", targets=seq(2,3),   temporalLimit= c(1000/4.05, 1000/2.7) )
-RoudaiaFaubert<- tibble(experiment="RF men", targets=seq(1,3), temporalLimit=c(1000/6.4,1000/4,1000/2.8))
-RoudaiaFaubert2<- tibble(experiment="RF women", targets=seq(1,3), temporalLimit=c(1000/4.9,1000/3,1000/1.8))
+E1HolcombeChen13 <- tibble(experiment="Holcombe & Chen E1", targets=seq(1,2),   temporalLimit= c(1000/6.93, 1000/4.45) )
+E2HolcombeChen13 <- tibble(experiment="Holcombe & Chen E2", targets=seq(2,3),   temporalLimit= c(1000/4.05, 1000/2.7) )
+RoudaiaFaubert<- tibble(experiment="Roudaia & Faubert young men", targets=seq(1,3), temporalLimit=c(1000/6.4,1000/4,1000/2.8))
+RoudaiaFaubert2<- tibble(experiment="Roudaia & Faubert young women", targets=seq(1,3), temporalLimit=c(1000/4.9,1000/3,1000/1.8))
 
 temporalLimitsData<- rbind(E1HolcombeChen13,E2HolcombeChen13,RoudaiaFaubert,RoudaiaFaubert2)
 temporalLimitsData$experiment <- as.factor(temporalLimitsData$experiment)
@@ -96,9 +96,12 @@ tibl <- valuesForComputing  %>% mutate(temporalLimit = critInterval(targets,samp
 #male/female samples https://github.com/kmiddleton/rexamples/blob/master/ggplot2%20male-female%20symbols.R
 #unicode character list (look at ) https://www.ssec.wisc.edu/~tomw/java/unicode.html
 ggplot(tibl, aes(x=targets,y=temporalLimit)) + geom_line( aes(color=factor(samplingInterval)) ) +
-    geom_point(data=temporalLimitsData, aes(shape=experiment), position=position_dodge(width=.2), size=2) + 
-    scale_shape_manual(values = c("HC1"="\u25A1", "HC2"="\u25CB",  "RF men" = "\u2642", "RF women" = "\u2640"))
-    theme_bw() + ylab('temporal limit (ms)') + labs(color= 'sampling interval (ms)') 
+    geom_point(data=temporalLimitsData, aes(shape=experiment), position=position_dodge(width=.3), size=4) + 
+    scale_shape_manual(values = c("\u25A1", "\u25CB", "\u2640", "\u2642")) +
+  geom_smooth(method="lm") +
+    ylab('temporal limit (ms)') + labs(color= 'sampling interval (ms)') + theme_bw() +
+   theme( panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+          panel.background = element_blank())
 ```
 
 ```{r }
