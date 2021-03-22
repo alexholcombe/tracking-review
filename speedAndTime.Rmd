@@ -93,9 +93,19 @@ valuesForComputing<- expand_grid(
 
 tibl <- valuesForComputing  %>% mutate(temporalLimit = critInterval(targets,samplingInterval))
 
+#male/female samples https://github.com/kmiddleton/rexamples/blob/master/ggplot2%20male-female%20symbols.R
+#unicode character list (look at ) https://www.ssec.wisc.edu/~tomw/java/unicode.html
 ggplot(tibl, aes(x=targets,y=temporalLimit)) + geom_line( aes(color=factor(samplingInterval)) ) +
-        geom_point(data=temporalLimitsData, aes(shape=experiment), position=position_dodge(width=.2), size=2) + 
-        theme_bw() + ylab('temporal limit (ms)') + labs(color= 'sampling interval (ms)') 
+    geom_point(data=temporalLimitsData, aes(shape=experiment), position=position_dodge(width=.2), size=2) + 
+    scale_shape_manual(values = c("HC1"="\u25A1", "HC2"="\u25CB",  "RF men" = "\u2642", "RF women" = "\u2640"))
+    theme_bw() + ylab('temporal limit (ms)') + labs(color= 'sampling interval (ms)') 
+```
+
+```{r }
+df <- data.frame(x = runif(10), y = runif(10), sex =
+sample(c("m","f"), 10, rep = T))
+qplot(x, y, data = df, shape = sex, size = I(5)) +
+ scale_shape_manual(values = c("m" = "\u2642", "f" = "\u2640"))
 ```
 
 This dramatic effect on temporal interference of target load appears to be quite different from its effect on spatial interference. @holcombeObjectTrackingAbsence2014 found a trend for greater spatial interference with two targets compared to one, but the effect was statistically insignificant and in any case small relative to the performance cost of a second target (see section \@ref(spatialInterference)). 
