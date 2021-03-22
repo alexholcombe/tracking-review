@@ -66,7 +66,9 @@ This movie uses the same speeds as the previous one. The only difference is that
 
 In addition to adding to the evidence for a temporal limit on tracking, @holcombeSplittingAttentionReduces2013 found that this temporal limit was markedly worse for higher target loads. The less attentional resource available per target, the lower the temporal limit was. Specifically, the limit was `r round(1000/7)` ms for one target, about `r round(1000/4.2)` ms for two targets, and `r round(1000/2.6)` ms for three targets. 
 
-```{r, echo=FALSE}
+This dramatic effect of target load on temporal limit was replicated by @roudaiaDifferentEffectsAging2017.
+
+```{r, echo=FALSE, fig.cap="The results of the two experiments of Holcombe & Chen (2013) plotted with the comparable sample (young people) of Roudaia & Faubert (2017)."}
 library(ggplot2)
 library(dplyr)
 library(tidyr)
@@ -89,42 +91,63 @@ critInterval <- function(targets, samplingInterval) {
 valuesForComputing<- expand_grid(
   targets = 1:4,
   samplingInterval = c(50, 70, 90),
+  experiment = "predicted"
 )
 
 tibl <- valuesForComputing  %>% mutate(temporalLimit = critInterval(targets,samplingInterval))
 
 #male/female samples https://github.com/kmiddleton/rexamples/blob/master/ggplot2%20male-female%20symbols.R
 #unicode character list (look at ) https://www.ssec.wisc.edu/~tomw/java/unicode.html
-ggplot(tibl, aes(x=targets,y=temporalLimit)) + geom_line( aes(color=factor(samplingInterval)) ) +
-    geom_point(data=temporalLimitsData, aes(shape=experiment), position=position_dodge(width=.3), size=4) + 
-    scale_shape_manual(values = c("\u25A1", "\u25CB", "\u2640", "\u2642")) +
-  geom_smooth(method="lm") +
+ggplot(temporalLimitsData, aes(x=targets,y=temporalLimit, shape=experiment)) +
+    #geom_line( aes(color=factor(samplingInterval)) ) +
+    geom_point(position=position_dodge(width=.2), size=5) +
+    #geom_point( size=4) +
+    #geom_line() +
+    scale_shape_manual(values = c("\u25A1", "\u25CB", "\u2642", "\u2640")) +
+   scale_x_continuous(breaks=1:3) +
     ylab('temporal limit (ms)') + labs(color= 'sampling interval (ms)') + theme_bw() +
    theme( panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
           panel.background = element_blank())
 ```
 
-```{r }
-df <- data.frame(x = runif(10), y = runif(10), sex =
-sample(c("m","f"), 10, rep = T))
-qplot(x, y, data = df, shape = sex, size = I(5)) +
- scale_shape_manual(values = c("m" = "\u2642", "f" = "\u2640"))
-```
+As the plot illustrates, @roudaiaDifferentEffectsAging2017 found at least as large an effect of target load on temporal limit as did @holcombeSplittingAttentionReduces2013. Note that while @roudaiaDifferentEffectsAging2017 reported a statistically significant gender difference, they only tested nine young men and nine young women, which would constitute very low statistical power, and thus the difference may be a false positive. The data are plotted separately here because that is how they reported them and because it provides an internal replication of the large effect of target load. @roudaiaDifferentEffectsAging2017 also tested older (>60 years) men and women, but there were many outliers of very low performance.
+
+We started in section \@ref(whichAspects) with the point that attentional tracking is a complex task, listing six factors that likely contribute to tracking performance. From the pattern of performance with typical MOT displays, we could not know which factor(s) might be most affected by target load. We could not know where the narrowest bottlenecks in the system were.
+
+While some have suggested that spatial interference was the primary determinant of the effect of tracking load [@franconeriTrackingMultipleObjects2010a], there is evidence that it is not much worse with greater target load [@holcombeObjectTrackingAbsence2014; @holcombeCommentCapacityLimits2019]. But for temporal interference, there seems to be no controversy about the dramatic effect of target load. This leads to two important questions about the effect.
+
+The first question is: what does this effect tell us about how tracking works? This is discussed more in the \@ref(#serialOrParallel) section, because the most straightforward interpretation, arguably, is that it supports a serial switching theory of tracking.
+
+The second question is what role temporal interference plays in typical MOT displays that use more linear trajectories? Unfortunately, while multiple studies have attempted to analyze the role of spatial interference in such displays, none appear to have done so for temporal interference. Some of the studies that manipulated or correlated spatial proximity to investigate its effect on tracking performance might alternatively be explained by temporal proximity [e.g., @baeCloseEncountersDistracting2012]. This is because in typical MOT displays, spatial proximity is likely to be high correlated with temporal proximity. 
+
+## Speed limits
+
+While @holcombeSplittingAttentionReduces2013 and 
+
+It has been suggested that 
+
+with linear trajectories and unconstrained 
+
+why does target load have such a large effect on the temporal limit? 
+
+what the large effect of target load on temporal limit tells us about the nature of the processing that causes the temporal limit. A second question is what 
+
+The temporal interference findings appear to have isolated 
+
+responsible for the effect of target load. Now, with these findings, we see that temporal interference 
+
+
+typical MOT displays used, it was difficult to disentangle
+
+While it has long been known that tracking performance can decrease dramatically with target load, tracking is a complex task, and making progress on what is affected dramatically by target load was difficult. Now, however, we have something specific about tracking that becomes markedly worse with load - its temporal limit. So, what explains the large size of this effect of number of targets on the temporal limit?
+
+This effect 
 
 This dramatic effect on temporal interference of target load appears to be quite different from its effect on spatial interference. @holcombeObjectTrackingAbsence2014 found a trend for greater spatial interference with two targets compared to one, but the effect was statistically insignificant and in any case small relative to the performance cost of a second target (see section \@ref(spatialInterference)). 
 
 While it has long been known that tracking performance can decrease dramatically with target load, tracking is a complex task, and making progress on what is affected dramatically by target load was difficult. Now, however, we have something specific about tracking that becomes markedly worse with load - its temporal limit. So, what explains the large size of this effect of number of targets on the temporal limit?
 
 
-
-
-df <- data.frame(targets=c(1,2,3), critInterval=criticalIntervalsObserved)
-gg<- ggplot( df, aes(x=targets,y=critInterval) ) + geom_point()
-gg <- gg + xlim(1, 4) + xlab('targets') + ylab('critical temporal interval')
-gg<- gg + geom_function(fun = critInterval, args=list(samplingTime=50)) + theme_bw()
-gg<- gg + geom_function(fun = critInterval, args=list(samplingTime=75)) + theme_bw()
-gg     
-```
 
 <!-- If there's 2 targets and attention is  samplimg one every 50 ms, then each is sampled every 100 ms, so to solve the correspondence problem they need to go at 5 Hz (200 ms) or slower, so that they only move halfway to the next location. For 3 targets, each is sampled every 150 ms so they need to not get to the next one's location for 300 ms (3.33) hertz.
 criticalTemporalInterval = samplingTime*targets*2

@@ -1,4 +1,4 @@
-# Serial processing, parallel processing, or both?
+# Serial processing, parallel processing, or both? {#serialOrParallel}
 
 Brains are massively parallel, which has led many to be skeptical that anything has to be done in series, one-by-one. The evidence reviewed above strongly indicates that resources are limited and have to be shifted from object to object for certain tasks, this is compatible with multiple objects being processed at once, in small sets. But evidence emerged some time ago that certain task elements can only be processed by the brain one at a time.
 

@@ -1,4 +1,4 @@
-# Which aspect(s) of tracking determine performance?
+# Which aspect(s) of tracking determine performance? {#whichAspects}
 
 Why do people perform more poorly with more targets? By definition, this means that the processes underlying tracking are capacity-limited, but by itself, that description is not very illuminating. Covert tracking is a complex task, and we would like to know which aspect(s) of it exactly are most capacity-limited.
 
