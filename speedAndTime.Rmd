@@ -122,9 +122,36 @@ The second question is what role temporal interference plays in typical MOT disp
 
 ## Speed limits
 
-While @holcombeSplittingAttentionReduces2013 and 
+The temporal limit on tracking was established by the observation that covert tracking is limited by the product of object speed and number of objects, not by object speed or number of objects alone. This was true, however, for only a limited range of object number and object speed. Both @holcombeSplittingAttentionReduces2013 and @verstratenLimitsAttentiveTracking2000 found that when the number of objects (or grating cycles in the case of @verstratenLimitsAttentiveTracking2000) was below four, the speed threshold was slower than predicted by the temporal limit implied by the other conditions.
 
-It has been suggested that 
+These findings suggest a speed limit on tracking. In the one-target, two objects (grating cycles) condition tested by @verstratenLimitsAttentiveTracking2000, the mean speed threshold was about 1.5 revolutions per second (rps), while @holcombeSplittingAttentionReduces2013 tested with three objects and in the one-target condition found a 1.7 rps speed threshold, whereas the speed threshold expected from the temporal limit was about 2.4 rps.
+
+@verstratenLimitsAttentiveTracking2000 mentioned in passing that they informally tested annular gratings of different sizes. For larger gratings, the distance traveled by each bar per revolution is longer. Although this means that 1.5 rps corresponds to faster speed in dva per sec, Verstraten et al. (1998) reported that the speed threshold remained at 1.5 rps. 
+
+@holcombeSplittingAttentionReduces2013 confirmed that the speed threshold was robust to the increases in length of the trajectory associated with larger radii, finding that it remained nearly constant in revolutions per second despite being much larger in distance traveled per second for the larger radii. Establishing such invariances is fundamental to scientific explanation (e.g. @woodwardExplanationInvarianceSpecial2000), and this particular invariance rules against naïve expectations of how speed exerts its effect.
+
+The reason that tracking is limited in this way remains unknown. Holcombe & Chen (unpublished manuscript) also tested linear trajectories, by having the objects travel along a diamond-shaped trajectory rather than a circle. Nine participants were tested. The mean speed threshold was 1.2 rps for both conditions. We can tentatively refer to this as an angular speed limit, to reflect the finding that it reflects revolutions rather than linear distance.
+
+Most tracking researchers are yet to grapple with the angular speed limit. Despite the numerous MOT papers that manipulate speed and discuss its role, I know of no empirical or theoretical papers (other than those co-authored by Holcombe or Verstraten) that mention this discovery. The speed limit may have little effect in conventional MOT displays with linear trajectories, because for the speeds tested in all or practically all such experiments, objects probably take longer than a second to ever move in a full revolution around a point in the display. However, many recent papers use circular trajectories, where the angular speed limit may come into play, although again they tend to use speeds slower than 1 rps [e.g. @maechlerAttentionalTrackingTakes2021, @carlsonQuadranticDeficitReveals2007].
+
+Does the angular speed limit decrease with target load? If the speed limit declines as dramatically with target load as does the temporal limit, then many of the papers that use circular trajectories may run afoul of it when participants are asked to track three or four targets. @holcombeSplittingAttentionReduces2013 did find a decline
+
+
+One of the unknowns about the speed limit is 
+
+Temporal and speed limits converge with target load.
+
+because for the speeds and trajectories tested in all or practically all published experiments, an object would take longer than a second to 
+
+for all but very small-radius circles, the linear speed that corresponds to 1.2 rps is much faster than the 
+
+is unclear whether the limit should have
+
+
+It's something the literature needs to grapple with. 
+In terms of linear trajectories,
+
+Comparing circular and linear trajectories
 
 with linear trajectories and unconstrained 
 
@@ -188,9 +215,6 @@ While temporal limits are less familiar, they are the chief limitation on the pe
 <!-- sEe speedLimitsAndTargetLoad/manuscriptAndTheory 
  -->
  
- When someone loses one of multiple moving targets in a crowd, what caused the error?
-
-
 
 
 It turns out that the ability to track is limited by all three kinds of limits: speed limits, spatial limits, and temporal frequency limits.
@@ -199,9 +223,6 @@ It turns out that the ability to track is limited by all three kinds of limits: 
 
 
 Because with more targets, these limits overlap a lot, it's still an open question whether speed limits go down just as temporal limits do..
-
-
-@roudaiaDifferentEffectsAging2017 found age and gender effects. I think I emailed with her, too.
 
 Bello et al. predict we won’t observe temporal frequency limits if we don’t use predictable circular trajectories. My oscillating spiral display might disprove that very quickly.
 
@@ -213,35 +234,6 @@ Perhaps this movement of the enhancement cannot go as fast when there are more t
 
 This conclusion would be premature because increasing the speed of objects in MOT displays has an additional deleterious effect.
 
-in object tracking displays, 
-
-
-fast is less effective when there are more targets and thus less resource per target
-
-locations of that enhancement need to be updated more often. Perhaps this process is resource-limited. In other words, as explained in section XXX, perhaps this location-updating process is less effective when there are more targets and thus less resource per target. That's one possible reason why maximum tracking speeds are lower with more targets.
-
-
-
-
-
-Perhaps the reason that speed demand is resource-intensive. In the resource-limited regime, more resource keeps improving performance until you hit the data-limited regime. So one could say that once one hits 100% resource, tracking is data-limited and it's the SNR of the input that is preventing you from tracking at faster speeds. But we actually know that you can perceive motion at faster speeds and perceive flicker at higher temporal frequencies.
-
-Another way to think about it is that for an intermediate speed, performance is resource-limited in that you have higher percent correct with more resource. But when you get to a very high speed, your performance is chance and no amount of resource improves performance any further. But because we are dealing with percent correct, you don't have much range anyway.
-
-Two things you can vary, speed and spatial interference. You could test if they are additive, because you know that a particular speed increment yields a particular performance decrement, and you can test whether a particular spatial proximity increment does the same. Franconeri said something about spatial interference being the only determiner of everything and claimed that meant they should be additive.
-When we are outside the crowding range, we are in a data-limited regime for spatial interference (resource has no effect because data are so good) but can be in a resource-limited regime for speed.
-
-Because HolcombeChenHowe didn't find evidence that crowding extended further with two targets than with one, it seems that speed is resource-limited but spatial interference isn't.
-
-which I did
-
-NEED A PHRASE FOR THIS, coin one from Norman and Bobrow. Demand-limited 
-
-Are speed limits resource-limited?
-Is spatial interference resource-limited?
-Is the tracking process speed-limited? Is it resource-limited? Yes to both, in fact it is limited by an interaction of speed and resource
-
-
 
 
 
@@ -252,14 +244,11 @@ perceived speed is what matters? @marinovicAttentionaltrackingAcuityModulated201
 
 Circular trajectories - explain that it’s the only way to get up to those speeds
 
-## Time
-
 What makes a tracking task hard for a person, or even impossible? 
 
  tracking task that resembles the shell games used by conjurers to confound audiences. A magician might cover an object with one of three identical shells and shuffle the shells back and forth while the audience tries to keep their attention on the critical shell.
  
 Let's return to the classic shell game. In a shell game, an item is placed beneath one of three identical shells, making that shell the target. The viewer tries to keep track of which shell has the item underneath it. 
- <!-- insert Conversation article text-->
 
 ![The location of two identical shells are exchanged in a shell game](imagesForRmd/shellGame.png){width=50%} 
 
@@ -270,7 +259,7 @@ The simple reduced laboratory version of the shell game is illustrated by the fo
 ![](imagesForRmd/twoDiscsRevolving.png){width=10%}
 
 The updating of target position could fail for any of a few different reasons. A target might move too quickly for attention to move with it. That is, there may be a speed limit beyond which object position is not appropriately updated. Under serial switching accounts, this speed limit might occur if between successive samples, the object moved further than a critical distance between samples. Under parallel theories, the tracking process may simply have a speed limit. If the speed of the tracking process is resource-intensive, this speed limit may be slower when more targets are to be tracked.
-
+-->
 
 
 ## Discarded 
