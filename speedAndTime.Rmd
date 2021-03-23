@@ -135,6 +135,13 @@ The reason that tracking is limited in this way remains unknown. Holcombe & Chen
 Most tracking researchers are yet to grapple with the angular speed limit. Despite the numerous MOT papers that manipulate speed and discuss its role, I know of no empirical or theoretical papers (other than those co-authored by Holcombe or Verstraten) that mention this discovery. The speed limit may have little effect in conventional MOT displays with linear trajectories, because for the speeds tested in all or practically all such experiments, objects probably take longer than a second to ever move in a full revolution around a point in the display. However, many recent papers use circular trajectories, where the angular speed limit may come into play, although again they tend to use speeds slower than 1 rps [e.g. @maechlerAttentionalTrackingTakes2021, @carlsonQuadranticDeficitReveals2007].
 
 Does the angular speed limit decrease with target load? If the speed limit declines as dramatically with target load as does the temporal limit, then many of the papers that use circular trajectories may run afoul of it when participants are asked to track three or four targets. @holcombeSplittingAttentionReduces2013 did find a decline
+1.7 rps with one target to 1.2 rps with two targets and 0.8 rps with three targets. However, it is possible that the very low temporal limits for two and three targets constrain performance here.
+
+For the two-target condition, the apparent temporal frequency limit of 4 Hz is so low that the corresponding speed in the three-object condition is lower than the original one-target speed limit. An implication is that were the speed limit still ;1.7 rps, it could not be seen in the thresholds because the temporal frequency limit is hit first. For a speed limit to be visible, it would have to be substantially lower than the 1.7 rps one-target limit, which would manifest as a lower temporal frequency limit for three objects than for more objects. Some support for this can be seen in the data—the 3.9 Hz three-object threshold is significantly worse than the mean 4.4 Hz of the other conditions, t(20) 1⁄4 􏰋2.57, p 1⁄4 0.018, according to a linear contrast analysis. This tentatively suggests that the speed limit decreased to approximately 1.3 rps.
+
+SHOW BEAUTIFUL DIAGRAM
+
+
 
 
 One of the unknowns about the speed limit is 
