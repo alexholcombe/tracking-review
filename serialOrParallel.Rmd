@@ -42,26 +42,45 @@ critInterval <- function(targets, samplingInterval) {
 }
 
 valuesForComputing<- expand_grid(
-  targets = 1:4,
+  targets = c(1, 2, 2.4, 3, 4), # including 2.4 because that's where I want to put the text labels
   samplingInterval = c(50, 70, 90),
   experiment = "zpredicted" #when it starts with z, it will be at end in legend when ggplot creates factor ordering on fly
 )
 tibl <- valuesForComputing  %>% mutate(temporalLimit = critInterval(targets,samplingInterval))
 
+predictions <- tibl %>% filter(targets != 2.4) #to plot lines
+
+
+# angle = c(30,50,60),
+
 #male/female samples https://github.com/kmiddleton/rexamples/blob/master/ggplot2%20male-female%20symbols.R
 #unicode character list (look at ) https://www.ssec.wisc.edu/~tomw/java/unicode.html
-ggplot(temporalLimitsData, aes(x=targets,y=temporalLimit, shape=experiment)) +
-    geom_line(data=tibl, aes(color=factor(samplingInterval)) ) +
+gg<-ggplot(temporalLimitsData, aes(x=targets,y=temporalLimit, shape=experiment)) +
     geom_point(position=position_dodge(width=.2), size=5) +
+    geom_line(data=predictions, aes(color=factor(samplingInterval)) ) + #model predictions
     #geom_point( size=4) +
     #geom_line() +
     scale_shape_manual(values = c("\u25A1", "\u25CB", "\u2642", "\u2640",   "\u1111")) +
-   scale_x_continuous(breaks=1:3, limits=c(1,4)) + #so that model lines extend all the way to symbols
+    scale_x_continuous(breaks=1:3, limits=c(1,4)) + #so that model lines extend all the way to symbols
     ylim(0,NA) +
     ylab('temporal limit (ms)') + labs(color='sampling interval (ms)', shape='study') + 
     theme_bw() +
    theme( panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
           panel.background = element_blank())
+
+ylims<- layer_scales(gg)$y$get_limits()
+xlims<- layer_scales(gg)$x$get_limits()
+graphAspectRatio <- diff(ylims)/diff(xlims)
+  
+lineLabels <-  tibl %>% filter(targets == 2.4)
+lineLabels$label <- paste0(lineLabels$samplingInterval," ms")
+lineLabels<- lineLabels %>% mutate(slop = samplingInterval * 2)
+lineLabels<- lineLabels %>% mutate(slope = slop / graphAspectRatio)
+lineLabels<- lineLabels %>% mutate(angleIfAxesSameScale = atan(slope)*180/pi)
+lineLabels<- lineLabels %>% mutate(angle = angleIfAxesSameScale)
+
+gg +  geom_text(data=lineLabels, aes(label = label, angle=angle), vjust="bottom")
+
 ```
 
 Cite Carlson vanRullen
