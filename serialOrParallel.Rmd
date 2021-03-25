@@ -12,7 +12,59 @@ A serial account of tracking is that a process must switch from target to target
 
 After one object is sampled, it continues moving and if its position is not re-sampled before another object takes its place, it will be lost. This assumes that its motion direction and speed are not reliable guides to its future positions, or that motion direction and speed will not be used. The evidence on this is discussed in section \@ref(beyondLocation), but for now note that this would ameliorate the effect, reducing the size of the effects predicted by the serial account.
  
-For the circular trajectories used by @holcombeSplittingAttentionReduces2013, the product of the speed and number of objects determines how often sampling must be done to avoid losing a target. In an MOT trial with two targets, then, after one target is sampled, the serial process switches to 
+For the circular trajectories used by @holcombeSplittingAttentionReduces2013, the product of the speed and number of objects determines how often sampling must be done to avoid losing a target. In an MOT trial with two targets, after one target is sampled, the serial process switches to the other target. If the distractor trailing the target arrives near the first target's former location before the serial process switches back, then we can expect tracking to fail.
+
+This account predicts a linear relationship between the number of targets and the temporal limit on tracking.
+
+<!--
+If one object is sampled every 100 ms, then if it is replaced every 200ms, you have 100% ambiguity in the correspondence problem. So to get sampling time from temporal limit, divide by 2. HolcombeChen & RoudaiaFaubert observed about 140 ms for young men, meaning 70 ms.
+-->
+
+```{r, echo=FALSE, fig.cap="The results of the two experiments of Holcombe & Chen (2013) plotted with the comparable sample (young people) of Roudaia & Faubert (2017)."}
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(purrr)
+library(forcats) #for fct_relevel
+
+E1HolcombeChen13 <- tibble(experiment="Holcombe & Chen E1", targets=seq(1,2),   temporalLimit= c(1000/6.93, 1000/4.45) )
+E2HolcombeChen13 <- tibble(experiment="Holcombe & Chen E2", targets=seq(2,3),   temporalLimit= c(1000/4.05, 1000/2.7) )
+RoudaiaFaubert<- tibble(experiment="Roudaia & Faubert young men", targets=seq(1,3), temporalLimit=c(1000/6.4,1000/4,1000/2.8))
+RoudaiaFaubert2<- tibble(experiment="Roudaia & Faubert young women", targets=seq(1,3), temporalLimit=c(1000/4.9,1000/3,1000/1.8))
+
+temporalLimitsData<- rbind(E1HolcombeChen13,E2HolcombeChen13,RoudaiaFaubert,RoudaiaFaubert2)
+temporalLimitsData$experiment <- as.factor(temporalLimitsData$experiment)
+
+#criticalIntervalsObserved <- tibble( targets=seq(1,3), temporalLimit= c(1000/7, 1000/4.2, 1000/2.6) )
+
+critInterval <- function(targets, samplingInterval) {
+ samplingInterval*targets*2
+}
+
+valuesForComputing<- expand_grid(
+  targets = 1:4,
+  samplingInterval = c(50, 70, 90),
+  experiment = "zpredicted" #when it starts with z, it will be at end in legend when ggplot creates factor ordering on fly
+)
+tibl <- valuesForComputing  %>% mutate(temporalLimit = critInterval(targets,samplingInterval))
+
+#male/female samples https://github.com/kmiddleton/rexamples/blob/master/ggplot2%20male-female%20symbols.R
+#unicode character list (look at ) https://www.ssec.wisc.edu/~tomw/java/unicode.html
+ggplot(temporalLimitsData, aes(x=targets,y=temporalLimit, shape=experiment)) +
+    geom_line(data=tibl, aes(color=factor(samplingInterval)) ) +
+    geom_point(position=position_dodge(width=.2), size=5) +
+    #geom_point( size=4) +
+    #geom_line() +
+    scale_shape_manual(values = c("\u25A1", "\u25CB", "\u2642", "\u2640",   "\u1111")) +
+   scale_x_continuous(breaks=1:3, limits=c(1,4)) + #so that model lines extend all the way to symbols
+    ylim(0,NA) +
+    ylab('temporal limit (ms)') + labs(color='sampling interval (ms)', shape='study') + 
+    theme_bw() +
+   theme( panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+          panel.background = element_blank())
+```
+
+Cite Carlson vanRullen
 
 . After one object is sampled, it continues moving and if it 
 

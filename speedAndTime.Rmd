@@ -111,7 +111,8 @@ ggplot(temporalLimitsData, aes(x=targets,y=temporalLimit, shape=experiment)) +
     #geom_line() +
     scale_shape_manual(values = c("\u25A1", "\u25CB", "\u2642", "\u2640")) +
    scale_x_continuous(breaks=1:3) +
-    ylab('temporal limit (ms)') + labs(color= 'sampling interval (ms)') + theme_bw() +
+    ylab('temporal limit (ms)') + labs(color='sampling interval (ms)', shape='study') + 
+    theme_bw() +
    theme( panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
           panel.background = element_blank())
 ```
