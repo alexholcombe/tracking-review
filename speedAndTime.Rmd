@@ -74,7 +74,7 @@ Direction of motion can be perceived to at least 25 Hz [@burrContrastSensitivity
 
 In adding to the evidence for a temporal limit on tracking, @holcombeSplittingAttentionReduces2013 also found that the temporal limit was markedly worse for higher target loads. The less attentional resource available per target, the lower the temporal limit was. Specifically, the limit was `r round(1000/7)` ms for one target, about `r round(1000/4.2)` ms for two targets, and `r round(1000/2.6)` ms for three targets, and this dramatic effect of target load on temporal limit was replicated by @roudaiaDifferentEffectsAging2017.
 
-```{r, echo=FALSE, fig.cap="The results of the two experiments of Holcombe & Chen (2013) plotted with the comparable sample (young people) of Roudaia & Faubert (2017)."}
+```{r, echo=FALSE, fig.cap="The results of the two experiments of Holcombe & Chen (2013) plotted with the comparable sample (young people) of Roudaia & Faubert (2017). The data symbols are horizontally offset to avoid overlap."}
 library(ggplot2)
 library(dplyr)
 library(tidyr)

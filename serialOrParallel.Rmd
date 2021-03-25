@@ -14,13 +14,13 @@ After one object is sampled, it continues moving and if its position is not re-s
  
 For the circular trajectories used by @holcombeSplittingAttentionReduces2013, the product of the speed and number of objects determines how often sampling must be done to avoid losing a target. In an MOT trial with two targets, after one target is sampled, the serial process switches to the other target. If the distractor trailing the target arrives near the first target's former location before the serial process switches back, then we can expect tracking to fail.
 
-This account predicts a linear relationship between the number of targets and the temporal limit on tracking.
+The serial switching account predicts a linear relationship between the number of targets and the temporal limit on tracking. In the below plot, the predictions are plotted if tracking samples position and switches to another object every 60 ms and every 90 ms.
 
 <!--
 If one object is sampled every 100 ms, then if it is replaced every 200ms, you have 100% ambiguity in the correspondence problem. So to get sampling time from temporal limit, divide by 2. HolcombeChen & RoudaiaFaubert observed about 140 ms for young men, meaning 70 ms.
 -->
 
-```{r, echo=FALSE, fig.cap="The results of the two experiments of Holcombe & Chen (2013) plotted with the comparable sample (young people) of Roudaia & Faubert (2017)."}
+```{r, echo=F, warning=F, fig.cap="The predictions of 60 and 90 ms sampling time are plotted as dashed lines, together with the data of Holcombe & Chen (2013) and Roudaia & Faubert (2017). The data symbols are horizontally offset to avoid overlap."}
 library(ggplot2)
 library(dplyr)
 library(tidyr)
@@ -42,24 +42,19 @@ critInterval <- function(targets, samplingInterval) {
 }
 
 valuesForComputing<- expand_grid(
-  targets = c(1, 2, 2.4, 3, 4), # including 2.4 because that's where I want to put the text labels
-  samplingInterval = c(50, 70, 90),
+  targets = c(1, 2, 2.6, 3, 4), # including 2.4 because that's where I want to put the text labels
+  samplingInterval = c(60, 90),
   experiment = "zpredicted" #when it starts with z, it will be at end in legend when ggplot creates factor ordering on fly
 )
 tibl <- valuesForComputing  %>% mutate(temporalLimit = critInterval(targets,samplingInterval))
 
 predictions <- tibl %>% filter(targets != 2.4) #to plot lines
 
-
-# angle = c(30,50,60),
-
 #male/female samples https://github.com/kmiddleton/rexamples/blob/master/ggplot2%20male-female%20symbols.R
 #unicode character list (look at ) https://www.ssec.wisc.edu/~tomw/java/unicode.html
 gg<-ggplot(temporalLimitsData, aes(x=targets,y=temporalLimit, shape=experiment)) +
     geom_point(position=position_dodge(width=.2), size=5) +
-    geom_line(data=predictions, aes(color=factor(samplingInterval)) ) + #model predictions
-    #geom_point( size=4) +
-    #geom_line() +
+    geom_line(data=predictions, aes(color=factor(samplingInterval)), linetype="dashed") + #model predictions
     scale_shape_manual(values = c("\u25A1", "\u25CB", "\u2642", "\u2640",   "\u1111")) +
     scale_x_continuous(breaks=1:3, limits=c(1,4)) + #so that model lines extend all the way to symbols
     ylim(0,NA) +
@@ -71,19 +66,34 @@ gg<-ggplot(temporalLimitsData, aes(x=targets,y=temporalLimit, shape=experiment))
 ylims<- layer_scales(gg)$y$get_limits()
 xlims<- layer_scales(gg)$x$get_limits()
 graphAspectRatio <- diff(ylims)/diff(xlims)
-  
-lineLabels <-  tibl %>% filter(targets == 2.4)
+
+#Create the string label, e.g. "90 ms"
+lineLabels <-  tibl %>% filter(targets == 2.6)
 lineLabels$label <- paste0(lineLabels$samplingInterval," ms")
+
+#Calculate the angle of the label to make it have the same angle as the line
 lineLabels<- lineLabels %>% mutate(slop = samplingInterval * 2)
 lineLabels<- lineLabels %>% mutate(slope = slop / graphAspectRatio)
 lineLabels<- lineLabels %>% mutate(angleIfAxesSameScale = atan(slope)*180/pi)
 lineLabels<- lineLabels %>% mutate(angle = angleIfAxesSameScale)
+lineLabels<- lineLabels %>% mutate(temporalLimit = temporalLimit + 10) #to raise it off the line
 
-gg +  geom_text(data=lineLabels, aes(label = label, angle=angle), vjust="bottom")
-
+gg<-gg +  geom_text(data=lineLabels, aes(label = label, angle=angle, color=factor(samplingInterval)), vjust="bottom") +
+          guides(colour=FALSE) #don't show sampling interval legend
+show(gg)
 ```
 
+With every unit increase in the number of targets, the interval between successive samples of that target increases by the sampling time. This is under the optimistic assumption of orderly sampling (the sampling process sampling first one target, then the second target, then the third target, and back to the first target, rather than sampling the second target or third target again); otherwise the slope would be even steeper.
+
+Note that no parameters were fit to the data. A particular sampling time specifies the line. While the lines fit the data fairly well, keep in mind that whether these patterns would replicate remains somewhat uncertain. While the
+
+Next, consider that the 
+
+The data are compatible. 
+
 Cite Carlson vanRullen
+
+a sampling interval per target of 60 ms is plotted together with that of a sampling interval of 90 ms.
 
 . After one object is sampled, it continues moving and if it 
 
