@@ -66,9 +66,7 @@ A word of caution, however - because tracking performance decreases
 Those abilties of ours that have a capacity of just one remain somewhat obscure. There is an extensive literature on two-object costs. words Alex White However, 
 However, as we will see in velocityAndExtrapolation, there is evidence that some aspects of motion processing
 
-
-Some mental processes seem to have a capacity of just one. That is, there are abilities we have that can be
-
+<!-- expansion and contraction hurts position judgments @howeVisuallyTrackingLocalizing2013 -->
 
 Mention the bendy-pencil illusion https://jov.arvojournals.org/article.aspx?articleid=2193187 and Gershman's hierarchical paper 
 From the bendy-pencil illusion paper: "One of the basic discoveries of Gestalt psychology is that the perceived trajectory of a moving object is not always determined by its relative motion with respect to the retina or the ground but may instead be based on its motion relative to other moving objects. The perceived motion of a rolling wheel provides an excellent example (see Duncker, 1929; Johansson, 1950; Rubin, 1927, for more examples). The trajectory of a single point on the wheel has the form of a cycloid, but its perceived trajectory is a simple rotary motion about the center of the wheel. Indeed, it is not possible to perceive the cycloidal trajectory, even if one tries, unless the point is presented in isolation."

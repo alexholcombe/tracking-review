@@ -1,5 +1,7 @@
 # Which aspect(s) of tracking determine performance? {#whichAspects}
 
+Explain why the resource intensiveness aspect of tracking is more interesting than other aspects.
+
 Why do people perform more poorly with more targets? By definition, this means that the processes underlying tracking are capacity-limited, but by itself, that description is not very illuminating. Covert tracking is a complex task, and we would like to know which aspect(s) of it exactly are most capacity-limited.
 
 Below is a list of candidate reasons for the factors that impair performance more when there are more targets:
@@ -38,12 +40,7 @@ The reason for the reduction in performance with greater time observed by @oksam
  
 ## Spatial selection of multiple locations
 
-At the beginning of an MOT task, featural attention is typically used to select the target objects, as they are typically highlighted with a different color or by flicker. Both @drewNeuralMeasuresIndividual2008 and @franconeriHowManyLocations2007 found evidence that this was not as demanding as the motion phase of the tracking task. However, the selection phase may still be demanding enough to result in incorrect responses on many trials, and thus affect overall performance, and do so to a greater extent when there are more targets. 
-In the experiments by @franconeriHowManyLocations2007, participants two concentric circular arrays of dots centered on fixation. Between one and eight of these dots were briefly highlighted, and then each dot was replaced by either a small horizontal or a small vertical bar. The participants' task was to search for a vertical bar, but to confine their search to only the previously-cued locations. They pressed one key if a vertical bar was present among the cued locations, and another key if none of those locations contained a vertical bar.
 
-In a relatively easy condition (a sparse condition with only 12 locations), average performance dropped from 98% for two cued locations to 91% for six locations. Such a small decrease suggests that if this result were to generalize to typical MOT displays, the selection phase would contribute only a small portion of the performance decrease with greater set sizes. MOT displays typically do only have 12 or fewer objects. However, they frequently are much closer to each other than the spacing that @franconeriHowManyLocations2007 used in their sparse condition. In the denser conditions tested by @franconeriHowManyLocations2007, performance again started at a very high level for two cued locations, but dropped much more, to 74% correct or less for six cued locations.
-
-The initial selection demands in a typical MOT task are likely less taxing than in these experiments, because participants need only maintain their attention on the objects, not search through them. However, it is not clear how much less demanding maintained attention is, so we still do not know how much of the target-number effect in typical MOT displays is due to failures at the very beginning of a trial. The density effect observed by @franconeriHowManyLocations2007 suggests a role for spatial interference in typical MOT experiment, which is the factor we turn to next. 
 
 ## Spatial interference
 
@@ -62,6 +59,6 @@ If objects are moving fast enough, they are perceived to blur together, because 
 
 ## Moving forward
 
-Each of these could hinder performance more with more targets. They contribute in an unknown mix to most trakcing tasks .
+Each of these could hinder performance more with more targets. They contribute in an unknown mix to most tracking tasks .
 Thus we don't know which is responsible for various results. For example, 
 

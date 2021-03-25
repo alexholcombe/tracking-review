@@ -12,7 +12,9 @@ Thus, while many potential athlete users may imagine that a test of attention te
 
 Retinotopic or spatiotopic and configural @yantisMultielementVisualTracking1992, @billHierarchicalStructureEmployed2020, @howeCoordinateSystemsUsed2010
 @meyerhoffDistractorLocationsInfluence2015 @liuMultipleObjectTrackingBased2005
+, role of distractors @meyerhoffDistractorLocationsInfluence2013
 
-expansion and contraction hurts position judgments @howeVisuallyTrackingLocalizing2013
 
 Role of surface features @papenmeierTrackingLocationFeatures2014
+
+perceived position is what matters @maechlerAttentionalTrackingTakes2021

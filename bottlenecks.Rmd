@@ -75,3 +75,7 @@ Unfortunately, in the data of @meyerhoffIndividualDifferencesVisual2020, like th
 The statements in the literature such as "participants can track four moving objects" also mislead readers in another way. The finding that participants can track at least four objects with reasonable accuracy is restricted to particular object speeds [@alvarezHowManyObjects2007; @holcombeExhaustingAttentionalTracking2012] and spacings [@franconeriEvidenceSpeedLimit2008; @holcombeObjectTrackingAbsence2014].
 
 The particular number of objects that can be tracked with reasonable accuracy is thus highly dependent on conditions. Still, it is clear that this number is small relative to the number of objects that are simultaneously processed by early stages of the visual system. So, what aspect exactly of tracking imposes this limitation?
+
+### Resource intensiveness
+
+Clear statement of what resource intensiveness means.
