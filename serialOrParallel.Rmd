@@ -32,10 +32,8 @@ E2HolcombeChen13 <- tibble(experiment="Holcombe & Chen E2", targets=seq(2,3),   
 RoudaiaFaubert<- tibble(experiment="Roudaia & Faubert young men", targets=seq(1,3), temporalLimit=c(1000/6.4,1000/4,1000/2.8))
 RoudaiaFaubert2<- tibble(experiment="Roudaia & Faubert young women", targets=seq(1,3), temporalLimit=c(1000/4.9,1000/3,1000/1.8))
 
-temporalLimitsData<- rbind(E1HolcombeChen13,E2HolcombeChen13,RoudaiaFaubert,RoudaiaFaubert2)
-temporalLimitsData$experiment <- as.factor(temporalLimitsData$experiment)
-
-#criticalIntervalsObserved <- tibble( targets=seq(1,3), temporalLimit= c(1000/7, 1000/4.2, 1000/2.6) )
+temporalLimsData<- rbind(E1HolcombeChen13,E2HolcombeChen13,RoudaiaFaubert,RoudaiaFaubert2)
+temporalLimsData$experiment <- as.factor(temporalLimsData$experiment)
 
 critInterval <- function(targets, samplingInterval) {
  samplingInterval*targets*2
@@ -52,11 +50,11 @@ predictions <- tibl %>% filter(targets != 2.4) #to plot lines
 
 #male/female samples https://github.com/kmiddleton/rexamples/blob/master/ggplot2%20male-female%20symbols.R
 #unicode character list (look at ) https://www.ssec.wisc.edu/~tomw/java/unicode.html
-gg<-ggplot(temporalLimitsData, aes(x=targets,y=temporalLimit, shape=experiment)) +
+gg<-ggplot(temporalLimsData, aes(x=targets,y=temporalLimit, shape=experiment)) +
     geom_point(position=position_dodge(width=.2), size=5) +
     geom_line(data=predictions, aes(color=factor(samplingInterval)), linetype="dashed") + #model predictions
     scale_shape_manual(values = c("\u25A1", "\u25CB", "\u2642", "\u2640",   "\u1111")) +
-    scale_x_continuous(breaks=1:3, limits=c(1,4)) + #so that model lines extend all the way to symbols
+    scale_x_continuous(breaks=1:3, limits=c(.9,4)) + #so that model lines extend all the way to symbols
     ylim(0,NA) +
     ylab('temporal limit (ms)') + labs(color='sampling interval (ms)', shape='study') + 
     theme_bw() +
@@ -85,7 +83,9 @@ show(gg)
 
 With every unit increase in the number of targets, the interval between successive samples of that target increases by the sampling time. This is under the optimistic assumption of orderly sampling (the sampling process sampling first one target, then the second target, then the third target, and back to the first target, rather than sampling the second target or third target again); otherwise the slope would be even steeper.
 
-Note that no parameters were fit to the data. A particular sampling time specifies the line. While the lines fit the data fairly well, keep in mind that whether these patterns would replicate remains somewhat uncertain. While the
+A particular sampling time specifies the line, so no parameters needed to be fit here. The lines fit the data fairly well, although it is not clear how impressive that should be at this point. Only three target loads were tested, for example, and it may be unlikely that young women differ as much from young men as is suggested by the Roudaia & Faubert data.
+
+A particularly interesting issue is the temporal limit for 
 
 Next, consider that the 
 
