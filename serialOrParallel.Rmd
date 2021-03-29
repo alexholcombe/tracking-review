@@ -1,8 +1,6 @@
-# Serial processing, parallel processing, or both? {#serialOrParallel}
+# Serial, parallel, or both? {#serialOrParallel}
 
-Brains are massively parallel. This should encourage skepticism that a given mental ability involves processing in series, one-by-one. We have established that tracking is highly capacity-limited, in that in certain conditions, performance drops steeply with target load.
-
-This need not imply serial processing, a capacity of one. Of the processes that underlie tracking, even those with the smallest capacity might still process the objects in small sets, but sets of greater than one.
+Because brains are massively parallel, researchers should be skeptical that tracking involves processing in series, one-by-one. While we have established that tracking is highly capacity-limited (performance drops steeply with target load), this need not imply serial processing - a capacity of one. Of the processes that underlie tracking, even those with the smallest capacity might still process the objects in small sets, but sets of greater than one.
 
 <!--One can certainly walk and chew gum at the same time, and even simultaneously use one hand to rub one's belly and the other to tap one's head, although it may take a bit of practice for some of us. However, when it comes to making a keypress based on the identity of a visual stimulus with one hand and based on the identity of a sound with the other hand, the evidence suggests that one particular component of these two tasks simply cannot be done simultaneously @pashlerDualtaskInterferenceSimple1994. Specifically, the pattern of response times indicates that while a choice is being made in response to the visual stimulus, choice processing for the auditory stimulus cannot commence.-->
 
@@ -83,27 +81,26 @@ show(gg)
 
 With every unit increase in the number of targets, the interval between successive samples of that target increases by the sampling time. This is under the optimistic assumption of orderly sampling (the sampling process sampling first one target, then the second target, then the third target, and back to the first target, rather than sampling the second target or third target again); otherwise the slope would be even steeper.
 
-A particular sampling time specifies the line, so no parameters needed to be fit here. The lines fit the data fairly well, although it is not clear how impressive that should be at this point. Only three target loads were tested, for example, and it may be unlikely that young women differ as much from young men as is suggested by the Roudaia & Faubert data.
+A particular sampling time specifies the temporal limit for all target sizes, so no parameters needed to be fit here. The lines fit the data fairly well, although it is not clear how impressive that should be at this point. Only three target loads were tested, for example, so we should have little confidence that the relationship is linear, as the mnodel predicts.
 
-A particularly interesting issue is the temporal limit for 
+Of special interest is the temporal limit when there is only one target. With only one target, there is no need for the position sampler to move to any other objects, so one might have expected that the temporal limit would be much better than implied by the line drawn through the other data points. That the temporal limit for one target is consistent with the other data points suggests that even when only one target is present, it still is intermittently sampled, perhaps every 60 ms in the young male dataset.
 
-Next, consider that the 
+A particularly interesting issue is the temporal limit for covertly tracking a single object. In that situation, there is no need to switch the position sampler to another object, and thus no need, it would seem, to have intermittent rather than continuous sampling. Evidence from other paradigms suggests that even when attends to a single location, performance oscillates as if there is a "blinking spotlight" of attention [@vanrullenBlinkingSpotlightAttention2007; @fiebelkornReportRhythmicSampling2013].
 
-The data are compatible. 
+The sampling rate when attending to one location according to these studies is similar to that suggested by the tracking limit. The plot above shows that the tracking studies imply temporal limits of `r ms<- round( (temporalLimsData %>% filter(targets==1))$temporalLimit ,-1); ms[1]`, `r ms[2]`, and `r ms[3]` ms. The studies in the behavioral and neural oscillation literature have found `r round(1000/7,-1)` ms [@reFeatureBasedAttentionSamples2019]<!--They claimed 8 Hz in their paper but the figure shows the peak at 7 Hz-->, 142 ms [@vanrullenBlinkingSpotlightAttention2007], `r round(1000/7.5,-1)` ms <!--claimed 8 Hz but had equal power at 7 and 8-->[@fiebelkornReportRhythmicSampling2013], and `r round(1000/7.14,-1)` ms [@dugueAttentionSearchesNonuniformly2015]<!--said ~7 Hz but sampling was very coarse, one peak at 7.14--> (For the @reFeatureBasedAttentionSamples2019 paper, they concluded that sampling occurred at 8 Hz, but their figure shows a peak at 7 Hz, so I have used 7 Hz or `r round(1000/7,-1)` ms). 
 
-Cite Carlson vanRullen
+<!--also for moving objects, although the rate is harder to interpret. MacDonald & Vanrullen assume motion signal is strongest at 1/4 of cycle, but I seem to remember that was argued by Nakayama but can't remember it's sure -->
 
-a sampling interval per target of 60 ms is plotted together with that of a sampling interval of 90 ms.
 
-. After one object is sampled, it continues moving and if it 
+Is the spotlight oscillation hemisphere-specific? Finding of 7 Hz for feature attention by @reFeatureBasedAttentionSamples2019 suggests global.
+<!--@jiaSequentialSamplingVisual2017 No: Moreover, the 2 disc stimuli in all 3 experiments were presented in the left and right visual fields, and therefore, the observed attentional switching could have been solely caused by interhemispheric competition [32]. To address this issue, we ran a control experiment (N = 13) in which the 2 discs were presented in the upper and lower visual fields within the same visual hemifield (S4 Fig). The same alpha-band alternating pattern was observed, thus arguing against the interpretation of interhemispheric competitio-->
 
-something needs to process targets individually, most likey to update their positions. Tracking, then, involves a process that switches between all the targets to update their positions one-by-one.
+<!-- @macdonaldAttentionalSamplingMultiple2013 finds less dramatic decrease in time with number of wagon wheels - instead of 8.7, 5, 3.3, 2.5 Hz, they found 8.7,6.6,6.5,6.2-->
+<!--@davidsonAttentionPeriodicallySamples2018 found evidence for 8 Hz sampling during binocular rivalry-->
 
-The serial processing account makes a quantitative prediction specifically
+<!--This could all be compatible with limited-capacity parallel. All targets are simultaneously processed but processing becomes much much slower when attention is spread among more targets, such that with three targets. processing two-by-two, and that remains a possibility
+-->
 
-<!--whether any constituent process is limited to one-by-one processing...-->
-
-As described in the temporal limits section (\ref(speedAndTime)), the temporal limit on tracking declines precipitously with target load. The serial processing account makes a quantitative prediction specifically
 
 Little and Howe
 
