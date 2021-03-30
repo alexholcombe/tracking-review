@@ -1,16 +1,18 @@
-# Serial, parallel, or both? {#serialOrParallel}
+# A serial sampler {#serialOrParallel}
 
-Because brains are massively parallel, researchers should be skeptical that tracking involves processing in series, one-by-one. While we have established that tracking is highly capacity-limited (performance drops steeply with target load), this need not imply serial processing - a capacity of one. Of the processes that underlie tracking, even those with the smallest capacity might still process the objects in small sets, but sets of greater than one.
+Because brains are massively parallel, researchers should be skeptical that tracking involves processing in series, one-by-one. While we have established that tracking is highly capacity-limited (performance drops steeply with target load), this need not imply serial processing - a capacity of one.
 
-<!--One can certainly walk and chew gum at the same time, and even simultaneously use one hand to rub one's belly and the other to tap one's head, although it may take a bit of practice for some of us. However, when it comes to making a keypress based on the identity of a visual stimulus with one hand and based on the identity of a sound with the other hand, the evidence suggests that one particular component of these two tasks simply cannot be done simultaneously @pashlerDualtaskInterferenceSimple1994. Specifically, the pattern of response times indicates that while a choice is being made in response to the visual stimulus, choice processing for the auditory stimulus cannot commence.-->
+<!--Of the processes that underlie tracking, even those with the smallest capacity might still process the objects in small sets, but sets of greater than one.
+ 
+One can certainly walk and chew gum at the same time, and even simultaneously use one hand to rub one's belly and the other to tap one's head, although it may take a bit of practice for some of us. However, when it comes to making a keypress based on the identity of a visual stimulus with one hand and based on the identity of a sound with the other hand, the evidence suggests that one particular component of these two tasks simply cannot be done simultaneously @pashlerDualtaskInterferenceSimple1994. Specifically, the pattern of response times indicates that while a choice is being made in response to the visual stimulus, choice processing for the auditory stimulus cannot commence.-->
 
 Whether the processes that underlie MOT occur entirely in parallel has been one of the chief concerns of researchers since the very first paper on the topic [@pylyshynTrackingMultipleIndependent1988] .
 
-A serial account of tracking is that a process must switch from target to target to update targets' positions, one-by-one. With very simple assumptions, this account makes a specific prediction for the temporal limits on tracking.
+A serial account of tracking is that a process must switch from target to target to update targets' positions, one-by-one. This account makes a specific prediction for the temporal limits on tracking, after a few basic assumptions are made.
 
-After one object is sampled, it continues moving and if its position is not re-sampled before another object takes its place, it will be lost. This assumes that its motion direction and speed are not reliable guides to its future positions, or that motion direction and speed will not be used. The evidence on this is discussed in section \@ref(beyondLocation), but for now note that this would ameliorate the effect, reducing the size of the effects predicted by the serial account.
+After one object is sampled, it continues moving and if its position is not re-sampled before another object takes its place, it will be lost. This assumes that its motion direction and speed are not reliable guides to its future positions, or that motion direction and speed will not be used. The evidence that speaks to this is discussed in section \@ref(beyondLocation), but for now note that this would ameliorate the effect, reducing the size of the effects predicted by the serial account.
  
-For the circular trajectories used by @holcombeSplittingAttentionReduces2013, the product of the speed and number of objects determines how often sampling must be done to avoid losing a target. In an MOT trial with two targets, after one target is sampled, the serial process switches to the other target. If the distractor trailing the target arrives near the first target's former location before the serial process switches back, then we can expect tracking to fail.
+For circular trajectories such as those used by @holcombeSplittingAttentionReduces2013, the product of the speed and number of objects determines how often sampling must be done to avoid losing a target. In an MOT trial with two targets, after one target is sampled, the serial process switches to the other target. If the distractor trailing the target arrives near the first target's former location before the serial process switches back, then we can expect tracking to fail.
 
 The serial switching account predicts a linear relationship between the number of targets and the temporal limit on tracking. In the below plot, the predictions are plotted if tracking samples position and switches to another object every 60 ms and every 90 ms.
 
@@ -53,7 +55,7 @@ gg<-ggplot(temporalLimsData, aes(x=targets,y=temporalLimit, shape=experiment)) +
     geom_line(data=predictions, aes(color=factor(samplingInterval)), linetype="dashed") + #model predictions
     scale_shape_manual(values = c("\u25A1", "\u25CB", "\u2642", "\u2640",   "\u1111")) +
     scale_x_continuous(breaks=1:3, limits=c(.9,4)) + #so that model lines extend all the way to symbols
-    ylim(0,NA) +
+    scale_y_continuous(breaks=seq(0,700,100), limits=c(0,NA)) +
     ylab('temporal limit (ms)') + labs(color='sampling interval (ms)', shape='study') + 
     theme_bw() +
    theme( panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
@@ -79,18 +81,21 @@ gg<-gg +  geom_text(data=lineLabels, aes(label = label, angle=angle, color=facto
 show(gg)
 ```
 
-With every unit increase in the number of targets, the interval between successive samples of that target increases by the sampling time. This is under the optimistic assumption of orderly sampling (the sampling process sampling first one target, then the second target, then the third target, and back to the first target, rather than sampling the second target or third target again); otherwise the slope would be even steeper.
+With every unit increase in the number of targets, the interval between successive samples of that target increases by the sampling time. This is under an optimistic assumption of orderly sampling (the sampling process sampling first one target, then the second target, then the third target, and back to the first target, rather than sampling the second target or third target again); otherwise the predicted slope should be even steeper.
 
-A particular sampling time specifies the temporal limit for all target sizes, so no parameters needed to be fit here. The lines fit the data fairly well, although it is not clear how impressive that should be at this point. Only three target loads were tested, for example, so we should have little confidence that the relationship is linear, as the mnodel predicts.
+Because a particular sampling time specifies the temporal limits for all target sizes, no parameters needed to be fit here. The lines fit the data fairly well. Still, it is not clear how impressed one should be by this. Only three target loads were tested, for example, so we should have little confidence that the relationship is linear, as the model predicts.
 
-Of special interest is the temporal limit when there is only one target. With only one target, there is no need for the position sampler to move to any other objects, so one might have expected that the temporal limit would be much better than implied by the line drawn through the other data points. That the temporal limit for one target is consistent with the other data points suggests that even when only one target is present, it still is intermittently sampled, perhaps every 60 ms in the young male dataset.
+A particularly interesting issue is the temporal limit for covertly tracking a single object. In that situation, there is no need to switch the position sampler to another object, and thus no need, it would seem, to have intermittent rather than continuous sampling. Evidence from other paradigms suggests that even when attends to a single location, performance oscillates as if there is a "blinking spotlight" of attention [@vanrullenBlinkingSpotlightAttention2007; @fiebelkornReportRhythmicSampling2013]. Here, that the limit is consistent with the other data points suggests that even when only one target is present, it still is intermittently sampled, perhaps every 60 ms in the young male dataset.
 
-A particularly interesting issue is the temporal limit for covertly tracking a single object. In that situation, there is no need to switch the position sampler to another object, and thus no need, it would seem, to have intermittent rather than continuous sampling. Evidence from other paradigms suggests that even when attends to a single location, performance oscillates as if there is a "blinking spotlight" of attention [@vanrullenBlinkingSpotlightAttention2007; @fiebelkornReportRhythmicSampling2013].
+The tracking studies plotted above imply temporal limits, when tracking one target, of `r ms<- round( (temporalLimsData %>% filter(targets==1))$temporalLimit ,-1); ms[1]`, `r ms[2]`, and `r ms[3]` ms. Recall that because the target must be sampled at twice the temporal limit to avoid confusion with the trailing distractor, we the sampling rates inferred are `r round(ms[1]/2)`, `r round(ms[2]/2)`, and `r round(ms[3]/2)` ms.
 
-The sampling rate when attending to one location according to these studies is similar to that suggested by the tracking limit. The plot above shows that the tracking studies imply temporal limits of `r ms<- round( (temporalLimsData %>% filter(targets==1))$temporalLimit ,-1); ms[1]`, `r ms[2]`, and `r ms[3]` ms. The studies in the behavioral and neural oscillation literature have found `r round(1000/7,-1)` ms [@reFeatureBasedAttentionSamples2019]<!--They claimed 8 Hz in their paper but the figure shows the peak at 7 Hz-->, 142 ms [@vanrullenBlinkingSpotlightAttention2007], `r round(1000/7.5,-1)` ms <!--claimed 8 Hz but had equal power at 7 and 8-->[@fiebelkornReportRhythmicSampling2013], and `r round(1000/7.14,-1)` ms [@dugueAttentionSearchesNonuniformly2015]<!--said ~7 Hz but sampling was very coarse, one peak at 7.14--> (For the @reFeatureBasedAttentionSamples2019 paper, they concluded that sampling occurred at 8 Hz, but their figure shows a peak at 7 Hz, so I have used 7 Hz or `r round(1000/7,-1)` ms). 
+@macdonaldAttentionalSamplingMultiple2013 probed the putative serial sampling rate by presenting multiple rotating wheels that are sometimes seen to rotate backwards, which can be explained by serial sampling. They inferred a sampling interval of `r round(1000/13.3)` ms <!--13.3 Hz-->. This result converges well with the findings from tracking. <!--also for moving objects, although the rate is harder to interpret. MacDonald & Vanrullen assume motion signal is strongest at 1/4 of cycle, but I seem to remember that was argued by Nakayama but can't remember it's sure -->
 
-<!--also for moving objects, although the rate is harder to interpret. MacDonald & Vanrullen assume motion signal is strongest at 1/4 of cycle, but I seem to remember that was argued by Nakayama but can't remember it's sure -->
+Other studies tend to find much slower sampling intervals:  `r round(1000/7,-1)` ms [@reFeatureBasedAttentionSamples2019]<!--They claimed 8 Hz in their paper but the figure shows the peak at 7 Hz-->, 142 ms [@vanrullenBlinkingSpotlightAttention2007], `r round(1000/7.5,-1)` ms <!--claimed 8 Hz but had equal power at 7 and 8-->[@fiebelkornReportRhythmicSampling2013], and `r round(1000/7.14,-1)` ms [@dugueAttentionSearchesNonuniformly2015]<!--said ~7 Hz but sampling was very coarse, one peak at 7.14--> <!--For the @reFeatureBasedAttentionSamples2019 paper, they wrote in their conclusion that sampling occurred at 8 Hz, but their figure shows a peak at 7 Hz, so I have used 7 Hz or `r round(1000/7,-1)` ms.--> A visual search study using neurophysiology in monkeys suggested a 44ms sampling interval @buschmanSerialCovertShifts2009
 
+These other studies all used stationary objects or multiple locations that the participant was told to monitor, which perhaps explains the slower sampling intervals in many studies, although it is not clear why. Perhaps different tasks result in different sampling rates, and the process can occur more quickly for tracking as it requires sampling of position only. Another possibility is that the assumptions underlying the calculations in behavioral studies such as object tracking are wrong. If, for example, motion direction is used to guide the next position sampled, tracking could succeed with a slower sampling interval (but see section \@ref(beyondLocation)), more similar to those documented in most of the neural studies cited above.
+
+In summary, then, there is some convergence of evidence that tracking involves a process that intermittently samples the targets, which can account for the dramatic worsening with target load observed by 
 
 Is the spotlight oscillation hemisphere-specific? Finding of 7 Hz for feature attention by @reFeatureBasedAttentionSamples2019 suggests global.
 <!--@jiaSequentialSamplingVisual2017 No: Moreover, the 2 disc stimuli in all 3 experiments were presented in the left and right visual fields, and therefore, the observed attentional switching could have been solely caused by interhemispheric competition [32]. To address this issue, we ran a control experiment (N = 13) in which the 2 discs were presented in the upper and lower visual fields within the same visual hemifield (S4 Fig). The same alpha-band alternating pattern was observed, thus arguing against the interpretation of interhemispheric competitio-->
@@ -101,6 +106,17 @@ Is the spotlight oscillation hemisphere-specific? Finding of 7 Hz for feature at
 <!--This could all be compatible with limited-capacity parallel. All targets are simultaneously processed but processing becomes much much slower when attention is spread among more targets, such that with three targets. processing two-by-two, and that remains a possibility
 -->
 
+<!-- If there's 2 targets and attention is  samplimg one every 50 ms, then each is sampled every 100 ms, so to solve the correspondence problem they need to go at 5 Hz (200 ms) or slower, so that they only move halfway to the next location. For 3 targets, each is sampled every 150 ms so they need to not get to the next one's location for 300 ms (3.33) hertz.
+criticalTemporalInterval = samplingTime*targets*2
+385 = samplingTime*3*2; samplingTime = 64
+64*2*2= 256 against 238.
+blinking spotlight means 64*1*2 = 128 against 143.
+-->
+
+With non-circular trajectories, can capitalize on sensory memory?
+
+"A single-focus attentional system with access to sensory memory does not need to update the registered positions of tracked objects every few video frames, but needs to update the registered positions at least once within the duration that object-traces persist in sensory memory."
+
 
 Little and Howe
 
@@ -109,12 +125,7 @@ Unitary focus of attention in VWM, according to Oberauer, which would help expla
 Hybrid serial-parallel Bello model.
 It's possible that tracking greater than the subitizing range requires significant VWM. Franconeri showed you often are wrong about how many targets.
 
-<!-- If there's 2 targets and attention is  samplimg one every 50 ms, then each is sampled every 100 ms, so to solve the correspondence problem they need to go at 5 Hz (200 ms) or slower, so that they only move halfway to the next location. For 3 targets, each is sampled every 150 ms so they need to not get to the next one's location for 300 ms (3.33) hertz.
-criticalTemporalInterval = samplingTime*targets*2
-385 = samplingTime*3*2; samplingTime = 64
-64*2*2= 256 against 238.
-blinking spotlight means 64*1*2 = 128 against 143.
--->
+
 
 
 At very low speeds/temporal frequencies, participants have no problem tracking two or even three targets, consistently achieving performance levels above 95% (as seen in Figure 3). This implies that the performance versus resource function is different (shallower) for low speeds. Going from 100% resource (one target) to 50% (two targets) or 33% (three targets) yields little impairment. The reason may be that in this regime of low speeds, even if participants fail to move their tracking focus with the targets for an extended interval (a few hundred milliseconds), they can still recover the targets by finding the objects closest to the positions they last registered. Only at limiting temporal frequen- cies or speeds is there a consequence to having noisy (parallel tracking models, see General discussion) or intermittent (serial tracking models) position updating.

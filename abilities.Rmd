@@ -10,6 +10,9 @@ For some cognitive tasks, individual differences are small, making an individual
 
 Although they did not vary the number of targets participants had to track, @huangMeasuringInterrelationsMultiple2012, @oksamaMultipleObjectTracking2004, and @trevinoBridgingCognitiveNeuropsychological all tested a large number of participants and calculated the correlation in participants' performance between one half of the trials they were tested in and the other. All three found a high correlation of >0.85.  Together with their other results and those of @oksamaMultipleObjectTracking2004, this indicates that people do vary substantially in their multiple object tracking ability. 
 
+Ageing is likely a major source of individual differences, as older participants perform much worse than younger participants [@trickAgerelatedDifferencesMultipleobject2005; @sekulerAgerelatedChangesAttentional2008; @roudaiaDifferentEffectsAging2017]. Using a task requiring participants to detect which of multiple objects had changed its trajectory, @kennedyEarlyAgerelatedDecline2009 found a steep decline between 30 and 60 years, where the effective numbers of tracked trajectories during MTT dropped by about 20% with each decade of aging, which could not be explained by a drop in visual acuity. 
+
+
 Variation in MOT performance is typically interpreted by researchers as variation simply in how many objects a person can track. 
 
 ## What tasks are most related to MOT? 
