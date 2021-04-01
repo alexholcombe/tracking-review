@@ -1,16 +1,14 @@
-# Identity
+# Identities and feature binding
 
-@pylyshynPuzzlingFindingsMultiple2004 "et in the present studies we show that observers are poor at recalling the identity of successfully tracked objects 􏰞as specified by a unique identifier associated with each target, such as a number or starting location)"
+In multiple object tracking tasks, typically the targets and distractors are all identical to each other. Participants only need to monitor target positions, and don't even have to know which target is which.
 
-Let's return to the classic shell game. In a shell game, an item is placed beneath one of three identical shells, making that shell the target. The viewer tries to keep track of which shell has the item underneath it. 
- <!-- insert Conversation article text-->
+In a 2004 experiment, Zenon Pylyshyn assigned targets distinct identities by either giving them names or by giving them distinct starting positions (the four corners of the screen) [@pylyshynPuzzlingFindingsMultiple2004]. At the end of a trial, they were asked not only to indicate which objects were targets but also the identity of the target. To Pylyshyn's suprise, accuracy at identifying the targets was very low, even when accuracy reporting their positions was high.
 
-![The location of two identical shells are exchanged in a shell game](imagesForRmd/shellGame.png){width=50%} 
+Moreover, even when objects are not identical to each other but instead have distinct features, people can be surprisingly poor at knowing anything about those objects other than their position. 
 
+Subsequent studies
 
-
-
-# Binding and identity
+This also goes against one would expect from how tracking is used in the real world.
 
 Look at Hrag Pailian's findings for a striking demonstration of how limited we are in updating identity locations.
 
@@ -39,3 +37,11 @@ Because binding seems to require sustained attention, it’s unlikely it’s bou
 
 Linares et al. ()
 -->
+
+Let's return to the classic shell game. In a shell game, an item is placed beneath one of three identical shells, making that shell the target. The viewer tries to keep track of which shell has the item underneath it. 
+ <!-- insert Conversation article text-->
+
+![The location of two identical shells are exchanged in a shell game](imagesForRmd/shellGame.png){width=50%} 
+
+
+

@@ -2,6 +2,8 @@
 
 Covert tracking keeps one up to date with where objects of interest are. And knowing the locations of those objects has further benefits. In particular, location, together with color and a few other features used by "feature attention", is the main route by which top-down attentional selection occurs. But what benefits does attentional selection provide that are not already delivered by the selection associated with tracking?
 
+Recall that in section X we described evidence that if a target comes too close to another object, the two objects can get confused. They won't always be confused, because predictable trajectories and target velocity can be used to recover a target even after it completely overlaps with another (@howeMotionInformationSometimes2012) In elegant experiments, @wangRoleKinematicProperties2021 created displays
+
 When one needs to know more information about the objects,
 
 one wants to scrutinize the objects further
@@ -36,7 +38,7 @@ Luu and Howe’s results. There were three key findings:
 
 Atsma, J., Koning, A., & van Lier, R. (2012). Multiple object tracking: Anticipatory attention doesn’t “bounce.” Journal of Vision, 12(13), 1–1. Found anticipatory attention in the direction of the object movement. Only tested 3 targets and 1 target. Didn’t test the backward direction I don’t think to see whether that was even better!!!
 
-Recall that in section X we described evidence that if a target comes too close to another object, the two objects can get confused. They won't always be confused, because predictable trajectories and target velocity can be used to recover a target even after it completely overlaps with another (@howeMotionInformationSometimes2012; Vul under review at JoV).
+
 
 perceived speed is what matters? @marinovicAttentionaltrackingAcuityModulated2013
 

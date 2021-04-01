@@ -8,7 +8,7 @@ One can certainly walk and chew gum at the same time, and even simultaneously us
 
 Whether the processes that underlie MOT occur entirely in parallel has been one of the chief concerns of researchers since the very first paper on the topic [@pylyshynTrackingMultipleIndependent1988]. A serial account of tracking is that a process must switch from target to target to update targets' positions, one-by-one. 
 
-## The case for a serial sampler
+## The case for serial position sampling
 
 The serial sampling account makes a specific prediction for the temporal limits on tracking, after a few basic assumptions are made.
 
@@ -130,29 +130,3 @@ Why, then, have some models been shown to be fairly successful in mimicking huma
 Finally, one possibility that seems to have been ignored by all models is that sensory memory, which may contain a lingering trace of each object's recent position, may facilitate tracking by INSSERT WHAT CHRISTINA SAYS HERE [@tripathyMultipleObjectTrackingSerial2011; @howardMultipleTrajectoryTracking2012].
 
 
-
-
-At very low speeds/temporal frequencies, participants have no problem tracking two or even three targets, consistently achieving performance levels above 95% (as seen in Figure 3). This implies that the performance versus resource function is different (shallower) for low speeds. Going from 100% resource (one target) to 50% (two targets) or 33% (three targets) yields little impairment. The reason may be that in this regime of low speeds, even if participants fail to move their tracking focus with the targets for an extended interval (a few hundred milliseconds), they can still recover the targets by finding the objects closest to the positions they last registered. Only at limiting temporal frequen- cies or speeds is there a consequence to having noisy (parallel tracking models, see General discussion) or intermittent (serial tracking models) position updating.
-
-Circular trajectories - explain that it’s the only way to get up to those speeds
-
-What makes a tracking task hard for a person, or even impossible? 
-
- tracking task that resembles the shell games used by conjurers to confound audiences. A magician might cover an object with one of three identical shells and shuffle the shells back and forth while the audience tries to keep their attention on the critical shell.
- 
-Let's return to the classic shell game. In a shell game, an item is placed beneath one of three identical shells, making that shell the target. The viewer tries to keep track of which shell has the item underneath it. 
-
-![The location of two identical shells are exchanged in a shell game](imagesForRmd/shellGame.png){width=50%} 
-
-A crucial aspect of the game is that the shells exchange locations with distractors. Thus, remembering the original location of the item is not sufficient. Neither is it sufficient to extrapolate a new position for the target based on the item's first direction of motion. Remembering its relative location in the array (e.g., the "middle one") is also not enough. One really must update one's representation of the target's position, rather than relying on any of the above.
-
-The simple reduced laboratory version of the shell game is illustrated by the following schematic.
-
-![](imagesForRmd/twoDiscsRevolving.png){width=10%}
-
-The updating of target position could fail for any of a few different reasons. A target might move too quickly for attention to move with it. That is, there may be a speed limit beyond which object position is not appropriately updated. Under serial switching accounts, this speed limit might occur if between successive samples, the object moved further than a critical distance between samples. Under parallel theories, the tracking process may simply have a speed limit. If the speed of the tracking process is resource-intensive, this speed limit may be slower when more targets are to be tracked.
--->
-
-The limits on tracking are not as simple as a speed limit like we have on the highway. To understand why, we need to start from first principles. In particular we need to consider when attentional tracking is actually needed to do well in a task. If one's target for attention moves only a little bit, tracking probably won't be needed.
-
-When is attentional tracking actually needed to perform well in a tracking task? Motion of the target may not be enough. If  targets do not come close to other objects, then one may only need to remember their original location and direction of motion to quickly find them again.
