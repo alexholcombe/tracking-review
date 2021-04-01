@@ -166,6 +166,10 @@ RIGHT HEMIFIELD IS BETTER @holcombeObjectTrackingAbsence2014 (Figure A2), Battel
 
 ## Why
 
+Early work had concluded that MOT could not reflect serial position sampling @pylyshynTrackingMultipleIndependent1988; @yantisMultielementVisualTracking1992
+
+It is well-known that a decrease with target load, linear or non-linear, can be explained by parallel models as well as serial models.
+
 It happens for spatial VSTM but not color [@delvenneCapacityVisualShortterm2005]
 
 ### Quadrants
