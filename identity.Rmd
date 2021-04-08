@@ -36,32 +36,21 @@ In the @makovskiFeatureBindingAttentive2009 experiments, eight moving objects we
 
 In the early 1990s, it slowly dawned on researchers that the mind contained fewer visual representations than they assumed. Failures of trans-saccadic visual fusion and inability to detect changes that occurred during eye movements [@mcconkieRoleControlEye1979] led @oreganSolvingRealMysteries1992a to write a paper whose title included the phrase "the world as an outside memory" and to discover change blindness [@rensinkSeeNotSee1997a].
 
-, and then the discovery of change blindness, led researchers to 
-
-there was less to visual perception than they had assumed.
-
-The world as an outside memory Regan
-
-
-
-
-they are not labelled 
-
+It now appears that O'Regan's big idea goes further than even he anticipated. While O'Regan suggested that only when objects  were attended would they be fully processed, he did not suggest that one might be able to track the changing locations of multiple targets without knowing what they are. 
 
 
 <!--Tracking is important for representing objects still in view @tsubomiNeuralLimitsRepresenting2013-->
 
 
-
+<!--
 A second factor is that even when objects remain close enough to central vision to resolve their identities, a limited resource is required to bind their features together, including binding individual features with their location... 
 
 A third factor is, of course, the limitations that result in imperfect performance even on tracking identical objects, reviewed in the previous sections..
 
 You can track four objects without being able to identify stuff on the four objects. This could either be explained by attention needing to switch between locations, or alternatively that you just need less resource to track than to identify.
 
-Because binding seems to require sustained attention, it’s unlikely it’s bound when serial attention isn’t there. But you might have a memory index of what is there - I need help on this from VWM people!
+Because binding seems to require sustained attention, it’s unlikely it’s bound when serial attention isn’t there. But you might have a memory index of what is there - I need help on this from VWM people!-->
 
-<!--  Thus, even if one would like to know where Stephen Curry is on the court at all times, one certainly can't  -->
 
 <!-- ## Configurations and 
 
@@ -71,9 +60,9 @@ Most models of tracking have assumed that people track only the targets, and tra
 Because binding seems to require sustained attention, it’s unlikely it’s bound when serial attention isn’t there. But you might have a memory index of what is there - I need help on this from VWM people!
 
 Linares et al. ()
--->
 
-Let's return to the classic shell game. In a shell game, an item is placed beneath one of three identical shells, making that shell the target. The viewer tries to keep track of which shell has the item underneath it. 
+
+Let's return to the classic shell game. In a shell game, an item is placed beneath one of three identical shells, making that shell the target. The viewer tries to keep track of which shell has the item underneath it. -->
  <!-- insert Conversation article text-->
 
 
