@@ -38,6 +38,8 @@ Overall, there is a reasonable level of agreement across these individual-differ
 
 The dual-task literature is very large. Can't review it all here
 
+Alvarez, G.A., et al., Are mutielement visual tracking and visual search mutually exclusive? Journal of Experimental Psychology: Human Perception and Performance, 2005. 31(4): p. 643-667.
+
 There seems to be an especially close link between MOT and subitizing
 @trickAgeDifferencesEnumerating2003 observed that even very slow motion reduced
 enumeration speed for stimuli containing 6–9 items, while

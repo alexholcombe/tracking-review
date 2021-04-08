@@ -29,7 +29,7 @@ description: "Tracking-review"
 
 # Preface {-}
 
-This mini-book was written for publication as a Cambridge Element. It should be cited as:
+This mini-book was written for publication as a Cambridge Element. It can be cited as:
 
 Holcombe, A.O. (to appear). Tracking moving objects. Cambridge University Press.
 

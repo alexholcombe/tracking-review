@@ -75,17 +75,52 @@ alvarezCavanaghE3Independence <- calculateIndependence(alvarezCavanagh2005E3,0.5
 alvarezCavanaghE3Independence
 ```
 
-The level of hemispheric independence for a task can be quantified from the advantage provided by presenting the relevant stimuli in distinct hemifields. If adding a second stimulus to a hemifield reduces performance by, say, 20 percentage points, but adding that second stimulus to the other hemifield instead reduces performance by only 5 percentage points, one might say that there is (20-5) / 20 = 75% hemifield independence. That illustrates the principle, but it is not quite this simple, in that one needs to first correct for guessing before interpreting the performance figures.
+The degree of hemispheric independence for a task can be quantified. If adding a second stimulus to a hemifield reduces performance by, say, 20 percentage points, but adding that stimulus to the other hemifield reduces performance by only 5 percentage points, one might say that there is (20-5) / 20 = 75% hemifield independence. A proper calculation of independence is not quite this simple, in that one needs to correct for the accuracy one can achieve by guessing.
 
-The result was a truly extraordinary finding: `r round(100*alvarezCavanaghE1Independence)`% independence in one experiment, and `r round(100*alvarezCavanaghE3Independence)`% in a second experiment. 
+When [this is done](https://github.com/alexholcombe/tracking-review/blob/main/twoBrainsOrOne.Rmd), the level of independence shown is extraordinary: `r round(100*alvarezCavanaghE1Independence)`% independence in one of the @alvarezIndependentResourcesAttentional2005 experiments, and `r round(100*alvarezCavanaghE3Independence)`% in the other. 
 
-@alvarezIndependentResourcesAttentional2005 themselves did not report these figures. They did calculate expected performance if the hemifields are in fact completely independent, and found that performance was not statistically significantly worse than that figure. They then suggested that there was complete independence, but this is the common fallacy of concluding a null hypothesis is true when the evidence does not reject it at a p<.05 level. In other words, they assumed (as the null hypothesis) their conclusion of complete independence, and then affirmed the conclusion on the basis of not finding much evidence against it.
+@alvarezIndependentResourcesAttentional2005 themselves did not report these figures. They calculated expected performance if the hemifields are in fact completely independent, and found that performance was not statistically significantly worse than that figure. They then suggested that there was complete independence, but this is based on the very common fallacy of concluding a null hypothesis is true when the evidence does not reject it at a p<.05 level [@aczelQuantifyingSupportNull2018]. In this case, for the null hypothesis they used their *conclusion* of complete independence, and then affirmed the conclusion on the basis of not finding much evidence against it.
+
+The important point, however, is that their data do suggest strong hemispheric independence. Subsequent work by @chenResourceDemandsObject2013 <!--Didn't compare one to two targets in hemifield but did compare two targets in a hemifield to four targets across two hemifields--> and @holcombeExhaustingAttentionalTracking2012 <!--Calculated two-target prediction, and was about 75% independent, but plenty of noise non-significant speed threshold decreases of c(1.67,1.44,1.7,1.63) 1.98rps->1.85 --> also found high levels of independence.  @shimNumberAttentionalFoci2010<!--Figure 1--> also found a substantial bilateral advantage. 
+
+This result has not always replicated [@shimSpatialSeparationTargets2008] <!--performance in all the conditions involved in their comparison were greater than 85% correct, including many low speeds where performance was near ceiling -->  <!--For most of these tasks, but not @shimNumberAttentionalFoci2010, more targets was confounded with having to make more responses and remember said responses at the end of the trial, so some of the residual cost could be due to that being unitary rather than hemifield-specific.-->, but the successful replications, and the substantial statistical power associated with them (evident in their error bars) indicate that at least in some circumstances, tracking does occur mostly independently in the two hemispheres. @shimSpatialSeparationTargets2008 suggested that the reason they did not find evidence for hemifield independence is that they used two targets, whereas the original @alvarezIndependentResourcesAttentional2005 report of hemifield independence used four targets. However, this is unlikely to be the reason for the discrepancy because @holcombeExhaustingAttentionalTracking2012 also used two targets and did find independence. It appears that the @shimSpatialSeparationTargets2008 data may have been affected by performance being near ceiling. Another difference is that the papers findings independence used circular trajectories. However, using trajectories that were not circular @hudsonHemifieldEffectsMultiple2012 found partial independence, although they used a rather different task.
+
+@carlsonQuadranticDeficitReveals2007 found evidence not only for hemifield independence but also quadrant-level independence, which they attributed to the partial separation of the retinotopic quadrant representations in areas V2 and V3. @shimSpatialSeparationTargets2008 did not replicate this finding, but they had less evidence.
+
+In summary, the evidence for hemifield independence implicates processes that sit at hemisphere-specific, or possibly even quadrant-specific cortical processes in the performance limits on tracking. This naturally raises the question of what sort of processes those are. Many authors have chalked this up to spatial interference. They have suggested that inhibitory connections are responsible: when an object is tracked, receptive fields that are nearby on cortical maps are suppressed [@carlsonQuadranticDeficitReveals2007; @franconeriFlexibleCognitiveResources2013]. However, @holcombeObjectTrackingAbsence2014 found evidence against spatial interference extending any further beyond the crowding range, rather than it extending to the limits of a hemifield or quadrant.
+
+An alternative is that something more like the classic concept of an attentional resource can explain hemifield independence. Parietal areas are heavily implicated in tracking, with activation for 
+
+For instance, a population of neurons in parietal areas, which
+
+resource that . a population of neurons in e.g.  parietal areas
+
+with tracked objects
+
+, which naturally are less likely to cross hemifield boundaries because of the greater distance 
+
+that are less likely to cross hemifields or 
+
+attributed this to spatial interference being 
+
+nice side effect of this discovery
+
+Of course, we already knew that visual cortex
+
+This is noteworthy because
+
+A great thing about this discovery is that it shows decisively that MOT processes are differentiable from more cognitive processes.
+
+
+provides a new tool
 
 The calculation rests on assumptions that are not secure. That when given the task of tracking two targets, if you can only track one, you still do just as well on the first, while guessing on the second
 
-<!--Still, they did find that distributing objects to two hemifields could almost double capacity, as if for this task, the two hemispheres functioned almost as two different brains. -->Subsequent work by @holcombeExhaustingAttentionalTracking2012 <!--Calculated two-target prediction, and was about 75% independent, but plenty of noise non-significant speed threshold decreases of c(1.67,1.44,1.7,1.63) 1.98rps->1.85 --> and @chenResourceDemandsObject2013 found that tracking in the two hemifields was largely independent, but perhaps not completely independent. @shimNumberAttentionalFoci2010<!--Figure 1--> also found a substantial bilateral advantage. This result has not always replicated [@shimSpatialSeparationTargets2008] <!--performance in all the conditions involved in their comparison were great- er than 85% correct, including many low speeds where performance was near ceiling -->  <!--For most of these tasks, but not @shimNumberAttentionalFoci2010, more targets was confounded with having to make more responses and remember said responses at the end of the trial, so some of the residual cost could be due to that being unitary rather than hemifield-specific.-->, but the successful replications, and the substantial statistical power associated with them (evident in their error bars) indicate that hemispheric near-independence of tracking does in fact occur.
 
-Shim, Alvarez, & Jiang (2008) found no advantage for targets in different hemifields. Why? Not sure, but the objects weren’t spaced far enough part to not crowd each other across the hemifield boundaries. In contrast, Shim et al. and Bello et al. suggest it was because hemifield limit doesn’t apply when just two targets. Holcombe & Chen found it did, but Bello suggests the reason is that we used circular trajectories that are somehow different, they say you can extrapolate more with them, whereas it may be that you can extrapolate less.
+
+
+<!-- Shim, Alvarez, & Jiang (2008) found no advantage for targets in different hemifields. Why? Not sure, but the objects weren’t spaced far enough part to not crowd each other across the hemifield boundaries. In contrast, Shim et al. and Bello et al. suggest it was because hemifield limit doesn’t apply when just two targets. Holcombe & Chen found it did, but Bello suggests the reason is that we used circular trajectories that are somehow different, they say you can extrapolate more with them, whereas it may be that you can extrapolate less. -->
+
 
 The target-target distance effect in Shim et al. is huge! How do I explain that? One possible explanation is Carlson’s quadrantic deficit.
 Most cognitive tasks are unlikely to be independently mediated by the two hemispheres, with one set of processes in each hemisphere.
@@ -93,23 +128,14 @@ Even feature attention is global @liuConstantSpreadFeaturebased2011
 
 have such a high level of hemispheric independence.
 
-likely do not have this independence. 
-do not appear to have this independence. For e
 
-A great thing about this discovery is that it shows decisively that MOT processes are differentiable from more cognitive processes.
-provides a new tool
 
-A major complication to calculating the amount of hemifield independence in multiple object tracking is that 
 
-While finding hemifield indpendence
 @chenResourceDemandsObject2013 This unitary resource doesn't do that much in tracking!
 
 corroborated this conclusion that the two hemispheres
 
 <!-- RT study, always used 2 targets.  Davis, R., & Schmit, V. (1971). Timing the transfer of information between hemispheres in man. Acta Psychologica, 35(5), 335–346. https://doi.org/10.1016/0001-6918(71)90008-4 -->
-
-
-
 
 
 @chenResourceDemandsObject2013 @croweGoaldirectedUnequalAttention2019

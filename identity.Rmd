@@ -1,22 +1,57 @@
 # Identities and feature binding
 
-In multiple object tracking tasks, typically the targets and distractors are all identical to each other. Participants only need to monitor target positions, and don't even have to know which target is which.
+A naive view of visual perception is that we are simultaneously aware of the identities of all the objects in a scene, so unless a player actually disappears or hides behind something or someone, we should know where everyone is at all times. In sport, however, sometimes we have the experience of suprise when an opponent is in the right place at the right time and we think, "Where did he come from?". If we lost track of the player, he may have moved a considerable distance before we noticed him again. This phenomenon can be partially understood in terms of the limitation on the number of objects that can be tracked in MOT tasks. It turns out, however, that the limitations on tracking are more profound than this.
 
-In a 2004 experiment, Zenon Pylyshyn assigned targets distinct identities by either giving them names or by giving them distinct starting positions (the four corners of the screen) [@pylyshynPuzzlingFindingsMultiple2004]. At the end of a trial, they were asked not only to indicate which objects were targets but also the identity of the target. To Pylyshyn's suprise, accuracy at identifying the targets was very low, even when accuracy reporting their positions was high.
+The tracking research we have discussed so far has mainly used targets and distractors that are all identical to each other (after the initial phase where the targets are indicated). In the real world, however, this is uncommon.
 
-Moreover, even when objects are not identical to each other but instead have distinct features, people can be surprisingly poor at knowing anything about those objects other than their position. 
+Visual short-term memory tasks typically find that people can perform reasonably well at storing at least four objects, allowing participants to detect whether an object changes during a short interval. This, together with the misconception discussed in section \@ref() that tracking has a limit of four targets led many researchers to suggest that a common limitation underlay both visual short-term memory and object tracking. It suprised many, subsequently, that putting objects in motion yielded a strong dissociation between tracking capacity and short-term memory performance.
 
-Subsequent studies
+@saikiMultipleobjectPermanenceTracking2002 asked participants to track four colored discs that periodically moved behind occluders and then re-appeared on the other side. The task of participants was to detect whether any discs changed color. For all but very slow speeds, performance was very low when there were four discs to be monitored. This  
 
-This also goes against one would expect from how tracking is used in the real world.
+Further evidence has indicated that during tracking, while the locations of targets are updated and available, other aspects of them may not be. Indeed, even knowledge of which target is which can be lacking.
 
-Look at Hrag Pailian's findings for a striking demonstration of how limited we are in updating identity locations.
+In one experiment, targets were assigned distinct identities either by giving them names or by giving them distinct starting positions (the four corners of the screen) [@pylyshynPuzzlingFindingsMultiple2004]. At the end of a trial, participants were asked not only to indicate which objects were targets but also the identity of the target. Accuracy at identifying the targets was very low, even when accuracy reporting their positions was high. <!-- target-target confusions could explain this --> In his visual indexing theory of tracking, @pylyshynRoleLocationIndexes1989 had conceived of each target being referenced by its own discrete pointer. But the discovery that one did not know which target is which undermined this idea. 
 
-Tracking is important for representing objects still in view @tsubomiNeuralLimitsRepresenting2013
+Subsequent research further documented the disconnect between success at MOT and knowledge of what one is tracking. @horowitzTrackingUniqueObjects2007a had participants track targets that looked very different from each other - in one set of experiments, they were cartoon animals. At the end of a trial, all the targets moved behind occluders so that their identities were no longer visible. Participants were asked where a particular target (say, the rabbit) had gone - that is, which occluder it was hiding behind. Performance was better than chance, but was much worse than performance for reporting the target locations irrespective of which target it was. The effective number of objects tracked, as reflected in a standard MOT question, was about four, but when asked to locate an individual animal, their capacity was closer to just two objects.
 
-Most of the tracking research we have discussed so far has used targets and distractors that are all identical to each other, after the initial phase where the targets are indicated somehow. In the real world, however, this is uncommon. Some might expect that tracking would be very easy in such situations. However, anyone who has played, or even just watched, soccer or basketball has probably had some experience that belies this. As a defender or as a spectator, we try to keep track of the opponents, especially the other team's star player - the biggest threat. Yet we occasionally have the experience of noticing that a star player has gotten into a great shooting or attacking position. We might think, "Where did he come from?" because we lost track of the player, who moved a considerable distance before we regained track of him.
+@pailianAgeSpeciesComparisons2020 devised a simple shell game that allowed testing how well children and an African grey parrot as well as human adults can update the memorized locations of an array of colors.
 
-How does this happen? A naive view of visual perception is that we are simultaneously aware of the identities of all the objects in a scene, so unless a player actually disappears or hides behind something or someone, we should know where everyone is at all times? There are three limitations that the naif is not aware of. First, peripheral vision has poor color vision, and even poorer spatial resolution. Some don't notice this because in most situations, as soon as a person is interested in an object in the visual field, they move their eyes to it and acquire excellent resolution and color vision before they've noticed that they didn't have it. 
+![An African grey parrot participates in a shell game. CC-BY Pailian et al. (2020)](imagesForRmd/ParrotGriffinPepperbergShellGame.png){width=50%} 
+
+The task used brightly-colored woolen pompoms. Between one and four of the pompoms were shown to a participant and then covered by inverted plastic cups, after which different pairs of cups were swapped a variable number of times. As a probe, the participant was presented with one of the target colors, and the task was to point, or peck, to the cup containing the probed color. 
+
+In a way, this might be expected to be much easier than a conventional MOT task, because only targets were presented, no distractors, and at any one time, only two objects were in motion. Moreover, the objects paused for a full second between swaps, presumably giving participants time to update their working memory of the locations of the colors.
+
+When there were only two pompoms presented, performance in all groups was high. Interestingly, the parrot did at least as well as the human adults, and outperformed them in the three-pompom condition. Evidently, the ability to remember and update small numbers of moving hidden objects very well evolved even in our distant cousins with much smaller brains.
+
+With four pompoms, performance fell with the number of swaps, declining to below 80% correct even for the parrot and the adult humans.
+
+<!--For instance, @schollRelationshipPropertyencodingObjectbased2001 found that when items stopped moving, observers were able to accurately report the previous direction and speed of targets but not of nontargets. However, when the shape or color of the items was masked, observers were unable to accurately report the premask features of either targets or nontargets.-->
+
+The results from these studies suggest that participants often cannot remember the identities of some of the moving objects that they are tracking. Indeed, trying to remember object identities may actively interfere with the ability to track [@fougnieDistinctCapacityLimits2006]. However, in the studies reviewed above the objects were invisible, at least temporarily, so that memory was required to bridge a spatiotemporal gap. If the distinct appearances of the targets were made continuously visible, one would hope that one could better maintain a representation of their appearances, especially considering that the objects were continuously stimulating ones' retinas.
+
+It is difficult to test participants on whether they know during tracking the characteristics of an object when, as soon as the question is asked, they can focus their attention on the probed object and encode its features for report. Insight into the issue can instead be gained by considering the studies conducted by @makovskiFeatureBindingAttentive2009.
+
+In the @makovskiFeatureBindingAttentive2009 experiments, eight moving objects were presented, and each was distinct in color, another feature such as shape, or both features. Tracking performance was better than when the eight objects were identical. However, when the eight objects were not all distinct on a single feature and instead were only distinguished by their pairing of features (feature conjunction), the results were quite different. To clarify, in this condition, each object has a unique pair of features, but shared its individual features with at least one other object. Performance in this conjunction condition was no better than if the objects were all identical. @makovskiFeatureBindingAttentive2009 concluded that while differences among objects could benefit tracking, as if participants were using both object identity and location to distinguish objects, this was only the case if feature binding was not necessary. It is possible that global feature attention, utilized by activating the colors of the targets for instance, might account for the distinct identity advantage in the featural case.
+
+In the early 1990s, it slowly dawned on researchers that the mind contained fewer visual representations than they assumed. Failures of trans-saccadic visual fusion and inability to detect changes that occurred during eye movements [@mcconkieRoleControlEye1979] led @oreganSolvingRealMysteries1992a to write a paper whose title included the phrase "the world as an outside memory" and to discover change blindness [@rensinkSeeNotSee1997a].
+
+, and then the discovery of change blindness, led researchers to 
+
+there was less to visual perception than they had assumed.
+
+The world as an outside memory Regan
+
+
+
+
+they are not labelled 
+
+
+
+<!--Tracking is important for representing objects still in view @tsubomiNeuralLimitsRepresenting2013-->
+
+
 
 A second factor is that even when objects remain close enough to central vision to resolve their identities, a limited resource is required to bind their features together, including binding individual features with their location... 
 
@@ -41,7 +76,6 @@ Linares et al. ()
 Let's return to the classic shell game. In a shell game, an item is placed beneath one of three identical shells, making that shell the target. The viewer tries to keep track of which shell has the item underneath it. 
  <!-- insert Conversation article text-->
 
-![The location of two identical shells are exchanged in a shell game](imagesForRmd/shellGame.png){width=50%} 
 
 
 
