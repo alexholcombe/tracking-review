@@ -1,0 +1,39 @@
+# The biggest myth {#biggestMyth}
+
+The biggest myth about tracking
+
+There is no hard limit on the number of objects that people can track
+
+Like reporting on the features of objects, the processing needed to covertly track objects also has very limited capacity. Participants asked to track several objects perform much worse than if they are asked to track only a few objects. <!--This suggests a capacity limit for tracking, in contrast to those visual judgments that seem to tap more directly into the massively-parallel processing performed by the early visual system.-->
+
+A very widespread idea in the 
+
+Many cognitive psychology researchers, even those that have never read a paper
+
+
+This has been the dominant framing since the beginning of MOT research, when Pylyshyn suggested that tracking was limited by the number of discrete pointers or FINSTs that people have. But the underlying reason for variation in MOT performance may not be due to variation in number of FINSTs or some other such capacity, but rather due to variation in peoples' tracking speed limit, spatial interference, or temporal interference. This does not seem to have been properly investigated.
+
+The tracking bottleneck implied by such results is frequently portrayed in the literature as being a hard limit, or close to it. @doranRoleVisualAttention2010, for example, claim that "the main finding" from the object tracking literature "is that observers can accurately track approximately four objects and that once this limit is exceeded, accuracy declines precipitously."  <!--cites Pylyshyn Storm 1989-->, @fougnieDistinctCapacityLimits2006 write that "People’s ability to attentively track a number of randomly moving objects among like distractors is limited to four or five items", @piazzaNeurocognitiveStartupTools2011 state that "One of the defining properties of this system is that it is limited in capacity to three to four individuals at a time" <!-- which cites Scholl's objects paper which makes the claim of 4 FINSTs but backs it up only with STM etc. type studies -->, @alvarezHowManyObjects2007 that ""researchers have consistently found that approximately 4 objects can be tracked", @chesneyEvidenceSharedMechanism2011 write that "people typically can track four or five items"  <!--cites Pylyshyn 1989-->, and @vanderburgChangesNotDifferences2019 write that "participants can track about four objects simultaneously" <!-- (see Cavanagh & Alvarez, 2005, for a review; Pylyshyn & Storm, 1988)-->. In each of these cases, I have checked the evidence provided, or the papers cited, as well as the papers those papers cite. Each paper either provides no relevant evidence, or finds instead only a gradual decrease in performance as number of targets is increased with no discontinuity, nor even a conspicuous inflection point. For example, @oksamaMultipleObjectTracking2004 designated between two and six objects as targets, among twelve identical objects in total. After the objects moved around randomly for five seconds, one object was flashed repeatedly and participants hit a key to indicate whether they thought it was one of the targets. The proportion of trials in which participants were wrong increased steadily with target size, from 3% incorrect with two targets, to 16% incorrect with six targets. Note that even with six targets, participants were performing substantially better than would be expected if they could only track one or two and had to guess on the others.
+
+Some of the spurious claims of a limit for tracking of about four objects seems to stem from wishful thinking by researchers that the capacity limit on various tasks might co-incide. The literature on numerosity perception had long found a discontinuity in performance for estimating the number of collections of more than about four objects [@jevonsPowerNumericalDiscrimination1871; @revkinDoesSubitizingReflect2008]. In the "subitizing range" of four or fewer objects, performance is approximately as good for rapidly counting four objects as it is for two or one. This appears to have motivated researchers to suggest, sometimes with little evidence, that other tasks show the same phenomenon of a very high performance below a particular number of objects, with a steep decline after. For example, in the Introduction of @bettencourtSharedFilteringProcesses2011, the authors write "both processes [visual short-term memory and MOT] showing an equivalent four-object limit".
+
+<!--Pylyshyn et al. 1994: "possible to track about four randomly moving objects" even though earlier in that paper he says "at least four" and acknolwedges it depends on trajectories etc. -->
+<!-- Franconeri & Alvarez: "researchers have consistently found that approximately 4 objects can be tracked (Intriligator & Cavanagh, 2001; Pylyshyn & Storm, 1988; Yantis, 1992). The similarity of these estimates, combined with the frequency with which 4-item limits arise in other attention tasks, suggests the possibility that there is a “magical number 4” in visual attention (Cowan, 2001; Pylyshyn, 1989)." -->
+<!-- Papers I have checked for the 4-object claim: Cowan, 2001 claimed it for MOT, citing Pylyshyn et al. 1994, which does say "experiments showing that observers can simultaneously track some three to five identical target items" but then when he describes the studies he doesn't say they show that, even though in the discussion he says "One is that it is possible to track about four randomly moving objects" -->
+<!-- In some cases the problem stems from Scholl Pylyshyn Feldman paper that devised the effective tracking capacity measure assuming 100% accuracy for one object and delivering a single number, often 4, for effective number tracked-->
+<!--  Alvarez & Franconeri (2007) in their Introduction claims that Pylyshyn & Storm 1988 and Yantis 1992 and Intriligator & Cavanagh 2001 all said you can only track up to 4 objects, but neither said any such thing, it seems from my reading of those papers, e.g.  Pylyshyn & Storm 1988 only went up to 5 out of 10 and there was gradual decrease in performance all the way through. -->
+
+<!-- https://psyc2016.whatanimalssee.com/bottlenecks.html#a-bottleneck-for-object-judgments -->
+
+
+
+Working off the dominant framing, that each person does have a specific number of targets they can track which determines percent correct for each level of number of targets, some MOT researchers report what @schollWhatVisualObject2001 called the "effective number of items tracked". The associated formula, refined by @hullemanMathematicsMultipleObject2005a allows researchers to calculate the effective number of items tracked based on accuracy in an individual condition, given the number of targets and distractors in that condition. This does provide a useful summary of the data, but researchers should take more care to avoid taking it literally.
+
+
+The statements in the literature such as "participants can track four moving objects" also mislead readers in another way. The finding that participants can track at least four objects with reasonable accuracy is restricted to particular object speeds [@alvarezHowManyObjects2007; @holcombeExhaustingAttentionalTracking2012] and spacings [@franconeriEvidenceSpeedLimit2008; @holcombeObjectTrackingAbsence2014].
+
+The particular number of objects that can be tracked with reasonable accuracy is thus highly dependent on conditions. Still, it is clear that this number is small relative to the number of objects that are simultaneously processed by early stages of the visual system. So, what aspect exactly of tracking imposes this limitation?
+
+### Resource intensiveness
+
+Clear statement of what resource intensiveness means.

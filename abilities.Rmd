@@ -4,6 +4,12 @@ There are two basic approaches to understanding the abilities that underlie mult
 
 ## Do people vary much in how many objects they can track?
 
+
+@meyerhoffIndividualDifferencesVisual2020 tested fifty participants and for each one calculated the effective number of items tracked, for a display with four targets and four distractors, the modal effective number of items tracked was around two, but a substantial proportion of participants's came in at three targets or one target, and a few scored close to zero effective items tracked. 
+
+Unfortunately, in the data of @meyerhoffIndividualDifferencesVisual2020, like that of many others, there is no way to know how much of the variation between individuals is due to motivation rather than ability. Measuring motivation is not easy, but researchers should at least include what are sometimes called attention checks or catch trials to allow exclusion of participants who show clear evidence of not reading the instructions carefully or frequently not paying attention.
+
+
 For some cognitive tasks, individual differences are small, making an individual-differences approach problematic [@hedgeReliabilityParadoxWhy2018]. @oksamaMultipleObjectTracking2004 made the effort to test 201 participants on MOT, in an effort to examine variation in how many objects people can track with reasonable accuracy. They found what appeared to be a substantial variation in capacity, with some people able to track six objects, while many could track only two or even just one. However, no analyses were reported regarding the reliability of the MOT test. This left open the possibility that the tracking scores were very noisy, such that the variation in scores found between participants could also have been found if just one participant were tested repeatedly.
 
 <!--One way to have assessed reliability would have been to test each participant two times, to exmaine whether individuals would achieve similar scores in the two instances. For any given test, it is possible that a test is instead very noisy, such that at an extreme the variation in scores found between participants would also be found if just one participant were tested repeatedly.  MOT, visuospatial short-term memory, verbal working memory, and attention switching, and calculated the correlation of performance for each pair of tasks.  For what it's worth, th-->

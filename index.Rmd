@@ -22,14 +22,16 @@ bibliography: [CambridgeElement.bib, packages.bib]
 #In Zotero, create the book.bib file by going to object_tracking->CambridgeElement, select all items, right-click->Export items->BetterBibTex
 biblio-style: apalike
 link-citations: yes
-github-repo: alexholcombe/tracking-review
 description: "Tracking-review"
+url: 'https\://tracking.whatanimalssee.com/'
+github-repo: alexholcombe/tracking-review
+twitter-handle: ceptional
 #For the order of chapters, see _bookdown.yml, where they are manually specified
 ---
 
 # Preface {-}
 
-This mini-book was written for publication as a Cambridge Element. It can be cited as:
+A version of this review will be published as a Cambridge Element book. Cite it as:
 
 Holcombe, A.O. (to appear). Tracking moving objects. Cambridge University Press.
 
