@@ -1,6 +1,6 @@
 # Speed and time {#speedAndTime}
 
-If the objects of an MOT display are moved faster and faster, eventually one can no longer track the targets. At very high speeds this is not surprising, as then one will run afoul of basic perceptual limits. As we will see, however, tracking falters at far lower speeds than expected from studies of motion perception. In addition, the maximum speed at which one can track is lower when there are more targets CITATION. Apparently, the more resource one can allocate to a target, the faster one can track it.
+If the objects of an MOT display are moved faster and faster, eventually one can no longer track the targets. At very high speeds this is not surprising, as then one will run afoul of basic perceptual limits. As we will see, however, tracking falters at far lower speeds than expected from studies of motion perception. In addition, the maximum speed at which one can track is lower when there are more targets [@holcombeExhaustingAttentionalTracking2012] Apparently, the more resource one can allocate to a target, the faster one can track it.
 
 What does this imply for how our brains manage to covertly track moving targets? To get to some possible answers, the full consequences of increasing the speed of the objects in an MOT display must first be understood.
 
@@ -17,6 +17,8 @@ Temporal proximity is more commonly invoked in the context of un-moving, yet sti
 The same phenomenon occurs with moving objects, as Ptolemy observed nearly two thousand years ago in his book *Optics*. After observing a rapidly rotating potter's wheel, he noted that "If spots of a color different from that of the disc are marked on it, they will appear to form circles of the same color [as the given spot] when the disc is rapidly spun." [@smithPtolemyTheoryVisual1996]. 
 
 ### High-level temporal limits
+
+MENTION THAT THIS IS AN INSTANCE WHERE ATTENTION DOES FEEL LIKE IT CAN BE LEFT BEHIND AS AN OBJECT MOVES ON (IN THE OBJECTS CHAPTER I SAID THAT ATTENTION FEELS PULLED ALONG BY A MOVING OBJECT)
 
 The processing that limits flicker perception, and simple aspects of motion perception, has higher temporal limits than those that limit visual cognition.
 

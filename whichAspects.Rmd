@@ -8,6 +8,7 @@ Below is a list of candidate reasons for the factors that impair performance mor
 In a typical MOT task, any of the below are candidates for being one of the reasons, or the main reason, that performance declines with number of targets:
 
 1. General cognition (C=1 processes)
+1. Concurrent tasks
 1. Duration that one can sustain attention
 1. Spatial selection of multiple locations (even static ones)
 1. Spatial interference

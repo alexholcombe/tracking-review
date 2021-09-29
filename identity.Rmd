@@ -1,10 +1,15 @@
 # Identity and feature binding
 
-COMPUTER PROGRAMMERS, FACED WITH THE OBJECT TRACKING PROBLEM, HAVE ALONG USED THE APPEARANCe of the object to help them solve the corerspondence problem. Interestingly, humans don't work that way. Cite Green's work from the 1980s, saying these findings parallel the way that simple motino percepton works
+The previous section was about what you can track. This section is about what you know about the objects you are tracking.
+
+COMPUTER PROGRAMMERS, FACED WITH THE OBJECT TRACKING PROBLEM, HAVE ALONG USED THE APPEARANCe of the object to help them solve the corerspondence problem []. Interestingly, humans don't work that way. Cite Green's work from the 1980s, saying these findings parallel the way that simple motino percepton works
 
 A naive view of perception is that we are simultaneously aware of the identities of all the objects in the central portion of our visual field, so unless an object actually disappears or hides behind something or someone, we should know where everything in the scene is at all times.
 
+"erhaps most famously, these sorts of processes seem to be localized in anatomically distinct corti- cal streams (e.g., Livingstone and Hubel 1988), with the ventral pathway corresponding to identification, and the dorsal pathway corresponding to individuation. In addition, a variety of behavioral evidence supports this distinction. The surface features of objects (e.g., their colors and shapes), while obviously critical for many visual processes including object recogni- tion, seem to be largely discounted by many other processes (for a review, see Flombaum, Scholl, and Santos, in press). For example, surface features play little or no role in determining apparent motion correspondence (Burt and Sperling 1981), identity over time in the tunnel effect (Flombaum et al., 2004; Flombaum and Scholl 2006; Michotte, Thinès, and Crabbé 1964/1991), or object-specific priming (Mitroff and Alvarez 2007)." [@schollWhatHaveWe2008]
+
 In sport, however, sometimes we are suprised to discover an opponent in the right place at the right time. "Where did he come from?" is a common refrain. This phenomenon can be partially understood in terms of the limit on the number of objects that can be tracked in MOT. It turns out, however, that this is only part of the story. The limitations on tracking are more profound than those we have reviewed so far.
+
 
 The tracking research we have discussed so far has used targets and distractors that are all identical to each other (after the initial phase where the targets are indicated). In the real world, however, this is uncommon.
 
@@ -12,9 +17,13 @@ Visual short-term memory tasks typically find that people can perform reasonably
 
 Putting objects in motion can dissociate tracking and short-term memory capacities. @saikiMultipleobjectPermanenceTracking2002 asked participants to track four colored discs that periodically moved behind occluders and then re-appeared on the other side. There were no distractors. The task of participants was to detect whether any discs changed color. Contrary to what would be expected from object files theory [@kahnemanReviewingObjectFiles1992], for all but very slow speeds, performance was very low. However, because distractors were not included, there was no direct comparison to performance tracking solely the objects' locations (without knowing their colors). 
 
+## We don't know which target is which 
+
 Subsequent evidence has indicated that during tracking, while the locations of targets are updated and available, other aspects of them may not be. In one experiment, targets were assigned distinct identities either by giving them names or by giving them distinct starting positions (the four corners of the screen) [@pylyshynPuzzlingFindingsMultiple2004]. At the end of a trial, participants were given the usual task of indicating which objects were targets and also were asked about the identity of the target. Accuracy at identifying the targets was very low, even when accuracy reporting their positions was high. <!-- target-target confusions could explain this --> In his visual indexing theory of tracking, @pylyshynRoleLocationIndexes1989 had conceived of each target as being referenced by its own discrete pointer with its own identity. But the discovery that one did not know which target is which undermined this idea. 
 
 More evidence for a disconnect between success at MOT and knowledge of what one is tracking was found by @horowitzTrackingUniqueObjects2007, who had participants track targets that looked very different from each other - in one set of experiments, they were cartoon animals. At the end of a trial, all the targets moved behind occluders so that their identities were no longer visible. Participants were asked where a particular target (say, the rabbit) had gone - that is, which occluder it was hiding behind. Performance was better than chance, but was much worse than performance for reporting the target locations irrespective of which target it was. The effective number of objects tracked, as reflected in a standard MOT question, was about four, but when asked to locate an individual animal, capacity was closer to two objects.
+
+These findings rebut Pylyshyn's theory that tracking reflects preattentive indices [@schollWhatHaveWe2008]
 
 @pailianAgeSpeciesComparisons2020 devised a "shell game" that focused on the updating of the locations of a memorized array of colors, in a format that allowed testing how children and an African grey parrot as well as human adults.
 

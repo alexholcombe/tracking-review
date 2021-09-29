@@ -31,7 +31,7 @@ twitter-handle: ceptional
 
 # Preface {-}
 
-A version of this review will be published as a Cambridge Element book. Cite it as:
+A version of this review will be published as a book in the Cambridge Element series. Cite it as:
 
 Holcombe, A.O. (to appear). Tracking moving objects. Cambridge University Press.
 
@@ -40,8 +40,6 @@ You can read this on the web [here](https://tracking.whatanimalssee.com/index.ht
 Contact me (he/him) with any comments via [twitter](https://twitter.com/ceptional) or email - alex.holcombe@sydney.edu.au
 
 ![](imagesForRmd/corellaOnShoulder2020croppedBlurredByAdobeOnline.jpg){width=20%}
-
-<!-- _bookdown.yml specifies the chapters order -->
 
 <!-- To launch CANVAS VIDEOS, I tried looking at the private hyperlink within the Canvas page and used
 https://www.url-encode-decode.com to unescape the characters, but that yields failed launch:

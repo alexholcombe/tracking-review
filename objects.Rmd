@@ -1,93 +1,120 @@
 # Objects
 
-Keeping track of something that is moving implies that our mind is continually, or at least frequently, updating a representation of its position. Most researchers seem to conceive of this as keeping spatial attention on an object, a sort of spotlight or hill of neural activation that glides across retinotopic cortex. There is evidence for this from neuroimaging. In this article, for simplicity we will refer to the spatial index that changes along with a moving object as a spotlight of attention. This spotlight account is consistent with evidence that probes are more easily detected on targets than elsewhere [@pylyshynPuzzlingFindingsMultiple2006; @searsMultipleObjectTracking2000]. Keep in mind, however, that we do not mean that a hill of activation in spatiotopic or retinotopic cortex exhausts all the processes involved in tracking - there are certainly more.
+A typical living room in an average person's house contains dozens of objects. As I sit here in mine, these objects reflect light from the window and into my retinas. The family dog, which had been napping, stands up on its four legs and leaves the room. He is headed for the kitchen. As he moved, I tracked him with my attention. To do so, something in my brain had to identify a particular set of neural activations as constituting an object. What sort of processing occurs to create these neural activations and treat them as a group?
 
-How does the brain manage to shift attention along with an object? As an object moves, what causes the spotlight of attention to move along with it, rather than staying in place? Several decades of work on attention have robustly documented the existence of spatial selection and feature selection. That is, when people are instructed to think about a particular location in the visual field, this results very rapidly in facilitation of perceptual performance for that location, and neural activation in the associated parts of retinotopic cortices. There does not seem to be any "search" needed, instead spatial location seems to provide a direct conduit for attentional activation. Similarly, for certain features such as motion and color, an instruction to attend to a particular direction, or a particular color, triggers rapid activation across the visual field at all the locations of that particular color or motion [@saenzGlobalFeaturebasedAttention2003; @whiteFeaturebasedAttentionInvoluntarily2011]. 
+This starts in the retina, of course, but the processing that occurs there is far from enough to segment a dog, or practically any other object, from a background. Processing in the thalamus and early visual cortex must continue the job, and much of it likely occurs regardless of where one is attending.
 
-What role do spatial and feature attention play in object tracking? If a moving target differs from distractors in certain ways, then feature attention can be relied on to keep attention on the target. For example, if the targets are the only yellow objects in the scene, and all the distractors are blue or green, then one might be able to think "yellow" and that would be enough to keep attention on target. However, when the targets are identical to the distractors, some other process is needed. One possibility is "object-based attention". Now, no one seems to think that object *selection* is a thing. That is, one cannot think "chair" and expect all the locations of chairs in the scene to rapidly be attended. No, selection of chairs seems to require a search first, based on locations and simpler features.
+Exactly how extensive this "preattentive" processing is, and what sorts of representations it results in, has been studied for quite a long time [@neisserDecisionTimeReactionTimeExperiments1963; @treismanVerbalCuesLanguage1964]. The resulting object representations cannot all be processed by higher cognitive processes, not simultaneously anyway. 
 
-## Attentional spread 
+then be selected by 
 
-However, what might be the case is that once one *is* attending to an object, some process causes one to attend to the entire object, rather than just one or a few individual locations on it. This does seem to happen, and shows up in experiments where one end of a (static) object is cued, which results in facilitation not only for probes at that end of the object, but also at its other end. Most such research has been based on the cuing paradigm of @eglyShiftingVisualAttention1994a, wherein two static objects are presented and the end of one of them is cued. Subsequently, a stimulus to be identified is presented as part of the cued object or the other, uncued object. In the case of presentation on the cued object, this stimulus can be presented either in the same location as the cue, or on a different part of that object. The rationale is that if attention operates on entire objects, 
+It is commonly thought that object representations
 
-This suggests that when an object is cued, attention ends up occupying that entire object.
-The results typically published are that participants are fastest and most accurate when the stimulus is presented in the same location as the cue, or on the same object albeit on a different part of that object. 
+Attentive tracking is often conceptualized as a process wherein a limited resource selects one or more preattentively-created representations. This selection process than allows for continuous monitoring of that entity's changing position as well as other sorts of events, such as detection of probes flashed on the associated stimulus. In fact, it is unclear whether processing is so neatly divided, with preattentive representations merely selected rather than attention participating in modifying or even creating the representation that is tracked. With behavioral tasks, the most straightforward assessment that can be done is the end result of this processing. That is, which sorts of stimuli can be tracked and which cannot?
 
-You may have noticed that I described
+The first deployment of attention to a stimulus likely occurs more via a spatial or featural index than through an index of the objects in the scene. That is, we cannot think to ourselves "car" or "tree" and expect our attention to deploy directly to any cars or trees in the scene. In contrast, our ability to deploy attention to a cued *location* is well-established, as is our ability to deploy attention directly to certain other features, such as color or motion direction. That is, when people are instructed to think about a particular location in the visual field, this results very rapidly in facilitation of perceptual performance for that location, and neural activation in the associated parts of retinotopic cortices. There does not seem to be any "search" needed, instead spatial location seems to provide a direct conduit for attentional activation. Similarly, for certain features such as motion and color, an instruction to attend to a particular direction, or a particular color, triggers rapid activation across the visual field at all the locations of that particular color or motion [@saenzGlobalFeaturebasedAttention2003; @whiteFeaturebasedAttentionInvoluntarily2011].
 
-The outcome of interest is the difference in accuracy or response time between the 
+As a result of this featural selection capability, if a moving target differs from distractors in certain ways, then featural selection can be relied on to keep attention on the target. For example, if the targets are the only yellow objects in the scene, and all the distractors are blue or green, then one can think "yellow" and that is enough to keep attention on the targets and off the distractors. It is when the targets are identical to the distractors, or not distinguishable from the distractors by one of the features that feature selection acts on, that a different process is needed. Something else has to be involved to keep attention on a moving target.
 
-Object-based attention has become a popular area of study, but rather than using tracking, they usually 
+Success at tracking requires something other than selection of spatial locations. If spatial location selection were the only process operating, when an object moved, attention would be left behind. A striking characteristic of the experience of tracking is that the movement of attention along with an object can feel effortless. <!--Indeed, one might say that attention is being positively pulled along.--> When the targets in an MOT trial begin to move, I have never had the experience of my attention staying behind, remaining at one of the original target locations. Instead, I feel my attention following along with the objects, and even when I try, it feels unnatural to un-latch my attention from a target and fix it to the target's current location while the target moves on.
 
+The term "object-based attention" is sometimes bandied about as an explanation of this. However, this makes some possibly-unwarranted assumptions. The idea is that the units of spatial selection are objects rather than locations [@pylyshynSeeingVisualizingIt2006; @clarkLocationLocationLocation2009]. Now, no one seems to think that direct object *selection* is a thing, in the way that color selection is. That is, one cannot think "chair" and have the locations of chairs in the scene rapidly be attended. No, selection of chairs seems to require a search first, based on locations and simpler features. And even color selection may work via location, with thinking of a color resulting in availability of its locations, and attention then being deployed to those locations [@shihThereFeaturebasedAttentional1996a].
 
-This pattern is not always observed, so this is not fully understood [@davisReversalObjectBased2005; @shomsteinObjectbasedAttentionStrength2008; @shomsteinObjectbasedAttentionSensory2002; @louIndividualDifferencesTemporal2020; @@francisExcessSuccessArticles2021], but perhaps the best explanation is that attention often does tend to spread to an entire object.
+One account that fits this broader picture is that attention is deployed first to a location or locations, but any objects present cause or encourage spatial attention to spread throughout the object. Although researchers who study the relationship between attention and objects often are not explicit, this "attentional spread" theory seems to be a popular one in the literature. 
 
+## Attentional spread and unmoving objects
 
-A "spread" of attention, or gradual growth of the area of attentional activation to encompass an entire object, is not the only conceivable process that might yield object-based attention benefits, but such spreading has been observed neurophysiologically in certain tasks [e.g., @wannigAutomaticSpreadAttentional2011]. Such a spreading process might explain the ability to keep attention on multiple moving objects.
+Dozens, if not hundrends, of published experiments have investigated the relationship of objects to attention in a cuing paradigm. Most such research has been based on @eglyShiftingVisualAttention1994a, who presented two static objects (rectangles) and presented a cue on one end of an object or another. This can result in a performance enhancement not only for probes at the cued of the object, but also at its other end, relative to equidistant locations on the second object. The findings reported in most published papers are that participants are fastest and most accurate when the stimulus is presented in the same location as the cue, or on the same object albeit on a different part of that object. 
 
+You may have noticed that I described this finding as the result that is in "most published papers". I used that qualifier because this pattern is not always observed in the published literature [@davisReversalObjectBased2005; @shomsteinObjectbasedAttentionStrength2008; @shomsteinObjectbasedAttentionSensory2002; @louIndividualDifferencesTemporal2020], and one can anticipate that studies that did not find an advantage are likely to end up in the proverbial file drawer. The effect sizes in the literature are often quite small and the studies not highly powered, which can be a red flag that publication bias may have created the illusion of a real effect [@buttonPowerFailureWhy2013]. @francisExcessSuccessArticles2021 assessed the pattern of sample sizes, effect sizes, and p-values in three dozen published object-based attention studies and argue that it suggests that publication bias and/or p-hacking in the literature is rife. This is plausible, because substantial proportions of researchers in psychology and other fields admit to such practices [@johnMeasuringPrevalenceQuestionable2012; @rabeloQuestionableResearchPractices2020; @chinQuestionableResearchPractices2021]. @francisExcessSuccessArticles2021 further point out that the only previously-published study with a large sample (120 participants) found a non-significant effect of only a 6.5 ms difference in response time [@pilzHowPrevalentObjectBased2012], and in their own study with 264 participants, the effect was also quite small, at 14 ms. For an effect of this size, the sample sizes typically used in the published literature were unlikely to yield statistical significance without some help from p-hacking or another questionable research practice. As a result, the pattern of results in the literature that have led to various conclusions about objects and attention unfortunately cannot be trusted.
 
+These issues many areas of the psychological literature. They are less of a problem when the effects being studied are large, because then studies are more likely to be adequately powered and there should be fewer false positives and false negatives. This is actually a big reason why I have spent a lot of time studying tracking. There are many large effects in the tracking literature. Some are so large that several seconds of looking at a display can be enough to convince oneself that the effect is real. Some results for tracking and objects are one such example, as we will see.
 
-When an object moves, if it moves smoothly, then its leading edge will occupy new territory while its trailing edge continues to occupy an old location. If spreading of attention up to object boundaries is continually occurring, then attention should spread to the new locations near the trailing edge. In such a fashion, attention could, by continually expanding to the new location of a leading edge and contracting with a trailing edge, stay on a moving object. Some problems with this account, discussed in SECTION X <!-- Point objects, stepping objects (works for 1 target and probably for multiple ones if they are stepping a short distance), and the finding that attention tends to be ahead of an object? I don't recall whether that's been done -->, suggest that spreading of attention is not sufficient to explain tracking, but it may play a role.
+## Tracking objects
 
-Not all aspects of our attention automatically spread throughout an object. Imagine viewing a distant tree on the horizon, silhouetted by a setting sun. One can choose to attend to the top of the tree, a part of its trunk, or perhaps an individual branch. One seems to be able to focus attention on an arbitrary spatial region, even if it is only an undifferentiated portion of a larger object. But experiments find that the processes that mediate tracking do not have the capability to do that. This was demonstrated in striking fashion in experiments reported by [@schollWhatVisualObject2001].
+Many objects are made up of easily-discriminable parts. Consider the letter "L". While normally you may treat it as a single object, you can also see that it is made up of a horizontal segment as well as a vertical segment. In conscious awareness, then, we have access to both the whole object level and to an individual parts level. You may even be able to focus attention on individual bits of the vertical segment, even though there are no visual characteristics that differentiate it. Which of these representations, then, can our object tracking processes operate on?  
 
-@schollWhatVisualObject2001 asked participants to track, among other things, ends of lines. That is, they presented participants with four lines and designated one end of each as a target. The participants' task was to keep track of those four ends and at the end of the trial indicate which line ends were targets by clicking on them with the mouse. During a trial, each line grew, shrank, and rotated as each of its ends wandered about the screen randomly.
+@schollWhatVisualObject2001 began to answer this question by asking participants to try to track the ends of lines. They presented participants with four lines and designated one end of each as a target. After the movement phase, at the end of the trial participants were to click with a mouse on the line ends that were targets. During a trial, each line grew, shrank, and rotated as each of its ends wandered about the screen randomly. 
 
 ![A schematic of the display used by Scholl et al. (2001)](imagesForRmd/linesSchollPylyshynFeldman_madeByHolcombe.png){width=40%}
 
-Performance on this task was abysmal relative to a control condition in which the two ends of the line were not connected.  When viewing an example trial, many people can quickly feel how difficult the task is.
+The results were striking. Performance on the task was abysmal relative to a control condition in which the two ends of the line were not connected.  When viewing an example trial, one may feel almost immediately how difficult the task is.
 
-INSERT MOVIE
+(ASK SCHOLL FOR THE MOVIE RIGHTS)
 
-Follow-up work by @howeCanAttentionBe2012 showed that the changing length of the lines is not the reason for the difficulty, which supports the interpretation that one cannot confine one's tracking processes to one bit of an undifferentiated object. 
-<!-- Cite Maechler, Cavanagh, & Tse somewhere -->
+In the experiment, the task of tracking a line's end was possibly complicated by the fact that the objects frequently crossed over each other as well as continuously changing in length. Follow-up work by @howeCanAttentionBe2012, however, showed that these factors were not the reason for the poor performance. It really does seem to be the case that one cannot confine one's tracking processes to one bit of an undifferentiated object. @schollWhatVisualObject2001 varied how distinct the end of an object was from the rest of it. In a "dumbbell" condition, each object was simply two squares connected by a line. In that condition, participants' accuracy was high, suggesting that they could track an individual square rather than the entire dumbbell.
+
+Our inability to track the ends of lines shouldn't be too surprising. Introspectively, maintaining attention on a part of the visual scene in the absence of much in the image to delineate that part feels like it requires concentration, to keep what I am supposed to be attending to in mind. In a situation where lots of cognitive resources is needed to maintain the "object" representation, it is possible that one can track a single target but not more. This idea of C = 1 (capacity of one) processes being involved or required for some forms of tracking is discussed more in \@ref(whichAspects). 
+
+The notion that one end of an undifferentiated shape is an object is somewhat unnatural. Real objects can, however, be much more complex than the simple discs that most researchers use. In your kitchen, for example, when you turn on the faucet, a jet of water will shoot into the sink, flattening on the horizontal surface into a rapidly-expanding puddle. Pouring a beer into a glass, suddenly a froth may form, rising up in a seething column. Out the kitchen window, in the dense foliage of a tree, two birds squabble on the wing. As they plummet from one branch to another, you see only parts of each at any one time. An outstretched wing partially obscured by leaves and a branch, which folds in on itself as the bird alights on a branch and parts of its body comes into view. In addition to occlusion, camouflage can also cause the visible portions of animals to change in shape as they move from one background to another.
+
+@vanmarleAttentiveTrackingObjects2003 used an object that began as a square and extended its leading edge until it had the shape of a long and thin rectangle. Subsequently, the trailing edge of the rectangle, which was still at the original location would retract until the object was a square again, now at a new location. Tracking performance was very poor in this condition. <!--the substances condition difficulty seems to be accounted for by this problem-->
+
+
+Tracking is also greatly disrupted here, perhaps because there is no unambiguous point on the object
+for attention to select. 
+
+"Center probes were detected far more accurately than end probes, suggesting that more attentional resources were concentrated on the centers of the lines than near their ends. " @alvarezHowDoesAttention2005 Reminescent of how rapid eye movements (saccades) tend to go to the centroids of objects.
+
+Our capabilities in this regard remain understudied, but 
+
+
+Our ability to identify people and animals based only on several points of light suggests that object representations reflect an interactive process of Gestalt grouping principles with knowledge of the overall shape and parts of objects and their relative motions [@johanssonJohanssonVisualPerception1973; @wangSearchingLifeMotion2010]. 
+
+
+
+
+
+
+Not all aspects of our attention spread throughout an object. Imagine viewing a distant tree on the horizon, silhouetted by a setting sun. One can choose to attend to the top of the tree, a part of its trunk, or perhaps an individual branch. One seems to be able to focus attention  on an arbitrary spatial region, even if it is only an undifferentiated portion of a larger object. But experiments find that the processes that mediate tracking do not have the capability to do that. This was demonstrated in striking fashion in experiments reported by [@schollWhatVisualObject2001].
+
+A "spread" of attention, or gradual growth of the area of attentional activation to encompass an entire object, is not the only conceivable process that might yield object-based attention benefits, but such spreading has been observed neurophysiologically in certain tasks [e.g., @wannigAutomaticSpreadAttentional2011]. Such a spreading process might explain the ability to keep attention on multiple moving objects.
+
+When an object moves, if it moves smoothly, then its leading edge will occupy new territory while its trailing edge continues to occupy an old location. If spreading of attention up to object boundaries is continually occurring, then attention should spread to the new locations near the trailing edge. In such a fashion, attention could, by continually expanding to the new location of a leading edge and contracting with a trailing edge, stay on a moving object. Some problems with this account, discussed in SECTION X <!-- Point objects, stepping objects (works for 1 target and probably for multiple ones if they are stepping a short distance), and the finding that attention tends to be ahead of an object? I don't recall whether that's been done -->, suggest that spreading of attention is not sufficient to explain tracking, but it may play a role.
 
 ## Are object creation processes distinct from tracking processes?
 
-In the literature, commonly the word "attention" is used to refer both to the processing that determines how many things one can track and for the processes that determine what kinds of things can be tracked. However, a popular notion is that these processes are quite distinct, with processes prior to tracking determining what counts as an "object" (a thing one can track), with subsequent stage(s) limiting how many such objects one can track. This is often how the processing for other tasks such as visual search has been conceptualized, with some empirical support (@wolfePreattentiveObjectFiles1997, @nakayamaVisualSurfaceRepresentation1995), and appears to be the position assumed by [@schollObjectsAttentionState2001] in his review of objects and tracking. <!-- No interaction between number of objects to track and what kinds of objects can be tracked.-->
+In the literature, commonly the word "attention" is used to refer both to the processing that determines how many things one can track and for the processes that determine what kinds of things can be tracked. However, a popular notion is that these processes are quite distinct, with processes prior to tracking determining what counts as an "object" (a thing one can track), with subsequent stage(s) limiting how many such objects one can track. This is often how the processing for other tasks such as visual search has been conceptualized, with some empirical support (@wolfePreattentiveObjectFiles1997, @nakayamaVisualSurfaceRepresentation1995), and appears to be the position assumed by [@schollObjectsAttentionState2001] in his review of objects and tracking. <!-- No interaction between number of objects to track and what kinds of objects can be tracked.--> It could be that what determines what objects are is a separate set of processes than those that actually do the tracking. This is what is advocated by Scholl.
 
 USE diagrammeR OR POWERPOINT TO MAKE A BOX DIAGRAM OF THIS, WITH OBJECT FORMATION PRIOR TO TRACKING
 
-It would be convenient if this view were correct, because studying a system comprising distinct stages is more straightforward than understanding a more interactive system @simonSciencesArtificialReissue1969 pp. 99-103?, but I do not know of any good tests of this conjecture.  One complication for exploring the issue is that one is *not* always unable to track an undifferentiated part of an object. In particular, the limitation is somewhat restricted to when one is attempting to track *multiple* objects.
+It would be convenient if this view were correct, because studying a system comprising distinct stages is more straightforward than understanding a more interactive system [@simonSciencesArtificialReissue1969; @sternbergDiscoveryProcessingStages1969], but attention and object creation may be more interactive than this. For example,  
+ @ongchocoHowCreateObjects2019 asked participants to practice "seeing" certain shapes in a uniform grid of lines. The detection of flashed probes was enhanced for those presented on the same (purely imagined) object, compared with equidistant ones presented on different objects. A variety of evidence suggests a role for neural feedback in object segmentation, with some role for attention, but the extent of its importance remains unclear [@papaleInfluenceObjecthoodRepresentation2021; @wyatteEarlyRecurrentFeedback2014; @harrisonVoluntaryControlIllusory2019].
+ 
+
+I do not know of any good tests of this conjecture.  One complication for exploring the issue is that one is *not* always unable to track an undifferentiated part of an object. In particular, the limitation is somewhat restricted to when one is attempting to track *multiple* objects.
 
 Watch the above movie again, this time concerning yourself with keeping track of the end of only *one* object. You are likely to succeed. Indeed, @schollObjectsAttentionState2001 found that if participants are asked to track four line ends, their performance is very poor (athough still somewhat better than chance). Specifically, their performance was approximately that predicted if they could track one line end, but not more. This suggests there are tracking-relevant abilities that we have that can be brought to bear on one thing, but not multiple things. Perhaps covert multiple object tracking (MOT) is qualitatively different, then, from covertly tracking a single object.
+<!-- expansion and contraction hurts position judgments @howeVisuallyTrackingLocalizing2013 -->
+
+When probes were presented on 
 
 Another possibility is that the same underlying resource is involved in both the ability to track one undifferentiated part of one object and the ability to track multiple objects. On this account, rather than a different *kind* of resource allowing tracking a part of an object when there is only one to track, instead there are simply *more* resources needed to track an undifferentiated part of an object. We will return to this possibility in \@ref(twoBrains).
 <!-- to give the cross-reference a name:   [two brains](#twoBrains) section.  -->
 
+<!-- Cite Maechler, Cavanagh, & Tse Attentional tracking takes place over perceived rather than veridical positions -->
+
 ## Objects and object-hood
 
-The study of how the visual system segments a scene into objects or groups has a long history. The Gestalt psychologists sought to discover what cues cause separated visual elements to appear to be grouped together. Developmental psychologists took 
-
 The near-impossibility of tracking the ends of multiple lines invites the question of what else 
-
-It could be that what determines what objects are is a separate set of processes than those that actually do the tracking. This is what is advocated by Scholl.
-
+ <!-- Also use Zenon Pylyshyn's examples of objects not represented well as objects, so PylyshynAttention_Lecture_class -->
 
 
-What is a moving object? People, animals, cars, leaves, and balls are all objects that change position smoothly and that we can keep track of in a crowd. But how do our brains 
-
-The water of a river, a creeping shadow, a slinking Slinky, an oozing
 
 Many questions remain regarding what sorts of objects attention gloms onto.
 
 One concern with this conclusion was that the results might be explained by a bottleneck on the number of spatial locations that participants needed to process rather than the number of locations. However, subsequent work was more effective at spatially overlapping two objects, which diminished this concern [@blaserTrackingObjectFeaturespace2000]. 
 
-
-TRANSITION TO NEXT SECTION: 
-
-## FINISH
-
- <!-- Also use Zenon Pylyshyn's examples of objects not represented well as objects, so PylyshynAttention_Lecture_class -->
- 
-This proposition, that there are actually two resources that can assist tracking, one with much more limited capacity (perhaps for just one object) and the other with fewer capabilities but higher capacity, is an intriguing one but not
-
-A word of caution, however - because tracking performance decreases
-
-Those abilties of ours that have a capacity of just one remain somewhat obscure. There is an extensive literature on two-object costs. words Alex White However, 
-However, as we will see in velocityAndExtrapolation, there is evidence that some aspects of motion processing
-
-<!-- expansion and contraction hurts position judgments @howeVisuallyTrackingLocalizing2013 -->
+Investigations of this question have been informed by the long history of findings, dating back to the Gestalt psychologists, regarding how the visual system segments a scene into the objects or groups that we perceive.
 
 Mention the bendy-pencil illusion https://jov.arvojournals.org/article.aspx?articleid=2193187 and Gershman's hierarchical paper 
 From the bendy-pencil illusion paper: "One of the basic discoveries of Gestalt psychology is that the perceived trajectory of a moving object is not always determined by its relative motion with respect to the retina or the ground but may instead be based on its motion relative to other moving objects. The perceived motion of a rolling wheel provides an excellent example (see Duncker, 1929; Johansson, 1950; Rubin, 1927, for more examples). The trajectory of a single point on the wheel has the form of a cycloid, but its perceived trajectory is a simple rotary motion about the center of the wheel. Indeed, it is not possible to perceive the cycloidal trajectory, even if one tries, unless the point is presented in isolation."
+
+TRANSITION TO NEXT SECTION on CAPACITY-1 PROCESSES: (ALSO see above on tracking part of an object)
+ 
+This proposition, that there are actually two resources that can assist tracking, one with much more limited capacity (perhaps for just one object) and the other with fewer capabilities but higher capacity, is an intriguing one but not
+Those abilties of ours that have a capacity of just one remain somewhat obscure. There is an extensive literature on two-object costs. words Alex White However, 
+
+However, as we will see in velocityAndExtrapolation, there is evidence that some aspects of motion processing
+
+
