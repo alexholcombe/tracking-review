@@ -1,4 +1,4 @@
-# Beyond location {#beyondLocation} 
+# Beyond position {#beyondLocation} 
 
 Covert tracking keeps one up to date with where objects of interest are. And knowing the locations of those objects has further benefits. In particular, location, together with color and a few other features used by "feature attention", is the main route by which top-down attentional selection occurs. But what benefits does attentional selection provide that are not already delivered by the selection associated with tracking?
 
@@ -16,11 +16,16 @@ TRANSITION TO MOBILE COMPUTATION.Rmd SOMEWHERE ON THIS PAGE
 
 maintain an up-to-date representation of where 
 
-How well are other features besides position tracked?
+How well are other features besides position tracked? 
 
-Blaser Pylyshyn Holcombe
+howardTrackingChangingFeatures2008 investigated tracking of spatial frequency and of orientation as well as of position.
+Tracking the orientation of an object might conceivably be accomplished by tracking one end of the object, but @scholl showed that we are very poor at doing that.
+
+One concern with this conclusion was that the results might be explained by a bottleneck on the number of spatial locations that participants needed to process rather than the number of locations. However, subsequent work was more effective at spatially overlapping two objects, which diminished this concern [@blaserTrackingObjectFeaturespace2000]. 
 
 ## Velocity and extrapolation, not just position
+
+@tripathyMultipleTrajectoryTracking2012 says people use trajectory information in tracking. He shows a severe capacity limit however for detecting a trajectory change.
 
 The role of motion signals . Seiffert
 

@@ -1,15 +1,16 @@
 # The biggest myth {#biggestMyth}
 
-The biggest myth about tracking
+The biggest myth about tracking 
 
 There is no hard limit on the number of objects that people can track
 
 Like reporting on the features of objects, the processing needed to covertly track objects also has very limited capacity. Participants asked to track several objects perform much worse than if they are asked to track only a few objects. <!--This suggests a capacity limit for tracking, in contrast to those visual judgments that seem to tap more directly into the massively-parallel processing performed by the early visual system.-->
 
+AS WE'LL SEE, THERE'S TWO KINDS OF TRACKING RESOURCE (HEMISPHERE-SPECIFIC AND NOT )
 A very widespread idea in the 
 
 Many cognitive psychology researchers, even those that have never read a paper
-
+ 
 
 This has been the dominant framing since the beginning of MOT research, when Pylyshyn suggested that tracking was limited by the number of discrete pointers or FINSTs that people have. But the underlying reason for variation in MOT performance may not be due to variation in number of FINSTs or some other such capacity, but rather due to variation in peoples' tracking speed limit, spatial interference, or temporal interference. This does not seem to have been properly investigated.
 
