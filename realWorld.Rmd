@@ -1,5 +1,7 @@
 # Real world
 
+**Towards the real-world** and real-world tasks. A naive view of visual perception is that we are simultaneously aware of the identities of all the objects in a scene, so unless a player actually disappears or hides behind something or someone, we should know where everyone on the bacsketball court is at all times. Bringing together the factors described in previous sections, and bringing in new ones such as limits on feature binding, we will analyze some real-world tasks.
+
 "further research is required to determine whether multiple-object tracking is actually used in day-to-day driving." @lochnerMultipleobjectTrackingDriving2014
  
  Piers found negative evidence. there's one other paper.

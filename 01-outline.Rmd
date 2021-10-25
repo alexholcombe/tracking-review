@@ -98,19 +98,5 @@ Animated-horse-race-jockey.gif
 
 **Serial processing, parallel processing, or both?** The way that our limited capacities are allocated over time to multiple objects, that is whether in parallel or in rapid series, has been a long debate. Recent evidence (including one of my papers) points to a serial component that seems to relate to natural oscillations in the brain, but much is yet to be determined.
 
-**Identity**
 
-including Vaziri-Pashkam et al.
-
-**Mobile computation**
-
-**Abilities**, Individual differences, dual-task interference, abilities
-
-huangMeasuringInterrelationsMultiple2012. wilmerMultipleObjectTracking2016. Large differences have been found in spatial crowding, which probably explains a good chunk of the variance. Large individual differences in crowding have been established,
-
-Nobody has yet 
-
-**Misconceptions and questions**
-
-**Towards the real-world** and real-world tasks. A naive view of visual perception is that we are simultaneously aware of the identities of all the objects in a scene, so unless a player actually disappears or hides behind something or someone, we should know where everyone on the bacsketball court is at all times. Bringing together the factors described in previous sections, and bringing in new ones such as limits on feature binding, we will analyze some real-world tasks.
 

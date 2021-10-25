@@ -1,4 +1,4 @@
-# Beyond position {#beyondLocation} 
+# Velocity and extrapolation {#beyondLocation} 
 
 Covert tracking keeps one up to date with where objects of interest are. And knowing the locations of those objects has further benefits. In particular, location, together with color and a few other features used by "feature attention", is the main route by which top-down attentional selection occurs. But what benefits does attentional selection provide that are not already delivered by the selection associated with tracking?
 
