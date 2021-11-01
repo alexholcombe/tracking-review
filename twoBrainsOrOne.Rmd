@@ -8,7 +8,7 @@ In "split-brain" patients, some connections between the hemispheres have been lo
 
 While normal behavior typically indicates a tight integration between the the hemispheres, they do specialize in different functions. In most people, the left hemisphere specializes in language functions such as reading, while the right hemisphere is better at recognizing faces. A behavioral consequence of this is that response times for a face recognition task are slightly faster when the stimulus is presented wholly in the left hemifield (to the right hemisphere) than when it is presented wholly in the right hemifield, whereas the opposite is found for word reading [@rizzolattiOppositeSuperioritiesRight1971]. However, with extended time to process a stimulus, such behavioral asymmetries can disappear as the information from one hemisphere is communicated to the other.
 
-In the performance of most perceptual and attentional tasks, then, in a humans with an intact brain there is little sign that that brain is divided into two halves. Multiple object tracking is, however, a striking exception to this. This is important because it tells us that the limited resource that determines how many objects one can keep track of resides largely with a process that operates independently in the two hemispheres.
+In the performance of most perceptual and attentional tasks, then, in a humans with an intact brain there is little sign that that brain is divided into two halves. Multiple object tracking, however, constitutes a major exception to this. This tells us that the limited resource that determines how many objects one can keep track of resides largely with a process that operates independently in the two hemispheres.
 
 ## The extraordinary hemifield independence of object tracking
 
@@ -58,9 +58,9 @@ calculateIndependence <- function(accuracies,chance) {
 
 ```
 
-Evidence for the hemispheric independence of the capacity limit on multiple object tracking was first reported by Alvarez & Cavanagh in 2005. The objects they used resembled spinning pinwheels, an individual bar of which could be designated as a target. Participants' tracking performance was assessed for two targets (one bar of each of two different pinwheels) and for one target [@alvarezIndependentResourcesAttentional2005].  In the two-target condition, when the second target was positioned in the same hemifield as the first target, accuracy was much worse (89% vs. 63%). Remarkably, however, when the second target belonged to a pinwheel in the opposite hemifield, there was very little performance decrement - accuracy was 93% in the one-target condition, and 90% correct in the two-target condition, not a statistically significant difference. This suggests that the processes that limit successful tracking in this task are largely specific to each hemifield. 
+In 2005, Alvarez & Cavanagh reported a stunning finding. In an MOT task, they used objects that resembled spinning pinwheels. An individual bar of each object could be designated as a target. Performance in a two-target (one bar of each of two different pinwheels) condition was contrasted with that  for a one-target condition [@alvarezIndependentResourcesAttentional2005].  When the second target was positioned in the same hemifield as the first target, accuracy in the two-target condition was much worse (89% vs. 63%). Remarkably, however, when the second target belonged to a pinwheel located in the opposite hemifield, there was very little performance decrement - accuracy was 93% in the one-target condition, and 90% correct in the two-target condition. This suggests that the processes that limit successful tracking in this task are largely specific to each hemifield. 
 
-Of course, it was already known that the early perceptual processing of targets was independent in the two hemispheres. As was mentioned above, sensory processing and quite a lot of perceptual processing occurs fairly independently in the two hemispheres as the signals from our retinas penetrate into the cortex. What is surprising here is that an ability limited by processing with very limited capacity would show such hemisphere specificity. Such capacities were traditionally thought to be among the processes that are tightly integrated across the two hemispheres, forming a single resource "pool", not two independent pools. We will get back to this point after a quick review of the degree of independence found in tracking.
+It was already known that sensory processing and quite a lot of perceptual processing occurs independently in each hemisphere. What is surprising is that a highly limited-capacity processing ability would be hemisphere-independent. Such capacities were traditionally thought to be among the processes that are tightly integrated across the two hemispheres, forming a single resource "pool", not two independent limits. We will get back to this point, first we'll examine more extensively the evidence for hemispheric independence of object tracking.
 
 ## Quantitative estimates of independence
 
@@ -78,44 +78,69 @@ alvarezCavanaghE3Independence <- calculateIndependence(alvarezCavanagh2005E3,0.5
 alvarezCavanaghE3Independence
 ```
 
-The degree of hemispheric independence for a task can be estimated. If adding a second stimulus to a hemifield reduces performance by, say, 20 percentage points, but adding that stimulus to the other hemifield reduces performance by only 5 percentage points, one can summarize this as (20-5) / 20 = 75% hemifield independence. A proper calculation of independence is a bit more complicated, however, in that one needs to correct for the accuracy one can achieve by guessing. When I [did the slightly more complication](https://github.com/alexholcombe/tracking-review/blob/main/twoBrainsOrOne.Rmd), the estimated level of independence is very high: `r round(100*alvarezCavanaghE1Independence)`% independence in one of the @alvarezIndependentResourcesAttentional2005 experiments, and `r round(100*alvarezCavanaghE3Independence)`% in the other. 
+The hemispheric independence of a task can be quantified. Imagine that adding a second stimulus to a hemifield reduces performance by 20 percentage points, but adding that stimulus to the other hemifield reduces performance by only 5 percentage points. One can quantify the hemispheric independence, then, as (20-5) / 20 = 75% hemifield independence. Ideally, however, one would not use raw accuracy but instead would correct for the accuracy one can achieve by guessing. When [applying such a calculation](https://github.com/alexholcombe/tracking-review/blob/main/twoBrainsOrOne.Rmd) to the @alvarezIndependentResourcesAttentional2005 results, the estimated level of independence is very high: `r round(100*alvarezCavanaghE1Independence)`% independence in one of their experiments, and `r round(100*alvarezCavanaghE3Independence)`% in the other. 
 
-@alvarezIndependentResourcesAttentional2005 themselves did not report these figures. They calculated expected performance if the hemifields are in fact completely independent, and reported that performance was not statistically significantly worse than that figure. They then suggested that there was complete independence, but this is based on the common fallacy of concluding a null hypothesis is true when the evidence does not reject it at a p<.05 level [@aczelQuantifyingSupportNull2018]. That is, for the null hypothesis they started with their conclusion of complete independence, and then affirmed this conclusion on the basis of not finding much evidence against it. Nevertheless, their data certainly do suggest strong hemispheric independence.
+@alvarezIndependentResourcesAttentional2005 themselves, like most others who have investigated this question, did not do these calculations. @alvarezIndependentResourcesAttentional2005 calculated expected performance if the hemifields are in fact completely independent, and reported that performance was not statistically significantly worse than that figure. They then suggested that there was complete independence, but this is based on the common fallacy of concluding a null hypothesis is true when the evidence does not reject it at a p<.05 level [@aczelQuantifyingSupportNull2018]. That is, for the null hypothesis they started with their conclusion of complete independence, and then affirmed this conclusion on the basis of not finding much evidence against it. Nevertheless, their data certainly do suggest strong hemispheric independence.
 
 Subsequent work by @chenResourceDemandsObject2013 <!--Didn't compare one to two targets in hemifield but did compare two targets in a hemifield to four targets across two hemifields--> supported the conclusion of a high degree of independence, as did  @holcombeExhaustingAttentionalTracking2012, who used speed thresholds which resulted in a conclusion of about 75% independence. <!--Calculated two-target prediction, and was about 75% independent, but plenty of noise non-significant speed threshold decreases of c(1.67,1.44,1.7,1.63) 1.98rps->1.85 -->.  @shimNumberAttentionalFoci2010<!--Figure 1--> also found a substantial bilateral advantage. 
 
-Interestingly, the finding of statistically significant hemispheric independence has not always replicated [@shimSpatialSeparationTargets2008] <!--performance in all the conditions involved in their comparison were greater than 85% correct, including many low speeds where performance was near ceiling -->  <!--For most of these tasks, but not @shimNumberAttentionalFoci2010, more targets was confounded with having to make more responses and remember said responses at the end of the trial, so some of the residual cost could be due to that being unitary rather than hemifield-specific.-->, but the successful replications, and the substantial statistical power associated with them (evident in their error bars) strongly suggest that at least in some circumstances, tracking does occur mostly independently in the two hemispheres. @shimSpatialSeparationTargets2008 suggested that the reason they did not find evidence for hemifield independence is that they used two targets, whereas the original @alvarezIndependentResourcesAttentional2005 report of hemifield independence used four targets. However, this is unlikely to be the reason for the discrepancy because @holcombeExhaustingAttentionalTracking2012 also used two targets and did find independence. The @shimSpatialSeparationTargets2008 data may have been affected by the high performance level, which is so high that it may have created a ceiling effect. Another possible factor is that the papers findings independence used circular trajectories. However, using trajectories that were not circular @hudsonHemifieldEffectsMultiple2012 found partial independence, although they used a rather different task (multiple identity tracking, which I discuss in a different section).
+The finding of statistically significant hemispheric independence has not replicated in all circumstances [e.g., @shimSpatialSeparationTargets2008] <!--performance in all the conditions involved in their comparison were greater than 85% correct, including many low speeds where performance was near ceiling -->  <!--For most of these tasks, but not @shimNumberAttentionalFoci2010, more targets was confounded with having to make more responses and remember said responses at the end of the trial, so some of the residual cost could be due to that being unitary rather than hemifield-specific.-->, but the successful replications, and the fairly low statistical uncertainty associated with them (evident, for example, in their error bars) strongly suggest that at least in some circumstances, tracking does occur mostly independently in the two hemispheres. For their part, @shimSpatialSeparationTargets2008 suggested that the reason they did not find evidence for hemifield independence is that they used two targets, whereas according to them the original @alvarezIndependentResourcesAttentional2005 report of hemifield independence used four targets. This is unlikely to be the reason for the discrepancy, however, because in their E1 and E2 @alvarezIndependentResourcesAttentional2005 found evidence for hemifield independence using two targets, as did @holcombeExhaustingAttentionalTracking2012 and @stormerWithinhemifieldCompetitionEarly2014. The @shimSpatialSeparationTargets2008 data may have been afflicted by a ceiling effect, as accuracy was very high in their experiment. Another possible factor is that the papers findings independence typically used circular trajectories. However, using trajectories that were not circular @hudsonHemifieldEffectsMultiple2012 found partial independence, although they used a rather different task (multiple identity tracking, which is discussed in \@ref(beyondLocation)).
 
-@carlsonQuadranticDeficitReveals2007 found evidence not only for hemifield independence but also quadrant-level independence, which they attributed to the partial separation of the retinotopic quadrant representations in areas V2 and V3. @shimSpatialSeparationTargets2008 did not replicate this finding, but they had less evidence.
+A limitation of deriving hemispheric independence from accuracy is that they depend on the assumption that if a person can only track one target, if one then adds a second target, the person will succeed just as often in tracking one of them. But my introspective experience indicates that in some circumstances, if one tries to track both targets, one will fail at both, and thus one is better off only trying to track one. The reason for this may be that a certain amount of resource is needed to track a target, and so if neither target is allocated that much resource, tracking will fail for both. Evidence for this was provided by @chenResourceDemandsObject2013. In the terminology introduced by @normanDatalimitedResourcelimitedProcesses1975, the resource function that relates the proportion of attentional resource to accuracy falls below a straight line. This means that quantitative estimates of hemispheric independence will be overestimates, particularly in circumstances where the participants do not realize they may be better off focusing their efforts on tracking fewer targets than the number they have been told to track.
 
-In summary, the evidence for hemifield independence implicates processes that sit at hemisphere-specific processing, or possibly even processing specific to the visual areas that have quadrant-specific retinotopic areas.
+@carlsonQuadranticDeficitReveals2007 found evidence not only for hemifield independence but also quadrant-level independence, which they attributed to the partial separation of the retinotopic quadrant representations in areas V2 and V3. @shimSpatialSeparationTargets2008 did not replicate this finding, however they had less evidence, so more work on this topic should be done.
 
-## gg
+## Resources NOT specific to the hemispheres
 
-This naturally raises the question of what sort of processes those are. Many authors have chalked this up to spatial interference. They have suggested that inhibitory connections are responsible: when an object is tracked, receptive fields that are nearby on cortical maps are suppressed [@carlsonQuadranticDeficitReveals2007; @franconeriFlexibleCognitiveResources2013]. However, @holcombeObjectTrackingAbsence2014 found evidence against spatial interference extending any further beyond the crowding range, rather than it extending to the limits of a hemifield or quadrant.
+In an earlier section we introduced the idea of C=1 cognitive processing that might particularly support tracking of a single target. An additional feature of this notion is that the associated processing is not hemisphere-specific. @chenResourceDemandsObject2013 found evidence for both hemifield-specific processes and processes not specific to a hemifield in the same MOT task. Two targets were used which could be of different speeds. The faster the second target was relative to the first target, the lower was the performance of the first target, which suggests that participants were able to allocate more tracking resources to the faster of the two targets. This was most pronounced when the two targets were in the same hemifield, but seemed to occur to some degree even when the two targets were in different hemifields, implicating a cross-hemifield resource that plays a small role. 
+
+Even feature attention is global @liuConstantSpreadFeaturebased2011
+
+Most cognitive tasks are unlikely to be independently mediated by the two hemispheres, with one set of processes in each hemisphere.
+
+
+## Implications
+
+The evidence reviewed above for hemifield independence suggests that hemisphere-specific processes determine how many targets one can track. This raises the question of what sort of processes those are, and how they interact with the cognitive processes that are more integrated across the hemispheres.
+
+Steve Franconeri and his colleagues have championed the idea that the hemisphere independence stems from spatial interference processes, by suggesting that these processes occur largely within a hemisphere [@franconeriNatureStatusVisual2013]. The idea is that when when an object is tracked, the neurons representing that target in retinotopic cortical areas activate inhibitory connections to nearby neurons in the cortical map, suppressing the responses to neighboring objects [@carlsonQuadranticDeficitReveals2007. To explain the findings of hemifield specificity, what's been added to this account is the idea that the inhibitory neural connections do not extend from one hemisphere's retinotopic map to another [@franconeriFlexibleCognitiveResources2013]. The evidence that as manifest in classic crowding tasks, spatial interference does show a discontinuity across the left- and right-visual field boundary lends some plausibility to this idea [@liuReductionCrowdingEffect2009]. However, @holcombeObjectTrackingAbsence2014 found evidence against spatial interference extending any further than the classic crowding range , which is only half the eccentricity of an object - for example, an object placed six degrees of visual angle from where the point the eyes are looking at would be interfered with only by other objects closer to it than three degrees of visual angle [@boumaInteractionEffectsParafoveal1970a]. This is a far cry from the nearly 90 degrees of an entire hemifield, or even of a quadrant. The more viable theory, then, is those that align more with the concept of a neural resource that spans the hemifield.
+
+A number of studies have found that the activity of some parietal and frontal areas of cortex increase steadily with the number of targets in MOT [@culhamAttentionResponseFunctions2001; @howeUsingFMRIDistinguish2009; @jovicichBrainAreasSpecific2001; @alnaesPupilSizeSignals2014], consistent with the importance of a pool of attentional resources. These studies did not focus, however, on the extent to which these activations are specific to the hemifield-specific nature of target load. 
+
+The neural correlates of the hemifield-specific resource was investigated by @stormerWithinhemifieldCompetitionEarly2014 using EEG. They found that the SSVEP activation for targets was higher than that for distractors when the two targets, especially when the two targets were positioned in different (left and right) hemifields. In contrast, an ERP component known as the P3 thought to reflect more cognitive identification and decision processes was similar in the two conditions. This is consistent with the theory that tracking depends on both hemisphere-specific attentive processing followed by some involvement of higher-order processes that are not hemisphere-specific.
+
+@battelliRoleParietalLobe2009 found they could disrupt MOT performance in a hemifield by stimulating the contralateral intraparietal sulcus (IPS) using
+ repetitive transcranial magnetic stimulation. Importantly, however, this only occurred when there moving targets were present in both hemifields. When the targets were all in the left or all in the right hemifield, TMS to the left or to the right IPS had no effect on tracking accuracy, and this was replicated in a second experiment. Evidently if targets were confined to one hemifield, either hemisphere's IPS was perfectly capable of doing what it needed to do to mediate tracking.
+ 
+The findings of Battelli et al. may bring to mind the competition between the two hemifields that is evident in the "extinction" symptom observed in parietal neglect patients. In extinction, responding to stimuli in the hemifield contralateral to parietal injury only shows significant impairment if there are also stimuli presented to the ipsilateral hemifield. This inspired Battelli to explain their findings with two propositions. The first is that the IPS in each hemisphere can mediate the selection of targets in *either* visual hemifield. The second is that under normal conditions, inhibitory processes reduce the amount of ipsilateral processing by each IPS, causing tracking capacity to effectively be hemifield-specific in many circumstances.
+
+The dominant hemifield-specificity of parietal MOT processing is further supported by evidence from parietal patients. @battelliUnilateralRightParietal2001 found that in patients with damage to their right parietal lobe, MOT performance was impaired relative to controls only in the left visual field. Evidently the right parietal lobe does not normally mediate tracking in the left visual field, so losing it did not hurt left visual field tracking performance. Nevertheless, these right parietal patients had substantial impairments in *both* hemifields for a measure of the temporal precision underlying apparent motion judgments. The involvement of the right parietal lobe, but not the left parietal lobe, in judging the temporal order of stimuli in both hemifields was further supported in an additional study with both patients and with TMS [@agostaPivotalRoleRight2017].
+
+It seems that the parietal lobe is critical for the hemifield-specific resource, while at the same time processing in the right parietal lobe is involved in registering the temporal order of discrete stimuli presented in either hemifield. In the extraordinary circumstances of repetitive TMS, 
+
+The right parietal lobe in these patients evidently 
+
+Evidently the limited ability of the left parietal lobe to subserve tracking in the left hemifield that was suggested by the @battelliRoleParietalLobe2009 TMS study was not 
+
+
+In summary, areas of the parietal cortex may potentially subserve both the hemifield-specific tracking resource that dominates most MOT tasks and the more limited resource that is not specific to a hemifield. More work must be done however to determine the role of frontal lobe regions. Such regions could potentially play a role in the hemifield-specific resource, the hemifield-independent resource, or both.
+
+### Quadrants
+
+@strongHemifieldspecificControlSpatial2019 found a cost for crossing the vertical midline but not the horizontal midline. So now we know that the cross-hemisphere cost does not occur for quadrants. 
+
+rather than it extending to the limits of a hemifield or quadrant.
+
+Wolfe hand-off
+
+
+
+Further undermines Pylyshyn's conception
+
 
 An alternative is that something more like the classic concept of an attentional resource can explain hemifield independence. Parietal areas are heavily implicated in tracking, with activation for 
 
 For instance, a population of neurons in parietal areas, which
-
-resource that . a population of neurons in e.g.  parietal areas
-
-with tracked objects
-
-, which naturally are less likely to cross hemifield boundaries because of the greater distance 
-
-that are less likely to cross hemifields or 
-
-attributed this to spatial interference being 
-
-nice side effect of this discovery
-
-Of course, we already knew that visual cortex
-
-This is noteworthy because
-
-A great thing about this discovery is that it shows decisively that MOT processes are differentiable from more cognitive processes.
-
 
 provides a new tool
 
@@ -130,52 +155,23 @@ The hemispheric division of cortex also means that at least in early visual cort
 
 
 The target-target distance effect in Shim et al. is huge! How do I explain that? One possible explanation is Carlson’s quadrantic deficit.
-Most cognitive tasks are unlikely to be independently mediated by the two hemispheres, with one set of processes in each hemisphere.
-Even feature attention is global @liuConstantSpreadFeaturebased2011
-
-have such a high level of hemispheric independence.
 
 
-
-
-@chenResourceDemandsObject2013 This unitary resource doesn't do that much in tracking!
-
-corroborated this conclusion that the two hemispheres
 
 <!-- RT study, always used 2 targets.  Davis, R., & Schmit, V. (1971). Timing the transfer of information between hemispheres in man. Acta Psychologica, 35(5), 335–346. https://doi.org/10.1016/0001-6918(71)90008-4 -->
 
 
-@chenResourceDemandsObject2013 @croweGoaldirectedUnequalAttention2019
-
-
-For most tasks, however, there seems to be little advantage to 
-
-if some stimuli are presented in one visual field
-
 There is another subtle effect of the hemispheric division of cortex. In some tasks involving two simultaneously-presented stimuli, higher performance is found when each stimulus is presented in a different hemifield rather then presenting them both in the same hemifield. For example, the reporting of two briefly-presented digits is more accurate when the digits are presented in different hemifields than in the same hemifield [@dimondUseTwoCerebral1971].  
-
-
 
 
 However, many studies did not include a single-stimulus condition, so when performance is higher in the split condition, we don't know how close that is to the one-target level of performance [@awhEvidenceSplitAttentional2000; @serenoDiscriminationHemifieldsNew1991; @dimondUseTwoCerebral1971], or they used response time as a measure, which is especially difficult to interpret.
 
-A complication in calculating capacity is that it assumes that if you can only track one, then if you add a second target you will succeed just as often in tracking one of them. However, it may be that if you split your tracking resource, allocating half to one target and half to another, then you will fail at both. Based both on experience in the tasks, and the evidence provided by @chenResourceDemandsObject2013, in at least some circumstances this appears to be the case. In the jargon, this is to say that the resource function that relates the proportion of attentional resource to accuracy [@normanDatalimitedResourcelimitedProcesses1975] falls below a straight line.
-@holcombeSplittingAttentionReduces2013
+
 
 The situation is diffrent for some tasks that use more briefly-presented stimuli.
 
-
-
-
-
-
-
-
 , such that presenting a word, for example, yields slightly greater accuracy 
 
-In normal individuals, there are some tasks for which there is evidence of some independent functioning, in the form of a behavioural advantage for presenting the relevant stimuli split across the hemifields rather than presenting them to one hemifield. An early demonstration of this was by 
-
-normal individuals act much more as if their hemispheres are working independently.
 
 <!-- A' is no good https://sites.google.com/a/mtu.edu/whynotaprime/ -->
 @delvenneCapacityVisualShortterm2005 used A', which sucks, observed approximately a 40% independence for spatial VSTM <!--   -->.
@@ -193,6 +189,8 @@ In visual short-term memory tasks, people perform a good deal better when the st
 
 @hudsonHemifieldEffectsMultiple2012 multiple identity tracking , found a hemifield advantage: " Contrary to expectations, a bilateral advantage was still observed, though it was not as strong as when observers were not required to remember the identities of the targets. This finding is inconsistent with the only model of multiple identity tracking (Oksama & Hyönä, 2008, Cognitive Psychology, 56, 237-283), so we present an alternative account."
 
+Kingstone, 2004; Corballis & Gratton, 2003
+
 @strongHemifieldspecificControlSpatial2019
 
 RIGHT HEMIFIELD IS BETTER @holcombeObjectTrackingAbsence2014 (Figure A2), Battelli
@@ -205,8 +203,6 @@ It is well-known that a decrease with target load, linear or non-linear, can be 
 
 It happens for spatial VSTM but not color [@delvenneCapacityVisualShortterm2005]
 
-### Quadrants
 
-Carlson et al. found evidence for quadrants. Has this been replicated? And @strongHemifieldspecificControlSpatial2019 found a cost for crossing the vertical midline but not the horizontal midline. So now we know that the cross-hemisphere cost does not occur for quadrants. 
 
 Hughes & Zimba, 1987

@@ -1,4 +1,4 @@
-# Identity and feature binding
+# Identity and feature binding {#identity}
 
 The previous section was about what you can track. This section is about what you know about the objects you are tracking.
 
