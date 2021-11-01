@@ -90,95 +90,55 @@ A limitation of deriving hemispheric independence from accuracy is that they dep
 
 @carlsonQuadranticDeficitReveals2007 found evidence not only for hemifield independence but also quadrant-level independence, which they attributed to the partial separation of the retinotopic quadrant representations in areas V2 and V3. @shimSpatialSeparationTargets2008 did not replicate this finding, however they had less evidence, so more work on this topic should be done.
 
-## Resources NOT specific to the hemispheres
+## Some resources are NOT hemifield-specific
 
-In an earlier section we introduced the idea of C=1 cognitive processing that might particularly support tracking of a single target. An additional feature of this notion is that the associated processing is not hemisphere-specific. @chenResourceDemandsObject2013 found evidence for both hemifield-specific processes and processes not specific to a hemifield in the same MOT task. Two targets were used which could be of different speeds. The faster the second target was relative to the first target, the lower was the performance of the first target, which suggests that participants were able to allocate more tracking resources to the faster of the two targets. This was most pronounced when the two targets were in the same hemifield, but seemed to occur to some degree even when the two targets were in different hemifields, implicating a cross-hemifield resource that plays a small role. 
+A previous section introduced the idea of C=1 cognitive processes that can support tracking of a single target but perhaps not multiple targets. Such processing likely is not hemisphere-specific. <!--We easily attend to objects in any part of the visual field, left or right.-->  Feature attention, for example attention to color, is a case in point. When a participant is told to look for a red target, they are able to use feature attention to enhance all red objects, no matter where they are in the visual field [@whiteFeaturebasedAttentionInvoluntarily2011]. The decision to look for red originates with cognitive processes and remains hemifield-unified rather than hemifield-specific even at the level of visual cortex [@saenzGlobalEffectsFeaturebased2002a]. Indeed, people seem to be unable to confine the enhancement of red objects to one hemifield [@loHowWeSelect2014].
 
-Even feature attention is global @liuConstantSpreadFeaturebased2011
+@chenResourceDemandsObject2013 found evidence for both hemifield-specific processes and processes not specific to a hemifield in the same MOT task. Two targets that sometimes had different speeds were used. When a slow-moving target was paired with a speedier target, accuracy was lower for the slow-moving target than if it was paired with a target that was slower. This suggests that participants allocate more tracking resources to the faster of two targets, presumably because slower targets do not require much resource to track well. This trade-off was most pronounced when the two targets were in the same hemifield, but seemed to occur to some degree even when the two targets were in different hemifields, implicating a cross-hemifield resource that plays a small role. This cross-hemifield resource may be a C=1 process. Most cognitive tasks are unlikely to be independently mediated by the two hemispheres, with one set of processes in each hemisphere.
 
-Most cognitive tasks are unlikely to be independently mediated by the two hemispheres, with one set of processes in each hemisphere.
-
-
-## Implications
+## The underlying mechanisms
 
 The evidence reviewed above for hemifield independence suggests that hemisphere-specific processes determine how many targets one can track. This raises the question of what sort of processes those are, and how they interact with the cognitive processes that are more integrated across the hemispheres.
 
-Steve Franconeri and his colleagues have championed the idea that the hemisphere independence stems from spatial interference processes, by suggesting that these processes occur largely within a hemisphere [@franconeriNatureStatusVisual2013]. The idea is that when when an object is tracked, the neurons representing that target in retinotopic cortical areas activate inhibitory connections to nearby neurons in the cortical map, suppressing the responses to neighboring objects [@carlsonQuadranticDeficitReveals2007. To explain the findings of hemifield specificity, what's been added to this account is the idea that the inhibitory neural connections do not extend from one hemisphere's retinotopic map to another [@franconeriFlexibleCognitiveResources2013]. The evidence that as manifest in classic crowding tasks, spatial interference does show a discontinuity across the left- and right-visual field boundary lends some plausibility to this idea [@liuReductionCrowdingEffect2009]. However, @holcombeObjectTrackingAbsence2014 found evidence against spatial interference extending any further than the classic crowding range , which is only half the eccentricity of an object - for example, an object placed six degrees of visual angle from where the point the eyes are looking at would be interfered with only by other objects closer to it than three degrees of visual angle [@boumaInteractionEffectsParafoveal1970a]. This is a far cry from the nearly 90 degrees of an entire hemifield, or even of a quadrant. The more viable theory, then, is those that align more with the concept of a neural resource that spans the hemifield.
+Steve Franconeri and colleagues have championed the idea that the hemisphere independence stems from spatial interference processes, by suggesting that these processes occur largely within a hemisphere [@franconeriNatureStatusVisual2013]. The idea is that when when an object is tracked, the neurons representing that target in retinotopic cortical areas activate inhibitory connections to nearby neurons in the cortical map, suppressing the responses to neighboring objects [@carlsonQuadranticDeficitReveals2007. To explain the findings of hemifield specificity, what's been added to this account is the idea that the inhibitory neural connections do not extend from one hemisphere's retinotopic map to another [@franconeriFlexibleCognitiveResources2013]. The evidence that as manifest in classic crowding tasks, spatial interference does show a discontinuity across the left- and right-visual field boundary lends some plausibility to this idea [@liuReductionCrowdingEffect2009]. However, @holcombeObjectTrackingAbsence2014 found evidence against spatial interference extending any further than the classic crowding range , which is only half the eccentricity of an object - for example, an object placed six degrees of visual angle from where the point the eyes are looking at would be interfered with only by other objects closer to it than three degrees of visual angle [@boumaInteractionEffectsParafoveal1970a]. This is a far cry from the nearly 90 degrees of an entire hemifield, or even of a quadrant. The more viable theory, then, is those that align more with the concept of a neural resource that spans the hemifield.
 
 A number of studies have found that the activity of some parietal and frontal areas of cortex increase steadily with the number of targets in MOT [@culhamAttentionResponseFunctions2001; @howeUsingFMRIDistinguish2009; @jovicichBrainAreasSpecific2001; @alnaesPupilSizeSignals2014], consistent with the importance of a pool of attentional resources. These studies did not focus, however, on the extent to which these activations are specific to the hemifield-specific nature of target load. 
 
 The neural correlates of the hemifield-specific resource was investigated by @stormerWithinhemifieldCompetitionEarly2014 using EEG. They found that the SSVEP activation for targets was higher than that for distractors when the two targets, especially when the two targets were positioned in different (left and right) hemifields. In contrast, an ERP component known as the P3 thought to reflect more cognitive identification and decision processes was similar in the two conditions. This is consistent with the theory that tracking depends on both hemisphere-specific attentive processing followed by some involvement of higher-order processes that are not hemisphere-specific.
 
 @battelliRoleParietalLobe2009 found they could disrupt MOT performance in a hemifield by stimulating the contralateral intraparietal sulcus (IPS) using
- repetitive transcranial magnetic stimulation. Importantly, however, this only occurred when there moving targets were present in both hemifields. When the targets were all in the left or all in the right hemifield, TMS to the left or to the right IPS had no effect on tracking accuracy, and this was replicated in a second experiment. Evidently if targets were confined to one hemifield, either hemisphere's IPS was perfectly capable of doing what it needed to do to mediate tracking.
- 
-The findings of Battelli et al. may bring to mind the competition between the two hemifields that is evident in the "extinction" symptom observed in parietal neglect patients. In extinction, responding to stimuli in the hemifield contralateral to parietal injury only shows significant impairment if there are also stimuli presented to the ipsilateral hemifield. This inspired Battelli to explain their findings with two propositions. The first is that the IPS in each hemisphere can mediate the selection of targets in *either* visual hemifield. The second is that under normal conditions, inhibitory processes reduce the amount of ipsilateral processing by each IPS, causing tracking capacity to effectively be hemifield-specific in many circumstances.
+ repetitive transcranial magnetic stimulation. Importantly, however, this only occurred when there moving targets were present in both hemifields. When the targets were all in the left or all in the right hemifield, TMS to the left or to the right IPS had no effect on tracking accuracy, and this was replicated in a second experiment. These findings may bring to mind the competition between the two hemifields that is evident in the "extinction" symptom observed in parietal neglect patients. In extinction, responding to stimuli in the hemifield contralateral to parietal injury only shows significant impairment if there are also stimuli presented to the ipsilateral hemifield. This inspired Battelli to explain their findings with two propositions. The first is that the IPS in each hemisphere can mediate the tracking of targets in *either* visual hemifield. The second is that under normal conditions, inhibitory processes reduce the amount of ipsilateral processing by each IPS, causing tracking capacity to effectively be hemifield-specific in many circumstances.
 
-The dominant hemifield-specificity of parietal MOT processing is further supported by evidence from parietal patients. @battelliUnilateralRightParietal2001 found that in patients with damage to their right parietal lobe, MOT performance was impaired relative to controls only in the left visual field. Evidently the right parietal lobe does not normally mediate tracking in the left visual field, so losing it did not hurt left visual field tracking performance. Nevertheless, these right parietal patients had substantial impairments in *both* hemifields for a measure of the temporal precision underlying apparent motion judgments. The involvement of the right parietal lobe, but not the left parietal lobe, in judging the temporal order of stimuli in both hemifields was further supported in an additional study with both patients and with TMS [@agostaPivotalRoleRight2017].
+That the parietal contribution to MOT is predominantly hemifield-specific is further supported by evidence from patients. @battelliUnilateralRightParietal2001 found that in patients with damage to their right parietal lobe, MOT performance only in the left visual field was impaired relative to control participants. Evidently the right parietal lobe does not normally mediate tracking in the left visual field, so losing it did not hurt left visual field tracking performance. But for another task, these right parietal patients had substantial impairments in *both* hemifields. Impairment on that task, an apparent motion task, is believed to be a result of a deficit for registering the relative timing of visual events. The involvement of the right parietal lobe, but not the left parietal lobe, in judging the temporal order of stimuli in both hemifields was further supported in an additional study with both patients and with TMS [@agostaPivotalRoleRight2017].
 
-It seems that the parietal lobe is critical for the hemifield-specific resource, while at the same time processing in the right parietal lobe is involved in registering the temporal order of discrete stimuli presented in either hemifield. In the extraordinary circumstances of repetitive TMS, 
+It seems that the parietal lobes are critical for the hemifield-specific resource. At the same time there is evidence that each parietal lobe is involved in field-wide processing for some tasks, although for the timing task this may reflect a different area of the parietal cortices. Using ERP, @drewSoftHandoffAttention2014 fund evidence that when a target crosses the vertical midline, say from the left to the right hemifield, the left hemisphere becomes involved shortly before the target reaches the right hemifield, and the right hemisphere remains involved for a short time after the crossing. Because this was modulated by predictability of the motion, it did not appear to be wholly mediated by the well-known overlap of the two hemispheres' receptive fields at the midline. This phenomenon may reflect the normally-inhibited ipsilateral representation of the visual field by parietal cortices highlighted by @battelliRoleParietalLobe2009, although the ERP signals were not localized so this remains uncertain.
 
-The right parietal lobe in these patients evidently 
+Both @strongHemifieldspecificControlSpatial2019 and @minamiHemifieldCrossingsMultiple2019 found evidence for a tracking performance cost when a target in MOT crossed the vertical midline. Evidently the handoff of control from one hemisphere to another is not completely efficient. @strongHemifieldspecificControlSpatial2019 also found no cost when targets moved between quadrants within a hemifield, an important finding given that other work raised the prospect of quadrant-specific resources [@carlsonQuadranticDeficitReveals2007]. 
 
-Evidently the limited ability of the left parietal lobe to subserve tracking in the left hemifield that was suggested by the @battelliRoleParietalLobe2009 TMS study was not 
+In summary, areas of the parietal cortex may subserve both the hemifield-specific tracking resource that dominates most MOT tasks and the more limited resource that is not specific to a hemifield. More work must be done however to determine the role of frontal lobe regions. Such regions could potentially play a role in the hemifield-specific resource, the hemifield-independent resource, or both.
 
+### What else are hemifield-specific resources used for?
 
-In summary, areas of the parietal cortex may potentially subserve both the hemifield-specific tracking resource that dominates most MOT tasks and the more limited resource that is not specific to a hemifield. More work must be done however to determine the role of frontal lobe regions. Such regions could potentially play a role in the hemifield-specific resource, the hemifield-independent resource, or both.
+Multiple object tracking is closely associated with spatial selection, which is an important process for many other visual tasks. Given the hemifield specificity of spatial attentional selection suggested by MOT, then, one might expect to find strong hemifield-specificity of other visual cognition tasks in addition to MOT. Some tasks do indeed show a degree of hemifield specificity, but they don't seem as strong
 
-### Quadrants
+@strongHemifieldspecificControlSpatial2019 investigated working memory for stimuli that moved either within a hemifield or between hemifields. For between-hemifield movement, they found a substantial decrease in accuracy for the spatial task of remembering which positions of a 2x2 grid contained dots at the beginning of the trial, before the (empty) grid moved - 79% correct for between-hemifield movement, and 85% correct for within-hemifield movement. No such cost was found for color or identity memory tasks.
 
-@strongHemifieldspecificControlSpatial2019 found a cost for crossing the vertical midline but not the horizontal midline. So now we know that the cross-hemisphere cost does not occur for quadrants. 
-
-rather than it extending to the limits of a hemifield or quadrant.
-
-Wolfe hand-off
-
-
-
-Further undermines Pylyshyn's conception
-
-
-An alternative is that something more like the classic concept of an attentional resource can explain hemifield independence. Parietal areas are heavily implicated in tracking, with activation for 
-
-For instance, a population of neurons in parietal areas, which
-
-provides a new tool
-
-The calculation rests on assumptions that are not secure. That when given the task of tracking two targets, if you can only track one, you still do just as well on the first, while guessing on the second
-
-We easily attend to objects in any part of the visual field, left or right. 
-
-The hemispheric division of cortex also means that at least in early visual cortex, stimuli presented in one visual field are processed independently of stimuli presented simultaneously in the other visual field. This has a striking effect on behavioral performance of one task in particular.
-
-
-<!-- Shim, Alvarez, & Jiang (2008) found no advantage for targets in different hemifields. Why? Not sure, but the objects weren’t spaced far enough part to not crowd each other across the hemifield boundaries. In contrast, Shim et al. and Bello et al. suggest it was because hemifield limit doesn’t apply when just two targets. Holcombe & Chen found it did, but Bello suggests the reason is that we used circular trajectories that are somehow different, they say you can extrapolate more with them, whereas it may be that you can extrapolate less. -->
-
-
-The target-target distance effect in Shim et al. is huge! How do I explain that? One possible explanation is Carlson’s quadrantic deficit.
-
-
-
-<!-- RT study, always used 2 targets.  Davis, R., & Schmit, V. (1971). Timing the transfer of information between hemispheres in man. Acta Psychologica, 35(5), 335–346. https://doi.org/10.1016/0001-6918(71)90008-4 -->
-
-
-There is another subtle effect of the hemispheric division of cortex. In some tasks involving two simultaneously-presented stimuli, higher performance is found when each stimulus is presented in a different hemifield rather then presenting them both in the same hemifield. For example, the reporting of two briefly-presented digits is more accurate when the digits are presented in different hemifields than in the same hemifield [@dimondUseTwoCerebral1971].  
-
-
-However, many studies did not include a single-stimulus condition, so when performance is higher in the split condition, we don't know how close that is to the one-target level of performance [@awhEvidenceSplitAttentional2000; @serenoDiscriminationHemifieldsNew1991; @dimondUseTwoCerebral1971], or they used response time as a measure, which is especially difficult to interpret.
-
-
-
-The situation is diffrent for some tasks that use more briefly-presented stimuli.
-
-, such that presenting a word, for example, yields slightly greater accuracy 
-
-
+More generally, only tasks with spatial demands seem to show much hemifield specificity  ds (Alvarez et al., 2012; Delvenne, 2005; Holt & Delvenne, 2014; Umemoto et al., 2010).
 <!-- A' is no good https://sites.google.com/a/mtu.edu/whynotaprime/ -->
 @delvenneCapacityVisualShortterm2005 used A', which sucks, observed approximately a 40% independence for spatial VSTM <!--   -->.
 
 In visual short-term memory tasks, people perform a good deal better when the stimuli are spread across both the left and right hemifields rather than all presented to the left hemifield or to the right hemifield [@delvenneVisualShorttermMemory2012]. The reason, it is believed, is that there is some sort of resource that is specific to each hemifield. It is better, then, to spread one's load, rather than burdening one hemisphere more than the other. If the processes that limit memory performance were entirely specific to the hemispheres, then once people's limit for remembering objects presented to one hemifield were reached, one could add more objects to the other hemifield without any cost for the proportion of objects remembered. Instead, though, the hemifield advantage is only partial. There are a few tasks, however, for which the hemifield advantage seems to be complete, and multiple object tracking is one.
 
 @delvenneCapacityVisualShortterm2005: "a color and spatial location change detection task, in which the items were displayed either in the two visual fields or in the same hemifield. The data revealed that only memory capacity for spatial locations and not colors increased when the items were separated between the two visual fields. These findings support the view of VSTM as a chain of capacity limited operations where the spatial selection of stimuli, which dominates in both spatial location VSTM and MOT, occupies the first place and shows independence between the two fields." also null effect for color XuNakayama2007
+
+It happens for spatial VSTM but not color [@delvenneCapacityVisualShortterm2005]
+
+
+<!--There is another subtle effect of the hemispheric division of cortex.--> In some tasks involving two simultaneously-presented stimuli, higher performance is found when each stimulus is presented in a different hemifield rather then presenting them both in the same hemifield. For example, the reporting of two briefly-presented digits is more accurate when the digits are presented in different hemifields than in the same hemifield [@dimondUseTwoCerebral1971].  
+
+However, many studies did not include a single-stimulus condition, so when performance is higher in the split condition, we don't know how close that is to the one-target level of performance [@awhEvidenceSplitAttentional2000; @serenoDiscriminationHemifieldsNew1991; @dimondUseTwoCerebral1971], or they used response time as a measure, which is especially difficult to interpret.
+
+
 
 @delvenneBilateralFieldAdvantage2011 showed a bilateral advantage for subitizing. <!-- Subitizng and enumeration. Bilateral advantage shown for enumeration. None for subitizing, although that's hard to interpret because ceiling effect -->
 
@@ -191,17 +151,32 @@ In visual short-term memory tasks, people perform a good deal better when the st
 
 Kingstone, 2004; Corballis & Gratton, 2003
 
-@strongHemifieldspecificControlSpatial2019
+
+
+<!-- RT study, always used 2 targets.  Davis, R., & Schmit, V. (1971). Timing the transfer of information between hemispheres in man. Acta Psychologica, 35(5), 335–346. https://doi.org/10.1016/0001-6918(71)90008-4 -->
+
+
+<!-- Shim, Alvarez, & Jiang (2008) found no advantage for targets in different hemifields. Why? Not sure, but the objects weren’t spaced far enough part to not crowd each other across the hemifield boundaries. In contrast, Shim et al. and Bello et al. suggest it was because hemifield limit doesn’t apply when just two targets. Holcombe & Chen found it did, but Bello suggests the reason is that we used circular trajectories that are somehow different, they say you can extrapolate more with them, whereas it may be that you can extrapolate less.   The target-target distance effect in Shim et al. is huge! How do I explain that? One possible explanation is Carlson’s quadrantic deficit.-->
+
+
+"Consistent with this possibility, processing spatial information seems
+to rely primarily on neural connectivity within the individual cerebral hemispheres, whereas processing identity information relies more equally on connections both within and between hemispheres (Cohen & Maunsell, 2011; Mishkin & Ungerleider, 1982)."
+
 
 RIGHT HEMIFIELD IS BETTER @holcombeObjectTrackingAbsence2014 (Figure A2), Battelli
+@strongHemifieldspecificControlSpatial2019 found right hemifield advantage for their MOT experiments but not spatial working memory experiments
 
-## Why
+
+## The decline of Pylyshyn's FINST theory
+
+At the time of this writing, Pylyshyn's theory is the featured theory on the Wikipedia page for multiple object tracking, and it is frequently invoked in the scholarly literature as well.
+
+Further undermines Pylyshyn's conception
 
 Early work had concluded that MOT could not reflect serial position sampling @pylyshynTrackingMultipleIndependent1988; @yantisMultielementVisualTracking1992
 
 It is well-known that a decrease with target load, linear or non-linear, can be explained by parallel models as well as serial models.
 
-It happens for spatial VSTM but not color [@delvenneCapacityVisualShortterm2005]
 
 
 

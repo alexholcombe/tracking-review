@@ -4,6 +4,8 @@ Covert tracking keeps one up to date with where objects of interest are. And kno
 
 Recall that in section X we described evidence that if a target comes too close to another object, the two objects can get confused. They won't always be confused, because predictable trajectories and target velocity can be used to recover a target even after it completely overlaps with another (@howeMotionInformationSometimes2012) In elegant experiments, @wangRoleKinematicProperties2021 created displays
 
+When pursuing a single target with the eyes, @chenAttentionAllocatedClosely2017 used EEG evidence to show enhancement ahead of the target
+
 When one needs to know more information about the objects,
 
 one wants to scrutinize the objects further
