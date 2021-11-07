@@ -13,12 +13,11 @@ In the performance of most perceptual and attentional tasks, then, in a humans w
 ## The extraordinary hemifield independence of object tracking
 
 ```{r, include=F}
-# 
-# Unilateral 1 target, Unilateral 2 target, Bilateral 1 target, Bilateral 2 target
-#alvarezCavanagh2005E1 <- c(.89,.63,.93,.90)
-#chance<- 0.5
 
-#Correct for guessing
+#Correct for guessing. Based on 1, the chance rate for getting the task of identifying the targets correct.
+# And 2, the observed percent correct.
+# Use a high-threshold equation that assumes you either know it or you don't.
+
 #What is the true rate, t, at which people know the answer not from guessing, where guessing rate = c
 # accuracy = t + (1-t)c
 # t = accuracy - (1-t)c
@@ -39,6 +38,14 @@ correctForChance <- function(x,chance) {
   (x-chance)/(1-chance)
 }
 #correctForChance(.89,chance)
+
+
+# Alvarez and Cavanagh arrayed 2 pinwheels either unilaterally or bilaterally, and in each case designated either one or both as targets
+# Unilateral 1 target, Unilateral 2 target, Bilateral 1 target, Bilateral 2 target
+# 
+#alvarezCavanagh2005E1 <- c(.89,.63,.93,.90)
+#chance<- 0.5
+
 library(dplyr)
 #1:10 %>% purrr::map(rnorm, n=10)
 
@@ -46,13 +53,29 @@ library(dplyr)
 #  purrr::map_dbl(mean) #have to call map_dbl to simplify output from nested list to simple vector
 #accCorrected
 
-calculateIndependence <- function(accuracies,chance) {
+calculateIndependenceAlvarezCavanagh <- function(accuracies,chance) {
   corrected <- accuracies %>% purrr::map(correctForChance,chance) %>%
         purrr::map_dbl(mean) #have to call map_dbl to simplify output from nested list to simple vector
 
   costOfSecondTargetUnilateral <- corrected[1] - corrected[2]
   # 1 - cost of second target bilateral / costOfSecondTargetUnilateral
   hemifieldIndependence <- 1 - (corrected[3]-corrected[4]) / costOfSecondTargetUnilateral
+  return (hemifieldIndependence)
+}
+
+# The HudsonHoweLittle2012 design compares accuracy with 3 targets to with 6 targets
+# Instead of having two different baseline (3-targets in their case) conditions like Alvarez & Cavanagh, they have just one, where
+# the three targets are confined to a single quadrant and for the 6-target conditions, the 3 additional targets are added to either the other hemifield (bilateral)
+# or the same hemifield but other quadrant (unilateral)
+
+calculateIndependenceOnlyOneBaselineConfiguration <- function(accuracies,chance) {
+  corrected <- accuracies %>% purrr::map(correctForChance,chance) %>%
+        purrr::map_dbl(mean) #have to call map_dbl to simplify output from nested list to simple vector
+
+  costOfAdditionalTargetsUnilateral <- corrected[1] - corrected[2]
+  costOfAdditionalTargetsBilateral <- corrected[1] - corrected[3]
+  # 1 - cost of second target bilateral / costOfSecondTargetUnilateral
+  hemifieldIndependence <- 1 - costOfAdditionalTargetsBilateral / costOfAdditionalTargetsUnilateral
   return (hemifieldIndependence)
 }
 
@@ -71,10 +94,10 @@ alvarezCavanagh2005E1 <- c(.89,.63,.93,.90)
 alvarezCavanagh2005E3 <- c(.93,.67,.90,.88)
 chance<- 0.5
 
-alvarezCavanaghE1Independence <- calculateIndependence(alvarezCavanagh2005E1,0.5)
+alvarezCavanaghE1Independence <- calculateIndependenceAlvarezCavanagh(alvarezCavanagh2005E1,0.5)
 alvarezCavanaghE1Independence
 
-alvarezCavanaghE3Independence <- calculateIndependence(alvarezCavanagh2005E3,0.5)
+alvarezCavanaghE3Independence <- calculateIndependenceAlvarezCavanagh(alvarezCavanagh2005E3,0.5)
 alvarezCavanaghE3Independence
 ```
 
@@ -84,13 +107,46 @@ The hemispheric independence of a task can be quantified. Imagine that adding a 
 
 Subsequent work by @chenResourceDemandsObject2013 <!--Didn't compare one to two targets in hemifield but did compare two targets in a hemifield to four targets across two hemifields--> supported the conclusion of a high degree of independence, as did  @holcombeExhaustingAttentionalTracking2012, who used speed thresholds which resulted in a conclusion of about 75% independence. <!--Calculated two-target prediction, and was about 75% independent, but plenty of noise non-significant speed threshold decreases of c(1.67,1.44,1.7,1.63) 1.98rps->1.85 -->.  @shimNumberAttentionalFoci2010<!--Figure 1--> also found a substantial bilateral advantage. 
 
-The finding of statistically significant hemispheric independence has not replicated in all circumstances [e.g., @shimSpatialSeparationTargets2008] <!--performance in all the conditions involved in their comparison were greater than 85% correct, including many low speeds where performance was near ceiling -->  <!--For most of these tasks, but not @shimNumberAttentionalFoci2010, more targets was confounded with having to make more responses and remember said responses at the end of the trial, so some of the residual cost could be due to that being unitary rather than hemifield-specific.-->, but the successful replications, and the fairly low statistical uncertainty associated with them (evident, for example, in their error bars) strongly suggest that at least in some circumstances, tracking does occur mostly independently in the two hemispheres. For their part, @shimSpatialSeparationTargets2008 suggested that the reason they did not find evidence for hemifield independence is that they used two targets, whereas according to them the original @alvarezIndependentResourcesAttentional2005 report of hemifield independence used four targets. This is unlikely to be the reason for the discrepancy, however, because in their E1 and E2 @alvarezIndependentResourcesAttentional2005 found evidence for hemifield independence using two targets, as did @holcombeExhaustingAttentionalTracking2012 and @stormerWithinhemifieldCompetitionEarly2014. The @shimSpatialSeparationTargets2008 data may have been afflicted by a ceiling effect, as accuracy was very high in their experiment. Another possible factor is that the papers findings independence typically used circular trajectories. However, using trajectories that were not circular @hudsonHemifieldEffectsMultiple2012 found partial independence, although they used a rather different task (multiple identity tracking, which is discussed in \@ref(beyondLocation)).
+The finding of statistically significant hemispheric independence has not replicated in all circumstances [e.g., @shimSpatialSeparationTargets2008] <!--performance in all the conditions involved in their comparison were greater than 85% correct, including many low speeds where performance was near ceiling -->  <!--For most of these tasks, but not @shimNumberAttentionalFoci2010, more targets was confounded with having to make more responses and remember said responses at the end of the trial, so some of the residual cost could be due to that being unitary rather than hemifield-specific.-->, but the successful replications, and the fairly low statistical uncertainty associated with them (evident, for example, in their error bars) strongly suggest that at least in some circumstances, tracking does occur mostly independently in the two hemispheres. For their part, @shimSpatialSeparationTargets2008 suggested that the reason they did not find evidence for hemifield independence is that they used two targets, whereas according to them the original @alvarezIndependentResourcesAttentional2005 report of hemifield independence used four targets. This is unlikely to be the reason for the discrepancy, however, because in their E1 and E2 @alvarezIndependentResourcesAttentional2005 found evidence for hemifield independence using two targets, as did @holcombeExhaustingAttentionalTracking2012 and @stormerWithinhemifieldCompetitionEarly2014. The @shimSpatialSeparationTargets2008 data may have been afflicted by a ceiling effect, as accuracy was very high in their experiment. Another possible factor is that the papers findings independence typically used circular trajectories.
+
+```{r, include=F}
+# Baseline unilateral 3 targets, Unilateral 6 targets, Bilateral 6 targets
+HudHoweLittleE1 <- c(.77,.54,.61)
+#Two yes/no questions were asked per trial "Was this color target at this position?" and both had to be answered correctly
+chance<- 0.25
+
+HudHoweLittleE1b <- c(.72,.51,.57) #Replication of E1 with eyetracker
+#In E1 and E1b the colors were continuously visible.
+#E2 the colors were only briefly shown at the beginning of the trial
+HudHoweLittleE2 <- c(.75,.52,.58)
+
+#Used same num targets and distractors as Alvarez & Cavanagh: 2 targets and 2 distractors
+HudHoweLittleE3 <- c(.77,.47,.58)
+
+#In E4 they used an MOT task
+HudHoweLittleMOT <- c(.72,.36,.595)
+HudHoweLittleMOTindependence<- calculateIndependenceOnlyOneBaselineConfiguration(HudHoweLittleMOT, chance)
+
+HudHoweLittleE1Independence <- calculateIndependenceOnlyOneBaselineConfiguration(HudHoweLittleE1, chance)
+HudHoweLittleE1bIndependence <- calculateIndependenceOnlyOneBaselineConfiguration(HudHoweLittleE1b, chance)
+HudHoweLittleE2Independence <- calculateIndependenceOnlyOneBaselineConfiguration(HudHoweLittleE2, chance)
+HudHoweLittleE3Independence <- calculateIndependenceOnlyOneBaselineConfiguration(HudHoweLittleE3, chance)
+HudHoweLittleMITindependence<- c(HudHoweLittleE1Independence,HudHoweLittleE1bIndependence,HudHoweLittleE2Independence,HudHoweLittleE3Independence)
+  
+```
+calculateIndependenceOnlyOneBaselineConfiguration
+
+However, using trajectories that were not circular @hudsonHemifieldEffectsMultiple2012 found partial independence, although they used a rather different task (multiple identity tracking, which is discussed in \@ref(beyondLocation)). `r round(100*HudHoweLittleMITindependence)`%
+
+`r round(100*HudHoweLittleMOTindependence)`%
+
+<!-- Shim, Alvarez, & Jiang (2008) found no advantage for targets in different hemifields. Why? Not sure, but the objects weren’t spaced far enough part to not crowd each other across the hemifield boundaries. In contrast, Shim et al. and Bello et al. suggest it was because hemifield limit doesn’t apply when just two targets. Holcombe & Chen found it did, but Bello suggests the reason is that we used circular trajectories that are somehow different, they say you can extrapolate more with them, whereas it may be that you can extrapolate less.   The target-target distance effect in Shim et al. is huge! How do I explain that? One possible explanation is Carlson’s quadrantic deficit.-->
 
 A limitation of deriving hemispheric independence from accuracy is that they depend on the assumption that if a person can only track one target, if one then adds a second target, the person will succeed just as often in tracking one of them. But my introspective experience indicates that in some circumstances, if one tries to track both targets, one will fail at both, and thus one is better off only trying to track one. The reason for this may be that a certain amount of resource is needed to track a target, and so if neither target is allocated that much resource, tracking will fail for both. Evidence for this was provided by @chenResourceDemandsObject2013. In the terminology introduced by @normanDatalimitedResourcelimitedProcesses1975, the resource function that relates the proportion of attentional resource to accuracy falls below a straight line. This means that quantitative estimates of hemispheric independence will be overestimates, particularly in circumstances where the participants do not realize they may be better off focusing their efforts on tracking fewer targets than the number they have been told to track.
 
 @carlsonQuadranticDeficitReveals2007 found evidence not only for hemifield independence but also quadrant-level independence, which they attributed to the partial separation of the retinotopic quadrant representations in areas V2 and V3. @shimSpatialSeparationTargets2008 did not replicate this finding, however they had less evidence, so more work on this topic should be done.
 
-## Some resources are NOT hemifield-specific
+## Some tracking resources are NOT hemifield-specific
 
 A previous section introduced the idea of C=1 cognitive processes that can support tracking of a single target but perhaps not multiple targets. Such processing likely is not hemisphere-specific. <!--We easily attend to objects in any part of the visual field, left or right.-->  Feature attention, for example attention to color, is a case in point. When a participant is told to look for a red target, they are able to use feature attention to enhance all red objects, no matter where they are in the visual field [@whiteFeaturebasedAttentionInvoluntarily2011]. The decision to look for red originates with cognitive processes and remains hemifield-unified rather than hemifield-specific even at the level of visual cortex [@saenzGlobalEffectsFeaturebased2002a]. Indeed, people seem to be unable to confine the enhancement of red objects to one hemifield [@loHowWeSelect2014].
 
@@ -117,67 +173,46 @@ Both @strongHemifieldspecificControlSpatial2019 and @minamiHemifieldCrossingsMul
 
 In summary, areas of the parietal cortex may subserve both the hemifield-specific tracking resource that dominates most MOT tasks and the more limited resource that is not specific to a hemifield. More work must be done however to determine the role of frontal lobe regions. Such regions could potentially play a role in the hemifield-specific resource, the hemifield-independent resource, or both.
 
-### What else are hemifield-specific resources used for?
+## What else are hemifield-specific resources used for?
 
-Multiple object tracking is closely associated with spatial selection, which is an important process for many other visual tasks. Given the hemifield specificity of spatial attentional selection suggested by MOT, then, one might expect to find strong hemifield-specificity of other visual cognition tasks in addition to MOT. Some tasks do indeed show a degree of hemifield specificity, but they don't seem as strong
+Multiple object tracking is closely associated with spatial selection, which is an important process for many other visual tasks. Given the hemifield specificity of spatial attentional selection suggested by MOT, then, one might expect to find strong hemifield-specificity of other visual cognition tasks in addition to MOT. 
 
-@strongHemifieldspecificControlSpatial2019 investigated working memory for stimuli that moved either within a hemifield or between hemifields. For between-hemifield movement, they found a substantial decrease in accuracy for the spatial task of remembering which positions of a 2x2 grid contained dots at the beginning of the trial, before the (empty) grid moved - 79% correct for between-hemifield movement, and 85% correct for within-hemifield movement. No such cost was found for color or identity memory tasks.
+Many researchers have examined tasks involving two simultaneously-presented stimuli and compared performance when the two stimuli are presented in the same hemifield to performance when they are presented in different hemifields. For example, @dimondUseTwoCerebral1971 found that the reporting of two briefly-presented digits is more accurate when the digits are presented in different hemifields than in the same hemifield. However, this study and many others did not include a single-stimulus condition, so when performance is higher in the split condition, we don't know how close that is to the one-target level of performance and thus the degree of hemifield-specificity cannot be quantified. Other studies use response time as a measure, which is also difficult to interpret [@awhEvidenceSplitAttentional2000; @serenoDiscriminationHemifieldsNew1991; @dimondUseTwoCerebral1971]. 
 
-More generally, only tasks with spatial demands seem to show much hemifield specificity  ds (Alvarez et al., 2012; Delvenne, 2005; Holt & Delvenne, 2014; Umemoto et al., 2010).
 <!-- A' is no good https://sites.google.com/a/mtu.edu/whynotaprime/ -->
-@delvenneCapacityVisualShortterm2005 used A', which sucks, observed approximately a 40% independence for spatial VSTM <!--   -->.
+@delvenneCapacityVisualShortterm2005 used both dual-target and single-target conditions in a visual working memory task. For spatial working memory, he estimated 40% hemifield independence, although unfortunately he used the discredited A' measure of performance [@zhangNoteROCAnalysis2005] and did not space the stimuli widely enough to reduce the possibility of spatial interference. Nevertheless, the advantage appears to be large and did not occur for color working memory [@delvenneVisualShorttermMemory2012]. More generally, only tasks with spatial demands seem to show much hemifield specificity [@holtBilateralAdvantageMaintaining2015; @umemotoBilateralAdvantageStorage2010]
 
-In visual short-term memory tasks, people perform a good deal better when the stimuli are spread across both the left and right hemifields rather than all presented to the left hemifield or to the right hemifield [@delvenneVisualShorttermMemory2012]. The reason, it is believed, is that there is some sort of resource that is specific to each hemifield. It is better, then, to spread one's load, rather than burdening one hemisphere more than the other. If the processes that limit memory performance were entirely specific to the hemispheres, then once people's limit for remembering objects presented to one hemifield were reached, one could add more objects to the other hemifield without any cost for the proportion of objects remembered. Instead, though, the hemifield advantage is only partial. There are a few tasks, however, for which the hemifield advantage seems to be complete, and multiple object tracking is one.
+@alvarezAnatomicalConstraintsAttention2012a studied visual search, with the array of items presented bilaterally or unilaterally. In a standard visual search task, they found little advantage of the vertical meridian split. However, in a subset search task where participants knew the target would be located in one of several locations designated by a pre-trial cue, they found a large bilateral advantage. However, when the relevant locations were prominently indicated by a color difference, this advantage largely disappeared. These results, and those in the rest of the literature, suggest that hemifield advantages are strongest when spatial selection is critical.
 
-@delvenneCapacityVisualShortterm2005: "a color and spatial location change detection task, in which the items were displayed either in the two visual fields or in the same hemifield. The data revealed that only memory capacity for spatial locations and not colors increased when the items were separated between the two visual fields. These findings support the view of VSTM as a chain of capacity limited operations where the spatial selection of stimuli, which dominates in both spatial location VSTM and MOT, occupies the first place and shows independence between the two fields." also null effect for color XuNakayama2007
+@strongHemifieldspecificControlSpatial2019 investigated working memory for stimuli that moved either within a hemifield or between hemifields. For between-hemifield movement, they found a substantial decrease in accuracy for the spatial task of remembering which positions of a 2x2 grid contained dots at the beginning of the trial, before the (empty) grid moved - 79% correct for between-hemifield movement, and 85% correct for within-hemifield movement. No such cost was found for color or identity memory tasks. This between-hemifield cost for spatial memory was similar to the cost they found for MOT itself.
 
-It happens for spatial VSTM but not color [@delvenneCapacityVisualShortterm2005]
-
-
-<!--There is another subtle effect of the hemispheric division of cortex.--> In some tasks involving two simultaneously-presented stimuli, higher performance is found when each stimulus is presented in a different hemifield rather then presenting them both in the same hemifield. For example, the reporting of two briefly-presented digits is more accurate when the digits are presented in different hemifields than in the same hemifield [@dimondUseTwoCerebral1971].  
-
-However, many studies did not include a single-stimulus condition, so when performance is higher in the split condition, we don't know how close that is to the one-target level of performance [@awhEvidenceSplitAttentional2000; @serenoDiscriminationHemifieldsNew1991; @dimondUseTwoCerebral1971], or they used response time as a measure, which is especially difficult to interpret.
+This association between spatial tasks and hemifield specificity may reflect a large-scale difference in how the brain processes spatial versus identity information. Famously, the dorsal stream that leads to the parietal cortices are more concerned with spatial information than is the ventral stream that is more involved in object recognition [@goodaleSeparateVisualPathways1992]. Neural responses in the dorsal pathway to parietal cortex are largely contralateral [@serenoMappingContralateralSpace2001], although as we have seen . This is also true of other brain areas thought to contribute to a "saliency map" [@fecteauSalienceRelevanceFiring2006], such as the frontal eye fields [@haglerjrSpatialMapsFrontal2006], the superior colliculus [@schneiderVisualResponsesHuman2005], and the pulvinar [@cottonContralateralVisualHemifield2007a]. In contrast, identity-related processing seems to involve more bilateral neural responses and connectivity between hemispheres [@cohenUsingNeuronalPopulations2011; @hemondPreferenceContralateralStimuli2007].
 
 
 
-@delvenneBilateralFieldAdvantage2011 showed a bilateral advantage for subitizing. <!-- Subitizng and enumeration. Bilateral advantage shown for enumeration. None for subitizing, although that's hard to interpret because ceiling effect -->
+
+
+<!--
+@delvenneBilateralFieldAdvantage2011 showed a bilateral advantage for subitizing.  Subitizng and enumeration. Bilateral advantage shown for enumeration. None for subitizing, although that's hard to interpret because ceiling effect 
 
 @delvenneVisualShorttermMemory2012 review article: "Those data reveal that a BFA can be found in spatial short-term memory, namely when the task requires holding spatial information. However, no BFA has been found in object short-term memory (i.e., when the task is to hold detailed visual properties of the objects), unless attentional selective processes are dominantly engaged in the task, s"
 
 @umemotoBilateralAdvantageStorage2010 found bilateral advantage even with sequential so must be storage, althoguh used orientation, so could be spatial still
-<!-- used mixture model, but  might have assessed capacity quantitatively--> Mixture model suggests only a modest increase, from perhaps capacity of 2 <!--0.5*4, Figure 11--> to capacity of 2.3 <!--.575*4, Figure11-->
+used mixture model, but  might have assessed capacity quantitatively Mixture model suggests only a modest increase, from perhaps capacity of 2 . 0.5*4, Figure 11 . to capacity of 2.3 .575*4, Figure11
 
-@hudsonHemifieldEffectsMultiple2012 multiple identity tracking , found a hemifield advantage: " Contrary to expectations, a bilateral advantage was still observed, though it was not as strong as when observers were not required to remember the identities of the targets. This finding is inconsistent with the only model of multiple identity tracking (Oksama & Hyönä, 2008, Cognitive Psychology, 56, 237-283), so we present an alternative account."
+Kingstone, 2004; Corballis & Gratton, 2003; Hughes & Zimba, 1987
 
-Kingstone, 2004; Corballis & Gratton, 2003
+RT study, always used 2 targets.  Davis, R., & Schmit, V. (1971). Timing the transfer of information between hemispheres in man. Acta Psychologica, 35(5), 335–346. https://doi.org/10.1016/0001-6918(71)90008-4
+-->
 
-
-
-<!-- RT study, always used 2 targets.  Davis, R., & Schmit, V. (1971). Timing the transfer of information between hemispheres in man. Acta Psychologica, 35(5), 335–346. https://doi.org/10.1016/0001-6918(71)90008-4 -->
-
-
-<!-- Shim, Alvarez, & Jiang (2008) found no advantage for targets in different hemifields. Why? Not sure, but the objects weren’t spaced far enough part to not crowd each other across the hemifield boundaries. In contrast, Shim et al. and Bello et al. suggest it was because hemifield limit doesn’t apply when just two targets. Holcombe & Chen found it did, but Bello suggests the reason is that we used circular trajectories that are somehow different, they say you can extrapolate more with them, whereas it may be that you can extrapolate less.   The target-target distance effect in Shim et al. is huge! How do I explain that? One possible explanation is Carlson’s quadrantic deficit.-->
-
-
-"Consistent with this possibility, processing spatial information seems
-to rely primarily on neural connectivity within the individual cerebral hemispheres, whereas processing identity information relies more equally on connections both within and between hemispheres (Cohen & Maunsell, 2011; Mishkin & Ungerleider, 1982)."
+## Hemispheric differences
 
 
 RIGHT HEMIFIELD IS BETTER @holcombeObjectTrackingAbsence2014 (Figure A2), Battelli
 @strongHemifieldspecificControlSpatial2019 found right hemifield advantage for their MOT experiments but not spatial working memory experiments
 
 
-## The decline of Pylyshyn's FINST theory
-
-At the time of this writing, Pylyshyn's theory is the featured theory on the Wikipedia page for multiple object tracking, and it is frequently invoked in the scholarly literature as well.
-
-Further undermines Pylyshyn's conception
-
-Early work had concluded that MOT could not reflect serial position sampling @pylyshynTrackingMultipleIndependent1988; @yantisMultielementVisualTracking1992
-
-It is well-known that a decrease with target load, linear or non-linear, can be explained by parallel models as well as serial models.
 
 
 
 
-Hughes & Zimba, 1987

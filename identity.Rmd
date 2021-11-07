@@ -2,14 +2,13 @@
 
 The previous section was about what you can track. This section is about what you know about the objects you are tracking.
 
-COMPUTER PROGRAMMERS, FACED WITH THE OBJECT TRACKING PROBLEM, HAVE ALONG USED THE APPEARANCe of the object to help them solve the corerspondence problem []. Interestingly, humans don't work that way. Cite Green's work from the 1980s, saying these findings parallel the way that simple motino percepton works
+COMPUTER PROGRAMMERS, FACED WITH THE OBJECT TRACKING PROBLEM, HAVE ALONG USED THE APPEARANCe of the object to help them solve the correspondence problem []. Interestingly, humans don't work that way. Cite Green's work from the 1980s, saying these findings parallel the way that simple motino percepton works
 
 A naive view of perception is that we are simultaneously aware of the identities of all the objects in the central portion of our visual field, so unless an object actually disappears or hides behind something or someone, we should know where everything in the scene is at all times.
 
 "erhaps most famously, these sorts of processes seem to be localized in anatomically distinct corti- cal streams (e.g., Livingstone and Hubel 1988), with the ventral pathway corresponding to identification, and the dorsal pathway corresponding to individuation. In addition, a variety of behavioral evidence supports this distinction. The surface features of objects (e.g., their colors and shapes), while obviously critical for many visual processes including object recogni- tion, seem to be largely discounted by many other processes (for a review, see Flombaum, Scholl, and Santos, in press). For example, surface features play little or no role in determining apparent motion correspondence (Burt and Sperling 1981), identity over time in the tunnel effect (Flombaum et al., 2004; Flombaum and Scholl 2006; Michotte, Thinès, and Crabbé 1964/1991), or object-specific priming (Mitroff and Alvarez 2007)." [@schollWhatHaveWe2008]
 
-In sport, however, sometimes we are suprised to discover an opponent in the right place at the right time. "Where did he come from?" is a common refrain. This phenomenon can be partially understood in terms of the limit on the number of objects that can be tracked in MOT. It turns out, however, that this is only part of the story. The limitations on tracking are more profound than those we have reviewed so far.
-
+In sport, however, sometimes we are suprised to discover an opponent in the right place at the right time. "Where did he come from?" is a common complaint. This phenomenon can be partially understood in terms of the limit on the number of objects that can be tracked in MOT. It turns out, however, that this is only part of the story. The limitations on tracking are more profound than those we have reviewed so far.
 
 The tracking research we have discussed so far has used targets and distractors that are all identical to each other (after the initial phase where the targets are indicated). In the real world, however, this is uncommon.
 
@@ -35,7 +34,7 @@ In a way, this might be expected to be much easier than a conventional MOT task,
 
 When only two pompoms were presented, performance in all groups was high. The parrot did at least as well as the human adults. In the more difficult three-pompom condition, the parrot actually outperformed the adults, as well as the children. Evidently, the ability to remember and update small numbers of moving hidden objects to a high level of accuracy is present even in our distant cousins with much smaller brains.
 
-With four pompoms, performance fell more substantially as the number of swaps increased, declining to below 80% correct even for the parrot and the adult humans.
+With four pompoms, performance fell more substantially as the number of swaps increased, declining to below 80% correct both for the parrot and the adult humans.
 
 <!--For instance, @schollRelationshipPropertyencodingObjectbased2001 found that when items stopped moving, observers were able to accurately report the previous direction and speed of targets but not of nontargets. However, when the shape or color of the items was masked, observers were unable to accurately report the premask features of either targets or nontargets.-->
 
@@ -52,6 +51,11 @@ In the early 1990s, it gradually became clear that the mind maintained fewer vis
 
 It appears that O'Regan's big idea goes further than he anticipated. While O'Regan suggested that only when objects  were attended would they be fully processed, he did not suggest that one might be able to track the changing locations of multiple targets without knowing what they are. 
 
+@hudsonHemifieldEffectsMultiple2012 multiple identity tracking , found a hemifield advantage: " Contrary to expectations, a bilateral advantage was still observed, though it was not as strong as when observers were not required to remember the identities of the targets. This finding is inconsistent with the only model of multiple identity tracking (Oksama & Hyönä, 2008, Cognitive Psychology, 56, 237-283), so we present an alternative account."
+<!-- E4 standard MOT design. Calculate hemifield independence = 
+A weird thing is that there were no distractors in the same quadrant ,but E3 used the standard design and found the same result.
+E1: colors of the targets continuously visible. Found substantial bilateral advantage.
+E2: colors of targets only presented at beginning. Substantial bilateral advantage again.
 
 <!--Tracking is important for representing objects still in view @tsubomiNeuralLimitsRepresenting2013-->
 

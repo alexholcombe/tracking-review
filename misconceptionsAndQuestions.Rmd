@@ -8,6 +8,17 @@ Reading your paper also gave me an idea to have a Common Misconceptions section 
 
 Thus, while many potential athlete users may imagine that a test of attention tests how long they can pay attention, this is not likely to be the reason for differences among people on MOT performance. 
 
+## The decline of Pylyshyn's FINST theory
+
+At the time of this writing, Pylyshyn's theory is the featured theory on the Wikipedia page for multiple object tracking, and it is frequently invoked in the scholarly literature as well.
+
+Further undermines Pylyshyn's conception
+
+Early work had concluded that MOT could not reflect serial position sampling @pylyshynTrackingMultipleIndependent1988; @yantisMultielementVisualTracking1992
+
+It is well-known that a decrease with target load, linear or non-linear, can be explained by parallel models as well as serial models.
+
+
 ## Topics not covered by this review
 
 Retinotopic or spatiotopic and configural @yantisMultielementVisualTracking1992, @billHierarchicalStructureEmployed2020, @howeCoordinateSystemsUsed2010

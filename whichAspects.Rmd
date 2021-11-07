@@ -63,3 +63,10 @@ If objects are moving fast enough, they are perceived to blur together, because 
 Each of these could hinder performance more with more targets. They contribute in an unknown mix to most tracking tasks .
 Thus we don't know which is responsible for various results. For example, 
 
+Create a table with column indicating how resource-intensive each factor is thought to be and how much of the load effect is borne by a hemisphere-specific effect.
+https://bookdown.org/yihui/bookdown/tables.html
+
+knitr::kable(
+  head(mtcars[, 1:8], 10), booktabs = TRUE,
+  caption = 'A table of the first 10 rows of the mtcars data.'
+)
