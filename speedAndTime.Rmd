@@ -131,6 +131,12 @@ The second question is: what role does temporal interference play in typical MOT
 
 ## Speed limits
 
+. First, they showed that objects' speeds could be increased until a tracking "speed limit" (68% threshold) where performance tracking two targets was approximately that predicted if participants could only track one of the two targets and had to guess about the other. They then examined the effect of adding a target to the other hemifield rather than the same hemifield. Performance in that condition was very close to that predicted i
+
+. at high speeds (at the 68% threshold), a high degree of hemifield independence was found - a mean of 75% independence but with enough uncertainty to make it compatible with 100% independence. Experiment 1 and Experiment 2 of @chenResourceDemandsObject2013 used the same approach, but compared tracking two targets unilaterally and bilaterally to tracking four targets. Across E1 and E2 the average of the speed thresholds the numbers suggest approximately 100% hemifield independence (with a lot of uncertainty in the estimate).
+surprisingly,  @shimNumberAttentionalFoci2010 found no increase in posterior parietal cortex with pinwheel speed, only with pinwheel number
+
+
 The temporal limit on tracking was established by the observation that covert tracking is limited by the product of object speed and number of objects, not by object speed or number of objects alone. This was not true, however, for all combinations of object number and object speed. Both @holcombeSplittingAttentionReduces2013 and @verstratenLimitsAttentiveTracking2000 found that when the number of objects (or grating cycles in the case of @verstratenLimitsAttentiveTracking2000) was below four, the speed threshold was slower than predicted by the temporal limit implied by the other conditions.
 
 These findings suggest a speed limit on tracking. In the one-target, two objects (grating cycles) condition tested by @verstratenLimitsAttentiveTracking2000, the mean speed threshold was about 1.5 revolutions per second (rps), while @holcombeSplittingAttentionReduces2013 tested with three objects and in the one-target condition found a 1.7 rps speed threshold, whereas the speed threshold expected from the temporal limit was about 2.4 rps. 

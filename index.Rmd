@@ -31,11 +31,13 @@ twitter-handle: ceptional
 
 # Preface {-}
 
-A version of this review will be published as a book in the Cambridge Element series. Cite it as:
+Cite this as:
 
 Holcombe, A.O. (to appear). Tracking moving objects. Cambridge University Press.
 
-You can read this on the web [here](https://tracking.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.  However, the web version is the only one you should rely on - some features (e.g. movies, some kinds of images) may be missing from the other formats.
+This is a book-length review of the literature on multiple object tracking, to be published in the [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception).
+
+You can read this [here on the web](https://tracking.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.  However, the web version is the only one you should rely on - some features (e.g. movies, some kinds of images) may be missing from the other formats.
 
 Contact me (he/him) with any comments via [twitter](https://twitter.com/ceptional) or email - alex.holcombe@sydney.edu.au
 

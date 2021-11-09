@@ -66,7 +66,14 @@ Thus we don't know which is responsible for various results. For example,
 Create a table with column indicating how resource-intensive each factor is thought to be and how much of the load effect is borne by a hemisphere-specific effect.
 https://bookdown.org/yihui/bookdown/tables.html
 
+```{r table-limits, tidy=F, echo=F}
+library('tibble')
+tt<- tibble(factor=c("duration", "spatial interference","temporal interference","speed limit"),
+            `resource intensiveness` = c("low", "unclear","high","unclear"),
+            `hemifield specificity` = c("low?", "medium","high?","unclear") )
+  
 knitr::kable(
-  head(mtcars[, 1:8], 10), booktabs = TRUE,
-  caption = 'A table of the first 10 rows of the mtcars data.'
+  tt, booktabs = TRUE,
+  caption = 'Limits on multiple object tracking'
 )
+```
