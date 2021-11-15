@@ -61,7 +61,7 @@ Lack of extrapolation:
 
 Ryo Nakayama attention inertia theory
 
-What about updating of features? Well, updating of surface features seems to generally be crap, e.g. identity tracking is crap, Pailian
+What about updating of features? Well, updating of surface features seems to generally be crap, e.g. identity tracking is crap, Pailian, Saiki
 
 Integration: 
 Relation to oscillations

@@ -4,7 +4,6 @@ There are two basic approaches to understanding the abilities that underlie mult
 
 ## Do people vary much in how many objects they can track?
 
-
 @meyerhoffIndividualDifferencesVisual2020 tested fifty participants and for each one calculated the effective number of items tracked, for a display with four targets and four distractors, the modal effective number of items tracked was around two, but a substantial proportion of participants's came in at three targets or one target, and a few scored close to zero effective items tracked. 
 
 Unfortunately, in the data of @meyerhoffIndividualDifferencesVisual2020, like that of many others, there is no way to know how much of the variation between individuals is due to motivation rather than ability. Measuring motivation is not easy, but researchers should at least include what are sometimes called attention checks or catch trials to allow exclusion of participants who show clear evidence of not reading the instructions carefully or frequently not paying attention.
@@ -23,9 +22,12 @@ Ageing is likely a major source of individual differences, as older participants
 
 Variation in MOT performance is typically interpreted by researchers as variation simply in how many objects a person can track. 
 
+But the underlying reason for variation in MOT performance may not be due to variation in number of FINSTs or some other such capacity, but rather due to variation in peoples' tracking speed limit, spatial interference, or temporal interference. This does not seem to have been properly investigated.
+
 ## What tasks are most related to MOT? 
 
- Large differences have been found in spatial crowding, which probably explains a good chunk of the variance.
+ Large differences have been found in spatial crowding, which probably explains some variance. 
+The deleterious effects of crowding also show substantial individual differences [@petrovAsymmetriesIdiosyncraticHot2011], such as larger crowding zones in some types of dyslexia [@jooOptimizingTextIndividual2018], so crowding likely also contributes to some of the inter-individual variation in tracking performance.
 
 Partly to reveal what other sorts of tasks a high ability to track multiple objects indicates, @huangMeasuringInterrelationsMultiple2012 and @trevinoBridgingCognitiveNeuropsychological2021 tested large numbers of participants on several tasks. @huangMeasuringInterrelationsMultiple2012 used a set of cognitive and attentional tasks that he termed conjunction search, configuration search, counting, feature access, spatial pattern, response selection, visual short-term memory, change blindness, Raven's test of intelligence, visual marking, attentional capture, consonance-driven orienting, inhibition of return, task switching, mental rotation, and Stroop. While many of these showed high reliability of over .9, the correlations with MOT were moderate, with the highest being counting at 0.4, which required counting the number of white dots in a brief (400 ms) display. Change blindness, feature access, visual working memory, and visual marking were runner ups with correlations of around 0.3.
 <!-- @huangMeasuringInterrelationsMultiple2012 "For each variable, reliability was estimated by calculating the split-half (odd-even) correlations and the Spearman-Brown formula was used for adjustment. All of the 17 paradigms met the minimum reliability of 0.7."  So I guess these are not raw correlations he reports from then on -->

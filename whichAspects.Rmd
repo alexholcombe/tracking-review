@@ -1,5 +1,24 @@
 # Which aspect(s) of tracking determine performance? {#whichAspects}
 
+As @normanDatalimitedResourcelimitedProcesses1975 pointed out, the processes underlying task performance come in two varieties, data-limited and resource-limited. In the context of tracking we are referring to sensory data. If the targets to track go outside our visual field, it is a lack of sensory data that prevents them from being tracked. No amount of mental resources can overcome the absence of signal, hence the term data-limited. This may also be true of cases where sensory signals are not entirely absent, but they are impoverished.
+
+More subtle forms of this can explain some individual differences in task performance. For example, people with poor visual acuity may perform less well on a task than people with high visual acuity, again due to differences in the sensory data that they have to work with. Depending on the task bringing more mental resources to bear may provide little to no benefit. The classic way this is investigated is by varying the number of stimuli one needs to process. @normanDatalimitedResourcelimitedProcesses1975 illustrate this with a visual search study by BeckAmbler
+, which is most familiar from the study of visual search. If the number of stimuli one must evaluate does not affect how well a person can perform a task, this indicates the task is data-limited rather than resource-limited. Of course, attention does benefit 
+
+tracking ability. For example, people with poor visual acuity may perform less well on a task than people with high visual acuity, again due to differences in the sensory data that they have to work with. Depending on the task
+
+The other type of task limitation is resource-limited processes. These are more interesting for those interested in visual attention and the capacity limits on mental processing introduced in section \@ref(bottlenecks).
+
+
+That the number of objects one can track varies greatly with factors like speed is consistent with resource accounts. This 
+
+Every time someone discovers a factor that affects visual search performance, it is worthwhile to ask whether that factor is taxing a resource-limited process or a data-limited process. That is, will increasing the number of targets exacerbate the effect of that factor?
+
+The absence of a hard limit or 
+
+
+The particular number of objects that can be tracked with reasonable accuracy is thus highly dependent on conditions. Still, it is clear that this number is small relative to the number of objects that are simultaneously processed by early stages of the visual system. So, what aspect exactly of tracking imposes this limitation?
+
 Explain why the resource intensiveness aspect of tracking is more interesting than other aspects.
 
 Why do people perform more poorly with more targets? By definition, this means that the processes underlying tracking are capacity-limited, but by itself, that description is not very illuminating. Covert tracking is a complex task, and we would like to know which aspect(s) of it exactly are most capacity-limited.
