@@ -88,8 +88,8 @@ https://bookdown.org/yihui/bookdown/tables.html
 ```{r table-limits, tidy=F, echo=F}
 library('tibble')
 tt<- tibble(factor=c("duration", "spatial interference","temporal interference","speed limit"),
-            `resource intensiveness` = c("low", "unclear","high","unclear"),
-            `hemifield specificity` = c("low?", "medium","high?","unclear") )
+            `resource intensiveness` = c("low", "low","high","unknown"),
+            `hemifield specificity` = c("low?", "medium","high?","high") )
   
 knitr::kable(
   tt, booktabs = TRUE,

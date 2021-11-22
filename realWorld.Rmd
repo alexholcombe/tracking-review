@@ -4,7 +4,7 @@
 
 "further research is required to determine whether multiple-object tracking is actually used in day-to-day driving." @lochnerMultipleobjectTrackingDriving2014
  
- Piers found negative evidence. there's one other paper.
+ @mackenzieMultipleObjectAvoidance2021 used a multiple object avoidance task where the user used a mouse to control one of the balls that they had to prevent from colliding with the other balls. It's reminiscent of the old Asteroids video game that we opened this book with. Found decent correlations with performance on a driving simulator and with years of driving experience. In an earlier paper, some of these authors found that the MOA correlated better with driving performance than conventional MOT @mackenzieLinkAttentionalFunction2017 . @bowersCanWeImprove2013 found no correlation between MOT and  . there's one other paper.
  
 
 @harrisExaminingRolesWorking2020 low N comparing sports players
