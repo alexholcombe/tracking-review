@@ -1,24 +1,27 @@
 # Speed and time {#speedAndTime}
 
-Our perceptual systems are limited, so naturally there are speeds at which moving objects cannot be tracked. Importantly, however, tracking even of a single target falters at far lower speeds than perception of its motion. Moreover, the maximum speed at which one can track is lower when there are more targets [@holcombeExhaustingAttentionalTracking2012]. Why is tracking this way and what does it suggest about the underlying processes?
+Naturally there are speeds at which moving objects cannot be tracked. If we had a particular sort of brain, we'd be able to track any object whose motion we could perceive. But animal brains like ours provide for the perception of motion with a system that is quite independent of the processes that allow for tracking.
 
-To get to some answers, the consequences of increasing the speed of the objects in an MOT display must first be understood. In a standard MOT display, as the targets and distractors wander around the screen, they occasionally come very close to each other (in some experiments, they touch each other or even pass through each other). As discussed in section \@ref(spatialInterference), the close encounters can result in the loss of a target. That is relevant to the issue of speed because when MOT researchers vary object speed, they typically keep trial duration constant, so that the objects travel farther during the higher-speed trials. As a result, the objects have more close encounters, so the reason for poorer performance could simply be due to that.
+Motion direction is sensed by direction-selective cells that are arrayed in retinotopic cortex such that there are cells that respond fairly independently to motion in each part of the visual field. The responses of these cells, as they feed into higher motion-processing areas such as MT/MST, eventually give rise to the experience of motion, even though this does not seem to involve tracking. That is, these cells do not know where the object they are responding to has been previously, they are basically motion sensors that respond when there is motion of a particular direction in their receptive field.
 
-A first step to understanding the effect of speed, then, is to assess it without the contaminating effect of an increase in close passes. @holcombeExhaustingAttentionalTracking2012 did this by using shorter trials for fast speeds, so that objects traveled the same total distance for different speeds, and by keeping the objects very far from each other. The speed thresholds that resulted were still far below the limits on motion perception, and were much lower when two targets had to be tracked compared to when just one target was tracked. continued to be resource-intensive<!--resource-limited-->: the more targets that were tracked, the slower the speed thresholds.
+Tracking implies the existence of some index or pointer that represents that a particular object is the same as one of the set of objects designated as targets at the beginning of the trial. Even when there is only one target, this process falters at far lower speeds than perception of the target's motion [@verstratenLimitsAttentiveTracking2000]. Moreover, the maximum speed at which one can track is lower when there are more targets [@holcombeExhaustingAttentionalTracking2012]. What is it about the tracking process that gives it these properties?
 
-Even when objects are kept widely spaced, there are at least two reasons why speed could hurt performance. One is that tracking may truly be limited by speed. Another possibility, however, is that tracking has a temporal limit.
+An increase in object speed will have multiple consequences in a typical MOT experiment. In a standard MOT display, as the targets and distractors wander around the screen, they occasionally come very close to each other (in some experiments, they touch each other or even pass through each other). As discussed in section \@ref(spatialInterference), very close encounters can result in the loss of a target. That is relevant to the issue of speed because when MOT researchers vary object speed, they typically keep trial duration constant, so that the objects travel farther during the higher-speed trials. As a result, the objects have more close encounters, so the reason for poorer performance could simply be due to that.
 
-## Temporal limits
+A first step to revealing the effect of speed, then, is to assess it without the contaminating effect of an increase in close passes. @holcombeExhaustingAttentionalTracking2012 did this by by keeping the objects very far from each other as well as 
+using shorter trials for fast speeds, so that objects traveled the same total distance for different speeds, just in case there were any long-distance spatial interactions. The speed thresholds that resulted were still far below those for motion perception, suggesting that speed has a deleterious effect on tracking even without any concomitant close encounters, and in a range where the simple perception of motion is yet to be affected. Moreover, participants' speed thresholds were much lower when two targets had to be tracked compared to when just one target was tracked. One way to refer to this is to say that speed consumes the tracking resource.
 
-Close encounters aren't the only things that increase with speed in a typical MOT trial. That is, *spatial* close encounters aren't the only thing that happen more frequently with higher object speeds. *Temporal* close encounters also happen more frequently. By temporal close encounter, I mean a situation where both an object and a distractor visit the same spatial region in a short span of time.
+It is tempting to conclude that devoting more tracking resource to a target results in the associated internal pointer being able to move faster across the retina. This conclusion would be premature. There remains another possible reason that tracking falters at high speeds.
 
-While the concept of temporal close encounters, or temporal proximity, is not something that attention researchers are familiar with in the context of moving objects, it should be familiar in the context of stimuli that don't move but do change. If one flickers a light off and on at a very rapid rate (about 60 times a second, depending upon display characteristics), the flicker will not be perceived; instead, one perceives the average of the dark and light phases. That is, the individual on-phases of the light cannot be perceived due to their temporal proximity with the off-phases. This is the basis of projection in the cinema, and is the reason that you can't perceive the flicker of the long tube-style fluorescent lights that fill the ceilings of old office buildings.
+## Perceptual temporal limits
+
+When two objects appear in a common location very close in time, they will be combined by the visual system. If one flickers a light off and on at a very rapid rate (about 60 times a second, depending upon display characteristics), the flicker will not be perceived; instead, one perceives the average of the dark and light phases. That is, the individual on-phases of the light cannot be perceived due to their temporal proximity with the off-phases. This is the basis of projection in the cinema, and is the reason that you can't perceive the flicker of the long tube-style fluorescent lights that fill the ceilings of old office buildings.
 
 The same phenomenon occurs with moving objects, as Ptolemy noted in *Optics*, a book written almost two thousand years ago. Viewing a rapidly rotating potter's wheel inspired Ptolemy to write, "If spots of a color different from that of the disc are marked on it, they will appear to form circles of the same color [as the given spot] when the disc is rapidly spun."  He also noted that "This also happens in the case of shooting stars, whose light seems distended on account of their speed of motion, all according to the amount of perceptible distance it passes along with the sensible impression that arises in the visual faculty" [@smithPtolemyTheoryVisual1996]. Ptolemy was write to ascribe these phenomena to the "visual faculty" rather than to the physics of light. The early visual system continually combines or blurs together photoreceptor activations that occur in a single location within a certain amount of time.
 
 While the temporal blurring that fuses together the flickering phases of a fluorescent light, the different colors on a potter's wheel, and the successive locations of a shooting star reflects the temporal resolution of early stages of our visual system, later stages of visual processing also have temporal limits.
 
-### High-level temporal limits
+## Temporal limits on visual cognition
 
 ```{r, echo=FALSE, out.width="30%", fig.cap="Task: judge whether the red color is paired with leftward tilt or rightward title."}
 if(knitr::is_html_output()) knitr::include_graphics("movies/binding/colorgrdnt2_9fps.gif") else knitr::include_graphics("movies/binding/colorgrdnt2_2fpsStatic.png")
@@ -55,6 +58,23 @@ not something specific to features
 
 Thus, while early visual processing can deliver motion and color features even from stimuli that are temporally very close to each other, the processing required to judge which features are at the same time requires processing that fails when temporal proximity is very high 
 
+## Temporal limits on tracking
+
+An increase in close encounters isn't the only consequence of higher speeds in a standard MOT trial. At least, close encounters in *space* isn't the only consequence. There's another sort of close encounter, one that most people aren't familiar with, the *temporal* close encounter.
+
+ it should be familiar in the context of stimuli that don't move but do change. 
+ 
+which is the only kind most people are familiar with, aren't the only such phenomenon.
+
+Close encounters aren't the only phenomenon that increase with speed in a standard MOT trial. At least, close encounters in *space*, which is the only kind most people are familiar with, aren't the only such phenomenon.
+
+where two objects are near each other at one time
+
+That is, *spatial* close encounters aren't the only thing that happen more frequently with higher object speeds. *Temporal* close encounters also happen more frequently. By temporal close encounter, I mean a situation where both an object and a distractor visit the same spatial region in a short span of time.
+
+While the concept of temporal close encounters, or temporal proximity, is not something that attention researchers are familiar with in the context of moving objects,
+
+
 In an MOT display, as an object moves on from a particular location, that location will sometimes be occupied soon after by another of the moving objects. Unfortunately the processing of the first object at that location may not be completed before the second object replaces it.
 
 The inter-object intervals at a location will be long at slow object speeds and with wide spacing among objects. At high object speeds, however, these intervals can be short even if objects are widely spaced. @verstratenLimitsAttentiveTracking2000 found evidence that people then become unable to covertly track even a single target. @verstratenLimitsAttentiveTracking2000 used a circular sine-wave grating presented in an annulus. Participants fixated in the center and attempted to covertly track one light bar of the grating that was cued at the beginning of the trial. The experiment found evidence that the participants could not track accurately when the time between successive light bars of the grating was shorter than about 150 milliseconds (for the three participants tested, this figure varied from about 150 ms to about 238 ms).
@@ -84,6 +104,14 @@ if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/temporalLimits/
 ```
 
 This movie uses the same speeds as the previous one. The only difference is that eight distractors are presented in each array instead of two. In this case people find that as the objects accelerate, very quickly they feel that they can no longer track the objects. Note that this is not due to spatial interference - only when the number of equidistant objects in an array exceeds 13 will spatial interference become significant [@holcombeSplittingAttentionReduces2013, p.11; @toetTwodimensionalShapeSpatial1992; @pelliUncrowdedWindowObject2008].
+
+Spatial resolution is fine, as you can see from blah blah blah.
+
+```{r, echo=FALSE, out.width="80%", fig.cap="The purple rectangle represents the spatial resolution (width) and temporal resolution (height) of tracking. Top panel: The space-time diagram schematizes a sushi train where one piece of sushi is designated as the target. Both density (number of sushi pieces) and speed is low. Tracking is possible because tracking is able to select a single piece of sushi. Middle panel: At medium speed, despite low density, tracking fails because temporal resolution is exceeded.  Bottom panel: At low speed but medium density, tracking fails because temporal resolution is exceeded."}
+knitr::include_graphics("imagesForRmd/spatialTempResltnSushi/temporalResltnSushi.jpeg")
+```
+
+How temporal resolution can limit tracking. 
 
 The figure below summarises what we know about the limits on covertly tracking a single target. 
 
