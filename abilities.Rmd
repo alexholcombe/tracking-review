@@ -4,7 +4,7 @@ There are two basic approaches to understanding the abilities that underlie mult
 
 ## Do people vary much in how many objects they can track?
 
-@meyerhoffIndividualDifferencesVisual2020 tested fifty participants and for each one calculated the effective number of items tracked, for a display with four targets and four distractors, the modal effective number of items tracked was around two, but a substantial proportion of participants's came in at three targets or one target, and a few scored close to zero effective items tracked. 
+@meyerhoffDistractorLocationsInfluence2015b tested fifty participants and for each one calculated the effective number of items tracked, for a display with four targets and four distractors, the modal effective number of items tracked was around two, but a substantial proportion of participants's came in at three targets or one target, and a few scored close to zero effective items tracked. 
 
 Unfortunately, in the data of @meyerhoffIndividualDifferencesVisual2020, like that of many others, there is no way to know how much of the variation between individuals is due to motivation rather than ability. Measuring motivation is not easy, but researchers should at least include what are sometimes called attention checks or catch trials to allow exclusion of participants who show clear evidence of not reading the instructions carefully or frequently not paying attention.
 

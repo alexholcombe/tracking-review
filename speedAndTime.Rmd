@@ -13,11 +13,11 @@ using shorter trials for fast speeds, so that objects traveled the same total di
 
 It is tempting to conclude that devoting more tracking resource to a target results in the associated internal pointer being able to move faster across the retina. This conclusion would be premature. There remains another possible reason that tracking falters at high speeds.
 
-## Perceptual temporal limits
+## A temporal limit on perception
 
 When two objects appear in a common location very close in time, they will be combined by the visual system. If one flickers a light off and on at a very rapid rate (about 60 times a second, depending upon display characteristics), the flicker will not be perceived; instead, one perceives the average of the dark and light phases. That is, the individual on-phases of the light cannot be perceived due to their temporal proximity with the off-phases. This is the basis of projection in the cinema, and is the reason that you can't perceive the flicker of the long tube-style fluorescent lights that fill the ceilings of old office buildings.
 
-The same phenomenon occurs with moving objects, as Ptolemy noted in *Optics*, a book written almost two thousand years ago. Viewing a rapidly rotating potter's wheel inspired Ptolemy to write, "If spots of a color different from that of the disc are marked on it, they will appear to form circles of the same color [as the given spot] when the disc is rapidly spun."  He also noted that "This also happens in the case of shooting stars, whose light seems distended on account of their speed of motion, all according to the amount of perceptible distance it passes along with the sensible impression that arises in the visual faculty" [@smithPtolemyTheoryVisual1996]. Ptolemy was write to ascribe these phenomena to the "visual faculty" rather than to the physics of light. The early visual system continually combines or blurs together photoreceptor activations that occur in a single location within a certain amount of time.
+The same phenomenon occurs with moving objects, as Ptolemy noted in his *Optics*, a book written almost two thousand years ago. Viewing a rapidly rotating potter's wheel inspired Ptolemy to write, "If spots of a color different from that of the disc are marked on it, they will appear to form circles of the same color [as the given spot] when the disc is rapidly spun."  He also noted that "This also happens in the case of shooting stars, whose light seems distended on account of their speed of motion, all according to the amount of perceptible distance it passes along with the sensible impression that arises in the visual faculty" [@smithPtolemyTheoryVisual1996]. Ptolemy was correct to suggest that these phenomena are caused by our "visual faculty" rather than the physics of light. Our visual systems combine photoreceptor activations that occur in a single location within a certain amount of time, resulting in the perception of trails behind shooting stars.
 
 While the temporal blurring that fuses together the flickering phases of a fluorescent light, the different colors on a potter's wheel, and the successive locations of a shooting star reflects the temporal resolution of early stages of our visual system, later stages of visual processing also have temporal limits.
 
@@ -58,17 +58,43 @@ not something specific to features
 
 Thus, while early visual processing can deliver motion and color features even from stimuli that are temporally very close to each other, the processing required to judge which features are at the same time requires processing that fails when temporal proximity is very high 
 
+## Low-level and high-level temporal limits
+
+In the previous two sections I pointed out that while we can perceive the flicker in a rapidly changing light at rates as high as 60 Hz, some feature binding judgments begin to fail at 3 Hz. @holcombeSeeingSlowSeeing2009 reviewed all the known temporal limits on human visual judgments, from flicker to binocular depth and motion as well as the binding of various features. These limits clustered into two groups, with one set of tasks limited to 8 Hz or below and another set with limits substantially greater than 8 Hz. The summary figure below, based on one in @holcombeSeeingSlowSeeing2009 but with the addition of more recent evidence, highlights these two groups. 
+
+```{r, echo=FALSE, out.width="100%", fig.cap="The purple rectangle represents the spatial resolution (width) and temporal resolution (height) of tracking. Top panel: The space-time diagram schematizes a sushi train where one piece of sushi is designated as the target. Both density (number of sushi pieces) and speed is low. Tracking is possible because tracking is able to select a single piece of sushi. Middle panel: At medium speed, despite low density, tracking fails because temporal resolution is exceeded.  Bottom panel: At low speed but medium density, tracking fails because temporal resolution is exceeded."}
+knitr::include_graphics("imagesForRmd/temporalLimitsPerception/temporalLimits.001.jpeg")
+```
+
+<sup>1</sup>@holcombeVisualBindingEnglish2007;
+<sup>2</sup>@werkhovenVisualProcessingOptic1992;
+<sup>3</sup>@verstratenLimitsAttentiveTracking2000;
+<sup>4</sup>@cliffordRapidGlobalForm2004;
+<sup>5</sup>@holcombeEarlyBindingFeature2001;
+<sup>6</sup>@arnoldPerceptualPairingColour2005;
+<sup>7</sup>@maruyaRapidEncodingRelationships2013;
+<sup>8</sup>@rogers-ramachandranPsychophysicalEvidenceBoundary1998;
+<sup>9</sup>@morganStereoscopicDepthPerception1995a;
+<sup>10</sup>@burrContrastSensitivityHigh1982;
+<sup>11</sup>@vonsegnerRaritaeLuminis1740
+
+The percepts limited to slow rates are likely to be computed by specialized perceptual mechanisms, whereas those limited to slow rates may require attentional selection and possibly parietal or temporal cortex to bind together two of the constituent features. This idea is schematized in Figure \@ref(fig:slowFastBoxesArrows).
+
+```{r slowFastBoxesArrows, echo=FALSE, out.width="100%", fig.cap="Fast temporal limits on visual perception may reflect early and mid-level stages in the cortical processing hierarchy, while the slow limits seem to reflect later processing stages, often involving attentional selection."}
+knitr::include_graphics("imagesForRmd/temporalLimitsPerception/lowLevelFastHighLevelSlowBoxesArrows.png")
+```
+
+
 ## Temporal limits on tracking
 
-An increase in close encounters isn't the only consequence of higher speeds in a standard MOT trial. At least, close encounters in *space* isn't the only consequence. There's another sort of close encounter, one that most people aren't familiar with, the *temporal* close encounter.
+Where does object tracking fit into this? A good starting point to consider is the ambiguous apparent motion depicted in the "higher-order motion" part of Figure \@ref(fig:slowFastBoxesArrows). If those two frames are alternated, one can see apparent motion clockwise or counter-clockwise. Which direction one sees depends on attention - one can actually choose to see the figure to rotate clockwise or to rotate counter-clockwise [@wertheimerExperimentelleStudienUber1912]. @verstratenLimitsAttentiveTracking2000 found that the maximum alternation rate at which this could be done was between 4 and 8 Hz. The temporal frequency here is the rate at which a dot is presented at a location.
+In addition to this test of 2-frame apparent motion, they also presented unambiguous apparent motion by adding intermediate frames in between the the two original frames, in either the clockwise or counter-clockwise direction. This increased the maximum temporal frequency for each of three participants, but not to any higher than 8 Hz. A similar result was found for continuous motion of a grating, where temporal frequency reflects how often a bright (or dark) bar of the grating traverses any one location.
 
- it should be familiar in the context of stimuli that don't move but do change. 
- 
-which is the only kind most people are familiar with, aren't the only such phenomenon.
+Another way to think about increasing temporal frequency is that it creates close encounters in time. That is, just as increasing the display density eventually impairs tracking due to spatial close encounters (crowding), a more dense display will also mean a higher temporal frequency, with an object and a distractor visiting the same spatial region in a short span of time.
 
-Close encounters aren't the only phenomenon that increase with speed in a standard MOT trial. At least, close encounters in *space*, which is the only kind most people are familiar with, aren't the only such phenomenon.
+, in analogy to the spatial close encounters (crowding)
 
-where two objects are near each other at one time
+the same way that increasing spatial density results in  
 
 That is, *spatial* close encounters aren't the only thing that happen more frequently with higher object speeds. *Temporal* close encounters also happen more frequently. By temporal close encounter, I mean a situation where both an object and a distractor visit the same spatial region in a short span of time.
 
@@ -82,6 +108,50 @@ The inter-object intervals at a location will be long at slow object speeds and 
 @holcombeSplittingAttentionReduces2013 found a similar result (for 6 participants, a mean of 150 ms) using a circular array of discs rather than a grating. But how did they (and @verstratenLimitsAttentiveTracking2000) establish that this was caused by temporal interference rather than spatial interference or a speed limit? They capitalized on the contrasting predictions by these three phenomena when object spacing and speed are both manipulated. @holcombeSplittingAttentionReduces2013, for example, used four different inter-object spacings and many different speeds (speeds were adjusted by a staircase) to assess the speed threshold for each object spacing. If temporal interference affects performance, then a particular pattern of speed thresholds were predicted to emerge.
 
 With the circular array of equally-spaced objects used by @holcombeSplittingAttentionReduces2013, the amount of time between objects traveling over any one location is the inverse of the product of the speed and the number of objects in the array. For example, if there are four objects in the array moving at 1.75 revolutions per second, then an object will cross any given location in the circular trajectory every 140 milliseconds. Therefore, if temporal interference occurs when objects are in a location within 140 milliseconds of each other, the speed threshold for eight objects in an array should be much slower - 0.875 revolutions per second. This is indeed what was found by @holcombeSplittingAttentionReduces2013, for three different objects-per-array conditions.
+
+@holcombeSplittingAttentionReduces2013 and @roudaiaDifferentEffectsAging2017 replicated these results with the continuously-moving discs used in conventional MOT. These findings suggest an individuation limit wherein if a stimulus repeats at a particular location within a certain amount of time, about 120 ms if the limit is 8 Hz, the processes responsible for tracking fail. @vandegrindTemporalTransferProperties1973 suggested something similar when they coined the term "Gestalt fusion" to refer to how they saw the two phases of a flickering light as being simultaneously perceived when the flicker rate was above about 7 Hz.
+
+For a continuously-moving array of stimuli, Figure \@ref(fig:temporalResltnSushi) depicts how this conception explains the dependence of object tracking on speed and density of an array of moving stimuli. At low stimulus speed and density the interval between stimuli occuping any one spatial location is long, so tracking succeeds (top panel). When one increases either speed (middle panel) or density (lower panel), the interval between visits to each location decreases. 
+
+```{r temporalResltnSushi, echo=FALSE, out.width="80%", fig.cap="The purple rectangle represents the spatial resolution (width) and temporal resolution (height) of tracking. Top panel: The space-time diagram schematizes a sushi train where one piece of sushi is designated as the target. Both density (number of sushi pieces) and speed is low. Tracking is possible because tracking is able to select a single piece of sushi. Middle panel: At medium speed, despite low density, tracking fails because temporal resolution is exceeded.  Bottom panel: At low speed but medium density, tracking fails because temporal resolution is exceeded."}
+knitr::include_graphics("imagesForRmd/spatialTempResltnSushi/temporalResltnSushi.jpeg")
+```
+
+Quantitatively, the rate of stimulation of each location is the product of speed and density. For a circular array, for example, temporal frequency equals speed (in revolutions per second) times the number of discs in the circular array.
+
+The figure below summarises what we know about the limits on covertly tracking a single target. 
+
+```{r, echo=FALSE, out.width="100%", fig.cap="Spatial and temporal limits on covertly tracking one object. UPDATE THIS IMAGE WITH BETTER NUMBERS IF REVIEWERS/EDITOR APPROVE OF IT, including starting crowding at 13"}
+knitr::include_graphics("imagesForRmd/trackingLimitsMotionLimitSchematic.png")
+```
+
+Direction of motion can be perceived to at least 25 Hz [@burrContrastSensitivityHigh1982], which corresponds to much faster speeds, of course, than the ~7 Hz limit on attentive tracking. As we will describe in the "Speed limits" section below, a separate speed limit also constrains tracking, limiting trackable stimuli to those with the characteristics of the pink shaded region. The spatial acuity limit would be far to the right of the crowding limit, so together with the other limits this means that of the spatiotemporal window of visible stimuli, only a small proportion can be tracked.
+
+suggest 
+
+For that stimulus, temporal frequency is  
+
+tested continuous motion with a 
+hey also tested continuous motion rather than 2-frame apparent mo
+
+If the discs were moving continuously rather than 
+
+@verstratenLimitsAttentiveTracking2000 also increased the number
+
+
+It falls into the slow group. The paper that measured ambiguous apparent motion ("higher-order motion") in Figure \@ref(fig:slowFastBoxesArrows) also measured tracking of a single bar of a continuously moving circular grating and found limits of 4-8 Hz, depending upon the participant, which was replicated by @holcombeSplittingAttentionReduces2013 and @roudaiaDifferentEffectsAging2017 with the discs used in conventional MOT.
+
+and may be more basic than the ones that require feature identification.  Cite FujisakiNishida
+
+An increase in close encounters isn't the only consequence of higher speeds in a standard MOT trial. At least, close encounters in *space* isn't the only consequence. There's another sort of close encounter, one that most people aren't familiar with, the *temporal* close encounter.
+
+ it should be familiar in the context of stimuli that don't move but do change. 
+ 
+which is the only kind most people are familiar with, aren't the only such phenomenon.
+
+Close encounters aren't the only phenomenon that increase with speed in a standard MOT trial. At least, close encounters in *space*, which is the only kind most people are familiar with, aren't the only such phenomenon.
+
+
 
 You can get a taste of this by attempting to first track two targets in the below movie.
 
@@ -107,19 +177,8 @@ This movie uses the same speeds as the previous one. The only difference is that
 
 Spatial resolution is fine, as you can see from blah blah blah.
 
-```{r, echo=FALSE, out.width="80%", fig.cap="The purple rectangle represents the spatial resolution (width) and temporal resolution (height) of tracking. Top panel: The space-time diagram schematizes a sushi train where one piece of sushi is designated as the target. Both density (number of sushi pieces) and speed is low. Tracking is possible because tracking is able to select a single piece of sushi. Middle panel: At medium speed, despite low density, tracking fails because temporal resolution is exceeded.  Bottom panel: At low speed but medium density, tracking fails because temporal resolution is exceeded."}
-knitr::include_graphics("imagesForRmd/spatialTempResltnSushi/temporalResltnSushi.jpeg")
-```
 
-How temporal resolution can limit tracking. 
 
-The figure below summarises what we know about the limits on covertly tracking a single target. 
-
-```{r, echo=FALSE, out.width="100%", fig.cap="Spatial and temporal limits on covertly tracking one object. UPDATE THIS IMAGE WITH BETTER NUMBERS IF REVIEWERS/EDITOR APPROVE OF IT, including starting crowding at 13"}
-knitr::include_graphics("imagesForRmd/trackingLimitsMotionLimitSchematic.png")
-```
-
-Direction of motion can be perceived to at least 25 Hz [@burrContrastSensitivityHigh1982], which corresponds to much faster speeds, of course, than the ~7 Hz limit on attentive tracking. As we will describe in the "Speed limits" section below, a separate speed limit also constrains tracking, limiting trackable stimuli to those with the characteristics of the pink shaded region. The spatial acuity limit would be far to the right of the crowding limit, so together with the other limits this means that of the spatiotemporal window of visible stimuli, only a small proportion can be tracked.
 
 ## Temporal interference is resource-intensive
 

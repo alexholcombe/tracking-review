@@ -22,8 +22,8 @@ It is well-known that a decrease with target load, linear or non-linear, can be 
 ## Topics not covered by this review
 
 Retinotopic or spatiotopic and configural @yantisMultielementVisualTracking1992, @billHierarchicalStructureEmployed2020, @howeCoordinateSystemsUsed2010
-@meyerhoffDistractorLocationsInfluence2015 @liuMultipleObjectTrackingBased2005
-, role of distractors @meyerhoffDistractorLocationsInfluence2013
+@meyerhoffDistractorLocationsInfluence2015b @liuMultipleObjectTrackingBased2005
+, role of distractors 
 
 
 Role of surface features @papenmeierTrackingLocationFeatures2014
