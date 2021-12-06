@@ -23,7 +23,7 @@ While the temporal blurring that fuses together the flickering phases of a fluor
 
 ## Temporal limits on visual cognition
 
-```{r, echo=FALSE, out.width="30%", fig.cap="Task: judge whether the red color is paired with leftward tilt or rightward title."}
+```{r redRightGreenLeft, echo=FALSE, out.width="30%", fig.cap="Task: judge whether the red color is paired with leftward tilt or rightward title."}
 if(knitr::is_html_output()) knitr::include_graphics("movies/binding/colorgrdnt2_9fps.gif") else knitr::include_graphics("movies/binding/colorgrdnt2_2fpsStatic.png")
 ```
 
@@ -58,11 +58,11 @@ not something specific to features
 
 Thus, while early visual processing can deliver motion and color features even from stimuli that are temporally very close to each other, the processing required to judge which features are at the same time requires processing that fails when temporal proximity is very high 
 
-## Low-level and high-level temporal limits
+## Low-level and high-level temporal limits {#loHighLevelLims}
 
 In the previous two sections I pointed out that while we can perceive the flicker in a rapidly changing light at rates as high as 60 Hz, some feature binding judgments begin to fail at 3 Hz. @holcombeSeeingSlowSeeing2009 reviewed all the known temporal limits on human visual judgments, from flicker to binocular depth and motion as well as the binding of various features. These limits clustered into two groups, with one set of tasks limited to 8 Hz or below and another set with limits substantially greater than 8 Hz. The summary figure below, based on one in @holcombeSeeingSlowSeeing2009 but with the addition of more recent evidence, highlights these two groups. 
 
-```{r, echo=FALSE, out.width="100%", fig.cap="The purple rectangle represents the spatial resolution (width) and temporal resolution (height) of tracking. Top panel: The space-time diagram schematizes a sushi train where one piece of sushi is designated as the target. Both density (number of sushi pieces) and speed is low. Tracking is possible because tracking is able to select a single piece of sushi. Middle panel: At medium speed, despite low density, tracking fails because temporal resolution is exceeded.  Bottom panel: At low speed but medium density, tracking fails because temporal resolution is exceeded."}
+```{r temporalLims, echo=FALSE, out.width="100%", fig.cap="Temporal limits on perception"}
 knitr::include_graphics("imagesForRmd/temporalLimitsPerception/temporalLimits.001.jpeg")
 ```
 
@@ -82,11 +82,12 @@ The percepts limited to slow rates are likely to be computed by specialized perc
 
 ```{r slowFastBoxesArrows, echo=FALSE, out.width="100%", fig.cap="Fast temporal limits on visual perception may reflect early and mid-level stages in the cortical processing hierarchy, while the slow limits seem to reflect later processing stages, often involving attentional selection."}
 knitr::include_graphics("imagesForRmd/temporalLimitsPerception/lowLevelFastHighLevelSlowBoxesArrows.png")
+# Improve figure by decreasing color-motion limit to below 3 Hz
 ```
 
 ## Temporal limits on tracking
 
-Where does object tracking fit into this? A good starting point to understand is the ambiguous apparent motion depicted in the "higher-order motion" part of Figure \@ref(fig:slowFastBoxesArrows). If those two frames are alternated, one can see apparent motion clockwise or counter-clockwise. Which direction one sees depends on attention - one can actually choose to see the figure to rotate clockwise or to rotate counter-clockwise [@wertheimerExperimentelleStudienUber1912]. @verstratenLimitsAttentiveTracking2000 found that the maximum alternation rate at which this could be done was between 4 and 8 Hz. The temporal frequency here is the rate at which a dot is presented at a location.
+Where does object tracking fit into the above-reviewed temporal limits on visual judgments? A good starting point to understand is the ambiguous apparent motion depicted in the "higher-order motion" part of Figure \@ref(fig:slowFastBoxesArrows). If those two frames are alternated, one can see apparent motion clockwise or counter-clockwise. Which direction one sees depends on attention - one can actually choose to see the figure to rotate clockwise or to rotate counter-clockwise [@wertheimerExperimentelleStudienUber1912]. @verstratenLimitsAttentiveTracking2000 found that the maximum alternation rate at which this could be done was between 4 and 8 Hz. The temporal frequency here is the rate at which a dot is presented at a location.
 In addition to this test of 2-frame apparent motion, they also presented unambiguous apparent motion by adding intermediate frames in between the the two original frames, in either the clockwise or counter-clockwise direction. This increased the maximum temporal frequency for each of three participants, but not to any higher than 8 Hz.
 
 Importantly, these findings are not specific to jumpy apparent motion displays. @verstratenLimitsAttentiveTracking2000 found a similar result with continuous motion of a grating, where temporal frequency reflects how often a bright (or dark) bar of the grating traverses any one location. Specifically, they used a circular sine-wave grating presented in an annulus. Participants fixated in the center, attempted to covertly track one light bar of the grating that was cued at the beginning of the trial, and performance fell to 75% correct when the time between successive light bars of the grating was shorter than about 150 milliseconds (6.7 Hz) for the best of the three participants and about 238 ms (4 Hz) for the worst of the three.
@@ -144,19 +145,15 @@ knitr::include_graphics("imagesForRmd/trackingLimitsMotionLimitSchematic.png")
 
 Based on the studies to date, the temporal frequency limit seems to vary substantially between different participants, but 7 Hz is near the top of the range and is used for Figure \@ref(fig:singleTargetLimits). For a circular array, 7 Hz corresponds to lower and lower speeds when more and more distractors are in the array. Note that these speeds are far, far below those that correspond to the limit on motion perception documented for drifting gratings - 25 Hz [@burrContrastSensitivityHigh1982]. Spatial crowding likely imposes another limit on tracking [@holcombeObjectTrackingAbsence2014; @intriligatorSpatialResolutionVisual2001], at a point far lower than the spatial acuity limit (not shown). Finally, as we will describe in the "Speed limits" section below, an actual speed limit (as opposed to a temporal limit) also seems to constrain tracking. The combination of these limits yields the combinations of speeds and number of distractors in a circular array indicated by the pink region.
 
-These findings suggest an individuation limit wherein if a stimulus repeats at a particular location within a certain amount of time, about 120 ms if the limit is 8 Hz, the processes responsible for tracking fail. While they never studied tracking, @vandegrindTemporalTransferProperties1973 anticipated this phenomenon to some extent. They coined the term "Gestalt fusion" to refer to how they saw the two phases of a flickering light as being perceived as a single thing when the flicker rate was above approximately 7 Hz. If this is an individuation limit, it might possibly have broader consequences than simply limiting tracking. It might be the reason for some or all of the other slow temporal limits reviewed in \@ref(Low-level and high-level temporal limits) above. 
-
-First, however, an important property that we have not discussed is how resource-intensive the temporal limit on tracking is.
+These findings suggest an individuation limit wherein if a stimulus repeats at a particular location within a certain amount of time, about 120 ms if the limit is 8 Hz, the processes responsible for tracking fail. While they never studied tracking, @vandegrindTemporalTransferProperties1973 anticipated this phenomenon to some extent. They coined the term "Gestalt fusion" to refer to how they saw the two phases of a flickering light as being perceived as a single thing when the flicker rate was above approximately 7 Hz. If this is an individuation limit, it might possibly have broader consequences than simply limiting tracking. It might be the reason for some or all of the other slow temporal limits reviewed in \@ref(loHighLevelLims) above. Before considering  that in detail, however, an important property that we have not discussed is how resource-intensive the temporal limit on tracking is.
 
 ## Temporal interference is highly resource-intensive
 
 In addition to replicating the finding of @verstratenLimitsAttentiveTracking2000 of an approximately 7 Hz limit on attentional tracking, @holcombeSplittingAttentionReduces2013 also investigated the limits on tracking with two targets and with three targets. They found that the temporal limit was markedly worse for higher target loads. Specifically, while when tracking one target, `r round(1000/7)` ms had to elapse between when a target and a distractor visited a location (7 Hz), for two targets the threshold was about `r round(1000/4.2)` ms, and for three targets it was about `r round(1000/2.6)` ms. This dramatic effect of target load on temporal limit was replicated by @roudaiaDifferentEffectsAging2017, who also replicated the finding that these thresholds were more consistent with a temporal frequency limit than with a speed limit.
 
-The effect of target load on temporal limit observed by @roudaiaDifferentEffectsAging2017 was remarkably similar in size to the large effect found by @holcombeSplittingAttentionReduces2013. The eight participants tested by @holcombeSplittingAttentionReduces2013 were all relatively young men, apart from two young women. @roudaiaDifferentEffectsAging2017 tested both old and young participants, and reported a statistically significant difference. Among their young group, however, they tested only nine young men and nine young women, which for most known gender differences would be provide low statistical power, so the finding of a gender difference should be considered provisional.
+The effect of target load on temporal limit observed by @roudaiaDifferentEffectsAging2017 was remarkably similar in size to the large effect found by @holcombeSplittingAttentionReduces2013. The eight participants tested by @holcombeSplittingAttentionReduces2013 were all relatively young men, apart from two young women. @roudaiaDifferentEffectsAging2017 tested both old and young participants, and reported a statistically significant difference. Among their young group, however, they tested only nine young men and nine young women, which for most known gender differences would be provide low statistical power, so the finding of a gender difference should be considered provisional. <!--I do not discuss or show the results they found for their old (greater than 60 years) group because that group included many outliers with very low performance.  ACTUALLY NO BAD OUTLIERS AMONG OLD FOR 1 AND 2 TARGETS SO MAYBE INCLUDE THAT-->
 
-The data are plotted separately below because that is how they reported them.. I do not discuss or show the results they found for their old (greater than 60 years) group because that group included many outliers with very low performance. 
-
-```{r, echo=F, message=F, fig.cap="The results of the two experiments of Holcombe & Chen (2013) plotted with the comparable sample (young people) of Roudaia & Faubert (2017). The data symbols are horizontally offset to avoid overlap."}
+```{r trackingLimitsReview, echo=F, message=F, fig.cap="The results of the two experiments of Holcombe & Chen (2013) plotted with the comparable sample (young people) of Roudaia & Faubert (2017). The data symbols are horizontally offset to avoid overlap."}
 library(ggplot2)
 library(dplyr)
 library(tidyr)
@@ -201,7 +198,7 @@ ggplot(temporalLimitsData, aes(x=targets,y=temporalLimit, shape=experiment)) +
           panel.background = element_blank() )
 ```
 
-In each of the four datasets, one sees that the temporal limit decreases dramatically with increasing target load.
+In each of the four datasets plotted (and also in the data from the old participants excluded because of outliers), the temporal limit decreases dramatically with increasing target load. Of all the effects of increasing target load that we have discussed, this one may be the largest.
 
 <!--Adding to the evidence from @holcombeSplittingAttentionReduces2013 that the less attentional resource available per target
 
@@ -213,39 +210,34 @@ One aspect of the findings of @roudaiaDifferentEffectsAging2017 were strikingly 
 
 @roudaiaDifferentEffectsAging2017 replicated the @holcombeSplittingAttentionReduces2013 and @verstratenLimitsAttentiveTracking2000 findings that the observed speed thresholds varied in the way predicted if the underlying limit was actually a temporal frequency limit.-->
 
-In section \@ref(whichAspects), we made the point that attentional tracking is a complex task - six factors were listed there that are likely to affect tracking performance. We also emphasized that a critical issue was resource-intensiveness, in part because the most resource-intensive factors are likely to be those that are most limiting the number of objects we can track.
+Attentional tracking is a complex task - in section \@ref(whichAspects), six factors likely to affect tracking performance were listed. However, some of these factors might affect practically any task; it is those that are most resource-intensive, and thus most limit our capacity, that should be most illuminating for understanding tracking processes.
 
-. One of the most interesting things about our ability to track is its limited capacity.
+From the rather unconstrained trajectories used in most MOT studies, researchers were unable to make strong inferences about how target load was adversely affecting performance. For example, it was necessary to carefully control the distances between objects to disconfirm the suggestion that spatial interference even beyond the crowding range was the primary determinant of the effect of tracking load [@holcombeObjectTrackingAbsence2014; @holcombeCommentCapacityLimits2019]. In displays where objects come very close to each other, spatial interference may yet be a big reason for the performance decrease with target load, we **just don't know yet**.
 
-the question of which factors are most resource-intensive.
+For temporal interference, the evidence is strong that it is dramatically increased by target load. This leads to two important questions. The first is: what does this effect tell us about how tracking works? This will be deferred to the \@ref(#serialOrParallel) section, but as a preview, it supports serial switching theories of tracking.
 
-From the pattern of performance with typical MOT displays, we could not know which constraining factor(s) might have the narrowest bottlenecks and thus be most affected by target load.
+The second question is: what role does temporal interference play in typical MOT displays that use more linear trajectories? Unfortunately, none appear to have done so for temporal interference. And some of the evidence from studies that set out to investigate the role of spatial proximity might alternatively be explained by temporal proximity [e.g., @baeCloseEncountersDistracting2012]- in typical MOT displays, spatial proximity is likely to be highly correlated with temporal proximity. 
 
-Some had suggested that spatial interference was the primary determinant of the effect of tracking load [@franconeriTrackingMultipleObjects2010a], the evidence of [@holcombeObjectTrackingAbsence2014; @holcombeCommentCapacityLimits2019] is that spatial interference does not worsen much with target load. But for temporal interference, the evidence is strong that it is greatly affected by target load. This leads to two important questions.
-
-The first question is: what does this effect tell us about how tracking works? This will be deferred to the \@ref(#serialOrParallel) section, but as a preview, it supports serial switching theories of tracking.
-
-The second question is: what role does temporal interference play in typical MOT displays that use more linear trajectories? Unfortunately, while multiple studies have attempted to analyze the role of spatial interference in such displays, none appear to have done so for temporal interference. Some of the evidence from studies that investigated the role of spatial proximity might alternatively be explained by temporal proximity [e.g., @baeCloseEncountersDistracting2012]- in typical MOT displays, spatial proximity is likely to be high correlated with temporal proximity. 
-
-MENTION THAT THIS IS AN INSTANCE WHERE ATTENTION DOES FEEL LIKE IT CAN BE LEFT BEHIND AS AN OBJECT MOVES ON (IN THE OBJECTS CHAPTER I SAID THAT ATTENTION FEELS PULLED ALONG BY A MOVING OBJECT)
-
-The processing that limits flicker perception, and simple aspects of motion perception, has higher temporal limits than those that limit visual cognition.
+<!--MENTION THAT THIS IS AN INSTANCE WHERE ATTENTION DOES FEEL LIKE IT CAN BE LEFT BEHIND AS AN OBJECT MOVES ON (IN THE OBJECTS CHAPTER I SAID THAT ATTENTION FEELS PULLED ALONG BY A MOVING OBJECT)-->
 
 ## Relation to other temporal limits
 
-If it is appropriate to think of this rate as an individuation limit, then this lack of individuation might also explain the slow temporal limits reviewed in \@ref(Low-level and high-level temporal limits) above.
+A plausible interpretation of the temporal limit on tracking is that it is an attentional selection individuation limit. Above the limit, stimuli cannot be individually selected by attention for processing by higher-level, limited-capacity processes such as cognition. This could prevent successful performance of many, or all, of the tasks in the slow group of Figure \@ref(fig:temporalLims). For example, to correctly identify that red is paired with leftward-tilted in \@ref(fig:redRightGreenLeft), both the color and the orientation have to be identified. If attention is unable to select an individual color and orientation and instead has access only to two or more successive frames, then from the perspective of higher-level processes, both colors and both shapes were essentially presented simultaneously. This is illustrated in Figure \@ref(fig:temporalresolutionwaterworks).
 
-and may be more basic than the ones that require feature identification.  Cite FujisakiNishida
+```{r temporalresolutionwaterworks, echo=FALSE, out.width="80%", fig.cap="A rapidly alternating color-orientation pairing stimulus (top) is processed first by high temporal resolution feature processors, which independently determine the color and orientation. Subsequently the pairing of the two features is determined by a process that, because it is low temporal resolution, unfortunately 'sees' multiple colors and orientations simultaneously."}
+knitr::include_graphics("imagesForRmd/temporalLimitsPerception/temporalresolutionwaterworks.png")
+```
 
-An increase in close encounters isn't the only consequence of higher speeds in a standard MOT trial. At least, close encounters in *space* isn't the only consequence. There's another sort of close encounter, one that most people aren't familiar with, the *temporal* close encounter.
+Note, however, that the temporal limit on binding for this task is less than 3 Hz [@holcombeEarlyBindingFeature2001a], similar to that for superposed color and motion [@arnoldPerceptualPairingColour2005] but that the tracking limit for one target is significantly higher, close to 7 Hz \@ref(fig:trackingLimitsReview). If a task requires additional time-consuming processes beyond just individuation, it makes sense that they might have a slower limit. This may involve labeling of the features  as well as binding them [@holcombeEarlyBindingFeature2001a; @fujisakiCommonPerceptualTemporal2010].
 
- it should be familiar in the context of stimuli that don't move but do change. 
- 
-which is the only kind most people are familiar with, aren't the only such phenomenon.
+While these and other slow binding tasks seem to require a slow central binding process, the faster limit on tracking suggests that something else is happening, or really, something less. As we discuss in \@ref(identity), identification of features (such as color or orientation) does not seem to be part of basic tracking. The successive locations of a tracked object must be paired, but this may be faster than other forms of binding, both because feature identification is not required and possibly because it may piggy-back on motion perception.
 
-Close encounters aren't the only phenomenon that increase with speed in a standard MOT trial. At least, close encounters in *space*, which is the only kind most people are familiar with, aren't the only such phenomenon.
+
+<!--An increase in close encounters isn't the only consequence of higher speeds in a standard MOT trial. At least, close encounters in *space* isn't the only consequence. There's another sort of close encounter, one that most people aren't familiar with, the *temporal* close encounter.
 
 Spatial resolution is fine, as you can see from blah blah blah.
+-->
+
 
 ## Speed limits
 

@@ -11,6 +11,7 @@ output:
         twitter: yes
         facebook: no
 documentclass: book
+lof: yes
 #(doesn't work) html_document:
 # (doesn't work) code_folding: show
 
