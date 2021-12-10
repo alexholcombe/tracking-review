@@ -228,30 +228,56 @@ A plausible interpretation of the temporal limit on tracking is that it is an at
 knitr::include_graphics("imagesForRmd/temporalLimitsPerception/temporalresolutionwaterworks.png")
 ```
 
-Note, however, that the temporal limit on binding for this task is less than 3 Hz [@holcombeEarlyBindingFeature2001a], similar to that for superposed color and motion [@arnoldPerceptualPairingColour2005] but that the tracking limit for one target is significantly higher, close to 7 Hz \@ref(fig:trackingLimitsReview). If a task requires additional time-consuming processes beyond just individuation, it makes sense that they might have a slower limit. This may involve labeling of the features  as well as binding them [@holcombeEarlyBindingFeature2001a; @fujisakiCommonPerceptualTemporal2010].
-
-While these and other slow binding tasks seem to require a slow central binding process, the faster limit on tracking suggests that something else is happening, or really, something less. As we discuss in \@ref(identity), identification of features (such as color or orientation) does not seem to be part of basic tracking. The successive locations of a tracked object must be paired, but this may be faster than other forms of binding, both because feature identification is not required and possibly because it may piggy-back on motion perception.
-
+While the temporal limit on binding for this and related tasks is less than 3 Hz [@holcombeEarlyBindingFeature2001; @arnoldPerceptualPairingColour2005], the tracking limit for one target is significantly higher, close to 7 Hz \@ref(fig:trackingLimitsReview). The reason for this may be that while both tasks require individuation, the binding tasks require additional processing such as labeling of the features [@holcombeEarlyBindingFeature2001a; @fujisakiCommonPerceptualTemporal2010]. This theory is consistent with the evidence reviewed in  \@ref(identity) that encoding of features (such as color or orientation) does not occur in basic tracking. The successive locations of a tracked object must be paired, but this may be faster than other forms of binding, both because feature encoding is not required and possibly because it may piggy-back on motion perception.
 
 <!--An increase in close encounters isn't the only consequence of higher speeds in a standard MOT trial. At least, close encounters in *space* isn't the only consequence. There's another sort of close encounter, one that most people aren't familiar with, the *temporal* close encounter.
 
 Spatial resolution is fine, as you can see from blah blah blah.
 -->
 
+<!--OUTSTANDING QUESTION: Is it the distractor replacing the target that's worse or the target invading the former distractor location? -->
 
 ## Speed limits
 
-@holcombeExhaustingAttentionalTracking2012 measured performance at a wide range of speeds and quantified the speed "limit" as the speed at which performance fell to 57% correct. The objects moved along circular trajectories were used and the 57% speed threshold
+We have seen that the apparent speed limits on tracking in dense displays may actually be caused by temporal limits. This is because when there are a lot of objects in a display, at high object speeds both targets and distractors may occupy a particular location within three or four hundred milliseconds, which can impair or prevent tracking. Temporal interference is less of an issue when the targets and distractors are kept very far apart from each other. 
 
-For this 57% threshold for speed, the mean for the participants was 1.6 revolutions per target.
+When using a circular trajectory with just one target and one distractor on opposite sides, such that the distractor did not replace the target very quickly, @verstratenLimitsAttentiveTracking2000 found evidence that tracking was truly limited by speed rather than by temporal interference. What this was that the maximum speed at which participants could track was much lower than what was predicted by the 7 Hz limit found when several distractors shared the circular trajectory with the target. With one target and one distractor, the 7 Hz limit should result in a speed threshold of  3.5 revolutions per second. Instead, participants' thresholds were on average less than 2 revolutions per second. My lab found a very similar result [@holcombeSplittingAttentionReduces2013]. When we tested with 5, 8, or 12 distractors, the speed limit was close to that predicted by a 7 Hz temporal limit. But when there were only 2 distractors in the array, the average speed limit was only 1.7 rps, rather than 3.5 rps predicted by a 7 Hz limit.
 
-Specifically, while the 57% speed threshold for one target was 1.6 revolutions per second
+It seems, then that tracking of a single object is limited both by a speed limit of about 2 revolutions per second and by a temporal limit of about 7 Hz. The computer screens that were used for testing had refresh rates of 160 Hz, and when the speed of an object is very fast, one can see gaps between the successive frames, which conceivably could be contributing to the speed limit. However, when Wei-Ying Chen and I (unpublished manuscript) used a mechanical device rather than an intermittent computer display, we found a speed limit that was only slightly faster, about 2.3 rps.
+
+Changing the radius of the circular trajectory in experiments like these yielded a truly remarkable finding. Well, @verstratenLimitsAttentiveTracking2000 mentioned that for their experiments where participants had to track one bar of a circular 2-cycle grating, they also informally tested annular gratings of different sizes. When the grating was larger, the length of the path traveled by the bar when making one revolution was, of course, longer. One would therefore expect that the speed threshold, when expressed in revolutions per second, should decrease in proportion to the radius of the grating. Consider that a grating of radius 2 deg has twice the circumference as that of a 1 deg radius grating, so the revolutions per second should be halved in order for a bar to travel the same distance in the same amount of time. However, @verstratenLimitsAttentiveTracking2000 said that they saw no change in the speed limit in terms of rps. That is, participants could track an object moving twice as fast when the trajectory had a larger radius. 
+
+Wei-Ying Chen and I also found that the speed threshold, when expressed in revolutions per second, was robust to the increases in length of the trajectory associated with larger radii [@holcombeSplittingAttentionReduces2013; @holcombeExhaustingAttentionalTracking2012], despite the substantial increase in speed in terms of linear distance traveled. <!--Establishing such invariances is fundamental to scientific explanation (e.g. @woodwardExplanationInvarianceSpecial2000), and this particular near-invariance rules against naïve expectations of how speed exerts its effect.--> We will therefore refer to the speed limit as an angular speed limit.
+
+Why 
+Other than Verstraten et al. and myself and Chen, no other tracking researchers appear to have grapped with the angular speed limit, or even mentioned it.
+
+The reason that tracking is limited in this way remains obscure. <!--@holcombeSpeedLimitAttentional compared circular to linear trajectories, by having the objects travel along a diamond-shaped trajectory rather than a circle. Nine participants were tested. The mean speed threshold was 1.2 rps for both conditions. -->
+
+Most tracking researchers are yet to grapple with the angular speed limit. Despite the numerous MOT papers that manipulate speed and discuss its role, I know of no published papers (other than those co-authored by Holcombe or Verstraten) that mention this discovery. Admittedly, the speed limit may have little effect in conventional MOT displays with linear trajectories, because for the speeds tested in all or practically all such experiments, objects probably take longer than a second to ever move a full revolution around a point in the display. However, many recent papers use circular trajectories, where the angular speed limit may come into play, although again they tend to use speeds slower than 1 rps [e.g. @maechlerAttentionalTrackingTakes2021, @carlsonQuadranticDeficitReveals2007].
+
+Does the angular speed limit reflect a low-capacity process, or a more structural limitation on the speed of tracking? If the speed limit reflects a capacity limit, then we would expect lower speed limits when more targets are tracked, so that less capacity is available per target. @holcombeSplittingAttentionReduces2013 did document a decline in speed thresholds, 1.7 rps with one target to 1.2 rps with two targets and 0.8 rps with three targets. However, the temporal limits are so low for two and three targets that they may mask the speed limits. That is, the temporal limit with two targets corresponds to a speed, with three objects in a trajectory, below that of the one-target speed limit, so it is difficult to know whether the speed threshold reflects a decline in both the temporal limit and the speed limit or just the temporal limit.
+
+
+to travel the same distance in the same amount of time, the revolutions per second 
+
+
+The speed limit seems to be truly revolutionary - and by that I mean that tracking seems limited more by the rate of revolutions than by conventional speed. What do I mean by that?
+
+For larger gratings, the distance traveled by each bar per revolution is longer. Although this means that 1.5 rps corresponds to faster speed in dva per sec, Verstraten et al. (1998) reported that the speed threshold remained at 1.5 rps. 
+
+@holcombeSpeedLimitAttentional found a speed limit of 2.2 rps with two objects and 1.8 rps with three objects.
+
+
+A remarkable finding about the speed limit is that it seems the limit is truly in terms of revo
+
+a limit on the number of revolutions
 
 
 does motion perception. 
  Apparently, the more resource one can allocate to a target, the faster one can track it.
 
-mechanical device instead of CRT (Holcombe & Chen, unpublished manuscript)
+
 
 . First, they showed that objects' speeds could be increased until a tracking "speed limit" (68% threshold) where performance tracking two targets was approximately that predicted if participants could only track one of the two targets and had to guess about the other. They then examined the effect of adding a target to the other hemifield rather than the same hemifield. Performance in that condition was very close to that predicted i
 
@@ -264,18 +290,7 @@ The temporal limit on tracking was established by the observation that covert tr
 These findings suggest a speed limit on tracking. In the one-target, two objects (grating cycles) condition tested by @verstratenLimitsAttentiveTracking2000, the mean speed threshold was about 1.5 revolutions per second (rps), while @holcombeSplittingAttentionReduces2013 tested with three objects and in the one-target condition found a 1.7 rps speed threshold, whereas the speed threshold expected from the temporal limit was about 2.4 rps. 
 
 
-@verstratenLimitsAttentiveTracking2000 mentioned in passing that they informally tested annular gratings of different sizes. For larger gratings, the distance traveled by each bar per revolution is longer. Although this means that 1.5 rps corresponds to faster speed in dva per sec, Verstraten et al. (1998) reported that the speed threshold remained at 1.5 rps. 
 
-@holcombeSpeedLimitAttentional found a speed limit of 2.2 rps with two objects and 1.8 rps with three objects.
-
-
-@holcombeSplittingAttentionReduces2013 confirmed that the speed threshold was robust to the increases in length of the trajectory associated with larger radii, coming in at near 1.7 rps, even though for the larger radii tested, the speed was then much higher when expressed in Euclidean distance travelled rather than revolutions. Establishing such invariances is fundamental to scientific explanation (e.g. @woodwardExplanationInvarianceSpecial2000), and this particular near-invariance rules against naïve expectations of how speed exerts its effect.
-
-We will tentatively refer to this as an angular speed limit, to reflect the finding that it reflects revolutions rather than linear distance. The reason that tracking is limited in this way remains obscure. @holcombeSpeedLimitAttentional compared circular to linear trajectories, by having the objects travel along a diamond-shaped trajectory rather than a circle. Nine participants were tested. The mean speed threshold was 1.2 rps for both conditions. 
-
-Most tracking researchers are yet to grapple with the angular speed limit. Despite the numerous MOT papers that manipulate speed and discuss its role, I know of no published papers (other than those co-authored by Holcombe or Verstraten) that mention this discovery. Admittedly, the speed limit may have little effect in conventional MOT displays with linear trajectories, because for the speeds tested in all or practically all such experiments, objects probably take longer than a second to ever move a full revolution around a point in the display. However, many recent papers use circular trajectories, where the angular speed limit may come into play, although again they tend to use speeds slower than 1 rps [e.g. @maechlerAttentionalTrackingTakes2021, @carlsonQuadranticDeficitReveals2007].
-
-Does the angular speed limit reflect a low-capacity process, or a more structural limitation on the speed of tracking? If the speed limit reflects a capacity limit, then we would expect lower speed limits when more targets are tracked, so that less capacity is available per target. @holcombeSplittingAttentionReduces2013 did document a decline in speed thresholds, 1.7 rps with one target to 1.2 rps with two targets and 0.8 rps with three targets. However, the temporal limits are so low for two and three targets that they may mask the speed limits. That is, the temporal limit with two targets corresponds to a speed, with three objects in a trajectory, below that of the one-target speed limit, so it is difficult to know whether the speed threshold reflects a decline in both the temporal limit and the speed limit or just the temporal limit.
 
 ```{r, echo=FALSE, out.width="100%", fig.cap="Spatial and temporal limits on covertly tracking one, two, and three targets. UPDATE THIS IMAGE WITH BETTER NUMBERS IF REVIEWERS/EDITOR APPROVE OF IT"}
 knitr::include_graphics("imagesForRmd/temporalAndSpeedLimits.png")

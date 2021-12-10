@@ -1,5 +1,5 @@
 --- 
-title: "Tracking moving objects"
+title: "How humans track objects"
 author: "Alex O. Holcombe"
 date: "`r paste0('Updated on ',Sys.Date())`"
 site: bookdown::bookdown_site
@@ -29,6 +29,7 @@ github-repo: alexholcombe/tracking-review
 twitter-handle: ceptional
 #For the order of chapters, see _bookdown.yml, where they are manually specified
 ---
+<!--other titles: Tracking moving objects, How humans track objects -->
 
 # Preface {-}
 
