@@ -1,6 +1,6 @@
 # Velocity and extrapolation {#beyondLocation} 
 
-Covert tracking keeps one up to date with where objects of interest are. And knowing the locations of those objects has further benefits. In particular, location, together with color and a few other features used by "feature attention", is the main route by which top-down attentional selection occurs. But what benefits does attentional selection provide that are not already delivered by the selection associated with tracking?
+Covert tracking keeps one up to date with the locations of objects of interest. This has various benefits. In particular, location, together with color and a few other features used by "feature attention", is the main route by which top-down attentional selection occurs. But what benefits does attentional selection provide that are not already delivered by the selection associated with tracking?
 
 Recall that in section X we described evidence that if a target comes too close to another object, the two objects can get confused. They won't always be confused, because predictable trajectories and target velocity can be used to recover a target even after it completely overlaps with another (@howeMotionInformationSometimes2012) In elegant experiments, @wangRoleKinematicProperties2021 created displays
 
@@ -47,7 +47,7 @@ Atsma, J., Koning, A., & van Lier, R. (2012). Multiple object tracking: Anticipa
 
 
 
-perceived speed is what matters? @marinovicAttentionaltrackingAcuityModulated2013
+
 
 Howard et al. (2011) provided an exhaustive review.  Eye movements lag -  Lukavsky & Dechterenko (2016)
 

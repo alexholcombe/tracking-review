@@ -1,4 +1,4 @@
-# Speed and time {#speedAndTime}
+# Speed limits and temporal limits {#speedAndTime}
 
 Naturally there are speeds at which moving objects cannot be tracked. If we had a particular sort of brain, we'd be able to track any object whose motion we could perceive. But animal brains like ours provide for the perception of motion with a system that is quite independent of the processes that allow for tracking.
 
@@ -229,6 +229,12 @@ knitr::include_graphics("imagesForRmd/temporalLimitsPerception/temporalresolutio
 ```
 
 While the temporal limit on binding for this and related tasks is less than 3 Hz [@holcombeEarlyBindingFeature2001; @arnoldPerceptualPairingColour2005], the tracking limit for one target is significantly higher, close to 7 Hz \@ref(fig:trackingLimitsReview). The reason for this may be that while both tasks require individuation, the binding tasks require additional processing such as labeling of the features [@holcombeEarlyBindingFeature2001a; @fujisakiCommonPerceptualTemporal2010]. This theory is consistent with the evidence reviewed in  \@ref(identity) that encoding of features (such as color or orientation) does not occur in basic tracking. The successive locations of a tracked object must be paired, but this may be faster than other forms of binding, both because feature encoding is not required and possibly because it may piggy-back on motion perception.
+
+@marinovicAttentionaltrackingAcuityModulated2013 investigated the role of motion mechanisms with an adaptation experiment in which participants were exposed to a prolonged period of either slow or fast motion. Exposure to slow motion decreased the participants' maximum tracking speed, while exposure to fast motion actually increased it. Note that this is opposite in direction to what one might expect from other instances of sensory adaptation, wherein adaptation to high spatial frequency, for example, *reduces* the maximum spatial frequency one can perceive, which is thought to be because the underlying mechanism becomes less responsive.
+
+@marinovicAttentionaltrackingAcuityModulated2013 theorized that this reflected changes in the relative contribution of the two types of spatiotemporal filters thought to mediate speed perception. Specifically, @marinovicAttentionaltrackingAcuityModulated2013 suggested that the low-pass filters are needed to individuate a target from the distractors, because, they said, only the low-pass filters have small enough receptive fields. On that basis, adaptation 
+
+slow motion versus fast motion responsive mechanisms. 
 
 <!--An increase in close encounters isn't the only consequence of higher speeds in a standard MOT trial. At least, close encounters in *space* isn't the only consequence. There's another sort of close encounter, one that most people aren't familiar with, the *temporal* close encounter.
 
