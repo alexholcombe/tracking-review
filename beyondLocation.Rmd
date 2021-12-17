@@ -1,8 +1,120 @@
-# Velocity and extrapolation {#beyondLocation} 
+# Does tracking extrapolate future positions? {#beyondLocation} 
 
-Covert tracking keeps one up to date with the locations of objects of interest. This has various benefits. In particular, location, together with color and a few other features used by "feature attention", is the main route by which top-down attentional selection occurs. But what benefits does attentional selection provide that are not already delivered by the selection associated with tracking?
+Covert tracking keeps one up to date with the locations of objects of interest. Knowing objects' locations is sometimes important in itself. Also it allows us to quickly bring focused attention to one or more of the objects. When focused attention is applied to an object, that allows even our most limited-capacity processes to operate on the object, which seems to be necessary to, for example, make fine shape discriminations or recognize a word [@whiteVisualWordRecognition2020].
 
-Recall that in section X we described evidence that if a target comes too close to another object, the two objects can get confused. They won't always be confused, because predictable trajectories and target velocity can be used to recover a target even after it completely overlaps with another (@howeMotionInformationSometimes2012) In elegant experiments, @wangRoleKinematicProperties2021 created displays
+The information that focused attention can deliver might conceivably benefit tracking for any target frequently focused on. One possible example is the direction and speed that a target is moving in. If this information is used to anticipate future positions of the objects, then performance should be better when objects maintain straight-line trajectories than when they frequently change their direction.
+
+The evidence below suggests that the capacity limit on the use of motion information during tracking may be more severe than that on the use of position. That is, in conditions where participants can use position information to accurately track four or five targets, they may only use motion information for one or two of the targets. This may mean that the use of motion information can be identified with the extended cognitive processing of an object that likely can only occur for one or at most a few targets, which was referred to in section \@ref(whichAspects) as C≈1 processes. 
+
+@howeMotionInformationSometimes2012 compared a condition in which the objects moved in straight lines, only changing direction when they bounced off the arena's boundaries, to when the objects' trajectories were not predictable because they changed direction randomly about every half second. However, this advantage for tracking the predictable trajectories was found when there were two targets, but not when there were four targets. In these experiments, participants were allowed to move their eyes. They may have moved their eyes to follow one target, or alternatively something like the centroid of the targets (see \@ref(grouping)), and as eye movements have some associated inertia, that tendency to continue moving the eyes in the same direction might have contributed to the predictable trajectory benefit, and it makes sense that this would boost conditions with fewer targets more given that the eyes only move in one direction at a time. @luuExtrapolationOccursMultiple2015 followed up on the @howeMotionInformationSometimes2012 results using similar experiment parameters but added a requirement that participants fixate at the center of the screen throughout a trial, and found a very similar pattern of results.
+
+These results converge nicely with the findings of @fencsikRoleLocationMotion2007, who made targets invisible for a brief period (307 ms) and participants attempted to continue tracking when they re-appeared after the interval in the locations expected if they had continued moving in the same direction and speed as when they disappeared. Participants were able to do this when there were one or two targets but not four targets, as evidenced by better performance compared to a control condition where prior motion information was not available.
+
+@wangRoleKinematicProperties2021 devised displays that allowed them to compare the extent to which participants used position information, velocity, and acceleration during tracking. Consistent with previous investigations, velocity was used less than position, and was subject to a more severe capacity limit. There was no evidence that acceleration was used at all.
+
+## Velocity for extrapolation, or as a feature for correspondence matching?
+
+To the extent that motion information is used during tracking, it could be used in two different ways. One is to solve what is referred to as the correspondence problem. To understand this idea, imagine that the moving objects in an MOT display were sampled by a computer only once every three hundred milliseconds (something like this may be what the brain does when there are several targets, if attention samples objects serially - \@ref(serialOrParallel)). The correspondence problem is to determine the correspondence between the objects of the two frames. That is, solving the correspondence problem means knowing where an object in the first frame is in the second frame. This is not at all a theoretical problem - the rise of CCTV a few decades ago sparked a rapid growth in the development of algorithms for tracking objects in low frame rate video [@kamkarMultipletargetTrackingHuman2020]. The correct answers for which objects in frames 1 and 2 correspond to each other will in many cases be provided by the nearest-neighbor match. Nearest-neighbor simply means matching each object in frame 1 to that closest to it in frame 2.
+
+For some object trajectories, the nearest neighbor match yields the wrong answer to the correspondence problem. For example, if in the interval between the two sampled frames, a distractor moving toward the target ends up very close to a target's location in frame 1, while the target has moved farther from its frame 1 location, then using nearest neighbor will mistakenly match the target in frame 1 with a distractor in frame 2.
+
+Using nearest-velocity matching in conjunction with nearest-neighbor can help. Velocity, of course, refers to both an object's direction and its speed. Because moving objects on average maintain their current velocity for at least a few hundred milliseconds, when two objects in frame 2 are both very close to the location a target occupied in frame 1, the target is likely to be the object whose velocity is most similar to the velocity of the target in frame 1.
+
+The use of nearest velocity matching to solve the correspondence problem must be distinguished from extrapolation. Extrapolation refers to using motion information to predict future positions of objects, which also can help solve the correspondence problem. In some circumstances, extrapolation can help to solve the correspondence problem, as if objects do not change motion direction frequently, the position they are predicted to be in via extrapolation can be better to use for the nearest-neighbor matching than is its sampled position.
+
+"This is also consistent with previous behavioral work wherein observers controlled object inertia from trial to trial in an attempt to identify trials that felt easiest. Responses were extremely noisy, and perfor- mance was largely invariant with respect to inertia (Vul et al., 2009)."
+
+The experiments reviewed above found evidence for the use of motion information, but that evidence is consistent with use of either motion as a feature for velocity matching or alternatively using motion to create extrapolated representations that are then used for something like nearest-neighbor matching. However, the results from two other paradigms find little to no evidence of extrapolation, which suggests that velocity matching may be the way that motion information is used.
+
+The first paradigm that has been used to go looking for evidence of extrapolation is called the target recovery paradigm, which was developed by @keaneMotionExtrapolationEmployed2006. They had objects abruptly disappear during MOT and then reappear hundreds of milliseconds later. In their "move" conditions, they re-appeared further along the trajectory they would take had they continued with the same velocity, whereas in "non-move" conditions they would reappear in the same position they had disappeared in. Performance was uniformly worse in the move conditions than in the non-move conditions. A follow-up study by @franconeriSimpleProximityHeuristic2012 found the same result.
+
+The possibility of extrapolation has also been explored by simply asking participants to report the last location of a target or targets after they disappear, by clicking with a mouse on the screen. These studies have predominantly found that the locations participants report are not shifted in the direction of motion. Instead, the locations they report often lag the final locations of the target, and this lag increases with the number of targets tracked [@howardTrackingChangingFeatures2008; @howardPositionRepresentationsLag2011]. An exception is that @iordanescuDemandbasedDynamicDistribution2009 found that people clicked on average slightly ahead of the target's last position. @howardPositionRepresentationsLag2011 tried but failed to replicate this result, however. @@iordanescuDemandbasedDynamicDistribution2009 did not vary the number of targets to track, but @howardTrackingChangingFeatures2008 and @howardPositionRepresentationsLag2011 both did and found that the lag of the positions participants clicked on increased with the number of targets tracked. This, of course, supports a serial position sampling theory, as discussed in \@ref(serialOrParallel).
+
+## Simulation evidence finds that extrapolation has little value
+
+These results accord with the findings of a study of the optimal strategy for solving multiple object tracking. @zhongWhyPeopleAppear2014 turned a Kalman filter loose on estimating object positions for use to solve the correspondence problem in MOT. The term "filter" in "Kalman filter" can mislead people - the Kalman filter is an algorithm that learns to estimate, in Bayesian fashion, the current position of the targets. Bayesian estimation is appropriate because the sensory estimates of the objects are not precise - the simulations of @zhongWhyPeopleAppear2014 assume that the sensory error is Gaussian-distributed, which is a reasonable approximation, although @zhongWhyPeopleAppear2014 also make various simplifying assumptions, such as that the Gaussian error has the same variance throughout the visual field.
+
+The Kalman filter makes a prediction of the object's current position, based on its best estimate of the object's last position and its velocity. This prediction, based on previous sensory position signals and a velocity estimated from them, is combined with the current sensory position signal to yield the estimate of the object's current position. The relative weights assigned to the prediction and the sensory signal are determined by an updating process that arrives at the optimal weights under certain assumptions. 
+
+@zhongWhyPeopleAppear2014 took the position estimates of the targets provided by the Kalman filter on each time step and used them to solve the correspondence problem. That is, rather than matching the sensory position data of the current frame to each sensory position datum from the previous frame believed to have been from a target, instead of this sensory data from the previous frame, they used the Kalman filter estimates of each target's position. @zhongWhyPeopleAppear2014 expected that simulated MOT task accuracy would be substantially higher when the Kalman filter was used, because the Kalman filter estimates of each target's position are substantially more accurate than the 'raw' sensory data.
+
+To the surprise of @zhongWhyPeopleAppear2014, the simulated MOT performance was not substantially higher for the Kalman filter than when the simpler sensory data was used. After determining that this finding was robust to a range of parameter values for the simulation, @zhongWhyPeopleAppear2014 concluded that extrapolation has very little benefit for the MOT task. To understand why, they suggested that we must first consider what causes errors in the MOT task. As I have suggested in other sections of this book, they believe that close encounters between targets and distractors causes the majority of errors. During the intervals when the targets and distractors are far from each other, there is no correspondence ambiguity and their simulations do not make mistakes. Thus, whether or not one extrapolates  makes no difference to task performance during those intervals.
+
+The errors in MOT occur largely when a target and a distractor come close to each other, in space or in time. During a close encounter between a target and a distractor, one may end up tracking the distractor rather than the target.
+ @baeCloseEncountersDistracting2012 @drewSwappingDroppingElectrophysiological2012
+
+Can extrapolation 
+Those close encounters 
+
+however, the sensory noise
+
+The main reason for this is that errors in the MOT task simulation were a result of close encounters between targets and distractors, but the predictive component of 
+
+occurred due to close encounters of targets and distractors 
+
+the Kalman filter did not 
+
+One aspect of this was that the Kalman filter itself 
+
+This suggests that extrapolation does not benefit MOT performance in the conditions of noisy sensory position data like that of our visual systems.
+
+from the previous frame and 
+
+to the sensory position data of the current frame, they instead used the Kalman filter estimates of each target's sensory position
+
+sensory position data from the previous frame to the sensory position data of the current frame, they instead used tried  Kalman filter position es
+
+They compared the resulting MOT task accuracy with what occurred if they simply took the sensory observations and used them. Because the Kalman filter provides a significantly more accurate position estimate, @zhongWhyPeopleAppear2014 expected that simulated MOT task accuracy would be substantially higher than when the sensory observations were used.
+
+(because it combines its previous estimate with the present observation, averaging out some of the noise) and also provide a more up-
+
+Rather than using the nearest-neighbor rule, they minimized the sum of the distances between the targets' position estimates provided by the Kalman filter and the new sensory observations
+
+set out to use a K, they expected that 
+
+Intuitively, they expected that the filter, as it adjusted the weights it assigned to sampled position, sampled velocity, and 
+
+solving the correspondence problem in 
+
+Another behavioral paradigm in which participants report the last position of an object does frequently elicit evidence of extrapolation. In this "representational momentum" paradigm, participants are typically shown only a single moving object and asked to report the object's final position after it suddenly disappears. On average, participants usually indicate a position displaced in the object's final direction of motion. @hubbardRepresentationalMomentumRelated2005 provides an extensive review of the large literature. Displacement has also been found in the direction of gravity. The phenomenon may reflect C=1 cognitive processes, but this remains uncertain because the number of objects is rarely or never varied. A similar extrapolation phenomenon has been reported in memory for frozen-action photographs, wherein . For example, "Freyd (1983) presented frozen- action photographs drawn from a longer motion sequence (e.g., waves crashing on a beach), and observers judged whether a subsequently presented probe photograph was the same as or different from the original photograph. Probes drawn from slightly later in the sequence required more time to reject than did probes drawn from slightly earlier in the sequence. Futterweit and Beilin (1994) pre- sented frozen-action photographs and nonaction (e.g., a still life or a person standing still) photographs. The ob- servers were slower and less accurate when probes for frozen-action photographs were drawn from slightly later in the sequence than when probes were drawn from slightly earlier in the sequence, but no such asymmetries in responding were found with nonaction photographs."
+
+The effect increases with retention interval, and may be a more cognitive mechanism, as it has been suggested that  Rep- resentational momentum occurs in memory for implied motion stimuli and  neither of which elicits pursuit eye movements.
+
+the same 
+
+does frequently elic
+that elicts 
+
+Another paradigm that might have yi
+
+Lukavsky Dechterenko
+
+are inconsistent with much extrapolation.
+
+And anyway @zhongWhyPeopleAppear2014
+
+Velocity matching might happen through the sensory traces advocated by Tripathy
+
+were unable to distinguish between use of motion information as a feature to help solve the correspondence problem and the use of motion information 
+
+
+<!--I never realized that for short inter-target visits like with two targets, motion mechanisms may solve the correspondence problem, which. I never realized that the theory that predicts a linear increase in temporal limit assumes that the correspondence problem is solved like an ideal observer.
+A new synthesis: the correspondence problem cannot be solved. But it could if we were extrapolating - circular trajectories would not be a problem, even if you used only the linear velocity rather than incorporating the curvature. Therefore we are not extrapolating. Are we solving the correspondence problem? If we weren't, then the motion should look degenerate, with wagon wheels happening and such. Which I think is exactly what MacDonald & vanRullen found with multiple wagon wheels? 
+-->
+
+Is the visual system even capable of nearest-neighbor matching?
+
+
+But Horowitz found your knowledge about motion direction is less restricted
+
+This suggests that participants may or to recover targets
+
+
+<!--
+has various benefits. In particular, top-down attentional selection, which is necessary for doing various mental operations on an object of interest, mainly uses location as the index for selecting objects (although color and a few other features may also be used).
+together with color and a few other features used by "feature attention", is the main route by which top-down attentional selection occurs. But what benefits does attentional selection provide that are not already delivered by the selection associated with tracking?-->
+
+Recall that in section X we described evidence that if a target comes too close to another object, the two objects can get confused. They won't always be confused, because predictable trajectories and target velocity can be used to recover a target even after it completely overlaps with another (@howeMotionInformationSometimes2012) 
 
 When pursuing a single target with the eyes, @chenAttentionAllocatedClosely2017 used EEG evidence to show enhancement ahead of the target
 
@@ -38,26 +150,15 @@ Extrapolation theory predicts
 * attention will be right on the target.
 * Linear effect of velocity
 
-Luu and Howe’s results. There were three key findings:
-􏰐 Mean tracking accuracy was higher with predict- able motion.
-􏰐 Predictable motion increased accuracy more for two targets than for four targets.
-􏰐 The improvement in accuracy was statistically significant for two targets but not for four targets.
+Lack of extrapolation:
+
+@howardPositionRepresentationsLag2011 included a review of the literature on keeping up with current position.  Eye movements lag -  @lukavskyGazePositionLagging2016
+
 
 Atsma, J., Koning, A., & van Lier, R. (2012). Multiple object tracking: Anticipatory attention doesn’t “bounce.” Journal of Vision, 12(13), 1–1. Found anticipatory attention in the direction of the object movement. Only tested 3 targets and 1 target. Didn’t test the backward direction I don’t think to see whether that was even better!!!
 
 
 
-
-
-Howard et al. (2011) provided an exhaustive review.  Eye movements lag -  Lukavsky & Dechterenko (2016)
-
-@fencsikRoleLocationMotion2007 @howeMotionInformationSometimes2012 both found evidence that motion is used for one or two targets but not more
-
-Lack of extrapolation:
-
-@fencsikRoleLocationMotion2007 found it for one and two targets but not more
-
-@howardPositionRepresentationsLag2011 included a review of the literature on keeping up with current position.  Eye movements lag -  @lukavskyGazePositionLagging2016
 
 Ryo Nakayama attention inertia theory
 

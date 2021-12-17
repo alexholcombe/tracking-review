@@ -1,4 +1,4 @@
-# Grouping
+# Grouping {#grouping}
 
 Carving the scene into objects is not the only segmenting that is done by the visual system. We also perceive groups, formed by a variety of cues, as chronicled by the Gestalt psychologists. It is quite possible, likely even, that tracking follows entire groups rather than individual elements of a group. @alzahabiEnsemblePerceptionMultipleobject2021 used clusters of several discs as targets and distractors. These clusters maintained a constant spatial arrangement as they wandered about the display. Participants seemed to do well at tracking these clusters. Unfortunately these researchers did not rule out the possibility that participants were tracking just one disc of each cluster, however, and I am not aware of any work that provided strong evidence that a tracking focus tracks an entire group.
 

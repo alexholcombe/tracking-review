@@ -26,7 +26,7 @@ Why do people perform more poorly with more targets? By definition, this means t
 Below is a list of candidate reasons for the factors that impair performance more when there are more targets:
 In a typical MOT task, any of the below are candidates for being one of the reasons, or the main reason, that performance declines with number of targets:
 
-1. General cognition (C=1 processes)
+1. General cognition (C≈1 processes)
 1. Concurrent tasks
 1. Duration that one can sustain attention
 1. Spatial selection of multiple locations (even static ones)
@@ -38,15 +38,15 @@ This section will explain what is meant by each of these factors. The most impor
 
 <!-- Each of these processes could be resource-limited or not resource-limited. That is, some of these effects may be bigger when one is attending to more targets. This helps fractionate tracking into different kinds of constituent processes -->
 
-## General cognition (C=1 processes)
+## General cognition (C≈1 processes)
 
-In introducing the concept of a bottleneck or capacity limit in the previous section, I used the example of math problems. Using our capacity for reasoning and symbol manipulation, we can perform a wide array of arbitrary tasks. We therefore should not be surprised by our ability to track a *single* target. We know that we have a visual system that makes the position and direction of motion of objects on our retina available to cognition, and that using our ability to think about where an object is going and deliberately move our attention to a future anticipated location, we might muddle through tracking a single object. For purposes of illustration, let us call the processes involved "C=1 processes" to reflect the possibility that some cognitive processes involved have a capacity of only one object.
+In introducing the concept of a bottleneck or capacity limit in the previous section, I used the example of math problems. Using our capacity for reasoning and symbol manipulation, we can perform a wide array of arbitrary tasks. We therefore should not be surprised by our ability to track a *single* target. We know that we have a visual system that makes the position and direction of motion of objects on our retina available to cognition, and that using our ability to think about where an object is going and deliberately move our attention to a future anticipated location, we might muddle through tracking a single object. For purposes of illustration, let us call the processes involved "C≈1 processes" to reflect the possibility that some cognitive processes involved have a capacity of only one object.
 
 Oberauer
 
 What makes MOT interesting to many is that we can track more than one target. This implicates the involvement of another, higher-capacity sort of processing. The contribution to MOT of two kinds of processing, with different capacity limits, complicates the interpretation of MOT results. Even when participants are asked to track several targets, one can expect that C=1 processes are contributing to overall performance, even if they are only involved in the processing of one of the targets.
 
-Thus, when researchers contrast tracking performance with different numbers of targets, one reason for the decline in performance may be that C=1 processes are, in each condition, processing only a single target, so performance declines in inverse proportion to the number of targets.
+Thus, when researchers contrast tracking performance with different numbers of targets, one reason for the decline in performance may be that C≈1 processes are, in each condition, processing only a single target, so performance declines in inverse proportion to the number of targets.
 
 <!-- Unfortunately, researchers frequently neglect the fact that two sorts of mental abilities likely contribute to MOT performance: one or some limited in capacity to just a single target, and others with a greater processing capacity.  -->
 

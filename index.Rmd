@@ -45,6 +45,11 @@ Contact me (he/him) with any comments via [twitter](https://twitter.com/ceptiona
 
 ![](imagesForRmd/corellaOnShoulder2020croppedBlurredByAdobeOnline.jpg){width=20%}
 
+## Acknowledgments
+
+Thanks to Hrag Pailian for commments and high-resolution figures of his work. Thanks to Lorella Battelli for comments.
+
+
 <!-- To launch CANVAS VIDEOS, I tried looking at the private hyperlink within the Canvas page and used
 https://www.url-encode-decode.com to unescape the characters, but that yields failed launch:
 

@@ -24,6 +24,7 @@ Variation in MOT performance is typically interpreted by researchers as variatio
 
 But the underlying reason for variation in MOT performance may not be due to variation in number of FINSTs or some other such capacity, but rather due to variation in peoples' tracking speed limit, spatial interference, or temporal interference. This does not seem to have been properly investigated.
 
+
 ## What tasks are most related to MOT? 
 
  Large differences have been found in spatial crowding, which probably explains some variance. 

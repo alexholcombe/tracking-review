@@ -18,6 +18,11 @@ Early work had concluded that MOT could not reflect serial position sampling @py
 
 It is well-known that a decrease with target load, linear or non-linear, can be explained by parallel models as well as serial models.
 
+## Recommendations
+
+Always use several targets, not just two or three, to dilute the influence of C=1 processes.
+
+Always test for hemifield specificity.
 
 ## Topics not covered by this review
 
