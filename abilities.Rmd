@@ -17,6 +17,8 @@ Although they did not vary the number of targets participants had to track, @hua
 
 @wilmerMultipleObjectTracking2016 Multiple object tracking predicts math potential
 
+@wilbiksIndividualDifferencesMultiple2020 I haven't read this one but do they account for lapse rate?
+
 Ageing is likely a major source of individual differences, as older participants perform much worse than younger participants [@trickAgerelatedDifferencesMultipleobject2005; @sekulerAgerelatedChangesAttentional2008; @roudaiaDifferentEffectsAging2017]. Using a task requiring participants to detect which of multiple objects had changed its trajectory, @kennedyEarlyAgerelatedDecline2009 found a steep decline between 30 and 60 years, where the effective numbers of tracked trajectories during MTT dropped by about 20% with each decade of aging, which could not be explained by a drop in visual acuity. 
 
 

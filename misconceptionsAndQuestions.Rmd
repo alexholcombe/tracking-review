@@ -10,6 +10,14 @@ Thus, while many potential athlete users may imagine that a test of attention te
 
 ## The decline of Pylyshyn's FINST theory
 
+We've come a long way. One way to see that is
+
+"whereas at high speeds, only one target could be tracked. This is strong evidence against Pylyshyn’s (1989, 2006) account, which predicts that capacity should be constant."
+
+Although CDA findings suggest there is something tracking number of objects rather than resources expended @drewVogel @balabanObjectRepresentationsVisual2016, I don't know that it supports a limit on this
+
+But the CDA suggests there 
+
 At the time of this writing, Pylyshyn's theory is the featured theory on the Wikipedia page for multiple object tracking, and it is frequently invoked in the scholarly literature as well.
 
 Further undermines Pylyshyn's conception
@@ -23,6 +31,8 @@ It is well-known that a decrease with target load, linear or non-linear, can be 
 Always use several targets, not just two or three, to dilute the influence of C=1 processes.
 
 Always test for hemifield specificity.
+
+The effect increases with retention interval, and may be a more cognitive mechanism, as it has been suggested that  Rep- resentational momentum occurs in memory for implied motion stimuli and  neither of which elicits pursuit eye movements.
 
 ## Topics not covered by this review
 
