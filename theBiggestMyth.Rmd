@@ -1,6 +1,6 @@
-# The biggest myth {#biggestMyth}
+# The biggest myth of object tracking {#biggestMyth}
 
-It is often stated in the literature that people can only track four or five objects. @doranRoleVisualAttention2010, for example, claim that "the main finding" from the object tracking literature "is that observers can accurately track approximately four objects and that once this limit is exceeded, accuracy declines precipitously." Similarly, writing about the "object tracking system", @piazzaNeurocognitiveStartupTools2010 wrote that "One of the defining properties of this system is that it is limited in capacity to three to four individuals at a time".
+According to many papers in the psychological literature, people can only track four or five objects. @doranRoleVisualAttention2010, for example, claim that "the main finding" from the object tracking literature "is that observers can accurately track approximately four objects and that once this limit is exceeded, accuracy declines precipitously." Similarly, writing about the "object tracking system", @piazzaNeurocognitiveStartupTools2010 wrote that "One of the defining properties of this system is that it is limited in capacity to three to four individuals at a time".
 
 This biggest myth about tracking is actually two claims. The first is that there is a constant limit of around four objects. The second is that, regardless of whether the limit varies across circumstances, accuracy declines precipitously [@doranRoleVisualAttention2010] when the limit is reached.
 

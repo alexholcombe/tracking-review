@@ -70,6 +70,8 @@ In the literature, the term "representational momentum" is applied to both the e
 
 ## Where does extrapolation stand?
 
+" serial selection provides access to other object features, such as a target’s motion history" @lovettSelectionEnablesEnhancement2019
+
 When pursuing a single target with the eyes, @chenAttentionAllocatedClosely2017 used EEG evidence to show enhancement ahead of the target
 
 

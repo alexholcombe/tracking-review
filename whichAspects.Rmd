@@ -5,6 +5,8 @@ As @normanDatalimitedResourcelimitedProcesses1975 pointed out, the processes und
 More subtle forms of this can explain some individual differences in task performance. For example, people with poor visual acuity may perform less well on a task than people with high visual acuity, again due to differences in the sensory data that they have to work with. Depending on the task bringing more mental resources to bear may provide little to no benefit. The classic way this is investigated is by varying the number of stimuli one needs to process. @normanDatalimitedResourcelimitedProcesses1975 illustrate this with a visual search study by BeckAmbler
 , which is most familiar from the study of visual search. If the number of stimuli one must evaluate does not affect how well a person can perform a task, this indicates the task is data-limited rather than resource-limited. Of course, attention does benefit 
 
+More reflections on the relation of the resource concept to underlying mechanisms is in section \@ref(spatialInterference)
+
 tracking ability. For example, people with poor visual acuity may perform less well on a task than people with high visual acuity, again due to differences in the sensory data that they have to work with. Depending on the task
 
 The other type of task limitation is resource-limited processes. These are more interesting for those interested in visual attention and the capacity limits on mental processing introduced in section \@ref(bottlenecks).
