@@ -3,6 +3,8 @@
 <!-- What can a shell game tell us about perception?
 -->
 
+Is it just another paradigm for studying attention? No - hemisphere independence, where but not what.
+
 ## Tracking task short description and anecdotes
 
 On the road, drivers monitor the movements of others’ vehicles. In conference halls, scientists monitor the position and posture of other researchers relative to the ones they are chatting to, in order to best time their approach. At the beach, parents keep watch as their children move in and out of the water. On the sports field, players often find themselves trying to keep track of multiple team-mates and opponents and their spatial relationships to the ball.
