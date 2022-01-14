@@ -43,12 +43,13 @@ You can read this [here on the web](https://tracking.whatanimalssee.com/index.ht
 
 Contact me (he/him) with any comments via [twitter](https://twitter.com/ceptional) or email - alex.holcombe@sydney.edu.au
 
-```{r Alex, echo=FALSE, out.width="25%", fig.cap="Alex Holcombe, grinning in Tasmania in 2020. Photo: Simine Vazire."}
+```{r Alex, echo=FALSE, out.width="25%", fig.cap="Alex Holcombe, visiting Tasmania in 2020. Photo: Simine Vazire."}
 knitr::include_graphics("imagesForRmd/corellaOnShoulder2020croppedBlurredByAdobeOnline.jpg")
 ```
 
 I thank Hrag Pailian and Lorella Battelli for helpful comments, and Hrag Pailian for providing high-resolution figures of his work.
 
+<!--Reviewers: Hyona/Pailian/Saiki for identity chapter; Piers Howe / John Palmer/Daniel Little for serial/parallel; Srimant Tripathy for sensory memory -->
 
 <!-- To launch CANVAS VIDEOS, I tried looking at the private hyperlink within the Canvas page and used
 https://www.url-encode-decode.com to unescape the characters, but that yields failed launch:

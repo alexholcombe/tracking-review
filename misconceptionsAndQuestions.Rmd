@@ -12,6 +12,10 @@ Thus, while many potential athlete users may imagine that a test of attention te
 
 We've come a long way. One way to see that is
 
+These findings rebut Pylyshyn's theory that tracking reflects preattentive indices [@schollWhatHaveWe2008]
+
+"Our pupil data (see also Alnæs et al., 2014) indicate that both MIT and MOT are attention-demanding (thus ruling out preattentive models, such as FINST of Pylyshyn, 1989), " @oksama
+
 "whereas at high speeds, only one target could be tracked. This is strong evidence against Pylyshyn’s (1989, 2006) account, which predicts that capacity should be constant."
 
 Although CDA findings suggest there is something tracking number of objects rather than resources expended @drewVogel @balabanObjectRepresentationsVisual2016, I don't know that it supports a limit on this
