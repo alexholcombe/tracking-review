@@ -14,6 +14,8 @@ We've come a long way. One way to see that is
 
 These findings rebut Pylyshyn's theory that tracking reflects preattentive indices [@schollWhatHaveWe2008]
 
+"The assumption that spatial indexes are provided by VSTM is at odds with the models of multiple object tracking, which posit that no memory is needed to perform the task" Pylyshyn1989 , Yantis1992
+
 "Our pupil data (see also Alnæs et al., 2014) indicate that both MIT and MOT are attention-demanding (thus ruling out preattentive models, such as FINST of Pylyshyn, 1989), " @oksama
 
 "whereas at high speeds, only one target could be tracked. This is strong evidence against Pylyshyn’s (1989, 2006) account, which predicts that capacity should be constant."
@@ -37,6 +39,8 @@ Always use several targets, not just two or three, to dilute the influence of C=
 Always test for hemifield specificity.
 
 The effect increases with retention interval, and may be a more cognitive mechanism, as it has been suggested that  Rep- resentational momentum occurs in memory for implied motion stimuli and  neither of which elicits pursuit eye movements.
+
+Don't model random trajectory data, that probably doesn't constrain models enough. Show you can model both spatial crowding and temporal crowding  Another strategy is to model much larger sets of data, at an individual trial level; previous efforts seem to have modelled data from at most two different MOT experiments.
 
 ## Topics not covered by this review
 
