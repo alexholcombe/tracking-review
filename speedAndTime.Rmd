@@ -113,7 +113,7 @@ if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/temporalLimits/
 
 Many people can track the targets even at the movie's fastest speed of approximately 0.6 rps (the exact speed it reached depends on your computer). This is to be expected, because at 0.6 rps, 3 objects corresponds to a an inter-object interval of 556 milliseconds, far higher than the temporal limit. The situation is quite different, however, for the below movie. If the movie isn't displayed properly, view it [here](movies/MOTmovies/temporalLimits/2targets9objectsPerArray.gif).
 
-```{r, echo=FALSE, out.width="100%", fig.cap="Fixate on the dot in the center, track the two targets that are initially white, and note the speed at which you are no longer able to track."}
+```{r twoTargetsTemporalLimit, echo=FALSE, out.width="100%", fig.cap="Fixate on the dot in the center, track the two targets that are initially white, and note the speed at which you are no longer able to track."}
 #Work-around to make GIFs work by avoiding including them in non-html outputs!
 #https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
 if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/temporalLimits/2targets9objectsPerArray.gif") else knitr::include_graphics("movies/MOTmovies/temporalLimits/static_2targets9objectsPerArray.gif")

@@ -1,5 +1,7 @@
 # The role of motion {#beyondLocation} 
 
+NEED TO FIX THIS, MAYBE BY FOXUSING ENIRELY ON EXTRAPOLATION AND KICKING MOST OF VELOCITY AS A FEATURE TO THE RESOLUTION CHAPTER
+
 Covert tracking keeps one up to date with the locations of objects of interest. Knowing objects' locations is sometimes important in itself. Also it allows us to quickly bring focused attention to one or more of the objects. When focused attention is applied to an object, that allows even our most limited-capacity processes to operate on the object, which seems to be necessary to, for example, make fine shape discriminations or recognize a word [@whiteVisualWordRecognition2020].
 
 The information that focused attention can deliver might conceivably benefit tracking for any target frequently focused on. One possible example is the direction and speed that a target is moving in. If this information is used to anticipate future positions of the objects, then performance should be better when objects maintain straight-line trajectories than when they frequently change their direction.

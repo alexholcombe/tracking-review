@@ -43,7 +43,7 @@ You can read this [here on the web](https://tracking.whatanimalssee.com/index.ht
 
 Contact me (he/him) with any comments via [twitter](https://twitter.com/ceptional) or email - alex.holcombe@sydney.edu.au
 
-```{r Alex, echo=FALSE, out.width="25%", fig.cap="Me, visiting Tasmania in 2020. Photo: Simine Vazire."}
+```{r AlexPhoto, echo=FALSE, out.width="25%"}
 knitr::include_graphics("imagesForRmd/corellaOnShoulder2020croppedBlurredByAdobeOnline.jpg")
 ```
 
