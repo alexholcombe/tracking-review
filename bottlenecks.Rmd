@@ -31,7 +31,9 @@ Our visual system processes each of the shapes simultaneously, which can make th
 
 For a limited capacity process such as word recognition to do its job, something is needed to pick out, from a crowded scene, just one or a few objects for these processes to recognize. This something is often referred to as *selective attention*. <!--Different visual abilities seem to have different capacities, and it is not at all clear that a common selective attention process is responsible for gating all of their inputs.-->
 
-While word recognition may only be able to process one word at a time, and some visual searches reflect processing that can be described as massively parallel, other processing falls somewhere in between. That is, the processes underlying some of our abilities are limited in capacity, but not as limited as word recognition seems to be. As we will see, object tracking is a case in point.
+While word recognition may only be able to process one word at a time, and some visual searches reflect processing that can be described as massively parallel, other processing falls somewhere in between. That is, the processes underlying some of our abilities are limited in capacity, but not as limited as word recognition seems to be. As we will see, object tracking is a cCASE IN POINT.
+
+Covert tracking keeps one up to date with the locations of objects of interest. Knowing objects' locations is sometimes important in itself. Also it allows us to quickly bring focused attention to one or more of the objects. When focused attention is applied to an object, that allows even our most limited-capacity processes to operate on the object, which seems to be necessary to, for example, make fine shape discriminations or recognize a word [@whiteVisualWordRecognition2020].
 
 One or two myths about object tracking have become fairly widespread, and one of them relates to the nature of tracking's capacity limit, so before delving deeper into that issue, in the next section I will first address that myth. 
 
