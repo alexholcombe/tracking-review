@@ -1,0 +1,19 @@
+---
+title: "UCSDbrownBag"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Demo
+
+##
+
+High split-half reliability, unlike other cognitive tasks.
+<!--Headed to Portland-->
+
+Only a handful of proper individual-difference studies.
+
+A large set of studies with "Neurotracker" and other products, looking at correlations and also training, almost all with shoddy research designs.

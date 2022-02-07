@@ -35,7 +35,7 @@ twitter-handle: ceptional
 
 Cite this as:
 
-Holcombe, A.O. (to appear). Tracking moving objects. Cambridge University Press.
+Holcombe, A.O. (to appear). Attending to a moving world. Cambridge University Press.
 
 This book reviews what we know about human multiple object tracking. It will be published by Cambridge University Press in their [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception).
 

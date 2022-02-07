@@ -18,7 +18,7 @@ The term "object-based attention" is sometimes bandied about as an explanation o
 
 One notion that fits in with these considerations is that attention is deployed first to a location or locations, but any object present can cause spatial attention to spread throughout that object. Although researchers who study the relationship between attention and objects often are not explicit about their theory, this "attentional spread" theory seems to be a popular one. 
 
-## Stationary objects and attentional spread
+## Stationary object selection
 
 Dozens, possibly hundreds, of published papers have investigated the relationship of objects to attention, using a particular kind of cuing paradigm. It all started with @eglyShiftingVisualAttention1994a, who presented two static objects (rectangles) and presented a cue on one end of an object or another. They found that the cue could result in a performance enhancement not only for probes at the location of the cue, but also at the cued object's other end (measured relative to equidistant locations on the second object). The findings reported in most of the many follow-up papers similarly find that participants are fastest and most accurate when the stimulus is presented in the same location as the cue, or on the same object but on a different part of that object. I used the qualifier "most" when referring to the follow-up papers because some papers did not find this [@davisReversalObjectBased2005; @shomsteinObjectbasedAttentionStrength2008; @shomsteinObjectbasedAttentionSensory2002; @louIndividualDifferencesTemporal2020], and a major concern is that studies that did not find an advantage were more likely to end up in the proverbial file drawer. In particular, the effect sizes in the literature are often quite small and the studies not highly powered, which can be a red flag that publication bias may have created the illusion of a real effect [@buttonPowerFailureWhy2013].
 
@@ -49,7 +49,10 @@ Our inability to track the ends of lines fits in with the view this chapter open
 ## Object creation and object tracking: Distinct processes?
 
 Conceptually, researchers distinguish between the processing that determines *how many* objects one can track and those that determine *what kinds* of objects can be tracked. But do these things happen in different processing stages, or do they interact? An assumption of separate processing stages is popular in the study of visual cognition generally. Visual search, for example, is usually conceptualized this way [@wolfePreattentiveObjectFiles1997; @nakayamaVisualSurfaceRepresentation1995], and appears to be an implicit assumption in two reviews of objects and tracking  [@schollObjectsAttentionState2001; @pylyshynSeeingVisualizingIt2006]. <!-- No interaction between number of objects to track and what kinds of objects can be tracked.--> 
-![A schematic of the idea that objects are created prior to the action of tracking processes, which then point to the already-formed object representations but do not change them.](imagesForRmd/flowDiagrams/objectCreationTrackingSeparateDiagram.drawio.svg)
+
+```{r simpleArchitecture, echo=FALSE, out.width="30%", fig.cap="A schematic of the idea that objects are created prior to the action of tracking processes, which then point to the already-formed object representations but do not change them."}
+knitr::include_graphics("imagesForRmd/flowDiagrams/objectCreationTrackingSeparateDiagram.drawio.svg")
+```
 
 It would be convenient if object creation and object tracking occurred at distinct processing stages, as that is straightforward relative to an interactive system [@simonSciencesArtificialReissue1969; @sternbergDiscoveryProcessingStages1969]. And there certainly is evidence that tracking is  high-level, for example @maechlerAttentionalTrackingTakes2021 found evidence that tracking operates on perceived object position rather than more low-level representation of position.
 
@@ -85,36 +88,20 @@ The localization impairment documented by @howeVisuallyTrackingLocalizing2013 wa
 
 ## Could tracking objects work by spreading?
 
-The difficulty in tracking the ends of lines 
+The relationship between object representations and tracking pictured in \@ref(fig:simpleArchitecture) suggests that attention selects entire object representations, as a whole. It has been suggested, however, that he process instead begins by selecting a particular location, and then selection spreads up to the edges of the object. A gradual growth of the area of attentional activation to encompass an entire object has been observed neurophysiologically in certain tasks [e.g., @wannigAutomaticSpreadAttentional2011].
 
-The spatial locations of attention relative to the regions occupied by moving targets can be assessed with probe detection experiments.
+The spreading of attention could conceivably explain the ability to keep attention on multiple moving objects. When an object moves, if it moves smoothly, then its leading edge will occupy new territory while its trailing edge continues to occupy an old location. If spreading of attention up to object boundaries is continually occurring, then attention should spread to the new locations near the trailing edge. In such a fashion, attention could, by continually expanding to the new location of a leading edge and contracting with a trailing edge, stay on a moving object. However, the neural spreading process observed neurophysiologically seems too slow to keep up with fast-moving yet trackable objects. In addition,
+behavioral results from presenting probes at various locations inside and outside of moving targets present a more complex picture. Presenting probes during a task of tracking multiple lines, @alvarezHowDoesAttention2005 found that probes presented at the center of objects were detected much more accurately than end probes, suggesting that attentional resources were concentrated on the centers of the lines. The spreading account seems to instead predict that accuracy would be highest near the trailing end of an object. It appears, however, that the researchers did not analyze the data to check whether of the two object ends, accuracy was higher for probes at the trailing end. 
+<!-- Point objects, stepping objects (works for 1 target and probably for multiple ones if they are stepping a short distance, but I know of NO studies of MOT with apparent motion FUTURE), and the finding that attention tends to be ahead of an object? I don't recall whether that's been done -->, 
+<!-- Reminescent of how rapid eye movements (saccades) tend to go to the centroids of objects.-->
 
-By probes at various locations inside and outside of moving targets
-
-"Center probes were detected far more accurately than end probes, suggesting that more attentional resources were concentrated on the centers of the lines than near their ends. " @alvarezHowDoesAttention2005 Reminescent of how rapid eye movements (saccades) tend to go to the centroids of objects.
-
-Our capabilities in this regard remain understudied, but 
-
-
-
-
-A "spread" of attention, or gradual growth of the area of attentional activation to encompass an entire object, is not the only conceivable process that might yield object-based attention benefits, but such spreading has been observed neurophysiologically in certain tasks [e.g., @wannigAutomaticSpreadAttentional2011]. Such a spreading process might explain the ability to keep attention on multiple moving objects.
-
-When an object moves, if it moves smoothly, then its leading edge will occupy new territory while its trailing edge continues to occupy an old location. If spreading of attention up to object boundaries is continually occurring, then attention should spread to the new locations near the trailing edge. In such a fashion, attention could, by continually expanding to the new location of a leading edge and contracting with a trailing edge, stay on a moving object. Some problems with this account, discussed in SECTION X <!-- Point objects, stepping objects (works for 1 target and probably for multiple ones if they are stepping a short distance), and the finding that attention tends to be ahead of an object? I don't recall whether that's been done -->, suggest that spreading of attention is not sufficient to explain tracking, but it may play a role.
-
-Out the kitchen window, in the dense foliage of a tree, two birds squabble on the wing. As they plummet from one branch to another, you see only parts of each at any one time. An outstretched wing partially obscured by leaves and a branch, which folds in on itself as the bird alights on a branch and parts of its body comes into view. In addition to occlusion, camouflage can also cause the visible portions of animals to change in shape as they move from one background to another.
+<!--Out the kitchen window, in the dense foliage of a tree, two birds squabble on the wing. As they plummet from one branch to another, you see only parts of each at any one time. An outstretched wing partially obscured by leaves and a branch, which folds in on itself as the bird alights on a branch and parts of its body comes into view. In addition to occlusion, camouflage can also cause the visible portions of animals to change in shape as they move from one background to another.-->
 
  <!-- Also use Zenon Pylyshyn's examples of objects not represented well as objects, so PylyshynAttention_Lecture_class -->
 
-## Summing up
+
+<!--Many questions remain regarding what sorts of objects attention gloms onto.
 
 
-Many questions remain regarding what sorts of objects attention gloms onto.
-
-
-TRANSITION TO NEXT SECTION on CAPACITY-1 PROCESSES: (ALSO see above on tracking part of an object)
- 
-This proposition, that there are actually two resources that can assist tracking, one with much more limited capacity (perhaps for just one object) and the other with fewer capabilities but higher capacity, is an intriguing one but not
-Those abilties of ours that have a capacity of just one remain somewhat obscure. There is an extensive literature on two-object costs. words Alex White However, 
-
+This proposition, that there are actually two resources that can assist tracking, one with much more limited capacity (perhaps for just one object) and the other with fewer capabilities but higher capacity, is an intriguing one but not-->
 
