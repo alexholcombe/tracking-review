@@ -37,7 +37,7 @@ Cite this as:
 
 Holcombe, A.O. (to appear). Attending to a moving world. Cambridge University Press.
 
-This book reviews what we know about human multiple object tracking. It will be published by Cambridge University Press in their [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception).
+This book reviews what we know about multiple object tracking by humans. It will be published by Cambridge University Press in their [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception).
 
 You can read this [here on the web](https://tracking.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.  However, the web version is the only one you should rely on - some features (e.g. movies, some kinds of images) may be missing from the other formats.
 
@@ -47,7 +47,7 @@ Contact me (he/him) with any comments via [twitter](https://twitter.com/ceptiona
 knitr::include_graphics("imagesForRmd/corellaOnShoulder2020croppedBlurredByAdobeOnline.jpg")
 ```
 
-I thank Hrag Pailian and Lorella Battelli for helpful comments, and Hrag Pailian for providing high-resolution figures of his work.
+I thank Hrag Pailian and Lorella Battelli for helpful comments, and also thank Hrag Pailian for providing high-resolution figures of his work.
 
 <!--Reviewers: Hyona/Pailian/Saiki for identity chapter; Piers Howe / John Palmer/Daniel Little for serial/parallel; Srimant Tripathy for sensory memory -->
 
@@ -76,20 +76,25 @@ For a right triangle, if $c$ denotes the length of the hypotenuse
 
 # Attending to moving objects
 
-<!-- What can a shell game tell us about perception?
--->
 
-Is it just another paradigm for studying attention? No - hemisphere independence, where but not what.
 
-## Tracking task short description and anecdotes
-
-On the road, drivers monitor the movements of others’ vehicles. In conference halls, scientists monitor the position and posture of other researchers relative to the ones they are chatting to, in order to best time their approach. At the beach, parents keep watch as their children move in and out of the water. On the sports field, players often find themselves trying to keep track of multiple team-mates and opponents and their spatial relationships to the ball.
+<!--On the road, drivers monitor the movements of others’ vehicles. In conference halls, scientists monitor the position and posture of other researchers relative to the ones they are chatting to, in order to best time their approach. At the beach, parents keep watch as their children move in and out of the water. On the sports field, players often find themselves trying to keep track of multiple team-mates and opponents and their spatial relationships to the ball.
 
 shell game
 
-How do we do this and what does that tell us about how the mind works?
+Is it just another paradigm for studying attention? No - hemisphere independence, where but not what.
 
-Until the late 1980s, almost no-one who studied attention used moving objects. Partly this was a technology issue, even though in 1979, the first popular home game console, the Atari, introduced Asteroids.
+How do we do this and what does that tell us about how the mind works?-->
+
+Attention was one of the earliest topics of modern psychology, the science that began in earnest in the late 19th century. William James famously gave us a definition of attention, which began with "It is the taking possession by the mind, in clear and vivid form, of one out of what seem several simultaneously possible objects or trains of thought." This was not just philosophy, as plenty of experiments were being done, using custom apparatus, such as devices that measured response time and presented auditory and visual stimuli.
+
+```{r complication, echo=FALSE, out.width="100%", fig.cap="A 'complication apparatus' from the Harvard laboratory of Hugo Munsterberg. This instrument was used to measure the effect of attention to one stimulus on responses to another.  A subject who focused on one of the numbers on the large dial would have a delayed reaction to the sound of the bell, and vice versa."}
+knitr::include_graphics("imagesForRmd/historical/complicationApparatus.png")
+```
+
+Munsterberg, one of the first with a laboratory that studied attention, was highly interested in moving stimuli. In his book The Photoplay: A Psychological Study (1916), he presented a theory of cinema, including a twenty-page chapter on attention.
+
+When the study of attention began to really flower after World War II, however, the study of visual attention became dominated by static stimuli, often briefly presented with tachistoscopes. Very few researchers used moving objects, and this continued until he late 1980s. This was, in part, a technology issue. Scientific laboratories, or psychology laboratories at least, lagged the technology being introduced to arcades and even of homes. In 979, the first popular home game console, the Atari, introduced the game [Asteroids](https://youtube.com/embed/YJZ0hB0Vnyk).
 
 ```{r, eval=knitr::is_html_output(excludes = "epub"), results = 'asis', echo = F}
 #Doesn't work in PDF or even EPUB, that's why using exclusion code above.
@@ -103,7 +108,13 @@ cat(
 )
 ```
 
-The task was to shoot and dodge the asteroids that are streaming in all directions. It pays to monitor more than one of the moving objects, to determine which way one should move, or shoot, to prevent a collision. Psychologists were slow to use the associated technology to study how people processed multiple moving objects. Finally, in 1988, @pylyshynTrackingMultipleIndependent1988 used an Apple II+ computer to conduct an experiment that demonstrated that people could keep track of multiple moving objects. Pylyshyn & Storm showed that people can keep track of multiple moving objects designated as targets in a crowd of identical distractors.
+The point of the game was to shoot and dodge the asteroids that traveled across the screen from all directions. It paid to monitor more than one of the moving objects, to determine which way one should move, or shoot, to prevent a collision. Psychologists, however, were slow to take up the programming of computers to present stimuli, and even slower to use them to create moving stimuli.
+
+Psychologists were slow to use the associated technology to study how people processed multiple moving objects. In the 1970s, however, Zenon Pylyshyn was pondering the possibility of a primitive visual mechanism capable of "indexing and tracking features or feature-clusters" (as he put it in @pylyshynTrackingMultipleIndependent1988; I haven't been able to get copies of his 1970s reports) as they moved.
+
+Our ability to do this may be obvious after a bit of introspection when one is  
+
+Finally, in 1988, @pylyshynTrackingMultipleIndependent1988 used an Apple II+ computer to conduct an experiment that demonstrated that people could keep track of multiple moving objects. Pylyshyn & Storm showed that people can keep track of multiple moving objects designated as targets in a crowd of identical distractors.
 
 It was immediately apparent that the ability to track had a rather dramatic capacity limitation. That is, performance dropped quite rapidly as the number of targets was increased.
 
@@ -1357,7 +1368,16 @@ After 40 years of work, the evidence is fairly strong that at least a few forms 
 knitr::include_graphics("imagesForRmd/spatialRelations/ThorntonVenusSymbols.png")
 ```
 
-Daniel Linares, Maryam Vaziri-Pashkam, and I presented colored discs rapidly moving in a circular trajectory about the fixation point. When the discs moved too rapidly to track even a single one of them, participants were unable to report which discs were adjacent to each other, even when they were presented for multiple seconds. This suggested that attention, in particular that deployed when tracking, is necessary for judging spatial relationships. An additional result suggested that the spatial relationship is mediated by an attentional shift. When the discs were moving slow enough that participants could often do the task, but sometimes made errors, the errors had a systematic pattern. The task was to report which disc was aligned with a target disc. Participants tended to err by reporting the trailing disc next to the target rather than the aligned disc, consistent with them making a time-consuming shift of attention from the target, which sometimes landed on the trailing disc because the aligned disc had moved on by the time the attention shift landed [@holcombePerceivingSpatialRelations2011]. Based on EEG signals and also eye movement data when the eyes were unconstrained, @franconeriFlexibleVisualProcessing2012 found evidence for an attentional shift when judging the spatial relationship between static stimuli. In a dual-task design, @leeAttentionalCapacityUndifferentiated1999 showed that while several judgments could be made concurrently with an attention-demanding task at the fovea, judgments of the spatial relationship between two stimuli (whether a bisected disk had red on the left or on the right) could not. Finally, using a visual working memory paradigm in which they investigated the effect of set size, exposure duration, and simultaneous versus serial presentation, @smithAttentionweightedSamplesizeModel2016 also found evidence consistent with discrimination of spatial relations involving serial attention.
+Daniel Linares, Maryam Vaziri-Pashkam, and I presented colored discs rapidly moving in a circular trajectory about the fixation point. When the discs moved at speeds that exceeded the participants' tracking limit, participants were unable to report which discs were adjacent to each other, even when they were presented for multiple seconds. This suggested that attention, in particular that deployed when tracking, is necessary for judging spatial relationships.
+
+```{r spinner, echo=FALSE, out.width="100%", fig.cap="When the discs in this display rotated faster than about 1.4 rps (approximately the 1-target tracking limit with this display), participants were unable to judge whether two colors are adjacent to each other."}
+#Work-around to make GIFs (but not .mov) work by avoiding including them in non-html outputs!
+#https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
+if(knitr::is_html_output()) knitr::include_url("movies/LinaresVaziriPashkamHolcombe/pairing_3timesFasterOneStimulusCycleSoRotatesPerenially.gif") else knitr::include_graphics("movies/LinaresVaziriPashkamHolcombe/pairingOneStimulusCycleSoRotatesPereniallyStatic.gif")
+#, height = "250px"
+```
+
+An additional result suggested that the spatial relationship is mediated by an attentional shift. When the discs were moving slow enough that participants could often do the task (like in the above movie) but sometimes made errors, the errors had a systematic pattern. The task was to report which disc was aligned with a target disc. Participants tended to err by reporting the trailing disc next to the target rather than the aligned disc, consistent with them making a time-consuming shift of attention from the target, which sometimes landed on the trailing disc because the aligned disc had moved on by the time the attention shift landed [@holcombePerceivingSpatialRelations2011]. Based on EEG signals and also eye movement data when the eyes were unconstrained, @franconeriFlexibleVisualProcessing2012 found evidence for an attentional shift when judging the spatial relationship between static stimuli. In a dual-task design, @leeAttentionalCapacityUndifferentiated1999 showed that while several judgments could be made concurrently with an attention-demanding task at the fovea, judgments of the spatial relationship between two stimuli (whether a bisected disk had red on the left or on the right) could not. Finally, using a visual working memory paradigm in which they investigated the effect of set size, exposure duration, and simultaneous versus serial presentation, @smithAttentionweightedSamplesizeModel2016 also found evidence consistent with discrimination of spatial relations involving serial attention.
 
 Because in any one paradigm, serial and parallel processes can yield similar or identical data, a number of experimental manipulations was needed to provide convincing evidence of serial processing for spatial relationships. For example, while visual search results led Treisman to conclude that conjoining two spatially superposed features, such as red with leftward tilted, required a serial process of focused attention  [@treismanFeatureIntegrationTheory1980], such results are explainable by limited-capacity parallel processing [@palmerAttentionVisualSearch1995], and the redundant-target paradigm of @thorntonParallelSerialProcesses2007 suggested that no serial process is involved.
 
@@ -1529,76 +1549,6 @@ Given that parallel models can't account for the decline in temporal limit with 
 
 <!--chapter:end:serialOrParallel.Rmd-->
 
-# Mobile computation 
-
-We live in a world of constantly moving objects. The receptive fields in our early visual cortices that analyze the properties of objects are largely stationary. In the case of moving objects, these individual analyzers get only a glimpse of moving objects before they move on. These glimpses will sometimes be too brief to fully process the object. What makes things even worse is that in our world of moving objects, another object may quickly move onto the retinal location previously occupied by the old object, such that extended analysis by our stationary receptive fields may combine the two objects, yielding a mish-mash of features.
-
-This phenomenon is demonstrated by the below movie (if it doesn't play, you should be able to view it [here](https://media.giphy.com/media/g4FWsHsyYwnphuEyh5/source.gif)). Keep your gaze fixed on the circle in the center, and try to judge for one of the flip-flopping objects whether the light green color is paired with leftward tilt or rightward tilt.
-You may find this difficult or impossible to judge. 
-
-```{r, echo=FALSE, out.width="100%", fig.cap="Task: fixate the circle and judge whether the red color is paired with leftward tilt or rightward tilt."}
-#Work-around to make GIFs work by avoiding including them in non-html outputs!
-#https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
-if(knitr::is_html_output()) knitr::include_url("movies/OC4HzNoGuide.gif") else knitr::include_graphics("movies/OC4HzNoGuide_static.gif")
-#, height = "250px"
-```
-
-Rarely in the real world do objects rapidly alternate as they do in the above movie. Instead, the reason that individual receptive fields sometimes get brief glimpses is because objects are rapidly moving rather than alternating. The brain capitalizes on this by accumulating the results of visual analysis from the successive locations that a moving object visits [@nishidaMotionbasedAnalysisSpatial2004a; @nishidaHumanVisualSystem2007a].
-
-You may be able to experience this "mobile computation" in action by viewing the below movie (if it doesn't play below, you should be able to view it [here](movies/OC4HzGuide_static.gif)). This time, while keeping your gaze fixed on the circle in the center, try to track the white circle with your attention as it steps about the circle. This may allow you to judge whether the light green is paired with leftward or rightward tilt [@cavanaghMobileComputationSpatiotemporal2008].
-
-```{r, echo=FALSE, out.width="100%", fig.cap="Task: fixate the circle and judge whether the light green is paired with leftward tilt or rightward title."}
-#Work-around to make GIFs work by avoiding including them in non-html outputs!
-#https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
-if(knitr::is_html_output()) knitr::include_url("movies/OC4HzGuide.gif") else knitr::include_graphics("movies/OC4HzGuide_static.gif")
-#, height = "250px"
-``` 
-
-This second movie is identical to the first except for the addition of the stepping white ring. Tracking the ring with attention feels almost automatic thanks to it being the only moving object. The continuous selection enabled by tracking here evidently provides later stages of visual processing with an extended view of the object, allowing it to deliver the feature pairing [@cavanaghMobileComputationSpatiotemporal2008]. This interpretation is consistent with ideas about feature pairing introduced by Treisman. The "spotlight" of selection gates later processing by later stages, which is what is required for feature pairing.
-
-As we saw in a previous section (\@ref{bottlenecks}), tracking is capacity-limited; in many circumstances one can only track a few objects. Here we highlighted that tracking, like other instances of attentional selection, serves to gate what information is used by subsequent processing. So, what do we know about the limits of subsequent processing, and how those interact with attentional tracking?
-
-## Attentional tracking and mobile computation
-
-@holcombePerceivingSpatialRelations2011 investigated the relationship of attentional tracking to various judgments that can be made about two arrays of concentric colored circles. 
-```{r, echo=FALSE, out.width="100%", fig.cap=""}
-#Work-around to make GIFs (but not .mov) work by avoiding including them in non-html outputs!
-#https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
-if(knitr::is_html_output()) knitr::include_url("movies/LinaresVaziriPashkamHolcombe/pairingOneStimulusCycleSoRotatesPerenially.gif") else knitr::include_graphics("movies/LinaresVaziriPashkamHolcombe/pairingOneStimulusCycleSoRotatesPereniallyStatic.gif")
-#, height = "250px"
-```
-
-With these arrays, participants can be asked to judge the individual colors that are present and also their spatial arrangement. At the speed of rotation seen above, it is quite easy for many to covertly track a disc while fixating their eyes on the array's center. At high speeds over 1.4 revolutions per second or so, however, @holcombePerceivingSpatialRelations2011 found that their participants could only guess at which object was originally cued at the beginning of the trial (tracking speed limits are discussed further in section BLAH). 
-
-```{r, echo=FALSE, out.width="100%", fig.cap=""}
-#Work-around to make GIFs (but not .mov) work by avoiding including them in non-html outputs!
-#https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
-if(knitr::is_html_output()) knitr::include_url("movies/LinaresVaziriPashkamHolcombe/pairing_3timesFasterOneStimulusCycleSoRotatesPerenially.gif") else knitr::include_graphics("movies/LinaresVaziriPashkamHolcombe/pairingOneStimulusCycleSoRotatesPereniallyStatic.gif")
-#, height = "250px"
-```
-
-Above their tracking limit (a bit faster for most than the movie above), participants were still able to judge which colors were present in the display, indicating that tracking was not needed for that. <!--This was revealed by using different colors for the array on different trials and asking participants to report which colors were present.--> Participants were unable, however, to judge the spatial arrangement of the colors.
-
-In one of the spatial arrangement tasks, the participants were asked to report any three colors in sequence from around a ring, in the direction of motion. For the display above, then, for the inner ring correct answers included "blue, yellow, purple" or "yellow, purple, blue", but not "yellow, blue, purple" (the participants made their response by clicking on colors with a mouse, so they did not need to know color names). In a second spatial arrangement task, participants were tasked with reporting any two colors that were aligned with each other between the two rings. The correct answers for the above display, then, were "green and yellow", "red and purple", and "blue and aqua".
-
-For those two spatial arrangement tasks, the speed limit, as quantified by 75% threshold, was similar to (and statistically indistinguishable from) the tracking limit. This suggests that tracking is required to apprehend the spatial arrangement. Identifying the colors, in contrast, could be done at much faster speeds, suggesting that tracking was not necessary for it.
-
-A need for focused attention to apprehend spatial arrangements had already been strongly suggested by evidence from visual search and dual task paradigms [@liRapidNaturalScene2002; @leeAttentionalCapacityUndifferentiated1999a; @loganSpatialAttentionApprehension1994; @wolfeWhatCan0001998]. Dual task paradigms had also already found that the colors presented could be identified even in the presence of very demanding secondary tasks that greatly reduce the amount of attention available [@leeAttentionalCapacityUndifferentiated1999a; @braunWithdrawingAttentionLittle1998a]. Here, then, our tracking experiments converged with those results, indicating that the same kind of attentional resource whose allocation to a target is reduced by increasing the set size in visual search and by a demanding secondary task is also eliminated by moving objects faster than they can be tracked.
-
-Not all spatial relationships, however, require an ample amount of focused attention. In the @holcombePerceivingSpatialRelations2011 study, one particular spatial relationship, alignment of the inner and outer rings, could be judged even at object speeds far above the tracking speed limit. For that alignment task, the two concentric rings comprised the same colors in the same sequence. On some trials, these colors were aligned, so that neighboring colors in the radial direction were identical. Participants had to discriminate between that and when neighboring colors in the radial direction were different. While the participants' mean tracking speed threshold was 1.4 rps, their speed threshold for the alignment task was 2.4 rps. The processes that mediate the alignment judgment are not clear, but likely are those pre-attentive mechanisms that integrate information over space and time regarding spatial differences, for example to extract texture boundaries and global shape [@motoyoshiTemporalResolutionOrientationbased2001; @ramachandranPhantomContoursNew1991a].
-
-Such boundary and global shape processing seem to integrate across multiple features, but do not pass on information about the constituent features (here, colors) whose arrangement created the boundary or shape [@wilsonDetectionGlobalStructure1998; @cliffordRapidGlobalForm2004]. It seems that only focused attention can do that. But how does focused attention do it? One idea that probably goes way back is that to apprehend a spatial relationship, attention must identify the colors in the colors' locations one by one e.g., @huangCharacterizingLimitsHuman2007].
-
-A particular pattern of errors made by participants in the experiments of @holcombePerceivingSpatialRelations2011 supports the serial processing theory. Recall the spatial arrangement task in which participants were required to report two of the colors aligned with each other in the inner and outer rings. In a variation of that task, each trial began with a central color cue. That color could be in either the inner ring or the outer ring. Participants were told to report which color in the other ring was aligned with that color. The speed of the rings were set to slightly below the tracking speed limit. Thanks to feature-based attention, finding the cued color was not difficult [@shihThereFeaturebasedAttentional1996]. Often the participants reported correctly the color that was aligned with the cued color. On those trials where participants made an error, they typically reported a color that was adjacent to the correct one, located either leading it (relative to the directon of motion) or trailing it. Critically, trailing errors were much more likely than leading errors. The best explanation of this, after a few control conditions were examined, appears to be that participants made a shift of attention from the cued ring to the other ring, but because the ring kept moving during that shift, they sometimes missed and landed on the trailing disc, resulting in a mistaken report of its color.
-
-Using a completely different approach based on EEG and eye movements, @franconeriFlexibleVisualProcessing2011 also concluded that spatial relationships are calculated by identifying the constituent objects one-by-one. In summary, when objects move, attentional tracking is necessary to set up the focused attentional shifts that are needed to extract most spatial relationships.
-
-
-
- 
-
-<!--chapter:end:mobileComputation.Rmd-->
-
 # Serial streak sampling {#resolution}
 
 On the one hand, most theorists have included parallel position updating in their models. This seems to fit the data from MOT experiments with relatively-unconstrained object trajectories quite well - although few have compared the performance of their model with a serial model, so it is hard to know how diagnostic the modeled data are. On the other hand, the data from circular trajectories is hard to explain without positing that serial updating of position dominates. The accounts offered of this dichotomy seem unsatisfactory. However, there is an additional source of information that could assist tracking, one that would disabled by non-circular trajectories.
@@ -1613,7 +1563,7 @@ Long after most researchers considered the idea of serial updating of position t
 knitr::include_graphics("imagesForRmd/motionBlur/London_bus_and_telephone_box_on_Haymarket.jpg")
 ```
 
-At speeds like those used in MOT experiments, the moving objects leave trails of persisting activation in the visual cortex [e.g. @apthorpDirectEvidenceEncoding2013]. Assuming that the tracking process has access to these motion streaks, consider how the correspondence problem could be solved. Rather than having access to only the most recently-registered position of each object, it would also "see" a short trail behind each object. If the rate of position sampling were frequent relative to the duration of visual persistence, then the motion streak would actually connect the last-registered position of an object with the current position sample. In most conditions, this should allow the tracker to avoid many of the confusions between targets and distractors that would otherwise occur. Recall from our explanation of the correspondence problem (\@ref(beyondLocation)) that when only discrete positions are sampled, a distractor will be the closest object in the current sample to a target in the previous sample, causing the distractor to be mistakenly taken to be the target.
+At speeds like those used in MOT experiments, the moving objects leave trails of persisting activation in the visual cortex [e.g. @apthorpDirectEvidenceEncoding2013]. Consider how the correspondence problem could be solved if the tracking process has access to these motion streaks, c. Rather than having access to only the most recently-registered position of each object, it would also "see" a short trail behind each object. If the rate of position sampling were frequent relative to the duration of visual persistence, then the motion streak would actually connect the last-registered position of an object with the current position sample. In most conditions, this should allow the tracker to avoid many of the confusions between targets and distractors that would otherwise occur. Recall from our explanation of the correspondence problem (\@ref(beyondLocation)) that when only discrete positions are sampled, a distractor will be the closest object in the current sample to a target in the previous sample, causing the distractor to be mistakenly taken to be the target.
 
 When motion streaks can be used, either the streak will literally connect the new sample to the old sample, or if the sampling happens less frequently relative to the targets' speed, if the object hasn't changed direction than the streaks will typically be collinear, whereas the distractors' streaks will be positioned and oriented differently. The major exception to this would be when the target shared its trajectory with distractors, such as in the experiments of @holcombeSplittingAttentionReduces2013. 
 
@@ -1627,7 +1577,7 @@ Step by step, here's how the motion streaks serial sampler could work, in an MOT
 
 When, as in the @holcombeSplittingAttentionReduces2013 experiments, the target moves about a trajectory that is shared by several distractors, the streaks will be much less helpful. When the serial sampler returns to the last known location of a target, if it does not return before the trailing distractor reaches that location, a new streak will be there, that of the distractor. Thus, this account predicts that in the trajectory-sharing displays, tracking will only succeed if the time between object visits to a location is longer than the time between samples. That is, success at tracking is now limited by serial switching time. This nicely converges with theorists' predilection for proposing a different mechanism for trajectory-sharing displays, even if they have had the wrong idea for why such displays bear the signature of serial switching.
 
-One might be skeptical that motion streaks are available to visual processes such as tracking - after all, we don't usually perceive motion streaks when objects are moving at reasonable speeds. But there is good evidence that motion streaks do affect visual processing. Psychophysical studies have found evidence for perceptual adaptation to the streaks left by moving objects, and also that these streaks mask the visibility of static objects. It has been estimated that these streaks span about 100 ms of a moving object's trajectory, and there is also plenty of physiological evidence for them - see @apthorpSpatialTuningMotion2011 for references. As for why we don't see motion streaks in many viewing conditions, this is not fully understood, but nearby objects appear to actively suppress their visibility [for a review, see @bedellPerceptionMotionSmear2010]. 
+One might be skeptical that motion streaks are available to visual processes such as tracking - after all, we don't usually perceive motion streaks when objects are moving at reasonable speeds. But there is good evidence that motion streaks do affect visual processing. Psychophysical studies have found evidence for perceptual adaptation to the streaks left by moving objects, and also that these streaks mask the visibility of static objects. It has been estimated that these streaks span about 100 ms of a moving object's trajectory, and there is also plenty of physiological evidence for them - see @apthorpSpatialTuningMotion2011 for references. Moreover, recent evidence suggests that the elongated motion streaks created by saccades are used to solve the across-saccade object correspondence problem [@schweitzerIntrasaccadicMotionStreaks2020; @schweitzerIntrasaccadicMotionStreaks2021]. As for why we don't see motion streaks in many viewing conditions, this is not fully understood, but nearby objects appear to actively suppress their visibility [for a review, see @bedellPerceptionMotionSmear2010]. 
 
 Tripathy's group conducted a number of studies to investigate the possibility that motion streak information is available. This largely took the form of varying delays between stimulus presentation and cues, showing that participants could report motion direction and detect trajectory changes fairly precisely immediately after objects offset, but that this ability decayed very quickly with time [@narasimhanLossPositionalInformation2009; @shoonerHighcapacityTransientRetention2010]. The rapid decay was consistent with the time-course  of the dissipation of sensory activation, as evident in studies of iconic memory.
 
@@ -1828,7 +1778,7 @@ There are two basic approaches to understanding the abilities that underlie mult
 
 ## Do people vary much in how many objects they can track?
 
-There are two very common pitfalls of individual-difference studies in this literature. These are in addition to the common mistake across all study types of not testing enough participants to have good statistical power - correlational studies require more than ten times as many participants as a within-participants experimental design investigating a large effect. 
+There are two very common pitfalls of individual-difference studies in this literature. These are in addition to the common mistake across all study types of not testing enough participants to have good statistical power - individual-difference studies can require more than ten times as many participants as a within-participants experimental design investigating a large effect [@schonbrodtWhatSampleSize2013]. 
 
 @meyerhoffIndividualDifferencesVisual2020 tested fifty participants and for each one calculated the effective number of items tracked, for a display with four targets and four distractors, the modal effective number of items tracked was around two, but a substantial proportion of participants came in at three targets or one target tracked, and a few scored close to zero items tracked. It is tempting to conclude, as @meyerhoffIndividualDifferencesVisual2020 did, that some participants could only track one or zero targets, while others can track more. Unfortunately, in the data of @meyerhoffIndividualDifferencesVisual2020, like that of many others, there is no way to know how much of the variation between individuals is due to motivation rather than ability. Measuring motivation reliably is difficult or impossible, so this is not something that can easily be remedied. But researchers can include what are sometimes called attention checks or catch trials to allow exclusion of participants who show clear evidence of not reading the instructions carefully or frequently not paying attention. <!--also, they can design their study to look at the pattern of correlations--> This is the first pitfall, failing to include some sort of measure that checks whether each participant is blowing off the task.
 
@@ -1858,84 +1808,34 @@ Overall, there is a reasonable level of agreement across these individual-differ
 
 From the consistently strong correlation of MOT performance with visual working memory, it is tempting to conclude that mechanistically the two tasks are tightly linked. However, it must be remembered that working memory tasks are among the best predictors of a wide range of tasks, including intelligence as well as the Stroop task, spatial cuing, and task switching [e.g. @redickWorkingMemoryCapacity2006].
 
-## Going below the task level
+## Going deeper
 
-Variation in multiple object tracking is unlikely to be caused solely by one ability. Thanks to three decades of work, we now understand that tracking performance can be limited by spatial interference and temporal interference, as well as less task-specific factors such as lapses of attention.
+Variation in multiple object tracking is unlikely to be caused by just one ability. Thanks to three decades of work, we now understand that tracking performance can be limited by spatial interference and temporal interference, as well as less task-specific factors such as lapses of attention. And there may be other abilities that substantially contribute.
 
-Multiple object tracking i
+Unfortunately, no individual difference study to date seems to have attempted to partial out the possible components of MOT (e.g., spatial interference versus temporal interference) to see whether they show different patterns of correlations with other tasks. In the realm of spatial interference with static stimuli, even studies with small sample sizes have revealed substantial individual differences [@petrovAsymmetriesIdiosyncraticHot2011], such as larger crowding zones in some types of dyslexia [@jooOptimizingTextIndividual2018]. These differences may form a large part of inter-individual differences in MOT. There is also evidence that training with action video games can reduce spatial interference and improve reading ability [@bertoniExcessiveVisualCrowding2019], making it especially important to investigate spatial interference further.
 
-Thanks to our understanding of multiple object tracking built up over the last three decades, we 
+With the growth of online testing, however, the sample sizes required for individual difference studies have become easier to obtain, and so individual differences are a promising future direction. However, researchers who are more familiar with the issues and analyses of within-subjects studies must be aware of the different issues that are important for individual-differences studies.
 
-Variation in MOT performance is typically interpreted by researchers as variation simply in how many objects a person can track. 
-
-But the underlying reason for variation in MOT performance may not be due to variation in number of FINSTs or some other such capacity, but rather due to variation in peoples' tracking speed limit, spatial interference, or temporal interference. This does not seem to have been properly investigated.
-
-
-
- Large differences have been found in spatial crowding, which probably explains some variance. 
-The deleterious effects of crowding also show substantial individual differences [@petrovAsymmetriesIdiosyncraticHot2011], such as larger crowding zones in some types of dyslexia [@jooOptimizingTextIndividual2018], so crowding likely also contributes to some of the inter-individual variation in tracking performance.
-
-@wilmerMultipleObjectTracking2016 Multiple object tracking predicts math potential
-
+<!--@wilmerMultipleObjectTracking2016 Multiple object tracking predicts math potential-->
 
 
 <!--In Huang et al.’s study, the correlation between MOT and VWM was .30, the correlation between (configuration) search and MOT was .30, and the correlation between search and VWM was .23. In our data, however, MOT and VWM were much more closely correlated with each other (.51)-->
 
- With the growth of online testing, we can expect this approach to  
-
-## Dual-task
-
-Another experiment indicates that trying to remember object identities can actually interfere with the ability to track [@fougnieDistinctCapacityLimits2006]. This is consistent with the possibility that position tracking and object feature updating rely on distinct mental capacities. MOT interfered with VWM a lot although not as much as VWM interfered with VWM
-
-" though both search and MOT can be highly atten- tionally demanding, they may do so via demands on partially independent attentional subsystems. In particular, visual search may interfere dramati- cally with scene encoding because both processes rely heavily on the same underlying ventral identification-based form of attention. In contrast, MOT fails to interfere with scene encoding more than central executive tasks because MOT relies primarily on a different underlying type of visual attention, one that is dorsal and individuation based. This distinction may also help to explain why MOT and search interfere with each other so little (Alvarez et al. 2005): They may both be highly attention-demanding, yet they may draw on fundamentally different forms of attention. Similarly, this may help to explain why observers are relatively poor at encoding surface features of objects in MOT—including those of tracked targets (see, e.g., Bahrami 2003; Ko and Seiffert 2006; Scholl, Pylyshyn, and Franconeri 1999). "
-
-The dual-task literature is very large. Can't review it all here
-
-Alvarez, G.A., et al., Are mutielement visual tracking and visual search mutually exclusive? Journal of Experimental Psychology: Human Perception and Performance, 2005. 31(4): p. 643-667.
-
-There seems to be an especially close link between MOT and subitizing
-@trickAgeDifferencesEnumerating2003 observed that even very slow motion reduced
-enumeration speed for stimuli containing 6–9 items, while
-the enumeration of 1–4 items was not affected when items
-were in motion. Similarly, @alstonSubitizationAttentionalEngagement2004
-presented static and moving items, finding that faster and
-more accurate enumeration occurred in the subitizing range
-given the presence of moving items.
-
-Subitizing no bilateral advantage on accuracy, but that could be due to very high accuracy - when looking at response time, an advantage is found, although not clear it's as large as that for MOT @railoBilateralTwoitemAdvantage2014
-
-"The results indicated that the number of items participants could subitize decreased by one for each item they tracked." @chesneyEvidenceSharedMechanism2011
-
- "concurrent performance of a MOT task and a VWM task still instilled substantial and load-dependent dual-task costs. " @fougnieDistinctCapacityLimits2006
-
-@allenMultipletargetTrackingRole2006
-
-psilocybin seems to impair MOT but not visual working memory [@carterUsingPsilocybinInvestigate2005] 
-
-object tracking in people with Williams Syndrome remains at the level of 4‐year‐olds, whereas the ability to remember multiple locations of static objects develops further. @ohearnDevelopmentalProfilesMultiple2010 
-
-
-@howardVisualSpatialAttention2020 "for a purely spatial task, perceptual attention (TRACKING?) and working memory appear to recruit separate core capacity-limited processes."
-
-@souzaContributionsVisualCentral2017 argued that VWM and MOT use different attentional resources." "Distracting visual attention, but not central attention, impaired MOT performance"
-
 
 <!--chapter:end:abilities.Rmd-->
 
-# Real world
+# Towards the real world
 
-**Towards the real-world** and real-world tasks. A naive view of visual perception is that we are simultaneously aware of the identities of all the objects in a scene, so unless a player actually disappears or hides behind something or someone, we should know where everyone on the bacsketball court is at all times. Bringing together the factors described in previous sections, and bringing in new ones such as limits on feature binding, we will analyze some real-world tasks.
+Some of the findings in multiple object tracking, and visual attention more generally, are useful for informing how non-scientists should think about real-world situations. A naive view of visual perception and attention, and one that might actually be used on the sports field by coaches, is that we 
+are simultaneously aware of the identities of all the objects in a scene. One implication is that unless a player actually disappears or hides behind something or someone, we should know where everyone in front of us on the basketball court, or the soccer field, is at all times. Similarly, during driving many people seem to assume that they are aware of all hazards in their visual field. The fact that this is not accurate has been incorporated into driver education [].
 
-"further research is required to determine whether multiple-object tracking is actually used in day-to-day driving." @lochnerMultipleobjectTrackingDriving2014
- 
- @mackenzieMultipleObjectAvoidance2021 used a multiple object avoidance task where the user used a mouse to control one of the balls that they had to prevent from colliding with the other balls. It's reminiscent of the old Asteroids video game that we opened this book with. Found decent correlations with performance on a driving simulator and with years of driving experience. In an earlier paper, some of these authors found that the MOA correlated better with driving performance than conventional MOT @mackenzieLinkAttentionalFunction2017 . @bowersCanWeImprove2013 found no correlation between MOT and  . there's one other paper.
- 
+The limitations of drivers in apprehending upcoming hazards, and lack of awareness of other players in the visual field in sportspeople, are often described in classes as being related to change blindness, which no doubt they are, but the limitations on multiple object tracking almost certainly contribute to them. When an object is being actively attended, which in a moving scene means tracked, change blindness or lack of knowledge of the object's identity is somewhat less likely. This was supported in a study by @lochnerMultipleobjectTrackingDriving2014 involving a driving simulator, who found that changes were found more accurately and rapidly when the change was made to a target vehicle rather than a distractor vehicle. The poor maintenance of non-spatial featural information during tracking (described in chapter \@ref(identity)) also should inform our approach to real-world situations.
 
-@harrisExaminingRolesWorking2020 low N comparing sports players
+Few empirical studies, unfortunately, have made strong links between real-world situations nad laboratory MOT tasks, or its underlying abilities. @bowersCanWeImprove2013 found that laboratory MOT performance did not predict driving test performance as well as the Montreal Cognitive Assessment task, a trail-making task, or a subtest of a useful field-of-view task. The aforementioned driving simulator study by @lochnerMultipleobjectTrackingDriving2014 found that drivers were more accurate at localizing which of multiple lead vehicles braked if it was a tracking target, but there was no advantage in terms of braking response time. 
 
-@mangineVisualTrackingSpeed2014 Twelve professional basketball players were tested before the 2012–13 season. Visual tracking speed was obtained from 1 core session (20 trials) of the multiple object tracking test, whereas RT was measured by fixed- and variable-region choice reaction tests, using a light-based testing device. Performance in VTS and RT was compared with basketball-specific measures of performance (assists [AST]; turnovers [TO]; assist-to-turnover ratio [AST/TO]; steals [STL]) during the regular basketball season. All performance measures were reported per 100 minutes played. Performance differences between backcourt (guards; n = 5) and frontcourt (forward/centers; n = 7...
+@mackenzieMultipleObjectAvoidance2021 used a multiple object avoidance task where the user used a mouse to control one of the balls that they had to prevent from colliding with the other balls. The task is reminiscent of the old Asteroids video game mentioned in the beginning of this book. @mackenzieMultipleObjectAvoidance2021 found good correlations with performance on a driving simulator and with years of driving experience. In an earlier paper, some of these authors found that the MOA correlated better with driving performance than conventional MOT @mackenzieLinkAttentionalFunction2017. 
 
-Study of only 12 pro basketball players finding correlations with basketball metrics @mangineVisualTrackingSpeed2014
+In sports, some teams of researchers have frequently suggested that MOT performance predicts in-game performance in soccer and other sports, and further reported evidence that training on MOT tasks can enhance skill in sports. Unfortunately, the associated evidence is not strong [@vaterCriticalSystematicReview2021] and strong evidence is needed given the poor record of computer-based training tasks (sometimes called "brain training") in improving skills in other real-world domains [@simonsBraintrainingProgramsWork2016].
 
 
 <!--chapter:end:realWorld.Rmd-->
@@ -1986,16 +1886,55 @@ Don't model random trajectory data, that probably doesn't constrain models enoug
 
 Two strategies to improve the constraints on models present themselves. One is to fix the individual components of the models based on the results of experiments designed to isolate those component, such as the experiments by [@verstratenLimitsAttentiveTracking2000; @holcombeSplittingAttentionReduces2013; @roudaiaDifferentEffectsAging2017] for identifying temporal limits and that of @holcombeObjectTrackingAbsence2014 to identify the range of spatial crowding. Another strategy is to model much larger sets of data, at an individual trial level; previous efforts seem to have modelled data from at most two different MOT experiments.
 
-## Topics not covered by this review
+## Topics not covered in this book
 
 Retinotopic or spatiotopic and configural @yantisMultielementVisualTracking1992, @billHierarchicalStructureEmployed2020, @howeCoordinateSystemsUsed2010
 @meyerhoffDistractorLocationsInfluence2015b @liuMultipleObjectTrackingBased2005
 , role of distractors 
 
-
 Role of surface features @papenmeierTrackingLocationFeatures2014
 
 perceived position is what matters @maechlerAttentionalTrackingTakes2021
+
+Dual-task 
+
+<!--
+## Dual-task OUT OF SCOPE
+
+Another experiment indicates that trying to remember object identities can actually interfere with the ability to track [@fougnieDistinctCapacityLimits2006]. This is consistent with the possibility that position tracking and object feature updating rely on distinct mental capacities. MOT interfered with VWM a lot although not as much as VWM interfered with VWM
+
+" though both search and MOT can be highly atten- tionally demanding, they may do so via demands on partially independent attentional subsystems. In particular, visual search may interfere dramati- cally with scene encoding because both processes rely heavily on the same underlying ventral identification-based form of attention. In contrast, MOT fails to interfere with scene encoding more than central executive tasks because MOT relies primarily on a different underlying type of visual attention, one that is dorsal and individuation based. This distinction may also help to explain why MOT and search interfere with each other so little (Alvarez et al. 2005): They may both be highly attention-demanding, yet they may draw on fundamentally different forms of attention. Similarly, this may help to explain why observers are relatively poor at encoding surface features of objects in MOT—including those of tracked targets (see, e.g., Bahrami 2003; Ko and Seiffert 2006; Scholl, Pylyshyn, and Franconeri 1999). "
+
+The dual-task literature is very large. Can't review it all here
+
+Alvarez, G.A., et al., Are mutielement visual tracking and visual search mutually exclusive? Journal of Experimental Psychology: Human Perception and Performance, 2005. 31(4): p. 643-667.
+
+There seems to be an especially close link between MOT and subitizing
+@trickAgeDifferencesEnumerating2003 observed that even very slow motion reduced
+enumeration speed for stimuli containing 6–9 items, while
+the enumeration of 1–4 items was not affected when items
+were in motion. Similarly, @alstonSubitizationAttentionalEngagement2004
+presented static and moving items, finding that faster and
+more accurate enumeration occurred in the subitizing range
+given the presence of moving items.
+
+psilocybin seems to impair MOT but not visual working memory [@carterUsingPsilocybinInvestigate2005] 
+
+Subitizing no bilateral advantage on accuracy, but that could be due to very high accuracy - when looking at response time, an advantage is found, although not clear it's as large as that for MOT @railoBilateralTwoitemAdvantage2014
+
+"The results indicated that the number of items participants could subitize decreased by one for each item they tracked." @chesneyEvidenceSharedMechanism2011
+
+ "concurrent performance of a MOT task and a VWM task still instilled substantial and load-dependent dual-task costs. " @fougnieDistinctCapacityLimits2006
+
+@allenMultipletargetTrackingRole2006
+
+object tracking in people with Williams Syndrome remains at the level of 4‐year‐olds, whereas the ability to remember multiple locations of static objects develops further. @ohearnDevelopmentalProfilesMultiple2010 
+
+@howardVisualSpatialAttention2020 "for a purely spatial task, perceptual attention (TRACKING?) and working memory appear to recruit separate core capacity-limited processes."
+
+@souzaContributionsVisualCentral2017 argued that VWM and MOT use different attentional resources." "Distracting visual attention, but not central attention, impaired MOT performance"
+-->
+
 
 <!--chapter:end:misconceptionsAndQuestions.Rmd-->
 

@@ -1,19 +1,24 @@
 # Attending to moving objects
 
-<!-- What can a shell game tell us about perception?
--->
 
-Is it just another paradigm for studying attention? No - hemisphere independence, where but not what.
 
-## Tracking task short description and anecdotes
-
-On the road, drivers monitor the movements of others’ vehicles. In conference halls, scientists monitor the position and posture of other researchers relative to the ones they are chatting to, in order to best time their approach. At the beach, parents keep watch as their children move in and out of the water. On the sports field, players often find themselves trying to keep track of multiple team-mates and opponents and their spatial relationships to the ball.
+<!--On the road, drivers monitor the movements of others’ vehicles. In conference halls, scientists monitor the position and posture of other researchers relative to the ones they are chatting to, in order to best time their approach. At the beach, parents keep watch as their children move in and out of the water. On the sports field, players often find themselves trying to keep track of multiple team-mates and opponents and their spatial relationships to the ball.
 
 shell game
 
-How do we do this and what does that tell us about how the mind works?
+Is it just another paradigm for studying attention? No - hemisphere independence, where but not what.
 
-Until the late 1980s, almost no-one who studied attention used moving objects. Partly this was a technology issue, even though in 1979, the first popular home game console, the Atari, introduced Asteroids.
+How do we do this and what does that tell us about how the mind works?-->
+
+Attention was one of the earliest topics of modern psychology, the science that began in earnest in the late 19th century. William James famously gave us a definition of attention, which began with "It is the taking possession by the mind, in clear and vivid form, of one out of what seem several simultaneously possible objects or trains of thought." This was not just philosophy, as plenty of experiments were being done, using custom apparatus, such as devices that measured response time and presented auditory and visual stimuli.
+
+```{r complication, echo=FALSE, out.width="100%", fig.cap="A 'complication apparatus' from the Harvard laboratory of Hugo Munsterberg. This instrument was used to measure the effect of attention to one stimulus on responses to another.  A subject who focused on one of the numbers on the large dial would have a delayed reaction to the sound of the bell, and vice versa."}
+knitr::include_graphics("imagesForRmd/historical/complicationApparatus.png")
+```
+
+Munsterberg, one of the first with a laboratory that studied attention, was highly interested in moving stimuli. In his book The Photoplay: A Psychological Study (1916), he presented a theory of cinema, including a twenty-page chapter on attention.
+
+When the study of attention began to really flower after World War II, however, the study of visual attention became dominated by static stimuli, often briefly presented with tachistoscopes. Very few researchers used moving objects, and this continued until he late 1980s. This was, in part, a technology issue. Scientific laboratories, or psychology laboratories at least, lagged the technology being introduced to arcades and even of homes. In 979, the first popular home game console, the Atari, introduced the game [Asteroids](https://youtube.com/embed/YJZ0hB0Vnyk).
 
 ```{r, eval=knitr::is_html_output(excludes = "epub"), results = 'asis', echo = F}
 #Doesn't work in PDF or even EPUB, that's why using exclusion code above.
@@ -27,7 +32,13 @@ cat(
 )
 ```
 
-The task was to shoot and dodge the asteroids that are streaming in all directions. It pays to monitor more than one of the moving objects, to determine which way one should move, or shoot, to prevent a collision. Psychologists were slow to use the associated technology to study how people processed multiple moving objects. Finally, in 1988, @pylyshynTrackingMultipleIndependent1988 used an Apple II+ computer to conduct an experiment that demonstrated that people could keep track of multiple moving objects. Pylyshyn & Storm showed that people can keep track of multiple moving objects designated as targets in a crowd of identical distractors.
+The point of the game was to shoot and dodge the asteroids that traveled across the screen from all directions. It paid to monitor more than one of the moving objects, to determine which way one should move, or shoot, to prevent a collision. Psychologists, however, were slow to take up the programming of computers to present stimuli, and even slower to use them to create moving stimuli.
+
+Psychologists were slow to use the associated technology to study how people processed multiple moving objects. In the 1970s, however, Zenon Pylyshyn was pondering the possibility of a primitive visual mechanism capable of "indexing and tracking features or feature-clusters" (as he put it in @pylyshynTrackingMultipleIndependent1988; I haven't been able to get copies of his 1970s reports) as they moved.
+
+Our ability to do this may be obvious after a bit of introspection when one is  
+
+Finally, in 1988, @pylyshynTrackingMultipleIndependent1988 used an Apple II+ computer to conduct an experiment that demonstrated that people could keep track of multiple moving objects. Pylyshyn & Storm showed that people can keep track of multiple moving objects designated as targets in a crowd of identical distractors.
 
 It was immediately apparent that the ability to track had a rather dramatic capacity limitation. That is, performance dropped quite rapidly as the number of targets was increased.
 

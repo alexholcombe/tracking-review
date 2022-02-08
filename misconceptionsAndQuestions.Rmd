@@ -44,13 +44,52 @@ Don't model random trajectory data, that probably doesn't constrain models enoug
 
 Two strategies to improve the constraints on models present themselves. One is to fix the individual components of the models based on the results of experiments designed to isolate those component, such as the experiments by [@verstratenLimitsAttentiveTracking2000; @holcombeSplittingAttentionReduces2013; @roudaiaDifferentEffectsAging2017] for identifying temporal limits and that of @holcombeObjectTrackingAbsence2014 to identify the range of spatial crowding. Another strategy is to model much larger sets of data, at an individual trial level; previous efforts seem to have modelled data from at most two different MOT experiments.
 
-## Topics not covered by this review
+## Topics not covered in this book
 
 Retinotopic or spatiotopic and configural @yantisMultielementVisualTracking1992, @billHierarchicalStructureEmployed2020, @howeCoordinateSystemsUsed2010
 @meyerhoffDistractorLocationsInfluence2015b @liuMultipleObjectTrackingBased2005
 , role of distractors 
 
-
 Role of surface features @papenmeierTrackingLocationFeatures2014
 
 perceived position is what matters @maechlerAttentionalTrackingTakes2021
+
+Dual-task 
+
+<!--
+## Dual-task OUT OF SCOPE
+
+Another experiment indicates that trying to remember object identities can actually interfere with the ability to track [@fougnieDistinctCapacityLimits2006]. This is consistent with the possibility that position tracking and object feature updating rely on distinct mental capacities. MOT interfered with VWM a lot although not as much as VWM interfered with VWM
+
+" though both search and MOT can be highly atten- tionally demanding, they may do so via demands on partially independent attentional subsystems. In particular, visual search may interfere dramati- cally with scene encoding because both processes rely heavily on the same underlying ventral identification-based form of attention. In contrast, MOT fails to interfere with scene encoding more than central executive tasks because MOT relies primarily on a different underlying type of visual attention, one that is dorsal and individuation based. This distinction may also help to explain why MOT and search interfere with each other so little (Alvarez et al. 2005): They may both be highly attention-demanding, yet they may draw on fundamentally different forms of attention. Similarly, this may help to explain why observers are relatively poor at encoding surface features of objects in MOT—including those of tracked targets (see, e.g., Bahrami 2003; Ko and Seiffert 2006; Scholl, Pylyshyn, and Franconeri 1999). "
+
+The dual-task literature is very large. Can't review it all here
+
+Alvarez, G.A., et al., Are mutielement visual tracking and visual search mutually exclusive? Journal of Experimental Psychology: Human Perception and Performance, 2005. 31(4): p. 643-667.
+
+There seems to be an especially close link between MOT and subitizing
+@trickAgeDifferencesEnumerating2003 observed that even very slow motion reduced
+enumeration speed for stimuli containing 6–9 items, while
+the enumeration of 1–4 items was not affected when items
+were in motion. Similarly, @alstonSubitizationAttentionalEngagement2004
+presented static and moving items, finding that faster and
+more accurate enumeration occurred in the subitizing range
+given the presence of moving items.
+
+psilocybin seems to impair MOT but not visual working memory [@carterUsingPsilocybinInvestigate2005] 
+
+Subitizing no bilateral advantage on accuracy, but that could be due to very high accuracy - when looking at response time, an advantage is found, although not clear it's as large as that for MOT @railoBilateralTwoitemAdvantage2014
+
+"The results indicated that the number of items participants could subitize decreased by one for each item they tracked." @chesneyEvidenceSharedMechanism2011
+
+ "concurrent performance of a MOT task and a VWM task still instilled substantial and load-dependent dual-task costs. " @fougnieDistinctCapacityLimits2006
+
+@allenMultipletargetTrackingRole2006
+
+object tracking in people with Williams Syndrome remains at the level of 4‐year‐olds, whereas the ability to remember multiple locations of static objects develops further. @ohearnDevelopmentalProfilesMultiple2010 
+
+@howardVisualSpatialAttention2020 "for a purely spatial task, perceptual attention (TRACKING?) and working memory appear to recruit separate core capacity-limited processes."
+
+@souzaContributionsVisualCentral2017 argued that VWM and MOT use different attentional resources." "Distracting visual attention, but not central attention, impaired MOT performance"
+-->
+

@@ -4,7 +4,7 @@ There are two basic approaches to understanding the abilities that underlie mult
 
 ## Do people vary much in how many objects they can track?
 
-There are two very common pitfalls of individual-difference studies in this literature. These are in addition to the common mistake across all study types of not testing enough participants to have good statistical power - correlational studies require more than ten times as many participants as a within-participants experimental design investigating a large effect. 
+There are two very common pitfalls of individual-difference studies in this literature. These are in addition to the common mistake across all study types of not testing enough participants to have good statistical power - individual-difference studies can require more than ten times as many participants as a within-participants experimental design investigating a large effect [@schonbrodtWhatSampleSize2013]. 
 
 @meyerhoffIndividualDifferencesVisual2020 tested fifty participants and for each one calculated the effective number of items tracked, for a display with four targets and four distractors, the modal effective number of items tracked was around two, but a substantial proportion of participants came in at three targets or one target tracked, and a few scored close to zero items tracked. It is tempting to conclude, as @meyerhoffIndividualDifferencesVisual2020 did, that some participants could only track one or zero targets, while others can track more. Unfortunately, in the data of @meyerhoffIndividualDifferencesVisual2020, like that of many others, there is no way to know how much of the variation between individuals is due to motivation rather than ability. Measuring motivation reliably is difficult or impossible, so this is not something that can easily be remedied. But researchers can include what are sometimes called attention checks or catch trials to allow exclusion of participants who show clear evidence of not reading the instructions carefully or frequently not paying attention. <!--also, they can design their study to look at the pattern of correlations--> This is the first pitfall, failing to include some sort of measure that checks whether each participant is blowing off the task.
 
@@ -34,64 +34,16 @@ Overall, there is a reasonable level of agreement across these individual-differ
 
 From the consistently strong correlation of MOT performance with visual working memory, it is tempting to conclude that mechanistically the two tasks are tightly linked. However, it must be remembered that working memory tasks are among the best predictors of a wide range of tasks, including intelligence as well as the Stroop task, spatial cuing, and task switching [e.g. @redickWorkingMemoryCapacity2006].
 
-## Going below the task level
+## Going deeper
 
-Variation in multiple object tracking is unlikely to be caused solely by one ability. Thanks to three decades of work, we now understand that tracking performance can be limited by spatial interference and temporal interference, as well as less task-specific factors such as lapses of attention.
+Variation in multiple object tracking is unlikely to be caused by just one ability. Thanks to three decades of work, we now understand that tracking performance can be limited by spatial interference and temporal interference, as well as less task-specific factors such as lapses of attention. And there may be other abilities that substantially contribute.
 
-Multiple object tracking i
+Unfortunately, no individual difference study to date seems to have attempted to partial out the possible components of MOT (e.g., spatial interference versus temporal interference) to see whether they show different patterns of correlations with other tasks. In the realm of spatial interference with static stimuli, even studies with small sample sizes have revealed substantial individual differences [@petrovAsymmetriesIdiosyncraticHot2011], such as larger crowding zones in some types of dyslexia [@jooOptimizingTextIndividual2018]. These differences may form a large part of inter-individual differences in MOT. There is also evidence that training with action video games can reduce spatial interference and improve reading ability [@bertoniExcessiveVisualCrowding2019], making it especially important to investigate spatial interference further.
 
-Thanks to our understanding of multiple object tracking built up over the last three decades, we 
+With the growth of online testing, however, the sample sizes required for individual difference studies have become easier to obtain, and so individual differences are a promising future direction. However, researchers who are more familiar with the issues and analyses of within-subjects studies must be aware of the different issues that are important for individual-differences studies.
 
-Variation in MOT performance is typically interpreted by researchers as variation simply in how many objects a person can track. 
-
-But the underlying reason for variation in MOT performance may not be due to variation in number of FINSTs or some other such capacity, but rather due to variation in peoples' tracking speed limit, spatial interference, or temporal interference. This does not seem to have been properly investigated.
-
-
-
- Large differences have been found in spatial crowding, which probably explains some variance. 
-The deleterious effects of crowding also show substantial individual differences [@petrovAsymmetriesIdiosyncraticHot2011], such as larger crowding zones in some types of dyslexia [@jooOptimizingTextIndividual2018], so crowding likely also contributes to some of the inter-individual variation in tracking performance.
-
-@wilmerMultipleObjectTracking2016 Multiple object tracking predicts math potential
-
+<!--@wilmerMultipleObjectTracking2016 Multiple object tracking predicts math potential-->
 
 
 <!--In Huang et al.’s study, the correlation between MOT and VWM was .30, the correlation between (configuration) search and MOT was .30, and the correlation between search and VWM was .23. In our data, however, MOT and VWM were much more closely correlated with each other (.51)-->
-
- With the growth of online testing, we can expect this approach to  
-
-## Dual-task
-
-Another experiment indicates that trying to remember object identities can actually interfere with the ability to track [@fougnieDistinctCapacityLimits2006]. This is consistent with the possibility that position tracking and object feature updating rely on distinct mental capacities. MOT interfered with VWM a lot although not as much as VWM interfered with VWM
-
-" though both search and MOT can be highly atten- tionally demanding, they may do so via demands on partially independent attentional subsystems. In particular, visual search may interfere dramati- cally with scene encoding because both processes rely heavily on the same underlying ventral identification-based form of attention. In contrast, MOT fails to interfere with scene encoding more than central executive tasks because MOT relies primarily on a different underlying type of visual attention, one that is dorsal and individuation based. This distinction may also help to explain why MOT and search interfere with each other so little (Alvarez et al. 2005): They may both be highly attention-demanding, yet they may draw on fundamentally different forms of attention. Similarly, this may help to explain why observers are relatively poor at encoding surface features of objects in MOT—including those of tracked targets (see, e.g., Bahrami 2003; Ko and Seiffert 2006; Scholl, Pylyshyn, and Franconeri 1999). "
-
-The dual-task literature is very large. Can't review it all here
-
-Alvarez, G.A., et al., Are mutielement visual tracking and visual search mutually exclusive? Journal of Experimental Psychology: Human Perception and Performance, 2005. 31(4): p. 643-667.
-
-There seems to be an especially close link between MOT and subitizing
-@trickAgeDifferencesEnumerating2003 observed that even very slow motion reduced
-enumeration speed for stimuli containing 6–9 items, while
-the enumeration of 1–4 items was not affected when items
-were in motion. Similarly, @alstonSubitizationAttentionalEngagement2004
-presented static and moving items, finding that faster and
-more accurate enumeration occurred in the subitizing range
-given the presence of moving items.
-
-Subitizing no bilateral advantage on accuracy, but that could be due to very high accuracy - when looking at response time, an advantage is found, although not clear it's as large as that for MOT @railoBilateralTwoitemAdvantage2014
-
-"The results indicated that the number of items participants could subitize decreased by one for each item they tracked." @chesneyEvidenceSharedMechanism2011
-
- "concurrent performance of a MOT task and a VWM task still instilled substantial and load-dependent dual-task costs. " @fougnieDistinctCapacityLimits2006
-
-@allenMultipletargetTrackingRole2006
-
-psilocybin seems to impair MOT but not visual working memory [@carterUsingPsilocybinInvestigate2005] 
-
-object tracking in people with Williams Syndrome remains at the level of 4‐year‐olds, whereas the ability to remember multiple locations of static objects develops further. @ohearnDevelopmentalProfilesMultiple2010 
-
-
-@howardVisualSpatialAttention2020 "for a purely spatial task, perceptual attention (TRACKING?) and working memory appear to recruit separate core capacity-limited processes."
-
-@souzaContributionsVisualCentral2017 argued that VWM and MOT use different attentional resources." "Distracting visual attention, but not central attention, impaired MOT performance"
 
