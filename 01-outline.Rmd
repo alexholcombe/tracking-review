@@ -1,8 +1,6 @@
-# Attending to moving objects
+# Objects that move!
 
-
-
-<!--On the road, drivers monitor the movements of others’ vehicles. In conference halls, scientists monitor the position and posture of other researchers relative to the ones they are chatting to, in order to best time their approach. At the beach, parents keep watch as their children move in and out of the water. On the sports field, players often find themselves trying to keep track of multiple team-mates and opponents and their spatial relationships to the ball.
+<!--
 
 shell game
 
@@ -16,9 +14,9 @@ Attention was one of the earliest topics of modern psychology, the science that 
 knitr::include_graphics("imagesForRmd/historical/complicationApparatus.png")
 ```
 
-Munsterberg, one of the first with a laboratory that studied attention, was highly interested in moving stimuli. In his book The Photoplay: A Psychological Study (1916), he presented a theory of cinema, including a twenty-page chapter on attention.
+Munsterberg, one of the first with a laboratory that studied attention, was highly interested in attention and moving stimuli. In his book The Photoplay: A Psychological Study (1916), he presented a theory of cinema, including a twenty-page chapter on attention.
 
-When the study of attention began to really flower after World War II, however, the study of visual attention became dominated by static stimuli, often briefly presented with tachistoscopes. Very few researchers used moving objects, and this continued until he late 1980s. This was, in part, a technology issue. Scientific laboratories, or psychology laboratories at least, lagged the technology being introduced to arcades and even of homes. In 979, the first popular home game console, the Atari, introduced the game [Asteroids](https://youtube.com/embed/YJZ0hB0Vnyk).
+When psychology and the study of attention grew more rapidly after World War II, the study of visual attention was dominated by static stimuli, often stimuli presented briefly with a tachistoscope. Very few researchers used moving objects, and this continued until the 1980s. This was, in part, a technology issue. Scientific laboratories, or psychology laboratories at least, lagged the technology being introduced to arcades and even of homes. In 979, the first popular home game console, the Atari, introduced the game [Asteroids](https://youtube.com/embed/YJZ0hB0Vnyk).
 
 ```{r, eval=knitr::is_html_output(excludes = "epub"), results = 'asis', echo = F}
 #Doesn't work in PDF or even EPUB, that's why using exclusion code above.
@@ -32,59 +30,38 @@ cat(
 )
 ```
 
-The point of the game was to shoot and dodge the asteroids that traveled across the screen from all directions. It paid to monitor more than one of the moving objects, to determine which way one should move, or shoot, to prevent a collision. Psychologists, however, were slow to take up the programming of computers to present stimuli, and even slower to use them to create moving stimuli.
+The point of the game was to shoot and dodge the asteroids that traveled across the screen from all directions. It paid to monitor multiple moving asteroids simultaneously, to determine which way one should move, or shoot, to prevent a collision. Psychologists, however, were slow to take up the programming of computers to present stimuli, and even slower to use them to create moving stimuli.
 
-Psychologists were slow to use the associated technology to study how people processed multiple moving objects. In the 1970s, however, Zenon Pylyshyn was pondering the possibility of a primitive visual mechanism capable of "indexing and tracking features or feature-clusters" (as he put it in @pylyshynTrackingMultipleIndependent1988; I haven't been able to get copies of his 1970s reports) as they moved.
+Psychologists were slow to use the associated technology to study how people attended to multiple moving objects. In the 1970s, however, Zenon Pylyshyn was pondering the possibility of a primitive visual mechanism capable of "indexing and tracking features or feature-clusters" (as he put it in @pylyshynTrackingMultipleIndependent1988; I haven't been able to get copies of his 1970s reports) as they moved. In 1988,  @pylyshynTrackingMultipleIndependent1988 programmed an Apple II+ computer to create a display with ten identical objects moving on random trajectories,  and connected a telegraph key with a timer to record response times. Finally, he connected an early eyetracker to detect eye movements away from fixation and trigger termination of a trial. Thus he was able to investigate the ability to covertly, without eye movements, keep track of moving objects.
 
-Our ability to do this may be obvious after a bit of introspection when one is  
+In the experiments of @pylyshynTrackingMultipleIndependent1988, up to five of the ten moving objects were designated as targets by flashing at the beginning of the trial. The targets then became identical to the remaining moving objects, the distractors, and moved about randomly. It was immediately apparent that people could do this. While viewing the display, one has the experience of being aware, seemingly continually, of which objects are the targets and how they are moving about.
 
-Finally, in 1988, @pylyshynTrackingMultipleIndependent1988 used an Apple II+ computer to conduct an experiment that demonstrated that people could keep track of multiple moving objects. Pylyshyn & Storm showed that people can keep track of multiple moving objects designated as targets in a crowd of identical distractors.
+INSERT EXAMPLE MOVIE
 
-It was immediately apparent that the ability to track had a rather dramatic capacity limitation. That is, performance dropped quite rapidly as the number of targets was increased.
+But @pylyshynTrackingMultipleIndependent1988 also showed that the processes that underlie tracking are limited in the number of targets that they can faithfully track. Periodically, one of the moving objects flashed, and if the flashed object was a target, the participant was to press the telegraph key. Errors increased fairly rapidly as the number of targets was increased, from 2% of target flashes missed when only one of the objects was a target, to 14% of target flashes missed when five of the objects were targets. 
 
-For the particular object trajectories and speeds used by some researchers
-@pylyshynTrackingMultipleIndependent1988, performance dropped rapidly
+Long before Zenon Pylyshyn and Ron Storm devised an experiment to formally document this phenomenon, the notion of kepping track of moving objects was already familiar from everyday life. Any adult who has ever been responsible for more than one child while at the beach or at the park has attempted to continuously monitor the locations of those children. Probably every parent has experienced the sudden panic when, perhaps while chatting with some friends, one realizes that one has lost track of a child. On the sports field, players often concentrate on keeping track of the locations of multiple team-mates, the locations of opponents, and their spatial relationships to the ball. In conference halls, scientists monitor the position and posture of other researchers relative to the ones they are chatting to, in order to best time their approach.
 
+<!-- On the road, drivers monitor the movements of others’ vehicles.  At the beach, parents keep watch as their children move in and out of the water.--> 
+<!-- In basketball, the player needs to track the individual players of her/his own team, for example to know where the team’s excellent 3-point scorer is currently located. Similarly, a car driver approaching a busy intersection needs to track the whereabouts and movement trajectories of other vehicles and pedestrians in order to decide his/her own move  and in evolutionary history (e.g., keeping track of the weakest members in a herd of prey)-->.
 
-This ability was also immediately observed to have a severe capacity limit. 
+<!--Cups and balls painting either here or in identity section, also with Saiki-->
 
-Researchers quickly latched onto the word "attentional" to describe this ability, 
-in part because various 
+You won't find much about tracking in chapters about visual attention. The study of visual attention is still dominated by stimuli that don't move. At the same time, what little most psychology researchers think they know about object tracking is wrong. In this book, we'll bust a few myths about tracking and see that studying it has yielded some unique insights about our limited capacities. To start, we'll lay out a bit about what attention is and why it's interesting.
 
+<!--
 Keeping track of something that is moving implies that our mind is continually, or at least frequently, updating a representation of its position. Most researchers seem to conceive of this as keeping spatial attention on an object, a sort of spotlight or hill of neural activation that glides across retinotopic cortex. There is evidence for this from neuroimaging. In this article, for simplicity we will refer to the spatial index that changes along with a moving object as a spotlight of attention. This spotlight account is consistent with evidence that probes are more easily detected on targets than elsewhere [@pylyshynPuzzlingFindingsMultiple2006; @searsMultipleObjectTracking2000]. Keep in mind, however, that we do not mean that a hill of activation in spatiotopic or retinotopic cortex exhausts all the processes involved in tracking - there are certainly more.
+-->
 
-Along the way we will bust myths such as the common notion that people can track four or five objects, 
+<!--Along the way we will bust myths such as the common notion that people can track four or five objects, 
 
 Is object tracking just sustained attentional selection, when the objects happen to be moving? Well, a first question fundamentally is how do you keep your attention on the object? The literature on visual search is enormous but is almost exclusively about finding 
 
 Without continuous attentional selection, you not only lose your children
 
-, and instead continued studying the processing of static, un-moving objects.
-
-
-sticking with static, unmoving objects that 
-
-and other computer games with moving objects were introduced in 1979, psychologists were slow to use this technology to study how people process multiple moving objects.
-Psychologists were slow to 
-
-Navigating a crowded street
-
 And today, children frequently try to track rapidly moving objects in their own home - like many other things, tracking has come to screens. 
+-->
 
-For the generations of children since 1979, when Asteroids was invented, 
-
-You won't find much about this ability in chapters about visual attention. This is partly because for decades, the study of visual attention used only still, un-moving objects. 
-
-The study of visual attention took off in the 1970s with work by Eriksen, Treisman, . We learned an enormous amount about *static* objects.
-
-a huge topic, but 
-
-This will make the case for tracking being much more important than people realize.  but you can't even perceive spatial relationships.
-
-
-The manuscript would start with a few anecdotes illustrating why keeping track of objects is important both today (e.g., keeping track of one's children at the beach, keeping track of particular players on the sports field<!-- In basketball, the player needs to track the individual players of her/his own team, for example to know where the team’s excellent 3-point scorer is currently located. Similarly, a car driver approaching a busy intersection needs to track the whereabouts and movement trajectories of other vehicles and pedestrians in order to decide his/her own move -->) and in evolutionary history (e.g., keeping track of the weakest members in a herd of prey). Then it would transition into some basic background about the visual system. Descriptions of the the draft sections are below. These section descriptions showcase that multiple, typically separate literatures would be integrated.
-
-Cups and balls painting either here or in identity section, also with Saiki
 
 ## Outline
 
@@ -109,9 +86,6 @@ Thus we don't know which is responsible for various results. This has afflicted 
 
 **speed, and time.** The physical parameters that can limit tracking performance are space, speed, and time. Each plays a role in different circumstances, but the temporal limits are the most misunderstood, as I have discovered in reviewing journal manuscripts over the years, even though they may be the most fundamental. This section will explain spatial limits, speed limits, and temporal frequency limits on tracking (based in part on three papers from my lab), and how they illuminate other issues such as the relationship of tracking to basic motion and position perception.
 
-Animated-horse-race-jockey.gif
-
-**Serial processing, parallel processing, or both?** The way that our limited capacities are allocated over time to multiple objects, that is whether in parallel or in rapid series, has been a long debate. Recent evidence (including one of my papers) points to a serial component that seems to relate to natural oscillations in the brain, but much is yet to be determined.
-
+**Serial processing, parallel processing, or both?** The way that our limited capacities are allocated over time to multiple objects, that is whether in parallel or in rapid series, has been a long debate.
 
 

@@ -7,15 +7,46 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Demo
+<!-- I was pretty distracted by the need for open access, open science, and the problem of the replication crisis over the last 10 years,
+but now I've made up for it by writing a book 40,000 words -->
+
+Basic demo
 
 Linares Vaziri demo
 
-##
+This will make the case for tracking being much more important than people realize.  but you can't even perceive spatial relationships.
 
-High split-half reliability, unlike other cognitive tasks.
+At the same time, what little most psychology researchers think they know about object tracking is wrong.
+
+tracking.whatanimalssee.com
+
+# Individual differences
+
+High split-half reliability (>0.8), unlike other cognitive tasks.
 <!--Headed to Portland-->
 
 Only a handful of proper individual-difference studies.
 
 A large set of studies with "Neurotracker" and other products, looking at correlations and also training, almost all with shoddy research designs.
+
+# Hemifield specificity
+
+The most important discovery, yet sadly neglected and unexploited. Is this new tracking result about tracking or about limits on cognition?
+
+The way to distinguish from C~1 processes.
+
+# Predictive brain?
+
+# Objects in motion
+
+Motion silencing
+
+# Serial or parallel?
+
+Seems like limited-capacity parallel.
+
+But conventional tests don't really probe that.
+
+There's no work on hemifield specificity of sampling.
+
+
