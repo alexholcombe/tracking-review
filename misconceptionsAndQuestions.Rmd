@@ -34,7 +34,9 @@ It is well-known that a decrease with target load, linear or non-linear, can be 
 
 ## Recommendations
 
-Always use several targets, not just two or three, to dilute the influence of C=1 processes.
+Always use several targets, not just two or three, to dilute the influence of C=1 processes. And still evaluate whether such a process could be the only one contributing. 
+The use of concurrent tasks (a "dual-task design") can also help. Perhaps the most powerful factor to exploit is hemifield specificity. This is sorely underused.
+
 
 Always test for hemifield specificity. This tells us whether
 
@@ -45,6 +47,8 @@ Don't model random trajectory data, that probably doesn't constrain models enoug
 Two strategies to improve the constraints on models present themselves. One is to fix the individual components of the models based on the results of experiments designed to isolate those component, such as the experiments by [@verstratenLimitsAttentiveTracking2000; @holcombeSplittingAttentionReduces2013; @roudaiaDifferentEffectsAging2017] for identifying temporal limits and that of @holcombeObjectTrackingAbsence2014 to identify the range of spatial crowding. Another strategy is to model much larger sets of data, at an individual trial level; previous efforts seem to have modelled data from at most two different MOT experiments.
 
 Study change detection during motion.
+
+
 
 ## Topics not covered in this book
 

@@ -1,67 +1,58 @@
 # Which aspect(s) of tracking determine performance? {#whichAspects}
 
-As @normanDatalimitedResourcelimitedProcesses1975 pointed out, the processes underlying task performance come in two varieties, data-limited and resource-limited. In the context of tracking we are referring to sensory data. If the targets to track go outside our visual field, it is a lack of sensory data that prevents them from being tracked. No amount of mental resources can overcome the absence of any data, hence the term data-limited. This may also be true of cases where sensory signals are not entirely absent, but they are impoverished.
+A number of different factors jointly determine how many moving objects we can track and how well we can track them. What are these factors? We've already covered grouping and the nature of the objects themselves, in Chapters \@ref(objects) and \@ref(grouping). In this chapter we will briefly outline known factors and how they relate to limited capacity.
 
-More subtle forms of this can explain some individual differences in task performance. For example, people with poor visual acuity may perform less well on a task than people with high visual acuity, again due to differences in the sensory data that they have to work with. Depending on the task bringing more mental resources to bear may provide little to no benefit. The classic way this is investigated is by varying the number of stimuli one needs to process. @normanDatalimitedResourcelimitedProcesses1975 illustrate this with a visual search study by BeckAmbler
-, which is most familiar from the study of visual search. If the number of stimuli one must evaluate does not affect how well a person can perform a task, this indicates the task is data-limited rather than resource-limited. Of course, attention does benefit 
+Our limited capacity and the reason for it is one of the most important topics in the multiple object tracking literature, as well as attention research more generally. So we'll start off with laying out a framework for thinking about human processing capacities, one that goes beyond the basic bottleneck idea of Chapter \@ref(bottlenecks).
 
-More reflections on the relation of the resource concept to underlying mechanisms is in section \@ref(spatialInterference)
+As @normanDatalimitedResourcelimitedProcesses1975 pointed out, the processes that underlie task performance come in two varieties, data-limited and resource-limited. Data in this context means sensory data. If a target moving on an unpredictable trajectory moves outside the edge of our visual field, it is a lack of sensory data that prevents it from being tracked. No amount of mental resources can overcome the absence of any data about an unpredictable stimulus, hence the fact that tracking performance is then limited by the data, or "data-limited". This may also be true of cases where sensory signals are impoverished even if not entirely absent. For example, an object traveling at a rate faster than our neurons can register cannot be tracked due to a data limitation. This makes the point that the data being referred to here are not the pattern of light falling on the retina, but rather that light after it has been processed by the retina and after additional preattentive sensory processing.
 
-tracking ability. For example, people with poor visual acuity may perform less well on a task than people with high visual acuity, again due to differences in the sensory data that they have to work with. Depending on the task
+People with poor visual acuity may perform less well on a task than people with high visual acuity, again due to differences in the sensory data that they have to work with. Thus, some individual differences are almost certainly due to data limitations rather than variation in tracking processes between people. when performance is data-limited, bringing more mental resources to bear may provide little to no benefit. The classic way that this is investigated is by varying the number of stimuli one needs to process. @normanDatalimitedResourcelimitedProcesses1975 illustrate this with a visual search study. If the number of stimuli one must evaluate does not affect how well a person can perform a task, this suggests that the task is data-limited rather than resource-limited, because performance is the same regardless of the proportion of the putative resource can be devoted to it. <!-- More reflections on the relation of the resource concept to underlying mechanisms is in Chapter \@ref(spatialInterference). -->
 
-The other type of task limitation is resource-limited processes. These are more interesting for those interested in visual attention and the capacity limits on mental processing introduced in section \@ref(bottlenecks).
+When a process is resource-limited, that typically is more interesting for those interested in visual attention and the capacity limits on mental processing. When response time or error rate increases with the number of distractors presented in a visual search task, that was classically interpreted as meaning that a resource-limited process is required for success at the task. As they say, however, science is hard. An elevation in e.g. error rate will also occur even if there is no resource limitation, but each additional distractor has a non-zero probability of being mistaken for a distractor, then there will be more errors with more distractors even if the probability of successfully evaluating each individual stimulus remains unchanged [@palmerAttentionVisualSearch1995]. 
 
+The particular number of objects that can be tracked with reasonable accuracy is thus highly dependent on stimulus conditions, and some of these conditions may reflect data limitations rather than a resource limitation. Still, even in ideal conditions it seems clear that the number of objects that can be tracked is much less than the number of objects that are simultaneously processed by early stages of the visual system. There is a resource limitation, and we'd like to know which factors consume the resource. Another way to think of this is with the term that I prefer, "resource-intensive". If a deleterious stimulus factor that worsens performance is resource-intensive, this means that increasing the amount of resource devoted the stimulus can compensate for that stimulus factor.
 
-That the number of objects one can track varies greatly with factors like speed is consistent with resource accounts. This 
+One example is object speed. An increase in object speed can hinder performance, but reducing the number of targets, which provides more resource to the remaining targets, can make up for that. Speed, then, is resource-intensive (although as we will see in chapter \@ref(speedAndTime), there is more going on with speed than most believe). Of course, speed also can result in a data-limitation, at very high speeds, but long before such speeds are reached, speed is resource-intensive.
 
-Every time someone discovers a factor that affects visual search performance, it is worthwhile to ask whether that factor is taxing a resource-limited process or a data-limited process. That is, will increasing the number of targets exacerbate the effect of that factor?
+<!--When we discover a stimulus factor that affects multiple object tracking performance, it is worthwhile to ask whether that factor is taxing a resource-limited process or a data-limited process. That is, will increasing the number of targets exacerbate the effect of that factor?-->
 
-The absence of a hard limit or 
+In summary, to say that tracking is capacity-limited is important, but by itself it is not very illuminating. We want to know more about why people perform more poorly with more targets. Tracking is a complex task, and we would like to know which aspect(s) of it exactly are most capacity-limited.
 
+## Unitary cognition (C≈1 processes)
 
-The particular number of objects that can be tracked with reasonable accuracy is thus highly dependent on conditions. Still, it is clear that this number is small relative to the number of objects that are simultaneously processed by early stages of the visual system. So, what aspect exactly of tracking imposes this limitation?
+Tracking may benefit from two resources. One is a resource that can process multiple targets simultaneously, even if it does so more poorly than if there is only one target. A second resource that likely benefits tracking has a capacity of only one target. This reflects a unitary focus of attention that has an approximate capacity of only one. It is the same set of processes that limits us to doing only one 2-digit mental multiplication problem at a time. When applied to tracking, it means you can apply your full intelligence and powers of reasoning to tracking that target, for example to use what you've learned about object trajectories to predict future positions.
 
-Explain why the resource intensiveness aspect of tracking is more interesting than other aspects.
+The scenario that there are two resources that can benefit tracking makes interpreting the results of experiments complicated. It makes a lot of the results trumpeted by tracking papers uninteresting. Many papers that come out of the experimental psychology tradition (as opposed to psychophysics, which is more quantitative) content themselves with showing that something is true, that a factor matters for performance, p < .05. Never mind how much it matters, the effect size. This kind of thinking is a real problem across psychology, and in tracking, it leads to me wanting to drag the paper straight into the recycle bin.
 
-Why do people perform more poorly with more targets? By definition, this means that the processes underlying tracking are capacity-limited, but by itself, that description is not very illuminating. Covert tracking is a complex task, and we would like to know which aspect(s) of it exactly are most capacity-limited.
+As an example, a paper might say that multiple object tracking performance is better with predictable trajectories than with unpredictable trajectories. Well, unless you tell me a lot more, I have to think may be entirely due to our central thought processes that have a capacity of approximately one target. See chapter \@ref(beyondLocation) for ways this can be assessed, for now my point is just that this, the possible contribution of C≈1 processes, is something to watch out for.
 
-Below is a list of candidate reasons for the factors that impair performance more when there are more targets:
-In a typical MOT task, any of the below are candidates for being one of the reasons, or the main reason, that performance declines with number of targets:
+<!-- oberauerAccessInformationWorking2002-->
 
-1. General cognition (C≈1 processes)
-1. Concurrent tasks
-1. Duration that one can sustain attention
-1. Spatial selection of multiple locations (even static ones)
-1. Spatial interference
-1. Temporal interference
-1. Speed limit of attention-following
+Another way to put this is that by using our capacity for reasoning and symbol manipulation, we can perform a wide array of arbitrary tasks. We therefore should not be surprised by our ability to track a *single* target. We know that we have a visual system that makes the position and direction of motion of objects on our retina available to cognition, and that using our ability to think about where an object is going and deliberately move our attention to a future anticipated location, we might muddle through tracking a single object.
 
-This section will explain what is meant by each of these factors. The most important of them will be discussed in more detail in subsequent sections.
-
-<!-- Each of these processes could be resource-limited or not resource-limited. That is, some of these effects may be bigger when one is attending to more targets. This helps fractionate tracking into different kinds of constituent processes -->
-
-## General cognition (C≈1 processes)
-
-In introducing the concept of a bottleneck or capacity limit in the previous section, I used the example of math problems. Using our capacity for reasoning and symbol manipulation, we can perform a wide array of arbitrary tasks. We therefore should not be surprised by our ability to track a *single* target. We know that we have a visual system that makes the position and direction of motion of objects on our retina available to cognition, and that using our ability to think about where an object is going and deliberately move our attention to a future anticipated location, we might muddle through tracking a single object. For purposes of illustration, let us call the processes involved "C≈1 processes" to reflect the possibility that some cognitive processes involved have a capacity of only one object.
-
-Oberauer
-
-What makes MOT interesting to many is that we can track more than one target. This implicates the involvement of another, higher-capacity sort of processing. The contribution to MOT of two kinds of processing, with different capacity limits, complicates the interpretation of MOT results. Even when participants are asked to track several targets, one can expect that C=1 processes are contributing to overall performance, even if they are only involved in the processing of one of the targets.
-
-Thus, when researchers contrast tracking performance with different numbers of targets, one reason for the decline in performance may be that C≈1 processes are, in each condition, processing only a single target, so performance declines in inverse proportion to the number of targets.
+Even when participants are asked to track several targets, then, one can expect that C=1 processes are contributing to overall performance, even if they are only involved in the processing of one of the targets. Thus, when researchers contrast tracking performance with different numbers of targets, one reason for the decline in performance may be that C≈1 processes are, in each condition, processing only a single target, so performance declines in inverse proportion to the number of targets.
 
 <!-- Unfortunately, researchers frequently neglect the fact that two sorts of mental abilities likely contribute to MOT performance: one or some limited in capacity to just a single target, and others with a greater processing capacity.  -->
 
-## Duration that one can sustain attention
+## Which factors
 
-Tracking may be, in part, a test of how long one can sustain attention. There also is some possibility that additional demands on attention (more targets) reducing the average amount of time one can sustain attention without a lapse. The results of @wolfeMultipleObjectJuggling2007, suggest that this need not be the case. In their Experiment 3, participants were required to track four targets for a period of ten minutes. Every 9 seconds or so, one object was highlighted and participants had to indicate whether it was one of the targets. In a no-feedback condition, participants were not told whether their individual responses were correct. In that situation, performance was substantially worse in the last few minutes of the trial than in the first few minutes (78% correct vs. 65% correct). However, in the feedback condition wherein participants were told immediately after each judgment whether they were correct, performance did not appear to decline over time. These results suggest that if participants are adequately motivated by feedback, they have considerable ability to track for several minutes with no appreciable loss. The comparison between the feedback and no-feedback conditions is not perfect as the feedback does provide a cue that can increase performance (when participants get the probe wrong, they can increase subsequent performance somewhat by switching to another target), but this confound does not seem to be able to explain the lack of almost any performance loss in the feedback condition.
+A top priority among tracking reseachers is understanding the reasons that tracking performance falls with the number of targets to track. Does spreading the tracking resource among more targets result in less frequent sampling of each target? More noise in the representation of the spatial location of each target? Poorer predictions of where the targets are going? Fewer neurons devoted to solving the correspondence problem (the correspondence problem will be explained later)? All of the above? Answering these questions would give us very strong clues to how tracking works.
 
-The circumstances used by @wolfeMultipleObjectJuggling2007 were quite different from a prototypical MOT task, not least because of the extended durations of the trials. Most researchers use trial durations of less than 10 seconds, and it is not clear whether the @wolfeMultipleObjectJuggling2007 results would generalize. It seems likely that motivated participants can attend for several seconds before their attention wanes substantially. @oksamaMultipleObjectTracking2004 did find, however, a substantial decrease in performance for trials of 13 s compared to trials of 5 s. With four targets, for example, performance fell from 91% correct to 74% correct, and this decrease was somewhat greater for larger numbers of targets than for fewer targets. Byrne & Holcombe (unpublished data) did not find any significant decrease over a comparable interval, and the explanation for these discrepancies is uncertain, although it may again be related to participants' motivation.
+The way forward to answering these questions, and sometimes even the existence of these possibilities, has unfortunately been obscure to many researchers, judging by the literature. Computational modeling is one approach that can be very productive, when done appropriately. Multiple researchers have proposed models, compared their performance on human data, and declared their model a success. Rarely, however, have they compared their model to that of another group of researchers, making it difficult to know whose model is best or whether the data simply doesn't strongly favor one model over another.
 
-The reason for the reduction in performance with greater time observed by @oksamaMultipleObjectTracking2004 may easily be due to another factor rather than an increase in lapses of attention. In the MOT tasks used by all of these researchers, with longer trials there is likely to be more instances of potential spatial interference, temporal interference, and running afoul of any attentional speed limit. Thus, if any of those factors matter, they could explain the decrease in performance with time. However, the @wolfeMultipleObjectJuggling2007 does seem to provide a kind of existence proof that lapses of attention need not be the limiting factor. Granting that that may be the case, an additional question is why, if other factors are in operation, there was *no* evidence of a performance decrease over time in @wolfeMultipleObjectJuggling2007? Well, @wolfeMultipleObjectJuggling2007 averaged performance over approximately the first third of the ten-minute interval and compared it to the last third. In the feedback condition, it is possible that all the worst possible events (such as close approaches, causing greater spatial interference) had already occurred by the end of the first third, so whatever level of performance participants were left with at that point already reflected their capacity to track through the most difficult events, which they were then able to continue to do until the end of the trial. Over a shorter time range such as that used by @oksamaMultipleObjectTracking2004, this may not have been the case.
- 
-Finally, an individual-differences study by @trevinoBridgingCognitiveNeuropsychological2021 found that MOT performance had  little correlation with performance on a task designed to measure sustained attention over an extended period of five minutes: the gradual-onset continual performance task. 
- 
+Another approach, and the one that I favor, is to start with a task analysis with some conjectures regarding what aspects of MOT trajectories might lead to errors, based on what we know about visual processing, and then manipulate MOT trajectories to test those conjectures. For each aspect that can be linked to errors, once it seems to be isolated (to some degree) by a particular manipulation, one can measure how resource-intensive that aspect's errors are.
+
+Rather than give a chronological account of researchers' halting progress along these lines, I will simply list a few factors that there's now evidence are important, and in the coming chapters explain at greater length what they are, and describe some of the associated evidence.
+
+<!--1. Spatial selection of multiple locations (even static ones)-->
+1. Spatial interference
+1. Temporal interference
+1. Object speed <!--limit of attention-following-->
+1. Use of motion direction
+
+<!-- Each of these processes could be resource-limited or not resource-limited. That is, some of these effects may be bigger when one is attending to more targets. This helps fractionate tracking into different kinds of constituent processes -->
+
+<!-- 
 ## Spatial selection of multiple locations
 
 
@@ -80,23 +71,41 @@ If objects are moving fast enough, they are perceived to blur together, because 
 
 ## Speed limit of attention-following
 
+-->
 
-## Moving forward
+The table below provides an oversimplified summary of what we will learn in some of the following chapters about resource-intensiveness. The degree to which each factor is hemifield specific is also included in the table, because as we will see in Chapter \@ref(twoBrains), knowing that is very important. The literature has not done a good job at determining how resource-intensive some of these factors are, hence some question marks are included in the table. 
 
-Each of these could hinder performance more with more targets. They contribute in an unknown mix to most tracking tasks .
-Thus we don't know which is responsible for various results. For example, 
-
-Create a table with column indicating how resource-intensive each factor is thought to be and how much of the load effect is borne by a hemisphere-specific effect.
-https://bookdown.org/yihui/bookdown/tables.html
 
 ```{r table-limits, tidy=F, echo=F}
+#Create a table with column indicating how resource-intensive each factor is thought to be and how much of the load effect is borne by a hemisphere-specific effect.
 library('tibble')
-tt<- tibble(factor=c("duration", "spatial interference","temporal interference","speed limit"),
-            `resource intensiveness` = c("low", "low","high","unknown"),
-            `hemifield specificity` = c("low?", "medium","high?","high") )
+tt<- tibble(factor=c("spatial interference","temporal interference","speed limit","Use of motion direction"),
+            `resource intensiveness` = c("low?","high","unknown","C~1 only?"),
+            `hemifield specificity` = c("medium","high?","unknown","unknown") )
   
 knitr::kable(
   tt, booktabs = TRUE,
   caption = 'Limits on multiple object tracking'
 )
+# https://bookdown.org/yihui/bookdown/tables.html
 ```
+
+For a "standard" MOT experiment with fairly unconstrained trajectories, it is unclear the extent to which each factor is involved.
+these factors combine in an unknown mix to det
+
+The factors in our list contribute in an unknown mix to tracking with conventional unconstrained MOT trajectories, so we don't know which is most responsible for various results in the literature. 
+
+Before 
+I'd also like to get one factor out of the way. This is because although it frequently is mentioned by researchers, there is little reason to think it matters much.
+
+## Duration that one can sustain attention
+
+TAKE PEOPLE OFF TASK - C~1 LAPSES LIMIT IT
+
+Tracking may be, in part, a test of how long one can sustain attention. There also is some possibility that additional demands on attention (more targets) reducing the average amount of time one can sustain attention without a lapse. The results of @wolfeMultipleObjectJuggling2007, suggest that this need not be the case. In their Experiment 3, participants were required to track four targets for a period of ten minutes. Every 9 seconds or so, one object was highlighted and participants had to indicate whether it was one of the targets. In a no-feedback condition, participants were not told whether their individual responses were correct. In that situation, performance was substantially worse in the last few minutes of the trial than in the first few minutes (78% correct vs. 65% correct). However, in the feedback condition wherein participants were told immediately after each judgment whether they were correct, performance did not appear to decline over time. These results suggest that if participants are adequately motivated by feedback, they have considerable ability to track for several minutes with no appreciable loss. The comparison between the feedback and no-feedback conditions is not perfect as the feedback does provide a cue that can increase performance (when participants get the probe wrong, they can increase subsequent performance somewhat by switching to another target), but this confound does not seem to be able to explain the lack of almost any performance loss in the feedback condition.
+
+The circumstances used by @wolfeMultipleObjectJuggling2007 were quite different from a prototypical MOT task, not least because of the extended durations of the trials. Most researchers use trial durations of less than 10 seconds, and it is not clear whether the @wolfeMultipleObjectJuggling2007 results would generalize. It seems likely that motivated participants can attend for several seconds before their attention wanes substantially. @oksamaMultipleObjectTracking2004 did find, however, a substantial decrease in performance for trials of 13 s compared to trials of 5 s. With four targets, for example, performance fell from 91% correct to 74% correct, and this decrease was somewhat greater for larger numbers of targets than for fewer targets. Byrne & Holcombe (unpublished data) did not find any significant decrease over a comparable interval, and the explanation for these discrepancies is uncertain, although it may again be related to participants' motivation.
+
+The reason for the reduction in performance with greater time observed by @oksamaMultipleObjectTracking2004 may easily be due to another factor rather than an increase in lapses of attention. In the MOT tasks used by all of these researchers, with longer trials there is likely to be more instances of potential spatial interference, temporal interference, and running afoul of any attentional speed limit. Thus, if any of those factors matter, they could explain the decrease in performance with time. However, the @wolfeMultipleObjectJuggling2007 does seem to provide a kind of existence proof that lapses of attention need not be the limiting factor. Granting that that may be the case, an additional question is why, if other factors are in operation, there was *no* evidence of a performance decrease over time in @wolfeMultipleObjectJuggling2007? Well, @wolfeMultipleObjectJuggling2007 averaged performance over approximately the first third of the ten-minute interval and compared it to the last third. In the feedback condition, it is possible that all the worst possible events (such as close approaches, causing greater spatial interference) had already occurred by the end of the first third, so whatever level of performance participants were left with at that point already reflected their capacity to track through the most difficult events, which they were then able to continue to do until the end of the trial. Over a shorter time range such as that used by @oksamaMultipleObjectTracking2004, this may not have been the case.
+ 
+Finally, an individual-differences study by @trevinoBridgingCognitiveNeuropsychological2021 found that MOT performance had  little correlation with performance on a task designed to measure sustained attention over an extended period of five minutes: the gradual-onset continual performance task. 
