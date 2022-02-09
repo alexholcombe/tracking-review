@@ -63,29 +63,7 @@ And today, children frequently try to track rapidly moving objects in their own 
 -->
 
 
-## Outline
-
-**Intro** 
-
-**Bottlenecks** 
-
-**Which aspect(s) of tracking determine performance?**
-
-1. C=1 processes
-1. Duration one can sustain attention
-1. Spatial selection of multiple locations, even static ones
-1. Spatial interference
-1. Temporal interference
-1. Speed limit of attention-following
-
-Each of these could hinder performance more with more targets. They contribute in an unknown mix to most trakcing tasks .
-Thus we don't know which is responsible for various results. This has afflicted the quest to understand serialOrParallel, 
-
-
-<!-- **Different resources for different tasks** The brain can do some tasks with remarkably little interference between them, while others are  -->
-
+<!--
 **speed, and time.** The physical parameters that can limit tracking performance are space, speed, and time. Each plays a role in different circumstances, but the temporal limits are the most misunderstood, as I have discovered in reviewing journal manuscripts over the years, even though they may be the most fundamental. This section will explain spatial limits, speed limits, and temporal frequency limits on tracking (based in part on three papers from my lab), and how they illuminate other issues such as the relationship of tracking to basic motion and position perception.
-
-**Serial processing, parallel processing, or both?** The way that our limited capacities are allocated over time to multiple objects, that is whether in parallel or in rapid series, has been a long debate.
-
+-->
 

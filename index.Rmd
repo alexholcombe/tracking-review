@@ -11,7 +11,7 @@ output:
         twitter: yes
         facebook: no
 documentclass: book
-lof: yes
+lof: no #doesn't successfully list figures when yes
 #(doesn't work) html_document:
 # (doesn't work) code_folding: show
 
@@ -20,8 +20,12 @@ lof: yes
 #HTML output in non-HTML formats by adding this option to the YAML front-matter of your rmarkdown file:
 always_allow_html: true
 bibliography: [bibliography/CambridgeElement.bib, bibliography/CambridgeElementNewestAdditions.bib, bibliography/packages.bib]
+#Maybe the author-year error is something else
+#bibliography: [bibliography/CambridgeElement.bib, bibliography/packages.bib]
+#bibliography: [bibliography/packages.bib]
+#bibliography: [bibliography/2016book.bib]
 #In Zotero, create the book.bib file by going to object_tracking->CambridgeElement, select all items, right-click->Export items->BetterBibTex
-biblio-style: apalike
+biblio-style: "apalike"
 link-citations: yes
 description: "Tracking-review"
 url: 'https\://tracking.whatanimalssee.com/'

@@ -11,7 +11,7 @@ output:
         twitter: yes
         facebook: no
 documentclass: book
-lof: yes
+lof: no #doesn't successfully list figures when yes
 #(doesn't work) html_document:
 # (doesn't work) code_folding: show
 
@@ -20,8 +20,12 @@ lof: yes
 #HTML output in non-HTML formats by adding this option to the YAML front-matter of your rmarkdown file:
 always_allow_html: true
 bibliography: [bibliography/CambridgeElement.bib, bibliography/CambridgeElementNewestAdditions.bib, bibliography/packages.bib]
+#Maybe the author-year error is something else
+#bibliography: [bibliography/CambridgeElement.bib, bibliography/packages.bib]
+#bibliography: [bibliography/packages.bib]
+#bibliography: [bibliography/2016book.bib]
 #In Zotero, create the book.bib file by going to object_tracking->CambridgeElement, select all items, right-click->Export items->BetterBibTex
-biblio-style: apalike
+biblio-style: "apalike"
 link-citations: yes
 description: "Tracking-review"
 url: 'https\://tracking.whatanimalssee.com/'
@@ -139,31 +143,9 @@ And today, children frequently try to track rapidly moving objects in their own 
 -->
 
 
-## Outline
-
-**Intro** 
-
-**Bottlenecks** 
-
-**Which aspect(s) of tracking determine performance?**
-
-1. C=1 processes
-1. Duration one can sustain attention
-1. Spatial selection of multiple locations, even static ones
-1. Spatial interference
-1. Temporal interference
-1. Speed limit of attention-following
-
-Each of these could hinder performance more with more targets. They contribute in an unknown mix to most trakcing tasks .
-Thus we don't know which is responsible for various results. This has afflicted the quest to understand serialOrParallel, 
-
-
-<!-- **Different resources for different tasks** The brain can do some tasks with remarkably little interference between them, while others are  -->
-
+<!--
 **speed, and time.** The physical parameters that can limit tracking performance are space, speed, and time. Each plays a role in different circumstances, but the temporal limits are the most misunderstood, as I have discovered in reviewing journal manuscripts over the years, even though they may be the most fundamental. This section will explain spatial limits, speed limits, and temporal frequency limits on tracking (based in part on three papers from my lab), and how they illuminate other issues such as the relationship of tracking to basic motion and position perception.
-
-**Serial processing, parallel processing, or both?** The way that our limited capacities are allocated over time to multiple objects, that is whether in parallel or in rapid series, has been a long debate.
-
+-->
 
 
 <!--chapter:end:01-outline.Rmd-->
@@ -643,9 +625,15 @@ In pursuing tests of this theory, @franconeriTrackingMultipleObjects2010a unfort
 
 As @franconeriTrackingMultipleObjects2010a wrote in their conclusion, their hypothesis that "barring object-spacing constraints, people could reliably track an unlimited number of objects as fast as they could track a single object" constituted a "simple and falsifiable hypothesis". I believed this hypothesis to be unlikely to be true, and on obvious test was to keep all the objects in an MOT display widely separated, vary the number of targets, and measure the speed threshold in each case.
 
-In 2012, my student Wei-Ying Chen and I conducted several experiments in this vein. In one, we used an ordinary computer screen but had participants bring their noses quite close to it to create a wide-field display, which allowed us to keep targets and distractors dozens of degrees of visual angle from each other @holcombeExhaustingAttentionalTracking2012. The basic display configuration is shown below <!-- Figure \@ref(fig:HC2012BasicTrial) CAUSES LATEX ERROR-->.
+In 2012, my student Wei-Ying Chen and I conducted several experiments in this vein. In one, we used an ordinary computer screen but had participants bring their noses quite close to it to create a wide-field display, which allowed us to keep targets and distractors dozens of degrees of visual angle from each other @holcombeExhaustingAttentionalTracking2012. The basic display configuration is shown in Figure \@ref(fig:HC2012BasicTrial).
 
-```{r HC2012BasicTrial, echo=FALSE, out.width="100%", fig.cap="In experiments by Holcombe & Chen (2012), after the targets were highlighted in white, all the discs became red and revolved about the fixation point. During this interval, each pair of discs occasionally reversed their direction. After 3–3.8 s the discs stop, one ring is indicated by presenting text next to it, and the participant clicks on one disc of that ring."}
+<!--
+```{r, echo=FALSE, fig.cap="In experiments by Holcombe and Chen (2012), after the targets were highlighted in white, all the discs became red and revolved about the fixation point. During this interval, each pair of discs occasionally reversed their direction. After 3–3.8 s, the discs stop, one ring is indicated, and the participant clicks on one disc of that ring."}
+knitr::include_graphics("imagesForRmd/HolcombeChen2012BasicTrial.png")
+```
+-->
+
+```{r HC2012BasicTrial, echo=FALSE, out.width="100%", fig.cap="In experiments by Holcombe and Chen (2012), after the targets were highlighted in white, all the discs became red and revolved about the fixation point. During this interval, each pair of discs occasionally reversed their direction. After 3–3.8 s, the discs stop, one ring is indicated, and the participant clicks on one disc of that ring."}
 knitr::include_graphics("imagesForRmd/HolcombeChen2012BasicTrial.png")
 ```
 
@@ -935,7 +923,7 @@ You can get a taste of this, first view the below movie, fixating on the dot in 
 ```{r, echo=FALSE, out.width="100%", fig.cap="Task: fixate the white dot, track the initially-white targets, and note how fast you can track, using the speed in the upper right corner."}
 #Work-around to make GIFs work by avoiding including them in non-html outputs!
 #https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
-if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/temporalLimits/2targets3objectsPerArray.gif") else knitr::include_graphics("movies/MOTmovies/temporalLimits/static_2targets3objectsPerArray.gif")
+if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/temporalLimits/2targets3objectsPerArray.gif") else knitr::include_graphics("movies/MOTmovies/temporalLimits/static_2targets3objectsPerArray.png")
 #, height = "250px"
 ```
 
@@ -944,7 +932,7 @@ Many people can track the targets even at the movie's fastest speed of approxima
 ```{r twoTargetsTemporalLimit, echo=FALSE, out.width="100%", fig.cap="Fixate on the dot in the center, track the two targets that are initially white, and note the speed at which you are no longer able to track."}
 #Work-around to make GIFs work by avoiding including them in non-html outputs!
 #https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
-if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/temporalLimits/2targets9objectsPerArray.gif") else knitr::include_graphics("movies/MOTmovies/temporalLimits/static_2targets9objectsPerArray.gif")
+if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/temporalLimits/2targets9objectsPerArray.gif") else knitr::include_graphics("movies/MOTmovies/temporalLimits/static_2targets9objectsPerArray.png")
 #, height = "250px"
 ```
 

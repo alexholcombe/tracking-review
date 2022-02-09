@@ -85,9 +85,15 @@ In pursuing tests of this theory, @franconeriTrackingMultipleObjects2010a unfort
 
 As @franconeriTrackingMultipleObjects2010a wrote in their conclusion, their hypothesis that "barring object-spacing constraints, people could reliably track an unlimited number of objects as fast as they could track a single object" constituted a "simple and falsifiable hypothesis". I believed this hypothesis to be unlikely to be true, and on obvious test was to keep all the objects in an MOT display widely separated, vary the number of targets, and measure the speed threshold in each case.
 
-In 2012, my student Wei-Ying Chen and I conducted several experiments in this vein. In one, we used an ordinary computer screen but had participants bring their noses quite close to it to create a wide-field display, which allowed us to keep targets and distractors dozens of degrees of visual angle from each other @holcombeExhaustingAttentionalTracking2012. The basic display configuration is shown below <!-- Figure \@ref(fig:HC2012BasicTrial) CAUSES LATEX ERROR-->.
+In 2012, my student Wei-Ying Chen and I conducted several experiments in this vein. In one, we used an ordinary computer screen but had participants bring their noses quite close to it to create a wide-field display, which allowed us to keep targets and distractors dozens of degrees of visual angle from each other @holcombeExhaustingAttentionalTracking2012. The basic display configuration is shown in Figure \@ref(fig:HC2012BasicTrial).
 
-```{r HC2012BasicTrial, echo=FALSE, out.width="100%", fig.cap="In experiments by Holcombe & Chen (2012), after the targets were highlighted in white, all the discs became red and revolved about the fixation point. During this interval, each pair of discs occasionally reversed their direction. After 3–3.8 s the discs stop, one ring is indicated by presenting text next to it, and the participant clicks on one disc of that ring."}
+<!--
+```{r, echo=FALSE, fig.cap="In experiments by Holcombe and Chen (2012), after the targets were highlighted in white, all the discs became red and revolved about the fixation point. During this interval, each pair of discs occasionally reversed their direction. After 3–3.8 s, the discs stop, one ring is indicated, and the participant clicks on one disc of that ring."}
+knitr::include_graphics("imagesForRmd/HolcombeChen2012BasicTrial.png")
+```
+-->
+
+```{r HC2012BasicTrial, echo=FALSE, out.width="100%", fig.cap="In experiments by Holcombe and Chen (2012), after the targets were highlighted in white, all the discs became red and revolved about the fixation point. During this interval, each pair of discs occasionally reversed their direction. After 3–3.8 s, the discs stop, one ring is indicated, and the participant clicks on one disc of that ring."}
 knitr::include_graphics("imagesForRmd/HolcombeChen2012BasicTrial.png")
 ```
 
