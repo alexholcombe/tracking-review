@@ -38,8 +38,8 @@ These aspects of the structure of the visual world may be one reason that our vi
 
 This decomposition of the rim's movement is so strong that people systematically mis-report the trajectory of the points on the wheel [@proffittUnderstandingWheelDynamics1990]. The red curve in the animation below reveals that a point on a rolling wheel traces out a curve that involves up, down, and forward motion, but no backward motion. The trajectory reported by participants is very different and tends to include a period of backward motion.
 
-```{r, echo=FALSE, out.width="30%", fig.cap="The red curve is that traced out by a point on a rolling wheel, by Zorgit https://commons.wikimedia.org/wiki/File:Cycloid_f.gif"}
-if(knitr::is_html_output()) knitr::include_graphics("movies/cycloid/Cycloid_f.gif") else knitr::include_graphics("movies/cycloid/Cycloid_f_static.gif")
+```{r, echo=FALSE, out.width="30%", fig.cap="The red curve is that traced out by a point on a rolling wheel, by Zorgit https://commons.wikimedia.org/wiki/File:Cycloid_f.gif"}  
+if(knitr::is_html_output()) knitr::include_graphics("movies/cycloid/Cycloid_f.gif") else knitr::include_graphics("movies/cycloid/Cycloid_f_static.png")
 ```
 
 @billHierarchicalStructureEmployed2020 varied the structured motion pattern of the moving discs of an MOT task to show that hierarchical relations are extracted and used to facilitate tracking. The attentional demands, if any, of such hierarchical motion decomposition has not been explored much.

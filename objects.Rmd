@@ -51,7 +51,7 @@ Our inability to track the ends of lines fits in with the view this chapter open
 Conceptually, researchers distinguish between the processing that determines *how many* objects one can track and those that determine *what kinds* of objects can be tracked. But do these things happen in different processing stages, or do they interact? An assumption of separate processing stages is popular in the study of visual cognition generally. Visual search, for example, is usually conceptualized this way [@wolfePreattentiveObjectFiles1997; @nakayamaVisualSurfaceRepresentation1995], and appears to be an implicit assumption in two reviews of objects and tracking  [@schollObjectsAttentionState2001; @pylyshynSeeingVisualizingIt2006]. <!-- No interaction between number of objects to track and what kinds of objects can be tracked.--> 
 
 ```{r simpleArchitecture, echo=FALSE, out.width="30%", fig.cap="A schematic of the idea that objects are created prior to the action of tracking processes, which then point to the already-formed object representations but do not change them."}
-knitr::include_graphics("imagesForRmd/flowDiagrams/objectCreationTrackingSeparateDiagram.drawio.svg")
+knitr::include_graphics("imagesForRmd/flowDiagrams/objectCreationTrackingSeparateDiagram.png")
 ```
 
 It would be convenient if object creation and object tracking occurred at distinct processing stages, as that is straightforward relative to an interactive system [@simonSciencesArtificialReissue1969; @sternbergDiscoveryProcessingStages1969]. And there certainly is evidence that tracking is  high-level, for example @maechlerAttentionalTrackingTakes2021 found evidence that tracking operates on perceived object position rather than more low-level representation of position.

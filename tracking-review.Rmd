@@ -1,5 +1,5 @@
 --- 
-title: "Attending to a moving world"
+title: "Attending to a world of moving objects"
 author: "Alex O. Holcombe"
 date: "`r paste0('Updated on ',Sys.Date())`"
 site: bookdown::bookdown_site
@@ -29,7 +29,7 @@ github-repo: alexholcombe/tracking-review
 twitter-handle: ceptional
 #For the order of chapters, see _bookdown.yml, where they are manually specified
 ---
-<!--other titles: Tracking moving objects, How humans track objects,  -->
+<!--other titles: Tracking moving objects, How humans track objects, Attending to a moving world -->
 
 # Preface {-}
 
@@ -316,7 +316,7 @@ Our inability to track the ends of lines fits in with the view this chapter open
 Conceptually, researchers distinguish between the processing that determines *how many* objects one can track and those that determine *what kinds* of objects can be tracked. But do these things happen in different processing stages, or do they interact? An assumption of separate processing stages is popular in the study of visual cognition generally. Visual search, for example, is usually conceptualized this way [@wolfePreattentiveObjectFiles1997; @nakayamaVisualSurfaceRepresentation1995], and appears to be an implicit assumption in two reviews of objects and tracking  [@schollObjectsAttentionState2001; @pylyshynSeeingVisualizingIt2006]. <!-- No interaction between number of objects to track and what kinds of objects can be tracked.--> 
 
 ```{r simpleArchitecture, echo=FALSE, out.width="30%", fig.cap="A schematic of the idea that objects are created prior to the action of tracking processes, which then point to the already-formed object representations but do not change them."}
-knitr::include_graphics("imagesForRmd/flowDiagrams/objectCreationTrackingSeparateDiagram.drawio.svg")
+knitr::include_graphics("imagesForRmd/flowDiagrams/objectCreationTrackingSeparateDiagram.png")
 ```
 
 It would be convenient if object creation and object tracking occurred at distinct processing stages, as that is straightforward relative to an interactive system [@simonSciencesArtificialReissue1969; @sternbergDiscoveryProcessingStages1969]. And there certainly is evidence that tracking is  high-level, for example @maechlerAttentionalTrackingTakes2021 found evidence that tracking operates on perceived object position rather than more low-level representation of position.
@@ -416,8 +416,8 @@ These aspects of the structure of the visual world may be one reason that our vi
 
 This decomposition of the rim's movement is so strong that people systematically mis-report the trajectory of the points on the wheel [@proffittUnderstandingWheelDynamics1990]. The red curve in the animation below reveals that a point on a rolling wheel traces out a curve that involves up, down, and forward motion, but no backward motion. The trajectory reported by participants is very different and tends to include a period of backward motion.
 
-```{r, echo=FALSE, out.width="30%", fig.cap="The red curve is that traced out by a point on a rolling wheel, by Zorgit https://commons.wikimedia.org/wiki/File:Cycloid_f.gif"}
-if(knitr::is_html_output()) knitr::include_graphics("movies/cycloid/Cycloid_f.gif") else knitr::include_graphics("movies/cycloid/Cycloid_f_static.gif")
+```{r, echo=FALSE, out.width="30%", fig.cap="The red curve is that traced out by a point on a rolling wheel, by Zorgit https://commons.wikimedia.org/wiki/File:Cycloid_f.gif"}  
+if(knitr::is_html_output()) knitr::include_graphics("movies/cycloid/Cycloid_f.gif") else knitr::include_graphics("movies/cycloid/Cycloid_f_static.png")
 ```
 
 @billHierarchicalStructureEmployed2020 varied the structured motion pattern of the moving discs of an MOT task to show that hierarchical relations are extracted and used to facilitate tracking. The attentional demands, if any, of such hierarchical motion decomposition has not been explored much.
@@ -513,15 +513,17 @@ If objects are moving fast enough, they are perceived to blur together, because 
 
 -->
 
-Each of these could hinder performance more with more targets. They contribute in an unknown mix to tracking with conventional unconstrained MOT trajectories, so we don't know which is most responsible for various results in the literature.
+The table below provides an oversimplified summary of what we will learn in some of the following chapters about resource-intensiveness. The degree to which each factor is hemifield specific is also included in the table, because as we will see in Chapter \@ref(twoBrains), knowing that is very important. The literature has not done a good job at determining how resource-intensive some of these factors are, hence some question marks are included in the table. 
 
 
 ```{r table-limits, tidy=F, echo=F}
 #Create a table with column indicating how resource-intensive each factor is thought to be and how much of the load effect is borne by a hemisphere-specific effect.
 library('tibble')
 tt<- tibble(factor=c("spatial interference","temporal interference","speed limit","Use of motion direction"),
-            `resource intensiveness` = c("low","high","unknown","C~1 only?"),
-            `hemifield specificity` = c("medium","high?","high","unknown") )
+            `resource intensiveness` = c("low?","high","unknown","C~1 only?"),
+            `hemifield specificity` = c("medium","high?","unknown","unknown"),
+            `contribution to standard MOT` = c("medium to high","unknown","low?","low"),            
+            )
   
 knitr::kable(
   tt, booktabs = TRUE,
@@ -530,28 +532,35 @@ knitr::kable(
 # https://bookdown.org/yihui/bookdown/tables.html
 ```
 
-Before 
-I'd also like to get one factor out of the way. This is because although it frequently is mentioned by researchers, there is little reason to think it matters much.
+By "contribution to standard MOT", I mean the degree to which a factor is involved in errors in a task with relatively unconstrained trajectories in the model of Pylyshyn's original work. I have had to make guesstimates for these values due to the lack of relevant work in the literature.
+
+Before going on to address each of these factors, I would also like to address a factor that is somewhat different in kind.
 
 ## Duration that one can sustain attention
 
-TAKE PEOPLE OFF TASK - C~1 LAPSES LIMIT IT
+Tracking may be, in part, a test of how long one can sustain attention. If a participant gets distracted or starts day-dreaming, that participant might completely stop tracking and, when their attention returns, not know the last locations of the targets. Lapses of attention are a problem in most other laboratory tasks as well, of course, but they are often thought to be particularly important for tracking because tracking requires a longer continuous engagement with the stimuli than for other common laboratory tasks. This is because the trials last for several seconds, typically, and the stimuli are continuously moving, so shifting one's attention away from the display can mean losing the targets.
 
-Tracking may be, in part, a test of how long one can sustain attention. There also is some possibility that additional demands on attention (more targets) reducing the average amount of time one can sustain attention without a lapse. The results of @wolfeMultipleObjectJuggling2007, suggest that this need not be the case. In their Experiment 3, participants were required to track four targets for a period of ten minutes. Every 9 seconds or so, one object was highlighted and participants had to indicate whether it was one of the targets. In a no-feedback condition, participants were not told whether their individual responses were correct. In that situation, performance was substantially worse in the last few minutes of the trial than in the first few minutes (78% correct vs. 65% correct). However, in the feedback condition wherein participants were told immediately after each judgment whether they were correct, performance did not appear to decline over time. These results suggest that if participants are adequately motivated by feedback, they have considerable ability to track for several minutes with no appreciable loss. The comparison between the feedback and no-feedback conditions is not perfect as the feedback does provide a cue that can increase performance (when participants get the probe wrong, they can increase subsequent performance somewhat by switching to another target), but this confound does not seem to be able to explain the lack of almost any performance loss in the feedback condition.
+This greater vulnerability to attentional lapses means that tracking may be more affected by motivation than many other tasks involving visual judgments. Introspectively, it does feel that way to me, relative to many perceptual tasks where I feel I only need to attend for the split-second when the stimuli are presented, and the percept I need to report jumps out at me. The possibility that variability in motivation drives a lot of variability in tracking performance is unfortunate, because we don't study tracking because we're interested in motivation.
 
-The circumstances used by @wolfeMultipleObjectJuggling2007 were quite different from a prototypical MOT task, not least because of the extended durations of the trials. Most researchers use trial durations of less than 10 seconds, and it is not clear whether the @wolfeMultipleObjectJuggling2007 results would generalize. It seems likely that motivated participants can attend for several seconds before their attention wanes substantially. @oksamaMultipleObjectTracking2004 did find, however, a substantial decrease in performance for trials of 13 s compared to trials of 5 s. With four targets, for example, performance fell from 91% correct to 74% correct, and this decrease was somewhat greater for larger numbers of targets than for fewer targets. Byrne & Holcombe (unpublished data) did not find any significant decrease over a comparable interval, and the explanation for these discrepancies is uncertain, although it may again be related to participants' motivation.
+It is also possible that the ability to continuously sustain attention may be distinct from general motivation and may cause a lot of variation in tracking. Like motivation, this could hinder efforts to get at the mechanisms specific to tracking that are not simply sustained attention. On the other hand, sustained attention and the limited resource that allows one to track a certain number of targets may be linked. That is, having to track more targets may reduce the amount of time that one can sustain attention on the task. Fortunately, the results of @wolfeMultipleObjectJuggling2007 suggest that this may not be the case.
 
-The reason for the reduction in performance with greater time observed by @oksamaMultipleObjectTracking2004 may easily be due to another factor rather than an increase in lapses of attention. In the MOT tasks used by all of these researchers, with longer trials there is likely to be more instances of potential spatial interference, temporal interference, and running afoul of any attentional speed limit. Thus, if any of those factors matter, they could explain the decrease in performance with time. However, the @wolfeMultipleObjectJuggling2007 does seem to provide a kind of existence proof that lapses of attention need not be the limiting factor. Granting that that may be the case, an additional question is why, if other factors are in operation, there was *no* evidence of a performance decrease over time in @wolfeMultipleObjectJuggling2007? Well, @wolfeMultipleObjectJuggling2007 averaged performance over approximately the first third of the ten-minute interval and compared it to the last third. In the feedback condition, it is possible that all the worst possible events (such as close approaches, causing greater spatial interference) had already occurred by the end of the first third, so whatever level of performance participants were left with at that point already reflected their capacity to track through the most difficult events, which they were then able to continue to do until the end of the trial. Over a shorter time range such as that used by @oksamaMultipleObjectTracking2004, this may not have been the case.
- 
-Finally, an individual-differences study by @trevinoBridgingCognitiveNeuropsychological2021 found that MOT performance had  little correlation with performance on a task designed to measure sustained attention over an extended period of five minutes: the gradual-onset continual performance task. 
+In Experiment 3 of @wolfeMultipleObjectJuggling2007, participants were required to track four targets for a period of ten minutes. Every ten seconds or so, one object was highlighted and participants had to indicate whether it was one of the targets. In a no-feedback condition, participants were not told whether their individual responses were correct. In that situation, performance was substantially worse in the last few minutes of the trial than in the first few minutes (78% correct vs. 65% correct). However, in the feedback condition wherein participants were told immediately after each judgment whether they were correct, performance did not appear to decline over time. These results suggest that if participants are adequately motivated by feedback, they have considerable ability to track for several minutes with no appreciable loss. The comparison between the feedback and no-feedback conditions is not perfect as the feedback does provide a cue that can increase performance (when participants get the probe wrong, they can increase subsequent performance somewhat by switching to another target), but this confound does not seem to be able to explain the lack of almost any performance loss in the feedback condition.
+
+The circumstances used by @wolfeMultipleObjectJuggling2007 were quite different from a prototypical MOT task, not least because of the extended durations of the trials. Most researchers use trial durations of less than ten seconds, which likely means that a decrease in performance with time due to waning attentino is less of an issue. It seems likely that motivated participants can attend for several seconds before their attention wanes substantially. @oksamaMultipleObjectTracking2004 did find a substantial decrease in performance for trials of 13 s compared to trials of 5 s. With four targets, for example, performance fell from 91% correct to 74% correct, and this decrease was somewhat greater for larger numbers of targets than for fewer targets. Byrne & Holcombe (unpublished data) did not find any significant decrease over a comparable interval, and the explanation for these discrepancies is uncertain, although it may again be related to participants' motivation.
+
+The reason for the reduction in performance with greater time observed by @oksamaMultipleObjectTracking2004 may easily be due to another factor rather than an increase in lapses of attention. In the MOT tasks used by all of these researchers, with longer trials there is likely to be more instances of potential spatial interference, temporal interference, and running afoul of any tracking speed limit. Thus, if any of those factors matter, they could explain the decrease in performance with time. However, the @wolfeMultipleObjectJuggling2007 does seem to provide a kind of existence proof that lapses of attention need not be the limiting factor. Granting that that may be the case, an additional question is why, if other factors are in operation, there was *no* evidence of a performance decrease over time in @wolfeMultipleObjectJuggling2007? Well, @wolfeMultipleObjectJuggling2007 averaged performance over approximately the first third of the ten-minute interval and compared it to the last third. In the feedback condition, it is possible that all the worst possible events (such as close approaches, causing greater spatial interference) had already occurred by the end of the first third, so whatever level of performance participants were left with at that point already reflected their capacity to track through the most difficult events, which they were then able to continue to do until the end of the trial. Over a shorter time range such as that used by @oksamaMultipleObjectTracking2004, this may not have been the case.
+
+I know of no studies of what display characteristics make tracking performance more vulnerable to attentional lapses. It stands to reason that if objects are moving very slowly, a lapse may be less detrimental because if after the lapse, one still remembers the last-monitored locations, the targets may still be near them. @fencsikRoleLocationMotion2007 showed that people can reacquire targets after a 300 millisecond disappearance, and @alvarezMultielementVisualTracking2005 showed that people can do this after being interrupted by a second task, although these interruptions are obviously different than an attentional lapse, during which it's not clear how often people forget the target locations.
+
+Vigilance tasks such as the gradual-onset continual performance task are expressly designed to assess sustained attention and lapses over an extended interval, and an individual-differences study by @trevinoBridgingCognitiveNeuropsychological2021 found that MOT performance had little correlation with a five-minute gradual-onset continual performance task. This is somewhat reassuring as it, like some of the other evidence I have mentioned, suggests that lapses are not a major determinant of MOT performance.
 
 <!--chapter:end:whichAspects.Rmd-->
 
 # Spatial interference {#spatialInterference}
 
-Details of the world that are much smaller than ourselves, like the individual fibers of a piece of paper, or the different-colored blotches laid down on paper by a printer, that look to us like a uniform splash of red, are inaccessible to the naked eye - our photoreceptors are too large and widely-spaced. Our finite spatial acuity is a familiar limit on our visual abilities, one that is measured every time we go to the optometrist. Line segments or objects that are too close together are experienced is a single unit.
+Details of the world that are much smaller than ourselves, like the fibers of a piece of paper, or the individual blotches laid down on paper by a printer, are inaccessible to the naked eye, largely because our photoreceptors are too widely-spaced. This is a familiar limit on our visual abilities, one that is measured every time we go to the optometrist. Line segments or objects that are too close together are experienced is a single unit.
 
-Even when two objects are spaced far apart enough that they can easily be seen to be two objects rather than one, they are not processed entirely separately by the brain. Receptive fields grow larger and larger as visual signals ascend the visual hierarchy, and this can result in a degraded representation in the visual system for objects that are near each other. In other words, spatial interference ensues.
+Critically, even when two objects are spaced far apart enough that they can easily be seen to be two objects rather than one, they are not processed entirely separately by the brain. Receptive fields grow larger and larger as visual signals ascend the visual hierarchy, and this can result in a degraded representation in the visual system for objects that are near each other. In other words, spatial interference ensues.
 
 <!--Decades before @franconeriHowManyLocations2007 conducted experiments on the selection of multiple locations with different densities, researchers had recognized the existence of spatial interference in dense displays-->
 A large body of psychophysical work has investigated the display densities that impair object perception. Common tasks in this literature include letter identification and grating orientation discrimination [e.g., @wolfordPerturbationModelLetter1975; @korteUberGestaltauffassungIm1923; @strasburgerDancingLettersTicks2014].
@@ -634,7 +643,7 @@ In pursuing tests of this theory, @franconeriTrackingMultipleObjects2010a unfort
 
 As @franconeriTrackingMultipleObjects2010a wrote in their conclusion, their hypothesis that "barring object-spacing constraints, people could reliably track an unlimited number of objects as fast as they could track a single object" constituted a "simple and falsifiable hypothesis". I believed this hypothesis to be unlikely to be true, and on obvious test was to keep all the objects in an MOT display widely separated, vary the number of targets, and measure the speed threshold in each case.
 
-In 2012, my student Wei-Ying Chen and I conducted several experiments in this vein. In one, we used an ordinary computer screen but had participants bring their noses quite close to it to create a wide-field display, which allowed us to keep targets and distractors dozens of degrees of visual angle from each other @holcombeExhaustingAttentionalTracking2012. The basic display configuration is shown in Figure \@ref(fig:HC2012BasicTrial).
+In 2012, my student Wei-Ying Chen and I conducted several experiments in this vein. In one, we used an ordinary computer screen but had participants bring their noses quite close to it to create a wide-field display, which allowed us to keep targets and distractors dozens of degrees of visual angle from each other @holcombeExhaustingAttentionalTracking2012. The basic display configuration is shown below <!-- Figure \@ref(fig:HC2012BasicTrial) CAUSES LATEX ERROR-->.
 
 ```{r HC2012BasicTrial, echo=FALSE, out.width="100%", fig.cap="In experiments by Holcombe & Chen (2012), after the targets were highlighted in white, all the discs became red and revolved about the fixation point. During this interval, each pair of discs occasionally reversed their direction. After 3–3.8 s the discs stop, one ring is indicated by presenting text next to it, and the participant clicks on one disc of that ring."}
 knitr::include_graphics("imagesForRmd/HolcombeChen2012BasicTrial.png")
@@ -709,11 +718,10 @@ In practice, people make many more errors in a tracking task if the targets move
 
 Motion is obviously part and parcel of multiple object tracking. The visual system of animals such as humans have specialized motion processors that are not driven by arbitrary signals of an object's displacement, rather they have particular signals associated with motion that they are especially responsive to [@nishidaAdvancementMotionPsychophysics2011]. These signals can be selectively disrupted, while preserving the physical displacment of the objects. @clairConflictingMotionInformation2010 did this in an MOT paradigm by having the texture elements that patterned the moving objects move in a different direction than the objects themselves. Tracking was still possible, but was disrupted quite a lot. This suggests that tracking is driven by the specialized motion detectors, which likely help carry along a selection focus of tracking as a target moves. This is further supported by studies involving large jumps between successive appearances of a moving target, also known as "apparent motion", which find lower temporal limits on tracking for these stimuli (the notion of temporal limits will be explained in chapter \@ref(speedAndTime)) [@kanayaContributionNonattentiveMotion2012; @verstratenLimitsAttentiveTracking2000].
 
-WHAT
+<!--WHAT-->
+It does not seem controversial that motion processing is somewhat distinct from the tracking resource, and that it is used by tracking. A more open question is whether motion signals are used in two particular ways. One is whether the direction and speed of a target is used to anticipate future positions of the objects, then performance should be better when objects maintain straight-line trajectories than when they frequently change their direction.
 
-The information that focused attention can deliver might conceivably benefit tracking for any target frequently focused on. One possible example is the direction and speed that a target is moving in. If this information is used to anticipate future positions of the objects, then performance should be better when objects maintain straight-line trajectories than when they frequently change their direction.
-
-The evidence below suggests that the capacity limit on the use of motion information during tracking may be more severe than that on the use of position. That is, in conditions where participants can use position information to accurately track four or five targets, they may only use motion information for one or two of the targets. This may mean that the use of motion information can be identified with the extended cognitive processing of an object that likely can only occur for one or at most a few targets, which was referred to in section \@ref(whichAspects) as C≈1 processes. 
+The evidence below suggests that the capacity limit on the use of motion information during tracking may be more severe than that on the use of position. That is, in conditions where participants can use position information to accurately track four or five targets, they may only use motion information for one or two of the targets. This may mean that the use of motion information can be identified with the extended cognitive processing of an object that likely can only occur for one or at most a few targets, which was referred to in Chapter \@ref(whichAspects) as C≈1 processes. 
 
 @howeMotionInformationSometimes2012 compared a condition in which the objects moved in straight lines, only changing direction when they bounced off the arena's boundaries, to when the objects' trajectories were not predictable because they changed direction randomly about every half second. However, this advantage for tracking the predictable trajectories was found when there were two targets, but not when there were four targets. @vulExplainingHumanMultiple2010 asked participants to track three targets and varied how much and how often the objects changed their velocity. They found little to no detriment of the velocity changes on participants' estimates of difficulty. Unfortunately they did not assess whether velocity continuity became beneficial with fewer targets.
 
@@ -774,7 +782,7 @@ In the literature, the term "representational momentum" is applied to both the e
 
 It is also possible that representational momentum is a memory effect, perhaps reflecting the same mechanisms that yield the boundary extension effect discovered by Helene Intraub [@intraubBoundaryExtensionFundamental1993]. However, @nakayamaDynamicNoiseBackground2021 recently discovered an extrapolation effect that appears to be perceptual, in that this "twinkle goes" illusion shows up with immediate report and is immediately perceived by many observers [in demonstrations](https://twitter.com/ceptional/status/1204116417429131264). The results from one experiment investigating this effect suggest that it is highly resource-intensive, however, because when attention was split across two targets the effect was greatly diminished. Possibly, then, the twinkle-goes illusion reflects a C≈1 effect, although more work is needed.
 
-## Where does extrapolation stand?
+In summary then, there is little evidence for extrapolation playing a role in multiple object tracking, with the possible exception of a C≈1 effect for one of the targets, if it is particularly attended to.
 
 <!-- When pursuing a single target with the eyes, @chenAttentionAllocatedClosely2017 used EEG evidence to show enhancement ahead of the target. But this could be due to eye movement planning -->
 
@@ -788,8 +796,6 @@ A new synthesis: the correspondence problem cannot be solved. But it could if we
 has various benefits. In particular, top-down attentional selection, which is necessary for doing various mental operations on an object of interest, mainly uses location as the index for selecting objects (although color and a few other features may also be used).
 together with color and a few other features used by "feature attention", is the main route by which top-down attentional selection occurs. But what benefits does attentional selection provide that are not already delivered by the selection associated with tracking?-->
 
-
-TRANSITION TO MOBILE COMPUTATION.Rmd SOMEWHERE ON THIS PAGE
 
 <!--
 How well are other features besides position tracked? 
@@ -815,13 +821,6 @@ One concern with this conclusion was that the results might be explained by a bo
 Atsma, J., Koning, A., & van Lier, R. (2012). Multiple object tracking: Anticipatory attention doesn’t “bounce.” Journal of Vision, 12(13), 1–1. Found anticipatory attention in the direction of the object movement. Only tested 3 targets and 1 target. Didn’t test the backward direction I don’t think to see whether that was even better!!!
 -->
 
-
-
-
-What about updating of features? Well, updating of surface features seems to generally be crap, e.g. identity tracking is crap, Pailian, Saiki
-
-Integration: 
-Relation to oscillations
 
 
 
@@ -1614,7 +1613,9 @@ A large body of evidence from other paradigms has supported the theory of @treis
 
 <!--FUTURE With the motion silencing illusion, it goes not occur for an object that one is tracking. I don't think any papers exist that make this point, or tell us whether the reason is because you're parsing away the motion from the change signal, or whether you actually have to compare feature values. Related phenomena are temporal camouflage and Saiki's original moving change blindness with occlusion findings . It also probably explains why infants don't process object features, because there is no cue to get them to update the object features.  Also the Wikipedia entry needs lots of work and should cite Saiki & Holcombe -->
 
-We are of course aware of object features when the only task we are engaged in is tracking a single target. In that situation, our limited-capacity processes can all be applied to that target. However, when we are tracking multiple targets, the evidence indicates that we have little ability to report the objects' features, other than their locations.
+We are of course aware of object features when the only task we are engaged in is tracking a single target. In that situation, our limited-capacity processes can all be applied to that target. However, when we are tracking multiple targets, the evidence indicates that we have little ability to report the objects' features, other than their locations, as we will see below.
+
+<!-- A powerful demonstration that does not fully show lack of awareness of identities, but certainly shows how motion can obscure change in identities, is the motion silencing illusion [@suchowMotionSilencesAwareness2011]. If you have not seen it, I high recommend you [have a look](https://michaelbach.de/ot/mot-silencing/). The lack of awareness of the color changes succeeds partly because the color changes do not change the overall proportion of each color at a global level - this phenomenon was documented by @saikiBlindnessSimultaneousChange2012 in work prior to the discovery of the illusion. Another ingredient is the density of the display, which discourages ACTUALLY YOU CAN NOTICE THE CHANGES IF YOU TRACK, SO HOW IS THIS RELEVANT? -->
 
 A common view among the public is that lack of awareness of the features of objects one is attending to could not happen. Indeed, many people seem to believe that we are simultaneously aware of the identities of all the objects in the central portion of our visual field, so unless an object actually disappears or hides behind something or someone, we should know where everything in the scene is at all times, and we should immediately detect any changes to these objects. For many, change blindness demonstrations are the first experience that disrupts this belief.
 
@@ -1755,7 +1756,7 @@ Visual short-term memory tasks typically find that people can perform reasonably
 
 <!--chapter:end:identity.Rmd-->
 
-# Abilities, individual differences, dual-task interference {#abilities}
+# Abilities and individual differences {#abilities}
 
 There are two basic approaches to understanding the abilities that underlie multiple object tracking. One is the classic experimental approach of dissociating the processes involved by manipulating different factors within participants. This has been the dominant approach and has led to our present understanding of the roles of spatial interference, temporal interference, and the duration that one can sustain attention. However, a small but growing literature has used the complementary individual-differences approach. In the individual-differences approach, the pattern of variation in scores on multiple tests is examined to see which abilities tend to go together. Those abilities that co-vary the most are thought to likely share more processes in common than those that don't.
 
@@ -1823,69 +1824,34 @@ In sports, some teams of researchers have frequently suggested that MOT performa
 
 <!--chapter:end:realWorld.Rmd-->
 
-# Misconceptions and questions
+# Progress and recommendations
 
+<!--
 Top misconceptions about MOT
 * its capacity limit is around 4 items.(this has been used to argue that it has a similar capacity limit to visual working memory (Cowan, 2001).)
 * "While the most intuitive model of multiple object tracking would involve storing the locations of targets in spatial memory, then moving attention in turn as quickly as possible to each target to update its location, this class of model is unable to account for MOT performance (Pylyshyn & Storm, 1988; Vul et al., 2009)"
 
 Reading your paper also gave me an idea to have a Common Misconceptions section for the Cambridge Element.  One might be that the capacity limit on VWM and MOT coincide (what you refer to as "The most striking link between the two tasks is that they seem to have a similar capacity limit of around four items (Cowan, 2001)". I totally agree that it is striking and so it is natural to think it means something, but while I don't know much about VWM, the capacity limit for MOT is determined by the speeds, spatial proximities,and temporal frequencies used, so as you know the limit can be anything between zero and more than ten.  It is true that the speeds most often used yield a capacity limit of around four, but I haven't seen any argument for why the commonly used speeds/spatial proximities/temporal frequency combination is more special than the other possibilities. I guess one could argue that researchers set those parameters to resemble an intuition for what real-world tasks are like, but even if they got that right, I'm not sure the same is true for VWM setups, or what that would imply for underlying ability structures. It seems to me one would have to do some kind of ideal observer (really, ideal thinker) model with the same assumptions that can model both common VWM and common MOT tasks, and show that the same level of ability in fundamental processes underlying each would yield the same capacity limit of four in both cases.
 
-Thus, while many potential athlete users may imagine that a test of attention tests how long they can pay attention, this is not likely to be the reason for differences among people on MOT performance. 
+Thus, while many potential athlete users may imagine that a test of attention tests how long they can pay attention, this is not likely to be the reason for differences among people on MOT performance. -->
 
 ## The decline of Pylyshyn's FINST theory
 
-We've come a long way. One way to see that is
+At the time of writing, Pylyshyn's FINST theory is the featured theory on the multiple object tracking Wikipedia page [@MultipleObjectTracking2021], and it is frequently invoked in the scholarly literature as well. However, as explained in a review article by Brian Scholl, some of the main features of the theory have been rebutted, such as that tracking is mediated by a fixed set of discrete, preattentive indices [@schollWhatHaveWe2008].
 
-These findings rebut Pylyshyn's theory that tracking reflects preattentive indices [@schollWhatHaveWe2008]
+As speed increases, the number of targets that can be tracked rapidly decreases, to one target, which is hard to explain with a fixed set of discrete indices account [@alvarezHowManyObjects2007; @holcombeExhaustingAttentionalTracking2012] 
 
-"The assumption that spatial indexes are provided by VSTM is at odds with the models of multiple object tracking, which posit that no memory is needed to perform the task" Pylyshyn1989 , Yantis1992
+Dual-task studies, which I did not have space to review in this book, indicate that tracking draws on attentional resources shared with some other tasks, and pupil data add to the evidence that tracking draws on attentional resources [@oksamaPositionTrackingIdentity2016; @alnaesPupilSizeSignals2014]. One should add, however, that such studies do not seem to have ruled out the possibility that these findings were caused entirely by a C~1 resource rather than the hemifield-specific tracking processes. None of these studies appear to have tested for the hemifield specificity of their findings.
 
-"Our pupil data (see also Alnæs et al., 2014) indicate that both MIT and MOT are attention-demanding (thus ruling out preattentive models, such as FINST of Pylyshyn, 1989), " @oksama
+Finally, Pylyshyn himself found strong evidence against an idea integral to his broader theory, that participants know which target they are tracking is which. The reason I have indulged in this anti-Pylyshyn exercise is to showcase that the literature has come a long way in thirty-four years. At the same time, we have a problem common in many scientific literatures, that researchers that use tracking but are more peripheral are way out of date on theory.
 
-"whereas at high speeds, only one target could be tracked. This is strong evidence against Pylyshyn’s (1989, 2006) account, which predicts that capacity should be constant."
+<!--Although CDA findings suggest there is something tracking number of objects rather than resources expended @drewVogel @balabanObjectRepresentationsVisual2016, I don't know that it supports a limit on this -->
 
-Although CDA findings suggest there is something tracking number of objects rather than resources expended @drewVogel @balabanObjectRepresentationsVisual2016, I don't know that it supports a limit on this
+A salient instance of mixed progress is that while early work had concluded that MOT could not reflect serial position sampling [@pylyshynTrackingMultipleIndependent1988; @yantisMultielementVisualTracking1992], this recently has been questioned, and now is a favored account of tracking in some circumstances, as reviewed in Chapter \@ref(serialOrParallel).
 
-But the CDA suggests there 
+## Topics not covered by this book
 
-At the time of this writing, Pylyshyn's theory is the featured theory on the Wikipedia page for multiple object tracking, and it is frequently invoked in the scholarly literature as well.
-
-Further undermines Pylyshyn's conception
-
-Early work had concluded that MOT could not reflect serial position sampling @pylyshynTrackingMultipleIndependent1988; @yantisMultielementVisualTracking1992
-
-It is well-known that a decrease with target load, linear or non-linear, can be explained by parallel models as well as serial models.
-
-## Recommendations
-
-Always use several targets, not just two or three, to dilute the influence of C=1 processes. And still evaluate whether such a process could be the only one contributing. 
-The use of concurrent tasks (a "dual-task design") can also help. Perhaps the most powerful factor to exploit is hemifield specificity. This is sorely underused.
-
-
-Always test for hemifield specificity. This tells us whether
-
-The effect increases with retention interval, and may be a more cognitive mechanism, as it has been suggested that  Rep- resentational momentum occurs in memory for implied motion stimuli and  neither of which elicits pursuit eye movements.
-
-Don't model random trajectory data, that probably doesn't constrain models enough. Show you can model both spatial crowding and temporal crowding  Another strategy is to model much larger sets of data, at an individual trial level; previous efforts seem to have modelled data from at most two different MOT experiments.
-
-Two strategies to improve the constraints on models present themselves. One is to fix the individual components of the models based on the results of experiments designed to isolate those component, such as the experiments by [@verstratenLimitsAttentiveTracking2000; @holcombeSplittingAttentionReduces2013; @roudaiaDifferentEffectsAging2017] for identifying temporal limits and that of @holcombeObjectTrackingAbsence2014 to identify the range of spatial crowding. Another strategy is to model much larger sets of data, at an individual trial level; previous efforts seem to have modelled data from at most two different MOT experiments.
-
-Study change detection during motion.
-
-
-
-## Topics not covered in this book
-
-Retinotopic or spatiotopic and configural @yantisMultielementVisualTracking1992, @billHierarchicalStructureEmployed2020, @howeCoordinateSystemsUsed2010
-@meyerhoffDistractorLocationsInfluence2015b @liuMultipleObjectTrackingBased2005
-, role of distractors 
-
-Role of surface features @papenmeierTrackingLocationFeatures2014
-
-perceived position is what matters @maechlerAttentionalTrackingTakes2021
-
-Dual-task 
+Due to lack of space (I was given a word limit by the publisher), several important topics were not covered. These include whether tracking operates in a retinotopic, spatiotopic, or configural representation (see [@yantisMultielementVisualTracking1992; @billHierarchicalStructureEmployed2020; @howeCoordinateSystemsUsed2010; @meyerhoffDistractorLocationsInfluence2015b; @liuMultipleObjectTrackingBased2005; @maechlerAttentionalTrackingTakes2021]), the role of distractors and possible distractor suppression, the role of surface features [@papenmeierTrackingLocationFeatures2014], and the fairly sizeable literature on dual-task paradigms, although a few such papers were mentioned along the way [e.g., @alvarezMultielementVisualTracking2005].
 
 <!--
 ## Dual-task OUT OF SCOPE
@@ -1923,6 +1889,26 @@ object tracking in people with Williams Syndrome remains at the level of 4‐yea
 
 @souzaContributionsVisualCentral2017 argued that VWM and MOT use different attentional resources." "Distracting visual attention, but not central attention, impaired MOT performance"
 -->
+
+
+## Recommendations
+
+Here are a few recommendations for multiple object tracking researchers that have emerged from this journey through the literature:
+
+* To dilute the influence of C~1 processes, use several targets, not just two or three. But remember that even with several targets, a small effect could be explained by a  C~1 process, so consider that. Test for hemifield specificity as that can also rule out C~1 processes.
+
+* Always test for hemifield specificity. We know little about what limited-resource processes are hemisphere-specific, so any results here are likely to be interesting.
+
+<!--The effect increases with retention interval, and may be a more cognitive mechanism, as it has been suggested that  Rep- resentational momentum occurs in memory for implied motion stimuli and  neither of which elicits pursuit eye movements.-->
+
+* If modelling don't model only random trajectory data, as that likely doesn't constrain models enough. Show you can model both spatial crowding and temporal interference effects. Another strategy is to model much larger sets of data, at an individual trial level; previous efforts seem to have modelled data from only one or a few different MOT experiments.
+
+<!--Two strategies to improve the constraints on models present themselves. One is to fix the individual components of the models based on the results of experiments designed to isolate those component, such as the experiments by [@verstratenLimitsAttentiveTracking2000; @holcombeSplittingAttentionReduces2013; @roudaiaDifferentEffectsAging2017] for identifying temporal limits and that of @holcombeObjectTrackingAbsence2014 to identify the range of spatial crowding. Another strategy is to model much larger sets of data, at an individual trial level; previous efforts seem to have modelled data from at most two different MOT experiments.
+
+Study change detection during motion.-->
+
+
+
 
 
 <!--chapter:end:misconceptionsAndQuestions.Rmd-->
