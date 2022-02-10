@@ -43,7 +43,7 @@ Holcombe, A.O. (to appear). Attending to a moving world. Cambridge University Pr
 
 This book reviews what we know about multiple object tracking by humans. It will be published by Cambridge University Press in their [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception).
 
-You can read this [here on the web](https://tracking.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.  However, the web version is the only one you should rely on - some features (e.g. movies, some kinds of images) may be missing from the other formats.
+<!--You can read this [here on the web](https://tracking.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.--> 
 
 Contact me (he/him) with any comments via [twitter](https://twitter.com/ceptional) or email - alex.holcombe@sydney.edu.au
 
