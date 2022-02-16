@@ -1354,7 +1354,7 @@ Because in any one paradigm, serial and parallel processes can yield similar or 
 
 <!-- MAKE EVERYTHING ABOVE INTO A REVIEW ARTICLE, THEN FIX THE WIKIPEDIA PAGE FOR FEATURE BINDING -->
 
-Before we launch into a discussion of evidence consistent with serial sampling, please keep in mind that this evidence is also consistent with limited-capacity parallel, it's just that such models may require some less-plausible assumptions, as we will discuss in the next section.
+Before I launch into a discussion of evidence consistent with serial sampling, please keep in mind that this evidence is also consistent with limited-capacity parallel, it's just that such models may require some less-plausible assumptions, as we will discuss in the next section.
 
 Like for other processes, for object tracking we should wait for strong evidence before concluding that tracking involves a serial one-by-one process. There are some difficulties involved in adapting the paradigms developed for judgments involving static stimuli, so the evidence needed cannot be obtained by applying the same techniques as were used for spatial relationship judgments.
 

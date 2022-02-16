@@ -42,7 +42,7 @@ The way forward to answering these questions, and sometimes even the existence o
 
 Another approach, and the one that I favor, is to start with a task analysis with some conjectures regarding what aspects of MOT trajectories might lead to errors, based on what we know about visual processing, and then manipulate MOT trajectories to test those conjectures. For each aspect that can be linked to errors, once it seems to be isolated (to some degree) by a particular manipulation, one can measure how resource-intensive that aspect's errors are.
 
-Rather than give a chronological account of researchers' halting progress along these lines, I will simply list a few factors that there's now evidence are important, and in the coming chapters explain at greater length what they are, and describe some of the associated evidence.
+Here I will list a few factors that are important, and in the coming chapters explain at greater length what they are and describe the evidence, and analyze whether each is resource-intensive or not.
 
 <!--1. Spatial selection of multiple locations (even static ones)-->
 1. Spatial interference
