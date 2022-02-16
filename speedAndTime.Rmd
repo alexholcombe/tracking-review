@@ -104,19 +104,19 @@ The inter-object intervals at a location will be long at slow object speeds and 
 You can get a taste of this, first view the below movie, fixating on the dot in the center, and try to track the two targets that are initially white. If the movie isn't displayed properly, view it [here](movies/MOTmovies/temporalLimits/2targets3objectsPerArray.gif).
  When the movie is at its beginning (when the speed readout at top right indicates 0.02 rps), one object in each of the two rings is drawn in white. These are the targets for you to track while you keep your gaze fixed on the dot in the center. As the speed gradually increases, try to keep tracking and see how fast it goes before you lose the targets.
 
-```{r, echo=FALSE, out.width="100%", fig.cap="Task: fixate the white dot, track the initially-white targets, and note how fast you can track, using the speed in the upper right corner."}
+```{r, echo=FALSE, out.width="90%", fig.cap="Task: fixate the white dot, track the initially-white targets, and note how fast you can track, using the speed in the upper right corner."}
 #Work-around to make GIFs work by avoiding including them in non-html outputs!
 #https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
-if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/temporalLimits/2targets3objectsPerArray.gif") else knitr::include_graphics("movies/MOTmovies/temporalLimits/static_2targets3objectsPerArray.png")
+if(knitr::is_html_output()) knitr::include_graphics("movies/MOTmovies/temporalLimits/2targets3objectsPerArray.gif") else knitr::include_graphics("movies/MOTmovies/temporalLimits/static_2targets3objectsPerArray.png")
 #, height = "250px"
 ```
 
 Many people can track the targets even at the movie's fastest speed of approximately 0.6 rps (the exact speed it reached depends on your computer). This is to be expected, because at 0.6 rps, 3 objects corresponds to a an inter-object interval of 556 milliseconds, far higher than the temporal limit. The situation is quite different, however, for the below movie. If the movie isn't displayed properly, view it [here](movies/MOTmovies/temporalLimits/2targets9objectsPerArray.gif).
 
-```{r twoTargetsTemporalLimit, echo=FALSE, out.width="100%", fig.cap="Fixate on the dot in the center, track the two targets that are initially white, and note the speed at which you are no longer able to track."}
+```{r twoTargetsTemporalLimit, echo=FALSE, out.width="90%", fig.cap="Fixate on the dot in the center, track the two targets that are initially white, and note the speed at which you are no longer able to track."}
 #Work-around to make GIFs work by avoiding including them in non-html outputs!
 #https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
-if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/temporalLimits/2targets9objectsPerArray.gif") else knitr::include_graphics("movies/MOTmovies/temporalLimits/static_2targets9objectsPerArray.png")
+if(knitr::is_html_output()) knitr::include_graphics("movies/MOTmovies/temporalLimits/2targets9objectsPerArray.gif") else knitr::include_graphics("movies/MOTmovies/temporalLimits/static_2targets9objectsPerArray.png")
 #, height = "250px"
 ```
 
@@ -138,8 +138,9 @@ With the circular array of equally-spaced objects used by @holcombeSplittingAtte
 
 The figure below summarises what we know about the limits on covertly tracking a single target. 
 
-```{r singleTargetLimits, echo=FALSE, out.width="100%", fig.cap="Spatial and temporal limits on covertly tracking one object. UPDATE THIS IMAGE WITH BETTER NUMBERS IF REVIEWERS/EDITOR APPROVE OF THE FIGURE, including starting crowding at 13"}
+```{r singleTargetLimits, echo=FALSE, out.width="100%", fig.cap="Spatial and temporal limits on covertly tracking one object."}
 knitr::include_graphics("imagesForRmd/trackingLimitsMotionLimitSchematic.png")
+# Maybe uPDATE THIS IMAGE WITH BETTER NUMBERS IF REVIEWERS/EDITOR APPROVE OF THE FIGURE, including starting crowding at 13
 ```
 
 Based on the studies to date, the temporal frequency limit seems to vary substantially between different participants, but 7 Hz is near the top of the range and is used for Figure \@ref(fig:singleTargetLimits). For a circular array, 7 Hz corresponds to lower and lower speeds when more and more distractors are in the array. Note that these speeds are far, far below those that correspond to the limit on motion perception documented for drifting gratings - 25 Hz [@burrContrastSensitivityHigh1982]. Spatial crowding likely imposes another limit on tracking [@holcombeObjectTrackingAbsence2014; @intriligatorSpatialResolutionVisual2001], at a point far lower than the spatial acuity limit (not shown). Finally, as we will describe in the "Speed limits" section below, an actual speed limit (as opposed to a temporal limit) also seems to constrain tracking. The combination of these limits yields the combinations of speeds and number of distractors in a circular array indicated by the pink region.
