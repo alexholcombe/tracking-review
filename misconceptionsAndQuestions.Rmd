@@ -1,5 +1,9 @@
 # Progress and recommendations
 
+A very nice surprise in the last decade of work has been the discovery (see chapter \@ref(abilities)) that MOT has high test-retest reliability, of approximately .8 or .9, among the highest among attentional tasks and far higher than many common laboratory tasks. The outlook for future work, then, is very positive both from the prospect of new results being credible (because with a non-noisy task, less data is needed to have high statistical power) and for the use of MOT as a tool to study other things, such as individual differences.
+
+To further highlight how much we have learned, next I will describe how much findings have allowed us to disconfirm multiple aspects of the first and most influential theory of tracking. 
+
 <!--
 Top misconceptions about MOT
 * its capacity limit is around 4 items.(this has been used to argue that it has a similar capacity limit to visual working memory (Cowan, 2001).)
@@ -11,21 +15,21 @@ Thus, while many potential athlete users may imagine that a test of attention te
 
 ## The decline of Pylyshyn's FINST theory
 
-At the time of writing, Pylyshyn's FINST theory is the featured theory on the multiple object tracking Wikipedia page [@MultipleObjectTracking2021], and it is frequently invoked in the scholarly literature as well. However, as explained in a review article by Brian Scholl, some of the main features of the theory have been rebutted, such as that tracking is mediated by a fixed set of discrete, preattentive indices [@schollWhatHaveWe2008].
+At the time of writing, Pylyshyn's FINST theory described in the very first paper on MOT is the featured theory on the "multiple object tracking" Wikipedia page [@MultipleObjectTracking2021], and it is frequently invoked in the scholarly literature as well. However, some of the main features of the theory have been rebutted [@schollWhatHaveWe2008].
 
-As speed increases, the number of targets that can be tracked rapidly decreases, to one target, which is hard to explain with a fixed set of discrete indices account [@alvarezHowManyObjects2007; @holcombeExhaustingAttentionalTracking2012] 
+Core to the theory is the idea that tracking is mediated by a fixed set of discrete, preattentive indices. As we have seen, however, as speed increases, the number of targets that can be tracked rapidly decreases, to one target, which is hard to explain with a fixed set of discrete indices [@alvarezHowManyObjects2007; @holcombeExhaustingAttentionalTracking2012].
 
-Dual-task studies, which I did not have space to review in this book, indicate that tracking draws on attentional resources shared with some other tasks, and pupil data add to the evidence that tracking draws on attentional resources [@oksamaPositionTrackingIdentity2016; @alnaesPupilSizeSignals2014]. One should add, however, that such studies do not seem to have ruled out the possibility that these findings were caused entirely by a C~1 resource rather than the hemifield-specific tracking processes. None of these studies appear to have tested for the hemifield specificity of their findings.
+Adding to the evidence that tracking draws on attentional resources are dual-task studies. I did not have space to review them in this book, but they indicate that tracking draws on attentional resources shared with some other tasks, and pupil data  [@oksamaPositionTrackingIdentity2016; @alnaesPupilSizeSignals2014]. One should add, however, that such studies do not seem to have ruled out the possibility that these findings were caused entirely by a C=1 resource rather than the hemifield-specific tracking processes; unfortunately, none of these studies appear to have tested for the hemifield specificity of their findings.
 
-Finally, Pylyshyn himself found strong evidence against an idea integral to his broader theory, that participants know which target they are tracking is which. The reason I have indulged in this anti-Pylyshyn exercise is to showcase that the literature has come a long way in thirty-four years. At the same time, we have a problem common in many scientific literatures, that researchers that use tracking but are more peripheral are way out of date on theory.
+An important prediction of Pylyshyn's theory was also that participants should be aware which target is which among the targets they are tracking. Pylyshyn himself found strong evidence against this. Again, I have focused on the evidence against Pylyshyn's theory to showcase that the literature has come a long way in thirty-four years. This is also worth emphasizing because we share a problem of many other literatures, that large numbers of researchers know something about tracking but can be way out of date on theory and recent findings.
 
 <!--Although CDA findings suggest there is something tracking number of objects rather than resources expended @drewVogel @balabanObjectRepresentationsVisual2016, I don't know that it supports a limit on this -->
 
-A salient instance of mixed progress is that while early work had concluded that MOT could not reflect serial position sampling [@pylyshynTrackingMultipleIndependent1988; @yantisMultielementVisualTracking1992], this recently has been questioned, and now is a favored account of tracking in some circumstances, as reviewed in Chapter \@ref(serialOrParallel).
+A salient case of more mixed progress is that while early work had concluded that MOT could not reflect serial position sampling [@pylyshynTrackingMultipleIndependent1988; @yantisMultielementVisualTracking1992], this recently has been questioned, and now is a favored account of tracking in some circumstances, as reviewed in Chapter \@ref(serialOrParallel).
 
 ## Topics not covered by this book
 
-Due to lack of space (I was given a word limit by the publisher), several important topics were not covered. These include whether tracking operates in a retinotopic, spatiotopic, or configural representation (see [@yantisMultielementVisualTracking1992; @billHierarchicalStructureEmployed2020; @howeCoordinateSystemsUsed2010; @meyerhoffDistractorLocationsInfluence2015b; @liuMultipleObjectTrackingBased2005; @maechlerAttentionalTrackingTakes2021]), the role of distractors and possible distractor suppression, the role of surface features [@papenmeierTrackingLocationFeatures2014], and the fairly sizeable literature on dual-task paradigms, although a few such papers were mentioned along the way [e.g., @alvarezMultielementVisualTracking2005].
+Due to lack of space (I was given a word limit by the publisher), several important topics were not covered. These include whether tracking operates in a retinotopic, spatiotopic, or configural representation (see [@yantisMultielementVisualTracking1992; @billHierarchicalStructureEmployed2020; @howeCoordinateSystemsUsed2010; @meyerhoffDistractorLocationsInfluence2015b; @liuMultipleObjectTrackingBased2005; @maechlerAttentionalTrackingTakes2021]), the role of distractors and possible distractor suppression, the role of surface features [@papenmeierTrackingLocationFeatures2014], and the literature on dual-task paradigms, although a few such papers were mentioned along the way [e.g., @alvarezMultielementVisualTracking2005].
 
 <!--
 ## Dual-task OUT OF SCOPE
@@ -69,13 +73,13 @@ object tracking in people with Williams Syndrome remains at the level of 4‐yea
 
 Here are a few recommendations for multiple object tracking researchers that have emerged from this journey through the literature:
 
-* To dilute the influence of C~1 processes, use several targets, not just two or three. But remember that even with several targets, a small effect could be explained by a  C~1 process, so consider that. Test for hemifield specificity as that can also rule out C~1 processes.
+* To dilute the influence of C=1 processes, use several targets, not just two or three. But remember that even with several targets, a small effect could be explained by a  C=1 process, so consider that. Test for hemifield specificity as that can also rule out C=1 processes.
 
-* Always test for hemifield specificity. We know little about what limited-resource processes are hemisphere-specific, so any results here are likely to be interesting.
+* Always test for hemifield specificity. In addition to it helping to rule out a factor having its effect only on C=1 processes, we know very little about what limited-resource processes are hemisphere-specific, so any results here are likely to be interesting.
 
 <!--The effect increases with retention interval, and may be a more cognitive mechanism, as it has been suggested that  Rep- resentational momentum occurs in memory for implied motion stimuli and  neither of which elicits pursuit eye movements.-->
 
-* If modelling don't model only random trajectory data, as that likely doesn't constrain models enough. Show you can model both spatial crowding and temporal interference effects. Another strategy is to model much larger sets of data, at an individual trial level; previous efforts seem to have modelled data from only one or a few different MOT experiments.
+* For computational modelling, I don't recommend modelling only data from standard, fairly unconstrained trajectories, as such data may not constrain models enough. Show your model successfully mimics both spatial crowding and temporal interference effects, including that temporal interference is more resource-intensive than spatial interference. Another strategy is to model large sets of data at an individual trial level; previous efforts seem to have modelled data from only one or a few different MOT experiments.
 
 <!--Two strategies to improve the constraints on models present themselves. One is to fix the individual components of the models based on the results of experiments designed to isolate those component, such as the experiments by [@verstratenLimitsAttentiveTracking2000; @holcombeSplittingAttentionReduces2013; @roudaiaDifferentEffectsAging2017] for identifying temporal limits and that of @holcombeObjectTrackingAbsence2014 to identify the range of spatial crowding. Another strategy is to model much larger sets of data, at an individual trial level; previous efforts seem to have modelled data from at most two different MOT experiments.
 
