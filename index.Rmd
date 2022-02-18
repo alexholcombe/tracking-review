@@ -3,35 +3,33 @@ title: "Attending to moving objects"
 author: "Alex O. Holcombe"
 date: "`r paste0('Updated on ',Sys.Date())`"
 site: bookdown::bookdown_site
-output:
+# The weird thing is that including only the gitbook command below is enough to create the PDF and ePub as well as the html 
+output: 
+  #gitbook renders html
   bookdown::gitbook:
-    split_bib: FALSE
-    config:
-      sharing:
-        twitter: yes
-        facebook: no
+      lib_dir: assets
+  #pdfbook includes images but not DiagrammeR output, like for peripheral vision demos
+  bookdown::pdf_book:
+    includes:
+      in_header: preamble.tex
+    latex_engine: xelatex
+    citation_package: natbib
+    #keep_tex: yes
+  bookdown::epub_book: default
+  # bookdown::word_document2
 documentclass: book
-lof: no #doesn't successfully list figures when yes
-#(doesn't work) html_document:
-# (doesn't work) code_folding: show
-
-#Error: Functions that produce HTML output found in document targeting latex output.
-#Please change the output type of this document to HTML. Alternatively, you can allow
-#HTML output in non-HTML formats by adding this option to the YAML front-matter of your rmarkdown file:
+lof: yes
 always_allow_html: true
-bibliography: [bibliography/CambridgeElement.bib, bibliography/CambridgeElementNewestAdditions.bib, bibliography/packages.bib]
-#Maybe the author-year error is something else
-#bibliography: [bibliography/CambridgeElement.bib, bibliography/packages.bib]
-#bibliography: [bibliography/packages.bib]
-#bibliography: [bibliography/2016book.bib]
-#In Zotero, create the book.bib file by going to object_tracking->CambridgeElement, select all items, right-click->Export items->BetterBibTex
+bibliography: [bibliography/CambridgeElement.bib, bibliography/CambridgeElementNewestAdditions.bib, bibliography/packages.bib]  
 biblio-style: "apalike"
+#csl: apa7-single-spaced.csl
 link-citations: yes
-description: "Tracking-review"
 url: 'https\://tracking.whatanimalssee.com/'
 github-repo: alexholcombe/tracking-review
 twitter-handle: ceptional
 #For the order of chapters, see _bookdown.yml, where they are manually specified
+description: "This is an opinionated book that reviews what we know about multiple object tracking by humans."
+#cover-image: "imagesForRmd/threeWiseMonkeys/Three_Wise_Monkeys_640px.jpeg"
 ---
 <!--other titles: Tracking moving objects, How humans track objects, Attending to a moving world -->
 

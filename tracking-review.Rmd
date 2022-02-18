@@ -3,35 +3,33 @@ title: "Attending to moving objects"
 author: "Alex O. Holcombe"
 date: "`r paste0('Updated on ',Sys.Date())`"
 site: bookdown::bookdown_site
-output:
+# The weird thing is that including only the gitbook command below is enough to create the PDF and ePub as well as the html 
+output: 
+  #gitbook renders html
   bookdown::gitbook:
-    split_bib: FALSE
-    config:
-      sharing:
-        twitter: yes
-        facebook: no
+      lib_dir: assets
+  #pdfbook includes images but not DiagrammeR output, like for peripheral vision demos
+  bookdown::pdf_book:
+    includes:
+      in_header: preamble.tex
+    latex_engine: xelatex
+    citation_package: natbib
+    #keep_tex: yes
+  bookdown::epub_book: default
+  # bookdown::word_document2
 documentclass: book
-lof: no #doesn't successfully list figures when yes
-#(doesn't work) html_document:
-# (doesn't work) code_folding: show
-
-#Error: Functions that produce HTML output found in document targeting latex output.
-#Please change the output type of this document to HTML. Alternatively, you can allow
-#HTML output in non-HTML formats by adding this option to the YAML front-matter of your rmarkdown file:
+lof: yes
 always_allow_html: true
-bibliography: [bibliography/CambridgeElement.bib, bibliography/CambridgeElementNewestAdditions.bib, bibliography/packages.bib]
-#Maybe the author-year error is something else
-#bibliography: [bibliography/CambridgeElement.bib, bibliography/packages.bib]
-#bibliography: [bibliography/packages.bib]
-#bibliography: [bibliography/2016book.bib]
-#In Zotero, create the book.bib file by going to object_tracking->CambridgeElement, select all items, right-click->Export items->BetterBibTex
+bibliography: [bibliography/CambridgeElement.bib, bibliography/CambridgeElementNewestAdditions.bib, bibliography/packages.bib]  
 biblio-style: "apalike"
+#csl: apa7-single-spaced.csl
 link-citations: yes
-description: "Tracking-review"
 url: 'https\://tracking.whatanimalssee.com/'
 github-repo: alexholcombe/tracking-review
 twitter-handle: ceptional
 #For the order of chapters, see _bookdown.yml, where they are manually specified
+description: "This is an opinionated book that reviews what we know about multiple object tracking by humans."
+#cover-image: "imagesForRmd/threeWiseMonkeys/Three_Wise_Monkeys_640px.jpeg"
 ---
 <!--other titles: Tracking moving objects, How humans track objects, Attending to a moving world -->
 
@@ -270,7 +268,7 @@ One notion that fits in with these considerations is that attention is deployed 
 
 Dozens, possibly hundreds, of published papers have investigated the relationship of objects to attention, using a particular kind of cuing paradigm. It all started with @eglyShiftingVisualAttention1994a, who presented two static objects (rectangles) and presented a cue on one end of an object or another. They found that the cue could result in a performance enhancement not only for probes at the location of the cue, but also at the cued object's other end (measured relative to equidistant locations on the second object). The findings reported in most of the many follow-up papers similarly find that participants are fastest and most accurate when the stimulus is presented in the same location as the cue, or on the same object but on a different part of that object. I used the qualifier "most" when referring to the follow-up papers because some papers did not find this [@davisReversalObjectBased2005; @shomsteinObjectbasedAttentionStrength2008; @shomsteinObjectbasedAttentionSensory2002; @louIndividualDifferencesTemporal2020], and a major concern is that studies that did not find an advantage were more likely to end up in the proverbial file drawer. In particular, the effect sizes in the literature are often quite small and the studies not highly powered, which can be a red flag that publication bias may have created the illusion of a real effect [@buttonPowerFailureWhy2013].
 
-@francisExcessSuccessArticles2021 assessed the pattern of sample sizes, effect sizes, and p-values in three dozen published object-based attention studies and argue that it suggests that publication bias and/or p-hacking in the literature is rife. This is plausible, because substantial proportions of researchers in psychology and other fields admit to such practices [@johnMeasuringPrevalenceQuestionable2012; @rabeloQuestionableResearchPractices2020; @chinQuestionableResearchPractices2021]. @francisExcessSuccessArticles2021 further point out that the only previously-published study with a large sample (120 participants) found a non-significant effect of only a 6.5 ms difference in response time [@pilzHowPrevalentObjectBased2012], and in their own study with 264 participants, the effect was also quite small, at 14 ms. For an effect of this size, the sample sizes typically used in the published literature were unlikely to yield statistical significance without some help from p-hacking or another questionable research practice. As a result, many papers in the literature make conclusions about objects and attention based on results that unfortunately cannot be trusted.
+@francisExcessSuccessArticles2022 assessed the pattern of sample sizes, effect sizes, and p-values in three dozen published object-based attention studies and argue that it suggests that publication bias and/or p-hacking in the literature is rife. This is plausible, because substantial proportions of researchers in psychology and other fields admit to such practices [@johnMeasuringPrevalenceQuestionable2012; @rabeloQuestionableResearchPractices2020; @chinQuestionableResearchPractices2021]. @francisExcessSuccessArticles2022 further point out that the only previously-published study with a large sample (120 participants) found a non-significant effect of only a 6.5 ms difference in response time [@pilzHowPrevalentObjectBased2012], and in their own study with 264 participants, the effect was also quite small, at 14 ms. For an effect of this size, the sample sizes typically used in the published literature were unlikely to yield statistical significance without some help from p-hacking or another questionable research practice. As a result, many papers in the literature make conclusions about objects and attention based on results that unfortunately cannot be trusted.
 
 Publication bias and p-hacking plague many areas of the psychological literature. They are less of an issue when the effects being studied are large, because in those cases studies are more likely to be adequately powered, resulting in fewer false positives and false negatives. The study of object tracking is fortunate that its subject matter has yielded several large and robust effects. Some are so large that spending a period of seconds looking at a display is enough to convince oneself that an effect is real. Those very large effects include some that relate to how variation in objects affects tracking.
 
@@ -849,7 +847,7 @@ if(knitr::is_html_output()) knitr::include_graphics("movies/binding/colorgrdnt2_
 
 In the above display, one can easily perceive that the color is alternating between green and red, and that the contour on the left is alternating rapidly between leftward tilt and rightward tilt. This means that the alternation rate does not exceed the temporal resolution of the early visual system - if it did, you would perceive just one color (yellow or brown).
 
-Nevertheless, it is very difficult or impossible to judge which color, red or green, is presented at the same time as the leftward tilt [@holcombeEarlyBindingFeature2001]. When the animation is slowed to a rate much slower than about 200 ms per stimulus presentation however, the task becomes quite easy, as you can see below. 
+Nevertheless, it is very difficult or impossible to judge which color, red or green, is presented at the same time as the leftward tilt [@holcombeEarlyBindingFeature2001]. When the animation is slowed to a rate much slower than about 200 ms per stimulus presentation however, the task becomes quite easy, as you can see below.
 
 ```{r, echo=FALSE, out.width="30%", fig.cap="Task: judge whether the red color is paired with leftward tilt or rightward title."}
 if(knitr::is_html_output()) knitr::include_graphics("movies/binding/colorgrdnt2_2fpsCONVERTED.gif") else knitr::include_graphics("movies/binding/colorgrdnt2_2fpsStatic.png")
@@ -859,28 +857,28 @@ In the first movie, the temporal resolution of one's ability to pair the feature
 
 In the above example, it is tempting to suggest that the dissociation results from a need to make a spatial shift of attention from one of the features' locations to the other in order to identify both before the other features are presented. <!--However, evidence from rapid serial visual presentation indicates that--> However, the phenomenon can also occur with spatially superposed features, such as in the case of color and motion below:
 
-```{r, echo=FALSE, out.width="30%", fig.cap="Task: For each row, judge whether the dots, when white, are moving to the left or to the right."}
+  ```{r, echo=FALSE, out.width="30%", fig.cap="Task: For each row, judge whether the dots, when white, are moving to the left or to the right."}
 if(knitr::is_html_output()) knitr::include_graphics("movies/binding/Movie2_Binding3speeds40fpsCONVERTED.gif")
 ```
 
-While at the slow rate of the top row, it is easy to judge the pairing of motion direction and white/black color, it is very difficult in the middle row, where the speed is slightly faster. 
+While at the slow rate of the top row, it is easy to judge the pairing of motion direction and white/black color, it is very difficult in the middle row, where the speed is slightly faster.
 
 The first to suggest this sort of thing reflected a general limit on temporal individuaation was Dutch guy
 
 
 
-attend to the location of one feature first to identify it and 
-the colors and then of the 
+attend to the location of one feature first to identify it and
+the colors and then of the
 
 This phenomenon can also occur for features that are superposed.
 
 not something specific to features
 
-Thus, while early visual processing can deliver motion and color features even from stimuli that are temporally very close to each other, the processing required to judge which features are at the same time requires processing that fails when temporal proximity is very high 
+Thus, while early visual processing can deliver motion and color features even from stimuli that are temporally very close to each other, the processing required to judge which features are at the same time requires processing that fails when temporal proximity is very high
 
 ## Low-level and high-level temporal limits {#loHighLevelLims}
 
-In the previous two sections I pointed out that while we can perceive the flicker in a rapidly changing light at rates as high as 60 Hz, some feature binding judgments begin to fail at 3 Hz. @holcombeSeeingSlowSeeing2009 reviewed all the known temporal limits on human visual judgments, from flicker to binocular depth and motion as well as the binding of various features. These limits clustered into two groups, with one set of tasks limited to 8 Hz or below and another set with limits substantially greater than 8 Hz. The summary figure below, based on one in @holcombeSeeingSlowSeeing2009 but with the addition of more recent evidence, highlights these two groups. 
+In the previous two sections I pointed out that while we can perceive the flicker in a rapidly changing light at rates as high as 60 Hz, some feature binding judgments begin to fail at 3 Hz. @holcombeSeeingSlowSeeing2009 reviewed all the known temporal limits on human visual judgments, from flicker to binocular depth and motion as well as the binding of various features. These limits clustered into two groups, with one set of tasks limited to 8 Hz or below and another set with limits substantially greater than 8 Hz. The summary figure below, based on one in @holcombeSeeingSlowSeeing2009 but with the addition of more recent evidence, highlights these two groups.
 
 ```{r temporalLims, echo=FALSE, out.width="100%", fig.cap="Temporal limits on perception"}
 knitr::include_graphics("imagesForRmd/temporalLimitsPerception/temporalLimits.001.jpeg")
@@ -919,10 +917,10 @@ In an MOT display, as an object moves on from a particular location, that locati
 
 The inter-object intervals at a location will be long at slow object speeds and with wide spacing among objects. At high object speeds, however, these intervals can be short even if objects are widely spaced. .-->
 
-@holcombeSplittingAttentionReduces2013 found a similar result using discs rather than a grating - with 6 participants, once the discs were moving fast enough that two visited a location within 150 ms (6.6 Hz), tracking performance fell to a similar criterion (halfway to chance) as that used by @verstratenLimitsAttentiveTracking2000.
+  @holcombeSplittingAttentionReduces2013 found a similar result using discs rather than a grating - with 6 participants, once the discs were moving fast enough that two visited a location within 150 ms (6.6 Hz), tracking performance fell to a similar criterion (halfway to chance) as that used by @verstratenLimitsAttentiveTracking2000.
 
 You can get a taste of this, first view the below movie, fixating on the dot in the center, and try to track the two targets that are initially white. If the movie isn't displayed properly, view it [here](movies/MOTmovies/temporalLimits/2targets3objectsPerArray.gif).
- When the movie is at its beginning (when the speed readout at top right indicates 0.02 rps), one object in each of the two rings is drawn in white. These are the targets for you to track while you keep your gaze fixed on the dot in the center. As the speed gradually increases, try to keep tracking and see how fast it goes before you lose the targets.
+When the movie is at its beginning (when the speed readout at top right indicates 0.02 rps), one object in each of the two rings is drawn in white. These are the targets for you to track while you keep your gaze fixed on the dot in the center. As the speed gradually increases, try to keep tracking and see how fast it goes before you lose the targets.
 
 ```{r, echo=FALSE, out.width="90%", fig.cap="Task: fixate the white dot, track the initially-white targets, and note how fast you can track, using the speed in the upper right corner."}
 #Work-around to make GIFs work by avoiding including them in non-html outputs!
@@ -952,11 +950,11 @@ knitr::include_graphics("imagesForRmd/spatialTempResltnSushi/temporalResltnSushi
 
 Quantitatively, the rate of stimulation of each location is the product of speed and density. For a circular array, then, temporal frequency equals speed (in revolutions per second) times the number of discs in the circular array. This means that a temporal limit provides a quantitative prediction for the speed and density combinations that will correspond to participants' thresholds. This prediction was confirmed by the aforementioned studies. @holcombeSplittingAttentionReduces2013, for example, used four different inter-object spacings and many different speeds (speeds were adjusted by a staircase) to assess the speed threshold for each object spacing. The thresholds across the different spacings were close to that predicted by a 6.6 Hz limit. In a study discussed in more detail later, @roudaiaDifferentEffectsAging2017 replicated this finding that thresholds were more consistent with a temporal frequency limit than with a speed limit - they tested two different spacings and found that the corresponding thresholds were more similar when expressed as temporal frequency than as speed.
 
-<!--But how did they (and @verstratenLimitsAttentiveTracking2000) establish that this was caused by temporal interference rather than spatial interference or a speed limit? They capitalized on the contrasting predictions by these three phenomena when object spacing and speed are both manipulated. 
+<!--But how did they (and @verstratenLimitsAttentiveTracking2000) establish that this was caused by temporal interference rather than spatial interference or a speed limit? They capitalized on the contrasting predictions by these three phenomena when object spacing and speed are both manipulated.
 
 With the circular array of equally-spaced objects used by @holcombeSplittingAttentionReduces2013, the amount of time between objects traveling over any one location is the inverse of the product of the speed and the number of objects in the array. For example, if there are four objects in the array moving at 1.75 revolutions per second, then an object will cross any given location in the circular trajectory every 140 milliseconds. Therefore, if temporal interference occurs when objects are in a location within 140 milliseconds of each other, the speed threshold for eight objects in an array should be much slower - 0.875 revolutions per second. This is indeed what was found by @holcombeSplittingAttentionReduces2013, for three different objects-per-array conditions.-->
 
-The figure below summarises what we know about the limits on covertly tracking a single target. 
+  The figure below summarises what we know about the limits on covertly tracking a single target.
 
 ```{r singleTargetLimits, echo=FALSE, out.width="100%", fig.cap="Spatial and temporal limits on covertly tracking one object."}
 knitr::include_graphics("imagesForRmd/trackingLimitsMotionLimitSchematic.png")
@@ -973,7 +971,7 @@ In addition to replicating the finding of @verstratenLimitsAttentiveTracking2000
 
 The effect of target load on temporal limit observed by @roudaiaDifferentEffectsAging2017 was remarkably similar in size to the large effect found by @holcombeSplittingAttentionReduces2013. The eight participants tested by @holcombeSplittingAttentionReduces2013 were all relatively young men, apart from two young women. @roudaiaDifferentEffectsAging2017 tested both old and young participants, and reported a statistically significant difference. Among their young group, however, they tested only nine young men and nine young women, which for most known gender differences would be provide low statistical power, so the finding of a gender difference should be considered provisional. <!--I do not discuss or show the results they found for their old (greater than 60 years) group because that group included many outliers with very low performance.  ACTUALLY NO BAD OUTLIERS AMONG OLD FOR 1 AND 2 TARGETS SO MAYBE INCLUDE THAT-->
 
-```{r trackingLimitsReview, echo=F, message=F, fig.cap="The results of the two experiments of Holcombe & Chen (2013) plotted with the comparable sample (young people) of Roudaia & Faubert (2017). The data symbols are horizontally offset to avoid overlap."}
+  ```{r trackingLimitsReview, echo=F, message=F, fig.cap="The results of the two experiments of Holcombe & Chen (2013) plotted with the comparable sample (young people) of Roudaia & Faubert (2017). The data symbols are horizontally offset to avoid overlap."}
 library(ggplot2)
 library(dplyr)
 library(tidyr)
@@ -991,7 +989,7 @@ temporalLimitsData$experiment <- as.factor(temporalLimitsData$experiment)
 #criticalIntervalsObserved <- tibble( targets=seq(1,3), temporalLimit= c(1000/7, 1000/4.2, 1000/2.6) )
 
 critInterval <- function(targets, samplingInterval) {
- samplingInterval*targets*2
+  samplingInterval*targets*2
 }
 
 valuesForComputing<- expand_grid(
@@ -1005,18 +1003,18 @@ tibl <- valuesForComputing  %>% mutate(temporalLimit = critInterval(targets,samp
 #male/female samples https://github.com/kmiddleton/rexamples/blob/master/ggplot2%20male-female%20symbols.R
 #unicode character list (look at ) https://www.ssec.wisc.edu/~tomw/java/unicode.html
 ggplot(temporalLimitsData, aes(x=targets,y=temporalLimit, shape=experiment)) +
-    #geom_line( aes(color=factor(samplingInterval)) ) +
+  #geom_line( aes(color=factor(samplingInterval)) ) +
   geom_line(position=position_dodge(width=.3), size=.5, color="grey60") +
   geom_point(position=position_dodge(width=.3), size=4.7) +
   scale_shape_manual(values = c("\u25A1", "\u25CB", "\u2642", "\u2640")) +
   scale_x_continuous(breaks=1:3) +
-  #ylab('temporal limit (ms)') + 
-  labs(color='sampling interval (ms)', shape='study') + 
-  scale_y_continuous("temporal limit (ms)", 
+  #ylab('temporal limit (ms)') +
+  labs(color='sampling interval (ms)', shape='study') +
+  scale_y_continuous("temporal limit (ms)",
                      sec.axis = sec_axis(~ .^-1 * 1000, name="Hz", breaks=c(2,3,4,5,6,7)) ) +
   theme_bw() +
   theme( panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-          panel.background = element_blank() )
+         panel.background = element_blank() )
 ```
 
 In each of the four datasets plotted (and also in the data from the old participants excluded because of outliers), the temporal limit decreases dramatically with increasing target load. Of all the effects of increasing target load that we have discussed, this one may be the largest.
@@ -1025,25 +1023,25 @@ In each of the four datasets plotted (and also in the data from the old particip
 
 The less attentional resource available per target, the lower the temporal limit was.
 
-Confirming the suggestion that the less 
+Confirming the suggestion that the less
 
-One aspect of the findings of @roudaiaDifferentEffectsAging2017 were strikingly similar to @holcombeSplittingAttentionReduces2013. @holcombeSplittingAttentionReduces2013 tested five men and 
+One aspect of the findings of @roudaiaDifferentEffectsAging2017 were strikingly similar to @holcombeSplittingAttentionReduces2013. @holcombeSplittingAttentionReduces2013 tested five men and
 
 @roudaiaDifferentEffectsAging2017 replicated the @holcombeSplittingAttentionReduces2013 and @verstratenLimitsAttentiveTracking2000 findings that the observed speed thresholds varied in the way predicted if the underlying limit was actually a temporal frequency limit.-->
 
-Attentional tracking is a complex task - in section \@ref(whichAspects), six factors likely to affect tracking performance were listed. However, some of these factors might affect practically any task; it is those that are most resource-intensive, and thus most limit our capacity, that should be most illuminating for understanding tracking processes.
+  Attentional tracking is a complex task - in section \@ref(whichAspects), six factors likely to affect tracking performance were listed. However, some of these factors might affect practically any task; it is those that are most resource-intensive, and thus most limit our capacity, that should be most illuminating for understanding tracking processes.
 
 From the rather unconstrained trajectories used in most MOT studies, researchers were unable to make strong inferences about how target load was adversely affecting performance. For example, it was necessary to carefully control the distances between objects to disconfirm the suggestion that spatial interference even beyond the crowding range was the primary determinant of the effect of tracking load [@holcombeObjectTrackingAbsence2014; @holcombeCommentCapacityLimits2019]. <!--In displays where objects come very close to each other, spatial interference may yet be a big reason for the performance decrease with target load-->
 
-For temporal interference, the evidence is strong that it is dramatically increased by target load. This leads to two important questions. The first is: what does this effect tell us about how tracking works? Discussion of this is deferred to the \@ref(serialOrParallel) section, but in short, it supports serial switching theories of tracking.
+  For temporal interference, the evidence is strong that it is dramatically increased by target load. This leads to two important questions. The first is: what does this effect tell us about how tracking works? Discussion of this is deferred to the \@ref(serialOrParallel) section, but in short, it supports serial switching theories of tracking.
 
-The second question is: what role does temporal interference play in typical MOT displays that use more linear trajectories? Unfortunately, none appear to have done so for temporal interference. And some of the evidence from studies that set out to investigate the role of spatial proximity might alternatively be explained by temporal proximity [e.g., @baeCloseEncountersDistracting2012]- in typical MOT displays, spatial proximity is likely to be highly correlated with temporal proximity. 
+The second question is: what role does temporal interference play in typical MOT displays that use more linear trajectories? Unfortunately, none appear to have done so for temporal interference. And some of the evidence from studies that set out to investigate the role of spatial proximity might alternatively be explained by temporal proximity [e.g., @baeCloseEncountersDistracting2012]- in typical MOT displays, spatial proximity is likely to be highly correlated with temporal proximity.
 
 <!--MENTION THAT THIS IS AN INSTANCE WHERE ATTENTION DOES FEEL LIKE IT CAN BE LEFT BEHIND AS AN OBJECT MOVES ON (IN THE OBJECTS CHAPTER I SAID THAT ATTENTION FEELS PULLED ALONG BY A MOVING OBJECT)-->
 
 ## Relation to other temporal limits
 
-A plausible interpretation of the temporal limit on tracking is that it is an attentional selection individuation limit. Above the limit, stimuli cannot be individually selected by attention for processing by higher-level, limited-capacity processes such as cognition. This could prevent successful performance of many, or all, of the tasks in the slow group of Figure \@ref(fig:temporalLims). For example, to correctly identify that red is paired with leftward-tilted in \@ref(fig:redRightGreenLeft), both the color and the orientation have to be identified. If attention is unable to select an individual color and orientation and instead has access only to two or more successive frames, then from the perspective of higher-level processes, both colors and both shapes were essentially presented simultaneously. This is illustrated in Figure \@ref(fig:temporalresolutionwaterworks).
+  A plausible interpretation of the temporal limit on tracking is that it is an attentional selection individuation limit. Above the limit, stimuli cannot be individually selected by attention for processing by higher-level, limited-capacity processes such as cognition. This could prevent successful performance of many, or all, of the tasks in the slow group of Figure \@ref(fig:temporalLims). For example, to correctly identify that red is paired with leftward-tilted in \@ref(fig:redRightGreenLeft), both the color and the orientation have to be identified. If attention is unable to select an individual color and orientation and instead has access only to two or more successive frames, then from the perspective of higher-level processes, both colors and both shapes were essentially presented simultaneously. This is illustrated in Figure \@ref(fig:temporalresolutionwaterworks).
 
 ```{r temporalresolutionwaterworks, echo=FALSE, out.width="80%", fig.cap="A rapidly alternating color-orientation pairing stimulus (top) is processed first by high temporal resolution feature processors, which independently determine the color and orientation. Subsequently the pairing of the two features is determined by a process that, because it is low temporal resolution, unfortunately 'sees' multiple colors and orientations simultaneously."}
 knitr::include_graphics("imagesForRmd/temporalLimitsPerception/temporalresolutionwaterworks.png")
@@ -1060,23 +1058,23 @@ While the temporal limit on binding for this and related tasks is less than 3 Hz
 Spatial resolution is fine, as you can see from blah blah blah.
 -->
 
-<!--OUTSTANDING QUESTION: Is it the distractor replacing the target that's worse or the target invading the former distractor location? -->
+  <!--OUTSTANDING QUESTION: Is it the distractor replacing the target that's worse or the target invading the former distractor location? -->
 
 ## Speed limits
 
-We have seen that the apparent speed limits on tracking in dense displays may actually be caused by temporal limits. This is because when there are a lot of objects in a display, at high object speeds both targets and distractors may occupy a particular location within three or four hundred milliseconds, which can impair or prevent tracking. Temporal interference is less of an issue when the targets and distractors are kept very far apart from each other. 
+We have seen that the apparent speed limits on tracking in dense displays may actually be caused by temporal limits. This is because when there are a lot of objects in a display, at high object speeds both targets and distractors may occupy a particular location within three or four hundred milliseconds, which can impair or prevent tracking. Temporal interference is less of an issue when the targets and distractors are kept very far apart from each other.
 
 When using a circular trajectory with just one target and one distractor on opposite sides, such that the distractor did not replace the target very quickly, @verstratenLimitsAttentiveTracking2000 found evidence that tracking was truly limited by speed rather than by temporal interference. What this was that the maximum speed at which participants could track was much lower than what was predicted by the 7 Hz limit found when several distractors shared the circular trajectory with the target. With one target and one distractor, the 7 Hz limit should result in a speed threshold of  3.5 revolutions per second. Instead, participants' thresholds were on average less than 2 revolutions per second. My lab found a very similar result [@holcombeSplittingAttentionReduces2013]. When we tested with 5, 8, or 12 distractors, the speed limit was close to that predicted by a 7 Hz temporal limit. But when there were only 2 distractors in the array, the average speed limit was only 1.7 rps, rather than 3.5 rps predicted by a 7 Hz limit.
 
-It seems, then that tracking of a single object is limited both by a speed limit of about 2 revolutions per second and by a temporal limit of about 7 Hz. The computer screens that were used for testing had refresh rates of 160 Hz, and when the speed of an object is very fast, one can see gaps between the successive frames, which conceivably could be contributing to the speed limit. However, when Wei-Ying Chen and I used a mechanical device rather than an intermittent computer display, we found a speed limit that was only slightly faster, about 2.3 rps [@holcombeSpeedLimitAttentional].
+It seems, then that tracking of a single object is limited both by a speed limit of about 2 revolutions per second and by a temporal limit of about 7 Hz. The computer screens that were used for testing had refresh rates of 160 Hz, and when the speed of an object is very fast, one can see gaps between the successive frames, which conceivably could be contributing to the speed limit. However, when Wei-Ying Chen and I used a mechanical device rather than an intermittent computer display, we found a speed limit that was only slightly faster, about 2.3 rps [@holcombeSpeedLimitAttentional2020].
 
-Changing the radius of the circular trajectory in experiments like these yielded a truly remarkable finding. Well, @verstratenLimitsAttentiveTracking2000 mentioned that for their experiments where participants had to track one bar of a circular 2-cycle grating, they also informally tested annular gratings of different sizes. When the grating was larger, the length of the path traveled by the bar when making one revolution was, of course, longer. One would therefore expect that the speed threshold, when expressed in revolutions per second, should decrease in proportion to the radius of the grating. Consider that a grating of radius 2 deg has twice the circumference as that of a 1 deg radius grating, so the revolutions per second should be halved in order for a bar to travel the same distance in the same amount of time. However, @verstratenLimitsAttentiveTracking2000 said that they saw no change in the speed limit in terms of rps. That is, participants could track an object moving twice as fast when the trajectory had a larger radius. 
+Changing the radius of the circular trajectory in experiments like these yielded a truly remarkable finding. Well, @verstratenLimitsAttentiveTracking2000 mentioned that for their experiments where participants had to track one bar of a circular 2-cycle grating, they also informally tested annular gratings of different sizes. When the grating was larger, the length of the path traveled by the bar when making one revolution was, of course, longer. One would therefore expect that the speed threshold, when expressed in revolutions per second, should decrease in proportion to the radius of the grating. Consider that a grating of radius 2 deg has twice the circumference as that of a 1 deg radius grating, so the revolutions per second should be halved in order for a bar to travel the same distance in the same amount of time. However, @verstratenLimitsAttentiveTracking2000 said that they saw no change in the speed limit in terms of rps. That is, participants could track an object moving twice as fast when the trajectory had a larger radius.
 
 Wei-Ying Chen and I also found that the speed threshold, when expressed in revolutions per second, was robust to the increases in length of the trajectory associated with larger radii [@holcombeSplittingAttentionReduces2013; @holcombeExhaustingAttentionalTracking2012], despite the substantial increase in speed in terms of linear distance traveled. <!--Establishing such invariances is fundamental to scientific explanation (e.g. @woodwardExplanationInvarianceSpecial2000), and this particular near-invariance rules against naïve expectations of how speed exerts its effect.--> We will therefore refer to the speed limit as an angular speed limit.
 
-What does this mean for the processes that underlie tracking? Conceivably, the limit could be imposed by the *cortical* distance traveled, as the amount of retinotopic cortex per deg of visual angle may diminish linearly with eccentricity. However, for the limit to stay close to constant would require that the scaling constant be equal to one, but empirically this does not seem to be the case, based both on psychophysical and physiological measures [@strasburgerPeripheralVisionPattern2011]. Another possibility is we might call the costly hemifield-crossing theory. Doubling the revolutions per second doubles the rate of crossing the vertical meridian, and crossing that meridian is known to impair tracking [@strongHemifieldspecificControlSpatial2020]. If so, a faster limit should be found for trajectories that do not cross the vertical meridian, but in an unpublished experiment [@holcombeSpeedLimitAttentional], this was not found. Finally, @verstratenLimitsAttentiveTracking2000 suggested that the limit may coincide with that found for mental rotation of objects [@cooperMentalTransformationsVisual1976], so possibly the same processes limit both. <!--@holcombeSpeedLimitAttentional compared circular to linear trajectories, by having the objects travel along a diamond-shaped trajectory rather than a circle. Nine participants were tested. The mean speed threshold was 1.2 rps for both conditions. -->
+What does this mean for the processes that underlie tracking? Conceivably, the limit could be imposed by the *cortical* distance traveled, as the amount of retinotopic cortex per deg of visual angle may diminish linearly with eccentricity. However, for the limit to stay close to constant would require that the scaling constant be equal to one, but empirically this does not seem to be the case, based both on psychophysical and physiological measures [@strasburgerPeripheralVisionPattern2011]. Another possibility is we might call the costly hemifield-crossing theory. Doubling the revolutions per second doubles the rate of crossing the vertical meridian, and crossing that meridian is known to impair tracking [@strongHemifieldspecificControlSpatial2020]. If so, a faster limit should be found for trajectories that do not cross the vertical meridian, but in an unpublished experiment [@holcombeSpeedLimitAttentional2020], this was not found. Finally, @verstratenLimitsAttentiveTracking2000 suggested that the limit may coincide with that found for mental rotation of objects [@cooperMentalTransformationsVisual1976], so possibly the same processes limit both. <!--@holcombeSpeedLimitAttentional compared circular to linear trajectories, by having the objects travel along a diamond-shaped trajectory rather than a circle. Nine participants were tested. The mean speed threshold was 1.2 rps for both conditions. -->
 
-Other than @verstratenLimitsAttentiveTracking2000 and myself and Chen, no tracking researchers appear to have grappled with the angular speed limit, or mentioned it in any published papers. Instead, MOT researchers continue to write as if tracking is limited by linear distance traveled per unit time, not by revolutions per second or by temporal interference. Admittedly, the speed limit may have little effect in conventional MOT displays with linear trajectories, because for the speeds tested in all or practically all such experiments, objects probably take longer than a second to ever move a full revolution around a point in the display. However, many recent papers use circular trajectories, where the angular speed limit may come into play, although again they tend to use speeds slower than 1 rps [e.g. @maechlerAttentionalTrackingTakes2021, @carlsonQuadranticDeficitReveals2007].
+  Other than @verstratenLimitsAttentiveTracking2000 and myself and Chen, no tracking researchers appear to have grappled with the angular speed limit, or mentioned it in any published papers. Instead, MOT researchers continue to write as if tracking is limited by linear distance traveled per unit time, not by revolutions per second or by temporal interference. Admittedly, the speed limit may have little effect in conventional MOT displays with linear trajectories, because for the speeds tested in all or practically all such experiments, objects probably take longer than a second to ever move a full revolution around a point in the display. However, many recent papers use circular trajectories, where the angular speed limit may come into play, although again they tend to use speeds slower than 1 rps [e.g. @maechlerAttentionalTrackingTakes2021, @carlsonQuadranticDeficitReveals2007].
 
 Is the angular speed limit caused by a more structural limitation, what @normanDatalimitedResourcelimitedProcesses1975 called data-limited, or is it resource intensive like the temporal frequency limit? If it is resource intensive, the speed limit should be lower when more targets are tracked, as that would result in less resource available per target. @holcombeSplittingAttentionReduces2013 did document an associated decline in speed thresholds, from 1.7 rps with one target to 1.2 rps with two targets and 0.8 rps with three targets. Unfortunately, however, it is difficult to discern whether this reduction is due to a reduction in the actual speed limit, or instead was caused by the previously-documented decline in temporal frequency limit. The problem is that the temporal frequency limit with two targets (approximately 4 Hz) corresponds to a speed, with three objects in a trajectory, below that of the one-target speed limit, so it is difficult to know whether the speed threshold reflects a decline in both the temporal limit and the speed limit or just the temporal limit.
 
@@ -1084,7 +1082,7 @@ Using fMRI, @shimNumberAttentionalFoci2010 investigated the brain areas associat
 
 <!--@holcombeSpeedLimitAttentional found a speed limit of 2.2 rps with one distractors and 1.8 rps with two distractors-->
 
-<!--Some of the studies that documented hemifield independence used a target moving on a small circular trajectory together shared by a single distractor [@holcombeExhaustingAttentionalTracking2012; @chenResourceDemandsObject2013]. If these trajectories had been centered on the fixation point, we know that the speed thresholds would be determined  by the speed limit. But they're always looking at 2 versus 1 target so it could be caused by temporal frequency limit anyway
+  <!--Some of the studies that documented hemifield independence used a target moving on a small circular trajectory together shared by a single distractor [@holcombeExhaustingAttentionalTracking2012; @chenResourceDemandsObject2013]. If these trajectories had been centered on the fixation point, we know that the speed thresholds would be determined  by the speed limit. But they're always looking at 2 versus 1 target so it could be caused by temporal frequency limit anyway
 
 . First, they showed that objects' speeds could be increased until a tracking "speed limit" (68% threshold) where performance tracking two targets was approximately that predicted if participants could only track one of the two targets and had to guess about the other. They then examined the effect of adding a target to the other hemifield rather than the same hemifield. Performance in that condition was very close to that predicted i
 
@@ -1095,10 +1093,9 @@ Using fMRI, @shimNumberAttentionalFoci2010 investigated the brain areas associat
 The temporal interference and associated temporal limits on tracking are clearly highly resource-intensive. Tracking three targets rather than one almost triples the severity of the temporal limit.  We will discuss the theoretical implications in a subsequent section. Tracking is also constrained by a speed limit, but we do not yet know whether the speed limit decreases with more targets or is instead a fixed limit. We also do not understand the nature of the speed limit - whether it is truly a rotational limit and how it relates to other mental processes.
 
 ```{r, echo=FALSE, out.width="100%", fig.cap="Spatial and temporal limits on covertly tracking one, two, and three targets. "}
-knitr::include_graphics("imagesForRmd/temporalAndSpeedLimits.png")
-#UPDATE THIS IMAGE WITH 2 rps SPEED LIMIT IF REVIEWERS/EDITOR APPROVE OF IT
+                  knitr::include_graphics("imagesForRmd/temporalAndSpeedLimits.png")
+                  #UPDATE THIS IMAGE WITH 2 rps SPEED LIMIT IF REVIEWERS/EDITOR APPROVE OF IT
 ```
-
 
 <!--chapter:end:speedAndTime.Rmd-->
 
@@ -1335,7 +1332,7 @@ One can certainly walk and chew gum at the same time, and even simultaneously us
 
 Whether the processes that underlie MOT involve a serial component has been one of the chief concerns of researchers since the very first paper on the topic by @pylyshynTrackingMultipleIndependent1988. Thiss has been a major preoccupation of the field more generally too.  Many researchers have been influenced by Anne Treisman's theory that certain forms of feature binding and other judgments require a serial one-by-one process. Still, more than forty years after Treisman sparked a large literature on the topic, whether various mental processes occur one-by-one or not remains unresolved - although my money is on one-by-one for certain forms of feature binding, and possibly other processes.
 
-## Spatial relationships - a case study of serial processing 
+## Spatial relationships - a case study of serial processing
 
 The evidence is fairly strong that at least a few forms of binding, in particular judgments of arbitrary spatial relationships, involve a one-by-one process. The evidence comes from at least five different approaches. In their redundant-target paradigm, David Gilden and colleagues improved on the inferential power of the visual search approach of Treisman [@thorntonParallelSerialProcesses2007]. The results indicated that discriminating many spatial relations, such as distinguishing betwee the two symbols below <!--in \@ref(fig:venusSymbols) -->, requires a serial process [@gildenSerialProcessVisual2010].
 
@@ -1370,9 +1367,9 @@ Let's clarify exactly what our interest is here. The front end of visual process
 
 <!--A major ambition is to create a unified theory that explains properties of both tracking and other tasks such as visual search and dual-task performance.-->
 
-<!--A serial account of tracking is that a process must switch from target to target to update targets' positions, one-by-one.--> 
+<!--A serial account of tracking is that a process must switch from target to target to update targets' positions, one-by-one.-->
 
-While the nature of MOT closes off some methodological paradigms for investigating the serial/parallel issue, it does provide a new kind of evidence for serial processing. In particular, after a few assumptions are made, serial sampling makes a specific prediction for the temporal limits on tracking. What I'll call the *fundamental assumption* is that after a moving target's position is sampled, if its position is not re-sampled before another object comes close to the previously-sampled position, the target will be lost. This is a consequence of the visual system assuming that the objects nearest to the last-recorded positions of the targets are, in fact, the targets. Part of this assumption is that motion direction and speed are not used to predict where the target should be when the position-sampler switches back to a target. The evidence that supports this aspect of the assumption is discussed in section \@ref(beyondLocation), but note that even if it is false, under some ways that it could be false, this would simply reduce the the size of the effects predicted by the serial account. 
+  While the nature of MOT closes off some methodological paradigms for investigating the serial/parallel issue, it does provide a new kind of evidence for serial processing. In particular, after a few assumptions are made, serial sampling makes a specific prediction for the temporal limits on tracking. What I'll call the *fundamental assumption* is that after a moving target's position is sampled, if its position is not re-sampled before another object comes close to the previously-sampled position, the target will be lost. This is a consequence of the visual system assuming that the objects nearest to the last-recorded positions of the targets are, in fact, the targets. Part of this assumption is that motion direction and speed are not used to predict where the target should be when the position-sampler switches back to a target. The evidence that supports this aspect of the assumption is discussed in section \@ref(beyondLocation), but note that even if it is false, under some ways that it could be false, this would simply reduce the the size of the effects predicted by the serial account.
 
 For circular trajectories such as those used by @holcombeSplittingAttentionReduces2013, a consequence of the fundamental assumption is that the product of the speed (in revolutions per second) and number of objects determines how often sampling must be done to avoid losing a target. In an MOT trial with two targets, after one target is sampled, a one-by-one serial process would switch to the other target. If the distractor trailing the target arrives near the first target's former location before the serial process switches back, then we can expect tracking to fail.
 
@@ -1414,8 +1411,8 @@ critInterval <- function(targets, samplingInterval) {
 
 valuesForComputing<- expand_grid(
   targets = c(1, 2, 2.6, 3, 4), # including 2.4 because that's where I want to put the text labels
-  samplingInterval = c(60, 90),
-  experiment = "zpredicted" #when it starts with z, it will be at end in legend when ggplot creates factor ordering on fly
+samplingInterval = c(60, 90),
+experiment = "zpredicted" #when it starts with z, it will be at end in legend when ggplot creates factor ordering on fly
 )
 tibl <- valuesForComputing  %>% mutate(temporalLimit = critInterval(targets,samplingInterval))
 
@@ -1424,16 +1421,16 @@ predictions <- tibl %>% filter(targets != 2.4) #to plot lines
 #male/female samples https://github.com/kmiddleton/rexamples/blob/master/ggplot2%20male-female%20symbols.R
 #unicode character list (look at ) https://www.ssec.wisc.edu/~tomw/java/unicode.html
 gg<-ggplot(temporalLimsData, aes(x=targets,y=temporalLimit, shape=experiment)) +
-    geom_point(position=position_dodge(width=.2), size=5) +
-    geom_line(data=predictions, aes(x=targets, y=temporalLimit, color=factor(samplingInterval)),
-               linetype="dashed", inherit.aes=F) + #model predictions
-    scale_shape_manual(values = c("\u25A1", "\u25CB", "\u2642", "\u2640", "\u25AB",   "\u1111")) +
-    scale_x_continuous(breaks=1:3, limits=c(.9,4)) + #so that model lines extend all the way to symbols
-    scale_y_continuous(breaks=seq(0,700,100), limits=c(0,NA)) +
-    ylab('temporal limit (ms)') + labs(color='sampling interval (ms)', shape='study') + 
-    theme_bw() +
-    theme( panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-          panel.background = element_blank())
+  geom_point(position=position_dodge(width=.2), size=5) +
+  geom_line(data=predictions, aes(x=targets, y=temporalLimit, color=factor(samplingInterval)),
+            linetype="dashed", inherit.aes=F) + #model predictions
+  scale_shape_manual(values = c("\u25A1", "\u25CB", "\u2642", "\u2640", "\u25AB",   "\u1111")) +
+  scale_x_continuous(breaks=1:3, limits=c(.9,4)) + #so that model lines extend all the way to symbols
+  scale_y_continuous(breaks=seq(0,700,100), limits=c(0,NA)) +
+  ylab('temporal limit (ms)') + labs(color='sampling interval (ms)', shape='study') +
+  theme_bw() +
+  theme( panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+         panel.background = element_blank())
 
 ylims<- layer_scales(gg)$y$get_limits()
 xlims<- layer_scales(gg)$x$get_limits()
@@ -1451,7 +1448,7 @@ lineLabels<- lineLabels %>% mutate(angle = angleIfAxesSameScale)
 lineLabels<- lineLabels %>% mutate(temporalLimit = temporalLimit + 10) #to raise it off the line
 
 gg<-gg +  geom_text(data=lineLabels, aes(label = label, angle=angle, color=factor(samplingInterval)), vjust="bottom") +
-          guides(colour=FALSE) #don't show sampling interval legend
+  guides(colour=FALSE) #don't show sampling interval legend
 show(gg)
 ```
 
@@ -1461,45 +1458,45 @@ Because a particular sampling time specifies the temporal limits for all target 
 
 A first problem is that only three target loads were tested, so we should have little confidence that the relationship is truly linear in the way that the model predicts. A second problem is that in principle, the temporal limit for covertly tracking a *single* target could be set by a different process than the serial switching hypothesized to set the limit for two and three targets, because with a single target, there is no need to switch attention around. Suprisingly, however, evidence from other paradigms suggests that even when only a single static location is relevant for attention, performance oscillates over time, a pattern which has been dubbed the "blinking spotlight of attention" [@vanrullenBlinkingSpotlightAttention2007; @fiebelkornReportRhythmicSampling2013]. <!--Yet even if the tracker's spotlight does blink, this WAIT  IF MOTION HELPED SHOULDN'T IT ALSO HELP CARRY ALONG ATTENTION IN MORE TARGETS? NO BECAUSE SWITCH AWAY SO NOT THERE TO BE CARRIED ALONG-->
 
-Thus, we should not really expect the temporal limit for one target to fall on the same line as that for two and for three targets. Yet in the plotted data (Figure \@ref(fig:serialModelFit)), it can be seen that the one-target limit may actually fall on the same line. It's as if the sampling interval of attention for a single static location also sets the inter-object sampling interval. While the data are consistent with this, they support this proposition only weakly, because there is considerable statistical uncertainty associated with the data points.
+  Thus, we should not really expect the temporal limit for one target to fall on the same line as that for two and for three targets. Yet in the plotted data (Figure \@ref(fig:serialModelFit)), it can be seen that the one-target limit may actually fall on the same line. It's as if the sampling interval of attention for a single static location also sets the inter-object sampling interval. While the data are consistent with this, they support this proposition only weakly, because there is considerable statistical uncertainty associated with the data points.
 
 The lower clusters of points on the graph represent the male and predominantly-male datasets. They imply temporal limits, when tracking one target, of between `r ms<- round( (temporalLimsData %>% filter(targets==1))$temporalLimit ,-1); ms[1]` and `r ms[3]` ms. Recall that because the target must be sampled at twice the temporal limit to avoid confusion with the trailing distractor, one could infer sampling rates from this between `r round(ms[1]/2)` and `r round(ms[3]/2)` ms. This assumes near-perfect linking of a target's last-sampled position with the nearest neighbor in the new sample, otherwise one should estimate a higher sampling rate. The example dashed lines represent the predictions if sampling occurred at 60 ms (red) and 90 ms (blue) and switching occurred systematically rather than visiting one target twice before sampling the third.
 
 How do these numbers compare to sampling intervals inferred with other paradigms? @macdonaldAttentionalSamplingMultiple2013 studied the continuous wagon-wheel illusion, in which a rotating spoked circle is sometimes perceived to rotate backwards, for which a leading explanation is intermittent sampling [@holcombeAreThereCracks2014]. Asking participants to report reversals when they viewed multiple spoked circles, they inferred a sampling interval of `r round(1000/13.3)` ms<!--13.3 Hz-->, which assumes, among other things, that perceived reverse motion is strongest when the wheel travels three-quarters of the inter-spoke angle between samples, yielding a one-quarter backwards rotation with each sample. Their `r round(1000/13.3)` ms figure is similar to what we inferred from tracking. However, @arnoldIllusoryMotionReversals2014 found that the peak frequency for perception of illusory backwards rotation differed for equiluminant motion (5 Hz) and luminance-defined motion (10 Hz in their test), suggesting that results from such experiments cannot be interpreted as providing a constant simple sampling rate for high-level vision. <!--also for moving objects, although the rate is harder to interpret. MacDonald & Vanrullen assume motion signal is strongest at 1/4 of cycle, but I seem to remember that was argued by Nakayama but can't remember it's sure -->
 
-Studies that use other behavioral paradigms in an attempt to investigate visual sampling suggest sampling intervals longer than 100 ms: `r round(1000/7,-1)` ms [@reFeatureBasedAttentionSamples2019]<!--They claimed 8 Hz in their paper but the figure shows the peak at 7 Hz-->, 142 ms [@vanrullenBlinkingSpotlightAttention2007], `r round(1000/7.5,-1)` ms <!--claimed 8 Hz but had equal power at 7 and 8-->[@fiebelkornReportRhythmicSampling2013], and `r round(1000/7.14,-1)` ms [@dugueAttentionSearchesNonuniformly2015]<!--said ~7 Hz but sampling was very coarse, one peak at 7.14--><!--For the @reFeatureBasedAttentionSamples2019 paper, they wrote in their conclusion that sampling occurred at 8 Hz, but their figure shows a peak at 7 Hz, so I have used 7 Hz or `r round(1000/7,-1)` ms.-->, although the statistics used in some of these studies may have led to spurious findings [@brookshireReevaluatingRhythmicAttentional2021]. A visual search study that recorded from neurons in monkeys suggested a 44 ms sampling interval [@buschmanSerialCovertShifts2009]. These other studies all used stationary objects or multiple locations that the participant was told to monitor, which conceivably could explain the slower sampling intervals found in some, but there also remains ample reason otherwise for uncertainty.
+  Studies that use other behavioral paradigms in an attempt to investigate visual sampling suggest sampling intervals longer than 100 ms: `r round(1000/7,-1)` ms [@reFeatureBasedAttentionSamples2019]<!--They claimed 8 Hz in their paper but the figure shows the peak at 7 Hz-->, 142 ms [@vanrullenBlinkingSpotlightAttention2007], `r round(1000/7.5,-1)` ms <!--claimed 8 Hz but had equal power at 7 and 8-->[@fiebelkornReportRhythmicSampling2013], and `r round(1000/7.14,-1)` ms [@dugueAttentionSearchesNonuniformly2015]<!--said ~7 Hz but sampling was very coarse, one peak at 7.14--><!--For the @reFeatureBasedAttentionSamples2019 paper, they wrote in their conclusion that sampling occurred at 8 Hz, but their figure shows a peak at 7 Hz, so I have used 7 Hz or `r round(1000/7,-1)` ms.-->, although the statistics used in some of these studies may have led to spurious findings [@brookshireReevaluatingRhythmicAttentional2021]. A visual search study that recorded from neurons in monkeys suggested a 44 ms sampling interval [@buschmanSerialCovertShifts2009]. These other studies all used stationary objects or multiple locations that the participant was told to monitor, which conceivably could explain the slower sampling intervals found in some, but there also remains ample reason otherwise for uncertainty.
 
 Despite the sizable and growing neurophysiological and neuroimaging literature on oscillations and intermittent sampling, I have not found a study that tests whether the sampling operates independently in the two hemifields. This is unfortunate given that a hallmark of tracking is its hemifield independence, as reviewed in \@ref(twoBrains). <!--Is the spotlight oscillation hemisphere-specific? Finding of 7 Hz for feature attention by @reFeatureBasedAttentionSamples2019 suggests global.)-->
 
-It might turn out that even after researchers regularly assess whether the sampling they are measuring is hemifield-independent, there will continue to be a large range of rates found. If so, perhaps different tasks result in different sampling rates, and the sampling process can occur more quickly for tracking as it requires sampling position only. Another possibility is that the assumptions underlying the calculations in behavioral studies such as object tracking are wrong. If, for example, motion direction is used to guide the next position sampled, tracking could succeed with a slower sampling interval more similar to those documented in most of the neural studies cited above (but see section \@ref(beyondLocation)).
+  It might turn out that even after researchers regularly assess whether the sampling they are measuring is hemifield-independent, there will continue to be a large range of rates found. If so, perhaps different tasks result in different sampling rates, and the sampling process can occur more quickly for tracking as it requires sampling position only. Another possibility is that the assumptions underlying the calculations in behavioral studies such as object tracking are wrong. If, for example, motion direction is used to guide the next position sampled, tracking could succeed with a slower sampling interval more similar to those documented in most of the neural studies cited above (but see section \@ref(beyondLocation)).
 
 A few studies, while finding evidence for oscillations in some conditions, do not find it to be tied to cued locations in the same way as other papers cited above suggest [@werfNoEvidenceRhythmic2021; @petersObjectbasedAttentionPrioritizes2020]. The fact that psychology and neuroscience researchers admit to substantial rates of publication bias and p-hacking [@jenningsPublicationBiasNeuroimaging2012; @johnMeasuringPrevalenceQuestionable2012; @rabeloQuestionableResearchPractices2020] raises the spectre of further, unpublished, evidence that is inconsistent with the prevailing narrative of regular oscillations that correspond to an attentional sampling rate.
 
-In summary, despite a wealth of neuroscientific evidence that serial sampling occurs for attentional tasks, which might account nicely for the existence of a coarse temporal limit on tracking, and for its dramatic worsening with target load, more evidence would be needed for this to be strongly supported. 
+In summary, despite a wealth of neuroscientific evidence that serial sampling occurs for attentional tasks, which might account nicely for the existence of a coarse temporal limit on tracking, and for its dramatic worsening with target load, more evidence would be needed for this to be strongly supported.
 <!--@jiaSequentialSamplingVisual2017 No: Moreover, the 2 disc stimuli in all 3 experiments were presented in the left and right visual fields, and therefore, the observed attentional switching could have been solely caused by interhemispheric competition [32]. To address this issue, we ran a control experiment (N = 13) in which the 2 discs were presented in the upper and lower visual fields within the same visual hemifield (S4 Fig). The same alpha-band alternating pattern was observed, thus arguing against the interpretation of interhemispheric competitio-->
 
-<!-- @macdonaldAttentionalSamplingMultiple2013 finds less dramatic decrease in time with number of wagon wheels - instead of 8.7, 5, 3.3, 2.5 Hz, they found 8.7,6.6,6.5,6.2-->
-<!--@davidsonAttentionPeriodicallySamples2018 found evidence for 8 Hz sampling during binocular rivalry-->
+  <!-- @macdonaldAttentionalSamplingMultiple2013 finds less dramatic decrease in time with number of wagon wheels - instead of 8.7, 5, 3.3, 2.5 Hz, they found 8.7,6.6,6.5,6.2-->
+  <!--@davidsonAttentionPeriodicallySamples2018 found evidence for 8 Hz sampling during binocular rivalry-->
 
-<!--This could all be compatible with limited-capacity parallel. All targets are simultaneously processed but processing becomes much much slower when attention is spread among more targets, such that with three targets. processing two-by-two, and that remains a possibility
+  <!--This could all be compatible with limited-capacity parallel. All targets are simultaneously processed but processing becomes much much slower when attention is spread among more targets, such that with three targets. processing two-by-two, and that remains a possibility
 -->
 
-<!-- If there's 2 targets and attention is  samplimg one every 50 ms, then each is sampled every 100 ms, so to solve the correspondence problem they need to go at 5 Hz (200 ms) or slower, so that they only move halfway to the next location. For 3 targets, each is sampled every 150 ms so they need to not get to the next one's location for 300 ms (3.33) hertz.
+  <!-- If there's 2 targets and attention is  samplimg one every 50 ms, then each is sampled every 100 ms, so to solve the correspondence problem they need to go at 5 Hz (200 ms) or slower, so that they only move halfway to the next location. For 3 targets, each is sampled every 150 ms so they need to not get to the next one's location for 300 ms (3.33) hertz.
 criticalTemporalInterval = samplingTime*targets*2
 385 = samplingTime*3*2; samplingTime = 64
 64*2*2= 256 against 238.
 blinking spotlight means 64*1*2 = 128 against 143.
 -->
 
-### Limited-capacity parallel processing and temporal limits
+  ### Limited-capacity parallel processing and temporal limits
 
-Conceivably, a parallel process of evidence accumulation with limited capacity could also produce a steep and linear worsening of temporal limit with target load. Under this account, when attention is split among multiple targets, this greatly slows the rate that of accumulation of evidence for some process that is critical to tracking. This process might be linking successive position samples. <!--, if samples do not occur less often with more targets because the visual system takes global snapshots; however, the evidence from other paradigms rules against global snapshots [e.g. @klineIllusoryMotionReversal2004].--> However, despite some diversity in the computational models that have been advanced so far, none show behavior like that. 
+  Conceivably, a parallel process of evidence accumulation with limited capacity could also produce a steep and linear worsening of temporal limit with target load. Under this account, when attention is split among multiple targets, this greatly slows the rate that of accumulation of evidence for some process that is critical to tracking. This process might be linking successive position samples. <!--, if samples do not occur less often with more targets because the visual system takes global snapshots; however, the evidence from other paradigms rules against global snapshots [e.g. @klineIllusoryMotionReversal2004].--> However, despite some diversity in the computational models that have been advanced so far, none show behavior like that.
 
 What modellers have done is suggested that *spatial* (not temporal) noise rapidly worsens with number of targets [e.g. @srivastavaAttentionModulatesSpatial2016]. This does not, however, predict the above data, instead it predicts that spatial limits (spatial interference) will worsen with number of targets, which seems to be a small or non-existent effect (see chapter \@ref(spatialInterference)). A focus on temporal factors in visual processing is much more common in other literatures, such as decision-making and categorization, where drift diffusion and other dynamical models are popular. The focus on time comes from the fact that many of those tasks have no spatial component to them and historically have used response time as the main dependent variable. I know of no work that has resulted in positing such a steep increase in time when an additional target is added, but I admit that I am quite ignorant of this literature. <!-- send to Tim and Scott Brown-->
 
-## Evidence for parallel processing
+  ## Evidence for parallel processing
 
-Piers Howe and his colleagues investigated a different aspect of tracking (not temporal limits) and found some evidence against involvement of a serial process in tracking [@howeDistinguishingParallelSerial2010]. Specifically, the simultaneous-sequential presentation technique developed by @shiffrinVisualProcessingCapacity1972 was appplied to MOT. The technique was originally developed to investigate whether several stationary stimuli could be processed in parallel, in service of some visual judgment, without being affected by any capacity limit. The stimuli are presented either all at once (simultaneously) or in succession (sequentially) during a trial, half the stimuli presented in the first interval, and the other half in the second interval. To equate the total amount of time each stimulus is presented in the simultaneous and successive conditions, a trial in the simultaneous condition is only half as long as that of the successive condition. The technique has been applied extensively to the detection of a particular alphanumeric character among other alphanumeric characters, and researchers have found that processing in the simultaneous condition is equal to or better than the sequential condition [@shiffrinVisualProcessingCapacity1972; @hungSimultaneousBetterSequential1995], suggesting that multiple alphanumeric characters can be recognized in parallel, with no capacity limitation, or at least a capacity that is not taxed by up to the four stimuli typically used. An alternative possibility is that attention for some reason did not select the locations of the presented stimuli during the two intervals of the sequential condition. For example, if attention got "stuck" on the locations of the first half of stimuli, it would fail to show the advantage expected for a limited-capacity process that could devote all its resources to each of the two subsets of the stimuli during their respective presentation intervals.
+  Piers Howe and his colleagues investigated a different aspect of tracking (not temporal limits) and found some evidence against involvement of a serial process in tracking [@howeDistinguishingParallelSerial2010]. Specifically, the simultaneous-sequential presentation technique developed by @shiffrinVisualProcessingCapacity1972 was appplied to MOT. The technique was originally developed to investigate whether several stationary stimuli could be processed in parallel, in service of some visual judgment, without being affected by any capacity limit. The stimuli are presented either all at once (simultaneously) or in succession (sequentially) during a trial, half the stimuli presented in the first interval, and the other half in the second interval. To equate the total amount of time each stimulus is presented in the simultaneous and successive conditions, a trial in the simultaneous condition is only half as long as that of the successive condition. The technique has been applied extensively to the detection of a particular alphanumeric character among other alphanumeric characters, and researchers have found that processing in the simultaneous condition is equal to or better than the sequential condition [@shiffrinVisualProcessingCapacity1972; @hungSimultaneousBetterSequential1995], suggesting that multiple alphanumeric characters can be recognized in parallel, with no capacity limitation, or at least a capacity that is not taxed by up to the four stimuli typically used. An alternative possibility is that attention for some reason did not select the locations of the presented stimuli during the two intervals of the sequential condition. For example, if attention got "stuck" on the locations of the first half of stimuli, it would fail to show the advantage expected for a limited-capacity process that could devote all its resources to each of the two subsets of the stimuli during their respective presentation intervals.
 
 @howeDistinguishingParallelSerial2010 adapted this technique to MOT by, in a "sequential" condition, periodically freezing half of the moving targets while the other half continued to move. In the simultaneous condition, *all* of the targets were periodically frozen. The idea, then, is that any parallel processes will be distributed equally among both moving and any temporarily-stationary targets, whereas a serial process must be reallocated away from the stationary targets during the interval that they are stationary. Such a serial process would then result in higher performance in the condition where targets occasionally pause relative to an "all pause" condition where all targets are temporarily-stationary at the same time.
 
@@ -1525,7 +1522,9 @@ Assuming that the limiting process is indeed serial sampling, we can then infer 
 
 @liModelMultipleIdentity2019 have also addressed the effect of load on the temporal limit. Their latest model, MOMIT 2.0, updates the position of targets with a parallel process. To address the temporal limit, @liModelMultipleIdentity2019 wrote that "when objects move along the same trajectories (e.g., Holcombe & Chen, 2013) and/or are close to each other, high resolution information is required for discriminating the objects. Thus, tracking becomes more serial". However, the objects in the Holcombe & Chen (2013) studies were not close to each other (they did not intrude on each other's crowding zones), and I haven't been able to find anything in the description of MOMIT 2.0 that should be hindered by objects sharing a trajectory. Informally, it doesn't feel to me that my attention switches to a different mode with circular trajectories, in displays like \@ref(fig:twoTargetsTemporalLimit). Try it yourself. Of course, it is not necessarily the case that introspection provides any access to parallel versus serial processing.
 
-Given that parallel models can't account for the decline in temporal limit with load, why have they been fairly successful in mimicking human performance with the typical MOT displays not designed to probe the temporal limit? Well, for typical MOT displays, it remains unclear how much temporal interference we should expect - no one has bothered to calculate the distribution of the intervals between targets and distractors visiting a given location. Second, it is not clear how discriminable the models are from the human data. That is, a number of different models might equally well explain the data. One reason is that potential spatial interference and for temporal interference are confounded in typical MOT displays. That is, trials in which the moving objects come close to each other in space also tend to be trials in which moving objects visit approximately the same location in a short span of time. As a result, a model that embodies spatial interference only may explain the data about as well as one that includes temporal interference. 
+Given that parallel models can't account for the decline in temporal limit with load, why have they been fairly successful in mimicking human performance with the typical MOT displays not designed to probe the temporal limit? Well, for typical MOT displays, it remains unclear how much temporal interference we should expect - no one has bothered to calculate the distribution of the intervals between targets and distractors visiting a given location. Second, it is not clear how discriminable the models are from the human data. That is, a number of different models might equally well explain the data. One reason is that potential spatial interference and for temporal interference are confounded in typical MOT displays. That is, trials in which the moving objects come close to each other in space also tend to be trials in which moving objects visit approximately the same location in a short span of time. As a result, a model that embodies spatial interference only may explain the data about as well as one that includes temporal interference.
+
+
 
 <!--chapter:end:serialOrParallel.Rmd-->
 
@@ -1595,7 +1594,7 @@ Of course, the fact that object features would be useful for the brain to use fo
 "erhaps most famously, these sorts of processes seem to be localized in anatomically distinct corti- cal streams (e.g., Livingstone and Hubel 1988), with the ventral pathway corresponding to identification, and the dorsal pathway corresponding to individuation. In addition, a variety of behavioral evidence supports this distinction." The surface features of objects (e.g., their colors and shapes), while obviously critical for many visual processes including object recogni- tion, seem to be largely discounted by many other processes (for a review, see Flombaum, Scholl, and Santos, in press). For example, surface features play little or no role in determining apparent motion correspondence (Burt and Sperling 1981), identity over time in the tunnel effect (Flombaum et al., 2004; Flombaum and Scholl 2006; Michotte, Thinès, and Crabbé 1964/1991), or object-specific priming (Mitroff and Alvarez 2007)." [@schollWhatHaveWe2008]-->
 
 Beginning over a century ago, Gestalt psychologists such as Max Wertheimer found that apparent motion was equally strong whether the objects in successive frames were identical or different [@wertheimerExperimentelleStudienUber1912]. Later studies found some effect of similarity, but the effect was weak [@kolersFiguralChangeApparent1971; @burtTimeDistanceFeature1981]. These findings contributed to the dominant view that the visual system does not use feature similarity much when computing motion correspondence to update a moving object's position. Some caution is justified, however, because
- when the successive presented frames of an object touch or overlap with each other rather than being presented in non-contiguous locations, the results can be different. The study of such displays, with a different object appearance (usually, shape) in two successive frames, is known as line motion or transformational apparent motion. These studies have found that feature similarity, especially contour continuity, but also color, can decide which tokens are matched [@faubertInfluenceTwoSpatially1995; @tseRoleParsingHighlevel1998]. Thus, feature similarity is involved in motion processing, even though in many situations motion correspondence is determined by spatiotemporal luminance relationships. An important characteristic of this process that does does not seem to have been studied, however, is whether these cues are processed in parallel. Short-range spatiotemporal luminance relationships ("motion energy") are known to be processed by local detectors, such that visual search happens in parallel for a target moving in an odd direction defined by small-displacement apparent motion [@horowitzAttentionApparentMotion1994]. I am not aware of any studies that have investigated this for transformational apparent motion, in a situation where the perceived motion direction is determined by feature similarity. Thus, the possibility remains that feature similarity has its influence through what I have called a C~1 process.
+ when the successive presented frames of an object touch or overlap with each other rather than being presented in non-contiguous locations, the results can be different. The study of such displays, with a different object appearance (usually, shape) in two successive frames, is known as line motion or transformational apparent motion. These studies have found that feature similarity, especially contour continuity, but also color, can decide which tokens are matched [@faubertInfluenceTwoSpatially1995; @tseRoleParsingHighlevel1998]. Thus, feature similarity is involved in motion processing, even though in many situations motion correspondence is determined by spatiotemporal luminance relationships. An important characteristic of this process that does does not seem to have been studied, however, is whether these cues are processed in parallel. Short-range spatiotemporal luminance relationships ("motion energy") are known to be processed by local detectors, such that visual search happens in parallel for a target moving in an odd direction defined by small-displacement apparent motion [@horowitzAttentionApparentMotion1994]. I am not aware of any studies that have investigated this for transformational apparent motion, in a situation where the perceived motion direction is determined by feature similarity. Thus, the possibility remains that feature similarity has its influence through what I have called a C=1 process (\@ref(Cequals1)).
 
 <!--Unfortunately, it is difficult to test participants on whether they know during tracking the characteristics of an object when, as soon as the question is asked, they can focus their attention on the probed object and encode its features for report. But some insight into this issue can be gained by considering the studies conducted by @makovskiFeatureBindingAttentive2009.-->
 
@@ -1808,16 +1807,15 @@ With the growth of online testing, however, the sample sizes required for indivi
 
 # Towards the real world
 
-Some of the findings in multiple object tracking, and visual attention more generally, are useful for informing how non-scientists should think about real-world situations. A naive view of visual perception and attention, and one that might actually be used on the sports field by coaches, is that we 
-are simultaneously aware of the identities of all the objects in a scene. One implication is that unless a player actually disappears or hides behind something or someone, we should know where everyone in front of us on the basketball court, or the soccer field, is at all times. Similarly, during driving many people seem to assume that they are aware of all hazards in their visual field. The fact that this is not accurate has been incorporated into driver education [].
+Some of the findings in multiple object tracking, and visual attention more generally, are useful for informing how non-scientists should think about real-world situations. A naive view of visual perception and attention is that we are simultaneously aware of the identities of all the objects in a scene. Many sports coaches may unfortunately believe this, thinking that unless a player actually disappears or hides behind something or someone, we should know where everyone in front of us on the basketball court, or the soccer field, is at all times. Similarly, during driving many people seem to assume that they are aware of all hazards in their visual field. The fact that this is not accurate has been incorporated into driver education [@fisherCanNoviceDrivers2006].
 
 The limitations of drivers in apprehending upcoming hazards, and lack of awareness of other players in the visual field in sportspeople, are often described in classes as being related to change blindness, which no doubt they are, but the limitations on multiple object tracking almost certainly contribute to them. When an object is being actively attended, which in a moving scene means tracked, change blindness or lack of knowledge of the object's identity is somewhat less likely. This was supported in a study by @lochnerMultipleobjectTrackingDriving2014 involving a driving simulator, who found that changes were found more accurately and rapidly when the change was made to a target vehicle rather than a distractor vehicle. The poor maintenance of non-spatial featural information during tracking (described in chapter \@ref(identity)) also should inform our approach to real-world situations.
 
 Few empirical studies, unfortunately, have made strong links between real-world situations nad laboratory MOT tasks, or its underlying abilities. @bowersCanWeImprove2013 found that laboratory MOT performance did not predict driving test performance as well as the Montreal Cognitive Assessment task, a trail-making task, or a subtest of a useful field-of-view task. The aforementioned driving simulator study by @lochnerMultipleobjectTrackingDriving2014 found that drivers were more accurate at localizing which of multiple lead vehicles braked if it was a tracking target, but there was no advantage in terms of braking response time. 
 
-@mackenzieMultipleObjectAvoidance2021 used a multiple object avoidance task where the user used a mouse to control one of the balls that they had to prevent from colliding with the other balls. The task is reminiscent of the old Asteroids video game mentioned in the beginning of this book. @mackenzieMultipleObjectAvoidance2021 found good correlations with performance on a driving simulator and with years of driving experience. In an earlier paper, some of these authors found that the MOA correlated better with driving performance than conventional MOT @mackenzieLinkAttentionalFunction2017. 
+@mackenzieMultipleObjectAvoidance2021 used a multiple object avoidance task where the user used a mouse to control one of the balls that they had to prevent from colliding with the other balls. The task is reminiscent of the old Asteroids game mentioned in the beginning of this book. @mackenzieMultipleObjectAvoidance2021 found strong correlations with performance on a driving simulator and with years of driving experience. In an earlier paper, some of these authors found that the MOA correlated better with driving performance than conventional MOT [@mackenzieLinkAttentionalFunction2017]. 
 
-In sports, some teams of researchers have frequently suggested that MOT performance predicts in-game performance in soccer and other sports, and further reported evidence that training on MOT tasks can enhance skill in sports. Unfortunately, the associated evidence is not strong [@vaterCriticalSystematicReview2021] and strong evidence is needed given the poor record of computer-based training tasks (sometimes called "brain training") in improving skills in other real-world domains [@simonsBraintrainingProgramsWork2016].
+In sports, some teams of researchers have frequently suggested that MOT performance predicts in-game performance in soccer and other sports, and further reported evidence that training on MOT tasks can enhance skill in sports. Unfortunately, the associated evidence is not strong [@vaterCriticalSystematicReview2021]. Given the poor record of computer-based training tasks (sometimes called "brain training") in improving skills in other real-world domains, one should remain skeptical that MOT training has benefits until rigorous evidence is provided [@simonsBraintrainingProgramsWork2016].
 
 
 <!--chapter:end:realWorld.Rmd-->
@@ -1839,7 +1837,7 @@ Thus, while many potential athlete users may imagine that a test of attention te
 
 ## The decline of Pylyshyn's FINST theory
 
-At the time of writing, Pylyshyn's FINST theory described in the very first paper on MOT is the featured theory on the "multiple object tracking" Wikipedia page [@MultipleObjectTracking2021], and it is frequently invoked in the scholarly literature as well. However, some of the main features of the theory have been rebutted [@schollWhatHaveWe2008].
+At the time of writing, Pylyshyn's FINST theory described in the very first paper on MOT is the featured theory on the "multiple object tracking" Wikipedia page [@wikipediaeditorsMultipleObjectTracking2021], and it is frequently invoked in the scholarly literature as well. However, some of the main features of the theory have been rebutted [@schollWhatHaveWe2008].
 
 Core to the theory is the idea that tracking is mediated by a fixed set of discrete, preattentive indices. As we have seen, however, as speed increases, the number of targets that can be tracked rapidly decreases, to one target, which is hard to explain with a fixed set of discrete indices [@alvarezHowManyObjects2007; @holcombeExhaustingAttentionalTracking2012].
 
