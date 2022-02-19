@@ -37,7 +37,7 @@ description: "This is an opinionated book that reviews what we know about multip
 
 Cite this as:
 
-Holcombe, A.O. (to appear). Attending to a moving world. Cambridge University Press.
+Holcombe, A.O. (to appear). Attending to moving objects. Cambridge University Press.
 
 This book reviews what we know about multiple object tracking by humans. It is expected to be published by Cambridge University Press in their [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception).
 
@@ -50,6 +50,8 @@ knitr::include_graphics("imagesForRmd/corellaOnShoulder2020croppedBlurredByAdobe
 ```
 
 I thank Hrag Pailian and Lorella Battelli for helpful comments, and also thank Hrag Pailian for providing high-resolution figures of his work.
+
+© Alex O. Holcombe 2022
 
 <!--Reviewers: Hyona/Pailian/Saiki for identity chapter; Piers Howe / John Palmer/Daniel Little for serial/parallel; Srimant Tripathy for sensory memory ; Scott Brown at Newcastle for drift diffusion models
 -->
@@ -68,6 +70,8 @@ This doesn't work either:
 From R environment, execute the following after eliminating the references, although it will also count code perhaps?
 wordcountaddin::word_count('tracking-review.Rmd')
 -->
+
+<!--Exporting to Word: Looked less fucked-up if I first imported the PDF into Google Docs and then clicked Open in->Microsoft Word.app-->
 
 <!--
 ```{theorem, name="Pythagorean"}
