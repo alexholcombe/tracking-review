@@ -10,7 +10,7 @@ To flesh out the way the word 'bottleneck' is used in this context, imagine a st
 
 The parallel processing prior to the bottlenecks is sufficient to get certain tasks done. In the below display, for example, you should be able to find the blue objects very quickly.
 
-```{r, echo=FALSE, fig.cap = "", fig.height = 2.0, fig.width=2.5}
+```{r findBlue, echo=FALSE, fig.cap = "Thanks to featural attention, you should be able to find the blue circles very quickly.", fig.height = 2.0, fig.width=2.5}
 #bookdown-demo_files/figure-html/unnamed-chunk-9-1.png ?
 library(ggplot2)
 library(tibble)

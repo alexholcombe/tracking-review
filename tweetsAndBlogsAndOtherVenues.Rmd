@@ -1,0 +1,63 @@
+---
+title: "tweetsToPromoteThePaper"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Nature Reviews Psychology   schubertt@gmail.com or twitter
+
+Hi Teresa, I hope you are well. The first Nature Reviews Psychology issue looks really cool. I’m messaging you now because I’m interested in writing for the journal. I recently wrote a book (32,000 words) on multiple object tracking and what it tells us about visual attention.
+
+Somehow it reveals properties of the attentional system that are obscured with stationary objects.
+
+To those who would explain it with a parallel theory, the central puzzle is why temporal resolution is resource-intensive but spatial resolution isn't.
+
+## Wikijournal of Science https://en.wikiversity.org/wiki/WikiJournal_of_Science/Publishing
+
+Submission form: https://docs.google.com/forms/d/e/1FAIpQLSf-Nu7hjiTeJ5uQ5ozMOIivWZjeyJCPLwAUOuNDP1MVKUbCSQ/viewform
+
+"Encyclopedia reviews are broad summaries that cover an entire topic, are written in an encyclopaedic tone, and follow Wikipedia's appropriate sources. Articles can also be expansions, improvements or re-writes of existing Wikipedia articles."
+
+### Questions for Shafee
+
+* Can you give me guidance about the sections and length?
+  * For "significant findings", that suggests not having theoretical interpretation in there. I need another kind of heading.
+* Will create a movie to embed in it
+* What do I do about MOT by machines versus by humans? Should I write it only about humans, and then create a branching Wikipedia page with a stub for the one by machines.
+* Any common mistakes?
+
+Somehow it reveals properties of the attentional system that are obscured with stationary objects.
+
+Writing it as a "Preprint" https://en.wikiversity.org/wiki/WikiJournal_Preprints/Multiple_object_tracking
+ "To save your draft, click the "publish page" button in the top right.
+When you are ready to submit the article for peer review, fill in the authorship declaration form (further information here)"
+
+Multiple object tracking is an experiment protocol for studying visual attention to moving objects. The results of experiments using the protocol have revealed how aspects of the workings of visual attention, such as that awareness of features such as color and shape are disrupted by object movement.
+
+### History
+
+Are object features
+
+
+### Significant findings?
+
+
+### Reviewers
+
+Recommend Robert O'Shea.
+
+## The Timing Research Forum blog. 
+We invite TRF members to submit short summaries of their recently published articles on timing. Articles should be no longer than 1000 words and not include more than one representative figure. Please submit your entries after your paper is published. Submissions are open anytime and will be featured on the TRF blog page.
+ 
+
+## Timing Research Forum virtual journal club
+If you are interested in presenting your recent timing paper to the wider TRF community please complete this form in order to nominate yourself or other scientists.
+
+For any questions, suggestions or contributions, please reach out to TRF as below:
+
+TRF: trf@timingforum.org
+
+## Neurophilosophy blog?
