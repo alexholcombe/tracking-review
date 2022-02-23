@@ -1,6 +1,6 @@
 # Progress and recommendations
 
-A very nice surprise in the last decade of work has been the discovery (see chapter \@ref(abilities)) that MOT has high test-retest reliability, of approximately .8 or .9, among the highest among attentional tasks and far higher than many common laboratory tasks. The outlook for future work, then, is very positive both from the prospect of new results being credible (because with a non-noisy task, less data is needed to have high statistical power) and for the use of MOT as a tool to study other things, such as individual differences.
+The study of multiple object tracking has traditionally been done in the laboratory exercise with only a few dozen participants in an experiment. Only recently, then, has one of the greatest virtues of the MOT task become clear: it's high test-retest reliability, of approximately .8 or .9, among the highest among attentional tasks and far higher than many common laboratory tasks (see chapter \@ref(abilities)). The outlook for future work, then, is very positive both from the prospect of new results being credible (because with a non-noisy task, less data is needed to have high statistical power) and for the use of MOT as a tool to study other things, such as individual differences.
 
 To further highlight how much we have learned, next I will describe how much findings have allowed us to disconfirm multiple aspects of the first and most influential theory of tracking. 
 
@@ -29,7 +29,7 @@ A salient case of more mixed progress is that while early work had concluded tha
 
 ## Topics not covered by this book
 
-Due to lack of space (I was given a word limit by the publisher), several important topics were not covered. These include whether tracking operates in a retinotopic, spatiotopic, or configural representation (see [@yantisMultielementVisualTracking1992; @billHierarchicalStructureEmployed2020; @howeCoordinateSystemsUsed2010; @meyerhoffDistractorLocationsInfluence2015b; @liuMultipleObjectTrackingBased2005; @maechlerAttentionalTrackingTakes2021]), the role of distractors and possible distractor suppression, the role of surface features [@papenmeierTrackingLocationFeatures2014], and the literature on dual-task paradigms, although a few such papers were mentioned along the way [e.g., @alvarezMultielementVisualTracking2005].
+Many topics were not covered in this book (I was given a word limit by the publisher). Some of the most important are whether tracking operates in a retinotopic, spatiotopic, or configural representation (see [@yantisMultielementVisualTracking1992; @billHierarchicalStructureEmployed2020; @howeCoordinateSystemsUsed2010; @meyerhoffDistractorLocationsInfluence2015b; @liuMultipleObjectTrackingBased2005; @maechlerAttentionalTrackingTakes2021]), the role of distractors and possible distractor suppression, the role of surface features [@papenmeierTrackingLocationFeatures2014], and the literature on dual-task paradigms, although a few such papers were mentioned along the way [e.g., @alvarezMultielementVisualTracking2005].
 
 <!--
 ## Dual-task OUT OF SCOPE

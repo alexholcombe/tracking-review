@@ -56,7 +56,7 @@ Given enough time, we certainly can update our representation of not only the lo
 
 For stimuli, @pailianAgeSpeciesComparisons2020 used colored balls of wool. Between one and four of the balls were shown to a participant. The experimenter covered the balls with inverted opaque plastic cups, and then began to move them, swapping the positions of one pair at a time. After a variable number of pairs were swapped, the experimenter presented another ball with one of the target colors, and the participant's task was to point to (or peck on!), the cup containing the probed color. 
 
-![An African grey parrot participates in a shell game. CC-BY Pailian et al. (2020)](imagesForRmd/ParrotGriffinPepperbergShellGame.png){width=40%} 
+![An African grey parrot participates in a shell game. Pailian et al. (2020), CC-BY .](imagesForRmd/ParrotGriffinPepperbergShellGame.png){width=40%} 
 
 At any one time, only two objects were in motion, and that the participants were responsible for knowing the final location of all the colors - there were no distractors. One might anticipate that at least the adults would be able to perform this task with high accuracy, especially given that at any one time, only two objects were in motion and the experimenter paused for a full second between swaps, which ought to give people enough time to update their memory of the locations of those two colors.
 

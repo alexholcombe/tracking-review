@@ -14,11 +14,13 @@ output:
       in_header: preamble.tex
     latex_engine: xelatex
     citation_package: natbib
-    #keep_tex: yes
+    number_sections: FALSE
+    keep_tex: yes
+    toc_depth: 1
+    lof: yes
   bookdown::epub_book: default
   # bookdown::word_document2
 documentclass: book
-lof: yes
 always_allow_html: true
 bibliography: [bibliography/CambridgeElement.bib, bibliography/CambridgeElementNewestAdditions.bib, bibliography/packages.bib]  
 biblio-style: "apalike"

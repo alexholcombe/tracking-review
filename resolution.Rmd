@@ -8,7 +8,7 @@ Long after most researchers considered the idea of serial updating of position t
 
 (ref:Bus) [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/deed.en)  <!--This is how you create figure caption with hyperlink-->
 
-```{r busMotionBlur, echo=FALSE, out.width="80%", fig.cap="A London bus, photographed with a 200 ms exposure, by EO1 (ref:Bus)"}
+```{r busMotionBlur, echo=FALSE, out.width="80%", fig.cap="A London bus, photographed with a 200 ms exposure, by EO1. (ref:Bus)"}
 knitr::include_graphics("imagesForRmd/motionBlur/London_bus_and_telephone_box_on_Haymarket.jpg")
 ```
 
@@ -16,7 +16,7 @@ At speeds like those used in MOT experiments, the moving objects leave trails of
 
 When motion streaks can be used, either the streak will literally connect the new sample to the old sample, or if the sampling happens less frequently relative to the targets' speed, if the object hasn't changed direction than the streaks will typically be collinear, whereas the distractors' streaks will be positioned and oriented differently. The major exception to this would be when the target shared its trajectory with distractors, such as in the experiments of @holcombeSplittingAttentionReduces2013. 
 
-(ref:Billiards) The motion streaks created by billiard balls in a long exposure of the ball break [Public domain](https://commons.wikimedia.org/wiki/File:8_ball_break_time_lapse.jpg)  <!--This is how you create figure caption with hyperlink-->
+(ref:Billiards) The motion streaks created by billiard balls in a long exposure of the ball break. [Public domain](https://commons.wikimedia.org/wiki/File:8_ball_break_time_lapse.jpg)  <!--This is how you create figure caption with hyperlink-->
 
 ```{r billiardsBlur, echo=FALSE, out.width="80%", fig.cap="(ref:Billiards)"}
 knitr::include_graphics("imagesForRmd/motionBlur/8_ball_break_time_lapsePublicDomain.jpg")

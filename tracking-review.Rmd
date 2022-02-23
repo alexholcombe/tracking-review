@@ -14,7 +14,9 @@ output:
       in_header: preamble.tex
     latex_engine: xelatex
     citation_package: natbib
-    #keep_tex: yes
+    number_sections: FALSE
+    keep_tex: yes
+    toc_depth: 1
   bookdown::epub_book: default
   # bookdown::word_document2
 documentclass: book
@@ -116,29 +118,16 @@ In the experiments of @pylyshynTrackingMultipleIndependent1988, up to five of th
 
 ```{r MOTdemo, echo=FALSE, out.width="100%", fig.cap="A demonstration of the multiple object tracking (MOT) task, created by Jiri Lukavsky."}
 #Work-around to make GIFs (but not .mov) work by avoiding including them in non-html outputs!
+#mp4s don't work in R's html viewer that pops up when you build the book, but does work in a real web browser.
 #https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
 if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/MOTdemoLukavsky.mp4") else knitr::include_graphics("movies/MOTmovies/MOTdemoLukavsky.png")
 #, height = "250px"
 # Jiri uploaded it to https://www.youtube.com/embed/lAQM4QJRYV8
 ```
 
-
-```{r MOTde, eval=knitr::is_html_output(excludes = "epub"), results = 'asis', fig.cap="A demonstration of multiple object tracking created by Jiri Lukavsky.", echo = F}
-#Doesn't work in PDF or even EPUB, that's why using exclusion code above.
-#Doesn't work in R's html viewer that pops up when you build the book, but does work in a real web browser.
-cat(
-'<iframe width="560" height="315" 
-  src="https://www.youtube.com/embed/lAQM4QJRYV8"
-  frameborder="0" allow="accelerometer; autoplay; encrypted-media;
-  gyroscope; picture-in-picture" allowfullscreen>
-  </iframe>'
-)
-```
-
-
 But @pylyshynTrackingMultipleIndependent1988 also showed that the processes that underlie tracking are limited in the number of targets that they can faithfully track. Periodically, one of the moving objects flashed, and if the flashed object was a target, the participant was to press the telegraph key. Errors increased fairly rapidly as the number of targets was increased, from 2% of target flashes missed when only one of the objects was a target, to 14% of target flashes missed when five of the objects were targets. 
 
-Long before Zenon Pylyshyn and Ron Storm devised an experiment to formally document this phenomenon, the notion of kepping track of moving objects was already familiar from everyday life. Any adult who has ever been responsible for more than one child while at the beach or at the park has attempted to continuously monitor the locations of those children. Probably every parent has experienced the sudden panic when, perhaps while chatting with some friends, one realizes that one has lost track of a child. On the sports field, players often concentrate on keeping track of the locations of multiple team-mates, the locations of opponents, and their spatial relationships to the ball. In conference halls, scientists monitor the position and posture of other researchers relative to the ones they are chatting to, in order to best time their approach.
+Long before Zenon Pylyshyn and Ron Storm devised an experiment to formally document this phenomenon, the notion of keeping track of moving objects was already familiar from everyday life. Any adult who has ever been responsible for more than one child while at the beach or at the park has attempted to continuously monitor the locations of those children. Probably every parent has experienced the sudden panic when, perhaps while chatting with some friends, one realizes that one has lost track of a child. On the sports field, players often concentrate on keeping track of the locations of multiple team-mates, the locations of opponents, and their spatial relationships to the ball. In conference halls, scientists monitor the position and posture of other researchers relative to the ones they are chatting to, in order to best time their approach.
 
 <!-- On the road, drivers monitor the movements of others’ vehicles.  At the beach, parents keep watch as their children move in and out of the water.--> 
 <!-- In basketball, the player needs to track the individual players of her/his own team, for example to know where the team’s excellent 3-point scorer is currently located. Similarly, a car driver approaching a busy intersection needs to track the whereabouts and movement trajectories of other vehicles and pedestrians in order to decide his/her own move  and in evolutionary history (e.g., keeping track of the weakest members in a herd of prey)-->.
@@ -288,9 +277,9 @@ Even when participants are asked to track several targets, then, one can expect 
 
 # Which aspect(s) of tracking determine performance? {#whichAspects}
 
-A number of different factors jointly determine how many moving objects we can track and how well we can track them. What are these factors? We've already covered C=1 processing, grouping, and the nature of the objects themselves, in Chapters \@ref(objects) and \@ref(grouping). In this chapter we will lay out how to think about how such factors relate to our limited capacity.
+The bottleneck idea communicates that certain brain processes can only operate on a limited number of visual representations. We can therefore think of those brain processes as a limited resource. To understand why we can track several objects in some circumstances, but only a few in others, we must distinguish between display factors that impose data limitations on tracking, and display factors that impose resource limitations. <!--We've already covered C=1 processing, grouping, and the nature of the objects themselves, in Chapters \@ref(objects) and \@ref(grouping).-->
 
-@normanDatalimitedResourcelimitedProcesses1975 provided a framework for thinking about human processing capacities, one that goes beyond the basic bottleneck idea of Chapter \@ref(bottlenecks). @normanDatalimitedResourcelimitedProcesses1975 pointed out that the processes that underlie task performance come in two varieties, data-limited and resource-limited. Here, "data" means sensory data. If a target moving on an unpredictable trajectory moves outside the edge of our visual field, it is a lack of sensory data that prevents it from being tracked. No amount of mental resources can overcome the absence of any data about an unpredictable stimulus, hence the fact that tracking performance is then limited by the data, or "data-limited". This may also be true of cases where sensory signals are impoverished even if not entirely absent. For example, an object traveling at a rate faster than our neurons can register cannot be tracked due to a data limitation. This makes the point that the data being referred to here are not the pattern of light falling on the retina, but rather that light after it has been processed by the retina and after additional preattentive sensory processing.
+The "data" in data limitation refers to sensory data [@normanDatalimitedResourcelimitedProcesses1975]. If a target moving on an unpredictable trajectory moves outside the edge of our visual field, it is a lack of data that prevents it from being tracked. No amount of mental resources can overcome a dearth of data about an unpredictable stimulus. Data limitations may also occur when sensory signals are impoverished, even if not entirely absent. For example, an object traveling at a rate faster than our neurons can register cannot be tracked due to a data limitation. So, the data being referred to here are not the pattern of light falling on the retina, but rather that light after it has been processed by the retina and after additional preattentive sensory processing.
 
 People with poor visual acuity may perform less well on a task than people with high visual acuity, again due to differences in the sensory data that they have to work with. Thus, some individual differences are almost certainly due to data limitations rather than variation in tracking processes between people. when performance is data-limited, bringing more mental resources to bear may provide little to no benefit. The classic way that this is investigated is by varying the number of stimuli one needs to process. @normanDatalimitedResourcelimitedProcesses1975 illustrate this with a visual search study. If the number of stimuli one must evaluate does not affect how well a person can perform a task, this suggests that the task is data-limited rather than resource-limited, because performance is the same regardless of the proportion of the putative resource can be devoted to it. <!-- More reflections on the relation of the resource concept to underlying mechanisms is in Chapter \@ref(spatialInterference). -->
 
@@ -498,7 +487,7 @@ Having failed to find evidence for long-range spatial interference, I decided to
 
 In experiments published in 2014, we assessed tracking performance for two targets for various separations between the targets' trajectories [@holcombeObjectTrackingAbsence2014]. Performance improved with separation, but only up to a distance of about half the target's eccentricity, similar to what has typically been found in the crowding literature [@strasburgerDancingLettersTicks2014]. In a few experiments there was a trend for better performance even as separation increased beyond the crowding zone, but this effect was small and not statistically significant. In all experiments performance was substantially worse for large separations, even for the largest separation tested of 59 degrees of visual angle. These findings supported my suspicion that spatial interference is largely confined to the crowding range, and that the performance deficit when there are more targets to track is caused by a limited processing resource.
 
-The experiments we reported in @holcombeObjectTrackingAbsence2014 did yield one surprise. In the one-target conditions, outside the crowding range we found that performance actually decreased with separation from the other pair of (untracked) objects. This unexpected  cost of separation was only statistically significant in one experiment, but the trend was present in all four experiments that varied separation outside the crowding range. This might potentially be explained by the configural or group-based processing that I reviewed in \@ref(grouping), as grouping of distant elements tends to occur less often than for nearby elements [e.g., @kubovyLawfulnessGroupingProximity1998].
+The experiments we reported in @holcombeObjectTrackingAbsence2014 did yield one surprise. In the one-target conditions, outside the crowding range we found that performance actually decreased with separation from the other pair of (untracked) objects. This unexpected  cost of separation was only statistically significant in one experiment, but the trend was present in all four experiments that varied separation outside the crowding range. This might potentially be explained by configural or group-based processing documented by @billHierarchicalStructureEmployed2020 and others, as grouping of distant elements tends to occur less often than for nearby elements [e.g., @kubovyLawfulnessGroupingProximity1998].
 
 What is the nature of the short-range spatial interference that we and others have documented? As explained in the beginning of this chapter, one cause of spatial interference is simply lack of spatial resolution by the processes that mediate tracking. If a process cannot distinguish between two locations, either because of a noisy representation of those locations or because the two locations are treated as one, then a target may often be lost when it comes too close to a distractor. This would be true of any imperfect mechanism, regardless of whether it is biological or man-made.
 
@@ -558,7 +547,7 @@ The evidence below suggests that the capacity limit on the use of motion informa
 
 @howeMotionInformationSometimes2012 compared a condition in which the objects moved in straight lines, only changing direction when they bounced off the arena's boundaries, to when the objects' trajectories were not predictable because they changed direction randomly about every half second. However, this advantage for tracking the predictable trajectories was found when there were two targets, but not when there were four targets. @vulExplainingHumanMultiple2010 asked participants to track three targets and varied how much and how often the objects changed their velocity. They found little to no detriment of the velocity changes on participants' estimates of difficulty. Unfortunately they did not assess whether velocity continuity became beneficial with fewer targets.
 
-In the @howeMotionInformationSometimes2012 experiments, participants were allowed to move their eyes. They may have moved their eyes to follow one target, or alternatively something like the centroid of the targets (see \@ref(grouping)), and as eye movements have some associated inertia, that tendency to continue moving the eyes in the same direction might have contributed to the predictable trajectory benefit, and it makes sense that this would boost conditions with fewer targets more given that the eyes only move in one direction at a time. @luuExtrapolationOccursMultiple2015 followed up on the @howeMotionInformationSometimes2012 results using similar experiment parameters but added a requirement that participants fixate at the center of the screen throughout a trial, and found a very similar pattern of results.
+In the @howeMotionInformationSometimes2012 experiments, participants were allowed to move their eyes. They may have moved their eyes to follow one target, or alternatively something like the centroid of the targets (see @@lukavskyEyeMovementsRepeated2013), and as eye movements have some associated inertia, that tendency to continue moving the eyes in the same direction might have contributed to the predictable trajectory benefit, and it makes sense that this would boost conditions with fewer targets more given that the eyes only move in one direction at a time. @luuExtrapolationOccursMultiple2015 followed up on the @howeMotionInformationSometimes2012 results using similar experiment parameters but added a requirement that participants fixate at the center of the screen throughout a trial, and found a very similar pattern of results.
 
 These results converge nicely with those of @fencsikRoleLocationMotion2007, who made targets invisible for a brief period (307 ms) during tracking. The targets continued moving, invisibly, during the disappearance interval, and participants were able to continue tracking afterward when there were one or two targets but not four targets, as evidenced by better performance compared to a control condition where prior motion information was not available.
 
@@ -723,7 +712,7 @@ Thus, while early visual processing can deliver motion and color features even f
 
 In the previous two sections I pointed out that while we can perceive the flicker in a rapidly changing light at rates as high as 60 Hz, some feature binding judgments begin to fail at 3 Hz. @holcombeSeeingSlowSeeing2009 reviewed all the known temporal limits on human visual judgments, from flicker to binocular depth and motion as well as the binding of various features. These limits clustered into two groups, with one set of tasks limited to 8 Hz or below and another set with limits substantially greater than 8 Hz. The summary figure below, based on one in @holcombeSeeingSlowSeeing2009 but with the addition of more recent evidence, highlights these two groups.
 
-```{r temporalLims, echo=FALSE, out.width="100%", fig.cap="Temporal limits on perception"}
+```{r temporalLims, echo=FALSE, out.width="80%", fig.cap="Temporal limits on perception"}
 knitr::include_graphics("imagesForRmd/temporalLimitsPerception/temporalLimits.001.jpeg")
 ```
 
@@ -787,7 +776,7 @@ Another way to think about temporal frequency limits such as this is that they r
 
 This brings me to how @verstratenLimitsAttentiveTracking2000 and @holcombeSplittingAttentionReduces2013 established that the limit is a temporal one rather than a speed limit. They relied on the fact that a particular temporal frequency corresponds to different combinations of speed and spatial density, rather than a single speed as one would expect from a speed limit. The space-time diagrams in Figure \@ref(fig:temporalResltnSushi) schematizes this, using the height of a pink rectangle to represent the temporal resolution of the tracking processes. At low stimulus speed and density the time between stimuli occupying any one spatial location is long, so tracking succeeds (top panel). When one increases either speed (middle panel) or density (lower panel), the interval between visits to each location decreases.
 
-```{r temporalResltnSushi, echo=FALSE, out.width="80%", fig.cap="The purple rectangle represents the spatial resolution (width) and temporal resolution (height) of tracking. Top panel: The space-time diagram schematizes a sushi train where one piece of sushi is designated as the target. Both density (number of sushi pieces) and speed is low. Tracking is possible because tracking is able to select a single piece of sushi. Middle panel: At medium speed, despite low density, tracking fails because temporal resolution is exceeded.  Bottom panel: At low speed but medium density, tracking fails because temporal resolution is exceeded."}
+```{r temporalResltnSushi, echo=FALSE, out.width="60%", fig.cap="The purple rectangle represents the spatial resolution (width) and temporal resolution (height) of tracking. Top panel: In a space-time diagram, one piece of sushi of a sushi rain is designated as the target. Density and speed are low. Tracking processes are able to select an individual sushi. Middle panel: At medium speed, despite low density, tracking fails because temporal resolution is exceeded. Bottom panel: At low speed, but medium density, tracking fails because temporal resolution is exceeded."}
 knitr::include_graphics("imagesForRmd/spatialTempResltnSushi/temporalResltnSushi.jpeg")
 ```
 
@@ -814,7 +803,7 @@ In addition to replicating the finding of @verstratenLimitsAttentiveTracking2000
 
 The effect of target load on temporal limit observed by @roudaiaDifferentEffectsAging2017 was remarkably similar in size to the large effect found by @holcombeSplittingAttentionReduces2013. The eight participants tested by @holcombeSplittingAttentionReduces2013 were all relatively young men, apart from two young women. @roudaiaDifferentEffectsAging2017 tested both old and young participants, and reported a statistically significant difference. Among their young group, however, they tested only nine young men and nine young women, which for most known gender differences would be provide low statistical power, so the finding of a gender difference should be considered provisional. <!--I do not discuss or show the results they found for their old (greater than 60 years) group because that group included many outliers with very low performance.  ACTUALLY NO BAD OUTLIERS AMONG OLD FOR 1 AND 2 TARGETS SO MAYBE INCLUDE THAT-->
 
-  ```{r trackingLimitsReview, echo=F, message=F, fig.cap="The results of the two experiments of Holcombe & Chen (2013) plotted with the comparable sample (young people) of Roudaia & Faubert (2017). The data symbols are horizontally offset to avoid overlap."}
+```{r trackingLimitsReview, warnings=F, echo=F, message=F, fig.cap="The results of the two experiments of Holcombe & Chen (2013) plotted with the comparable sample (young people) of Roudaia & Faubert (2017). The data symbols are horizontally offset to avoid overlap."}
 library(ggplot2)
 library(dplyr)
 library(tidyr)
@@ -1179,16 +1168,16 @@ Whether the processes that underlie MOT involve a serial component has been one 
 
 The evidence is fairly strong that at least a few forms of binding, in particular judgments of arbitrary spatial relationships, involve a one-by-one process. The evidence comes from at least five different approaches. In their redundant-target paradigm, David Gilden and colleagues improved on the inferential power of the visual search approach of Treisman [@thorntonParallelSerialProcesses2007]. The results indicated that discriminating many spatial relations, such as distinguishing betwee the two symbols below <!--in \@ref(fig:venusSymbols) -->, requires a serial process [@gildenSerialProcessVisual2010].
 
-```{r venusSymbols, echo=FALSE, out.width="30%", fig.cap=" "}
+```{r venusSymbols, echo=FALSE, out.width="30%", fig.cap="The evidence indicates that in visual search experiments with one of these symbols as the target and the other as the distractor, a serial process is required."}
 knitr::include_graphics("imagesForRmd/spatialRelations/ThorntonVenusSymbols.png")
 ```
 
 Daniel Linares, Maryam Vaziri-Pashkam, and I presented colored discs rapidly moving in a circular trajectory about the fixation point. When the discs moved at speeds that exceeded the participants' tracking limit, participants were unable to report which discs were adjacent to each other, even when they were presented for multiple seconds. This suggested that attention, in particular that deployed when tracking, is necessary for judging spatial relationships.
 
-```{r spinner, echo=FALSE, out.width="100%", fig.cap="When the discs in this display rotated faster than about 1.4 rps (approximately the 1-target tracking limit with this display), participants were unable to judge whether two colors are adjacent to each other."}
+```{r spinner, echo=FALSE, fig.cap="When the discs in this display rotated faster than about 1.4 rps (approximately the 1-target tracking limit with this display), participants were unable to judge whether two colors are adjacent to each other."}
 #Work-around to make GIFs (but not .mov) work by avoiding including them in non-html outputs!
 #https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
-if(knitr::is_html_output()) knitr::include_url("movies/LinaresVaziriPashkamHolcombe/pairing_3timesFasterOneStimulusCycleSoRotatesPerenially.gif") else knitr::include_graphics("movies/LinaresVaziriPashkamHolcombe/pairingOneStimulusCycleSoRotatesPereniallyStatic.gif")
+if(knitr::is_html_output()) knitr::include_url("movies/LinaresVaziriPashkamHolcombe/pairing_3timesFasterOneStimulusCycleSoRotatesPerenially.gif") else knitr::include_graphics("movies/LinaresVaziriPashkamHolcombe/pairingOneStimulusCycleSoRotatesPereniallyStatic.png")
 #, height = "250px"
 ```
 
@@ -1381,7 +1370,7 @@ Long after most researchers considered the idea of serial updating of position t
 
 (ref:Bus) [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/deed.en)  <!--This is how you create figure caption with hyperlink-->
 
-```{r busMotionBlur, echo=FALSE, out.width="80%", fig.cap="A London bus, photographed with a 200 ms exposure, by EO1 (ref:Bus)"}
+```{r busMotionBlur, echo=FALSE, out.width="80%", fig.cap="A London bus, photographed with a 200 ms exposure, by EO1. (ref:Bus)"}
 knitr::include_graphics("imagesForRmd/motionBlur/London_bus_and_telephone_box_on_Haymarket.jpg")
 ```
 
@@ -1389,7 +1378,7 @@ At speeds like those used in MOT experiments, the moving objects leave trails of
 
 When motion streaks can be used, either the streak will literally connect the new sample to the old sample, or if the sampling happens less frequently relative to the targets' speed, if the object hasn't changed direction than the streaks will typically be collinear, whereas the distractors' streaks will be positioned and oriented differently. The major exception to this would be when the target shared its trajectory with distractors, such as in the experiments of @holcombeSplittingAttentionReduces2013. 
 
-(ref:Billiards) The motion streaks created by billiard balls in a long exposure of the ball break [Public domain](https://commons.wikimedia.org/wiki/File:8_ball_break_time_lapse.jpg)  <!--This is how you create figure caption with hyperlink-->
+(ref:Billiards) The motion streaks created by billiard balls in a long exposure of the ball break. [Public domain](https://commons.wikimedia.org/wiki/File:8_ball_break_time_lapse.jpg)  <!--This is how you create figure caption with hyperlink-->
 
 ```{r billiardsBlur, echo=FALSE, out.width="80%", fig.cap="(ref:Billiards)"}
 knitr::include_graphics("imagesForRmd/motionBlur/8_ball_break_time_lapsePublicDomain.jpg")
@@ -1479,7 +1468,7 @@ Given enough time, we certainly can update our representation of not only the lo
 
 For stimuli, @pailianAgeSpeciesComparisons2020 used colored balls of wool. Between one and four of the balls were shown to a participant. The experimenter covered the balls with inverted opaque plastic cups, and then began to move them, swapping the positions of one pair at a time. After a variable number of pairs were swapped, the experimenter presented another ball with one of the target colors, and the participant's task was to point to (or peck on!), the cup containing the probed color. 
 
-![An African grey parrot participates in a shell game. CC-BY Pailian et al. (2020)](imagesForRmd/ParrotGriffinPepperbergShellGame.png){width=40%} 
+![An African grey parrot participates in a shell game. Pailian et al. (2020), CC-BY .](imagesForRmd/ParrotGriffinPepperbergShellGame.png){width=40%} 
 
 At any one time, only two objects were in motion, and that the participants were responsible for knowing the final location of all the colors - there were no distractors. One might anticipate that at least the adults would be able to perform this task with high accuracy, especially given that at any one time, only two objects were in motion and the experimenter paused for a full second between swaps, which ought to give people enough time to update their memory of the locations of those two colors.
 
@@ -1665,7 +1654,7 @@ In sports, some teams of researchers have frequently suggested that MOT performa
 
 # Progress and recommendations
 
-A very nice surprise in the last decade of work has been the discovery (see chapter \@ref(abilities)) that MOT has high test-retest reliability, of approximately .8 or .9, among the highest among attentional tasks and far higher than many common laboratory tasks. The outlook for future work, then, is very positive both from the prospect of new results being credible (because with a non-noisy task, less data is needed to have high statistical power) and for the use of MOT as a tool to study other things, such as individual differences.
+The study of multiple object tracking has traditionally been done in the laboratory exercise with only a few dozen participants in an experiment. Only recently, then, has one of the greatest virtues of the MOT task become clear: it's high test-retest reliability, of approximately .8 or .9, among the highest among attentional tasks and far higher than many common laboratory tasks (see chapter \@ref(abilities)). The outlook for future work, then, is very positive both from the prospect of new results being credible (because with a non-noisy task, less data is needed to have high statistical power) and for the use of MOT as a tool to study other things, such as individual differences.
 
 To further highlight how much we have learned, next I will describe how much findings have allowed us to disconfirm multiple aspects of the first and most influential theory of tracking. 
 
@@ -1694,7 +1683,7 @@ A salient case of more mixed progress is that while early work had concluded tha
 
 ## Topics not covered by this book
 
-Due to lack of space (I was given a word limit by the publisher), several important topics were not covered. These include whether tracking operates in a retinotopic, spatiotopic, or configural representation (see [@yantisMultielementVisualTracking1992; @billHierarchicalStructureEmployed2020; @howeCoordinateSystemsUsed2010; @meyerhoffDistractorLocationsInfluence2015b; @liuMultipleObjectTrackingBased2005; @maechlerAttentionalTrackingTakes2021]), the role of distractors and possible distractor suppression, the role of surface features [@papenmeierTrackingLocationFeatures2014], and the literature on dual-task paradigms, although a few such papers were mentioned along the way [e.g., @alvarezMultielementVisualTracking2005].
+Many topics were not covered in this book (I was given a word limit by the publisher). Some of the most important are whether tracking operates in a retinotopic, spatiotopic, or configural representation (see [@yantisMultielementVisualTracking1992; @billHierarchicalStructureEmployed2020; @howeCoordinateSystemsUsed2010; @meyerhoffDistractorLocationsInfluence2015b; @liuMultipleObjectTrackingBased2005; @maechlerAttentionalTrackingTakes2021]), the role of distractors and possible distractor suppression, the role of surface features [@papenmeierTrackingLocationFeatures2014], and the literature on dual-task paradigms, although a few such papers were mentioned along the way [e.g., @alvarezMultielementVisualTracking2005].
 
 <!--
 ## Dual-task OUT OF SCOPE

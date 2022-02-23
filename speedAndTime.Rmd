@@ -62,7 +62,7 @@ Thus, while early visual processing can deliver motion and color features even f
 
 In the previous two sections I pointed out that while we can perceive the flicker in a rapidly changing light at rates as high as 60 Hz, some feature binding judgments begin to fail at 3 Hz. @holcombeSeeingSlowSeeing2009 reviewed all the known temporal limits on human visual judgments, from flicker to binocular depth and motion as well as the binding of various features. These limits clustered into two groups, with one set of tasks limited to 8 Hz or below and another set with limits substantially greater than 8 Hz. The summary figure below, based on one in @holcombeSeeingSlowSeeing2009 but with the addition of more recent evidence, highlights these two groups.
 
-```{r temporalLims, echo=FALSE, out.width="100%", fig.cap="Temporal limits on perception"}
+```{r temporalLims, echo=FALSE, out.width="80%", fig.cap="Temporal limits on perception"}
 knitr::include_graphics("imagesForRmd/temporalLimitsPerception/temporalLimits.001.jpeg")
 ```
 
@@ -126,7 +126,7 @@ Another way to think about temporal frequency limits such as this is that they r
 
 This brings me to how @verstratenLimitsAttentiveTracking2000 and @holcombeSplittingAttentionReduces2013 established that the limit is a temporal one rather than a speed limit. They relied on the fact that a particular temporal frequency corresponds to different combinations of speed and spatial density, rather than a single speed as one would expect from a speed limit. The space-time diagrams in Figure \@ref(fig:temporalResltnSushi) schematizes this, using the height of a pink rectangle to represent the temporal resolution of the tracking processes. At low stimulus speed and density the time between stimuli occupying any one spatial location is long, so tracking succeeds (top panel). When one increases either speed (middle panel) or density (lower panel), the interval between visits to each location decreases.
 
-```{r temporalResltnSushi, echo=FALSE, out.width="80%", fig.cap="The purple rectangle represents the spatial resolution (width) and temporal resolution (height) of tracking. Top panel: The space-time diagram schematizes a sushi train where one piece of sushi is designated as the target. Both density (number of sushi pieces) and speed is low. Tracking is possible because tracking is able to select a single piece of sushi. Middle panel: At medium speed, despite low density, tracking fails because temporal resolution is exceeded.  Bottom panel: At low speed but medium density, tracking fails because temporal resolution is exceeded."}
+```{r temporalResltnSushi, echo=FALSE, out.width="60%", fig.cap="The purple rectangle represents the spatial resolution (width) and temporal resolution (height) of tracking. Top panel: In a space-time diagram, one piece of sushi of a sushi rain is designated as the target. Density and speed are low. Tracking processes are able to select an individual sushi. Middle panel: At medium speed, despite low density, tracking fails because temporal resolution is exceeded. Bottom panel: At low speed, but medium density, tracking fails because temporal resolution is exceeded."}
 knitr::include_graphics("imagesForRmd/spatialTempResltnSushi/temporalResltnSushi.jpeg")
 ```
 
@@ -153,7 +153,7 @@ In addition to replicating the finding of @verstratenLimitsAttentiveTracking2000
 
 The effect of target load on temporal limit observed by @roudaiaDifferentEffectsAging2017 was remarkably similar in size to the large effect found by @holcombeSplittingAttentionReduces2013. The eight participants tested by @holcombeSplittingAttentionReduces2013 were all relatively young men, apart from two young women. @roudaiaDifferentEffectsAging2017 tested both old and young participants, and reported a statistically significant difference. Among their young group, however, they tested only nine young men and nine young women, which for most known gender differences would be provide low statistical power, so the finding of a gender difference should be considered provisional. <!--I do not discuss or show the results they found for their old (greater than 60 years) group because that group included many outliers with very low performance.  ACTUALLY NO BAD OUTLIERS AMONG OLD FOR 1 AND 2 TARGETS SO MAYBE INCLUDE THAT-->
 
-  ```{r trackingLimitsReview, echo=F, message=F, fig.cap="The results of the two experiments of Holcombe & Chen (2013) plotted with the comparable sample (young people) of Roudaia & Faubert (2017). The data symbols are horizontally offset to avoid overlap."}
+```{r trackingLimitsReview, warnings=F, echo=F, message=F, fig.cap="The results of the two experiments of Holcombe & Chen (2013) plotted with the comparable sample (young people) of Roudaia & Faubert (2017). The data symbols are horizontally offset to avoid overlap."}
 library(ggplot2)
 library(dplyr)
 library(tidyr)
