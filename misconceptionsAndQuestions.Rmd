@@ -1,4 +1,4 @@
-# Progress and recommendations
+# Progress and recommendations #recommendations
 
 The study of multiple object tracking has traditionally been done in the laboratory exercise with only a few dozen participants in an experiment. Only recently, then, has one of the greatest virtues of the MOT task become clear: it's high test-retest reliability, of approximately .8 or .9, among the highest among attentional tasks and far higher than many common laboratory tasks (see chapter \@ref(abilities)). The outlook for future work, then, is very positive both from the prospect of new results being credible (because with a non-noisy task, less data is needed to have high statistical power) and for the use of MOT as a tool to study other things, such as individual differences.
 

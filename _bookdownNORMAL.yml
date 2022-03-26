@@ -1,0 +1,16 @@
+book_filename: "tracking-review"
+language:
+  ui:
+    chapter_name: "Section "
+delete_merged_file: false
+rmd_files: ["index.Rmd","01-outline.Rmd", 
+# "bottlenecks.Rmd",
+"theBiggestMyth.Rmd",
+# "objects.Rmd","grouping.Rmd", #Had to remove these chapters to get below the word limit
+"Cequals1.Rmd",
+"whichAspects.Rmd","spatialInterference.Rmd", "beyondLocation.Rmd", "speedAndTime.Rmd",
+# "twoBrainsOrOne.Rmd", 
+"serialOrParallel.Rmd", "resolution.Rmd",
+# "identity.Rmd",  
+"abilities.Rmd", "realWorld.Rmd", "misconceptionsAndQuestions.Rmd", "references.Rmd"]
+#mobileComputation.Rmd
