@@ -5,8 +5,9 @@ language:
 delete_merged_file: false
 rmd_files: ["index.Rmd","01-outline.Rmd", 
 "bottlenecks.Rmd",
-"theBiggestMyth.Rmd", "objects.Rmd","grouping.Rmd", 
+"theBiggestMyth.Rmd", "whichAspects.Rmd","spatialInterference.Rmd",
 "Cequals1.Rmd",
+"objects.Rmd","grouping.Rmd", 
  "twoBrainsOrOne.Rmd", 
  "identity.Rmd",  
 "abilities.Rmd", "realWorld.Rmd", "misconceptionsAndQuestions.Rmd", "references.Rmd"]
@@ -14,5 +15,6 @@ rmd_files: ["index.Rmd","01-outline.Rmd",
 
 #Discarded
 #"beyondLocation.Rmd"
-#"whichAspects.Rmd","spatialInterference.Rmd", "speedAndTime.Rmd",
+# "speedAndTime.Rmd",
+#"serialOrParallel.Rmd"
 #mobileComputation.Rmd

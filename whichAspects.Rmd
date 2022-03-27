@@ -1,5 +1,7 @@
 # Which aspect(s) of tracking determine performance? {#whichAspects}
 
+While Pylyshyn theorized that tracking is accomplished by a fixed and discrete set of pointers, the dependence on display characteristics of the number of objects one can track hints that the underlying process may be continuous and flexible rather than determined by a fixed, discrete set.
+
 Certain brain processes can only operate on a limited number of visual representations. The term "limited resource" is often used for this, because we can choose to some extent, with visual attention, which visual representations are processed. Contrary to what Pylyshyn theorized early on, tracking processes do seem to be utilized like a continuous resource, wherein applying more resource to a target can reduce the deleterious influence of object speed or other factors. I will say more about this in a later chapter, but first want to explain the resource concept more, and make an important distinction.
 
 To understand why we can track several objects in some circumstances, but only a few in others, we must distinguish between display factors that impose data limitations on tracking, and display factors that impose resource limitations. <!--We've already covered C=1 processing, grouping, and the nature of the objects themselves, in Chapters \@ref(objects) and \@ref(grouping).-->
