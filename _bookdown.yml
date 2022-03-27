@@ -18,3 +18,4 @@ rmd_files: ["index.Rmd","01-outline.Rmd",
 # "speedAndTime.Rmd",
 #"serialOrParallel.Rmd"
 #mobileComputation.Rmd
+#Optional: "Duration that one can sustain attention" in "whichAspects"
