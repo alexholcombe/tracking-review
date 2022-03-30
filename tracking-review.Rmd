@@ -22,8 +22,8 @@ output:
   #bookdown::word_document2
 documentclass: book
 always_allow_html: true
-bibliography: [bibliography/CambridgeElement.bib,  bibliography/packages.bib]  
-#bibliography/CambridgeElementNewestAdditions.bib,
+bibliography: [bibliography/CambridgeElementNewestAdditions.bib,  bibliography/packages.bib]  
+#bibliography/CambridgeElement.bib, 
 biblio-style: "apalike"
 #csl: apa7-single-spaced.csl
 link-citations: yes
