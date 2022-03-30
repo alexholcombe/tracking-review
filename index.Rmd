@@ -22,7 +22,8 @@ output:
   #bookdown::word_document2
 documentclass: book
 always_allow_html: true
-bibliography: [bibliography/CambridgeElement.bib, bibliography/CambridgeElementNewestAdditions.bib, bibliography/packages.bib]  
+bibliography: [bibliography/CambridgeElementNewestAdditions.bib,  bibliography/packages.bib]  
+#bibliography/CambridgeElement.bib, 
 biblio-style: "apalike"
 #csl: apa7-single-spaced.csl
 link-citations: yes
@@ -30,7 +31,7 @@ url: 'https\://tracking.whatanimalssee.com/'
 github-repo: alexholcombe/tracking-review
 twitter-handle: ceptional
 #For the order of chapters, see _bookdown.yml, where they are manually specified
-description: "This is an opinionated book that reviews what we know about multiple object tracking by humans."
+description: "This is an opinionated book that reviews some of the literature on multiple object tracking by humans."
 #cover-image: "imagesForRmd/threeWiseMonkeys/Three_Wise_Monkeys_640px.jpeg"
 ---
 <!--other titles: Tracking moving objects, How humans track objects, Attending to a moving world -->
@@ -42,6 +43,8 @@ Cite this as:
 Holcombe, A.O. (to appear). Attending to moving objects. Cambridge University Press.
 
 This book reviews what we know about multiple object tracking by humans. It is expected to be published by Cambridge University Press in their [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception).
+
+This is a revised and highly abridged version of an earlier draft, which greatly exceeded the publisher's word limit. I am  re-purposing the former chapters on temporal limits and on serial versus parallel processing into a separate manuscript. Contact me if you're interested in seeing that material. 
 
 <!--You can read this [here on the web](https://tracking.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.--> 
 
@@ -69,7 +72,7 @@ This doesn't work either:
 <!-- CANVAS quizzes - I can't see any way to make external links work, even for a Canvas Commons quiz, it takes you to a bizarro Canvas login https://lor.instructure.com/resources/76da8b14c91a40d885c6fe0452bf33f4?shared -->
 
 <!--Wordcount
-From R environment, execute the following after eliminating the references, although it will also count code perhaps?
+From R environment, execute the following after eliminating the references
 wordcountaddin::word_count('tracking-review.Rmd')
 -->
 

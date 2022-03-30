@@ -1,8 +1,8 @@
-# Progress and recommendations #recommendations
+# Progress and recommendations {#recommendations}
 
-The study of multiple object tracking has traditionally been done in the laboratory exercise with only a few dozen participants in an experiment. Only recently, then, has one of the greatest virtues of the MOT task become clear: it's high test-retest reliability, of approximately .8 or .9, among the highest among attentional tasks and far higher than many common laboratory tasks (see chapter \@ref(abilities)). The outlook for future work, then, is very positive both from the prospect of new results being credible (because with a non-noisy task, less data is needed to have high statistical power) and for the use of MOT as a tool to study other things, such as individual differences.
+The study of multiple object tracking has traditionally been done in the laboratory, with only a few dozen participants in an experiment. Only recently, then, has one of the greatest virtues of the MOT task become clear: it's high test-retest reliability, of approximately .8 or .9, among the highest of attentional tasks (see Chapter \@ref(abilities)). The outlook for future work, then, is positive both from the prospect of new results being credible (because with a non-noisy task, less data is needed to have high statistical power) and for the use of MOT as a tool to study individual differences.
 
-To further highlight how much we have learned, next I will describe how much findings have allowed us to disconfirm multiple aspects of the first and most influential theory of tracking. 
+To further highlight how much we have learned in the last thirty-odd years, next I will describe how much findings have allowed us to disconfirm multiple aspects of the first and most influential theory of tracking, Zenon Pylyshyn's FINST theory.
 
 <!--
 Top misconceptions about MOT
@@ -15,21 +15,24 @@ Thus, while many potential athlete users may imagine that a test of attention te
 
 ## The decline of Pylyshyn's FINST theory
 
-At the time of writing, Pylyshyn's FINST theory described in the very first paper on MOT is the featured theory on the "multiple object tracking" Wikipedia page [@wikipediaeditorsMultipleObjectTracking2021], and it is frequently invoked in the scholarly literature as well. However, some of the main features of the theory have been rebutted [@schollWhatHaveWe2008].
+At the time of writing, Pylyshyn's FINST theory is the featured theory on the "multiple object tracking" Wikipedia page [@wikipediaeditorsMultipleObjectTracking2021], and it is frequently invoked in the scholarly literature as well. However, some of the main features of the theory have been rebutted [@schollWhatHaveWe2008].
 
 Core to the theory is the idea that tracking is mediated by a fixed set of discrete, preattentive indices. As we have seen, however, as speed increases, the number of targets that can be tracked rapidly decreases, to one target, which is hard to explain with a fixed set of discrete indices [@alvarezHowManyObjects2007; @holcombeExhaustingAttentionalTracking2012].
 
-Adding to the evidence that tracking draws on attentional resources are dual-task studies. I did not have space to review them in this book, but they indicate that tracking draws on attentional resources shared with some other tasks, and pupil data  [@oksamaPositionTrackingIdentity2016; @alnaesPupilSizeSignals2014]. One should add, however, that such studies do not seem to have ruled out the possibility that these findings were caused entirely by a C=1 resource rather than the hemifield-specific tracking processes; unfortunately, none of these studies appear to have tested for the hemifield specificity of their findings.
+Adding to the evidence that tracking draws on attentional resources are dual-task studies. I did not have space to review them in this Element, but they indicate that tracking draws on attentional resources shared with some other tasks  [@oksamaPositionTrackingIdentity2016; @alnaesPupilSizeSignals2014]. One should add, however, that such studies do not seem to have ruled out the possibility that these findings were caused entirely by a C=1 resource rather than the hemifield-specific tracking processes; unfortunately, none of these studies appear to have tested for the hemifield specificity of their findings.
 
-An important prediction of Pylyshyn's theory was also that participants should be aware which target is which among the targets they are tracking. Pylyshyn himself found strong evidence against this. Again, I have focused on the evidence against Pylyshyn's theory to showcase that the literature has come a long way in thirty-four years. This is also worth emphasizing because we share a problem of many other literatures, that large numbers of researchers know something about tracking but can be way out of date on theory and recent findings.
+One prediction of Pylyshyn's theory was that participants should be aware which target is which among the targets they are tracking. Pylyshyn himself found strong evidence against this, and the evidence  for poor updating of target identities has increased since then.
 
 <!--Although CDA findings suggest there is something tracking number of objects rather than resources expended @drewVogel @balabanObjectRepresentationsVisual2016, I don't know that it supports a limit on this -->
 
-A salient case of more mixed progress is that while early work had concluded that MOT could not reflect serial position sampling [@pylyshynTrackingMultipleIndependent1988; @yantisMultielementVisualTracking1992], this recently has been questioned, and now is a favored account of tracking in some circumstances, as reviewed in Chapter \@ref(serialOrParallel).
-
 ## Topics not covered by this book
 
-Many topics were not covered in this book (I was given a word limit by the publisher). Some of the most important are whether tracking operates in a retinotopic, spatiotopic, or configural representation (see [@yantisMultielementVisualTracking1992; @billHierarchicalStructureEmployed2020; @howeCoordinateSystemsUsed2010; @meyerhoffDistractorLocationsInfluence2015b; @liuMultipleObjectTrackingBased2005; @maechlerAttentionalTrackingTakes2021]), the role of distractors and possible distractor suppression, the role of surface features [@papenmeierTrackingLocationFeatures2014], and the literature on dual-task paradigms, although a few such papers were mentioned along the way [e.g., @alvarezMultielementVisualTracking2005].
+Many topics that I originally planned to cover could not be included in this Element (I was given a word limit by the publisher). Some of the most important are whether tracking operates in a retinotopic, spatiotopic, or configural representation (see [@yantisMultielementVisualTracking1992; @billHierarchicalStructureEmployed2020; @howeCoordinateSystemsUsed2010; @meyerhoffDistractorLocationsInfluence2015b; @liuMultipleObjectTrackingBased2005; @maechlerAttentionalTrackingTakes2021]), the role of distractors and possible distractor suppression, the role of surface features [@papenmeierTrackingLocationFeatures2014], and the literature on dual-task paradigms, although a few dual-task papers were mentioned along the way [e.g., @alvarezMultielementVisualTracking2005]. <!--The use of velocity signals -->
+
+If your favorite topic is not covered, possibly you can take some consolation in the fact that my own favorite topic, the temporal limits on tracking [@holcombeSplittingAttentionReduces2013; @roudaiaDifferentEffectsAging2017; @howardPositionRepresentationsLag2011], also was not covered. I hope to address this topic, which has major implications for what the tracking resource actually does during tracking, and whether processing is serial or parallel, in a separate manuscript. <!--early work had concluded that MOT could not reflect serial position sampling [@pylyshynTrackingMultipleIndependent1988; @yantisMultielementVisualTracking1992], this recently has been questioned, and now is a favored account of tracking in some circumstances, as reviewed in Chapter \@ref(serialOrParallel).-->
+
+* For computational modelling, I don't recommend modelling only data from standard, fairly unconstrained trajectories, as such data may not constrain models enough. Show your model successfully mimics both spatial crowding and temporal interference effects, including that temporal interference is more resource-intensive than spatial interference. Another strategy is to model large sets of data at an individual trial level; previous efforts seem to have modelled data from only one or a few different MOT experiments.
+
 
 <!--
 ## Dual-task OUT OF SCOPE
@@ -38,7 +41,7 @@ Another experiment indicates that trying to remember object identities can actua
 
 " though both search and MOT can be highly atten- tionally demanding, they may do so via demands on partially independent attentional subsystems. In particular, visual search may interfere dramati- cally with scene encoding because both processes rely heavily on the same underlying ventral identification-based form of attention. In contrast, MOT fails to interfere with scene encoding more than central executive tasks because MOT relies primarily on a different underlying type of visual attention, one that is dorsal and individuation based. This distinction may also help to explain why MOT and search interfere with each other so little (Alvarez et al. 2005): They may both be highly attention-demanding, yet they may draw on fundamentally different forms of attention. Similarly, this may help to explain why observers are relatively poor at encoding surface features of objects in MOT—including those of tracked targets (see, e.g., Bahrami 2003; Ko and Seiffert 2006; Scholl, Pylyshyn, and Franconeri 1999). "
 
-The dual-task literature is very large. Can't review it all here
+Dual-task 
 
 Alvarez, G.A., et al., Are mutielement visual tracking and visual search mutually exclusive? Journal of Experimental Psychology: Human Perception and Performance, 2005. 31(4): p. 643-667.
 
@@ -71,19 +74,15 @@ object tracking in people with Williams Syndrome remains at the level of 4‐yea
 
 ## Recommendations
 
-Here are a few recommendations for multiple object tracking researchers that have emerged from this journey through the literature:
+Here are a few recommendations for multiple object tracking researchers that have emerged from our journey through the literature:
 
 * To dilute the influence of C=1 processes, use several targets, not just two or three. But remember that even with several targets, a small effect could be explained by a  C=1 process, so consider that. Test for hemifield specificity as that can also rule out C=1 processes.
 
-* Always test for hemifield specificity. In addition to it helping to rule out a factor having its effect only on C=1 processes, we know very little about what limited-resource processes are hemisphere-specific, so any results here are likely to be interesting.
+* Always test for hemifield specificity! In addition to it helping to rule out a factor having its effect only on C=1 processes, we know very little about what limited-capacity brain processes are hemisphere-specific, so any results here are likely to be interesting.
 
 <!--The effect increases with retention interval, and may be a more cognitive mechanism, as it has been suggested that  Rep- resentational momentum occurs in memory for implied motion stimuli and  neither of which elicits pursuit eye movements.-->
 
-* For computational modelling, I don't recommend modelling only data from standard, fairly unconstrained trajectories, as such data may not constrain models enough. Show your model successfully mimics both spatial crowding and temporal interference effects, including that temporal interference is more resource-intensive than spatial interference. Another strategy is to model large sets of data at an individual trial level; previous efforts seem to have modelled data from only one or a few different MOT experiments.
 
-<!--Two strategies to improve the constraints on models present themselves. One is to fix the individual components of the models based on the results of experiments designed to isolate those component, such as the experiments by [@verstratenLimitsAttentiveTracking2000; @holcombeSplittingAttentionReduces2013; @roudaiaDifferentEffectsAging2017] for identifying temporal limits and that of @holcombeObjectTrackingAbsence2014 to identify the range of spatial crowding. Another strategy is to model much larger sets of data, at an individual trial level; previous efforts seem to have modelled data from at most two different MOT experiments.
-
-Study change detection during motion.-->
 
 
 
