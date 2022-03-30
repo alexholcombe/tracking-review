@@ -43,7 +43,7 @@ Cite this as:
 Holcombe, A.O. (to appear). Attending to moving objects. Cambridge University Press.
 
 This book reviews what we know about multiple object tracking by humans. It is expected to be published by Cambridge University Press in their [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception).
-
+<!--https://mc.manuscriptcentral.com/hsselements1?URL_MASK=8f1bd56d44104a8b82eafbb42c3bdb84-->
 This is a revised and highly abridged version of an earlier draft, which greatly exceeded the publisher's word limit. I am  re-purposing the former chapters on temporal limits and on serial versus parallel processing into a separate manuscript. Contact me if you're interested in seeing that material. 
 
 <!--You can read this [here on the web](https://tracking.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.--> 
@@ -74,6 +74,7 @@ This doesn't work either:
 <!--Wordcount
 From R environment, execute the following after eliminating the references
 wordcountaddin::word_count('tracking-review.Rmd')
+Approximately 27,500 words without references
 -->
 
 <!--Exporting to Word: Looked less fucked-up if I first imported the PDF into Google Docs and then clicked Open in->Microsoft Word.app-->
@@ -504,7 +505,13 @@ Four moving lines were presented in the @schollWhatVisualObject2001 study, with 
 
 The results were striking. Performance on the task was abysmal relative to a control condition in which the two ends of the line were not connected. Simply by viewing an example trial, one very quickly gets a sense of how difficult the task is - the effect is very large.
 
-(INSERT SCHOLL MOVIE)
+
+```{r lines, echo=FALSE, fig.cap="Using this display, Scholl et al. (2001) asked participants to track the end of each of several lines."}
+#Work-around to make GIFs (but not .mov) work by avoiding including them in non-html outputs!
+#https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
+if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/connectedTargets/MOTtrackingEndOfLinesVeryDifficultScholl.mov") else knitr::include_graphics("movies/MOTmovies/connectedTargets/MOTtrackingEndOfLinesOneFrame.png")
+#, height = "250px"
+```
 
 The task of tracking line ends in the @schollWhatVisualObject2001 experiment was complicated by the fact that the objects frequently crossed over each other, and also their length changed over time. But @howeCanAttentionBe2012 showed that these complications were not the main reason for the poor performance. It simply is the case, it seems, that one cannot confine one's tracking processes to one bit of an undifferentiated object. This inability to track the ends of lines fits in with the view this chapter opened with, that preattentive processes define objects that become what tracking operates on.
 
@@ -514,7 +521,7 @@ Maintaining attention on a part of the visual scene in the absence of anything i
 
 Researchers usually make a strong distinction between the processing that determines *how many* objects one can track and those that determine *what kinds* of objects can be tracked. An assumption of separate processing stages is popular in the study of visual cognition generally. Visual search, for example, is usually conceptualized this way [@wolfePreattentiveObjectFiles1997; @nakayamaVisualSurfaceRepresentation1995], and appears to be an implicit assumption in two reviews of objects and tracking  [@schollObjectsAttentionState2001; @pylyshynSeeingVisualizingIt2006]. <!-- No interaction between number of objects to track and what kinds of objects can be tracked.--> It would be convenient if object creation and object tracking occurred at distinct processing stages, as that is more straightforward to study than an interactive system [@simonSciencesArtificialReissue1969; @sternbergDiscoveryProcessingStages1969].
 
-```{r simpleArchitecture, echo=FALSE, out.width="30%", fig.cap="A schematic of the idea that objects are created prior to the action of tracking processes, which then point to the already-formed object representations but do not change them."}
+```{r simpleArchitecture, echo=FALSE, out.width="55%", fig.cap="A schematic of the idea that objects are created prior to the action of tracking processes, which then point to the already-formed object representations but do not change them."}
 knitr::include_graphics("imagesForRmd/flowDiagrams/objectCreationTrackingSeparateDiagram.png")
 ```
 
@@ -973,7 +980,7 @@ To move the debate regarding the role of serial and parallel processing forward,
 <!--Preventing the use of feature attention
 The effectiveness of featural attention raises an important issue for the interpretation of MIT studies. All the MIT studies I reviewed above did not have targets and distractors distinguished only by their feature conjunctions; rather, they typically used unique shapes such as cartoon animals or line drawings. This raises the possibility that the targets sometimes shared some feature or features with each other more than with the distractors. In other words, feature attention could help separate the targets from the distractors. This could be avoided by using pairings of features, as in the feature conjunction condition used by @makovskiFeatureBindingAttentive2009 for MOT. Another approach was used by Piers Howe and colleagues who paired each target, which had a distinct appearance, with a distractor that had an identical appearance.-->
 
-To summarise this chapter, there is plenty of evidence that both use of object identities in tracking and the updating of target identities for awareness is quite poor. This fits with a much broader set of findings over the last thirty years, that the mind maintains fewer explicit visual representations than we intuitively believe. The first findings of change blindness, which were in the context of failures to detect changes that occurred during eye movements [@mcconkieRoleControlEye1979], led @oreganSolvingRealMysteries1992a to suggest that "the world is an outside memory" and later to discover change blindness [@rensinkSeeNotSee1997]. The idea was that the impression that one has a rich representation of all the objects in the visual field is an illusion, and instead that one has only a more limited knowledge, but that this is quickly supplemented by attentional processing when one becomes interested in a particular location or object. It appears that O'Regan's big idea goes further than he anticipated. While O'Regan suggested that only when objects were attended would they be fully processed, he did not suggest that one might be able to track the changing locations of multiple targets without becoming aware of what they are. Such lack of awareness has been documented not only in the context of tracking multiple objects as reviewed above, but even in a change blindness task that involved eyetracking of just a single target as part of an ongoing, more complex task [@trieschWhatYouSee2003].
+To summarise this chapter, there is plenty of evidence that both use of object identities in tracking and the updating of target identities for awareness is quite poor. This fits with a much broader set of findings over the last thirty years, that the mind maintains fewer explicit visual representations than we intuitively believe. The first findings of change blindness, which were in the context of failures to detect changes that occurred during eye movements [@mcconkieRoleControlEye1979], led @oreganSolvingRealMysteries1992 to suggest that "the world is an outside memory" and later to discover change blindness [@rensinkSeeNotSee1997]. The idea was that the impression that one has a rich representation of all the objects in the visual field is an illusion, and instead that one has only a more limited knowledge, but that this is quickly supplemented by attentional processing when one becomes interested in a particular location or object. It appears that O'Regan's big idea goes further than he anticipated. While O'Regan suggested that only when objects were attended would they be fully processed, he did not suggest that one might be able to track the changing locations of multiple targets without becoming aware of what they are. Such lack of awareness has been documented not only in the context of tracking multiple objects as reviewed above, but even in a change blindness task that involved eyetracking of just a single target as part of an ongoing, more complex task [@trieschWhatYouSee2003].
 
 
 <!--@hudsonHemifieldEffectsMultiple2012 multiple identity tracking , found a hemifield advantage: " Contrary to expectations, a bilateral advantage was still observed, though it was not as strong as when observers were not required to remember the identities of the targets. This finding is inconsistent with the only model of multiple identity tracking (Oksama & Hyönä, 2008, Cognitive Psychology, 56, 237-283), so we present an alternative account."-->

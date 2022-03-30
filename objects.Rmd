@@ -38,7 +38,13 @@ Four moving lines were presented in the @schollWhatVisualObject2001 study, with 
 
 The results were striking. Performance on the task was abysmal relative to a control condition in which the two ends of the line were not connected. Simply by viewing an example trial, one very quickly gets a sense of how difficult the task is - the effect is very large.
 
-(INSERT SCHOLL MOVIE)
+
+```{r lines, echo=FALSE, fig.cap="Using this display, Scholl et al. (2001) asked participants to track the end of each of several lines."}
+#Work-around to make GIFs (but not .mov) work by avoiding including them in non-html outputs!
+#https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
+if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/connectedTargets/MOTtrackingEndOfLinesVeryDifficultScholl.mov") else knitr::include_graphics("movies/MOTmovies/connectedTargets/MOTtrackingEndOfLinesOneFrame.png")
+#, height = "250px"
+```
 
 The task of tracking line ends in the @schollWhatVisualObject2001 experiment was complicated by the fact that the objects frequently crossed over each other, and also their length changed over time. But @howeCanAttentionBe2012 showed that these complications were not the main reason for the poor performance. It simply is the case, it seems, that one cannot confine one's tracking processes to one bit of an undifferentiated object. This inability to track the ends of lines fits in with the view this chapter opened with, that preattentive processes define objects that become what tracking operates on.
 
@@ -48,7 +54,7 @@ Maintaining attention on a part of the visual scene in the absence of anything i
 
 Researchers usually make a strong distinction between the processing that determines *how many* objects one can track and those that determine *what kinds* of objects can be tracked. An assumption of separate processing stages is popular in the study of visual cognition generally. Visual search, for example, is usually conceptualized this way [@wolfePreattentiveObjectFiles1997; @nakayamaVisualSurfaceRepresentation1995], and appears to be an implicit assumption in two reviews of objects and tracking  [@schollObjectsAttentionState2001; @pylyshynSeeingVisualizingIt2006]. <!-- No interaction between number of objects to track and what kinds of objects can be tracked.--> It would be convenient if object creation and object tracking occurred at distinct processing stages, as that is more straightforward to study than an interactive system [@simonSciencesArtificialReissue1969; @sternbergDiscoveryProcessingStages1969].
 
-```{r simpleArchitecture, echo=FALSE, out.width="30%", fig.cap="A schematic of the idea that objects are created prior to the action of tracking processes, which then point to the already-formed object representations but do not change them."}
+```{r simpleArchitecture, echo=FALSE, out.width="55%", fig.cap="A schematic of the idea that objects are created prior to the action of tracking processes, which then point to the already-formed object representations but do not change them."}
 knitr::include_graphics("imagesForRmd/flowDiagrams/objectCreationTrackingSeparateDiagram.png")
 ```
 
