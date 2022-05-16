@@ -42,9 +42,11 @@ Cite this as:
 
 Holcombe, A.O. (to appear). Attending to moving objects. Cambridge University Press.
 
-This book reviews what we know about multiple object tracking by humans. It is expected to be published by Cambridge University Press in their [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception).
+This book, posted with chapter hyperlinks, cross-references, and embedded movies at [tracking.whatanimalssee.com](tracking.whatanimalssee.com),
+reviews some of what we know about multiple object tracking by humans. A revised version is expected to be published by Cambridge University Press in their [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception).
 <!--https://mc.manuscriptcentral.com/hsselements1?URL_MASK=8f1bd56d44104a8b82eafbb42c3bdb84-->
-This is a revised and highly abridged version of an earlier draft, which greatly exceeded the publisher's word limit. I am  re-purposing the former chapters on temporal limits and on serial versus parallel processing into a separate manuscript. Contact me if you're interested in seeing that material. 
+
+This is a highly abridged version of an earlier draft, which greatly exceeded the publisher's word limit. I am  re-purposing the deleted chapters on temporal limits and on serial versus parallel processing into a separate manuscript. Let me know if you're interested in seeing that material. 
 
 <!--You can read this [here on the web](https://tracking.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.--> 
 
@@ -54,9 +56,21 @@ Contact me (he/him) with any comments via [twitter](https://twitter.com/ceptiona
 knitr::include_graphics("imagesForRmd/corellaOnShoulder2020croppedBlurredByAdobeOnline.jpg")
 ```
 
-I thank Hrag Pailian and Lorella Battelli for helpful comments, and also thank Hrag Pailian for providing high-resolution figures of his work.
+I thank Hrag Pailian, Brian Scholl, and Lorella Battelli for helpful comments, and also thank Hrag Pailian and Brian Scholl for providing images and movies of their work.
 
 © Alex O. Holcombe 2022
+
+## Abstract
+
+Despite massively parallel processing at the front end of our visual system, our minds are highly limited in how much information can be extensively processed simultaneously. This is usually investigated with unmoving stimuli, but our visual world frequently contains many moving objects. Studies of multiple object tracking (MOT) have revealed that our capacity for updating the representations of objects are more limited than one might expect from studies with static stimuli. In this selective review of the MOT literature,
+
+Cognitive psychologists study this mainly
+
+Our visual world frequently contains multiple moving objects.
+
+Frequently we find ourselves in a visual world of moving objects.
+
+Cognitive psychologists 
 
 <!--Reviewers: Hyona/Pailian/Saiki for identity chapter; Piers Howe / John Palmer/Daniel Little for serial/parallel; Srimant Tripathy for sensory memory ; Scott Brown at Newcastle for drift diffusion models
 -->

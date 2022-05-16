@@ -15,7 +15,7 @@ Thus, while many potential athlete users may imagine that a test of attention te
 
 ## The decline of Pylyshyn's FINST theory
 
-At the time of writing, Pylyshyn's FINST theory is the featured theory on the "multiple object tracking" Wikipedia page [@wikipediaeditorsMultipleObjectTracking2021], and it is frequently invoked in the scholarly literature as well. However, some of the main features of the theory have been rebutted [@schollWhatHaveWe2008].
+At the time of writing, Pylyshyn's FINST theory is the featured theory on the "multiple object tracking" Wikipedia page [@wikipediaeditorsMultipleObjectTracking2021], and it is frequently invoked in the scholarly literature as well. However, some main features of the theory have been rebutted [@schollWhatHaveWe2008].
 
 Core to the theory is the idea that tracking is mediated by a fixed set of discrete, preattentive indices. As we have seen, however, as speed increases, the number of targets that can be tracked rapidly decreases, to one target, which is hard to explain with a fixed set of discrete indices [@alvarezHowManyObjects2007; @holcombeExhaustingAttentionalTracking2012].
 

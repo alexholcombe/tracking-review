@@ -1,6 +1,6 @@
 # Bottlenecks, resources, and capacity {#bottlenecks}
 
-Quickly, what is fourteen times eleven? Calculating that in your head would probably take you at least a few seconds. And if I set you two problems rather than just one, for example by asking you to also divide sixty-eight by seventeen, I'm sure you would do those problems one at a time. Indeed, our minds may be completely incapable of doing two such problems simultaneously [@oberauerAccessInformationWorking2002; @zylberbergBrainRouterCortical2010a].
+Quickly, what is fourteen times eleven? Calculating that in your head probably takes you a few seconds or more. And if I set you two problems rather than just one, for example by asking you to also divide sixty-eight by seventeen, I'm sure you would do those problems one at a time. Indeed, our minds may be completely incapable of doing two such problems simultaneously [@oberauerAccessInformationWorking2002; @zylberbergBrainRouterCortical2010a].
 
 Such limitations are remarkable given that each of our brains contains more than 80 billion neurons. The problem is not a lack of neurons, really, but how they are arranged - our mental architecture.
 
