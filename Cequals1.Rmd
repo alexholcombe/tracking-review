@@ -1,10 +1,8 @@
 # Unitary cognition (C = 1 processes) {#Cequals1}
 
-Successful performance of a multiple object tracking task may be assisted by two resources. This worries me greatly.
+Successful performance of a multiple object tracking task may be assisted by two resources. This worries me. One resource is the one that researchers typically believe they are studying. This resource can process multiple targets simultaneously, even if it processes them more poorly than it processes a lone target. This is the resource that most researchers, including myself, use tracking to study. However, the mind also has another resource that likely contributes to tracking performance.
 
-One resource is what researchers *believe* they are studying. It can process multiple targets simultaneously, even if it processes them more poorly than it processes a lone target. This is what most researchers are interested in. However, the mind also has a resource that in some ways is more powerful.
-
-The processes that support our ability to explicitly reason, referred to as System 1 in some contexts in cognitive psychology, can assist performance in many tasks. But they are very limited in capacity - some cognitive researchers think they can only operate on one thing at a time [@oberauerAccessInformationWorking2002]. This may be what prevents us from doing more than one 2-digit mental multiplication problem at a time. When applied to tracking, it means you can apply your powers of reasoning to tracking that target, for example to use what you've learned about object trajectories to predict future positions. I will refer to this as a C=1 process because its processing capacity may be only one object.
+The processes that support our ability to explicitly reason, often referred to as System 2 in cognitive psychology, can assist performance in many tasks. But this system is very limited in capacity - some cognitive researchers think it can only operate on one thing at a time [@oberauerAccessInformationWorking2002]. This may be what prevents us from doing, for example, more than one 2-digit mental multiplication problem at a time. But this also means one can apply System 2 to tracking a single target, for example to use what you've learned about object trajectories to predict future positions. I will refer to this as a C=1 process because its processing capacity may be only one object.
 
 ## An inconvenient possibility
  
