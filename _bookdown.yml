@@ -3,7 +3,7 @@ language:
   ui:
     chapter_name: "Chapter "
 delete_merged_file: false
-rmd_files: ["index.Rmd","intro.Rmd","outline.Rmd", 
+rmd_files: ["index.Rmd","intro.Rmd", 
 "bottlenecks.Rmd",
 "theBiggestMyth.Rmd", "whichAspects.Rmd","spatialInterference.Rmd",
 "Cequals1.Rmd",

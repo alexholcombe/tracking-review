@@ -52,3 +52,55 @@ The notion of keeping track of moving objects is familiar from certain situation
 <!-- In basketball, the player needs to track the individual players of her/his own team, for example to know where the team’s excellent 3-point scorer is currently located. Similarly, a car driver approaching a busy intersection needs to track the whereabouts and movement trajectories of other vehicles and pedestrians in order to decide his/her own move  and in evolutionary history (e.g., keeping track of the weakest members in a herd of prey)-->.
 
 <!--Cups and balls painting either here or in identity section, also with Saiki-->
+
+## What's to come {#summary}
+
+Despite technological advances, the study of visual attention continues to be dominated by experiments with stimuli that don't move. As we'll see in Chapter \@ref(identity), putting objects in motion can reveal that updating of object representations is not as effective as one might expect from studies with static stimuli. This suggests that with static objects, one can bring to bear additional processes, perhaps cognitive processes (Chapter \@ref(Cequals1)), that motion helps to dissociate from lower-level tracking processes.
+
+This book will dispel misconceptions about the nature of tracking processes and present the concepts that I believe are needed to think straight about tracking. Reviewing the evidence of this vast literature has highlighted four robust findings which I believe to be the most informative about the nature of the underlying processing. These four findings are:
+
+1. People don't know which target is which (abysmal updating of non-location features)
+1. Tracking capacity is hemifield specific (one can double capacity by dividing targets between the hemifields)
+1. Predictability of movement paths benefits tracking, but only for one or two targets, not for more
+1. Temporal resolution gets worse as number of targets increases, spatial resolution not so much
+
+<!--
+
+Getting to these findings requires explaining various things
+
+To get to these findings in context, I have organized this book into the following chapters:
+
+* Understanding bottlenecks, resources, and capacity 
+* The biggest myth of object tracking 
+* Data limitations and resource limitations
+* Spatial interference
+  * say that I think it's largely temporal interference, which is explained in a forthcoming paper
+* A complication with understanding the capacity limit - unitary cognition
+* Two brains or one
+* Grouping / objects
+* Knowing where but not what
+* Abilities and individual diffs
+* Progress and recommendations
+-->
+
+I hope you enjoy this journey. There wasn't enough space to cover everything we know about tracking, so in Chapter \@ref(recommendations) I list some of what had to be left out and where to learn more. 
+
+
+<!--Most cognitive psychology researchers have, however, heard a few things about object tracking. But much of what they probably heard is wrong. In this book, we'll bust a few myths about tracking and see that studying it has yielded some unique insights about our limited capacities.-->
+<!--
+Keeping track of something that is moving implies that our mind is continually, or at least frequently, updating a representation of its position. Most researchers seem to conceive of this as keeping spatial attention on an object, a sort of spotlight or hill of neural activation that glides across retinotopic cortex. There is evidence for this from neuroimaging. In this article, for simplicity we will refer to the spatial index that changes along with a moving object as a spotlight of attention. This spotlight account is consistent with evidence that probes are more easily detected on targets than elsewhere [@pylyshynPuzzlingFindingsMultiple2006; @searsMultipleObjectTracking2000]. Keep in mind, however, that we do not mean that a hill of activation in spatiotopic or retinotopic cortex exhausts all the processes involved in tracking - there are certainly more.
+-->
+
+<!--Along the way we will bust myths such as the common notion that people can track four or five objects, 
+
+Is object tracking just sustained attentional selection, when the objects happen to be moving? Well, a first question fundamentally is how do you keep your attention on the object? The literature on visual search is enormous but is almost exclusively about finding 
+
+Without continuous attentional selection, you not only lose your children
+
+And today, children frequently try to track rapidly moving objects in their own home - like many other things, tracking has come to screens. 
+-->
+
+
+<!--
+**speed, and time.** The physical parameters that can limit tracking performance are space, speed, and time. Each plays a role in different circumstances, but the temporal limits are the most misunderstood, as I have discovered in reviewing journal manuscripts over the years, even though they may be the most fundamental. This section will explain spatial limits, speed limits, and temporal frequency limits on tracking (based in part on three papers from my lab), and how they illuminate other issues such as the relationship of tracking to basic motion and position perception.
+-->

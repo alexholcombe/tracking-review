@@ -152,15 +152,11 @@ The notion of keeping track of moving objects is familiar from certain situation
 
 <!--Cups and balls painting either here or in identity section, also with Saiki-->
 
-<!--chapter:end:intro.Rmd-->
+## What's to come {#summary}
 
-# Summary {#summary}
+Despite technological advances, the study of visual attention continues to be dominated by experiments with stimuli that don't move. As we'll see in Chapter \@ref(identity), putting objects in motion can reveal that updating of object representations is not as effective as one might expect from studies with static stimuli. This suggests that with static objects, one can bring to bear additional processes, perhaps cognitive processes (Chapter \@ref(Cequals1)), that motion helps to dissociate from lower-level tracking processes.
 
-## Outline
-
-The study of visual attention continues to be dominated by experiments with stimuli that don't move. As we'll see, when objects are put in motion, some of the usual benefits of attentional cuing evaporate. This suggests that with static objects, one can bring to bear additional processes, perhaps cognitive processes, that are only clearly dissociated from lower-level processes by using objects in motion.
-
-Gaining further insights into the processes that underlie tracking will require researchers to improve their methodology. To assist with that, this book will dispel misconceptions about the nature of tracking processes and present the concepts that I believe are needed to think straight about tracking. Finally, reviewing the evidence of this vast literature has highlighted four findings which I believe to be both sound and the most informative about the nature of the underlying processing. These four findings are:
+This book will dispel misconceptions about the nature of tracking processes and present the concepts that I believe are needed to think straight about tracking. Reviewing the evidence of this vast literature has highlighted four robust findings which I believe to be the most informative about the nature of the underlying processing. These four findings are:
 
 1. People don't know which target is which (abysmal updating of non-location features)
 1. Tracking capacity is hemifield specific (one can double capacity by dividing targets between the hemifields)
@@ -186,10 +182,7 @@ To get to these findings in context, I have organized this book into the followi
 * Progress and recommendations
 -->
 
-I hope you enjoy this journey. In Chapter \@ref(recommendations) I list some of what had to be left out and where to learn more. 
-
-
-
+I hope you enjoy this journey. There wasn't enough space to cover everything we know about tracking, so in Chapter \@ref(recommendations) I list some of what had to be left out and where to learn more. 
 
 
 <!--Most cognitive psychology researchers have, however, heard a few things about object tracking. But much of what they probably heard is wrong. In this book, we'll bust a few myths about tracking and see that studying it has yielded some unique insights about our limited capacities.-->
@@ -211,8 +204,7 @@ And today, children frequently try to track rapidly moving objects in their own 
 **speed, and time.** The physical parameters that can limit tracking performance are space, speed, and time. Each plays a role in different circumstances, but the temporal limits are the most misunderstood, as I have discovered in reviewing journal manuscripts over the years, even though they may be the most fundamental. This section will explain spatial limits, speed limits, and temporal frequency limits on tracking (based in part on three papers from my lab), and how they illuminate other issues such as the relationship of tracking to basic motion and position perception.
 -->
 
-
-<!--chapter:end:outline.Rmd-->
+<!--chapter:end:intro.Rmd-->
 
 # Bottlenecks, resources, and capacity {#bottlenecks}
 
