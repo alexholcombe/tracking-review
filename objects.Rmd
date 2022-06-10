@@ -42,9 +42,10 @@ The results were striking. Performance on the task was very poor by any measure,
 ```{r lines, echo=FALSE, out.width="100%", fig.cap="Using this display, Scholl et al. (2001) asked participants to track the end of each of several lines."}
 #Work-around to make GIFs (but not .mov) work by avoiding including them in non-html outputs!
 #https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
-if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/connectedTargets/MOTtrackingEndOfLinesVeryDifficultScholl.mov") else knitr::include_graphics("movies/MOTmovies/connectedTargets/MOTtrackingEndOfLinesOneFrame.png")
+if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/connectedTargets/MOTtrackingEndOfLinesVeryDifficultScholl.mp4") else knitr::include_graphics("movies/MOTmovies/connectedTargets/MOTtrackingEndOfLinesOneFrame.png")
 #, height = "250px"
 ```
+
 
 The task of tracking line ends in the @schollWhatVisualObject2001 experiment was complicated by the fact that the objects frequently crossed over each other, and also their length changed over time. But @howeCanAttentionBe2012 showed that these complications were not the main reason for the poor performance. It simply is the case, it seems, that one cannot confine one's tracking processes to one bit of an undifferentiated object. This inability to track the ends of lines fits in with a view already mentioned, that preattentive processes define objects, or at least proto-objects, and this is what tracking operates on.
 
