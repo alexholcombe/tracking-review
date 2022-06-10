@@ -46,7 +46,6 @@ if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/connectedTarget
 #, height = "250px"
 ```
 
-
 The task of tracking line ends in the @schollWhatVisualObject2001 experiment was complicated by the fact that the objects frequently crossed over each other, and also their length changed over time. But @howeCanAttentionBe2012 showed that these complications were not the main reason for the poor performance. It simply is the case, it seems, that one cannot confine one's tracking processes to one bit of an undifferentiated object. This inability to track the ends of lines fits in with a view already mentioned, that preattentive processes define objects, or at least proto-objects, and this is what tracking operates on.
 
 Maintaining attention on a part of the visual scene in the absence of anything in the image to delineate that part feels like it requires concentration, as if we must continually think about what we are supposed to be attending to. If cognitive, "System 2" resources are indeed needed to maintain the "object" representation when it is not provided by preattentive processes, then for such objects we may only be able to track one. This idea that processes with a capacity of 1 are involved or required for some forms of tracking was introduced in Chapter \@ref(Cequals1). 
