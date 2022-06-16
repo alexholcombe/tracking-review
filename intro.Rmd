@@ -55,14 +55,16 @@ The notion of keeping track of moving objects is familiar from certain situation
 
 ## What's to come {#summary}
 
-Despite technological advances, the study of visual attention continues to be dominated by experiments with stimuli that don't move. As we'll see in Chapter \@ref(identity), putting objects in motion can reveal that updating of object representations is not as effective as one might expect from studies with static stimuli. This suggests that with static objects, one can bring to bear additional processes, perhaps cognitive processes (Chapter \@ref(Cequals1)), that motion helps to dissociate from lower-level tracking processes.
+Despite technological advances, the study of visual attention continues to be dominated by experiments with stimuli that don't move. As we'll see in Chapter \@ref(identity), putting objects in motion reveals that updating of object representations is not as effective as one might expect from studies with static stimuli. This suggests that with static objects, one can bring to bear additional processes, perhaps cognitive processes (Chapter \@ref(Cequals1)), that motion helps to dissociate from lower-level tracking processes.
 
-This book will dispel misconceptions about the nature of tracking processes and present the concepts that I believe are needed to think straight about tracking. Reviewing the evidence of this vast literature has highlighted four robust findings which I believe to be the most informative about the nature of the underlying processing. These four findings are:
+This book will dispel misconceptions about the nature of tracking processes and present the concepts that I believe are needed to correctly understand the implications of tracking experiments. I will argue that four of the most important implications are: <!--Reviewing the evidence of this vast literature has highlighted four robust findings which I believe to be the most informative about the nature of the underlying processing.-->
 
-1. People don't know which target is which (abysmal updating of non-location features)
-1. Tracking capacity is hemifield specific (one can double capacity by dividing targets between the hemifields)
-1. Predictability of movement paths benefits tracking, but only for one or two targets, not for more
-1. Temporal resolution gets worse as number of targets increases, spatial resolution not so much
+1. When tracking multiple targets, people often don't know which target is which, and updating of non-location features is poor (Section \@ref(identity))
+1. Tracking capacity is hemifield specific: one can double capacity by dividing targets between the hemifields (Section \@ref(twoBrains))
+1. Predictability of movement paths benefits tracking, but only for one or two targets, not for more (Section \@ref(Cequals1))
+1. Temporal resolution gets worse with target load, but target load has little effect on spatial resolution (Section \@ref(spatialInterference))
+
+There wasn't enough space to cover everything we know about tracking, so in Chapter \@ref(recommendations) I list some of what had to be left out and where to learn more. I hope you enjoy the journey. 
 
 <!--
 
@@ -82,9 +84,6 @@ To get to these findings in context, I have organized this book into the followi
 * Abilities and individual diffs
 * Progress and recommendations
 -->
-
-I hope you enjoy this journey. There wasn't enough space to cover everything we know about tracking, so in Chapter \@ref(recommendations) I list some of what had to be left out and where to learn more. 
-
 
 <!--Most cognitive psychology researchers have, however, heard a few things about object tracking. But much of what they probably heard is wrong. In this book, we'll bust a few myths about tracking and see that studying it has yielded some unique insights about our limited capacities.-->
 <!--

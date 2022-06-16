@@ -1,5 +1,7 @@
 # Progress and recommendations {#recommendations}
 
+Early in this book, I flagged 
+
 The study of multiple object tracking has traditionally been done in the laboratory, with only a few dozen participants in an experiment. Only recently, then, has one of the greatest virtues of the MOT task become clear: it's high test-retest reliability, of approximately .8 or .9, among the highest of attentional tasks (see Chapter \@ref(abilities)). The outlook for future work, then, is positive both from the prospect of new results being credible (because with a non-noisy task, less data is needed to have high statistical power) and for the use of MOT as a tool to study individual differences.
 
 To further highlight how much we have learned in the last thirty-odd years, next I will describe how much findings have allowed us to disconfirm multiple aspects of the first and most influential theory of tracking, Zenon Pylyshyn's FINST theory.
@@ -15,13 +17,9 @@ Thus, while many potential athlete users may imagine that a test of attention te
 
 ## The decline of Pylyshyn's FINST theory
 
-At the time of writing, Pylyshyn's FINST theory is the featured theory on the "multiple object tracking" Wikipedia page [@wikipediaeditorsMultipleObjectTracking2021], and it is frequently invoked in the scholarly literature as well. However, some main features of the theory have been rebutted [@schollWhatHaveWe2008].
+At the time of writing, Pylyshyn's FINST theory is the featured theory on the "multiple object tracking" Wikipedia page [@wikipediaeditorsMultipleObjectTracking2021], and it is frequently invoked in the scholarly literature as well. However, some main features of the theory have been rebutted [@schollWhatHaveWe2008]. Core to Pylyshyn's theory was the idea that tracking is mediated by a fixed set of discrete, preattentive indices. As we have seen, however, as speed increases, the number of targets that can be tracked rapidly decreases, to one target, which is hard (although not impossible) to explain with a fixed set of discrete indices [@alvarezHowManyObjects2007; @holcombeExhaustingAttentionalTracking2012].
 
-Core to the theory is the idea that tracking is mediated by a fixed set of discrete, preattentive indices. As we have seen, however, as speed increases, the number of targets that can be tracked rapidly decreases, to one target, which is hard to explain with a fixed set of discrete indices [@alvarezHowManyObjects2007; @holcombeExhaustingAttentionalTracking2012].
-
-Adding to the evidence that tracking draws on attentional resources are dual-task studies. I did not have space to review them in this Element, but they indicate that tracking draws on attentional resources shared with some other tasks  [@oksamaPositionTrackingIdentity2016; @alnaesPupilSizeSignals2014]. One should add, however, that such studies do not seem to have ruled out the possibility that these findings were caused entirely by a C=1 resource rather than the hemifield-specific tracking processes; unfortunately, none of these studies appear to have tested for the hemifield specificity of their findings.
-
-One prediction of Pylyshyn's theory was that participants should be aware which target is which among the targets they are tracking. Pylyshyn himself found strong evidence against this, and the evidence  for poor updating of target identities has increased since then.
+FINST theory also claimed that the tracking process was preattentive, but dual-task studies indicate that tracking draws on attentional resources shared with some other tasks  [@oksamaPositionTrackingIdentity2016; @alnaesPupilSizeSignals2014] (I did not have space in this Element to review these). I should add, however, that such studies do not seem to have ruled out the possibility that these findings were caused entirely by a process with a capacity of only one object (what I have called System 2) rather than the hemifield-specific tracking processes. This could be resolved by testing for the the hemifield specificity of the findings <!--FUTURE-->, but this does not appear to have not been done. A further prediction of Pylyshyn's theory was that participants should be aware which target is which among the targets they are tracking. Pylyshyn himself found strong evidence against this, and the evidence  for poor updating of target identities has increased since then.
 
 <!--Although CDA findings suggest there is something tracking number of objects rather than resources expended @drewVogel @balabanObjectRepresentationsVisual2016, I don't know that it supports a limit on this -->
 
