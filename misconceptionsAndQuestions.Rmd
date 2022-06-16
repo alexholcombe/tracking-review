@@ -1,8 +1,26 @@
 # Progress and recommendations {#recommendations}
 
-Early in this book, I flagged 
+In the first section of this book (\@ref(intro)), I flagged four important findings from the literature. As we've seen from this review of the literature, all of these findings are quite well supported.
 
-The study of multiple object tracking has traditionally been done in the laboratory, with only a few dozen participants in an experiment. Only recently, then, has one of the greatest virtues of the MOT task become clear: it's high test-retest reliability, of approximately .8 or .9, among the highest of attentional tasks (see Chapter \@ref(abilities)). The outlook for future work, then, is positive both from the prospect of new results being credible (because with a non-noisy task, less data is needed to have high statistical power) and for the use of MOT as a tool to study individual differences.
+1. Target load has little effect on spatial interference, whereas *temporal* interference increases steeply with target load (Section \@ref(spatialInterference))
+1. Predictability of movement paths benefits tracking, but only for one or two targets, not for more (Section \@ref(Cequals1))
+1. Tracking capacity is hemifield specific: one can double capacity by dividing targets between the hemifields (Section \@ref(twoBrains))
+1. When tracking multiple targets, people often don't know which target is which, and updating of non-location features is poor (Section \@ref(identity))
+
+It's not really a finding about how tracking works, but another important result is how good the MOT task typically is: its high test-retest reliability, of approximately .8 or .9, which is among the highest of attentional tasks (Section \@ref(abilities)). The outlook for future work, then, is positive both from the prospect of new results being credible (because with a non-noisy task, less data is needed to have high statistical power) and for the use of MOT as a tool to study individual differences.
+
+## Recommendations for future work
+
+Here are a few recommendations for multiple object tracking researchers that have emerged from our journey through the literature:
+
+* To dilute the influence of capacity-one System 2 processing, use several targets, not just two or three. But remember that even with several targets, a small effect could be explained by a capacity-one process. Test for hemifield specificity as that can also rule out a capacity-one process.
+
+* Always test for hemifield specificity! In addition to it helping to rule out a factor having its effect only on a capacity-one process, we know very little about what limited-capacity brain processes are hemisphere-specific, so any results here are likely to be interesting.
+
+* Individual difference studies may be illuminating in the future, but as we have seen, MOT is a complex task, so it's difficult to interpret individual differences in the overall task. Individual-difference studies should use task variations that help isolate the component processes that contribute to overall success or failure, such as spatial interference, temporal interference, and cognitive processing.
+
+<!--The effect increases with retention interval, and may be a more cognitive mechanism, as it has been suggested that  Rep- resentational momentum occurs in memory for implied motion stimuli and  neither of which elicits pursuit eye movements.-->
+
 
 To further highlight how much we have learned in the last thirty-odd years, next I will describe how much findings have allowed us to disconfirm multiple aspects of the first and most influential theory of tracking, Zenon Pylyshyn's FINST theory.
 
@@ -70,15 +88,6 @@ object tracking in people with Williams Syndrome remains at the level of 4‐yea
 -->
 
 
-## Recommendations
-
-Here are a few recommendations for multiple object tracking researchers that have emerged from our journey through the literature:
-
-* To dilute the influence of C=1 processes, use several targets, not just two or three. But remember that even with several targets, a small effect could be explained by a  C=1 process, so consider that. Test for hemifield specificity as that can also rule out C=1 processes.
-
-* Always test for hemifield specificity! In addition to it helping to rule out a factor having its effect only on C=1 processes, we know very little about what limited-capacity brain processes are hemisphere-specific, so any results here are likely to be interesting.
-
-<!--The effect increases with retention interval, and may be a more cognitive mechanism, as it has been suggested that  Rep- resentational momentum occurs in memory for implied motion stimuli and  neither of which elicits pursuit eye movements.-->
 
 
 
