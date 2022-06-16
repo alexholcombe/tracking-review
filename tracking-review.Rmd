@@ -937,7 +937,7 @@ Even when objects are stationary, featural updating can be slow. @howardTracking
 
 Such results suggest a limited-capacity system is required for updating some features, which is not very surprising, whereas position updating seems less capacity-constrained. One might hope that even with a limited-capacity system of feature updating, however, that simple maintenance of the features of objects as they move could easily be done. Instead, maintenance of tracked targets' identities can be very poor, as we will see in the next section. This is one of the most striking findings in the literature.
 
-## Maintenace of target features and identities
+## Maintenance of target features and identities
 
 <!--FUTURE With the motion silencing illusion, it goes not occur for an object that one is tracking. I don't think any papers exist that make this point, or tell us whether the reason is because you're parsing away the motion from the change signal, or whether you actually have to compare feature values. Related phenomena are temporal camouflage and Saiki's original moving change blindness with occlusion findings . It also probably explains why infants don't process object features, because there is no cue to get them to update the object features.  Also the Wikipedia entry needs lots of work and should cite Saiki & Holcombe -->
 
