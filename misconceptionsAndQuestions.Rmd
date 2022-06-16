@@ -1,23 +1,36 @@
 # Progress and recommendations {#recommendations}
 
-In the first section of this book (\@ref(intro)), I flagged four important findings from the literature. As we've seen from this review of the literature, all of these findings are quite well supported.
+In Section \@ref(intro) of this book, I flagged four important findings from the literature, which I subsequently went into in depth to show that they are quite well supported. Here they are again:
 
-1. Target load has little effect on spatial interference, whereas *temporal* interference increases steeply with target load (Section \@ref(spatialInterference))
-1. Predictability of movement paths benefits tracking, but only for one or two targets, not for more (Section \@ref(Cequals1))
-1. Tracking capacity is hemifield specific: one can double capacity by dividing targets between the hemifields (Section \@ref(twoBrains))
-1. When tracking multiple targets, people often don't know which target is which, and updating of non-location features is poor (Section \@ref(identity))
+1. Target load has little effect on spatial interference, whereas temporal interference increases steeply with target load (Section \@ref(spatialInterference)).
+1. Predictability of movement paths benefits tracking, but only for one or two targets, not for more (Section \@ref(Cequals1)).
+1. Tracking capacity is hemifield specific: one can double capacity by dividing targets between the hemifields (Section \@ref(twoBrains)).
+1. When tracking multiple targets, people often don't know which target is which, and updating of non-location features is poor (Section \@ref(identity)).
 
-It's not really a finding about how tracking works, but another important result is how good the MOT task typically is: its high test-retest reliability, of approximately .8 or .9, which is among the highest of attentional tasks (Section \@ref(abilities)). The outlook for future work, then, is positive both from the prospect of new results being credible (because with a non-noisy task, less data is needed to have high statistical power) and for the use of MOT as a tool to study individual differences.
+Something that's not really a finding about how tracking works, but is another important result is how good the MOT task typically is: its high test-retest reliability, of approximately .8 or .9, which is among the highest of attentional tasks (Section \@ref(abilities)). The outlook for future work, then, is positive both from the prospect of new results being credible (because with a non-noisy task, less data is needed to have high statistical power) and for the use of MOT as a tool to study individual differences.
+
+## How far have we come?
+
+Pylyshyn's FINST theory was the very first theory of tracking, and was published way back in 1988. Despite hundreds of published studies since then, still today (at the time of writing), Pylyshyn's FINST theory is the featured theory on the "multiple object tracking" Wikipedia page [@wikipediaeditorsMultipleObjectTracking2021], and it is frequently invoked in the scholarly literature as well. However, some main features of the theory have been rebutted [@schollWhatHaveWe2008]. Core to Pylyshyn's theory was the idea that tracking is mediated by a fixed set of discrete, preattentive indices. As we have seen, however, as speed increases, the number of targets that can be tracked rapidly decreases, to one target, which is hard (although not impossible) to explain with a fixed set of discrete indices [@alvarezHowManyObjects2007; @holcombeExhaustingAttentionalTracking2012].
+
+FINST theory also claimed that the tracking process was preattentive, but dual-task studies indicate that tracking draws on attentional resources shared with some other tasks  [@oksamaPositionTrackingIdentity2016; @alnaesPupilSizeSignals2014] (I did not have space in this Element to review these). I should add, however, that such studies do not seem to have ruled out the possibility that these findings were caused entirely by a process with a capacity of only one object (what I have called System 2) rather than the hemifield-specific tracking processes. This could be resolved by testing for the the hemifield specificity of the findings <!--FUTURE-->, but this does not appear to have not been done. A further prediction of Pylyshyn's theory was that participants should be aware which target is which among the targets they are tracking. Pylyshyn himself found strong evidence against this, and the evidence  for poor updating of target identities has increased since then.
+
+<!--Although CDA findings suggest there is something tracking number of objects rather than resources expended @drewVogel @balabanObjectRepresentationsVisual2016, I don't know that it supports a limit on this -->
+At the time of writing, Pylyshyn's FINST theory is the featured theory on the "multiple object tracking" Wikipedia page [@wikipediaeditorsMultipleObjectTracking2021], and it is frequently invoked in the scholarly literature as well. However, some main features of the theory have been rebutted [@schollWhatHaveWe2008]. Core to Pylyshyn's theory was the idea that tracking is mediated by a fixed set of discrete, preattentive indices. As we have seen, however, as speed increases, the number of targets that can be tracked rapidly decreases, to one target, which is hard (although not impossible) to explain with a fixed set of discrete indices [@alvarezHowManyObjects2007; @holcombeExhaustingAttentionalTracking2012].
+
+FINST theory also claimed that the tracking process was preattentive, but dual-task studies indicate that tracking draws on attentional resources shared with some other tasks  [@oksamaPositionTrackingIdentity2016; @alnaesPupilSizeSignals2014] (I did not have space in this Element to review these). I should add, however, that such studies do not seem to have ruled out the possibility that these findings were caused entirely by a process with a capacity of only one object (what I have called System 2) rather than the hemifield-specific tracking processes. This could be resolved by testing for the the hemifield specificity of the findings <!--FUTURE-->, but this does not appear to have not been done. A further prediction of Pylyshyn's theory was that participants should be aware which target is which among the targets they are tracking. Pylyshyn himself found strong evidence against this, and the evidence  for poor updating of target identities has increased since then.
+
+<!--Although CDA findings suggest there is something tracking number of objects rather than resources expended @drewVogel @balabanObjectRepresentationsVisual2016, I don't know that it supports a limit on this -->
 
 ## Recommendations for future work
 
-Here are a few recommendations for multiple object tracking researchers that have emerged from our journey through the literature:
+From our journey through the literature, various recommendations for multiple object tracking researchers have emerged, and here are three that I believe to be particularly important: 
 
 * To dilute the influence of capacity-one System 2 processing, use several targets, not just two or three. But remember that even with several targets, a small effect could be explained by a capacity-one process. Test for hemifield specificity as that can also rule out a capacity-one process.
 
 * Always test for hemifield specificity! In addition to it helping to rule out a factor having its effect only on a capacity-one process, we know very little about what limited-capacity brain processes are hemisphere-specific, so any results here are likely to be interesting.
 
-* Individual difference studies may be illuminating in the future, but as we have seen, MOT is a complex task, so it's difficult to interpret individual differences in the overall task. Individual-difference studies should use task variations that help isolate the component processes that contribute to overall success or failure, such as spatial interference, temporal interference, and cognitive processing.
+* As we have seen, MOT is a complex task, so it's difficult to interpret individual differences in the overall task or how they will translate to other tasks. Individual-difference studies should use task variations that help isolate the component processes that contribute to overall success or failure, such as spatial interference, temporal interference, and cognitive processing.
 
 <!--The effect increases with retention interval, and may be a more cognitive mechanism, as it has been suggested that  Rep- resentational momentum occurs in memory for implied motion stimuli and  neither of which elicits pursuit eye movements.-->
 
@@ -33,13 +46,7 @@ Reading your paper also gave me an idea to have a Common Misconceptions section 
 
 Thus, while many potential athlete users may imagine that a test of attention tests how long they can pay attention, this is not likely to be the reason for differences among people on MOT performance. -->
 
-## The decline of Pylyshyn's FINST theory
 
-At the time of writing, Pylyshyn's FINST theory is the featured theory on the "multiple object tracking" Wikipedia page [@wikipediaeditorsMultipleObjectTracking2021], and it is frequently invoked in the scholarly literature as well. However, some main features of the theory have been rebutted [@schollWhatHaveWe2008]. Core to Pylyshyn's theory was the idea that tracking is mediated by a fixed set of discrete, preattentive indices. As we have seen, however, as speed increases, the number of targets that can be tracked rapidly decreases, to one target, which is hard (although not impossible) to explain with a fixed set of discrete indices [@alvarezHowManyObjects2007; @holcombeExhaustingAttentionalTracking2012].
-
-FINST theory also claimed that the tracking process was preattentive, but dual-task studies indicate that tracking draws on attentional resources shared with some other tasks  [@oksamaPositionTrackingIdentity2016; @alnaesPupilSizeSignals2014] (I did not have space in this Element to review these). I should add, however, that such studies do not seem to have ruled out the possibility that these findings were caused entirely by a process with a capacity of only one object (what I have called System 2) rather than the hemifield-specific tracking processes. This could be resolved by testing for the the hemifield specificity of the findings <!--FUTURE-->, but this does not appear to have not been done. A further prediction of Pylyshyn's theory was that participants should be aware which target is which among the targets they are tracking. Pylyshyn himself found strong evidence against this, and the evidence  for poor updating of target identities has increased since then.
-
-<!--Although CDA findings suggest there is something tracking number of objects rather than resources expended @drewVogel @balabanObjectRepresentationsVisual2016, I don't know that it supports a limit on this -->
 
 ## Topics not covered by this book
 

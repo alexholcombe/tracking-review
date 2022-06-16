@@ -46,7 +46,7 @@ This book, posted with chapter hyperlinks, cross-references, and embedded movies
 reviews some of what we know about multiple object tracking by humans. A revised version is expected to be published by Cambridge University Press in their [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception).
 <!--https://mc.manuscriptcentral.com/hsselements1?URL_MASK=8f1bd56d44104a8b82eafbb42c3bdb84-->
 
-This is an abridged version of an earlier draft, which exceeded the publisher's word limit. I amre-purposing the deleted chapters on temporal limits and on serial versus parallel processing into [a separate manuscript](trackinglimits.whatanimalssee.com). 
+An earlier draft that you may have found here greatly exceeded the publisher's word limit, so I have moved material on temporal limits and on serial versus parallel processing into [a separate manuscript](trackinglimits.whatanimalssee.com). 
 
 <!--You can read this [here on the web](https://tracking.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.--> 
 
