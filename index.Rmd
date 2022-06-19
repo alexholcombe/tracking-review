@@ -46,15 +46,13 @@ This book, posted with chapter hyperlinks, cross-references, and embedded movies
 reviews some of what we know about multiple object tracking by humans. A revised version is expected to be published by Cambridge University Press in their [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception).
 <!--https://mc.manuscriptcentral.com/hsselements1?URL_MASK=8f1bd56d44104a8b82eafbb42c3bdb84-->
 
-An earlier draft that you may have found here greatly exceeded the publisher's word limit, so I have moved material on temporal limits and on serial versus parallel processing into [a separate manuscript](trackinglimits.whatanimalssee.com). 
-
 <!--You can read this [here on the web](https://tracking.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.--> 
-
-Contact me (he/him) with any comments via [twitter](https://twitter.com/ceptional) or email - alex.holcombe@sydney.edu.au
 
 ```{r AlexPhoto, echo=FALSE, out.width="25%"}
 knitr::include_graphics("imagesForRmd/corellaOnShoulder2020croppedBlurredByAdobeOnline.jpg")
 ```
+
+Contact me with comments via [twitter](https://twitter.com/ceptional) or email (alex.holcombe@sydney.edu.au).
 
 I thank Hrag Pailian, Brian Scholl, Lorella Battelli, and the three anonymous reviewers for helpful comments. I also thank Hrag Pailian and Brian Scholl for providing images and movies of their work.
 
@@ -62,7 +60,7 @@ I thank Hrag Pailian, Brian Scholl, Lorella Battelli, and the three anonymous re
 
 ## Abstract
 
-Our minds show extraordinary limitations on how much visual information they can extensively process, in spite of massive parallel processing at our visual front ends. This is especially evident when participants attempt to track  moving objects. Humans' capacity for updating object representations is more limited than indicated by studies with static stimuli. Unlike many abilities, our ability to track multiple objects is mediated by processes specific to each cerebral hemisphere, such that each hemifield has its own capacity limit. However, tracking can also benefit from more cognitive processes not specific to each hemifield. Here, recommendations are made for improvimg methodology so that the relative role of these two kinds of processes can be distinguished. We are far from fully understanding how attention keeps up with multiple moving objects, but what we already know is fascinating and there are promising directions for new discoveries.
+Our minds are severely limited in how much visual information they can extensively process, in spite of being massively-parallel at our visual front ends. This is especially evident when participants attempt to track moving objects, which reveals that our capacity for updating object representations is very limited. Or ability to track multiple objects is mediated by processes specific to each cerebral hemisphere, such that each hemifield has its own capacity limit, which distinguishes SELECTION BOTTLENECK. However, tracking can also benefit from more cognitive processes not specific to each hemifield. Here, recommendations are made for improvimg methodology so that the relative role of these two kinds of processes can be distinguished. We are far from fully understanding how attention keeps up with multiple moving objects, but what we already know is fascinating and there are promising directions for new discoveries.
 
 <!--Reviewers: Hyona/Pailian/Saiki for identity chapter; Piers Howe / John Palmer/Daniel Little for serial/parallel; Srimant Tripathy for sensory memory ; Scott Brown at Newcastle for drift diffusion models
 -->
