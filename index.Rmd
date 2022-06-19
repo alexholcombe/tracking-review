@@ -42,7 +42,7 @@ Cite this as:
 
 Holcombe, A.O. (to appear). Attending to moving objects. Cambridge University Press.
 
-This book is posted as HTML with section hyperlinks and embedded movies at [tracking.whatanimalssee.com](tracking.whatanimalssee.com). A revised version is expected to be published by Cambridge University Press in their [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception).
+A revised version of this is expected to be published by Cambridge University Press in their [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception). This book will also remain as an HTML document at [tracking.whatanimalssee.com](tracking.whatanimalssee.com).
 <!--https://mc.manuscriptcentral.com/hsselements1?URL_MASK=8f1bd56d44104a8b82eafbb42c3bdb84-->
 
 <!--You can read this [here on the web](https://tracking.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.--> 
@@ -53,13 +53,13 @@ knitr::include_graphics("imagesForRmd/corellaOnShoulder2020croppedBlurredByAdobe
 
 Contact me with comments via [twitter](https://twitter.com/ceptional) or email (alex.holcombe@sydney.edu.au).
 
-I thank Hrag Pailian, Brian Scholl, Lorella Battelli, and the three anonymous reviewers for helpful comments. I also thank Hrag Pailian and Brian Scholl for providing images and movies of their work.
+I thank Hrag Pailian, Brian Scholl, Lorella Battelli, Christian Merkel, and the three anonymous reviewers for helpful comments. I also thank Hrag Pailian and Brian Scholl for providing images and movies of their work.
 
 © Alex O. Holcombe 2022
 
-## Abstract
+## Abstract {-}
 
-Our minds are severely limited in how much visual information they can extensively process, in spite of being massively-parallel at our visual front ends. This is especially evident when participants attempt to track moving objects, which reveals that our capacity for updating object representations is very limited. Or ability to track multiple objects is mediated by processes specific to each cerebral hemisphere, such that each hemifield has its own capacity limit, which distinguishes SELECTION BOTTLENECK. However, tracking can also benefit from more cognitive processes not specific to each hemifield. Here, recommendations are made for improvimg methodology so that the relative role of these two kinds of processes can be distinguished. We are far from fully understanding how attention keeps up with multiple moving objects, but what we already know is fascinating and there are promising directions for new discoveries.
+Our minds are severely limited in how much information they can extensively process, in spite of being massively-parallel at our visual front ends. When participants attempt to track moving objects, only a very limited number can be tracked. Spatial selection and updating seems to have higher capacity than updating of other features, and is mediated by processes specific to each cerebral hemisphere, such that each hemifield has its own spatial tracking capacity limit. Spatial selection may be a bottleneck that sets the stage for subsequent processing. Improving our understanding of this bottleneck requires preventing contamination of behavioral tasks by cognition. We are far from fully understanding how attention keeps up with multiple moving objects, but what we already know illuminates the architecture of visual processing and offers promising directions for new discoveries.
 
 <!--Reviewers: Hyona/Pailian/Saiki for identity chapter; Piers Howe / John Palmer/Daniel Little for serial/parallel; Srimant Tripathy for sensory memory ; Scott Brown at Newcastle for drift diffusion models
 -->
