@@ -2,23 +2,18 @@
 
 Near the beginning of this book (\@ref(intro)), I flagged four important findings from the literature. Now that I've gone through the evidence for them, here they are again:
 
-1. Target load has little effect on spatial interference, whereas temporal interference increases steeply with target load (Section \@ref(spatialInterference)).
-1. Predictability of movement paths benefits tracking, but only for one or two targets, not for more (Section \@ref(Cequals1)).
-1. Tracking capacity is hemifield specific: one can double capacity by dividing targets between the hemifields (Section \@ref(twoBrains)).
+1. The number of targets has little effect on spatial interference, whereas it greatly increases temporal interference (Section \@ref(spatialInterference)).
+1. Predictability of movement paths benefits tracking only for one or two targets, not for more (Section \@ref(Cequals1)).
+1. Tracking capacity is hemifield specific: capacity nearly doubles when targets are presented in different hemifields (Section \@ref(twoBrains)).
 1. When tracking multiple targets, people often don't know which target is which, and updating of non-location features is poor (Section \@ref(identity)).
 
-Something that's not really a finding about how tracking works, but is another important result, is MOT's high test-retest reliability, of approximately .8 or .9, which is among the highest of attentional tasks (Section \@ref(abilities)). MOT is thus an excellent task not only for the insights we've already gained into mental processes, but also because we can expect future results to be credible (because with a non-noisy task, less data is needed to have high statistical power) and because MOT has high potential for revealing individual differences.
+MOT is not only important because of the constraints on understanding attention that the above results provide, but also because of its potential to reveal more. MOT's high test-retest reliability, of approximately .8 or .9, which is among the highest of attentional tasks (Section \@ref(abilities)), which means that its results are often highly credible (because with a non-noisy task, less data is needed to have high statistical power) and because MOT has high potential for revealing individual differences.
 
 ## How far have we come?
 
-When Pylyshyn published the first MOT theory, FINST, he had done only a few experiments. 
+Pylyshyn's FINST theory was the first theory of MOT. He described it in the same paper that he reported the first two experiments on MOT. Although there have been hundreds of MOT experiments published since then, today in 2022 FINST theory is still the only theory mentioned on the page for multiple object tracking on Wikipedia [@wikipediaeditorsMultipleObjectTracking2021]. Even among researchers who publish MOT studies, I think it is not appreciated how much the main points of FINST theory have been rebutted. Core to FINST theory is the idea that tracking is mediated by a small  set of discrete and pre-attentive indices. As we have seen, however, as object speed increases, the number of targets that can be tracked steadily decreases, to one target, which doesn't sit well with a small set of indices [@alvarezHowManyObjects2007; @holcombeExhaustingAttentionalTracking2012; see also @schollWhatHaveWe2008].
 
-Despite hundreds of published studies since the debut of
-the very first theory of MOT in 1988
-
-Although there have been hundreds of studies published since 1988 when the FINST theory and MOT itself debuted, today in 2022 FINST theory is still the only theory mentioned on the page for multiple object tracking on Wikipedia [@wikipediaeditorsMultipleObjectTracking2021]. FINST theory  continues to be frequently invoked in the scholarly literature as well, but some of its main points have been rebutted. Core to FINST theory was the idea that tracking is mediated by a fixed set of discrete and pre-attentive indices. As we have seen, however, as object speed increases, the number of targets that can be tracked steadily decreases, to one target, which doesn't sit well with a fixed set of discrete indices [@alvarezHowManyObjects2007; @holcombeExhaustingAttentionalTracking2012; see also @schollWhatHaveWe2008].
-
-The whole purpose of FINSTs was 
+WHAT HE SAY ABOUT PREATTENTIVE AND SPEED
 
 Pylyshyn developed the concept of FINSTs to explain how cognition "connects with the world" and knows where different objects are
 

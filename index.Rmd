@@ -42,13 +42,12 @@ Cite this as:
 
 Holcombe, A.O. (to appear). Attending to moving objects. Cambridge University Press.
 
-This book, posted with chapter hyperlinks, cross-references, and embedded movies at [tracking.whatanimalssee.com](tracking.whatanimalssee.com),
-reviews some of what we know about multiple object tracking by humans. A revised version is expected to be published by Cambridge University Press in their [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception).
+This book is posted as HTML with section hyperlinks and embedded movies at [tracking.whatanimalssee.com](tracking.whatanimalssee.com). A revised version is expected to be published by Cambridge University Press in their [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception).
 <!--https://mc.manuscriptcentral.com/hsselements1?URL_MASK=8f1bd56d44104a8b82eafbb42c3bdb84-->
 
 <!--You can read this [here on the web](https://tracking.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.--> 
 
-```{r AlexPhoto, echo=FALSE, out.width="25%"}
+```{r AlexPhoto, echo=FALSE, out.width="20%"}
 knitr::include_graphics("imagesForRmd/corellaOnShoulder2020croppedBlurredByAdobeOnline.jpg")
 ```
 

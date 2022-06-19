@@ -57,14 +57,15 @@ The notion of keeping track of moving objects is familiar from certain situation
 
 Despite technological advances, the study of visual attention continues to be dominated by experiments with stimuli that don't move. As we'll see in Chapter \@ref(identity), putting objects in motion reveals that updating of object representations is not as effective as one might expect from studies with static stimuli. This suggests that with static objects, one can bring to bear additional processes, perhaps cognitive processes (Chapter \@ref(Cequals1)), that motion helps to dissociate from lower-level tracking processes.
 
-This book will dispel misconceptions about the nature of tracking processes and present the concepts that I believe are needed to correctly understand the implications of tracking experiments. I will argue that four of the most important implications are: <!--Reviewing the evidence of this vast literature has highlighted four robust findings which I believe to be the most informative about the nature of the underlying processing.-->
+I wrote this book to dispel misconceptions about the nature of tracking processes, lay out the concepts needed to understand the implications of empirical findings, and to highlight the findings with the most profound implications. I will argue that four such findings are:
+ <!--Reviewing the evidence of this vast literature has highlighted four robust findings which I believe to be the most informative about the nature of the underlying processing.-->
 
-1. Target load has little effect on spatial interference, whereas temporal interference increases steeply with target load (Section \@ref(spatialInterference)).
-1. Predictability of movement paths benefits tracking, but only for one or two targets, not for more (Section \@ref(Cequals1)).
-1. Tracking capacity is hemifield specific: one can double capacity by dividing targets between the hemifields (Section \@ref(twoBrains)).
+1. The number of targets has little effect on spatial interference, whereas it greatly increases temporal interference (Section \@ref(spatialInterference)).
+1. Predictability of movement paths benefits tracking only for one or two targets, not for more (Section \@ref(Cequals1)).
+1. Tracking capacity is hemifield specific: capacity nearly doubles when targets are presented in different hemifields (Section \@ref(twoBrains)).
 1. When tracking multiple targets, people often don't know which target is which, and updating of non-location features is poor (Section \@ref(identity)).
 
-In the final section of this book (\@ref(recommendations)), I describe some broad lessons about how tracking works and how best to study it. In that section I also list some of the topics that had to be left out and where to learn more. 
+From these findings, in this book's final section (\@ref(recommendations)), I describe some broad lessons, including how best to study tracking in the future. <!--In that section I also list some of the topics that had to be left out and where to learn more.-->
 <!--
 
 Getting to these findings requires explaining various things
