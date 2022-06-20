@@ -36,8 +36,9 @@ These aspects of the structure of the visual world may be one reason that our vi
 
 This decomposition of a wheel rim's movement is so strong that people systematically mis-report the trajectory of the points on the wheel [@proffittUnderstandingWheelDynamics1990]. The red curve in the animation below reveals that a point on a rolling wheel traces out a curve that involves up, down, and forward motion, but no backward motion. When asked what they see, however, people report that they see circular motion, including an interval when the point moves backwards. This highlights that what we perceive reflects a sophisticated parsing and grouping of retinal motion signals.
 
-```{r, echo=FALSE, out.width="30%", fig.cap="The red curve is that traced out by a point on a rolling wheel, by Zorgit https://commons.wikimedia.org/wiki/File:Cycloid_f.gif"}  
-if(knitr::is_html_output()) knitr::include_graphics("movies/cycloid/Cycloid_f.gif") else knitr::include_graphics("movies/cycloid/Cycloid_f_static.png")
+```{r cycloid, echo=FALSE, out.width="30%", fig.cap="The red curve is that traced out by a point on a rolling wheel, by Zorgit https://commons.wikimedia.org/wiki/User:Zorgit"} 
+#Somehow including the file part of the credit in the quotations above (https://commons.wikimedia.org/wiki/File:Cycloid_f.gif) breaks the PDF output, so I had to delete that and just link to the user.
+if (knitr::is_html_output())   knitr::include_graphics("movies/cycloid/Cycloid_f.gif") else knitr::include_graphics("movies/cycloid/Cycloid_f_static.png")
 ```
 
 @billHierarchicalStructureEmployed2020 varied the structured motion pattern of the moving discs of an MOT task to show that hierarchical relations in the stimulus can facilitate tracking. Unfortunately, they did not investigate whether those relations affected how the discs' motion was perceived, like in a rolling wheel or a flock of birds. The attentional demands, if any, of such hierarchical motion decomposition has not been explored much<!--FUTURE-->. Thus it remains unclear to what extent the hierarchical relations are calculated by the application of tracking or other attentional resources, versus tracking operating on a representation of hierarchical relations that was determined pre-attentively.

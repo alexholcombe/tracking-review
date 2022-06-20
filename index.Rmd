@@ -79,7 +79,6 @@ From R environment, execute the following after eliminating the references
 wordcountaddin::word_count('tracking-review.Rmd')
 Approximately 27,500 words without references
 -->
-
 <!--Exporting to Word: Looked less fucked-up if I first imported the PDF into Google Docs and then clicked Open in->Microsoft Word.app-->
 
 <!-- Speed limits and temporal limits graph fails in PDF version. Is that because of “Warning: LaTeX Warning: Float too large for page by 59.24739pt on input line 584.”?  I think I fixed it by making it smaller.
