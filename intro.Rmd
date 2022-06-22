@@ -55,7 +55,7 @@ The notion of keeping track of moving objects is familiar from certain situation
 
 ## What's to come {#summary}
 
-Despite technological advances, the study of visual attention continues to be dominated by experiments with stimuli that don't move. As we'll see in Chapter \@ref(identity), putting objects in motion reveals that updating of object representations is not as effective as one might expect from studies with static stimuli. This suggests that with static objects, one can bring to bear additional processes, perhaps cognitive processes (Chapter \@ref(Cequals1)), that motion helps to dissociate from lower-level tracking processes.
+Despite technological advances, the study of visual attention continues to be dominated by experiments with stimuli that don't move. As we'll see in Section \@ref(identity), putting objects in motion reveals that updating of object representations is not as effective as one might expect from studies with static stimuli. This suggests that with static objects, one can bring to bear additional processes, perhaps cognitive processes (Section \@ref(Cequals1)), that motion helps to dissociate from lower-level tracking processes.
 
 I wrote this book to dispel misconceptions about the nature of tracking processes, lay out the concepts needed to understand the implications of empirical findings, and to highlight the findings with the most profound implications. I will argue that four such findings are:
  <!--Reviewing the evidence of this vast literature has highlighted four robust findings which I believe to be the most informative about the nature of the underlying processing.-->
