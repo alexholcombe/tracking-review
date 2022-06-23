@@ -55,11 +55,12 @@ The notion of keeping track of moving objects is familiar from certain situation
 
 ## What's to come {#summary}
 
-Despite technological advances, the study of visual attention continues to be dominated by experiments with stimuli that don't move. As we'll see in Section \@ref(identity), putting objects in motion reveals that updating of object representations is not as effective as one might expect from studies with static stimuli. This suggests that with static objects, one can bring to bear additional processes, perhaps cognitive processes (Section \@ref(Cequals1)), that motion helps to dissociate from lower-level tracking processes.
+Despite advances in technology, the study of visual cognition continues to be dominated by experiments with stimuli that don't move. As we'll see in Section \@ref(identity), putting objects in motion reveals that updating of their representations is not as effective as one might expect from studies with static stimuli. This suggests that with static objects, one can bring to bear additional processes, perhaps cognitive processes (Section \@ref(Cequals1)), that motion helps to dissociate from lower-level tracking processes.
 
-I wrote this book to dispel misconceptions about the nature of tracking processes, lay out the concepts needed to understand the implications of empirical findings, and to highlight the findings with the most profound implications. I will argue that four such findings are:
+<!--I wrote this book to dispel misconceptions about the nature of tracking processes, lay out the concepts needed to understand the implications of empirical findings, and to highlight the findings with the most profound implications.--> I will argue that the five most important findings in the multiple object tracking literature are:
  <!--Reviewing the evidence of this vast literature has highlighted four robust findings which I believe to be the most informative about the nature of the underlying processing.-->
 
+1. The number of moving objects humans can track is limited, but not to a particular number (such as 4 or 5). (Section \@ref(biggestMyth))
 1. The number of targets has little effect on spatial interference, whereas it greatly increases temporal interference (Section \@ref(spatialInterference)).
 1. Predictability of movement paths benefits tracking only for one or two targets, not for more (Section \@ref(Cequals1)).
 1. Tracking capacity is hemifield specific: capacity nearly doubles when targets are presented in different hemifields (Section \@ref(twoBrains)).
