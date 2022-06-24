@@ -31,7 +31,9 @@ Many objects have salient parts. While normally we think of a 'T' as a single ob
 
 In early visual cortex, different populations of neurons respond to the the horizontal and to the vertical stroke of a 'T', as well as the different ends of each stroke. But having neurons that respond to a thing does not suffice to be able to track that thing, as tracking operates on only some sorts of representations. @schollWhatVisualObject2001 asked participants to try to track the ends of lines. This may seem like a weird task, but it is not entirely unrealistic. When paying attention to someone holding a rifle, for example, it may be important to continuously monitor the location of the front of its barrel. Four moving lines were presented in the @schollWhatVisualObject2001 study, with one end of each line designated as a target. At the end of the trial, the lines stopped moving and participants were to click with a mouse on the line ends that were targets. During a trial, each line grew, shrank, and rotated as each of its ends wandered about the screen randomly.
 
-![A schematic of the display used by Scholl et al. (2001)](imagesForRmd/linesSchollPylyshynFeldman_madeByHolcombe.png){width=40%}
+```{r SchollEtAl2001schematic, echo=FALSE, out.width="40%", fig.cap="A schematic of the lines display of Scholl et al. 2001"}
+knitr::include_graphics("imagesForRmd/linesSchollPylyshynFeldman_madeByHolcombe.png")
+```
 
 The results were striking. Performance on the task was very poor by any measure, including relative to a control condition in which the two ends of the line were not connected. Indeed, simply by viewing an example trial, one very quickly gets a sense of how difficult the task is.
 
