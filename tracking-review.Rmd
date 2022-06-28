@@ -14,7 +14,7 @@ output:
       in_header: preamble.tex
     latex_engine: xelatex
     citation_package: natbib
-    number_sections: FALSE
+    #number_sections: FALSE #If TRUE,it breaks the chapter cross-references
     keep_tex: yes
     toc_depth: 1
     lof: yes
@@ -161,7 +161,7 @@ Despite advances in technology, the study of visual cognition continues to be do
 1. Tracking capacity is hemifield specific: capacity nearly doubles when targets are presented in different hemifields (Section \@ref(twoBrains)).
 1. When tracking multiple targets, people often don't know which target is which, and updating of non-location features is poor (Section \@ref(identity)).
 
-The organization of this book was also influenced by my desire to dispel common misconceptions about results in the literature, and to lay out the concepts needed to understand the implications of the empirical findings. From these findings, in this book's final section (\@ref(recommendations)) I describe some broad lessons, including how best to study tracking in the future. <!--In that section I also list some of the topics that had to be left out and where to learn more.--> We will start with the concept of limited capacity and bottlenecks in the brain.
+The organization of this book was influenced by my desire to dispel common misconceptions about results in the literature, and to lay out the concepts needed to understand the implications of the empirical findings. In this book's final section (\@ref(recommendations)) I describe some broad lessons, including how best to study tracking in the future. <!--In that section I also list some of the topics that had to be left out and where to learn more.--> We will start with the concept of limited capacity and bottlenecks in the brain.
 <!--
 
 Getting to these findings requires explaining various things

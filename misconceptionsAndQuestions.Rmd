@@ -26,7 +26,7 @@ One of the greatest advances in tracking research was the discovery that trackin
 
 “Carving nature at its joints”, or dissociating the components of something, is important for scientific progress but can be difficult in psychology [@fodorModularityMind1983] — general cognition, including System 2, can do many different things and thereby contaminate the study of other aspects of object tracking. I'd like to see fewer missed opportunities to study what makes tracking distinctive, hence my top recommendations for future research emphasize this point. Those recommendations are:
 
-* To dilute the influence of capacity-one System 2 processing (@ref(#cequals1)), use several targets, not just two or three. But remember that even with several targets, a small effect could be explained by a capacity-one process. Test for hemifield specificity as that can help rule out a capacity-one process.
+* To dilute the influence of capacity-one System 2 processing (\@ref(#Cequals1)), use several targets, not just two or three. But remember that even with several targets, a small effect could be explained by a capacity-one process. Test for hemifield specificity as that can help rule out a capacity-one process.
 
 * Always test for hemifield specificity! In addition to it helping to rule out a factor having its effect only on a capacity-one process, we know very little about what limited-capacity brain processes are hemisphere-specific, so any results here are likely to be interesting.
 
