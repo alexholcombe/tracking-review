@@ -14,7 +14,7 @@ output:
       in_header: preamble.tex
     latex_engine: xelatex
     citation_package: natbib
-    #number_sections: FALSE #If FALSE, which numbers all figures from 1 to X instead of 1.1, 1.2, etc., it breaks the chapter cross-references
+    number_sections: FALSE #If FALSE, which numbers all figures from 1 to X instead of 1.1, 1.2, etc., it breaks the chapter cross-references
     keep_tex: yes
     toc_depth: 1
     lof: yes
@@ -31,7 +31,7 @@ url: 'https\://tracking.whatanimalssee.com/'
 github-repo: alexholcombe/tracking-review
 twitter-handle: ceptional
 #For the order of chapters, see _bookdown.yml, where they are manually specified
-description: "This is an opinionated book that reviews some of the literature on multiple object tracking by humans."
+description: "This book reviews some of the literature on multiple object tracking by humans."
 #cover-image: "imagesForRmd/threeWiseMonkeys/Three_Wise_Monkeys_640px.jpeg"
 ---
 <!--other titles: Tracking moving objects, How humans track objects, Attending to a moving world -->

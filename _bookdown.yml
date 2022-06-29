@@ -18,4 +18,5 @@ rmd_files: ["index.Rmd","intro.Rmd",
 # "speedAndTime.Rmd",
 #"serialOrParallel.Rmd" #Switching theory will have to explain that can switch more often to favored targets, to explain @chenResourceDemandsObject2013; @croweGoaldirectedUnequalAttention2019
 #mobileComputation.Rmd
+#resolution.Rmd
 #Optional: "Duration that one can sustain attention" in "whichAspects"
