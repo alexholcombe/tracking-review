@@ -14,7 +14,7 @@ output:
       in_header: preamble.tex
     latex_engine: xelatex
     citation_package: natbib
-    number_sections: FALSE #If FALSE, which numbers all figures from 1 to X instead of 1.1, 1.2, etc., it breaks the chapter cross-references
+    number_sections: TRUE #If FALSE, which numbers all figures from 1 to X instead of 1.1, 1.2, etc., it breaks the chapter cross-references
     keep_tex: yes
     toc_depth: 1
     lof: yes

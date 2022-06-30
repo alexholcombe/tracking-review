@@ -1,24 +1,19 @@
-# Objects that move! {#intro}
+# Objects that move {#intro}
 
 <!--
-
 shell game
-
 Is it just another paradigm for studying attention? No - hemisphere independence, where but not what.
-
 How do we do this and what does that tell us about how the mind works?-->
 
-Attention has been a preoccupation of scientific psychology since its modern beginning in the late 19th century. To define attention, William James in 1890 referred to introspective experience, writing that "It is the taking possession by the mind, in clear and vivid form, of one out of what seem several simultaneously possible objects or trains of thought." Implicit in this description is the limited capacity of higher mental operations; James seemed to think their capacity was limited to just one object or train of thought.
-
-Hugo Münsterberg, one of the first to have a laboratory that studied attention, was highly interested in attention and moving stimuli. His 1916 book **The Photoplay: A Psychological Study** described his theory of the cinema, and included a twenty-page chapter on attention. He and others were by then were conducting experiments using custom devices that measured response time and presented auditory and visual stimuli.
+Attention is "the taking possession by the mind, in clear and vivid form, of one out of what seem several simultaneously possible objects or trains of thought." At least, that is how William James described it [@jamesPrinciplesPsychologyVol1890]. James' description seems to imply that attention has a limited capacity of just one object or train of thought. James was joined at Harvard in 1892 by Hugo Münsterberg, who used moving stimuli to study attention. Münsterberg published a book in 1916, **The Photoplay: A Psychological Study**, which described his theory of the "moving pictures" (the cinema) and included a chapter on attention. 
 
 ```{r complication, echo=FALSE, out.width="100%", fig.cap="This 'complication apparatus' from the Harvard laboratory of Hugo Münsterberg was used to measure the effect of attention to one stimulus on responses to another.  A subject who focused on one of the numbers on the large dial was found to have a delayed reaction to the sound of the bell, and vice versa."}
 knitr::include_graphics("imagesForRmd/historical/complicationApparatus.png")
 ```
 
-The study of attention grew rapidly after World War II, and tachistoscopes became the standard laboratory presentation apparatus. A tachistoscope could present a stimuli (which were drawn on a card) very briefly, but it was not designed to create motion. The dominance of stationary stimuli among attention researchers continued through the 1980s , even as the study of motion grew rapidly in a separate community of perception researchers.
+Münsterberg's book is good reading, with insights such as that movement attracts attention, but he did not address how attention operates in the presence of multiple moving stimuli. Much later, after World War II, the study of attention grew rapidly, and tachistoscopes became the standard laboratory presentation apparatus. These devices were limited in that they could not present motion - they were designed to present static stimuli very briefly. The dominance of stationary stimuli in the study of attention continued through the 1980s, even as the study motion grew in a separate community of perception researchers.
 
-When I was a child in 1980, the first popular home game console, the Atari, introduced the game Space Invaders to millions of homes, including those of some of my neighborhood friends. Asteroids was ported to the Atari soon after, and was one of my favorites. <!-- (https://youtube.com/embed/YJZ0hB0Vnyk) -->
+The first popular home game system, the Atari, introduced the game Space Invaders in 1980 to millions of homes, including those of some of my childhood friends. Asteroids was ported to the Atari soon after, and it became one of my favorites. <!-- (https://youtube.com/embed/YJZ0hB0Vnyk) -->
 
 ```{r Asteroids, echo=FALSE, out.width="100%", fig.cap="Asteroids was released by Atari in 1979."}
 #Work-around to make GIFs (but not .mov) work by avoiding including them in non-html outputs!
@@ -27,13 +22,11 @@ if(knitr::is_html_output()) knitr::include_url("movies/asteroids/asteroids_Micha
 #, height = "250px"
 ```
 
-At any moment during Space Invaders or Asteroids, several objects might be approaching a player's avatar. Avoiding a collision seemed to require monitoring more than one object at a time. Several years later, the ability of humans to do this would finally be studied in the laboratory, by the Canadian engineer and psychologist Zenon Pylyshyn.
+When one plays Space Invaders or Asteroids, it is frequently the case that multiple objects are moving in the direction of one's avatar. Avoiding a collision seems to require monitoring more than one of these objects at a time. The ability of humans to do this was formally studied first by the Canadian psychologist and engineer Zenon Pylyshyn.
 
-Already in the 1970s Zenon Pylyshyn had been pondering the possibility of a primitive visual mechanism capable of "indexing and tracking features or feature-clusters" (he mentions this in @pylyshynTrackingMultipleIndependent1988; I haven't been able to get copies of the 1970s reports that he refers to) as they moved.
+In the 1970s, Zenon Pylyshyn had been pondering the possibility of a primitive visual mechanism capable of "indexing and tracking features or feature-clusters" (he mentions this in @pylyshynTrackingMultipleIndependent1988; I haven't been able to get copies of the 1970s reports that he refers to) as they moved. By 1988, Zenon Pylyshyn and Ron Storm formulated a way to empirically study his hypothesized primitive visual mechanism, and they did a series of experiments on humans' ability to keep track of moving objects [@pylyshynTrackingMultipleIndependent1988]. On their Apple II+ computer, they created a display with ten identical objects moving on random trajectories, connected to a telegraph key with a timer to record response times. Pylyshyn & Storm also pioneered the use of an eyetracker to enforce fixation — in their experiments, movement of the eyes away from fixation terminated a trial. Thus they were able to investigate the ability to covertly (without eye movements) keep track of moving objects. 
 
-By 1988, Zenon Pylyshyn and Ron Storm had done a series of experiments on humans' ability to keep track of moving objects [@pylyshynTrackingMultipleIndependent1988]. They had programmed their Apple II+ computer to create a display with ten identical objects moving on random trajectories, connected to a telegraph key with a timer to record response times. They also pioneered the use of an eyetracker to enforce fixation — movement of the eyes away from fixation terminated a trial. Thus they were able to investigate the ability to covertly (without eye movements) keep track of moving objects. 
-
-In a task they called multiple object tracking or MOT, up to five of the ten moving objects were designated as targets by flashing at the beginning of the trial. The targets then became identical to the remaining moving objects, the distractors, and moved about randomly. It is immediately apparent that one can do this. While viewing the display, people report having the experience of being aware, seemingly continually, of which objects are the targets and how they are moving about. In [the movie](https://www.youtube.com/embed/lAQM4QJRYV8) embedded below, one is first asked to track a single target to become familiar with the task, and then subsequently four targets are indicated, at different speeds.
+In a task that Pylyshyn & Storm dubbed multiple object tracking or MOT, up to five of ten displayed moving objects were designated as targets by flashing at the beginning of the trial. The targets then became identical to the remaining moving objects, the distractors, and moved about randomly. While viewing the display, people report having the experience of being aware, seemingly continually, of which objects are the targets and how they are moving about. In [the movie](https://www.youtube.com/embed/lAQM4QJRYV8) embedded below, one is first asked to track a single target to become familiar with the task, and then subsequently four targets are indicated.
 
 ```{r MOTdemo, echo=FALSE, out.width="100%", fig.cap="A demonstration of the multiple object tracking (MOT) task, created by Jiri Lukavsky."}
 #Work-around to make GIFs (but not .mov) work by avoiding including them in non-html outputs!
@@ -44,9 +37,9 @@ if(knitr::is_html_output()) knitr::include_url("movies/MOTmovies/MOTdemoLukavsky
 # Jiri uploaded it to https://www.youtube.com/embed/lAQM4QJRYV8
 ```
 
-In addition to their demonstration that people could do the basic task, which in itself is quite important,  @pylyshynTrackingMultipleIndependent1988 also showed that people are limited in how many targets they can faithfully track. In their experiments, @pylyshynTrackingMultipleIndependent1988 periodically flashed one of the moving objects, and if that object was a target, the participant was to press the telegraph key. On trials with more targets, errors were much more common — while only 2% of target flashes were missed when only one of the ten objects was a target, 14% of target flashes missed when five of the objects were targets. 
+In addition to their demonstration that people could do the basic task, which in itself is quite important,  @pylyshynTrackingMultipleIndependent1988 also showed that people are limited in *how many* targets they can faithfully track. In their experiments, @pylyshynTrackingMultipleIndependent1988 periodically flashed one of the moving objects, and if that object was a target, the participant was to press the telegraph key. On trials with more targets, errors were much more common — while only 2% of target flashes were missed when only one of the ten objects was a target, 14% of target flashes missed when five of the objects were targets. 
 
-The notion of keeping track of moving objects is familiar from certain situations in everyday life. If you've ever been responsible for more than one child while at a beach or a park, you know the feeling of continuously monitoring the locations of multiple moving objects. If you've ever played a team sport, you may recall the feeling of monitoring the positions of multiple opponents at the same time, perhaps the player with the ball and also a player they might pass the ball to. If you've ever wanted to speak to someone at a scientific conference, you may know the feeling of monitoring the position and posture of that person relative to others they are chatting with, in order to best time your approach.
+The notion of keeping track of moving objects is familiar from certain situations in everyday life. If you've ever been responsible for more than one child while at a beach or a park, you know the feeling of continuously monitoring the locations of multiple moving objects. If you've ever played a team sport, you may recall the feeling of monitoring the positions of multiple opponents at the same time, perhaps the player with the ball and also a player they might pass the ball to. If you've ever wanted to speak to someone at a conference, you may know the feeling of monitoring the position and posture of that person relative to others they are chatting with, in order to best time your approach.
 
 <!-- On the road, drivers monitor the movements of others’ vehicles.  At the beach, parents keep watch as their children move in and out of the water.--> 
 <!-- In basketball, the player needs to track the individual players of her/his own team, for example to know where the team’s excellent 3-point scorer is currently located. Similarly, a car driver approaching a busy intersection needs to track the whereabouts and movement trajectories of other vehicles and pedestrians in order to decide his/her own move  and in evolutionary history (e.g., keeping track of the weakest members in a herd of prey)-->.
@@ -60,7 +53,7 @@ Despite advances in technology, the study of visual cognition continues to be do
 <!--I wrote this book to dispel misconceptions about the nature of tracking processes, lay out the concepts needed to understand the implications of empirical findings, and to highlight the findings with the most profound implications.--> 
  <!--Reviewing the evidence of this vast literature has highlighted four robust findings which I believe to be the most informative about the nature of the underlying processing.-->
 
-1. The number of moving objects humans can track is limited, but not to a particular number (such as 4 or 5). (Section \@ref(biggestMyth)<!--[Section 3](#biggestMyth)-->)
+1. The number of moving objects humans can track is limited, but not to a particular number such as four or five. (Section \@ref(biggestMyth))<!--[Section 3](#biggestMyth)-->
 1. The number of targets has little effect on spatial interference, whereas it greatly increases temporal interference (Section \@ref(spatialInterference)).
 1. Predictability of movement paths benefits tracking only for one or two targets, not for more (Section \@ref(Cequals1)).
 1. Tracking capacity is hemifield specific: capacity nearly doubles when targets are presented in different hemifields (Section \@ref(twoBrains)).
