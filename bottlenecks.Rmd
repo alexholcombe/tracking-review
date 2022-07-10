@@ -35,8 +35,8 @@ The word "resource" carries the appropriate connotation that people can choose h
 
 While word recognition seems to be able to process only one stimulus at a time, other visual judgments may be limited in capacity relative to massively parallel sensory processing, but have a capacity greater than one. Object tracking seems to be one such ability. People appear able to track more than one target at the same time, although researchers haven't fully ruled out the possibility that tracking multiple objects happens via a one-by-one process that rapidly switches among the tracked objects.
 
-The existence of processes with a capacity of just one or a few objects (which I will call System 2 processes starting in Section \@ref(Cequals1))
-is a good reason to be able to keep track of the location of the most important objects in a scene. We are then always ready to rapidly shunt a subset of them to higher-level processing, rather than having to search for it. 
+The existence of processes with a capacity of just one object (I will introduce the term "System B" for this in Section \@ref(Cequals1))
+is a good reason to have a process that can keep track of the location of important objects in a scene. We are then always ready to rapidly shunt a subset of them to higher-level processing, rather than having to search for it. 
  <!-- seems to be necessary to, for example, make fine shape discriminations or recognize a word.-->
 
 <!--A major misconception about object tracking has become widespread, and it relates to the nature of tracking's capacity-->  <!--See the next section.-->
