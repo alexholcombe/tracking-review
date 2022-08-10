@@ -8,13 +8,15 @@ output:
   #gitbook renders html
   bookdown::gitbook:
       lib_dir: assets
+      global_numbering: FALSE #Makes figures number from 1 to X rather than 1.1,1.2,2.1,2.2
   #pdfbook includes images but not DiagrammeR output, like for peripheral vision demos
   bookdown::pdf_book:
     includes:
       in_header: preamble.tex
     latex_engine: xelatex
     citation_package: natbib
-    number_sections: TRUE #If FALSE, which numbers all figures from 1 to X instead of 1.1, 1.2, etc., it breaks the chapter cross-references
+    number_sections: TRUE #If FALSE, wreaks the chapter cross-references
+    #global_numbering: TRUE #Doesn't work for PDF output
     keep_tex: yes
     toc_depth: 1
     lof: yes
