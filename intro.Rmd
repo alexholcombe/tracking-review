@@ -11,13 +11,14 @@ Attention is "the taking possession by the mind, in clear and vivid form, of one
 knitr::include_graphics("imagesForRmd/historical/complicationApparatus.png")
 ```
 
-Münsterberg's book is good reading, with insights such as that movement attracts attention, but he did not address how attention operates in the presence of multiple moving stimuli. Much later, after World War II, the study of attention grew rapidly, and tachistoscopes became the standard laboratory presentation apparatus. These devices were limited in that they could not present motion - they were designed to present static stimuli very briefly. The dominance of stationary stimuli in the study of attention continued through the 1980s, even as the study motion grew in a separate community of perception researchers.
+Münsterberg's book is insightful, but he did not address how attention operates in the presence of multiple moving stimuli. Much later, after World War II, the study of attention grew rapidly, and tachistoscopes became the standard laboratory presentation apparatus. These devices were limited in that they could not present motion - they were designed to present static stimuli very briefly. The dominance of stationary stimuli in the study of attention continued through the 1980s, even as the study motion grew in a separate community of perception researchers.
 
 The first popular home game system, the Atari, introduced the game Space Invaders in 1980 to millions of homes, including those of some of my childhood friends. Asteroids was ported to the Atari soon after, and it became one of my favorites. <!-- (https://youtube.com/embed/YJZ0hB0Vnyk) -->
 
 ```{r Asteroids, echo=FALSE, out.width="100%", fig.cap="Asteroids was released by Atari in 1979."}
 #Work-around to make GIFs (but not .mov) work by avoiding including them in non-html outputs!
 #https://stackoverflow.com/questions/64038037/can-i-conditionally-exclude-some-elements-code-blocks-from-rendering-to-the-pd
+#https://mobile.twitter.com/ceptional/status/1362168135965581313 Asteroids deleted conversation
 if(knitr::is_html_output()) knitr::include_url("movies/asteroids/asteroids_MichaelLibby_short.mp4") else knitr::include_graphics("movies/asteroids/asteroidsScreenshot.png")
 #, height = "250px"
 ```

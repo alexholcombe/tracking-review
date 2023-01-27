@@ -9,7 +9,7 @@ To flesh out what I mean by 'bottleneck' here, consider a standard soft drink bo
 The parallel processing happening in visual cortices, such as the multiple neurons dedicated to each patch of the visual field, gets a number of tasks done, so that higher stages don't have to do those tasks. These tasks appear to include the encoding of motion direction, color, and orientation throughout the visual field. Local and regional differencing operations happen for those features, resulting in salience, whereby odd features become conspicuous in our visual awareness. In the below display, for example, you should be able to find the blue objects very quickly.
 
 ```{r findBlue, echo=FALSE, fig.cap = "Thanks to featural attention (to color in this case), you should be able to find the blue circles very quickly.", fig.height = 2.0, fig.width=2.5}
-#bookdown-demo_files/figure-html/unnamed-chunk-9-1.png ?
+#tracking-review_files/figure-html/unnamed-chunk-3-1.png 
 library(ggplot2)
 library(tibble)
 pts<- expand.grid(x = seq(2,16,2), y = seq(2,16,2), type = c("distractor"))

@@ -8,7 +8,7 @@ output:
   #gitbook renders html
   bookdown::gitbook:
       lib_dir: assets
-      global_numbering: FALSE #Makes figures number from 1 to X rather than 1.1,1.2,2.1,2.2
+      global_numbering: TRUE #Makes figures number from 1 to X rather than 1.1,1.2,2.1,2.2
   #pdfbook includes images but not DiagrammeR output, like for peripheral vision demos
   bookdown::pdf_book:
     includes:
@@ -40,23 +40,23 @@ description: "This book reviews some of the literature on multiple object tracki
 
 # Preface {-}
 
-Cite this as:
 
-Holcombe, A.O. (to appear). Attending to moving objects. Cambridge University Press.
+You can [buy](https://www.cambridge.org/core/elements/attending-to-moving-objects/0914ABF2EF7D03676124F7250874071A) paperback or ebook versions of this book in addition to viewing this HTML version. If you learn anything from this book and use it in your research, please cite it like this:
 
-A revised version of this is expected to be published by Cambridge University Press in their [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception). This book will also remain as an HTML document at [tracking.whatanimalssee.com](tracking.whatanimalssee.com).
+Holcombe, A.O. (2023). Attending to moving objects. [Cambridge University Press](https://www.cambridge.org/core/elements/attending-to-moving-objects/0914ABF2EF7D03676124F7250874071A). DOI: https://doi.org/10.1017/9781009003414. Online ISBN: 9781009003414
+
+I thank Hrag Pailian, Brian Scholl, Lorella Battelli, Christian Merkel, and the three anonymous reviewers for helpful comments. I also thank Hrag Pailian and Brian Scholl for providing images and movies of their work.
+
+<!--This is in press with Cambridge University Press, a part of their [Cambridge Element series](https://www.cambridge.org/core/what-we-publish/elements/elements-in-perception). This book will also remain as an HTML document here at [tracking.whatanimalssee.com](tracking.whatanimalssee.com).-->
 <!--https://mc.manuscriptcentral.com/hsselements1?URL_MASK=8f1bd56d44104a8b82eafbb42c3bdb84-->
 
 <!--You can read this [here on the web](https://tracking.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.--> 
 
-```{r AlexPhoto, echo=FALSE, out.width="20%"}
-knitr::include_graphics("imagesForRmd/corellaOnShoulder2020croppedBlurredByAdobeOnline.jpg")
-```
 
 Contact me with comments via [twitter](https://twitter.com/ceptional) or email (alex.holcombe@sydney.edu.au).
-
-I thank Hrag Pailian, Brian Scholl, Lorella Battelli, Christian Merkel, and the three anonymous reviewers for helpful comments. I also thank Hrag Pailian and Brian Scholl for providing images and movies of their work.
-
+```{r AlexPhoto, echo=FALSE, out.width="8%"}
+knitr::include_graphics("imagesForRmd/corellaOnShoulder2020croppedBlurredByAdobeOnline.jpg")
+```
 © Alex O. Holcombe 2022
 
 ## Abstract {-}
