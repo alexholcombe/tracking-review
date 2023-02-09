@@ -41,7 +41,7 @@ description: "This book reviews some of the literature on multiple object tracki
 # Preface {-}
 
 
-You can [buy](https://www.cambridge.org/core/elements/attending-to-moving-objects/0914ABF2EF7D03676124F7250874071A) paperback or ebook versions of this book in addition to viewing this HTML version. If you learn anything from this book and use it in your research, please cite it like this:
+You can buy the official paperback or ebook versions of this book [here](https://www.cambridge.org/core/elements/attending-to-moving-objects/0914ABF2EF7D03676124F7250874071A) in addition to viewing this HTML version for free. Please cite the book as:
 
 Holcombe, A.O. (2023). Attending to moving objects. [Cambridge University Press](https://www.cambridge.org/core/elements/attending-to-moving-objects/0914ABF2EF7D03676124F7250874071A). DOI: https://doi.org/10.1017/9781009003414. Online ISBN: 9781009003414
 
@@ -53,11 +53,12 @@ I thank Hrag Pailian, Brian Scholl, Lorella Battelli, Christian Merkel, and the 
 <!--You can read this [here on the web](https://tracking.whatanimalssee.com/index.html), as a [PDF file](bookdown-demo.pdf), or as an [e-book](bookdown-demo.epub), which you can import into your Kindle or other e-book reader.--> 
 
 
-Contact me with comments via [twitter](https://twitter.com/ceptional) or email (alex.holcombe@sydney.edu.au).
-```{r AlexPhoto, echo=FALSE, out.width="8%"}
+Please contact me with comments via email (alex.holcombe@sydney.edu.au) or [Mastodon](https://fediscience.org/@alexh) .
+
+```{r AlexPhoto, echo=FALSE, out.width="15%"}
 knitr::include_graphics("imagesForRmd/corellaOnShoulder2020croppedBlurredByAdobeOnline.jpg")
 ```
-© Alex O. Holcombe 2022
+© Alex O. Holcombe 2022. Licensed to Cambridge University Press.
 
 ## Abstract {-}
 
