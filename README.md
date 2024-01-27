@@ -1,4 +1,4 @@
-To deploy to my dreamhost site:
+# To deploy from my local computer to my dreamhost site:
 
 From the _book subdirectory,
 
