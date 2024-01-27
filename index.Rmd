@@ -40,7 +40,6 @@ description: "This book reviews some of the literature on multiple object tracki
 
 # Preface {-}
 
-
 You can buy the official paperback or ebook versions of this book [here](https://www.cambridge.org/core/elements/attending-to-moving-objects/0914ABF2EF7D03676124F7250874071A) in addition to viewing this HTML version for free. Please cite the book as:
 
 Holcombe, A.O. (2023). Attending to moving objects. [Cambridge University Press](https://www.cambridge.org/core/elements/attending-to-moving-objects/0914ABF2EF7D03676124F7250874071A). DOI: https://doi.org/10.1017/9781009003414. Online ISBN: 9781009003414
